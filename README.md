@@ -1,4 +1,6 @@
 <!--내용 부분-->
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=kimheeseo&layout=compact)
+
 <h3 align="center">✨ Tech Stack ✨</h3>
 <br>
 <div align="center">
