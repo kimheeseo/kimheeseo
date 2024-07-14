@@ -32,7 +32,7 @@
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
   <a href="https://open.kakao.com/o/sKh17axg">
-    <img src="https://img.shields.io/badge/kakao-FFCD00?style=for-the-badge&logo=kakao&logoColor=ffdd54" />&nbsp
+    <img src="https://img.shields.io/badge/kakaotalk-FFCD00?style=for-the-badge&logo=kakao&logoColor=ffdd54" />&nbsp
   </a>
   
   <a href="mailto:gmltjdlek@naver.como">
