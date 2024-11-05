@@ -4,10 +4,9 @@
 <div align="center">
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54" />&nbsp
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"/>&nbsp
-
-
 </div>
 <br>
+
  [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
 </p>
 
