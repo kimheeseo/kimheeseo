@@ -10,6 +10,7 @@
 <h3 align="center"> 백준 등급 </h3>
 
   [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
+  [![Solved.ac프로필](http://mazassumnida.wtf/api/generate_badge?boj={gmltjdlek})](https://solved.ac/{gmltjdlek})
   </p>
 
 
