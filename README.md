@@ -5,10 +5,13 @@
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54" />&nbsp
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"/>&nbsp
   [![Solved.ac
-프로필](http://mazassumnida.wtf/api/generate_badge?boj={gmltjdlek})](https://solved.ac/{gmltjdlek})
 </div>
 
 <br>
+
+<p>
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
+
 
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
