@@ -7,8 +7,11 @@
 </div>
 <br>
 
- [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
-</p>
+<div align="center">
+  [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
+  </p>
+</div>
+
 
 
 <h3 align="center">📫 Contact 📫</h3>
