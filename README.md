@@ -8,8 +8,9 @@
 
 <br>
 
-</p>
+<p?
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
+</p>
 
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
