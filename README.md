@@ -9,15 +9,14 @@
 <br>
 
 <p>
-<div align="center">
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gmltjdlek)](https://solved.ac/gmltjdlek/)
-</div>
+
 </p>
 
 <h3 align="center">📫 Contact 📫</h3>
 <div align="center">
   <a href="https://open.kakao.com/o/sKh17axg">
-    <img src="https://img.shields.io/badge/kakaotalk-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=ffdd54" />&nbsp
+    <img src="[https://img.shields.io/badge/kakaotalk-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=ffdd54](https://open.kakao.com/o/shjWVjNg)" />&nbsp
   </a>
   
   <a href="mailto:gmltjdlek@naver.como">
