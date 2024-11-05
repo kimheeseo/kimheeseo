@@ -3,8 +3,8 @@
 <br>
 <div align="center">
   <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=ffdd54" />&nbsp
-  <img src="https://dcbadge.limes.pink/api/shield/happy_peach291"/>&nbsp
-  <img src="https://discord.gg/R8JEu8jK&logo=Discord&logoColor=Blue"/>&nbsp
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"/>&nbsp
+  <img src="[https://discord.gg/R8JEu8jK&logo=Discord&logoColor=Blue](https://dcbadge.limes.pink/api/shield/happy_peach291)"/>&nbsp
 </div>
 <br>
 
