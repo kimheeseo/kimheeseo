@@ -31,4 +31,5 @@
     <img src="https://img.shields.io/badge/gmltjdlek@naver.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
   </a>
 </div>
+
 [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
