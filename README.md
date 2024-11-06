@@ -17,10 +17,6 @@
   </p>
 </div>
 
-
-
-
-
 <h3 align="center">✨ E-Mail ✨</h3>
 <div align="center">
   <a href="mailto:gmltjdlek@naver.como">
@@ -30,6 +26,6 @@
 
 <h3 align="center">✨ E-Mail ✨</h3>
 <div align="center">
-  [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
+[![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
   </a>
 </div>
