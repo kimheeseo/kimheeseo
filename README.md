@@ -23,4 +23,4 @@
 </div>
 
 [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
-[![Kakaotalk](https://img.shields.io/badge/kakaotalk-명현-yellow)](https://open.kakao.com/o/sxq9ABYg)
+[![Kakaotalk](https://img.shields.io/badge/kakaotalk-kimheeseo-yellow)](https://open.kakao.com/o/sxq9ABYg)
