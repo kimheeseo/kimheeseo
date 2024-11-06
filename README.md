@@ -24,3 +24,6 @@
 
 [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
 [![Kakaotalk](https://img.shields.io/badge/kakaotalk-kimheeseo-yellow)](https://open.kakao.com/o/sxq9ABYg)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/kimheeseo2/)
+
