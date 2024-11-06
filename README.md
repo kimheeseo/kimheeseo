@@ -6,8 +6,6 @@
   <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=C&logoColor=white"/>&nbsp
 </div>
 <br>
-![MATLAB](https://img.shields.io/badge/MATLAB-0076A8?logo=Mathworks&logoColor=white&style=flat-square)
-
 
 <div align="center">
 <h3 align="center">✨ 백준 등급 ✨</h3>
