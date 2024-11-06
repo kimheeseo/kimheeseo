@@ -15,14 +15,13 @@
   </p>
 </div>
 
-<h3 align="center">✨ E-Mail ✨</h3>
+<h3 align="center">✨ 연락처 ✨</h3>
 <div align="center">
-  <a href="mailto:gmltjdlek@naver.como">
-    <img src="https://img.shields.io/badge/gmltjdlek@naver.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
-  </a>
+
 </div>
 
 [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
 [![Kakaotalk](https://img.shields.io/badge/kakaotalk-kimheeseo-yellow)](https://open.kakao.com/o/sxq9ABYg)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/in/kimheeseo2/)
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white&style=flat-square)](mailto:gmltjdlek@naver.como)
 
