@@ -32,4 +32,6 @@
   </a>
 </div>
 
+<div align="center">
 [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
+</div>
