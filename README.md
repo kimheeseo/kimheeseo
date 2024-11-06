@@ -7,9 +7,7 @@
 </div>
 <br>
 
-<img
-  src="https://dcbadge.limes.pink/api/shield/happy_peach291"
-/>
+<img src="https://dcbadge.limes.pink/api/shield/happy_peach291"/>
 
 <div align="center">
 <h3 align="center"> 백준 등급 </h3>
