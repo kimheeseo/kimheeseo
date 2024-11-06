@@ -16,6 +16,7 @@
 </div>
 
 [![Discord](https://img.shields.io/discord/행복한어피치님의 서버?label=Discord&logo=discord&style=flat-square)](https://discord.gg/R8JEu8jK)
+[![Discord](https://img.shields.io/discord/1234567890?label=Discord&logo=discord&logoColor=white&style=flat-square)]([https://discord.gg/example](https://discord.gg/R8JEu8jK))
 
 
 
