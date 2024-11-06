@@ -21,16 +21,15 @@
 
 
 
-<h3 align="center">✨ Contact ✨</h3>
+<h3 align="center">✨ E-Mail ✨</h3>
 <div align="center">
-  <a href="https://open.kakao.com/o/sKh17axg">
-    <img src="[https://img.shields.io/badge/kakaotalk-FFCD00?style=for-the-badge&logo=kakaotalk&logoColor=ffdd54](https://open.kakao.com/o/shjWVjNg)" />&nbsp
-  </a>
-  
   <a href="mailto:gmltjdlek@naver.como">
     <img src="https://img.shields.io/badge/gmltjdlek@naver.com-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>&nbsp
   </a>
 </div>
 
+<h3 align="center">✨ E-Mail ✨</h3>
+<div align="center">
   [![Discord](https://img.shields.io/discord/190231sd?label=Discord&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/R8JEu8jK)
-
+  </a>
+</div>
