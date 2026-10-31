@@ -22,7 +22,6 @@ GitHub Pages가 게시된 후 [퀴즈 웹 실행](https://kimheeseo.github.io/ki
 ## 실행
 - **웹 실행:** 위의 [퀴즈 바로 접속](https://kimheeseo.github.io/kimheeseo/communication-quiz-500/) 링크를 통해 `index.html`을 실행하세요.
 - **오프라인 실행:** [index.html](./index.html)을 내려받아 브라우저에서 열면 됩니다. HTML 파일 자체에 문제 500개가 포함되어 있습니다.
-- **스마트폰 저장:** 앱 내 **스마트폰 HTML 다운로드** 버튼을 누르면 HTML을 저장할 수 있습니다. 이 기능은 APK 설치가 아닌 HTML 다운로드입니다.
 
 ## 주요 기능
 - 총 500문항, 보기 3개 중 하나를 선택
