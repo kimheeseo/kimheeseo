@@ -6,6 +6,7 @@
 | --- | --- | --- |
 | 통신공학 1029 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
 | 무선공학 1030 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
+| 코레일 2026 상반기 30문항 | [korail-2026](./korail-2026/) | [복원문제 30문항 풀기](https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/) |
 | 면접 자료 | [interview](./interview/) | [면접 자료 목록](https://kimheeseo.github.io/kimheeseo/quiz500/interview/) |
 
 **[통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/)**
@@ -26,6 +27,9 @@
 quiz500/
 ├── index.html                        # 과목 선택 화면
 ├── README.md                         # 이 안내 문서
+├── korail-2026/
+│   ├── index.html                    # 코레일 2026 상반기 모의고사 학습 앱
+│   └── questions.json               # 복원모의고사 기반 30개 문항·정답·해설
 ├── interview/
 │   ├── index.html                    # 면접 자료 - 기관 선택
 │   ├── seoul-metro.html              # 서울교통공사 정보통신직 면접 안내
@@ -62,3 +66,11 @@ quiz500/
 - 기본 대본: 10개 주제(답변, 꼬리질문). 확장 대본: 13개 주제(궤도회로·연동장치·LTE-R, 상황 면접 포함).
 - 개인정보 보호를 위해 **원본 PDF는 공개 저장소에 업로드하지 않았습니다**. 이름·연락처·PDF 작성자 메타데이터를 제외한 텍스트만 공개하며, 현재 직장 상태 표현도 중립적으로 정리했습니다.
 - 개인이 작성한 학습 자료로서 **코레일 공식 기출문제 또는 공식 답변이 아닙니다**.
+
+## 코레일 2026년 상반기 전기통신직 복원모의고사
+
+- [코레일 복원모의고사 30문항 실행](./korail-2026/) · [문항 JSON](./korail-2026/questions.json)
+- 구성: 통신공학 4문항, 회로이론 13문항, 전기자기학 6문항, 전기기기 4문항, 전력공학 3문항. 각 문항 5지선다, 정답·해설·PDF 근거 쪽수를 포함합니다.
+- 기능: 문제 목록, 과목별 필터, 키워드 검색, 답안 즉시 채점, 오답만 보기, 브라우저 학습기록 저장 및 초기화.
+- 제공된 「2026년 상반기 한국철도공사(코레일) 전기통신직 복원모의고사」(2026-03-28) PDF 내용을 토대로 문제를 재구성했습니다. **정식 코레일 시험 원문이 아닌 복원모의고사이며, 제공 자료 자체에 일부 변형·미확인 내용이 있을 수 있다고 표기되어 있습니다.**
+- 원본 PDF 파일과 원본 PDF 메타데이터는 저장소에 공개하지 않았습니다. 본 문제은행을 코레일 공식 기출문제로 표시해서는 안 됩니다.
