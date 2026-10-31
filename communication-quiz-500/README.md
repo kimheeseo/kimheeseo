@@ -8,6 +8,17 @@
 
 위 주소는 GitHub Pages 배포가 활성화되어 있어야 열립니다. 열리지 않으면 저장소의 **Settings → Pages**에서 `Deploy from a branch → main → /(root)`로 설정하세요.
 
+## GitHub Pages 404 오류 해결
+
+**GitHub에 파일을 올리는 것만으로 Pages 사이트가 자동 공개되지는 않습니다.** 404 `There isn't a GitHub Pages site here`가 표시된다면 [저장소 Pages 설정](https://github.com/kimheeseo/kimheeseo/settings/pages)에서 다음 항목을 저장하세요.
+
+1. **Source:** `Deploy from a branch`
+2. **Branch:** `main`
+3. **Folder:** `/(root)`
+4. **Save** 클릭
+
+GitHub Pages가 게시된 후 [퀴즈 웹 실행](https://kimheeseo.github.io/kimheeseo/communication-quiz-500/)을 다시 열어 주세요. 배포 완료 전에는 404가 유지될 수 있습니다.
+
 ## 실행
 - **웹 실행:** 위의 [퀴즈 바로 접속](https://kimheeseo.github.io/kimheeseo/communication-quiz-500/) 링크를 통해 `index.html`을 실행하세요.
 - **오프라인 실행:** [index.html](./index.html)을 내려받아 브라우저에서 열면 됩니다. HTML 파일 자체에 문제 500개가 포함되어 있습니다.
