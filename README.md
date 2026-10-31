@@ -31,6 +31,7 @@
 
 - [통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/) — 통신공학 1,029문항 · 무선공학 1,030문항 · 오답 복습·학습 기록 · 면접 자료
 - [서울교통공사 정보통신직 면접 자료](https://kimheeseo.github.io/kimheeseo/quiz500/interview/seoul-metro.html) — 직무·채용 정보 및 예상 질문
+- [코레일 전기통신직 면접 자료](https://kimheeseo.github.io/kimheeseo/quiz500/interview/korail.html) — 이름을 제외한 과거 면접 준비 대본 2종, 답변·꼬리질문 정리
 
 ## 관심 기술
 
