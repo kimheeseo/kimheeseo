@@ -6,8 +6,9 @@
 | --- | --- | --- |
 | 통신공학 1029 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
 | 무선공학 1030 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
+| 면접 자료 | [interview](./interview/) | [면접 자료 목록](https://kimheeseo.github.io/kimheeseo/quiz500/interview/) |
 
-**[Quiz500 선택 화면](https://kimheeseo.github.io/kimheeseo/quiz500/)**
+**[통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/)**
 
 \* 웹 실행 링크는 [GitHub Pages](https://github.com/kimheeseo/kimheeseo/settings/pages)가 `main` / `/(root)` 기준으로 게시된 경우 작동합니다.
 
@@ -25,6 +26,9 @@
 quiz500/
 ├── index.html                        # 과목 선택 화면
 ├── README.md                         # 이 안내 문서
+├── interview/
+│   ├── index.html                    # 면접 자료 - 기관 선택
+│   └── seoul-metro.html              # 서울교통공사 정보통신직 면접 안내
 ├── communication-quiz-500/
 │   ├── index.html                    # 통신공학 앱
 │   ├── README.md
@@ -44,3 +48,9 @@ quiz500/
 - 통신공학: 기출 7문항, 응용 22문항, 총 1029문항.
 - 무선공학: 기출 7문항, 응용 23문항, 총 1030문항.
 - 각 문항에 출처 분류, 원형 번호, PDF 쪽, 정답과 해설을 표시합니다. '기출'은 공식 문제집이 아닌 복원 자료에서 재구성한 문항입니다.
+
+## 면접 자료
+
+- [면접 자료 목록](./interview/) → [서울 교통 공사 정보통신직](./interview/seoul-metro.html)
+- 포함 내용: 2026년 하반기 서울교통공사 정보통신직 채용 정보, 면접 유형·평가요소, 광전송·열차무선·네트워크 등 직무 설명, 기술·상황 예상 질문 12개, 공식 공고 및 직무기술서 링크.
+- 예상 질문은 **학습용 작성 문항**이며 실제 면접 기출문제가 아닙니다. 채용 일정 및 인원은 변경될 수 있으므로 공식 공고를 확인해야 합니다.
