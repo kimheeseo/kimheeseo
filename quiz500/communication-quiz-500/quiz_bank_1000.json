@@ -18672,5 +18672,485 @@
     ],
     "answer": 1,
     "explanation": "P=√3×400×10×0.8≈5.54kW이다. [원문 개념을 변형한 신규 응용 문항]"
+  },
+  {
+    "id": "Q1070",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "옴의 법칙",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "10Ω 저항 양단에 20V를 가하면 저항에서 소비하는 전력은?",
+    "options": [
+      "10W",
+      "20W",
+      "40W",
+      "80W"
+    ],
+    "answer": 2,
+    "explanation": "P=V²/R=400/10=40W. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1071",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "테브난 등가",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "어떤 회로의 테브난 내부저항이 6Ω이다. 부하에 최대 전력을 전달하려면 부하저항은?",
+    "options": [
+      "3Ω",
+      "6Ω",
+      "9Ω",
+      "12Ω"
+    ],
+    "answer": 1,
+    "explanation": "저항성 회로의 최대 전력 전달 조건은 RL=Rth이다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1072",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "병렬 저항",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "4Ω 저항 2개를 병렬로 연결하면 합성저항은?",
+    "options": [
+      "1Ω",
+      "2Ω",
+      "4Ω",
+      "8Ω"
+    ],
+    "answer": 1,
+    "explanation": "1/R=1/4+1/4=1/2이므로 R=2Ω. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1073",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "변압기",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "이상 변압기에서 1차:2차 권선비가 2:1이고 1차 전압이 220V이면 2차 전압은?",
+    "options": [
+      "55V",
+      "110V",
+      "220V",
+      "440V"
+    ],
+    "answer": 1,
+    "explanation": "이상 변압기는 V2/V1=N2/N1이므로 110V. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1074",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "평형 3상",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "평형 3상 부하의 선간전압 400V, 선전류 10A, 역률 0.8일 때 유효전력은 약?",
+    "options": [
+      "3.20kW",
+      "5.54kW",
+      "6.40kW",
+      "8.00kW"
+    ],
+    "answer": 1,
+    "explanation": "P=√3·VL·IL·cosφ=√3×400×10×0.8≈5.54kW. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1075",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "커패시터",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "정전용량이 동일한 두 커패시터 C를 직렬로 연결한 합성용량은?",
+    "options": [
+      "C/4",
+      "C/2",
+      "C",
+      "2C"
+    ],
+    "answer": 1,
+    "explanation": "1/Ceq=1/C+1/C이므로 Ceq=C/2. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1076",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "전하와 에너지",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "정전용량 4F에 2C 전하를 저장했을 때 저장 에너지는?",
+    "options": [
+      "0.25J",
+      "0.5J",
+      "1J",
+      "2J"
+    ],
+    "answer": 1,
+    "explanation": "E=Q²/(2C)=4/8=0.5J. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1077",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "교류실효값",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "정현파 전압의 최댓값이 10V이고 5Ω 저항에 인가되면 평균전력은?",
+    "options": [
+      "5W",
+      "10W",
+      "20W",
+      "50W"
+    ],
+    "answer": 1,
+    "explanation": "Vrms=10/√2, P=Vrms²/5=10W. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1078",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "RC 필터",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "RC 저역통과필터에서 R=1kΩ, C=0.1μF일 때 차단주파수는 약?",
+    "options": [
+      "159Hz",
+      "1.59kHz",
+      "15.9kHz",
+      "159kHz"
+    ],
+    "answer": 1,
+    "explanation": "fc=1/(2πRC)=1/(2π×1000×10^-7)≈1.59kHz. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1079",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "공진주파수",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "L=1mH, C=1μF인 이상 LC 회로의 공진주파수는 약?",
+    "options": [
+      "503Hz",
+      "1.59kHz",
+      "5.03kHz",
+      "15.9kHz"
+    ],
+    "answer": 2,
+    "explanation": "f0=1/(2π√LC)≈5033Hz. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1080",
+    "chapter": "신호와 시스템",
+    "topic": "표본화",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "대역폭 3kHz인 아날로그 기저대역 신호를 이론적으로 완전 복원하기 위한 최소 표본화 주파수 조건은?",
+    "options": [
+      "3kHz 이상",
+      "4kHz 이상",
+      "6kHz 이상",
+      "12kHz 이상"
+    ],
+    "answer": 2,
+    "explanation": "나이퀴스트 표본화 정리에 따라 fs≥2B=6kHz. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1081",
+    "chapter": "디지털화와 다중화",
+    "topic": "양자화",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "8비트 균일 양자화기의 표현 가능한 양자화 레벨 수는?",
+    "options": [
+      "16",
+      "64",
+      "128",
+      "256"
+    ],
+    "answer": 3,
+    "explanation": "양자화 레벨 수는 2^8=256개. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1082",
+    "chapter": "정보·부호이론",
+    "topic": "데시벨 SNR",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "신호전력 대 잡음전력비가 20dB이면 선형 SNR은?",
+    "options": [
+      "10",
+      "20",
+      "100",
+      "200"
+    ],
+    "answer": 2,
+    "explanation": "SNRdB=10log10(SNRlinear)이므로 선형 SNR=100. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1083",
+    "chapter": "디지털 전송",
+    "topic": "QPSK",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "QPSK에서 부호화 비율·오버헤드를 무시할 때 6Mbit/s를 전송하는 심볼률은?",
+    "options": [
+      "1.5MBd",
+      "3MBd",
+      "6MBd",
+      "12MBd"
+    ],
+    "answer": 1,
+    "explanation": "QPSK는 심볼당 2bit이므로 Rs=Rb/2=3MBd. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1084",
+    "chapter": "정보·부호이론",
+    "topic": "샤논 용량",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "대역폭 1MHz, 선형 SNR 15인 이상 채널의 샤논 용량은?",
+    "options": [
+      "2Mbit/s",
+      "3Mbit/s",
+      "4Mbit/s",
+      "5Mbit/s"
+    ],
+    "answer": 2,
+    "explanation": "C=B log2(1+15)=1MHz×4=4Mbit/s. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1085",
+    "chapter": "통신 프로토콜",
+    "topic": "OSI",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "OSI 계층 중 IP 주소와 라우팅이 주로 작동하는 계층은?",
+    "options": [
+      "물리 계층",
+      "데이터링크 계층",
+      "네트워크 계층",
+      "응용 계층"
+    ],
+    "answer": 2,
+    "explanation": "IP는 OSI 네트워크 계층(3계층)에 해당한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1086",
+    "chapter": "디지털 전송",
+    "topic": "광손실",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "동일 광링크에 2dB 손실 구간 2개가 직렬로 존재하면 총 손실은?",
+    "options": [
+      "1dB",
+      "2dB",
+      "4dB",
+      "8dB"
+    ],
+    "answer": 2,
+    "explanation": "로그 단위 손실은 직렬 경로에서 더하므로 2+2=4dB. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1087",
+    "chapter": "디지털 전송",
+    "topic": "dBm",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "광 출력이 10mW이면 dBm 값은?",
+    "options": [
+      "0dBm",
+      "3dBm",
+      "10dBm",
+      "20dBm"
+    ],
+    "answer": 2,
+    "explanation": "P(dBm)=10log10(10mW/1mW)=10dBm. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1088",
+    "chapter": "통신 프로토콜",
+    "topic": "FDD",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "FDD 방식의 송수신 상향·하향 링크 분리 방식으로 가장 적절한 것은?",
+    "options": [
+      "서로 다른 시간 슬롯",
+      "서로 다른 주파수 대역",
+      "서로 다른 IP 주소",
+      "서로 다른 오류정정부호"
+    ],
+    "answer": 1,
+    "explanation": "FDD는 송수신에 서로 다른 주파수 대역을 할당한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1089",
+    "chapter": "정보·부호이론",
+    "topic": "해밍거리",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "최소 해밍거리가 3인 부호가 보장하는 정정 가능 최대 오류 비트 수는?",
+    "options": [
+      "0비트",
+      "1비트",
+      "2비트",
+      "3비트"
+    ],
+    "answer": 1,
+    "explanation": "정정능력 t=floor((dmin-1)/2)=1. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1090",
+    "chapter": "디지털화와 다중화",
+    "topic": "PCM 비트율",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "표본화 8kHz, 표본당 8bit인 PCM 단일 채널의 원시 비트율은?",
+    "options": [
+      "32kbit/s",
+      "48kbit/s",
+      "64kbit/s",
+      "128kbit/s"
+    ],
+    "answer": 2,
+    "explanation": "8,000×8=64,000bit/s. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1091",
+    "chapter": "통신 프로토콜",
+    "topic": "이더넷 MAC",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "기존 반이중 공유형 이더넷의 충돌감지 매체접근 방식은?",
+    "options": [
+      "CSMA/CD",
+      "CSMA/CA",
+      "FDMA",
+      "TDMA"
+    ],
+    "answer": 0,
+    "explanation": "반이중 공유 이더넷은 CSMA/CD를 사용한다. 오늘날 전이중 스위칭 환경과 구분한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1092",
+    "chapter": "전기·전자 기초 (공무원)",
+    "topic": "전류와 전하",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "회로의 단면을 통해 3초 동안 12C가 이동했다면 평균 전류는?",
+    "options": [
+      "2A",
+      "3A",
+      "4A",
+      "12A"
+    ],
+    "answer": 2,
+    "explanation": "I=Q/t=12/3=4A. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "Q1093",
+    "chapter": "디지털 전송",
+    "topic": "정보량",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "서로 독립이고 동일 확률인 10비트 이진 문자열의 가능한 경우의 수는?",
+    "options": [
+      "100",
+      "512",
+      "1024",
+      "2048"
+    ],
+    "answer": 2,
+    "explanation": "2^10=1024개의 문자열을 표현한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
   }
 ]
