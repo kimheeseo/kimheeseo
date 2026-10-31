@@ -1,0 +1,5004 @@
+{
+  "questions": [
+    {
+      "id": "NG2016-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "선형시불변(Linear Time Invariant) 전송시스템에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "주파수 성분이 1개인 신호는 무왜곡(Distortionless) 전송이 가능하다.",
+        "무왜곡 시스템의 진폭응답은 주파수에 대해 상수이다.",
+        "무왜곡 시스템의 위상응답을 주파수에 대해 미분하면 상수가 된다.",
+        "상호변조(Intermodulation) 왜곡이 발생할 수 있다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "4개의 서로 다른 메시지를 아래 표와 같이 7비트로 각각 부호화 하여 전송하는 경우, 수신기에서 부호당 보장되는 정정 가능한 오류의 최대 비트 개수는? 부호화된 메시지 1111111 1010101 1100000 0101010",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "T 시간당 1비트를 전송하는 이진 ASK 파형인 것은?",
+      "options": [
+        "T 2T 3T 0",
+        "T 2T 3T 0",
+        "T 2T 3T 0",
+        "T 2T 3T 0"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "신호   ∞ ∞     ∞ ∞   의 푸리에 급수 계수는?",
+      "options": [
+        "  ",
+        "   ",
+        "  ",
+        "   "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "수퍼헤테로다인 AM 수신기에서 주파수가 1,600kHz인 반송파 신호와 주파수가 2,055kHz인 국부 발진기(Local Oscillator) 출력이 혼합기(Mixer)로 입력된다. 이 혼합기의 출력들 중 선택 되는 신호의 주파수가 455kHz일 때, 이와 동일한 주파수를 얻을 수 있는 영상 주파수(Image Frequency)[kHz]는?",
+      "options": [
+        "690",
+        "910",
+        "1,145",
+        "2,510"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "비트 0과 1을 각각 심벌  ＝－1과 1로 대응시킨 후, 평균과 분산이 각각 0과 2인 가산 백색 가우스 잡음(Additive White Gaussian Noise) 채널을 통해 전송한다. 수신된 신호  ＝－0.2에 대해, ln      로 정의되는 로그-우도(Log-Likelihood) 값을 구하면? (단, f(·|·)는 조건부 확률밀도함수이다)",
+      "options": [
+        "－0.2",
+        "0.2",
+        "－0.1",
+        "0.1"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "대역폭이 이고 중심 주파수가 ( ≫ )인 협대역 가산 백색 가우스 잡음을   cos sin로 표현 할 때, 옳지 않은 것은? (단,   이고, 와 는 각각 의 동위상과 직교 위상 성분이다)",
+      "options": [
+        "가 정상적(Stationary)이면 와 도 정상적이다.",
+        "가 가우스 잡음이면 와 도 가우스 잡음이다.",
+        "와 의 분산은  분산의    이다.",
+        "와 의 전력 스펙트럼 밀도는 동일하다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "메시지 신호 cos를 200Hz 반송파(Carrier Signal)를 사용 하여 AM 변조한 신호가 coscos로 송출될 때, 변조 지수(Modulation Index)  와 변조 효율(Efficiency) 는?  ",
+      "options": [
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "최대 주파수가 20kHz인 아날로그 신호를 나이퀴스트 율로 표본화 한 후 4개 준위(Level)로 양자화하여 심벌을 생성한다. 심벌들은 서로 독립적으로 발생한다고 가정하고 확률은 각각 4/8, 2/8, 1/8, 1/8일 때, 심벌의 정보율(Effective Information Bit Rate) [bits/sec]은?",
+      "options": [
+        "70,000",
+        "64,000",
+        "60,000",
+        "54,000"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "랜덤변수 의 확률밀도함수(Probability Density Function)가     ≥ 일 때, 옳지 않은 것은?",
+      "options": [
+        "평균은 1이다.",
+        "표준편차는 1이다.",
+        "가 1보다 클 확률은  이다.",
+        "    일 때, 의 확률밀도함수      ≥  이다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "아래 그림과 같은 이상 저역 통과 필터 의 시간 영역 응답 는 sinc함수이다. 이때     인 최소  (A 지점) 값은? 역푸리에 변환      sec 0 0 A   1",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "다음 중 FM 변조된 신호의 대역폭에 영향을 미치지 않는 것은?",
+      "options": [
+        "반송파 주파수",
+        "메시지 신호의 대역폭",
+        "변조 지수(Modulation Index)",
+        "메시지 신호의 진폭"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "신호 cos sin     을 표본화할 때, 복원을 보장하는 최대 표본화 주기[ms]는?",
+      "options": [
+        "27",
+        "12.5",
+        "30",
+        "72"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "DSSS(Direct Sequence Spread Spectrum) 통신 방식으로 일체형 송수신기에서 물체까지의 거리를 측정할 수 있다. 송수신기에서 1칩의 주기가 10ns인 PN 수열을 전송한다. 이 신호와 물체에 반사되어 되돌아온 신호와의 최고 자기 상관은 20칩 지연에서 발생하는 것으로 확인되었다. 전파 속도를 × m/s로 가정할 때, 송수신기에서 물체까지의 거리[m]는?",
+      "options": [
+        "60",
+        "30",
+        "15",
+        "7.5"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "실수 주기 신호 의 주파수 크기 스펙트럼이 아래 그림과 같을 때, 옳지 않은 것은?  … …             sec",
+      "options": [
+        "는 기함수가 아니다.",
+        "의 기본주기(Fundamental Period)는    초이다.",
+        "   은 양의 정수이다.",
+        "의 직류 성분은 0이다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "아래 그림은 간략한 AM 변복조 과정의 일부를 보인다. 수신부 신호 에포함되지않는주파수성분은? (단,     이다) 송신부 수신부   cos   cos         cos",
+      "options": [
+        "",
+        "",
+        "",
+        " "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "가산 백색 가우스 잡음(Additive White Gaussian Noise) 환경의 채널용량(Channel Capacity)에 대한 설명으로 옳지 않은 것은? (단, 는 비트당 에너지, 는 단측 잡음 전력 스펙트럼 밀도를 나타낸다)",
+      "options": [
+        "무한 대역폭을 가진 이상적인 채널은 무한한 채널용량을 갖는다.",
+        "정보 비트 전송률이 채널용량보다 큰 경우, 오류 없이 정보를 전송하는 것은 불가능하다.",
+        " ln이면 오류 없이 정보를 전송하는 것은 불가능 하다.",
+        "신호 대 잡음 전력비가 1보다 충분히 크면 채널용량은 신호 대 잡음 전력비에 대하여 대수적(Logarithmic)으로 증가한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "오류 정정 부호화(Error Correction Coding)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "해밍 부호의 경우 입력 메시지가 출력 부호의 일부에 포함될 수 있도록 부호를 설계할 수 있다.",
+        "선형 블록 부호의 최소 거리가 7인 경우 최대 3비트까지의 오류 정정을 보장한다.",
+        "오류 정정 부호화에서 부호율(Code Rate)이 클수록 많은 비트의 오류를 정정할 수 있다.",
+        "콘볼루션 부호의 인코딩 과정에서 과거의 입력 메시지가 현재의 출력 부호에 영향을 줄 수 있다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "가산 백색 가우스 잡음 환경에서 디지털 변조에 대한 설명으로 옳지 않은 것은? (단, 비트당 에너지는 동일하다고 가정한다)",
+      "options": [
+        "BFSK 방식은 동기 BPSK 방식보다 비트 오류 확률이 크다.",
+        "동기 BPSK의 비트 오류 확률은 동기 QPSK의 비트 오류 확률보다 작다.",
+        "DPSK 방식은 반송파의 위상 동기화가 필요 없는 비동기 복조가 가능하다.",
+        "MSK 방식은 연속된 위상을 갖는 정 진폭(Constant Envelope) 변조 방식이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2016-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2016년도 국가직 7급 채용 기출",
+      "year": 2016,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "심벌 개수가 인 －QAM 변조에 대한 설명으로 옳은 것은?",
+      "options": [
+        "성상도(Constellation)상에 개 심벌의 위치는 임의로 설계가 가능하며, 이에 따른 심벌 오류 확률은 항상 동일하다.",
+        "전력 효율은 단위 대역폭당 비트 전송률(bits/sec/Hz)로 정의 된다.",
+        "심벌 오류가 발생했을 때, 인접한 심벌 간에 서로 다른 비트 값의 개수가 적을수록 비트 오류 확률이 커진다.",
+        "2개의 직교축에 각각 독립적인 1차원 PAM 변조기를 사용하여 2차원의 사각(Rectangular) 성상도를 갖는 －QAM 변조기를 구성할 수 있다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2016-subject-048.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "신호 의 푸리에 변환을 라고 할 때, 옳지 않은 것은? (단, *는 컨벌루션 연산이다)",
+      "options": [
+        "  ⇔  ",
+        "  ⇔ ",
+        " ⇔  ",
+        "cos ⇔ "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "FM 수신기의 주파수 판별기(Frequency Discriminator)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "수신신호의 순시주파수에 따라 선형적으로 변화하는 출력 전압을 발생한다.",
+        "적분기 역할을 수행한다.",
+        "판별기의 출력신호를 포락선 검파하여 본래의 정보신호를 검출할 수 있다.",
+        "FM 신호를 AM 신호로 변환하는 역할을 수행한다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "비트전송률이 32,000[bits/s]인 정보를 16-PAM을 통해 전송할 때, 심벌전송률[symbols/s]은?",
+      "options": [
+        "2,000",
+        "4,000",
+        "6,000",
+        "8,000"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "Shannon의 채널용량(Channel Capacity)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "채널의 입력신호와 출력신호 사이의 최소 상호정보(Mutual Information)로 표현된다.",
+        "대역 제한된 AWGN 채널에서는 채널의 대역폭에 대하여 선형적으로 증가한다.",
+        "전송률의 한계를 정하는 것이지 오류의 한계를 정하는 것은 아니다.",
+        "어떤 채널을 통해 전송할 수 있는 최대의 정보량을 나타내는 것이다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "이진 대칭 채널에서 송신 측에서 정보 0과 1을 각각 0.8과 0.2의 확률로 전송한다고 한다. 송신기가 0을 전송했을 때 수신기가 1로 오판할 확률과 1을 전송했을 때 0으로 오판할 확률이 둘 다 0.1이라고 할 때, 송신기에서 10,000 비트를 송신하였을 경우 오류가 난 수신 비트 개수는?",
+      "options": [
+        "100",
+        "1,000",
+        "2,000",
+        "8,000"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "진폭항이 와 의 이산 값만을 갖는 이진 진폭변조 방식에서 수신 신호가 평균이 0이고 분산이 1인 AWGN에 의해서만 영향을 받는다고 한다. 다음 그림에서 과 는 각각 와 의 우도 (Likelihood) 함수라고 할 때, 최소 비트 오류 확률은? (단, 두 이진 데이터의 발생 확률은 같으며, A와 B는 각각 음영된 부분의 면적이다)                                A B 0 ",
+      "options": [
+        "AB",
+        "   AB",
+        "   A",
+        "A"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "다음 그림은 AM 변조의 정보신호 와 전송신호  cos이다. 이 변조 방식에서 와 는? (단,  min 이다)  0 10 6 －10 Envelope   1.5 0 －   ",
+      "options": [
+        "10 0.4",
+        "10 0.6",
+        "6 0.4",
+        "6 0.6"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "스펙트럼확산통신방식(Spread-Spectrum Technology) 중에서 직접확산(Direct Sequence:DS) 방식과 주파수도약(Frequency Hopping:FH) 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "DS방식은 PN부호 발생기가 필요하며, 송신기와 수신기는 같은 PN부호를 사용한다.",
+        "DS방식은 원근문제(Near-Far Problem)가 발생하므로 정밀한 전력제어가 필요하다.",
+        "FH방식의 주파수 도약 속도는 심벌 속도보다 반드시 느려야 한다.",
+        "FH방식은 주파수 합성기가 필요하다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "어떤 DPSK(Differential Phase Shift Keying) 부호화기 회로의 입출력 특성을 설계할 때 입력비트 에 대한 출력비트 을    ⊕로 정하였다. DPSK 전송위상은 출력비트 값이 1일 때는 0으로, 출력비트 값이 0일 때는 로 만들어 전송한다고 할 때, 다음 표 빈칸(굵은 선)의 값은? (단, ⊕는 XOR 연산이며, 표에서 * 표시는 임의의 첫 비트이다)  1 0 0 1 0 0 1  1* DPSK전송위상 0",
+      "options": [
+        "0 0 1 1 0 0 0   0 0   ",
+        "1 0 1 1 0 0 1 0  0 0   0",
+        "1 0 1 1 0 1 1 0  0 0  0 0",
+        "0 1 0 0 1 0 0  0   0  "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "다음 푸리에 변환된 신호 의 시간 영역 표현으로 옳은 것은? 0.25 0      0 ∠        0.5   ",
+      "options": [
+        "   sin    cos",
+        "   sin    cos",
+        "    sin   cos",
+        "    sin   cos"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "다음은 QPSK의 위상선도이다. 전송할 디지털 신호가         ⋯일 때, 변조된 QPSK 심벌의 순서가 옳은 것은? (단, 괄호 안의 신호의 순서는 좌에서 우로 진행한다)  (10)  (00)  (11)  (01)",
+      "options": [
+        "   ",
+        "   ",
+        "   ",
+        "   "
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "디지털 신호의 기저대역 전송을 위한 라인 코드에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "NRZ(Non-Return-to-Zero) 방식은 RZ(Return-to-Zero) 방식에 비해 더 넓은 대역폭을 사용한다.",
+        "RZ 방식은 NRZ 방식에 비해 동기 정보를 추출하기가 쉽다.",
+        "동일한 진폭과 펄스 구간을 사용한다고 가정할 때, 양극성 (Polar) NRZ 방식이 양극성 RZ 방식보다 잡음에 강하다.",
+        "동일한 신호전력을 사용한다고 가정할 때, 단극성(Unipolar) 방식이 양극성 방식에 비해 비트오류 확률이 높다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "어떤 CDMA 시스템의 하향링크(Downlink)에서 Pilot Channel에 길이가 8인 (+1, -1, +1, -1, +1, -1, +1, -1) 코드를 곱하여 전송 한다고 가정하자. 이 시스템에서 하향링크의 다른 채널들은 이 코드와 직교(Orthogonal)하는 코드를 사용한다고 할 때, 사용할 수 없는 코드는?",
+      "options": [
+        "(+1, +1, +1, +1, -1, -1, -1, +1)",
+        "(+1, -1, +1, -1, -1, +1, -1, +1)",
+        "(-1, -1, +1, +1, -1, -1, +1, +1)",
+        "(+1, +1, -1, -1, -1, -1, +1, +1)"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "신호 의 주파수 영역에서의 스펙트럼을 라고 할 때, 를 의 주기로 샘플링한 신호 의 주파수 영역 스펙트럼은?",
+      "options": [
+        "     ",
+        "       ∞ ∞ ",
+        "       ∞ ∞      ",
+        "       ∞ ∞      "
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "1부터 10까지 서로 다른 숫자가 적힌 10장의 카드가 있다. 와  두 사람이 있으며, 가 고른 한 장의 카드를 에게 보여주지 않고 가 그 카드를 맞히는 게임을 하고 있다고 할 때, 옳은 것은?",
+      "options": [
+        "가 가장 맞히기 힘들게 하기 위해서는 는 엔트로피 값이 최저가 되도록 카드를 선택하면 된다.",
+        "가 카드 한 장을 꺼내고 그 카드에 적힌 숫자가 짝수인지 홀수인지 힌트를 줬을 경우가 아무런 힌트를 주지 않는 경우 보다 평균 정보량이 더 높아진다.",
+        "각 숫자가 적힌 카드를 동일한 확률로 꺼낼 때 최대의 엔트로피 값을 얻을 수 있다.",
+        "10장의 카드 중 항상 3 또는 4가 적힌 카드만 동일 확률로 꺼낸다면, 즉 3이 적힌 카드를 꺼낼 확률과 4가 적힌 카드를 꺼낼 확률이 각각 0.5이고 나머지 경우는 0이라면, 엔트로피 값은 0.5log2가 된다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "OFDM(Orthogonal Frequency Division Multiplexing)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "이산 푸리에 역변환을 사용하여 부반송파들 간의 직교성을 유지하는 OFDM 신호를 생성할 수 있다.",
+        "FDM의 일종으로 부반송파들 간의 간섭을 방지하기 위하여 인접한 부반송파들 사이에 주파수 보호대역(Guard Band)이 필요하다.",
+        "신호의 큰 PAPR(Peak-to-Average Power Ratio)은 송신기의 전력증폭기를 포화시킬 수 있다.",
+        "동일한 전송 대역폭의 단일 반송파 전송에 비하여 다중 경로로 인한 ISI(Inter Symbol Interference)의 영향을 덜 받으며, 심벌 사이에 보호시간을 삽입함으로써 ISI를 줄일 수 있다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "무선 이동 통신 채널에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "한 송신기로부터 장소는 다르지만 거리가 같은 곳에 있는 수신기들의 평균 수신전력은 서로 다를 수 있다.",
+        "경로손실에 영향을 미치는 요인들로 기지국 안테나 높이, 이동국 안테나 높이, 반송파의 주파수 등이 있다.",
+        "전송신호가 서로 다른 시간 지연을 갖는 다중 전파 경로를 통해 수신기에 도달한다.",
+        "도플러 주파수 변이는 이동성으로 인하여 발생하고 반송파의 주파수가 낮을수록 변이 값이 크다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "다음 그림은 부호화율이 1 2 인 컨벌루션 부호(Convolutional Code)를 위한 부호화기(Encoder)와 해당 부호화기의 동작을 나타내는 상태도(State Diagram)이다. 상태도에서 사각형 안의 숫자는 부호화기의 상태(State)를 의미하고, 화살표 중간에 적혀 있는 숫자는 화살표에 따른 상태 천이(Transition) 시 발생되는 부호 (Codeword)인 를 나타낸다. ㉠, ㉡, ㉢에 들어갈 부호 값은? 10 00 11 01 00 10 00 10 01 ㉠ ㉡ ㉢ Input Input bit 1 Input bit 0   ㉠ ㉡ ㉢",
+      "options": [
+        "01 11 11",
+        "00 11 01",
+        "01 10 01",
+        "00 10 11"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "대역폭이 3[kHz]로 대역 제한(Band Limited)된 10개의 기저대역 (Baseband) 음성신호를 1[kHz]의 채널 간 보호대역(Guard Band)을 고려하여 FDM 하려고 한다. 변조 방식으로 양측파대(Double Side Band:DSB)를 사용할 때, 변조 후 FDM된 신호의 대역폭[kHz]은?",
+      "options": [
+        "30",
+        "39",
+        "60",
+        "69"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2017-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2017년도 국가직 7급 채용 기출",
+      "year": 2017,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "두 확률변수 와 의 결합확률밀도함수가 다음과 같을 때, 옳지 않은 것은? (단, 상수 와 는 0이 아니다)   exp  ≤   ∞  ≤   ∞",
+      "options": [
+        "  를 항상 만족한다.",
+        "     exp이다.",
+        "  를 항상 만족한다.",
+        "와 는 항상 양수이다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2017-subject-050.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "한 개의 정현파 메시지 신호를 FM 변조하여 송신할 때, 복조 신호의 S/N(signal-to-noise ratio)에 영향을 주지 않는 것은?",
+      "options": [
+        "변조 지수",
+        "메시지 신호의 진폭",
+        "메시지 신호의 초기 위상",
+        "메시지 신호의 주파수"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "랜덤 변수 의 확률 밀도 함수(probability density function) 가 다음과 같을 때, 상수 의 값은?      ≤  ≤   그 외 구간",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "소스 심벌(source symbol) , , , 의 발생 확률이 각각 , , , 일 때, 소스 심벌 엔트로피(entropy)의 최댓값[bits/ symbol]은? (단,         이다)",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "신호 sin cos의 푸리에(Fourier) 계수는?",
+      "options": [
+        ", ",
+        ", ",
+        ", ",
+        ", "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "한 심벌 시간이 인 비동기 2진 FSK 시스템에서 주파수가 과 인두개의정현파를이용하여변조를수행한다. 이때, 두정현파가 직교하기 위한  의 최솟값[Hz]은? (단,   이다)",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "랜덤 변수(random variable) 와 에 대한 설명으로 옳지 않은 것은? (단, 기댓값  와  는 0이 아니고, Cov는 와 의 공분산이다)",
+      "options": [
+        "   일 때, Cov  이다.",
+        "와 가 서로 독립일 때, Cov  이다.",
+        "  일 때, Cov는 의 분산과 같다.",
+        "랜덤 변수   일 때,      이다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "평균과 분산이 각각 0과 1인 개의 가우시안(Gaussian) 랜덤 변수  (    )가 서로 통계적으로 독립일 때, 옳지 않은 것은?",
+      "options": [
+        "      는 가우시안 랜덤 변수이다.",
+        "       는 레일리(Rayleigh) 확률 밀도 함수를 갖는다.",
+        ", 의 결합 확률 밀도 함수는       exp       이다.",
+        "    의 평균은 0이고 분산은 1이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "신호 와   cos   를 지수형 푸리에 급수 (exponential Fourier series)로 전개하였을 때, 번째 고조파 푸리에 계수가 각각 와 이다. 와 의 관계로 옳은 것은? (단, 의 주기는 이다)",
+      "options": [
+        "      ",
+        "      ",
+        "      ",
+        "      "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "다음 그림은 주기가 인 연속 신호 를 시간 영역에서 표현한 것이다. 신호 에 대한 설명으로 옳지 않은 것은? t 1 x(t)        0           ",
+      "options": [
+        "는 주파수 영역에서 이산(discrete) 스펙트럼으로 나타난다.",
+        "가 일정할 때, 가 커질수록 스펙트럼 포락선의 주엽(main lobe) 폭은 좁아진다.",
+        "가 작을수록 스펙트럼 포락선의 주엽 폭은 넓어진다.",
+        "를 지수형 푸리에 급수로 전개하면 푸리에 계수는 실수가 된다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "부호율이    인 조직적(systematic) 순환(cyclic) 부호기의 생성 다항식(generator polynomial)이    일 때, 입력 정보 비트 ‘1010’에 대한 출력 부호어는? (단, 정보 비트 ‘1010’을 다항식으로 표현하면  이다)",
+      "options": [
+        "1011001",
+        "0011001",
+        "1111001",
+        "0011010"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "양측파대 억압 반송파(DSB-SC) 변조에서 메시지 신호가   coscos이고 반송파 신호가   cos일때, 변조된신호의상측파대(upper sideband) 스펙트럼 신호 성분으로 옳은 것은? (단,   MHz이다)",
+      "options": [
+        "cos cos ",
+        "cos cos ",
+        "cos cos ",
+        "cos cos "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "동시에32개의 PCM 부호화된 전화 음성 채널을 TDM(time division multiplexing)하여 전송할 때, 모든 채널의 음성을 끊어지지 않고 재생할 수 있는 최소 전송률[Mbps]은? (단, 각 아날로그 음성 신호는 4kHz로 대역 제한되고, 나이퀴스트 주파수로 샘플링 후 샘플당 8비트로 양자화 및 부호화된다)",
+      "options": [
+        "2.048",
+        "1.544",
+        "1.024",
+        "0.772"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "대역 제한 AWGN(additive white Gaussian noise) 무기억 채널에서 수신S/N은31이다. 샤논의채널용량(Shannon's channel capacity)이 40kbps로 계산될 때, 필요한 최소 전송 채널 대역폭[kHz]은?",
+      "options": [
+        "64",
+        "32",
+        "16",
+        "8"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "송신 심벌 와 수신 심벌 의 평균 상호 정보량  에 대한 설명으로 옳지 않은 것은? (단,  와  는 엔트로피,  는 결합 엔트로피,   는 조건부 엔트로피이다)",
+      "options": [
+        "      ",
+        "      ",
+        "  ≥ ",
+        "채널 용량은 평균 상호 정보량의 최댓값으로 정의된다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "그림과 같이 단위 직교 함수 축 와 상에 표현한 16-QAM 변조 방식의 성상도에서 첨두 대 평균 전력비(peak-to-average power ratio)는? (단, 신호점            를 의미 하고, 단위 직교 함수의 에너지는     이다)  －3 －1 1 3 3 1 －1 －3 －2  2 －2 2 0 ( )",
+      "options": [
+        "1.8",
+        "1.2",
+        "0.9",
+        "9"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "300Hz와 10kHz인 정현파 신호를 각각 변조 지수 과 로 FM 변조하였을 때, 변조된 신호의 최대 주파수 편이는 60kHz로 모두 같았다. 이때,  의 절댓값은?",
+      "options": [
+        "200",
+        "198",
+        "196",
+        "194"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "디지털 변복조 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "그레이(Gray) 부호를 적용하여 16-QAM 성상도의 각 심벌에 4비트로 구성된 서로 다른 비트열을 할당할 때, 인접한 두 심벌 비트열 간의 해밍 거리는 항상 1이다.",
+        "OQPSK 변조된 신호의 스펙트럼 주엽은 MSK 변조된 신호의 스펙트럼 주엽에 비해 좁다.",
+        "2진 신호 전송에서 송신 신호 간의 상관 계수(correlation coefficient) 값은 정합 필터를 이용한 수신기의 수신 오류율에 영향을 주지 않는다.",
+        "상승 코사인(raised cosine) 스펙트럼의 롤 오프 율(roll-off factor)이 커질수록 스펙트럼 주엽이 넓어진다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "다음의 FM 변조된 신호 의 대역폭[Hz]은? (단, 카슨의 법칙 (Carson's rule)을 이용한다)   cos sincos",
+      "options": [
+        "600",
+        "1,000",
+        "1,200",
+        "2,200"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "컨볼루션 부호(convolutional code)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "부호기의 출력은 이전에 입력된 정보 비트의 영향을 받는다.",
+        "부호기의 출력은 입력 정보 비트와 잉여 비트로 구분된다.",
+        "부호기의 동작을 상태 천이도로 표현할 수 있다.",
+        "복호 방식으로 비터비(Viterbi) 알고리즘을 사용할 수 있다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2018-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2018년도 국가직 7급 채용 기출",
+      "year": 2018,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "이동통신에서 사용하는 다양한 다중 안테나 기술에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "수신 안테나 다이버시티(diversity) 기법은 채널 페이딩으로 인한 수신 성능 저하를 완화할 수 있다.",
+        "기지국에서 빔포밍(beamforming) 기법을 적용하면 특정한 단말기의 수신 신호 세기를 증가시킬 수 있다.",
+        "기지국에서 송신 안테나 다이버시티 기법을 적용할 때, 다이버시티이득은이웃안테나간의거리에따른상호상관도의 영향을 받는다.",
+        "기지국에서 4개의 송신 안테나, 단말기에서 1개의 수신 안테나를 사용하여 공간 다중화(spatial multiplexing) 기법을 적용하면, 다중 안테나 기술을 적용하지 않는 경우에 비해 최대 전송률 (peak data rate)을 4배까지 증가시킬 수 있다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2018-subject-052.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "연속랜덤변수 의 확률밀도함수(probability density function)가             for  ≤  ≤    일때, 는?(단, ∙는 랜덤변수의 기댓값이다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "에너지 신호와 전력 신호에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "신호가 유한한 에너지값을 가질 경우 에너지 신호라고 한다.",
+        "에너지 신호는 평균 전력이 0이다.",
+        "일반적으로 주기 신호는 전력 신호로 분류된다.",
+        "전력 신호의 에너지는 유한하다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "아날로그 변조의 대표적 방식인 진폭 변조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "양측파대 변조의 두 개의 측파대 중에서 하나의 측파대만 전송해도 전송 신호에서 정보의 손실은 발생하지 않는다.",
+        "양측파대 전송 반송파 변조(Double Side Band Transmitted Carrier)의 경우 포락선 검파에 의한 간단한 복조도 가능하다.",
+        "양측파대 중 원하지 않는 측파대를 완전히 제거하여 전송하는 방식을 잔류 측파대 변조(Vestigial Side Band)라 한다.",
+        "단측파대 변조(Single Side Band)는 양측파대 변조 방식에 비해 절반의 대역폭만 사용한다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "각각의그림과설명이나타내는다중접속방식을바르게나열한것은? (가) 가입자에게 겹치지 않는 서로 다른 주파수 대역을 배정 (나) 가입자에게 겹치지 않는 서로 다른 시간 슬롯을 배정 (다) 두 가입자가 시간과 주파수를 공유하며, 직교하는 코드를 서로 다른 전력으로 전송 (라) 주파수 대역에서 가입자 간 부채널이 중첩되지만, 직교성을 유지하는 서로 다른 부채널을 하나 이상 배정하며, 동일 시간에 여러 가입자에게 전송 (가) (나) (다) (라)",
+      "options": [
+        "TDMA FDMA CDMA OFDMA",
+        "TDMA FDMA OFDMA CDMA",
+        "FDMA TDMA CDMA OFDMA",
+        "FDMA TDMA OFDMA CDMA"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "가 구간 [0, a]에서 균일 확률밀도함수(uniform probability density function)를 갖는 연속랜덤변수일 때, 평균 와 분산 는? (단, a>0 이다)  ",
+      "options": [
+        "     ",
+        "   ",
+        "   ",
+        "     "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "신호 의 푸리에 변환 가 그림과 같을 때, 신호 의 에너지[joule]는?  [Hz] 0.5 -4 4",
+      "options": [
+        "2",
+        "4",
+        "20",
+        "40"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "4개의 신호    가 각각 1/2, 1/4, 1/6, 1/12의 확률로 발생하는 정보원이 있다. 각 신호들이 통계적으로 독립일 때, 정보원의 엔트로피(entropy)는? (단, log≒로 계산한다)",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "오류정정부호(error control code)에 해당하지 않는 것은?",
+      "options": [
+        "BCH 부호",
+        "Reed Solomon 부호",
+        "Lempel Ziv 부호",
+        "길쌈 부호"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "그림과 같은 이진 대칭 채널(binary symmetric channel)에서 정보원 의 0과 1의 발생확률은 각각     ,      이고, 교차확률은              이다. 이러한 채널에서   이 수신되었을 때,   일 확률     는? (단,                  이다)                          ",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "터보 코드(turbo code)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "연접 부호화 방식을 사용한다.",
+        "터보 복호화 알고리즘은 반복 복호화 과정을 사용한다.",
+        "인터리빙 기법을 사용한다.",
+        "복호화에서는 성능 향상을 위해 경판정 알고리즘을 사용한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "정현파메시지신호 를반송파 cos로양측파대억압 반송파 변조(DSB-SC)를 하였다. 변조된 신호의 상측파대(USB)와 하측파대(LSB) 주파수의 양(＋)의 값을 각각 , 라고 하고 차이 값( )이 200[Hz]일 때, 메시지 신호 는?",
+      "options": [
+        "cos",
+        "cos",
+        "cos",
+        "cos"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "단위 임펄스 함수 에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "  에서만 ≠이다.",
+        "∞ ∞   이다.",
+        "를 푸리에 변환하면 상수가 된다.",
+        "∞ ∞   ∞이다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "진폭이 작은 신호에 대해 양자화(quantization) 잡음을 줄이는 방법으로 옳지 않은 것은?",
+      "options": [
+        "양자화 비트 수를 늘린다.",
+        "등화(equalization) 기법을 적용한다.",
+        "압신(companding) 기법을 적용한다.",
+        "비균일 양자화 기법을 적용한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "12[Mbits]의이미지파일을64－QAM으로변조하여1[Msymbols/s]의 심볼률로 전송할 때, 이미지 파일을 모두 전송하는 데 걸리는 시간[s]은?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "다음 그림의 AM 변조기에서 입력신호가   cos일 때, 변조지수 과 전력효율 [%]는? (단,       ≠  ≫ 이다) ＋   cos   ",
+      "options": [
+        "       ×",
+        "       ×",
+        "       ×",
+        "       ×"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "두 개의 신호 , 를 각각 데이터 비트 0, 1에 대응시켜 전송할 때, 발생할 확률이 0.5로 동일하다. 잡음이 없는 경우 를 전송하면 수신 신호는    이고, 를 전송하면    이 된다. 잡음이 있는 경우 수신 신호를    와 같이 표현하고, 필터 출력 가 0보다 큰 경우와 작은 경우를 각각 수신된 데이터 비트 1과 0으로 판정할 때, 비트 오류 확률은? (단, 잡음 성분 는 다음과 같은 의 조건부 균일 확률밀도함수(uniform probability density function)를 만들어 내는 랜덤변수이다)    for  ≤  ≤       for  ≤  ≤   ",
+      "options": [
+        "0.1",
+        "0.2",
+        "0.25",
+        "0.5"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "디지털 통신의 비트율과 심볼률에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "비트 폭(bit duration)이 20[]인 통신 시스템의 비트율은 50[kbps]이다.",
+        "어떤 8－PAM 통신에서 메시지 신호의 대역폭이 3[kHz]일 때, 이 통신 시스템의 심볼간 간섭(ISI)이 없도록 하는 최소 비트율은 18[kbps]이다.",
+        "한 영문자를 8비트로표현하여 전송하는QPSK 통신 시스템에서 초당 2,000개의 영문자를 전송할 때, 이 통신 시스템의 심볼률은 4,000[symbols/s]이다.",
+        "초당 14,400개로 표본화한 신호를 256－단계 균일 양자화 (uniform quantization) 방식으로 부호화하여 전송할 때, 이 통신 시스템의 비트율은 115.2[kbps]이다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "코드분할 다중접속(CDMA) 시스템의 특징으로 옳지 않은 것은?",
+      "options": [
+        "사용자 간 PN 코드의 비트열이 상이하므로 통신 보안이 제공된다.",
+        "대역확산 CDMA의 경우 처리 이득(processing gain)을 얻을 수 있다.",
+        "CDMA 신호는 넓은 주파수 대역으로 신호를 확산시켜 전송하므로 협대역 전파 방해에 강하다.",
+        "피크대평균 전력비(peak-to-average power ratio)가 높아 출력신호가 왜곡된다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "그림과 같은 주기 신호 가 FM 변조기에 입력될 때, 변조된 신호 cos   의최대주파수편이[Hz]는? 0.002 sec  －0.0005 －0.002 0.0005 1",
+      "options": [
+        "25",
+        "50",
+        "100",
+        "10,000"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2019-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2019년도 국가직 7급 채용 기출",
+      "year": 2019,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "는 송신기에서 전송되는 값이며, 은 전송 채널에서 발생하는 가산성잡음이다. 이때, 와은서로독립이며, 각각 ≤  ≤ ,  ≤  ≤ 의 범위에서 균일 확률밀도함수(uniform probability density function)를 갖는 연속랜덤변수이다. 수신기에서 수신되는 신호가   일 때, 의 확률밀도함수는?",
+      "options": [
+        "        for    ≤   for    ≤   ",
+        "        for    ≤   for    ≤   ",
+        "        for    ≤   for    ≤   ",
+        "        for    ≤   for    ≤   "
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2019-subject-051.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "균일 확률 분포를 갖는 확률 변수(random variable) X의 확률 밀도 함수(probability density function)가     ≤  ≤   otherwise 일 때, 상수 a값과 X의 분산값은? a X의 분산",
+      "options": [
+        "   12",
+        "   3",
+        "   12",
+        "   3"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "주기 신호   sin일 때, 복소 푸리에 급수     ∞ ∞    의 계수 과 의 값은?  ",
+      "options": [
+        "＋1 －1",
+        "－2 ＋2",
+        "＋ －",
+        "－ ＋"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "디지털 복조 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "비동기식 포락선 검파 방식을 이용하여 PSK 신호를 복조할 수 있다.",
+        "비동기식 복조는 수신 신호의 반송파 위상정보를 이용하지 않고 복조하는 방식이다.",
+        "동기식 복조 방식은 비동기식 복조 방식과 비교해 수신 오류 확률 성능이 우수하다.",
+        "정합 필터(matched filter)를 이용한 복조 방식은 동기식 복조 방식의 일종이다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "PM(Phase Modulation) 변조된 신호 s()＝10cos{2000 ＋ 10－3cos(100)}의 최대 위상 편이는?",
+      "options": [
+        "1",
+        "0.1",
+        "0.01",
+        "0.001"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "송신된 임펄스 신호 가 특정 무선 전송 채널을 통과하여 그림과 같이 N개의 임펄스 신호로 수신되었다. 이 채널을 이용하는 무선 전송 시스템의 특성으로 옳지 않은 것은? (단,         ≤ , ≠) …              수신신호 h() 0",
+      "options": [
+        "지연확산(delay spread)이 심볼 구간(symbol duration)에 비해 커질수록 심볼 간 간섭(ISI: Inter-Symbol Interference)이 더 발생하여 수신 오류 확률이 커지는 현상이 발생한다.",
+        "지연확산이 심볼 구간에 비해 크면 시간 선택적 페이딩(time selective fading) 채널이 되어, 채널의 특성이 시간에 따라 변화한다.",
+        "OFDM 방식을 사용하여 부반송파(sub-carrier)의 개수를 증가시킬수록 지연확산에 의한 영향을 줄일 수 있고, 수신기 구조도 간단해진다.",
+        "OFDM 방식을 사용하는 경우, 지연확산에 의한 영향을 줄이기 위해 순환확장(CP: cyclic prefix)을 사용하며, 지연확산의 크기를 고려하여 CP의 길이를 설계해야 한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "N개의 서로 다른 심볼 종류를 갖는 메시지 정보원(information source) 집합의 정보량과 엔트로피에 대한 설명으로 옳지 않은 것은? (단, i번째 심볼 의 발생 확률을 로 표현하고, 발생하는 심볼들은 서로 통계적으로 독립이다)",
+      "options": [
+        "엔트로피는정보원의심볼출력당평균정보의양으로정의된다.",
+        "정보량을 비트로 표현할 때, 자기 정보(self information) I()＝－log2()이다.",
+        "집합에 속하는 심볼들의 발생 확률이 모두 같을 때, 엔트로피는 최대가 된다.",
+        "서로 다른 발생 확률을 갖는 이진 정보원(N＝2)의 집합을 X라 할 때, 엔트로피 H(X)는 0≤H(X)≤2이다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "통과대역(bandpass) 디지털 통신 시스템을 다음과 같은 조건으로 설계한다고 할 때, 주어진 조건에서 왜곡 없이 송신 가능한 1초당 최대 데이터 비트의 수[Mbps]는? ○ 채널 대역폭: 10[MHz] (보호 대역은 고려하지 않는다) ○ 변조 방식: 64－QAM ○ 컨볼루션부호(convolution code)의부호화율(code rate):    ○ Rs의 심볼 전송률[sps]로 변조 심볼을 전송하기 위해 2Rs의 대역폭[Hz]을 차지하는 펄스 성형을 사용한다.",
+      "options": [
+        "60",
+        "30",
+        "15",
+        "  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "대역 제한(bandwidth-limited)된 기저대역(baseband) 디지털 전송 시스템에서 16－PAM(Pulse Amplitude Modulation) 방식을 사용하여 10[Mbps] 데이터 전송률을 얻고자 할 때, 심볼 간 간섭(ISI)이 발생하지 않도록 전송하는 데 필요한 나이퀴스트 (Nyquist) 최소 대역폭[MHz]은?",
+      "options": [
+        "10",
+        "5",
+        "2.5",
+        "1.25"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "임펄스 응답 함수   rect  을 갖는 선형 시불변 시스템(linear time invariant system)에 대한 설명으로 옳은 것은? (단, rect     ≤  ≤   otherwise 이다)",
+      "options": [
+        "BIBO(Bounded Input Bounded Output) 특성을 갖는 안정적인 시스템이다.",
+        "인과성(causal)이 있는 시스템이다.",
+        "한정된 대역폭을 가지며 입력 신호의 크기를 주파수별로 일정하게 증폭시키는 시스템이다.",
+        "주파수축 위상 응답 특성이 상수인 시스템이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "BPSK, QPSK, BFSK의 성능에 대한 설명으로 옳은 것은?",
+      "options": [
+        "동기식 복조 방식을 사용하여 동일한 비트 오류 확률 성능을 얻고자 할 때, BFSK 방식은 BPSK 방식에 비해 비트당 에너지가 더 많이 필요하다.",
+        "QPSK와 BPSK의 신호 대역폭이 동일할 때, QPSK 방식은 BPSK 방식과 동일한 비트 전송률을 갖는다.",
+        "동기식 복조 방식을 사용하여 동일한 비트 오류 확률 성능을 얻고자 할 때, QPSK 방식은 BPSK 방식에 비해 비트당 에너지가 약 2배 더 필요하다.",
+        "같은 비트당 에너지로 전송할 때 BPSK, QPSK, BFSK 방식은 모두 동일한 대역폭 효율(bandwidth efficiency)을 갖는다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "AWGN(Additive White Gaussian Noise) 채널 환경에서 평균 수신 신호 전력이 15[W], 평균 잡음 전력이 5[W]이고, 오류 없이 전송할 수 있는 최대 전송률이 10[Mbps]이라고 할 때, 요구되는 최소 전송 채널 대역폭[MHz]은?",
+      "options": [
+        "1",
+        "2.5",
+        "5",
+        "10"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "메시지 신호 m()＝Amcos(2fm)를 이용하여 반송파 c()＝ Accos(2fc)를 변조한 후 전송되는 신호 s()＝m()c()에 대한 설명으로 옳은 것은? (단, fm≪fc, Am과 Ac는 상수로 양(＋)의 값을 갖는다)",
+      "options": [
+        "s()는 포락선 검파가 가능하다.",
+        "m()가 0을 지날 때, s()는 위상 반전(phase reversal)이 일어난다.",
+        "s()의 양측(two-side) 진폭 스펙트럼에서 주파수 (fc＋fm)의 크기는    이다.",
+        "s()의 양측 진폭 스펙트럼에서 주파수 fc의 크기는    이고, 메시지 신호의 전력과 함께 반송파의 전력도 전송된다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "백색 잡음(white noise)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "전력 스펙트럼 밀도는 주파수에 따라 크기가 서로 다르게 나타난다.",
+        "자기 상관 함수(autocorrelation function)      이다.",
+        "백색 잡음이 이상적인(ideal) 저역 통과 필터를 통과한 경우, 그 신호의 자기 상관 함수는 시간 영역에서 sinc 함수로 표현된다.",
+        "전력 스펙트럼 밀도는 절대온도에 비례한다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "4G LTE(Long-Term Evolution) 및 5G 이동통신 시스템의 다중접속 기술로 사용되는 OFDMA(Orthogonal Frequency Division Multiple Access)에 대한 설명으로 옳은 것은?",
+      "options": [
+        "CDMA 방식에 비해 인접 셀 간의 간섭 영향이 적어 셀 간 간섭조정(inter-cell interference coordination) 절차가 필요 없다.",
+        "CDMA 방식에 비해 상대적으로 낮은 PAPR(Peak-to-Average Power Ratio)를 가지므로 작은 백오프(back-off)를 갖는 전력 증폭기를 사용할 수 있다.",
+        "OFDMA 시스템에서는 각 사용자의 채널 품질을 고려하여 주파수 자원을 적응적으로 각 사용자에게 할당함으로써 전체 시스템의 처리율(throughput)을 증대할 수 있다.",
+        "OFDMA에서는 다수의 사용자가 주파수 자원을 나누어 데이터를 송수신하기 때문에 각 사용자 신호의 구분을 위해 직교 부호 (orthogonal code)를 할당하여 사용한다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "채널 부호(channel coding) 기법에 대한 설명으로 옳지 않은 것은? (단, 와 는 각각 비트당 에너지와 단측(one-side) 잡음 전력 스펙트럼 밀도이다)",
+      "options": [
+        "채널 부호 기법을 적용함으로써, 동일한 비트 오류 확률을 얻기 위해 필요한 /가 줄어든 정도를 부호화 이득(coding gain)이라고 한다.",
+        "동일한 변조 방식을 사용하는 경우, 채널 부호 기법을 적용한 시스템은 이 기법을 적용하지 않은 시스템에 비해 모든 /에 대해 수신 비트 오류 확률 성능이 좋다.",
+        "터보 부호(turbo code)와 LDPC(Low Density Parity Check) 부호는 반복 복호 과정을 통해 수신 성능을 개선할 수 있다.",
+        "컨볼루션 부호(convolution code)에서 구속장 길이(constraint length) K가 커질수록 수신 비트 오류 확률 성능은 개선되지만, 구현 복잡도가 증가한다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "다음과 같이 정의된 선형 블록부호(linear block code)의 부호화 (encoding) 과정에 대한 설명으로 옳지 않은 것은? 정보어 심볼 00 01 10 11 부호어 심볼 00000 01101 10110 11011",
+      "options": [
+        "부호율은    이다.",
+        "최소 해밍 거리는 4이다.",
+        "오류 정정 능력은 1이다.",
+        "오류 검출 능력은 2이다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "메시지 신호 m()＝2cos(2000)를 반송파 주파수 fc＝1[MHz], 최대 주파수 편이 4[kHz]로 주파수 변조(frequency modulation) 를 할 때, 변조된 신호의 편이율(deviation ratio) 와 주파수 변조 대역폭 BFM [kHz]은?  BFM",
+      "options": [
+        "1 4",
+        "2 6",
+        "4 8",
+        "4 10"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "시간 축의 신호   sinc를 샘플링 할 때, 앨리어싱 효과(aliasing effect)가 발생하지 않도록 하는 샘플링 주기[초]의 최댓값은? (단, sinc    sin 이다)",
+      "options": [
+        "0.005",
+        "0.01",
+        "0.05",
+        "0.1"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "통과대역(bandpass) 대역폭이 1[MHz]인 채널을 통해 신호를 전송할 때, 롤오프 인수(roll-off factor)가 0.25인 상승 코사인 필터(raised cosine filter)를 이용한다. 신호 왜곡이 발생하지 않는 최대 심볼 전송률[sps]은?",
+      "options": [
+        "400,000",
+        "800,000",
+        "1,000,000",
+        "1,600,000"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2020-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2020년도 국가직 7급 채용 기출",
+      "year": 2020,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "확률 변수(random variable) , , 에 대한 설명으로 옳지 않은 것은? (단,  [ ]는 의 기댓값을 의미한다)",
+      "options": [
+        "의 분산   는 의 2차 중심 모멘트(central moment)이다.",
+        "와 가 서로 독립(independent)이면,  [ ]＝ [ ] [ ] 이다.",
+        "와 가 모두 평균이 0이고 분산이  인 독립가우시안 분포를 가지면, 새로운 확률 변수      은 레일레이 (Rayleigh) 확률 분포를 따른다.",
+        "와 의 상관 계수(correlation coefficient) 값이 이면, 와 는 서로 독립이다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-2020-subject-052.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "신호 에 대한 푸리에 변환을 라고 정의하고  ↔로 표기할 때, 푸리에 변환의 성질로 옳은 것만을 모두 고르면? ㄱ.   ↔   ㄴ.   ↔   ㄷ.  ↔     ㄹ.  ↔ ",
+      "options": [
+        "ㄱ, ㄴ",
+        "ㄱ, ㄹ",
+        "ㄴ, ㄷ",
+        "ㄷ, ㄹ"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "통신 채널이 왜곡 없이 신호를 전송하는 이상적인 선형 시불변 시스템일 때, 이 시스템의 주파수 특성에 대한 설명으로 옳은 것은?",
+      "options": [
+        "진폭 스펙트럼은 주파수에 대해 선형 함수이고, 위상 스펙트럼은 주파수에 대해 일정한 상수이다.",
+        "진폭 스펙트럼은 주파수에 대해 일정한 상수이고, 위상 스펙트럼은 주파수에 대해 선형 함수이다.",
+        "진폭 스펙트럼은 주파수에 대해 선형 함수이고, 위상 스펙트럼은 주파수에 대해 비선형 함수이다.",
+        "진폭 스펙트럼은 주파수에 대해 비선형 함수이고, 위상 스펙트럼은 주파수에 대해 선형 함수이다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "임펄스(Dirac 델타) 함수 에 대한 특성으로 옳지 않은 것은?",
+      "options": [
+        "를 푸리에 변환하면 진폭 스펙트럼 크기가 ∞이다.",
+        "∞ ∞   이다.",
+        "sin      cos이다. (단, *는 컨볼루션 연산이다)",
+        "∞ ∞    이다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "가산성백색가우시안잡음(AWGN: additive white Gaussian noise)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "자기상관함수는 sinc이다. (단, 는 백색잡음의 단측 전력스펙트럼밀도이다)",
+        "모든 주파수 대역에서 균일한 전력스펙트럼밀도를 갖는다.",
+        "특정 시간에 관찰하면 가우시안 확률밀도함수를 갖는다.",
+        "전송 채널에서 더해지는 잡음으로 모델링된다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "다섯 개의 알파벳 A, B, C, D, E의 발생 확률이 각각 0.25, 0.25, 0.25, 0.125, 0.125인 정보원(information source)의 엔트로피[bits/ symbol]는?",
+      "options": [
+        "1.5",
+        "1.75",
+        "2",
+        "2.25"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "연집오류(burst error) 문제를 해결하기 위해 사용되는 인터리빙 (interleaving)과 역인터리빙(deinterleaving)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "인터리빙은 송신기에서 보내고자 하는 정보 데이터의 순서를 바꾸는 과정이다.",
+        "인터리빙은 송신기의 채널부호기 전에 처리되고, 역인터리빙은 수신기의 채널복호기 후에 처리된다.",
+        "블록 인터리빙에서 블록의 크기가 커지면 처리 과정 시 필요한 메모리 개수가 많아지는 단점이 있다.",
+        "역인터리빙은 송신기의 인터리빙에 의해 바뀐 데이터 순서를 수신기에서 원래 순서로 복원하는 과정이다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "50개의부반송파 채널을 데이터전송에사용하는 OFDM 시스템에서 OFDM 심볼 간격은 10[s]이고 부반송파 채널은 모두 64-QAM 변조 방식을 사용할 때, 이 시스템이 전송할 수 있는 비트 전송률[Mbps]은?",
+      "options": [
+        "30",
+        "32",
+        "300",
+        "320"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "엔트로피에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "엔트로피는 정보원의 출력당 평균 정보 함유량으로 정의된다.",
+        "엔트로피는 정보원의 불확실성을 측정하는 척도이다.",
+        "영문자 26개의 발생 확률이 동일할 때, 엔트로피는 log이다.",
+        "정보원이 두 개의 알파벳으로 구성될 때, 각 알파벳의 발생 확률 차이가 증가하면 엔트로피는 증가한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "디지털 변조 신호 가 다음과 같을 때, 이 변조 방식에 대한 설명으로 옳지 않은 것은? (단, 는 평균 심볼 에너지, 는 심볼 주기, 는 반송파 주파수,    는 백색잡음의 양측 전력 스펙트럼밀도이고,      이다)        cos      ,  ≤  ≤ ",
+      "options": [
+        "비트 전송률은 심볼 전송률의 두 배이다.",
+        "서로 직교하는 두 개의 BPSK 신호의 합으로 볼 수 있다.",
+        "  과   일 때의 두 신호는 서로 의 위상 차를 갖는다.",
+        "AWGN 채널 환경에서 비트에러율(bit error rate)은       이다. (단, ∙는  －함수이다)"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "메시지 신호   cos를 주파수 변조(FM)하여   cos sin를생성할때, 주파수 민감도 는?",
+      "options": [
+        "100",
+        "500",
+        "2000",
+        "10000"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "CDMA 방식의 특징으로 옳지 않은 것은?",
+      "options": [
+        "통화 단절이 없는 소프트 핸드오버(soft handover) 구현이 TDMA 방식보다 용이하다.",
+        "여러 사용자들이 시간과 주파수를 동시에 공유하면서 신호를 송수신할 수 있다.",
+        "다중경로 페이딩을 해결하기 위해 사용자 데이터 심볼에 보호 구간을 추가한다.",
+        "상향 링크에서 기지국에 도달하는 사용자 신호 간의 전력 차가 심할 경우 시스템 용량에 손실이 발생한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "AM변조신호  cos에서모든시간동안 포락선 검파가 가능하기 위한 메시지 신호 의 최솟값은? (단, 는 반송파 주파수이다)",
+      "options": [
+        "10",
+        "0",
+        "－5",
+        "－10"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "균일 펄스 부호 변조(PCM)에 대한 설명으로 옳지 않은 것은? (단, 표본 진폭 범위는 일정하다고 가정한다)",
+      "options": [
+        "양자화 준위(quantization level)의 개수를 증가시키면 양자화 오차가 감소한다.",
+        "양자화 준위의 개수를 증가시키면 표본화된 값을 이진수로 부호화할 때 비트 수가 점점 증가한다.",
+        "양자화 비트 수를 하나 증가시키면 평균 양자화 잡음 전력은 log [dB] 감소한다.",
+        "10[kHz]로 대역 제한된 신호를 왜곡 없이 표본화하려면 초당 20,000개 이상의 표본을 추출해야 한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "심볼당 3비트의 데이터를 전송하는 위상편이변조(PSK) 성상도에서 최소의 평균 심볼 오류확률을 얻기 위한 인접한 신호점(signal point) 간의 위상 차이는?",
+      "options": [
+        "11.25°",
+        "22.5°",
+        "45°",
+        "90°"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "AWGN 채널에서 섀넌(Shannon)의 채널 용량(channel capacity)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "전송률이 채널 용량보다 작으면 채널부호 기술을 이용하여 전송 오류확률을 임의로 작게 할 수 있다.",
+        "채널 대역폭이 100[Hz]이고 신호 대 잡음비(SNR)가 31인 경우, 채널 용량은 3,100[bps]이다.",
+        "신호 대 잡음비를 증가시키면 채널 용량이 증가한다.",
+        "채널 대역폭을 증가시키면 채널 용량이 증가한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "두 랜덤 변수   가 주어질 때, 이들의 통계적 특징으로 옳지 않은 것은?",
+      "options": [
+        " 와  가통계적으로독립이면, 결합확률밀도함수   ＝   이다.",
+        "결합모멘트     이면,  와  는 직교한다.",
+        " 와  가비상관(uncorrelated)이면,  와  는항상통계적으로 독립이다.",
+        " 와  가 통계적으로 독립이면, 공분산  는 항상 0이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "다중반송파를 사용하는 무선이동 통신시스템에 대한 설명으로 옳지 않은 것은? (단, 시스템에 주어진 대역폭은 일정하다)",
+      "options": [
+        "다중경로 지연확산이 커질수록 채널의 주파수 선택적 페이딩 (frequency selective fading) 현상이 심해진다.",
+        "단말의 이동 속도가 증가할수록 도플러 확산(Doppler spread)이 증가하고 빠른 페이딩(fast fading) 현상이 심해진다.",
+        "다중경로 지연확산이 커질수록 부반송파 개수를 늘리는 것이 적절하다.",
+        "단말의 이동 속도가 증가할수록 부반송파 개수를 늘리는 것이 적절하다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "랜덤 변수  와  의 결합확률밀도함수가 다음과 같을 때, 상수 와 확률  ≥ ,    ≤ 는?           ≥ ,    ≤ ",
+      "options": [
+        "4   ",
+        "4   ",
+        "2   ",
+        "2   "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "메시지 신호   sinc 가 주파수 민감도    으로 주파수 변조(FM)된 신호의 전송 대역폭[kHz]은?",
+      "options": [
+        "3",
+        "5",
+        "70",
+        "90"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "(5, 2) 선형 블록 부호(linear block code)의 생성 행렬(generator matrix) 가 다음과 같이 주어질 때, 이 선형 블록 부호의 최소 해밍 거리(minimum Hamming distance)는?                  ",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "가우시안 랜덤 변수에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "서로 독립인 두 개의 가우시안 랜덤 변수의 합은 항상 가우시안 랜덤 변수가 된다.",
+        "가우시안 랜덤 변수의 확률밀도함수는 평균과 분산으로 완전히 결정된다.",
+        "두 개의 가우시안 랜덤 변수의 공분산이 0이라고 해서 서로 독립인 것은 아니다.",
+        "독립적이고 동일하게 분포된 임의의 랜덤 변수의 합은 랜덤 변수의 수가 증가할수록 가우시안 분포에 점점 근접한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "각 변조(angle modulation) 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "FM 변조된 신호의 위상은 메시지 신호의 미분값에 비례한다.",
+        "메시지 신홋값에 따라 신호의 위상을 변조하는 방식을 PM 변조라 한다.",
+        "FM 변조된 신호의 전력은 메시지 신호 크기와 관련이 없다.",
+        "PM 변조의 최대 위상 편이는 위상 민감도와 메시지 신호의 최대 크기에 비례한다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "대역폭이 인 메시지 신호 를 DSB-SC AM 변조하여 송신하고, 수신기에서 수신한   cos 신호를 복조 반송파 신호 cos     를 이용하여 복조할 때, 복조 출력 는? (단, 잡음에 대한 영향은 고려하지 않으며, 이상적인 저역통과필터(ideal LPF)의 진폭 이득은 1이고, 차단주파수 특성은  ≤   이다)",
+      "options": [
+        "",
+        "",
+        "   ",
+        "    "
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "20[MHz] 대역폭 채널에서 64점-IFFT를 사용하여 OFDM 데이터 심볼을 생성한다. 심볼 간 간섭에 대응하기 위해 OFDM 데이터 심볼 길이의 25%에 해당하는 보호 구간을 삽입한다고 할 때, OFDM 데이터 심볼과 보호 구간으로 구성되는 한 개의 OFDM 심볼 길이[s]는?",
+      "options": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2021-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2021년도 국가직 7급 채용 기출",
+      "year": 2021,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "다음 디지털 변조 성상도에서 각 심볼의 발생 확률이 동일할 때 평균 심볼 에너지는?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2021-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "터보코드 부호화기에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "선형블록코드에 속한다.",
+        "이론적인 채널용량에 근접하는 고성능 ARQ 방식의 일종이다.",
+        "인터리버를 사용하여 두 개의 콘볼루셔널 부호화기를 결합한다.",
+        "인터리버는 한 부분에 오류가 집중되는 것을 막는 역할도 수행한다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "시간 영역 신호 와 이 신호의 푸리에 변환 에 대한 설명으로 옳은 것은?",
+      "options": [
+        "가 연속 신호이면 는 주기 신호이다.",
+        "가 비주기 신호이면 는 이산 신호이다.",
+        "가 실수이고 기함수이면 는 허수이고 우함수이다.",
+        "가 실수이고 우함수이면 는 실수이고 우함수이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "FM 변조된 신호   cos sin에서 카슨의 법칙(Carson’s rule)을 이용하여 구한 유효 대역폭[Hz]은?",
+      "options": [
+        "120",
+        "150",
+        "200",
+        "240"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "에일리어싱(aliasing) 현상이 발생하는 원인으로 옳은 것은?",
+      "options": [
+        "나이퀴스트(Nyquist) 주파수보다 2배 높게 샘플링할 경우 발생한다.",
+        "나이퀴스트 주파수보다 낮게 샘플링할 경우 발생한다.",
+        "나이퀴스트 주기보다 짧게 샘플링할 경우 발생한다.",
+        "나이퀴스트 주파수로 샘플링할 경우 발생한다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "양측파대 억압 반송파(DSB-SC) 변조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "정보 신호의 스펙트럼을 주파수 영역에서 반송파의 주파수만큼 이동시키는 변조 방식이다.",
+        "반송파의 주파수와 위상은 고정시키고, 정보 신호에 따라 진폭을 변화시키는 변조 방식이다.",
+        "변조된 신호의 스펙트럼은 반송파 주파수 위치에서 임펄스 형태가 나타난다.",
+        "변조된 신호의 스펙트럼은 반송파 주파수를 중심으로 상측 파대와 하측파대를 가진다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "랜덤 변수 의 확률밀도함수(probability density function)가 다음과 같을 때, 의 특성함수(characteristic function)  는?              ≤  ≤    otherwise",
+      "options": [
+        "    ",
+        "    ",
+        "    ",
+        "    "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "(7, 4) 해밍 코드(Hamming code)로 인코딩된 부호어(codeword)를 교차확률(crossover probability)이  인 이진대칭채널(binary symmetric channel)을 통해 전송할 때, 부호어 오류확률은?",
+      "options": [
+        "",
+        " ",
+        "",
+        " "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "신호     의 푸리에 변환이   sinc일 때, 신호 의 푸리에 변환  은? (단, 는 단위 계단 함수이다)",
+      "options": [
+        "sincsinc",
+        "sincsinc sinc ",
+        "sincsinc sinc ",
+        "sincsinc"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "총 5개의 상품 중에 불량품이 2개 포함되어 있다. 5개의 상품 중에서 동시에 3개를 한꺼번에 임의로 선택하였을 때, 불량품이 적어도 하나 이상 포함될 확률은?",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "아날로그 변복조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "FM은 중첩의 원리가 적용되지만 PM은 적용되지 않는다.",
+        "이론상 FM 파형은 무한개의 측파대 주파수를 포함한다.",
+        "PM과 FM은 반송파의 진폭에 변화를 주지 않는다.",
+        "AM보다 넓은 대역폭을 필요로 하는 광대역 PM과 광대역 FM은 AM보다 잡음에 강하다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "AM 신호의 변조지수(modulation index)는 반송파의 진폭이 정보 신호에 의해 얼마나 많이 변조되었나를 표시한다. 정현파 정보 신호를 AM 변조한 신호의 최대 크기가 2.8 [V]이고, 변조되기 전 반송파의 진폭이 1.6 [V]일 때, 변조지수는?",
+      "options": [
+        "0.7",
+        "0.75",
+        "0.8",
+        "0.85"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "8-PSK 변조 방식을 사용하여 10 [kbps]의 비트율로 데이터를 전송할 때, 심볼 지속시간(symbol duration)[msec]은?",
+      "options": [
+        "0.05",
+        "0.1",
+        "0.3",
+        "0.5"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "직접시퀀스 대역확산(DSSS)에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "다른 사용자에 의한 간섭 신호를 넓은 주파수 대역으로 확산시켜 그 간섭을 감소시킨다.",
+        "DS-CDMA에서 근원(near-far) 문제가 발생할 수 있다.",
+        "수신기 간 직교성을 가진 확산 부호 또는 의사잡음(PN) 부호를 사용한다.",
+        "정해진 패턴에 따라 불연속적으로 반송파 주파수가 천이한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "랜덤 변수 의 확률밀도함수가 다음과 같을 때, 가 1과 3 사이의 값을 가질 확률은?           ",
+      "options": [
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "두 개의 사건 와 가 서로 독립일 때, 조건부 확률  와 다른 것은? (단,  는 의 여사건이며, ≠,  ≠, ≠, ≠이다)",
+      "options": [
+        "",
+        "  ∩",
+        "   ",
+        "          "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "광의의 정상(wide sense stationary) 랜덤 프로세스의 자기상관 (auto-correlation) 함수가 시간차 만의 함수    이다. 이 프로세스가 전력 신호일 때, 평균 전력은?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "주파수 응답함수가      인 시스템에 다음과 같은 신호 가 입력될 때, 출력 신호의 평균 전력은? (단,               ≤  ≤     otherwise 이다)       cos    sin",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "직교 주파수 분할 다중화(OFDM) 전송 기술에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "순환 전치(cyclic prefix)는 열잡음의 크기를 줄이기 위해 사용된다.",
+        "단일 반송파 신호에 비해 주파수 편차나 위상 잡음에 취약하다.",
+        "직교하는 부반송파들을 사용하여 주파수 스펙트럼 효율을 높인다.",
+        "주파수 선택적 페이딩 환경에서도 등화기를 간단한 구조로 구현할 수 있다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "AWGN 채널에서 비트오류확률이 가장 높은 것은? (단, 모든 변조 방식의 평균 비트에너지는 동일하다)",
+      "options": [
+        "동기 BPSK",
+        "동기 QPSK",
+        "동기 MSK",
+        "동기 BFSK"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "비트율이 28[kbps]인 이진 데이터를 롤오프 계수(roll-off factor)가 0.5인 상승 코사인 필터로 펄스 정형(pulse shaping)하여 전송할 때, ISI 없이 전송할 수 있는 최소 전송 대역폭[kHz]은?",
+      "options": [
+        "14",
+        "21",
+        "28",
+        "35"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "다음은 단위 직교 함수 축  와 상에 표현한 서로 다른 두 개의 8-QAM 성상도이다. AWGN 채널에서 두 변조 기법에 대한 성능 비교로 옳은 것은? (단, 신호 성상은 Gray코드를 사용하여 생성 되었으며, 각 신호점들은 발생 확률이 동일하고 이웃한 점들 사이에만 오류가 발생한다고 가정한다)",
+      "options": [
+        "(가)와 (나)의 비트오류확률은 같지만 (나)의 평균 전송 에너지가 더 크다.",
+        "(가)와 (나)의 비트오류확률은 같지만 (가)의 평균 전송 에너지가 더 크다.",
+        "(가)의 평균 전송 에너지가 크므로 (가)의 비트오류확률이 더 낮다.",
+        "(나)의 평균 전송 에너지가 크므로 (나)의 비트오류확률이 더 낮다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "서로 독립인 두 랜덤 변수 와 의 확률분포가 다음과 같을 때, 엔트로피에 대한 설명으로 옳은 것은? (단,   와   는 각각  와  의 엔트로피,   는 결합 엔트로피,    는 조건부 엔트로피이다) Pr    Pr                        otherwise",
+      "options": [
+        "이 확률분포는 와   모두를 최대로 한다.",
+        "와  는    [bits/symbol]로 서로 같다.",
+        "    가 성립한다.",
+        "    가 성립한다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "다음 확산코드를 사용하는 CDMA 방식에 대한 설명으로 옳지 않은 것은? 코드1 : [＋1 ＋1 ＋1 ＋1] 코드2 : [＋1 －1 ＋1 －1] 코드3 : [＋1 ＋1 －1 －1] 코드4 : [＋1 －1 －1 ＋1]",
+      "options": [
+        "주어진 코드만으로는 서로 다른 네 개의 송신기가 동시에 데이터를 전송할 수 없다.",
+        "데이터를 복호하기 위해서는 송신 시 사용한 코드를 수신 시에도 사용해야 한다.",
+        "서로 다른 코드의 내적은 항상 0이고, 같은 코드의 내적은 항상 4가 된다.",
+        "복수의 사용자가 주파수와 시간을 공유할 수 있다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "심볼 지속시간이  [sec]인 이진 동기 FSK 시스템에서 두 개의 반송파가 서로 간섭하지 않도록 하기 위한 최소 주파수 간격[Hz]은?",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2022-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2022년도 국가직 7급 채용 기출",
+      "year": 2022,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "심볼    의 발생 확률이 각각    ,    ,    ,    인 정보원(information source)을 허프만 코딩(Huffman coding)할 때, 각 심볼에 할당된 디지털 코드의 평균 길이[bit]는?",
+      "options": [
+        "1.5",
+        "1.6",
+        "1.7",
+        "1.8"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2022-subject-051.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "선형 시불변 시스템에 대한 설명으로 옳지 않은 것은? (단, 는 시스템의 임펄스 응답을 나타낸다)",
+      "options": [
+        "  일 때,   이면 시스템은 인과성을 갖는다.",
+        "임펄스 응답을 알면 임의의 입력에 대해 출력을 구할 수 있다.",
+        "입력 신호 에 대한 출력 신호가 일 때, 입력 신호  에 대한 출력 신호도 이다. (단,  ≠이다)",
+        "입력 신호 에 대한 출력 신호가 이고 입력 신호 에 대한 출력 신호가 일 때, 입력 신호 에 대한 출력 신호는 이다. (단, 와 는 상수이다)"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "기댓값이 인 랜덤 변수 의 분산은? (단,  ㆍ는 랜덤 변수의 기댓값이고  ≠이다)",
+      "options": [
+        "  ",
+        "  ",
+        "   ",
+        "  "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "랜덤 변수 의 확률밀도함수(probability density function) 가 다음과 같을 때, 의 확률분포함수(probability distribution function) 는? (단, 는 상수이다)     ≤  ≤   otherwise",
+      "options": [
+        "                 ≤      ≥ ",
+        "                 ≤      ≥ ",
+        "                 ≤      ≥ ",
+        "                 ≤      ≥ "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "스펙트럼이 갖는 주파수 의 범위[Hz]가  ≤  ≤  인 메시지 신호를 반송파 cos를 이용하여 양측파대 억압 반송파 (DSB－SC) 진폭 변조했을 때, 변조된 신호의 전송 대역폭[Hz]은? (단,  ≫   이다)",
+      "options": [
+        "   ",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "각 변조된 신호   cos sin의 순시 주파수 [Hz]는? (단, 는 반송파 주파수이다)",
+      "options": [
+        " cos",
+        " cost",
+        " cos",
+        " cos"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "송신 심볼과 수신 심볼이 각각 ∈ 와 ∈ 이고 조건부 확률이 다음과 같은 이진 대칭 채널의 채널용량[bits/symbol]에 대한 설명으로 옳은 것은? (단, 의 0과 1의 발생 확률은 각각    이다)   ∣      ∣       ∣      ∣    ",
+      "options": [
+        "  이면 채널용량은 이다.",
+        "  이면 채널용량은 이다.",
+        "  이면 채널용량은 이다.",
+        "    이면 채널용량은 log이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "통계적으로 서로 독립인 네 개의 메시지 , , , 의 발생 확률이 각각    ,    ,    ,    일 때, 이 중에서 메시지 세 개로 이루어진 합성 메시지   의 정보량[bits]은?",
+      "options": [
+        "1",
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "메시지 신호 를 변조한 신호가    cos 일 때, 이 변조 기법에 대한 설명으로 옳지 않은 것은? (단, 는 반송파 진폭, 는 반송파 주파수, 는 0이 아닌 상수이다)",
+      "options": [
+        "동기 복조가 가능하다.",
+        "의 대역폭은 의 대역폭과 같다.",
+        "가 메시지 대역폭보다 클 경우, 양측파대가 겹치지 않는 것이 보장된다.",
+        " 일 경우, 반송파의 위상이 반전되는 포락선 왜곡이 발생한다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "PM 변조 방식에 대한 설명으로 옳지 않은 것은? (단, 반송파의 진폭은 상수이다)",
+      "options": [
+        "변조 과정에서 비선형적인 특성을 갖는다.",
+        "변조된 신호의 평균 송신 전력은 메시지 신호와 무관하다.",
+        "메시지 신호에 따라 반송파의 위상을 변화시킨다.",
+        "메시지 신호가 구형파인 경우 PM 변조된 신호는 파형만으로는 FM 변조된 신호와 구별할 수 없다. (단, FM 변조의 주파수 편이 상수는 0이 아니다)"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "흑백 동영상을 다음 조건으로 변환하여 전송 시 필요한 최소 전송 속도[Mbps]는? ○ 프레임 생성 속도: 30 프레임/초 ○ 프레임당 화소 수: 2 × 106 화소/프레임 ○ 화소당 명암 단계 수: 16 단계/화소 ○ 각 화소는 통계적으로 서로 독립이며, 각 명암 단계의 발생 확률은 동일함",
+      "options": [
+        "120",
+        "240",
+        "480",
+        "960"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "다음 AM 변조 중 전송 대역폭이 가장 좁은 것은? (단, 메시지 신호는 동일하며 직류 성분이 없다)",
+      "options": [
+        "단측파대(SSB) 변조",
+        "잔류측파대(VSB) 변조",
+        "양측파대 억압 반송파(DSB－SC) 진폭 변조",
+        "양측파대 전송 반송파(DSB－TC) 진폭 변조"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "랜덤 변수  가 선형시스템을 통과하여   로 변환 되었을 때, 이에 대한 설명으로 옳은 것은? (단,  ㆍ와 ㆍ는 각각 랜덤 변수의 기댓값과 분산이고  ≠이다)",
+      "options": [
+        "      ",
+        "      ",
+        "    ",
+        "    "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "전달함수  의 진폭 특성이 다음과 같은 선형 시불변 필터에 전력 스펙트럼 밀도가    인 백색 잡음(white noise)이 입력될 때, 출력 신호의 자기상관함수 는? (단, sinc    sin 이다)",
+      "options": [
+        "sinc",
+        "sinc",
+        "   sinc",
+        "   sinc   "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "OFDM에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "다중화 기술이면서 동시에 변조 기술이다.",
+        "다수의 부반송파 스펙트럼을 중첩시켜 사용할 수 있다.",
+        "송신 신호에서 높은 피크대평균전력비(PAPR)가 발생할 수 있다.",
+        "송신 시 심볼에 순환전치(cyclic prefix)를 삽입한 후 이산푸리에 역변환(IDFT)을 수행한다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "연속 신호 를 다음과 같이 [sec] 간격으로 샘플링한 의 푸리에 변환은? (단, 는 의 푸리에 변환이고      이며  ≠이다)   ⋅   ∞ ∞  ",
+      "options": [
+        "   ∞ ∞  ",
+        "  ∞ ∞  ",
+        "   ∞ ∞  ",
+        "  ∞ ∞  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "푸리에 급수에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "주파수 영역에서 이산 스펙트럼을 보여 준다.",
+        "파스발의 정리(Parseval’s theorem)를 만족한다.",
+        "급수 계수는 신호의 주파수 성질을 반영한다.",
+        "급수 전개가 가능한 신호는 모두 디리클레(Dirichlet) 조건을 만족한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "진 변조 방식의 성상도에 대한 설명으로 옳은 것은? (단, 모든 변조 방식은 동일한 평균 전력을 사용하여 전송한다)",
+      "options": [
+        " 이 커질수록 스펙트럼 효율이 낮아진다.",
+        "각 신호점은  개 중 한 심볼의 진폭과 주파수에 대한 정보를 나타낸다.",
+        "신호점들의 최소 거리 간격이 멀어질수록 신호대잡음비(SNR)가 높아진다.",
+        " 이 4일 경우, PSK는 QAM보다 신호점들의 최소 거리 간격이 가깝다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "메시지 신호 의 스펙트럼이 갖는 주파수 의 범위[Hz]가  ≤  ≤ 일 때,  을 나이퀴스트율(Nyquist rate)로 샘플링하기 위해 필요한 최대 샘플링 간격[msec]은?",
+      "options": [
+        "0.125",
+        "0.25",
+        "0.5",
+        "1"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "직교 8－FSK에서 비트에러확률 와 심볼에러확률 의 비    는?",
+      "options": [
+        "",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "체계적 부호 형태로 된 (7, 4) 해밍 부호의 패리티 검사 행렬이 다음과 같을 때, 메시지 에 대한 부호어는?                             ",
+      "options": [
+        "      ",
+        "      ",
+        "      ",
+        "      "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "전달함수  의 진폭과 위상 특성이 다음과 같은 선형 시불변 시스템에 신호 가 입력될 때 출력은?",
+      "options": [
+        " ",
+        "        ",
+        " ",
+        "        "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "QPSK에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "동일한 심볼에너지를 갖는 BPSK와 비트에러확률이 같다.",
+        "동일한 대역폭을 사용하는 BPSK보다 전송 속도가 두 배 빠르다.",
+        "서로 직교하는 반송파를 사용하는 두 개의 BPSK 신호의 합으로 구성된다.",
+        "변조 신호의 진폭은 항상 일정하고 입력 데이터에 따라 네 종류의 위상을 가진다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "CDMA 방식에서 사용되는 의사잡음(pseudo noise) 코드에 대한 설명으로 옳은 것은? (단, 코드는 －1과 1로 구성되어 있다)",
+      "options": [
+        "개의 선형 궤환 시프트 레지스터로 생성할 수 있는 코드의 최대 길이는  이다.",
+        "칩 지연이 0일 때 코드의 자기상관 값이 최소가 된다.",
+        "코드 한 주기 내에서 －1과 1의 개수 차이는 한 개 이하이어야 한다.",
+        "－1 혹은 1이 연속적으로 나타날 수 없다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "주기가 0.2[sec]인 연속 신호 가 복소 지수 푸리에 급수     ∞ ∞   로 표현되고 계수 이 다음과 같을 때, 신호 에 대한 설명으로 옳지 않은 것은?             이 홀수일 때  이 짝수일 때",
+      "options": [
+        "실수 신호이다.",
+        "기본주파수는 [Hz]이다.",
+        "주파수가 [Hz]일 때 의 진폭 스펙트럼 성분은    이다.",
+        "주파수가 [Hz]일 때 의 위상 스펙트럼 성분은    [rad]이다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2023-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2023년도 국가직 7급 채용 기출",
+      "year": 2023,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "비트에러확률이 0.2인 디지털통신 시스템에서 각 비트를 동일하게 세 번 반복해서 전송하고 수신단에서 세 개의 수신 비트들에 대해 다수결 원칙 기반 복호를 한다고 할 때, 복호에러확률은? (단, 정보원 0과 1의 발생 확률은 각각    이고, 전송 비트 간 에러는 독립적으로 발생한다)",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2023-subject-053.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "발생 확률이 동일한 심벌 과 을 이진 통신 시스템의 채널을 통하여 전송한다. 심벌 이 송신되었을 때 수신기에서 심벌 과 로 판정할 확률은 각각 과 이고, 심벌 이 송신되었을 때 심벌 과 로 판정할 확률은 각각 와 이다. 수신기에서 수신된 신호가 심벌 로 판정되었을 때, 송신기에서 심벌 을 송신했을 확률은?",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "잡음이 발생하지 않는 이상적인 저항 R과 커패시터 C로 구성된 차 저역통과필터에 평균이 인 백색 가우시안 잡음(white Gaussian noise)을 입력했을 때, 이 필터의 출력에 대한 설명으로 옳은 것은? (단, 저역통과필터의 통과 대역폭은 입력 신호의 대역폭보다 좁다)",
+      "options": [
+        "통계적 특성은 가우시안이다.",
+        "스펙트럼 특성은 백색 잡음과 같다.",
+        "자기상관 함수는 임펄스 함수이다.",
+        "신호의 주파수가  RC  [Hz]일 때, 필터의 최대 이득 대비  [dB]의 전력이 감소한다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "연속 시간 신호 를 주파수 영역 신호 로 변환할 때, 이 신호의 특성에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "를 신호 의 주파수 스펙트럼이라 하며, 일반적으로 위상 스펙트럼과 크기 스펙트럼으로 구분할 수 있다.",
+        "가 주기 신호이면 는 이산 스펙트럼 형태로 나타난다.",
+        " ∞ ∞     ∞ ∞  이다.",
+        "를 일정 시간 지연하면 주파수 영역에서는 주파수 천이로 나타난다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "가산적(additive) 백색 가우시안 잡음 채널에서 섀넌(Shannon)의 채널용량 공식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "채널용량이 커질수록 동일한 오류 확률 성능을 제공하기 위한 채널의 최대 전송 속도는 작아진다.",
+        "사용 대역폭이 증가하더라도 채널용량은 선형적으로 증가하지 않는다.",
+        "신호의 전력 크기가 증가하면 채널용량도 커진다.",
+        "동일한 신호 전력에서 사용 대역폭을 증가시키면 신호대 잡음 전력비는 감소한다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "디지털 변조된 신호가 다중경로 페이딩 채널을 통해 전송될 때, 이 신호가 겪는 현상으로 옳지 않은 것은?",
+      "options": [
+        "지연확산(delay spread)이 심벌 주기보다 크면 심벌 간 간섭이 발생한다.",
+        "코히런스 시간(coherence time)은 통신 채널의 응답이 거의 변화하지 않는 시간을 말한다.",
+        "짧은 코히런스 시간은 작은 도플러 확산(Doppler spread)을 의미한다.",
+        "지연확산이 심벌 주기보다 크면 통신 채널은 주파수 선택적(frequency selective)이다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "각 변조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "전압제어발진기(VCO)를 이용하여 직접 변조가 가능하다.",
+        "음성 신호로 변조된 신호는 비주기적으로 불규칙하게 영점을 교차한다.",
+        "주파수 변조(FM)된 신호는 최대 주파수 편이가 클수록 대역폭이 넓어진다.",
+        "위상 변조(PM) 신호는 중첩의 원리를 만족시키지만, FM 신호는 중첩의 원리를 만족시키지 않는다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "신호 의 대역폭이  [Hz]로 제한되어 있을 때  를 에일리어싱 (aliasing) 없이 표본화하기 위한 최소 표본화 주파수[Hz]는?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "임펄스 응답   sinc인 이상적인 저역통과필터를 사용하여 신호를 여파할 때, 이 신호가 가질 수 있는 최대 주파수 대역폭[Hz]은? (단, sinc         sin  ≠      이다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "  ,  ,   의 임펄스 응답을 갖는 이산 선형 시불변 시스템에 신호     을 입력할 때, 출력 []의 값으로 옳지 않은 것은?",
+      "options": [
+        "  ",
+        " ",
+        " ",
+        "  "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "개의 정보원 A, B, C의 발생 확률이 각각    ,    ,    이고 정보원 심벌 발생률이  [symbols/s]일 때, 정보율[bps]은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "채널 부호화에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "단일 패리티 검사 부호는 오류 정정이 불가능하다.",
+        "터보부호는 선형블록부호의 일종으로 인터리버를 사용한다.",
+        "인터리빙 기법은 채널에서 발생하는 연집(burst) 오류를 랜덤 오류로 분산시킨다.",
+        "가산적 백색 가우시안 잡음 채널에서 연판정(soft decision) 복호는 경판정(hard decision) 복호에 비해 복호 성능이 좋다."
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "메시지 신호 로 주파수 변조된 신호 의 최대 주파수 편이 [GHz]는? (단,    [GHz],    ,  ≤  ≤ ,   cos  이다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "반송파가 cos인 FM 변조기의 주파수 편이 상수가 이고 메시지 정보 신호   cos일 때, FM 변조된 신호의 평균 전송 전력은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "반송파 주파수    [kHz]를 이용하여 AM 변조된 신호를 수신하고, 이 신호를 복조하기 위해 국부발진주파수    [kHz]를 사용하여 중간 주파수    [kHz]로 주파수 하향 변환할 때, 동일 채널 간섭을 일으키는 이미지 주파수[kHz]는?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "주파수 ,    를 사용하는 이진 주파수 편이 변조(BFSK)에서    [MHz]이고, 심벌률은 × [symbols/s]이다. 동기 검출 방식을 사용할 때, 직교 조건을 만족하는 최소 [MHz]는?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "비트 지속 시간이 일 때, 가산적 백색 가우시안 잡음 채널에서 사용되는 디지털 변조 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "MPSK 변조 방식에서 M이 증가할수록 대역폭 효율은 감소한다.",
+        "DPSK(differential PSK) 변조된 신호는 반송파의 복구 없이 복조가 가능하다.",
+        "1개의 전압제어발진기(VCO)를 사용하여 FSK 신호를 발생시키면 심벌이 변화하는 시점에서도 위상은 연속이다.",
+        "이진 디지털 변조된 신호를 동기 복조할 때 사용되는 정합필터 수신기와 상관 수신기는    시점에서의 출력 표본화 값이 동일하다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "대역폭이  [kHz]인 기저 대역 전송로를 통하여 진 PAM 디지털 데이터를 롤 오프(roll-off) 인자   인 상승 코사인 필터로 펄스 성형한 후 전송할 때, 심벌 간 간섭 없이 수신 가능한 최대 전송 비트율[kbps]은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "주파수 분할 다중접속(FDMA) 시스템에 할당된 전체 대역폭은  [MHz] 이고, 사용자 주파수 채널 대역폭과 인접 채널 간 보호 대역폭은 각각  [kHz],  [kHz]일 때, 할당 가능한 최대 주파수 채널의 수는? (단, 보호 대역은 할당된 전체 대역폭 내의 주파수 채널 간에서만 고려한다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "PN 부호의 발생에 길이가 인 선형 귀환 천이 레지스터를 이용하는  계열 최장 부호열(maximum length code sequence)의 특성으로 옳지 않은 것은?",
+      "options": [
+        "칩(chip) 동기된 부호열 간 자기상관 함수는 두 개의 값만 갖는다.",
+        "한 주기 부호에는    개의 이 존재한다.",
+        "한 주기 부호에서 모든 런(run, 길이가  이상인 연속된  또는 연속된 )의 개수가 일 때, 길이가 인 런은 개이다.",
+        "부호의 반복 주기는  이다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "  체계적 순환 부호(systematic cyclic code)의 벡터 표현이 인 생성 다항식이    이고, 메시지 벡터가 일 때 생성되는 부호어는? (단, 부호어는 [메시지|패리티]로 표현한다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "메시지 블록    에 대하여 순서대로 각각 선형블록부호어    를 사용하는 채널 부호화의 오류 정정 능력은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "메시지 신호   cos    로 AM 변조된 신호             cos일 때, 신호 의 전력은? (단,  ≫ 이다)",
+      "options": [
+        "3",
+        "4",
+        "8",
+        "9"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "16 QAM 변조된 신호    ,     ⋯ 에 해당하는 각 심벌들이 신호 공간 성상도상의 좌표  에 배치될 때, 심벌 평균 에너지는? (단,  와  는 각각 동일한 확률로 ± ± 중 1개의 값을 가지며,        cos,         sin이고,  는 심벌 주기, 는 반송파 주파수를 의미한다)",
+      "options": [
+        " ",
+        "",
+        " ",
+        ""
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "PCM 과정에서 입력신호 의 표본 범위를 max  max 로 하여 표본화하고, 레벨로 균일 양자화를 수행하여  [bits] 이진수로 표현하였다. 동일한 표본 범위에 대하여 균일 양자화 레벨을 로 세분화하고  [bits]로 표현할 때, 신호대 양자화 잡음 전력비(SQNR)의 증가량[dB]은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2024-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2024년도 국가직 7급 채용 기출",
+      "year": 2024,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "전달함수      인 시스템의 입력신호   cos일 때, 이 시스템의 출력신호 표현으로 옳은 것은?",
+      "options": [
+        "cos ",
+        "cos",
+        "cos",
+        "cos"
+      ],
+      "answer": null,
+      "explanation": "공식 정답 기준: 정답 없음/문항 검토 필요",
+      "source": "morningstudy-national-grade-7-second-2024-subject-047.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "이산 랜덤변수  는 표본 공간      를 갖는다. 각 원소의 확률이    로 동일할 때, 랜덤변수    의 기댓값은?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "두 사건 와 에 대해 확률   ＝0.2,   ＝0.5,  ∩ ＝ 0.1일 때, 이에 대한 설명으로 옳은 것은? (단,  와  는 각각 와 의 여사건이다)",
+      "options": [
+        "  <   ",
+        " ∪ ＝0.7",
+        " ∣ ＝ ",
+        "와 는 독립이다."
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "신호 의 푸리에 변환이 일 때, 시간 이동된 신호  의 푸리에 변환은? (단,  ≠이다)",
+      "options": [
+        "",
+        "",
+        " ",
+        "  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "두 이산 랜덤변수 ,  에 대해  의 엔트로피    이고, 조건부 엔트로피가 각각  ∣   ,  ∣  일 때, 상호 정보량  는?",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "메시지 신호 가 위상 변조(PM)된 신호 cos 의 전력이 1 [W]일 때, 동일한 변수 조건에서 의 전력이 절반이 되면, 위상 변조된 신호의 전력[W]은? (단, 는 반송파 진폭, 는 반송파 주파수, 는 위상 민감도이다)",
+      "options": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "스펙트럼이  인 메시지 신호를 반송파 cos를 이용하여 양측파대 억압 반송파(DSB－SC) 진폭 변조했을 때, 변조된 신호의 스펙트럼은? (단,  ≫ 이다)",
+      "options": [
+        "         ",
+        "         ",
+        "         ",
+        "         "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "광의의 정상(wide sense stationary) 실수 랜덤 프로세스  의 자기상관 함수  에 대한 설명으로 옳지 않은 것은? (단, 는 시간차이고 ∙는 랜덤 프로세스의 기댓값이다)",
+      "options": [
+        " ≤  ",
+        " ≠ ",
+        "    ",
+        " 의 푸리에 변환은 음수값을 가지지 않는다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "입력 신호 에 대한 출력     인 시스템에 대한 설명으로 옳은 것은?",
+      "options": [
+        "선형, 시변",
+        "선형, 시불변",
+        "비선형, 시변",
+        "비선형, 시불변"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "주파수 변조(FM) 방식에 대한 설명으로 옳은 것은?",
+      "options": [
+        "변조 과정에는 중첩의 원리를 위배하는 비선형성이 있다.",
+        "변조된 신호의 평균 전송 전력은 메시지 신호에 따라 변한다.",
+        "메시지 신호가 변하여도 변조된 신호의 영점 교차점은 시간축에서 규칙적으로 동일한 간격을 갖는다.",
+        "동일한 메시지에 대하여 일반적으로 광대역 FM 변조된 신호의 대역폭이 진폭 변조(AM)된 신호의 대역폭보다 작다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "이상적인 저역통과 필터의 주파수 진폭 응답  이 다음과 같을 때, 입력   cos에 대한 필터의 출력 는?      ≤ kHz    kHz",
+      "options": [
+        "  ",
+        "  cos",
+        "     cos",
+        "     cos"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "신호   cossin에 대한 복소 지수 푸리에 계수는? (단, 는 기본 주파수이고  > 0이다)",
+      "options": [
+        ", , ",
+        ", , ",
+        ", , ",
+        ", , "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "AWGN 채널에서 통신시스템 A, B의 신호대잡음비(SNR)가 각각 20 [dB], 40 [dB]이고, 섀넌(Shannon)의 채널용량이 각각 50 [Mbps] 일 때, A, B의 채널 대역폭에 대한 설명으로 옳은 것은?",
+      "options": [
+        "A의 대역폭 > B의 대역폭",
+        "A의 대역폭 < B의 대역폭",
+        "A의 대역폭 ＝B의 대역폭",
+        "대역폭은 신호대잡음비와 상관이 없다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "진 PSK에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "심볼당 비트 수는 log이다.",
+        "각 심볼은 개의 서로 다른 위상값을 갖는다.",
+        "비트 매핑에 그레이(Gray) 부호를 적용할 수 없다.",
+        "각 심볼은 성상도에서 동일 반경의 원주상에 위치한다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "주파수 분할 다중화(FDM) 방식에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "송신 신호들을 각각 서로 다른 주파수를 가지는 반송파들로 변조한다.",
+        "채널 간 보호 대역을 두기 때문에 주파수 대역 사용 효율이 낮아진다.",
+        "채널 간 보호 대역은 인접 채널 간의 신호 간섭을 완전히 제거한다.",
+        "다중화 및 역다중화 시에 신호를 분리하기 위해 필터가 필요하다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "직교 함수 축  와 상에 그레이 부호를 적용한 16－QAM의 성상도가 다음과 같을 때, 심볼 S1, S2, S3, S4에 할당된 비트열로 바르게 연결한 것은? S1 S2 S3 S4",
+      "options": [
+        "1111 0101 1101 0111",
+        "0101 1111 1101 0111",
+        "1101 0111 0101 1111",
+        "0111 1111 0101 1101"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "채널 부호화에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "허프만(Huffman) 부호화는 채널 부호화의 일종이다.",
+        "(7, 4) 선형 블록 부호에서 메시지와 패리티 비트 수는 각각 4개와 3개다.",
+        "선형 블록 부호의 오류정정 능력은 부호어 사이의 최소 해밍 거리와 관련이 있다.",
+        "ARQ 방식은 수신단에서 송신단으로 재전송 요청을 하기 위한 역방향 링크가 필요하다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "비동기(non-coherent) BFSK에서 비트 지속 시간이 1 [s]일 때, 두 반송파가 직교하기 위해 필요한 최소 주파수 간격MHz은?",
+      "options": [
+        "0.5",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "디지털 변조 성상도에서 BPSK의 최소 유클리드 거리(신호점 간의 최소 거리)는 QPSK의 최소 유클리드 거리의 몇 배인가? (단, 두 변조 방식 간 심볼 에너지는 동일하다)",
+      "options": [
+        "  ",
+        "   ",
+        " ",
+        ""
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "다음과 같은 이진 대칭 채널을 통해 이진 정보 비트를 동일하게 세 번 반복하여 전송하고, 수신된 세 개의 비트들에 대해 다수결 원칙 기반 복호를 한다고 할 때, 평균 정보 비트 오류 확률은? (단, 정보 비트 0과 1의 발생 확률은 같고, 교차 확률 는     이다)",
+      "options": [
+        " ",
+        " ",
+        " ",
+        " "
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "발생 확률이 동일한 두 이진 데이터를 AWGN 채널을 통해 송신하고, 수신단에서 정합 필터를 통해 검출된 신호가 ±이라면, 평균 비트 오류 확률을 －함수로 나타낸 것은? (단, 는 양의 상수이고, 은 평균이 이고 분산이  인 가우시안 랜덤 변수이며, －함수는        ∞ exp         이다)",
+      "options": [
+        "    ",
+        "    ",
+        "    ",
+        "     "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "크기가 200 [byte]인 프레임을 100 [s]마다 6개씩 전송할 때, 전송 속도Mbps는?",
+      "options": [
+        "12",
+        "24",
+        "48",
+        "96"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "선형 귀환 천이 레지스터를 이용하여 발생한 최장 부호열 PN 부호에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "주기성을 갖는다.",
+        "CDMA 시스템에서 기지국 및 섹터를 구분하는 데 사용된다.",
+        "모든 천이 레지스터의 값이 0인 경우에도 PN 부호열을 생성할 수 있다.",
+        "부호의 길이가 길수록 한 칩 지연된 부호열과의 자기상관 값은 에 가깝게 된다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "100개의 부반송파를 사용하는 OFDM 시스템이 8－QAM 변조 방식을 사용하고 있다. 보호 구간이 심볼 길이의 20 %이고 데이터율이 30 [Mbps]일 때, 시스템 대역폭MHz은?",
+      "options": [
+        "10",
+        "12.5",
+        "15",
+        "17.5"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "통신 채널을 선형 시불변 시스템으로 모델링하는 경우, 무왜곡 전송에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "무왜곡 전송이 가능한 통신 채널의 주파수 진폭 응답은 상수이다.",
+        "무왜곡 전송이 가능한 통신 채널의 주파수 위상 응답은 주파수에 대해 선형적이다.",
+        "수신 신호가 일정 시간만큼 지연되면 파형이 송신 신호와 동일한 모양을 가지더라도 무왜곡 전송으로 볼 수 없다.",
+        "채널의 왜곡 효과를 보상하기 위해 사용되는 등화기의 주파수 응답은 채널의 주파수 응답의 역수이다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2025-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2025년도 국가직 7급 채용 기출",
+      "year": 2025,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "총 주파수 대역폭이 35 [MHz]인 FDMA 방식의 셀룰러시스템에서 한 사용자당 50 [kHz]의 전이중(full-duplex)대역폭을 사용하고 있다. 클러스터의 크기가 7일 때, 셀당 동시에 수용 가능한 최대 사용자 수는? (단, 사용자 대역 간 보호 대역은 없다고 가정한다)",
+      "options": [
+        "100",
+        "150",
+        "200",
+        "250"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2025-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q01",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 1,
+      "question": "반송파 양측파대(DSB－LC) 변조에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "DSB－LC 변조는 동기식 수신기로 원 신호의 복원이 불가능하다.",
+        "실수 신호를 DSB－LC 변조한 경우, 반송파 신호를 기준으로 상측파대와 하측파대의 진폭스펙트럼이 대칭이다.",
+        "DSB－LC 변조는 수신기에서 반송파 복원이라는 과정이 필요 없으므로 DSB－SC 수신기에 비해 간단히 구현 가능하다는 장점이 있다.",
+        "DSB－LC 변조에서 변조지수를 작게 할수록 송신 신호의 전체 전력 중 반송파 신호가 차지하는 비가 커지므로 전력효율이 낮아진다."
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q02",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 2,
+      "question": "입력 에 대하여 시스템의 출력이   ²이다. 이 시스템의 특성을 바르게 나열한 것은?",
+      "options": [
+        "선형, 시불변",
+        "선형, 시변",
+        "비선형, 시불변",
+        "비선형, 시변"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q03",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 3,
+      "question": "AWGN 채널에서 대역폭  ＝1 [MHz]이고 신호대잡음비(SNR)가 7인 경우, 채널 용량[Mbps]은?",
+      "options": [
+        "1",
+        "3",
+        "7",
+        "8"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q04",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 4,
+      "question": "표는 그레이 코드가 적용된 8PSK의 신호 위상 변화를 나타낸다. (가) ～(라)에 들어갈 코드를 바르게 연결한 것은? 신호 위상 그레이 코드 0 (가)  001  (나)  010  (다)  111  (라)  100 (가) (나) (다) (라)",
+      "options": [
+        "000 011 110 101",
+        "110 011 000 101",
+        "000 101 110 011",
+        "101 011 110 000"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q05",
+      "chapter": "국가직 통신이론",
+      "page": 1,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 5,
+      "question": "직접 시퀀스 대역확산 시스템에서 BPSK 방식으로 이진 정보 시퀀스를 전송한다. 칩률이 107 [chips/sec]인 PN(Pseudo Noise) 부호를 사용하여 비트 전송률이 103 [bps]인 정보 데이터를 대역확산 시킨 경우, 처리 이득[dB]은?",
+      "options": [
+        "20",
+        "30",
+        "40",
+        "50"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q06",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 6,
+      "question": "정지궤도 위성과 비교하여 저궤도 위성통신 시스템의 특징에 대한 설명으로 옳지 않은 것은? (단, 동일한 주파수 대역을 사용한다)",
+      "options": [
+        "도플러 영향이 크다.",
+        "동일한 송신 전력에 대한 수신 전력이 크다.",
+        "전파 지연이 크다.",
+        "연속 서비스를 위해 더 많은 위성으로 구성된다."
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q07",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 7,
+      "question": "대역확산 통신 시스템에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "군 통신에서 시작되고 개발되었지만 현재 CDMA 이동통신에서도 활용되고 있다.",
+        "주파수 도약 대역확산 방식은 PN 부호를 정보 비트 신호 열에 곱하여 대역을 확산하는 방식이다.",
+        "PN 부호는 랜덤 부호와 유사한 특성을 지니지만 통계적인 특성이 일정하여 대역확산 통신 시스템에서 사용된다.",
+        "PN 부호 생성기는 시프트 레지스터와 모듈로－2 덧셈기로 구성할 수 있다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q08",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 8,
+      "question": "OFDM에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "변조와 다중화를 결합한 방식이다.",
+        "평탄 페이딩(flat fading)을 주파수 선택적인 페이딩으로 바꾸는 효과가 있다.",
+        "인접 서브 채널과 주파수 대역이 겹쳐도 되는 이유는 서로 직교하기 때문이다.",
+        "순환전치(cyclic prefix)는 신호의 직교성을 유지하기 위한 것이다."
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q09",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 9,
+      "question": "자유공간손실은 거리의 제곱에 비례하므로, 두 링크의 손실 차이는 거리비에 상용로그를 취해 20을 곱하는 방식으로 계산할 수 있다. 고도 36,000 [km]인 정지궤도 링크와 고도 600 [km]인 저궤도 링크에서 위성이 모두 천정 방향에 있고 동일한 주파수를 사용할 때, 두 링크의 자유공간손실 차이[dB]는? (단, log102 ＝0.3, log103 ＝ 0.48로 가정한다)",
+      "options": [
+        "17.8",
+        "21.4",
+        "35.6",
+        "71.2"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q10",
+      "chapter": "국가직 통신이론",
+      "page": 2,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 10,
+      "question": "AWGN 채널의 입력이 랜덤 변수  이고 출력이 랜덤 변수  일 때, 상호 정보량    및 엔트로피  에 대한 설명으로 옳지 않은 것은?",
+      "options": [
+        "   ≤ min     ",
+        "          ",
+        "       ∣ ",
+        "  ≠  "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q11",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 11,
+      "question": "두 개의 실수 ,  가 구간 [0, 1]에서 균등하게 랜덤으로 선택된다. 다음과 같이 사건 , ,  가 정의될 때, 확률  ∩∩는?     ,     ,     ",
+      "options": [
+        "0.125",
+        "0.25",
+        "0.5",
+        "0.75"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q12",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 12,
+      "question": "신호   coscos를 에일리어싱 없이 표본화하기 위한 최소 표본화 주파수[kHz]는?",
+      "options": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q13",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 13,
+      "question": "다음 수식으로 표현되는 AM 변조된 신호의 변조지수 과 전력효율  를 바르게 연결한 것은?   coscoscos 변조지수() 전력효율()",
+      "options": [
+        "     ",
+        "     ",
+        "     ",
+        "     "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q14",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 14,
+      "question": "랜덤 변수  와  의 결합확률이 아래와 같을 때,  의 엔트로피   는?                      ",
+      "options": [
+        "    log",
+        "    log",
+        "   log",
+        "   log"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q15",
+      "chapter": "국가직 통신이론",
+      "page": 3,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 15,
+      "question": "광대역 FM 송신기가 100 [MHz]의 반송파 주파수를 사용하고 메시지 신호는   cos [V]이다. 송신기의 주파수 민감도가  = 40 [kHz/V]일 때, 카슨의 법칙에 의해 계산한 FM 신호의 전송 대역폭[kHz]은?",
+      "options": [
+        "82",
+        "80",
+        "42",
+        "40"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q16",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 16,
+      "question": "다음 그림은 길쌈부호기를 나타낸 것이다. 시프트 레지스터를 0,0,0으로 초기화한 후 입력 비트로 1,1을 순차적으로 입력할 때, 초기 출력 4비트는? (단, 출력 비트는  , 순서로 출력된다)",
+      "options": [
+        "1,1,0,1",
+        "1,0,0,1",
+        "0,1,0,1",
+        "0,1,1,1"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q17",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 17,
+      "question": "신호   cos    cos    을 나이퀴스트 샘플링 주파수의 두배로 1분 동안 샘플링했다. 8비트 양자화기를 사용하는 경우, 총 발생된 비트 수[kbits]는?",
+      "options": [
+        "960",
+        "1440",
+        "1920",
+        "2880"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q18",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 18,
+      "question": "무선 이동통신 채널에서 전송신호의 심볼주기 , 대역폭 , 코히런스 시간(coherence time) , 코히런스 대역폭(coherence bandwidth) 라고 할 때, 다음 설명 중 옳은 것은?",
+      "options": [
+        "주파수 선택적, 느린 페이딩 채널:       ",
+        "주파수 선택적, 빠른 페이딩 채널:       ",
+        "주파수 비선택적, 빠른 페이딩 채널:       ",
+        "주파수 비선택적, 느린 페이딩 채널:       "
+      ],
+      "answer": 3,
+      "explanation": "공식 정답 기준: 4번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q19",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 19,
+      "question": "랜덤 변수 의 확률밀도함수가  일 때, 랜덤 변수  의 확률밀도함수  는? (단,   이다)",
+      "options": [
+        "       ",
+        "    ",
+        "       ",
+        "    "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q20",
+      "chapter": "국가직 통신이론",
+      "page": 4,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 20,
+      "question": "랜덤 변수 에 대한 확률밀도함수  는 다음과 같다.          otherwise  와 동일한 확률분포를 갖는 4개의 독립 랜덤 변수(independent random variable) , , ,  중에 2개가 3보다 클 확률은?",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q21",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 21,
+      "question": "선형 시불변 시스템의 임펄스 응답 와 입력 가 다음과 같을 때, 시스템의 출력 는? (단, 는 단위계단함수이다)     ,   ",
+      "options": [
+        "  ",
+        "  ",
+        "  ",
+        "  "
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q22",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 22,
+      "question": "(, ) ＝(7, 3) 리드솔로몬(Reed－Solomon) 부호는 심볼 오류정정 능력이 이고, 한 심볼이 개의 비트로 구성된다. 와 을 바르게 연결한 것은? (단, 은 부호심볼 길이, 는 정보심볼 길이이다)    ",
+      "options": [
+        "1 4",
+        "2 3",
+        "2 4",
+        "1 3"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q23",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 23,
+      "question": "아래의 블록도를 이용하여 신호 를 생성하는 변조 방식은? (단, 는 반송파 진폭, 는 메시지 신호, 는 반송파 주파수이다)",
+      "options": [
+        "양측파대 반송파억압 진폭 변조(DSB－SC)",
+        "위상 변조(PM)",
+        "단측파대 진폭 변조(SSB)",
+        "주파수 변조(FM)"
+      ],
+      "answer": 2,
+      "explanation": "공식 정답 기준: 3번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q24",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 24,
+      "question": "AWGN 채널 환경에서 디지털 변조 방식에 대한 비트오류율 크기 비교 표시가 옳은 것은? (단, 모두 동기 검파를 사용하고 동일한    ≫ 를 가정한다)",
+      "options": [
+        "16PSK > BFSK > BPSK ＝QPSK",
+        "BFSK ＝BPSK > QPSK > 16PSK",
+        "QPSK > BPSK > BASK ＝BFSK",
+        "BPSK > QPSK > BASK ＝BFSK"
+      ],
+      "answer": 0,
+      "explanation": "공식 정답 기준: 1번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    },
+    {
+      "id": "NG2026-COMM-Q25",
+      "chapter": "국가직 통신이론",
+      "page": 5,
+      "topic": "통신이론",
+      "kind": "2026년도 국가직 7급 채용 기출",
+      "year": 2026,
+      "exam": "국가공무원 7급 공개경쟁채용시험 제2차",
+      "no": 25,
+      "question": "최대지연확산이 1 [s]인 통신 채널에서 16QAM 부반송파 변조하는 OFDM 시스템이 있다. OFDM 유효심볼구간  ＝5 [s]이고 보호구간 는 ISI를 제거하기 위한 최소시간으로 선택하는 경우, 12 [Mbps]로 데이터를 전송하기 위한 부반송파의 최소 개수는?",
+      "options": [
+        "15",
+        "18",
+        "30",
+        "36"
+      ],
+      "answer": 1,
+      "explanation": "공식 정답 기준: 2번",
+      "source": "morningstudy-national-grade-7-second-2026-subject-050.pdf"
+    }
+  ]
+}
