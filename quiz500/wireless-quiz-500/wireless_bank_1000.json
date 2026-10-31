@@ -18012,5 +18012,485 @@
     ],
     "answer": 2,
     "explanation": "τ=mB sinθ로 표현할 때 θ=0°에서 0, θ=90°에서 최대이다. [원문 개념을 변형한 신규 응용 문항]"
+  },
+  {
+    "id": "W1051",
+    "chapter": "전자파와 주파수 분류",
+    "topic": "파장",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "자유공간에서 주파수 2.4GHz인 전자파 파장은 약?",
+    "options": [
+      "0.0125m",
+      "0.125m",
+      "1.25m",
+      "12.5m"
+    ],
+    "answer": 1,
+    "explanation": "λ=c/f=3×10^8/2.4×10^9=0.125m. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1052",
+    "chapter": "전자파와 안테나 이론",
+    "topic": "1/4파장 안테나",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "자유공간 100MHz에서 이상적인 1/4파장 길이는?",
+    "options": [
+      "0.30m",
+      "0.75m",
+      "1.5m",
+      "3.0m"
+    ],
+    "answer": 1,
+    "explanation": "λ=3m이고 λ/4=0.75m. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1053",
+    "chapter": "안테나 파라미터",
+    "topic": "안테나 이득",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "등방성 안테나 대비 3dBi 이득은 선형 전력이 약 몇 배인가?",
+    "options": [
+      "1배",
+      "2배",
+      "3배",
+      "10배"
+    ],
+    "answer": 1,
+    "explanation": "10^(3/10)≈2배이다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1054",
+    "chapter": "안테나 파라미터",
+    "topic": "EIRP",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "송신출력 20dBm, 안테나 이득 6dBi, 급전선 손실 2dB이면 EIRP는?",
+    "options": [
+      "18dBm",
+      "22dBm",
+      "24dBm",
+      "28dBm"
+    ],
+    "answer": 2,
+    "explanation": "EIRP=20+6−2=24dBm. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1055",
+    "chapter": "전파 전파이론",
+    "topic": "자유공간 경로손실",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "다른 조건이 동일할 때 자유공간 전파거리만 2배가 되면 경로손실 증가량은 약?",
+    "options": [
+      "3dB",
+      "6dB",
+      "10dB",
+      "12dB"
+    ],
+    "answer": 1,
+    "explanation": "FSPL∝20log10(d)이므로 20log10(2)≈6.02dB. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1056",
+    "chapter": "전파 전파이론",
+    "topic": "주파수와 손실",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "자유공간에서 거리와 안테나 조건을 유지하고 주파수를 2배로 높이면 경로손실은 약?",
+    "options": [
+      "3dB 감소",
+      "변화 없음",
+      "6dB 증가",
+      "12dB 증가"
+    ],
+    "answer": 2,
+    "explanation": "FSPL 항에서 20log10(f)이므로 약 6.02dB 증가한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1057",
+    "chapter": "무선통신 시스템",
+    "topic": "수신 여유도",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "수신전력 -80dBm이고 수신기 감도가 -95dBm이면 페이딩 여유도는?",
+    "options": [
+      "5dB",
+      "10dB",
+      "15dB",
+      "20dB"
+    ],
+    "answer": 2,
+    "explanation": "여유도=수신전력−감도=−80−(−95)=15dB. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1058",
+    "chapter": "무선통신 시스템",
+    "topic": "SNR dB",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "신호 -60dBm, 잡음 -90dBm일 때 전력 SNR은?",
+    "options": [
+      "10dB",
+      "20dB",
+      "30dB",
+      "60dB"
+    ],
+    "answer": 2,
+    "explanation": "동일 기준 dBm 차이로 SNR=−60−(−90)=30dB. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1059",
+    "chapter": "이동통신 시스템",
+    "topic": "도플러",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "1GHz 반송파에 대해 무선단말이 전파 진행 방향으로 30m/s 속도로 이동한다면 최대 도플러 편이는 약?",
+    "options": [
+      "10Hz",
+      "30Hz",
+      "100Hz",
+      "300Hz"
+    ],
+    "answer": 2,
+    "explanation": "fd=v f/c=30×10^9/(3×10^8)=100Hz. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1060",
+    "chapter": "이동통신 시스템",
+    "topic": "FDD와 TDD",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "TDD 시스템의 상·하향 링크 분리 방식으로 옳은 것은?",
+    "options": [
+      "주파수만 분리",
+      "시간 슬롯을 분리",
+      "안테나 길이만 다르게 함",
+      "부호만 다르게 함"
+    ],
+    "answer": 1,
+    "explanation": "TDD는 동일한 주파수 자원을 시간으로 나누어 사용한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1061",
+    "chapter": "페이딩·전리층",
+    "topic": "레이일리 페이딩",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "지배적인 직접파가 없고 다수 산란파가 합쳐진 협대역 채널 진폭을 설명할 때 흔히 쓰는 분포는?",
+    "options": [
+      "균등분포",
+      "레이일리분포",
+      "이항분포",
+      "푸아송분포"
+    ],
+    "answer": 1,
+    "explanation": "LOS가 없는 다중경로의 복소 채널이 가우시안이면 포락선은 Rayleigh 분포를 따른다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1062",
+    "chapter": "페이딩·전리층",
+    "topic": "다이버시티",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "서로 독립적인 두 수신 안테나를 사용했을 때 페이딩 완화에 기여하는 핵심 원리는?",
+    "options": [
+      "동일한 페이딩 복제",
+      "독립 페이딩 경로 결합",
+      "전송 주파수 제거",
+      "모든 잡음 제거"
+    ],
+    "answer": 1,
+    "explanation": "서로 낮은 상관도의 경로를 결합하여 심한 페이딩 확률을 낮춘다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1063",
+    "chapter": "이동통신 시스템",
+    "topic": "MIMO 다중화",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "계급(rank)이 2인 이상적인 2×2 MIMO 채널에서 동시에 독립 송신 가능한 최대 공간 스트림 수는?",
+    "options": [
+      "1개",
+      "2개",
+      "3개",
+      "4개"
+    ],
+    "answer": 1,
+    "explanation": "공간 다중화 스트림 수는 송수신 안테나 수 및 채널 rank의 제한을 받아 최대 2개이다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1064",
+    "chapter": "무선통신 시스템",
+    "topic": "OFDM CP",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "다중경로 지연이 존재하는 OFDM에서 순환접두부(CP)를 사용하는 주된 이유는?",
+    "options": [
+      "반송파 주파수 제거",
+      "보호구간 확보와 심볼 간 간섭 완화",
+      "송신전력 항상 증폭",
+      "정보 비트 수 2배 증가"
+    ],
+    "answer": 1,
+    "explanation": "CP가 채널 지연 확산을 수용하면 조건부로 ISI가 줄고 주파수영역 등화가 단순해진다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1065",
+    "chapter": "무선통신 시스템",
+    "topic": "OFDM 서브캐리어",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "OFDM 유효 심볼 시간이 100μs이면 이상적인 직교 부반송파 간격은?",
+    "options": [
+      "1kHz",
+      "5kHz",
+      "10kHz",
+      "100kHz"
+    ],
+    "answer": 2,
+    "explanation": "Δf=1/Tu=1/(100μs)=10kHz. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1066",
+    "chapter": "디지털 전송",
+    "topic": "16-QAM",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "16-QAM이 심볼 하나로 표현하는 비트 수는?",
+    "options": [
+      "2bit",
+      "3bit",
+      "4bit",
+      "8bit"
+    ],
+    "answer": 2,
+    "explanation": "log2(16)=4bit/symbol. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1067",
+    "chapter": "아날로그 변조",
+    "topic": "FM",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "이상적인 주파수변조(FM) 신호에서 정보에 따라 주로 변화시키는 반송파의 특성은?",
+    "options": [
+      "진폭",
+      "주파수",
+      "편파만",
+      "전송매체 길이"
+    ],
+    "answer": 1,
+    "explanation": "FM은 순간 주파수를 정보신호에 따라 변화시킨다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1068",
+    "chapter": "무선통신 시스템",
+    "topic": "송신출력 이득",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "송신전력을 10mW에서 100mW로 높이면 증가는 몇 dB인가?",
+    "options": [
+      "3dB",
+      "6dB",
+      "10dB",
+      "20dB"
+    ],
+    "answer": 2,
+    "explanation": "10log10(100/10)=10dB. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1069",
+    "chapter": "안테나 파라미터",
+    "topic": "편파",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "동일 방향으로 전파하는 두 직선편파가 서로 직교하고 이상적인 안테나를 사용한다면 편파 부정합에 대한 설명으로 옳은 것은?",
+    "options": [
+      "이상적인 경우 수신 결합이 0이 될 수 있다",
+      "항상 최대 수신",
+      "SNR이 자동 3dB 증가",
+      "주파수가 2배"
+    ],
+    "answer": 0,
+    "explanation": "이상적인 직교 편파에서는 편파 부정합으로 전력이 결합되지 않을 수 있다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1070",
+    "chapter": "전자파와 안테나 이론",
+    "topic": "포인팅 벡터",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "전자기파의 순간 에너지 흐름 밀도 벡터를 나타내는 식은?",
+    "options": [
+      "E+H",
+      "E×H",
+      "E/H",
+      "E·H"
+    ],
+    "answer": 1,
+    "explanation": "포인팅 벡터는 S=E×H(W/m²). [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1071",
+    "chapter": "안테나 종류",
+    "topic": "지향성",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "안테나의 빔폭이 매우 좁아지면 일반적으로 나타나는 이득 변화는?",
+    "options": [
+      "주빔 이득이 커지는 경향",
+      "항상 0dBi",
+      "이득과 무관",
+      "이득이 반드시 음수"
+    ],
+    "answer": 0,
+    "explanation": "효율·편파 등 조건이 동일하면 방사 에너지가 좁은 방향에 집중되어 지향성이 증가한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1072",
+    "chapter": "이동통신 시스템",
+    "topic": "LTE-R",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "LTE-R에 대한 설명으로 가장 적절한 것은?",
+    "options": [
+      "일반 방송용 AM만 사용",
+      "철도 운영에 특화된 LTE 기반 무선통신 시스템",
+      "광케이블 접속장치",
+      "위성만 사용하는 네트워크"
+    ],
+    "answer": 1,
+    "explanation": "LTE-R은 철도 운행 및 관제 통신용 LTE 기반 무선망이다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1073",
+    "chapter": "전파 전파이론",
+    "topic": "거리·지향성",
+    "difficulty": "중",
+    "kind": "국가직 기출 응용",
+    "sourceLabel": "국가직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do",
+    "page": 0,
+    "question": "수신 안테나 이득 및 송신 조건을 유지하고 자유공간 거리만 10배로 증가하면 경로손실 증가는?",
+    "options": [
+      "6dB",
+      "10dB",
+      "20dB",
+      "40dB"
+    ],
+    "answer": 2,
+    "explanation": "거리 10배에서 FSPL이 20log10(10)=20dB 증가한다. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
+  },
+  {
+    "id": "W1074",
+    "chapter": "무선통신 시스템",
+    "topic": "BPSK",
+    "difficulty": "중",
+    "kind": "지방직 기출 응용",
+    "sourceLabel": "지방직 기출 응용",
+    "sourceExam": "2015~2026 국가·지방직 공개 기출의 전기·통신 관련 기본 개념 참고해 신규 제작한 연습문항 (실제 연도별 기출 원문·공식 정답 아님)",
+    "sourceUrl": "https://local.gosi.go.kr/klid/sihum/exampaper.do",
+    "page": 0,
+    "question": "이상적 BPSK에서 한 심볼이 표현하는 정보 비트 수는?",
+    "options": [
+      "1bit",
+      "2bit",
+      "3bit",
+      "4bit"
+    ],
+    "answer": 0,
+    "explanation": "BPSK는 2개 신호 상태이므로 log2(2)=1bit/symbol. [공개 시험 범위 참고하여 독립 제작한 응용문항]"
   }
 ]
