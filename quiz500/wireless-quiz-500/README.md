@@ -1,6 +1,6 @@
 # 무선공학 500문항 퀴즈 앱
 
-**[▶ 무선공학 500문항 웹앱 바로 접속](https://kimheeseo.github.io/kimheeseo/wireless-quiz-500/)**
+**[▶ 무선공학 500문항 웹앱 바로 접속](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/)**
 
 > GitHub Pages 게시가 설정되어 있어야 위 주소로 접속할 수 있습니다. 404가 나오면 아래 설정을 확인하세요.
 
@@ -26,7 +26,7 @@
 ## 404 오류가 뜨는 경우
 [GitHub Pages 설정 열기](https://github.com/kimheeseo/kimheeseo/settings/pages) → **Build and deployment** → Source: `Deploy from a branch` → Branch: `main` → Folder: `/(root)` → **Save**.
 
-사이트 주소는 `https://kimheeseo.github.io/kimheeseo/wireless-quiz-500/`입니다. 배포가 활성화되지 않은 경우 주소는 404로 보입니다.
+사이트 주소는 `https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/`입니다. 배포가 활성화되지 않은 경우 주소는 404로 보입니다.
 
 ## 학습 기록 주의 사항
 학습 기록은 **현재 기기·브라우저의 localStorage**에 저장됩니다. 웹사이트와 파일(`file://`)로 실행할 경우 브라우저 저장 공간이 서로 달라 기록이 공유되지 않을 수 있습니다. **브라우저 데이터 삭제, 시크릿 모드, 다른 기기**에서는 기록이 유지되지 않을 수 있으니 `학습 기록 → 기록 백업` 기능을 이용하세요.
