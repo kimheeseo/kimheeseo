@@ -1,129 +1,15 @@
 <!doctype html>
-<html lang="ko">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#14244a">
-<title>코레일 전기통신직 2026 상반기 복원문제 30 | 통신직 준비</title>
-<meta name="description" content="코레일 전기통신직 2026년 상반기 복원모의고사 30문항. 통신공학, 회로이론, 전기자기학, 전기기기, 전력공학 문제 목록·채점·해설·오답 복습.">
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>코레일 문항 통합 안내 | 통신직 준비</title>
 <style>
-:root{color-scheme:light;--bg:#f3f6fb;--fg:#1e2d46;--muted:#65758e;--line:#dce4ef;--primary:#325bd0;--light:#ebf1ff;--success:#13825b;--failure:#c34052}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;font-size:15px}
-a{color:var(--primary)}button,select,input{font:inherit}button{cursor:pointer}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #86a0eb;outline-offset:3px}
-header{background:#152447;color:#f7faff}.head{max-width:1080px;margin:auto;padding:17px 24px;display:flex;gap:16px;align-items:center;justify-content:space-between}.brand{font-weight:850;text-decoration:none;color:#f7faff}.smallnav{display:flex;gap:17px;flex-wrap:wrap}.smallnav a{color:#d9e4ff;font-size:13px;text-decoration:none}
-main{max-width:1080px;margin:auto;padding:36px 22px 85px}
-.eyebrow{font-size:12px;color:var(--primary);font-weight:850;letter-spacing:.11em}.hero h1{font-size:clamp(27px,4.6vw,44px);letter-spacing:-.05em;margin:8px 0 13px}.hero p{max-width:800px;color:var(--muted);line-height:1.8}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:26px 0 21px}.stat{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 21px}.stat span{font-size:12px;font-weight:750;color:var(--muted)}.stat strong{display:block;font-size:28px;letter-spacing:-.035em;margin-top:4px}
-.note{border-radius:12px;padding:14px 17px;background:#eaf0fc;color:#4e617f;font-size:13px;line-height:1.7;margin:20px 0}
-.tools{display:flex;flex-wrap:wrap;align-items:end;gap:12px;background:#fff;border:1px solid var(--line);padding:17px;border-radius:18px;margin:24px 0}.field{display:flex;flex-direction:column;gap:7px;font-size:12px;font-weight:800;color:#52657e;flex:1 1 160px}.field select,.field input{width:100%;background:#fff;border:1px solid #cbd7e9;padding:12px 13px;border-radius:10px;color:var(--fg);min-height:46px}
-.btn{padding:12px 15px;border-radius:10px;border:1px solid #cbd7e9;background:white;color:var(--fg);font-weight:780;min-height:46px}.btn.primary{background:var(--primary);color:white;border-color:var(--primary)}.btn:hover{filter:brightness(.97)}.filters{display:flex;gap:11px;align-items:center;flex-wrap:wrap}.checkbox{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:750;padding:10px;color:#49617f}.checkbox input{accent-color:var(--primary);width:17px;height:17px}
-.meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:16px 0;flex-wrap:wrap}.meta h2{font-size:21px;margin:0;letter-spacing:-.03em}.meta span{font-size:13px;color:var(--muted)}
-.questions{display:grid;gap:16px}.qcard{background:white;border:1px solid var(--line);border-radius:19px;padding:22px;box-shadow:0 8px 22px #2039600b;scroll-margin-top:18px}
-.qhead{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.number{font-size:13px;font-weight:850;color:#325bd0;background:#eaf0ff;border-radius:7px;padding:6px 8px}.cat{font-size:12px;font-weight:750;color:#526987;background:#f0f4f8;padding:6px 9px;border-radius:7px}.source{font-size:12px;color:#8390a4;margin-left:auto}
-.qcard h3{font-size:17px;line-height:1.7;letter-spacing:-.012em;margin:16px 0}.options{display:grid;gap:8px}
-.option{width:100%;border:1px solid #d8e1ee;text-align:left;display:flex;align-items:flex-start;gap:11px;color:var(--fg);background:#fff;border-radius:11px;padding:12px 14px;line-height:1.55}.option:hover{border-color:#89a4e5;background:#f8faff}
-.option .num{border:1px solid #ccd8ea;border-radius:50%;display:inline-grid;place-items:center;width:23px;height:23px;flex:none;font-size:12px;font-weight:800}
-.option.selected{border-color:#4768da;background:#eff3ff}.option.correct{border-color:#35a57c;background:#e8f9f1}.option.wrong{border-color:#cf6c80;background:#fff0f3}
-.result{font-size:13px;font-weight:800;margin:13px 0 6px;min-height:20px}.result.ok{color:var(--success)}.result.bad{color:var(--failure)}
-.explain{margin-top:12px;background:#f5f8fe;border-radius:12px;border:1px solid #e4ecf9;padding:16px;font-size:14px;color:#495f79;line-height:1.8}.explain strong{display:block;color:#2f57c1;margin-bottom:7px}
-.explain[hidden]{display:none}.qfoot{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:12px}.hint{font-size:12px;color:var(--muted)}
-.empty{padding:32px 20px;background:white;border-radius:15px;text-align:center;color:#60708c;border:1px solid var(--line)}
-footer{margin-top:40px;font-size:13px;line-height:1.7;color:#76839a}
-@media(max-width:700px){main{padding:27px 14px 75px}.head{padding:16px 14px;align-items:flex-start;flex-direction:column}.stats{gap:8px}.stat{padding:13px}.stat strong{font-size:23px}.qcard{padding:17px}.tools{padding:13px}.source{width:100%;margin:0}.qcard h3{font-size:16px}}
-</style>
-</head>
-<body>
-<header><div class="head"><a class="brand" href="../">📘 통신직 준비</a><nav class="smallnav" aria-label="주요 메뉴"><a href="../communication-quiz-500/">통신공학</a><a href="../wireless-quiz-500/">무선공학</a><a href="../interview/korail.html">코레일 면접 자료</a></nav></div></header>
-<main>
-<section class="hero">
-<div class="eyebrow">KORAIL · 2026 H1 · RECONSTRUCTED MOCK EXAM</div>
-<h1>코레일 전기통신직 복원문제</h1>
-<p>2026년 상반기(2026.03.28.) 복원모의고사 30문항을 과목별로 풀고 채점할 수 있습니다. 각 문항은 5지선다형이며 답을 선택하면 정답과 핵심 해설이 표시됩니다.</p>
-</section>
-<section class="stats" aria-label="학습 현황">
-<div class="stat"><span>전체 문항</span><strong id="total">30</strong></div>
-<div class="stat"><span>풀이 완료</span><strong id="answered">0</strong></div>
-<div class="stat"><span>정답률</span><strong id="accuracy">—</strong></div>
-</section>
-<div class="note"><strong>자료 출처 및 구분</strong> — 사용자가 제공한 「2026년 상반기 한국철도공사(코레일) 전기통신직 복원모의고사」의 정답표·해설을 바탕으로 웹 문제은행을 재구성했습니다. 원자료에는 실제 시험 기반이지만 일부 변형되었으며 확인되지 않은 내용이 있을 수 있다고 기재되어 있습니다. <strong>코레일이 공식 공개한 원문 기출시험지가 아닙니다.</strong> 제공된 PDF 원본은 GitHub에 게시하지 않았습니다.</div>
-<div class="tools">
-<label class="field">과목 선택<select id="category"><option value="전체">전체 과목</option></select></label>
-<label class="field">문제 검색<input id="query" type="search" placeholder="예: QAM, 변압기, 전송선로"></label>
-<label class="checkbox"><input id="wrongonly" type="checkbox"> 오답만 보기</label>
-<button class="btn" id="reset" type="button">학습 기록 초기화</button>
-</div>
-<div class="meta"><h2>문제 리스트</h2><span id="visible-count">30개 문항</span></div>
-<div id="questions" class="questions" aria-live="polite"><div class="empty">문제를 불러오는 중입니다.</div></div>
-<footer>답안과 학습 기록은 사용 중인 브라우저에만 저장되며 서버에 전송되지 않습니다. 문제별 PDF 쪽수는 업로드된 자료의 페이지를 기준으로 표시합니다.<p><a href="../">통신직 준비 홈</a> · <a href="../interview/korail.html">코레일 면접 자료</a> · <a href="https://github.com/kimheeseo/kimheeseo/tree/main/quiz500/korail-2026">GitHub 소스 보기</a></p></footer>
-</main>
-<script>
-(()=>{
-'use strict';
-const KEY='korail2026h1.answers.v1';
-const target=document.getElementById('questions');
-const cat=document.getElementById('category');
-const search=document.getElementById('query');
-const wrong=document.getElementById('wrongonly');
-let bank=[];
-let answers={};
-try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');if(s && typeof s==='object' && !Array.isArray(s))answers=s;}catch(e){answers={};}
-function element(tag,className,text){const e=document.createElement(tag);if(className)e.className=className;if(text!==undefined)e.textContent=String(text);return e;}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(answers));}catch(e){}}
-function stats(){const done=bank.filter(q=>Number.isInteger(answers[q.id]));const good=done.filter(q=>answers[q.id]===q.answer).length;document.getElementById('total').textContent=bank.length;document.getElementById('answered').textContent=done.length;document.getElementById('accuracy').textContent=done.length?Math.round(100*good/done.length)+'%':'—';}
-function card(q){
- const box=element('article','qcard');box.id=q.id;
- const h=element('div','qhead');h.append(element('span','number',String(q.number).padStart(2,'0')+'번'),element('span','cat',q.category),element('span','source','문제 PDF '+q.questionPdfPage+'쪽 · 해설 '+q.solutionPdfPage+'쪽'));box.append(h);
- box.append(element('h3','',q.question));
- const opts=element('div','options');box.append(opts);
- const result=element('div','result');result.setAttribute('aria-live','polite');
- const explanation=element('div','explain');explanation.hidden=true;
- explanation.append(element('strong','', '정답 '+q.answer+'번 · 핵심 해설'),element('div','',q.explanation));
- const foot=element('div','qfoot'),explainBtn=element('button','btn','해설 보기');explainBtn.type='button';
- const hint=element('span','hint','답안을 선택하면 자동 채점됩니다.');
- explainBtn.addEventListener('click',()=>{explanation.hidden=!explanation.hidden;explainBtn.textContent=explanation.hidden?'해설 보기':'해설 접기';});
- foot.append(explainBtn,hint);box.append(result,explanation,foot);
- function update(){
-  opts.replaceChildren();
-  q.options.forEach((op,i)=>{
-   const index=i+1,button=element('button','option');button.type='button';button.setAttribute('aria-label',index+'번 '+op);
-   button.append(element('span','num',index),element('span','',op));
-   const picked=answers[q.id];
-   if(picked===index)button.classList.add('selected');
-   if(Number.isInteger(picked)&&index===q.answer)button.classList.add('correct');
-   if(picked===index&&picked!==q.answer)button.classList.add('wrong');
-   button.addEventListener('click',()=>{answers[q.id]=index;save();update();stats();if(wrong.checked)render();});
-   opts.append(button);
-  });
-  const picked=answers[q.id];
-  if(Number.isInteger(picked)){
-   const ok=picked===q.answer;result.textContent=ok?'정답입니다.':'오답입니다. 정답은 '+q.answer+'번입니다.';result.className='result '+(ok?'ok':'bad');explanation.hidden=false;explainBtn.textContent='해설 접기';
-  }else{result.textContent='';result.className='result';}
- }
- update();return box;
-}
-function render(){
- const keyword=search.value.trim().toLocaleLowerCase('ko-KR');
- const filtered=bank.filter(q=>(cat.value==='전체'||q.category===cat.value)&&(!keyword||(q.question+' '+q.options.join(' ')+' '+q.category).toLocaleLowerCase('ko-KR').includes(keyword))&&(!wrong.checked||(Number.isInteger(answers[q.id])&&answers[q.id]!==q.answer)));
- document.getElementById('visible-count').textContent=filtered.length+'개 문항';
- const nodes=filtered.map(card);target.replaceChildren(...(nodes.length?nodes:[element('div','empty','조건에 해당하는 문제가 없습니다.')]));
- stats();
-}
-async function load(){
- try{
-  const res=await fetch('./questions.json',{cache:'no-store'});
-  if(!res.ok)throw Error('HTTP '+res.status);
-  const parsed=await res.json();
-  if(!Array.isArray(parsed.questions)||parsed.questions.length!==30)throw Error('문제 데이터 오류');
-  bank=parsed.questions;
-  const categories=[...new Set(bank.map(q=>q.category))];
-  for(const c of categories){const option=element('option','',c);option.value=c;cat.append(option);}
-  render();
- }catch(err){target.replaceChildren(element('div','empty','문제 파일을 불러오지 못했습니다. GitHub Pages 주소에서 다시 접속해 주세요. ('+err.message+')'));}
-}
-cat.addEventListener('change',render);search.addEventListener('input',render);wrong.addEventListener('change',render);
-document.getElementById('reset').addEventListener('click',()=>{if(!confirm('코레일 문제 30개에 대한 학습 기록을 초기화하시겠습니까?'))return;answers={};save();render();});
-load();
-})();
-</script>
-</body>
-</html>
+:root{font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif}*{box-sizing:border-box}body{background:#f4f7fd;color:#21304a;margin:0;min-height:100vh;display:grid;place-items:center;padding:20px}.panel{width:min(650px,100%);padding:36px;background:white;border:1px solid #dae3f3;border-radius:22px;box-shadow:0 14px 35px #21345613}h1{font-size:clamp(23px,5vw,33px)}p{color:#566680;line-height:1.75}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}a.button{padding:12px 17px;background:#315dd0;border-radius:11px;color:white;text-decoration:none;font-weight:800}a.button.secondary{background:#e8efff;color:#3154b8}.note{font-size:13px;color:#75849c;margin-top:20px}
+</style></head><body>
+<main class="panel"><h1>코레일 문항이 과목별 문제은행으로 통합되었습니다</h1>
+<p>별도의 코레일 문제 목록을 운영하지 않고, 기존 <strong>통신공학</strong>과 <strong>무선공학</strong> 문제은행 안에서 학습하도록 변경했습니다.</p>
+<p>문제 유형을 <strong>코레일 기출</strong> 또는 <strong>코레일 기출 응용</strong>으로 선택하면 해당 문항만 풀 수 있습니다.</p>
+<div class="buttons">
+<a class="button" href="../communication-quiz-500/?kind=%EC%BD%94%EB%A0%88%EC%9D%BC%20%EA%B8%B0%EC%B6%9C">통신공학에서 풀기</a>
+<a class="button" href="../wireless-quiz-500/?kind=%EC%BD%94%EB%A0%88%EC%9D%BC%20%EA%B8%B0%EC%B6%9C">무선공학에서 풀기</a>
+<a class="button secondary" href="../">통신직 준비 홈</a></div>
+<p class="note">기출 유형은 사용자가 제공한 코레일 복원모의고사 기반 재구성 문항으로 공식 시험 원문을 의미하지 않습니다. 응용 유형은 새로 제작한 연습문항입니다.</p>
+</main></body></html>
