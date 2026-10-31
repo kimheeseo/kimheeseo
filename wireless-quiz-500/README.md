@@ -13,13 +13,13 @@
 - 답 선택 시 즉시 채점, 오답/정답 해설, 원본 PDF 페이지 표기
 - **재접속해도 풀이 이력·정답률·오답 목록 유지** (브라우저 로컬 저장)
 - **오답만 다시 풀기**, 즐겨찾기, 학습 기록, JSON 백업/복원
-- 모바일·PC 브라우저 지원, 다크모드, HTML 다운로드
+- 모바일·PC 브라우저 지원, 다크모드
 
 ## 파일 안내
 | 파일 | 설명 |
 | --- | --- |
 | [index.html](./index.html) | GitHub Pages 실행용 단일 HTML 앱(500문항 내장) |
-| [wireless_quiz_500.html](./wireless_quiz_500.html) | 모바일 오프라인 저장용 동일 앱 |
+| [wireless_quiz_500.html](./wireless_quiz_500.html) | 추가 HTML 실행 파일 (index.html과 동일) |
 | [wireless_bank_500.csv](./wireless_bank_500.csv) | 500문항 문제은행 CSV |
 | [wireless_bank_500.json](./wireless_bank_500.json) | 500문항 문제은행 JSON |
 
