@@ -1,10 +1,10 @@
 # Quiz500 | 통신공학 · 무선공학 퀴즈
 
-통신공학 및 무선공학 3지선다 문제은행을 한 곳에 정리했습니다. 각 앱은 **500문항**이며, 오답 복습과 브라우저 학습 기록 저장 기능을 제공합니다.
+통신공학 및 무선공학 3지선다 문제은행을 한 곳에 정리했습니다. 통신공학은 **700문항**, 무선공학은 **500문항**이며, 오답 복습과 브라우저 학습 기록 저장 기능을 제공합니다.
 
 | 과목 | GitHub 코드 | 웹 실행 주소* |
 | --- | --- | --- |
-| 통신공학 500 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
+| 통신공학 700 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
 | 무선공학 500 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
 
 **[Quiz500 선택 화면](https://kimheeseo.github.io/kimheeseo/quiz500/)**
@@ -20,8 +20,8 @@ quiz500/
 ├── communication-quiz-500/
 │   ├── index.html                    # 통신공학 앱
 │   ├── README.md
-│   ├── quiz_bank_500.csv
-│   └── quiz_bank_500.json
+│   ├── quiz_bank_700.csv
+│   └── quiz_bank_700.json
 └── wireless-quiz-500/
     ├── index.html                    # 무선공학 앱
     ├── README.md
