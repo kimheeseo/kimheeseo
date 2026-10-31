@@ -27,9 +27,10 @@
 - [CPO Supply Chain Explorer](https://kimheeseo.github.io/cpo-supply-chain/) · [저장소](https://github.com/kimheeseo/cpo-supply-chain) — CPO 부품·기업·제품 동향 탐색
 - [Data Center Design Tool](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/) — 전력과 광 연결을 함께 살펴보는 데이터센터 설계 도구
 
-### 통신공학·무선공학 암기 퀴즈
+### 통신직 준비
 
-- [Quiz500 문제은행 모음](./quiz500/) — 통신공학 500문항 · 무선공학 500문항 · 오답 복습·학습 기록
+- [통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/) — 통신공학 1,029문항 · 무선공학 1,030문항 · 오답 복습·학습 기록 · 면접 자료
+- [서울교통공사 정보통신직 면접 자료](https://kimheeseo.github.io/kimheeseo/quiz500/interview/seoul-metro.html) — 직무·채용 정보 및 예상 질문
 
 ## 관심 기술
 
