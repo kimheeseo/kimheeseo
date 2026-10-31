@@ -72,7 +72,7 @@ function startCompositionUnit(index){
  if(ids.length)begin('normal',ids);
 }
 function maybeStartLinkedUnit(){
- const params=new URLSearchParams(window.location.search);const level=params.get('level');if(['하','중','상'].includes(level)){$('difficultySelect').value=level;$('compositionDifficulty').value=level;renderHome();}const raw=params.get('unit');
+ const params=new URLSearchParams(window.location.search);const sourceKind=params.get('kind');if(['코레일 기출','코레일 기출 응용'].includes(sourceKind)){$('kindSelect').value=sourceKind;$('bankKind').value=sourceKind;renderHome();}const level=params.get('level');if(['하','중','상'].includes(level)){$('difficultySelect').value=level;$('compositionDifficulty').value=level;renderHome();}const raw=params.get('unit');
  if(raw!==null&&/^\d{1,2}$/.test(raw)){
   const n=Number(raw);
   if(n>=0&&n<COMPOSITION_CATEGORIES.length)startCompositionUnit(n);
