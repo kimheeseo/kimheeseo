@@ -1,11 +1,11 @@
 # Quiz500 | 통신공학 · 무선공학 퀴즈
 
-통신공학 및 무선공학 3지선다 문제은행을 한 곳에 정리했습니다. 통신공학은 **1000문항**, 무선공학은 **1000문항**이며, 오답 복습과 브라우저 학습 기록 저장 기능을 제공합니다.
+통신공학 및 무선공학 3지선다 문제은행을 한 곳에 정리했습니다. 통신공학은 **1029문항**, 무선공학은 **1030문항**이며, 오답 복습과 브라우저 학습 기록 저장 기능을 제공합니다.
 
 | 과목 | GitHub 코드 | 웹 실행 주소* |
 | --- | --- | --- |
-| 통신공학 1000 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
-| 무선공학 1000 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
+| 통신공학 1029 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
+| 무선공학 1030 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
 
 **[Quiz500 선택 화면](https://kimheeseo.github.io/kimheeseo/quiz500/)**
 
@@ -39,3 +39,8 @@ quiz500/
 ```
 
 **참고:** 기존 저장소 루트의 두 폴더는 이 폴더로 이동되어 이전 URL은 달라집니다. 각 퀴즈의 학습 기록은 같은 기기·브라우저의 로컬 저장소에 있으므로 같은 GitHub Pages 도메인에서 접속하면 기존 데이터가 유지됩니다. 다른 브라우저나 기기로는 자동 동기화되지 않습니다.
+
+## 서울교통공사 2026(상) 통신직 복원 기출·응용
+- 통신공학: 기출 7문항, 응용 22문항, 총 1029문항.
+- 무선공학: 기출 7문항, 응용 23문항, 총 1030문항.
+- 각 문항에 출처 분류, 원형 번호, PDF 쪽, 정답과 해설을 표시합니다. '기출'은 공식 문제집이 아닌 복원 자료에서 재구성한 문항입니다.
