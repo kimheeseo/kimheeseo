@@ -364,5 +364,19 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
  search.addEventListener("input",refresh);refresh();
 })();
 </script>
+
+<script>
+/* 서울교통공사와 동일한 정보 흐름: 채용→직무→전형/합격선→면접→후기→출처 */
+(function(){
+ const main=document.querySelector('main');
+ const order=['recruit','work','hiring-history','cutoff','scripts','online-reviews','self-intro','sources'];
+ const labels={'recruit':'1. 채용 정보','work':'2. 전기통신직 주요 업무','hiring-history':'3. 연도별 채용인원','cutoff':'4. 필기 합격선·경쟁률','scripts':'5. 면접 준비 대본','online-reviews':'6. 온라인 면접 후기','self-intro':'7. 자기소개서·면접 준비','sources':'8. 공식 자료 및 참고 링크'};
+ const sections=order.map(id=>document.getElementById(id)).filter(Boolean);
+ const nav=document.querySelector('.nav');
+ if(nav){nav.innerHTML=order.filter(id=>document.getElementById(id)).map(id=>'<a href="#'+id+'">'+labels[id]+'</a>').join('');}
+ sections.forEach((el,i)=>{const h=el.querySelector('h2');if(h)h.textContent=labels[el.id];});
+ const anchor=document.getElementById('recruit');if(anchor){let pos=anchor;sections.filter(el=>el!==anchor).forEach(el=>{pos.after(el);pos=el;});}
+})();
+</script>
 </body>
 </html>
