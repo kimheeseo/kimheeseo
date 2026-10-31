@@ -29,7 +29,7 @@
 
 ### 통신직 준비
 
-- [통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/) — 통신공학 1,069문항 · 무선공학 1,050문항 · 오답 복습·학습 기록 · 면접 자료
+- [통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/) — 통신공학 1,093문항 · 무선공학 1,074문항 · 오답 복습·학습 기록 · 면접 자료
 
 ## 관심 기술
 
