@@ -71,6 +71,17 @@ quiz500/
 - **면접 예상 질문 TOP 7** 및 45초 뉴스 연결 답변 예시를 포함합니다. 완료/계획/실증/행정처분 의결 등 진행 단계와 9호선운영부문·서울시 정책의 주체를 명확히 구분합니다.
 - 공식 발표 및 언론보도를 요약했으며, **예상 질문·답변은 실제 면접 기출이 아닌 학습용 작성자료**입니다. 원문 전체를 복제하지 않고 출처 링크를 제공했습니다.
 
+## 2026-11-10 사이트 업데이트 내역
+
+- **서울교통공사·코레일 면접 페이지 전면 접이식 UI 개편**: 모든 대분류를 기본 닫힘으로 두고 클릭할 때 본문이 펼쳐지는 아코디언으로 변경. 기존 표·면접 후기·대본·검색 기능 유지.
+- **서울교통공사:** [2024~2026 핵심 뉴스 16건](./interview/seoul-metro-news-2024-2026.html), LTE-R 중심 [기술면접 22문항과 30초 답변](./interview/seoul-metro.html#questions), 기존 연습·후기 질문에 30초 답변 추가.
+- **코레일:** [2024~2026 안전·노선·통신·전기 기술 뉴스 12건](./interview/korail-news-2024-2026.html), [LTE-R 기술 질문 12개](./interview/korail.html#technical-lte-r), 기존 익명화 대본 23개·온라인 후기 12개에 30초 답변 추가.
+- **공통 LTE-R 학습:** [LTE-R 구성도/핸드오버/백홀·코어망/RSRP·RSRQ·SINR 시각 자료](./interview/rail-lte-r.html). 원본 SVG로 직접 작성한 학습용 개념도.
+- **근무지 지도:** [서울교통공사 본사·차량사업소 11곳](./interview/rail-workplaces.html?org=metro), [코레일 전국 본사·지역본부·정비단·IT/통신 소속](./interview/rail-workplaces.html?org=korail). 역·권역 참고 핀이지 실제 채용 배치 주소가 아님. 지도는 Leaflet+OpenStreetMap 사용; 외부 지도 로딩이 제한되면 목록을 표시.
+- **인성면접:** [서울교통공사](./interview/rail-personality-30sec.html?org=metro) / [코레일](./interview/rail-personality-30sec.html?org=korail) 16개 질문별 30초 예상 답변과 [경험]·[행동]·[결과] 등을 입력해 완성·복사하는 템플릿. 입력값은 본인 브라우저 localStorage에 저장.
+- **업데이트 표시:** 홈의 최근 업데이트 사항과 양 기관 페이지의 업데이트 내역을 동시 갱신.
+- 기술·인성 답변은 공식 기출/공식 채점 기준이 아닌 학습용 예시로 실제 개인 경험만 입력하고 기관 공식 공고·안전 절차를 우선합니다.
+
 ## 면접 자료
 
 - [면접 자료 목록](./interview/) → [서울 교통 공사 정보통신직](./interview/seoul-metro.html), [코레일 전기통신직 면접 자료](./interview/korail.html), [한국수자원공사(K-water) 채용·면접 자료](./interview/kwater.html)
