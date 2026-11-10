@@ -13,7 +13,7 @@ h1{font-size:clamp(23px,3vw,35px);letter-spacing:-.045em;margin:5px 0 9px}h1 spa
 .lead{line-height:1.7;font-size:13px;color:#b4c8df;max-width:1000px;margin:0}
 .layout{display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:13px;max-width:1390px;margin:0 auto;padding:0 20px 24px}
 .scene-card{position:relative;border:1px solid #324562;border-radius:18px;background:#09192c;min-height:520px;overflow:hidden}
-#view{width:100%;height:100%;min-height:520px;display:block;touch-action:pan-y}
+#view{width:100%;height:100%;min-height:520px;display:block;touch-action:none}
 .overlay{position:absolute;pointer-events:none;z-index:2;padding:13px;border:1px solid #324967;border-radius:11px;background:#0e2238df;color:#e5f6ff;box-shadow:0 5px 20px #0003}
 .overlay.top{top:14px;left:14px}.overlay.bottom{bottom:15px;left:14px;right:14px;display:flex;gap:12px;align-items:center}
 .overline{display:block;color:#9bb1cd;font-size:10px;letter-spacing:.08em}
@@ -52,7 +52,7 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
 </head><body>
 <header><a class="back" href="./rail-lte-r.html">← LTE-R 기본 개념으로 돌아가기</a><div class="eyebrow">INTERACTIVE TELECOM EDUCATION · THREE.JS</div>
 <h1>LTE-R <span>3D 동작 원리 시뮬레이터</span></h1>
-<p class="lead">달리는 열차와 LTE-R 기지국의 연결이 바뀌는 <b>핸드오버</b>, 그리고 기지국 → 백홀 전송망 → 코어망 → 관제센터로 정보가 전달되는 흐름을 관찰하세요. 마우스로 회전하고 휠로 확대할 수 있습니다.</p></header>
+<p class="lead">달리는 열차와 LTE-R 기지국의 연결이 바뀌는 <b>핸드오버</b>, 그리고 기지국 → 백홀 전송망 → 코어망 → 관제센터로 정보가 전달되는 흐름을 관찰하세요. 마우스 왼쪽 버튼으로 회전하고 오른쪽 버튼으로 자유 이동, 휠로 확대할 수 있습니다.</p></header>
 <div class="layout">
  <div class="scene-card">
   <canvas id="view" aria-label="열차가 이동하며 기지국 A B C 간 핸드오버를 수행하는 3D 개념 시뮬레이션"></canvas>
@@ -66,6 +66,8 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
     <button class="btn active" data-camera="iso">입체 시점</button><button class="btn" data-camera="top">위에서 보기</button>
     <button class="btn" data-camera="side">측면 보기</button><button class="btn" id="links">연결 경로 표시 ✓</button>
   </div>
+  <button class="btn" data-camera="cabin" style="width:100%;margin-top:9px">🚆 운전실 가까이 보기</button>
+  <p class="disclaimer">마우스 좌클릭: 회전 · 우클릭: 자유 평행이동 · 휠: 확대/축소 · 터치: 회전/이동</p>
   <label class="range-line" for="speed">열차 속도 <input id="speed" type="range" min="0.5" max="3" value="1" step="0.5"><strong id="speedText">1×</strong></label>
   <h2>실시간 시뮬레이션 상태</h2>
   <div class="metric"><span class="metric-label">열차 진행 위치</span><strong id="posText">0%</strong><small>시연용 일정 구간 반복 이동</small></div>
@@ -89,8 +91,9 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
   <p><a href="./rail-lte-r.html">2D 기본 개념·용어·30초 답변</a> · <a href="./seoul-metro.html#lte-r-guide">서울교통공사 면접자료</a> · <a href="./korail.html#lte-r-guide">코레일 면접자료</a></p>
  </div>
 </div>
-<script type="module">
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js';
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script><script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 const canvas=document.querySelector('#view'),fallback=document.querySelector('#fallback');
 let renderer;
 try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});}
@@ -98,6 +101,13 @@ catch(err){fallback.style.display='grid';throw err;}
 renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));renderer.setClearColor(0x0b1a2a);renderer.shadowMap.enabled=true;
 const scene=new THREE.Scene();scene.background=new THREE.Color(0x0c192b);scene.fog=new THREE.Fog(0x0c192b,100,220);
 const camera=new THREE.PerspectiveCamera(47,1,.1,400);
+const controls=new OrbitControls(camera,canvas);
+controls.enableDamping=true;controls.dampingFactor=.075;controls.enablePan=true;
+controls.screenSpacePanning=true;controls.minDistance=8;controls.maxDistance=240;
+controls.maxPolarAngle=Math.PI*.97;
+controls.mouseButtons.LEFT=THREE.MOUSE.ROTATE;controls.mouseButtons.MIDDLE=THREE.MOUSE.DOLLY;controls.mouseButtons.RIGHT=THREE.MOUSE.PAN;
+controls.touches.ONE=THREE.TOUCH.ROTATE;controls.touches.TWO=THREE.TOUCH.DOLLY_PAN;
+canvas.addEventListener('contextmenu',e=>e.preventDefault());
 scene.add(new THREE.AmbientLight(0xc5d9ff,1.5));
 const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(-22,60,40);key.castShadow=true;scene.add(key);
 const fill=new THREE.PointLight(0x4de5e0,45,80);fill.position.set(10,20,6);scene.add(fill);
@@ -109,11 +119,34 @@ for(const z of [-1.8,1.8]){const rail=new THREE.Mesh(new THREE.BoxGeometry(106,.
 const bed=new THREE.Mesh(new THREE.BoxGeometry(108,.3,7.2),ballast);bed.position.set(0,.08,0);scene.add(bed);
 for(let x=-52;x<=52;x+=3){const sleeper=new THREE.Mesh(new THREE.BoxGeometry(.57,.25,5.1),tieMat);sleeper.position.set(x,.22,0);scene.add(sleeper);}
 const tr=new THREE.Group();scene.add(tr);
-function roundedVehicle(){const body=new THREE.Mesh(new THREE.BoxGeometry(11,3.2,4),mat(0xd9eaf5,.48,.4));body.position.set(0,2.65,0);body.castShadow=true;tr.add(body);
-const stripe=new THREE.Mesh(new THREE.BoxGeometry(11.05,.35,4.07),mat(0x2b9aab,.35,.4));stripe.position.set(0,2.1,0);tr.add(stripe);
-for(const side of [-1,1]){for(let x=-3.7;x<=3.7;x+=2.4){const pane=new THREE.Mesh(new THREE.PlaneGeometry(1.6,1.05),new THREE.MeshBasicMaterial({color:0x205274,side:THREE.DoubleSide}));pane.position.set(x,3.05,side*2.035);pane.rotation.y=side>0?0:Math.PI;tr.add(pane);}}
+function roundedVehicle(){const body=new THREE.Mesh(new THREE.BoxGeometry(8.4,3.2,4),mat(0xd9eaf5,.48,.4));body.position.set(-1.3,2.65,0);body.castShadow=true;tr.add(body);
+const stripe=new THREE.Mesh(new THREE.BoxGeometry(8.42,.35,4.07),mat(0x2b9aab,.35,.4));stripe.position.set(-1.3,2.1,0);tr.add(stripe);
+for(const side of [-1,1]){for(let x=-4.3;x<=1.9;x+=2.1){const pane=new THREE.Mesh(new THREE.PlaneGeometry(1.6,1.05),new THREE.MeshBasicMaterial({color:0x205274,side:THREE.DoubleSide}));pane.position.set(x,3.05,side*2.035);pane.rotation.y=side>0?0:Math.PI;tr.add(pane);}}
 for(const x of [-3.3,3.3]){const bogie=new THREE.Mesh(new THREE.BoxGeometry(1.8,.55,3.5),mat(0x243343,.7,.45));bogie.position.set(x,.95,0);tr.add(bogie);}}
 roundedVehicle();
+// 열린 투명 운전실과 기관사: 외부에서 내부를 볼 수 있는 컷어웨이 구성
+(function addDriver(){
+ const cabin=new THREE.Group();tr.add(cabin);
+ const shell=mat(0x81b2ca,.5,.4);
+ const glass=new THREE.MeshPhysicalMaterial({color:0x8ad9ed,transparent:true,opacity:.22,roughness:.12,depthWrite:false,side:THREE.DoubleSide});
+ function cub(w,h,d,x,y,z,m,parent=cabin){const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),m);o.position.set(x,y,z);parent.add(o);return o;}
+ cub(2.8,.2,4,4.1,1.25,0,shell);cub(2.8,.18,4.1,4.1,4.35,0,shell);
+ cub(.12,3,4.1,5.52,2.78,0,glass);
+ for(const z of [-1.98,1.98]){cub(2.7,3,.1,4.15,2.78,z,glass);cub(2.8,.17,.14,4.15,1.30,z,shell);}
+ const driver=new THREE.Group();driver.name='열차 운전기사';driver.position.set(4.02,0,0);cabin.add(driver);
+ cub(.85,.2,1.1,-.2,1.90,0,mat(0x2e4158),driver);
+ cub(.18,1.35,1.12,-.64,2.48,0,mat(0x2e4158),driver);
+ cub(.78,1.05,.73,-.15,2.65,0,mat(0x245a79),driver);
+ const head=new THREE.Mesh(new THREE.SphereGeometry(.34,18,16),mat(0xe9bc97));head.position.set(-.04,3.47,0);driver.add(head);
+ const cap=new THREE.Mesh(new THREE.SphereGeometry(.35,18,12,0,Math.PI*2,0,Math.PI*.42),mat(0x183e61));cap.position.set(-.04,3.65,0);driver.add(cap);
+ for(const z of [-.48,.48]){
+ const arm=new THREE.Mesh(new THREE.CylinderGeometry(.105,.105,.9,9),mat(0x245a79));arm.position.set(.3,2.45,z);arm.rotation.z=1;driver.add(arm);
+ const leg=new THREE.Mesh(new THREE.CylinderGeometry(.14,.14,1.0,9),mat(0x243b53));leg.position.set(.38,1.45,z*.55);leg.rotation.z=.72;driver.add(leg);
+ }
+ cub(.8,.25,2.4,.9,2.4,0,mat(0x304c65),driver);
+ cub(.08,.55,.75,.65,2.85,-.35,new THREE.MeshBasicMaterial({color:0x66e3dd}),driver);
+ const light=new THREE.PointLight(0x8ad7e4,9,8);light.position.set(4,3.65,0);cabin.add(light);
+})();
 function cylinderBetween(a,b,r,color,transparent=false){const length=a.distanceTo(b);const cylinder=new THREE.Mesh(new THREE.CylinderGeometry(r,r,length,8),new THREE.MeshBasicMaterial({color,transparent,opacity:transparent?.8:1}));cylinder.position.copy(a).add(b).multiplyScalar(.5);cylinder.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3().subVectors(b,a).normalize());scene.add(cylinder);return cylinder;}
 const stations=[-31,0,31].map((x,i)=>{
  const g=new THREE.Group();g.position.set(x,0,-12);scene.add(g);
@@ -140,15 +173,13 @@ wires.push(cylinderBetween(core,control,.14,0xafa4ff,true));
 const wireLink=cylinderBetween(new THREE.Vector3(-32,4,0),stations[0].pt,.14,0x5af1e4,true);
 const dot=new THREE.Mesh(new THREE.SphereGeometry(.45,14,10),new THREE.MeshBasicMaterial({color:0xf6e1ac}));scene.add(dot);
 const dot2=new THREE.Mesh(new THREE.SphereGeometry(.45,14,10),new THREE.MeshBasicMaterial({color:0x66f9ee}));scene.add(dot2);
-let progress=0,paused=false,speed=1,showLinks=true,activeIndex=0,lastEvent='대기',t=0,theta=.9,phi=.98,dist=103;
-function cameraUpdate(){camera.position.set(Math.cos(theta)*Math.sin(phi)*dist,Math.cos(phi)*dist,Math.sin(theta)*Math.sin(phi)*dist);camera.lookAt(0,2,-12);}
-function setCamera(type){if(type==='top'){theta=.6;phi=.16;dist=112;}else if(type==='side'){theta=.01;phi=1.27;dist=101;}else{theta=.87;phi=.95;dist=100;}cameraUpdate();document.querySelectorAll('[data-camera]').forEach(b=>b.classList.toggle('active',b.dataset.camera===type));}
+let progress=0,paused=false,speed=1,showLinks=true,activeIndex=0,lastEvent='대기',t=0;
+function setCamera(type){
+ const v=type==='top'?[.01,104,.01,0,0,-10]:type==='side'?[.01,23,96,0,3,-10]:type==='cabin'?[15,8,12,4,2.7,0]:[62,46,68,0,4,-10];
+ camera.position.set(...v.slice(0,3));controls.target.set(...v.slice(3));
+ controls.update();document.querySelectorAll('[data-camera]').forEach(b=>b.classList.toggle('active',b.dataset.camera===type));
+}
 setCamera('iso');
-let dragging=false,oldX=0,oldY=0;
-canvas.addEventListener('pointerdown',e=>{dragging=true;oldX=e.clientX;oldY=e.clientY;canvas.setPointerCapture(e.pointerId);});
-canvas.addEventListener('pointermove',e=>{if(!dragging)return;theta+=(e.clientX-oldX)*.007;phi=Math.max(.12,Math.min(1.52,phi+(e.clientY-oldY)*.005));oldX=e.clientX;oldY=e.clientY;cameraUpdate();});
-canvas.addEventListener('pointerup',()=>dragging=false);
-canvas.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(35,Math.min(180,dist+e.deltaY*.08));cameraUpdate();},{passive:false});
 function moveCylinder(mesh,a,b){const v=new THREE.Vector3().subVectors(b,a);mesh.position.copy(a).add(b).multiplyScalar(.5);mesh.scale.y=v.length() / mesh.geometry.parameters.height;mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize());}
 function interpolate(a,b,p){return a.clone().lerp(b,p);}
 function report(){document.querySelector('#cellStatus').textContent='기지국 '+['A','B','C'][activeIndex];document.querySelector('#cellText').textContent='Cell '+['A','B','C'][activeIndex];document.querySelector('#handoverText').textContent=lastEvent;
@@ -180,7 +211,7 @@ const phase=(t*.28)%1;
 const hops=[start,tower,core,control],stage=Math.min(2,Math.floor(phase*3)),sub=(phase*3-stage);
 dot.position.copy(interpolate(hops[stage],hops[stage+1],sub));
 dot2.position.copy(interpolate(start,tower,(t*.5)%1));
-report();renderer.render(scene,camera);
+report();controls.update();renderer.render(scene,camera);
 }
 requestAnimationFrame(frame);
 </script>
