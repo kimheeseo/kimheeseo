@@ -168,7 +168,7 @@ const info={
  wind:{name:'풍력발전',flow:'바람 → 블레이드 회전 → 발전기 → 변압기·계통',energy:'바람 운동에너지 → 회전 → 전기',equip:'블레이드 · 타워 · 발전기 · 변압기',interview:'풍속·풍향·블레이드·안전·계통연계',title:'풍력은 어떻게 전기를 생산하나?',text:'바람이 블레이드를 회전시키고 회전 에너지가 발전기를 통해 전기로 전환됩니다. 본 화면은 물에너지 시설과 별도로 이해할 수 있도록 추가한 재생에너지 원리 모델입니다.',steps:['풍속·풍향 조건','블레이드 회전','발전기 전력 생산','변압기·계통으로 송전']}
 };
 let mode='hydro',paused=false,showFlow=true,speed=1,last=performance.now(),time=0;
-function build(){while(root.children.length){const c=root.children.pop();if(c.geometry)c.geometry.dispose();if(c.material&&!Array.isArray(c.material))c.material.dispose();root.remove(c);}spin.length=0;particles.length=0;paths.length=0;
+function build(){while(root.children.length){const c=root.children[0];root.remove(c);c.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const arr=Array.isArray(o.material)?o.material:[o.material];for(const m of arr)m.dispose();}});}spin.length=0;particles.length=0;paths.length=0;
  if(mode==='hydro')buildHydro();else if(mode==='micro')buildHydro(true);else if(mode==='tidal')buildTidal();else if(mode==='solar')buildSolar();else buildWind();
  const o=info[mode];document.getElementById('current').textContent=o.name;document.getElementById('flow').textContent=o.flow;document.getElementById('principle').textContent=o.energy;document.getElementById('equipment').textContent=o.equip;document.getElementById('interview').textContent=o.interview;
  document.getElementById('theory-title').textContent=o.title;document.getElementById('theory').textContent=o.text;
