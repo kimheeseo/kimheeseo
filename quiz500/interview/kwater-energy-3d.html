@@ -82,7 +82,18 @@ function ball(x,y,z,r,color,parent=root){const o=new THREE.Mesh(new THREE.Sphere
 function connect(a,b,r,material,parent=root){const A=new THREE.Vector3(...a),B=new THREE.Vector3(...b),v=B.clone().sub(A);const o=new THREE.Mesh(new THREE.CylinderGeometry(r,r,v.length(),10),material);o.position.copy(A.add(B).multiplyScalar(.5));o.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize());add(o,parent);return o;}
 function label(txt,x,y,z){const c=document.createElement('canvas');c.width=512;c.height=74;const ctx=c.getContext('2d');ctx.fillStyle='#163749ec';ctx.fillRect(3,3,506,68);ctx.strokeStyle='#d7f0ec';ctx.lineWidth=2;ctx.strokeRect(3,3,506,68);ctx.font='bold 29px sans-serif';ctx.fillStyle='#f8ffff';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(txt,256,38);const tex=new THREE.CanvasTexture(c);const o=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));o.position.set(x,y,z);o.scale.set(13,1.9,1);add(o);labels.push(o);return o;}
 function path(coords,col,num=10){const points=coords.map(c=>new THREE.Vector3(...c));for(let i=1;i<points.length;i++)connect(coords[i-1],coords[i],.07,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.4}));for(let i=0;i<num;i++){const dot=ball(0,0,0,.34,col);dots.push({obj:dot,pts:points,offset:i/num});}}
-function resetRoot(){for(const child of [...root.children]){root.remove(child);child.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const list=Array.isArray(o.material)?o.material:[o.material];list.forEach(mm=>{if(mm.userData?.keep)return;if(mm.map&&mm.map.isCanvasTexture)mm.map.dispose();/* shared basic materials remain reusable */});}});}movers.length=0;dots.length=0;labels.length=0;waterParts.length=0;rotors.length=0;}
+function resetRoot(){
+ const shared=new Set([glass,rock,concrete,dark,green,roof,steel,rail,watermat]);
+ const seenGeo=new Set(),seenMat=new Set();
+ for(const child of [...root.children]){root.remove(child);child.traverse(o=>{
+  if(o.geometry&&!seenGeo.has(o.geometry)){seenGeo.add(o.geometry);o.geometry.dispose();}
+  if(o.material){for(const mm of Array.isArray(o.material)?o.material:[o.material]){
+   if(shared.has(mm)||seenMat.has(mm))continue;
+   seenMat.add(mm);if(mm.map&&mm.map.isCanvasTexture)mm.map.dispose();mm.dispose();
+  }}
+ });}
+ movers.length=0;dots.length=0;labels.length=0;waterParts.length=0;rotors.length=0;
+}
 function water(x,y,z,w,d,color=0x2f8fad,opacity=.85){const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,d,24,12),new THREE.MeshPhysicalMaterial({color,transparent:true,opacity,roughness:.19,metalness:.03,side:THREE.DoubleSide}));mesh.rotation.x=-Math.PI/2;mesh.position.set(x,y,z);add(mesh);waterParts.push(mesh);return mesh;}
 function terrain(seed=1){const geom=new THREE.PlaneGeometry(195,170,66,58);geom.rotateX(-Math.PI/2);const p=geom.attributes.position;const colors=[];
 for(let i=0;i<p.count;i++){const x=p.getX(i),z=p.getZ(i),ridge=Math.pow(Math.min(Math.abs(x)/72,1.1),1.45)*26;const noise=Math.sin(x*.11+seed)*Math.cos(z*.09-seed)*2.7+Math.sin(z*.16+seed*2)*1.5;const y=Math.max(-2,ridge+noise-2);p.setY(i,y);const c=new THREE.Color(y>13?0x416854:y>5?0x648666:0x648273);colors.push(c.r,c.g,c.b);}
@@ -104,7 +115,7 @@ function concreteDam(xCenter,width,top=22,bays=6){const w=width;
  const spillStart=xCenter-w*.30;for(let i=0;i<bays;i++){const x=spillStart+i*5.5;
  box(x,top+2.5,1.6,.8,4.2,7,concrete);
  box(x+2.1,top-.5,2.4,3.3,4,1,m(0x476d75,.65,.3));
- if(i%2===0){const flow=water(x+2.1,top-6,-7,2.9,16,0x8cc8d9,.7);flow.rotation.x=-Math.PI*.24;flow.position.y=top-7;waterParts.push(flow);}
+ if(i%2===0){const flow=water(x+2.1,top-6,-7,2.9,16,0x8cc8d9,.7);flow.rotation.x=-Math.PI*.24;flow.position.y=top-7;}
  }
  label('콘크리트 중력식댐 · 여수로',xCenter,top+11,1);
 }
@@ -208,7 +219,16 @@ function build(id){
  labels.forEach(l=>l.visible=labelsOn);
  setView('iso');elapsed=0;
 }
-function setView(type){const v=type==='top'?[.01,147,.01,0,0,0]:type==='front'?[0,37,-102,0,10,0]:[87,62,106,0,11,0];camera.position.set(...v.slice(0,3));controls.target.set(...v.slice(3));controls.update();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===type));}
+function setView(type){
+ const kind=byId[activeId]?.kind||'embankment';
+ const broad=kind==='tidal',coastal=kind==='solar'||kind==='wind';
+ const center=kind==='wind'?20:10;
+ const v=type==='top'?[.01,broad?215:coastal?175:135,.01,0,center,0]:
+ type==='front'?[0,kind==='wind'?48:35,broad?-156:-94,0,center,0]:
+ broad?[112,83,147,0,center,0]:coastal?[96,72,113,0,center,0]:[71,54,88,0,center,0];
+ camera.position.set(...v.slice(0,3));controls.target.set(...v.slice(3));controls.update();
+ document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===type));
+}
 document.getElementById('facility').onchange=e=>build(e.target.value);
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
 document.getElementById('play').onclick=e=>{paused=!paused;e.currentTarget.textContent=paused?'▶ 재생':'⏸ 일시정지';e.currentTarget.classList.toggle('active',!paused);};
