@@ -1,194 +1,224 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>K-water 전력 생산 원리 3D | 수력·소수력·조력·수상태양광·풍력</title>
-<meta name="description" content="한국수자원공사 물에너지 수력 소수력 조력 수상태양광 풍력 발전원리를 조작 가능한 Three.js 3D로 시연합니다.">
-<style>
-:root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e6f1ff}
-*{box-sizing:border-box}body{margin:0;background:#0b1525;color:#e5f1ff}
-main{max-width:1420px;margin:auto;padding:21px 18px 56px}
-a{color:#89dcd8}.eyebrow{color:#63d9db;font-size:11px;letter-spacing:.14em;font-weight:850}
-h1{font-size:clamp(24px,3.4vw,35px);margin:10px 0}h1 em{color:#65dad1;font-style:normal}
-h2{font-size:17px;color:#e7f2fe}.lead{font-size:13px;color:#bbd0e5;line-height:1.75;max-width:970px}
-.tabs{display:flex;flex-wrap:wrap;gap:9px;margin:17px 0}
-.tab,.btn{background:#1c3350;color:#dceefa;border:1px solid #3b6380;border-radius:10px;padding:10px 14px;cursor:pointer;font:inherit;font-size:13px;font-weight:800}
-.tab[aria-selected=true],.btn.active{background:#216b75;color:white;border-color:#64e6db}
-.tab:hover,.btn:hover{border-color:#60dfd9}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:13px}
-.stage{background:#0e2136;border:1px solid #334b68;border-radius:18px;min-height:575px;overflow:hidden;position:relative}
-canvas{display:block;width:100%;height:575px;touch-action:none}
-.hud{position:absolute;left:12px;top:12px;background:#0d2742e8;border:1px solid #3c6686;padding:11px;border-radius:11px;pointer-events:none;max-width:75%}
-.hud b{display:block;color:#66e8d8;font-size:18px}.hud span{display:block;color:#c1d5ea;font-size:12px;margin-top:5px;line-height:1.5}
-.panel{border:1px solid #334a69;border-radius:18px;padding:17px;background:#152941}
-.panel h2{margin:0 0 11px}.action{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
-.control-note{font-size:12px;color:#b2c9e0;line-height:1.7}
-.range{display:flex;gap:7px;align-items:center;margin:15px 0;font-size:12px;color:#c4d8eb}
-.range input{flex:1;min-width:0;accent-color:#5cdecf}
-.stat{padding:11px;background:#102137;border:1px solid #37516a;border-radius:12px;margin:9px 0}
-.stat span{font-size:11px;color:#afc5dd;display:block}.stat strong{display:block;font-size:17px;margin:5px 0;color:#e8f7ff}
-.note{font-size:12px;line-height:1.7;color:#d2c8a5;border-left:3px solid #dcaf69;padding-left:11px}
-.low{max-width:1420px;margin:14px auto}
-.card{border:1px solid #334c66;border-radius:16px;background:#152940;padding:17px;margin:12px 0}
-.card p,.card li{line-height:1.8;font-size:13px;color:#bfcfe2}.card b{color:#71e4dd}
-.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
-.step{padding:12px;border-radius:10px;background:#1c344a;line-height:1.7;color:#c5d6e8;font-size:12px}
-.step b{display:block;color:#65e2d9}
-#fallback{display:none;position:absolute;inset:0;background:#142a40;place-items:center;text-align:center;padding:24px;color:#f2f6ff;z-index:5}
-:focus-visible{outline:3px solid #75e6d8;outline-offset:3px}
-@media(max-width:960px){.layout{grid-template-columns:1fr}.stage,canvas{min-height:420px;height:420px}.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:540px){main{padding:16px 10px}.stage,canvas{height:340px;min-height:340px}.steps{grid-template-columns:1fr}.tab{flex:1;white-space:nowrap;padding:9px;font-size:12px}}
+<title>K-water 실제 시설별 3D 모델 · 댐·시화호 조력·수상태양광·풍력</title><meta name="description" content="한국수자원공사 실제 시설별 3D 학습: 소양강·충주·대청·안동·주암·합천댐, 시화호 조력, 임하댐 수상태양광, 방아머리 풍력. 시설 선택과 구조 설명.">
+<style>:root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e7f2ff}*{box-sizing:border-box}
+body{margin:0;background:#0c1c2c}main{max-width:1510px;margin:auto;padding:19px 18px 50px}
+a{color:#83e1d6}.back{font-size:13px;text-decoration:none;color:#b4cbe1}
+.eyebrow{letter-spacing:.13em;font-size:11px;color:#66e0da;font-weight:850;margin-top:15px}
+h1{margin:6px 0;font-size:clamp(25px,3vw,37px);letter-spacing:-.045em}h1 em{color:#6ee0db;font-style:normal}
+.lead{font-size:13px;color:#b3c9dc;line-height:1.8;max-width:1140px}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 338px;gap:14px;margin-top:16px}
+.viewport{position:relative;height:620px;background:#bdd1db;border:1px solid #547185;border-radius:18px;overflow:hidden}
+#scene{width:100%;height:100%;display:block;touch-action:none}
+.overlay{position:absolute;left:14px;top:14px;background:#0e263ce8;border:1px solid #527083;color:#f4fcff;border-radius:12px;padding:13px;max-width:min(390px,70%);pointer-events:none;z-index:2}
+.overlay b{font-size:16px;color:#74e4dc}.overlay span{display:block;font-size:12px;color:#b6d0e2;line-height:1.6;margin-top:5px}
+.sign{position:absolute;right:13px;bottom:13px;background:#0d263be0;border:1px solid #4c6d82;padding:10px 12px;border-radius:10px;color:#daebf3;font-size:11px;max-width:250px;pointer-events:none}
+.sidebar{background:#132b42;border:1px solid #47617a;border-radius:18px;padding:17px;min-width:0}
+.sidebar h2{font-size:15px;margin:0 0 10px}.select{width:100%;padding:11px;border-radius:11px;border:1px solid #567d93;background:#1a3b53;color:#f0faff;font:inherit;font-size:14px;font-weight:700}
+.btns{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:13px}
+.btn{font:inherit;font-size:12px;font-weight:750;padding:10px;border:1px solid #577b91;border-radius:9px;background:#1c3b51;color:#e3f3ff;cursor:pointer}
+.btn:hover,.btn:focus-visible{border-color:#76e1d7;outline:2px solid #52ddcd55}.btn.active{background:#267a78;border-color:#65e3ce}
+.control-note{font-size:12px;color:#aac7db;line-height:1.6}
+.speed{display:flex;align-items:center;gap:7px;margin:15px 0;font-size:12px;color:#b7d2e5}
+.speed input{flex:1;accent-color:#6ee2d2;min-width:0}
+.box{background:#0d263b;border:1px solid #416279;border-radius:13px;padding:13px;margin:11px 0}
+.box span{font-size:11px;color:#9ebfd3;display:block}.box strong{font-size:15px;display:block;margin:6px 0;color:#f4fcff}.box p{font-size:12px;line-height:1.75;color:#c4d7e6;margin:7px 0}
+.box a{font-size:12px;font-weight:800}
+.hint{background:#152d43;border:1px solid #415e79;border-radius:14px;padding:17px;margin:14px 0}
+.hint h2{font-size:17px;margin:0 0 8px}.hint p,.hint li{font-size:13px;line-height:1.75;color:#bbd1e3}
+.badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.badge{font-size:11px;background:#24465d;border-radius:8px;padding:5px 9px;color:#c2e4e9}
+#fail{display:none;position:absolute;inset:0;z-index:4;place-items:center;background:#112a41;color:white;text-align:center;padding:20px}
+@media(max-width:960px){.layout{grid-template-columns:1fr}.viewport{height:510px}}
+@media(max-width:570px){main{padding:12px 10px}.viewport{height:390px}.overlay{top:8px;left:8px;padding:9px}.sign{display:none}.sidebar{padding:13px}}
 </style></head><body><main>
-<a href="./kwater.html#energy-3d">← 수자원공사 면접 페이지</a>
-<div class="eyebrow">INTERACTIVE WATER-ENERGY LAB · THREE.JS</div><h1>K-water <em>전력 생산 방식 3D</em></h1>
-<p class="lead">수력·관로 소수력·시화호 조력·수상태양광·풍력을 선택하면 각 설비가 돌아가는 원리와 에너지 흐름을 3D로 볼 수 있습니다. <strong>수열에너지는 발전기가 전기를 생산하는 방식이 아니라 주로 냉난방 열원</strong>으로 활용하는 방식이므로 별도 설명으로 구분했습니다.</p>
-<div class="tabs" role="tablist" aria-label="발전 방식 선택">
-<button class="tab" role="tab" aria-selected="true" data-mode="hydro">💧 댐 수력</button>
-<button class="tab" role="tab" aria-selected="false" data-mode="micro">🚰 관로 소수력</button>
-<button class="tab" role="tab" aria-selected="false" data-mode="tidal">🌊 시화호 조력</button>
-<button class="tab" role="tab" aria-selected="false" data-mode="solar">☀️ 수상태양광</button>
-<button class="tab" role="tab" aria-selected="false" data-mode="wind">🌬️ 풍력</button>
-</div>
-<div class="layout"><div class="stage">
-<canvas id="scene" aria-label="수력 조력 태양광 풍력 발전 원리를 보여주는 3D 상호작용 모델"></canvas>
-<div class="hud"><b id="current">댐 수력발전</b><span id="flow">저수지 → 수압관로 → 터빈 → 발전기 → 송전</span></div>
-<div id="fallback"><div><strong>3D 렌더링을 시작하지 못했습니다.</strong><p>WebGL과 인터넷 연결 상태를 확인하세요.</p><a href="https://www.kwater.or.kr/busi/water03/cleanInfoPage.do?s_mid=28">K-water 공식 물에너지 설명 보기</a></div></div>
-</div><aside class="panel">
-<h2>3D 시점 및 동작</h2><div class="action"><button class="btn active" id="play">⏸ 일시정지</button><button class="btn" id="reset">↺ 초기화</button><button class="btn" data-view="iso">입체 시점</button><button class="btn" data-view="top">상단 시점</button><button class="btn" data-view="side">측면 시점</button><button class="btn" id="flow-toggle">흐름 표시 ✓</button></div>
-<label class="range">애니메이션 속도 <input id="speed" type="range" min="0.3" max="3" step="0.1" value="1"><b id="speed-label">1.0×</b></label>
-<p class="control-note">마우스 좌클릭 드래그: 회전 · 우클릭 드래그: 자유 이동 · 휠: 확대·축소 · 터치도 지원</p>
-<div class="stat"><span>에너지 전환 원리</span><strong id="principle">위치에너지 → 기계적 회전 → 전기</strong></div>
-<div class="stat"><span>주요 설비</span><strong id="equipment">취수구 · 수압관로 · 수차 · 발전기</strong></div>
-<div class="stat"><span>면접 핵심</span><strong id="interview" style="font-size:13px;line-height:1.6">낙차 H, 유량 Q, 효율 η</strong></div>
-<p class="note">물, 물결, 광선, 전류·에너지 구슬은 시각적 표현입니다. 설비 스케일·출력·효율·전력량을 계산하는 공학 해석이 아닙니다.</p>
+<a class="back" href="./kwater.html#energy-3d">← K-water 면접자료로 돌아가기</a>
+<div class="eyebrow">REAL FACILITY INSPIRED 3D · WATER INFRASTRUCTURE DIGITAL TOUR</div><h1>K-water <em>실제 시설별 3D 학습 투어</em></h1>
+<p class="lead"><b>발전 방식</b>이 아니라 <b>시설 이름</b>을 선택하세요. 소양강댐(토석), 충주댐(콘크리트), 대청댐(혼합), 안동·주암댐(토석), 합천댐(콘크리트), 시화호 조력, 임하댐 수상태양광, 방아머리 풍력의 특징을 각각 다른 구조와 움직임으로 표현했습니다.</p>
+<div class="layout">
+<div class="viewport"><canvas id="scene" aria-label="실제 시설을 참고한 K-water 댐·조력·태양광 3D 교육 모델"></canvas>
+<div class="overlay"><b id="facilityTitle">소양강댐</b><span id="facilitySubtitle">토석댐 · 저수지 · 여수로 · 수력발전동</span></div>
+<div class="sign">좌클릭: 회전 · 우클릭: 자유 이동 · 휠: 확대/축소 · 터치: 회전·이동</div>
+<div id="fail"><div><b>3D 모델을 표시하지 못했습니다.</b><p>WebGL 지원·인터넷 연결을 확인하세요.</p><a href="./kwater.html">2D 설명으로 돌아가기</a></div></div></div>
+<aside class="sidebar"><h2>실제 시설 선택</h2><select id="facility" class="select" aria-label="실제 시설 선택"><optgroup label="다목적댐·수력"><option value="soyang">소양강댐</option><option value="chungju">충주댐</option><option value="daecheong">대청댐</option><option value="andong">안동댐</option><option value="juam">주암댐</option><option value="hapcheon">합천댐</option></optgroup><optgroup label="조력발전"><option value="sihwa">시화호 조력발전소</option></optgroup><optgroup label="수상태양광"><option value="imha">임하댐 수상태양광</option></optgroup><optgroup label="풍력발전"><option value="banga">시화 방아머리 풍력</option></optgroup></select>
+<div class="btns"><button class="btn active" id="play">⏸ 일시정지</button><button class="btn" id="reset">↺ 초기화</button><button class="btn" data-view="iso">입체 시점</button><button class="btn" data-view="top">위에서 보기</button><button class="btn" data-view="front">정면 보기</button><button class="btn" id="labels">구조물 라벨 ✓</button></div>
+<label class="speed" for="speed">움직임 속도<input id="speed" type="range" min=".3" max="2.5" step=".1" value="1"><span id="speedLabel">1.0×</span></label>
+<p class="control-note">동일한 이름표만 바꾸는 모델이 아니라 각 시설의 댐체 형식·수문·발전동·수면 및 주변 구조를 개별 구성한 교육용 장면입니다.</p>
+<div class="box"><span>설치 위치 · 분류</span><strong id="region">강원 춘천</strong><p id="design">토석댐</p></div>
+<div class="box"><span>구조적 특징</span><strong id="highlight">경사식 토석댐</strong><p id="summary">댐 본체와 발전설비의 관계</p></div>
+<div class="box"><span>발전 및 운영 정보</span><strong id="capacity">수력발전</strong><p id="energyFlow">저수지 → 수압관로 → 수차/발전기 → 계통</p><a id="official" href="https://www.kwater.or.kr" target="_blank" rel="noopener noreferrer">K-water 공식 시설자료 ↗</a></div>
 </aside></div>
-<div class="low"><div class="card"><h2 id="theory-title">수력발전은 어떻게 전기를 만들까?</h2>
-<p id="theory">높은 곳에 모인 물이 수압관로를 따라 내려가 수차를 돌리고 발전기의 회전자·고정자 상호작용으로 전력이 만들어집니다. 댐 방류·홍수조절이 반드시 발전량 최대화와 같은 목표는 아닙니다.</p>
-<div class="steps" id="steps">
-<div class="step"><b>01 · 물 저장</b>저수지의 낙차 확보</div><div class="step"><b>02 · 수압관로</b>유량과 유속 전달</div><div class="step"><b>03 · 수차/발전기</b>기계적 에너지 → 전기</div><div class="step"><b>04 · 송전</b>변압기와 계통 연계</div>
-</div></div>
-<div class="card"><h2>발전 방식 비교 · 면접 핵심</h2>
-<p><b>수력·소수력</b>은 물의 낙차·유량, <b>조력</b>은 바다와 호수의 조위차, <b>수상태양광</b>은 일사광을 전기로 바꾸는 태양전지, <b>풍력</b>은 바람의 운동에너지를 이용합니다. <b>수열에너지</b>는 냉난방 열원으로 활용하며 그 자체로 발전기를 돌리는 기술이 아닙니다.</p>
-<p><strong>대표 시설:</strong> 시화호 조력발전소(254 MW), 임하댐 수상태양광(2025년 준공, 47.2 MW급)과 수력·소수력 시설. 실제 인허가·운영 방식은 시설별로 다릅니다.</p>
-<p><a href="https://www.kwater.or.kr/busi/water03/cleanInfoPage.do?s_mid=28" target="_blank" rel="noopener noreferrer">K-water 공식 물에너지 개요</a> · <a href="https://www.kwater.or.kr/news/repoView.do?brdId=KO26&pageNo=12&s_mid=36&seq=139299" target="_blank" rel="noopener noreferrer">임하 수상태양광 준공(2025)</a> · <a href="./kwater-news-2024-2026.html">최근 3개년 관련 뉴스 면접 대비</a></p>
-</div></div></main>
+<section class="hint"><h2>실제 시설을 이해하는 데 집중한 모델</h2><p id="featureText">소양강댐은 넓은 사면을 가진 토석댐과 측면 여수로가 특징입니다.</p>
+<div class="badges"><span class="badge">댐체 구조별 차이</span><span class="badge">물 이동 경로</span><span class="badge">수차·발전기·변압기</span><span class="badge">여수로·조력 수문</span><span class="badge">수상 PV 배열·풍력</span></div>
+<p><b>모델 정확도:</b> K-water 공식 자료와 공개 사진에서 확인되는 <b>시설 종류·대표적인 배치 특징</b>을 참고해 제작한 교육용 3D 장면입니다. 실제 시설의 정확한 좌표·표고·도면·수문 치수·구조 안전·전력계통을 재현한 BIM/점군·정밀 복제품은 아닙니다. 모형 안의 물·전류 흐름과 개폐는 예시 애니메이션이며 실시간 운전상태가 아닙니다. 시설명별 정확한 설명은 오른쪽 공식 링크를 참고하세요.</p>
+<p><a href="./kwater-basin-map.html">4개 유역본부 지도·담당 역할 보기</a> · <a href="./kwater.html#technical-30s">발전원리·SCADA 면접 답변 보기</a></p>
+</section></main>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-const cvs=document.getElementById('scene'),error=document.getElementById('fallback');
+const facilities=[{"id":"soyang","name":"소양강댐","group":"다목적댐·수력","river":"한강유역","region":"강원 춘천","kind":"embankment","variant":1,"feature":"대형 토석댐(사력·점토)과 측면 여수로, 우안 발전동","design":"토석댐","highlight":"넓은 경사식 사력 댐체 · 우측 여수로 · 수차 2기","elec":"200 MW (시설용량)","summary":"소양강댐은 콘크리트 중력댐이 아니라 거대한 토석댐입니다. 산지 사이 사력 댐체, 측면 여수로와 발전동을 서로 구분해 모델링했습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresentPage.do?s_mid=1515"},{"id":"chungju","name":"충주댐","group":"다목적댐·수력","river":"한강유역","region":"충북 충주","kind":"gravity","variant":2,"feature":"콘크리트 중력식댐, 중앙 수문군과 댐 직하부 발전소","design":"콘크리트 중력식","highlight":"직선형 콘크리트 댐체 · 다수 수문 · 전면 발전동","elec":"412 MW (시설용량)","summary":"콘크리트 중력식 댐체의 하류 경사면과 여러 수문, 댐 아래 대형 발전동을 표현했습니다. 소양강댐과 구조를 비교하세요.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresentPage.do?s_mid=1515"},{"id":"daecheong","name":"대청댐","group":"다목적댐·수력","river":"금강유역","region":"대전·충북 청주","kind":"mixed","variant":3,"feature":"콘크리트 중력식 + 석괴식 복합형댐","design":"혼합형(콘크리트·석괴)","highlight":"콘크리트 수문 구간과 석괴 댐체의 결합","elec":"90 MW (45 MW × 2)","summary":"대청댐은 콘크리트 중력식과 석괴식이 결합된 혼합형입니다. 왼쪽 토석 구간과 오른쪽 수문 있는 콘크리트 구조가 다르게 보이도록 했습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent02Page.do?s_mid=1515"},{"id":"andong","name":"안동댐","group":"다목적댐·수력","river":"낙동강유역","region":"경북 안동","kind":"embankment","variant":4,"feature":"중앙차수벽형 토석댐, 긴 제방형 댐체","design":"중앙차수벽형 토석댐","highlight":"긴 토석댐 · 산지 저수지 · 하류 발전설비","elec":"수력발전시설","summary":"안동댐은 길고 경사면이 넓은 중앙차수벽형 토석댐입니다. 충주댐과 달리 수문이 댐 벽 중앙에 반복되는 형태로 단순화하지 않았습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent03Page.do?s_mid=1515"},{"id":"juam","name":"주암댐","group":"다목적댐·수력","river":"영·섬유역","region":"전남 순천","kind":"embankment","variant":5,"feature":"중앙차수벽형 토석댐, 조절지댐·도수터널","design":"토석댐 + 조절지댐","highlight":"주암 본댐 · 도수터널 모형 · 조절지 발전","elec":"조절지댐 발전설비 포함","summary":"주암 본댐과 조절지댐 연결 개념을 함께 보여줍니다. 물을 단순히 댐 아래로 방류하는 것 외에 도수터널과 하류 공급 계통이 중요한 시설입니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent09Page.do?s_mid=1515"},{"id":"hapcheon","name":"합천댐","group":"다목적댐·수력","river":"낙동강유역","region":"경남 합천","kind":"gravity","variant":6,"feature":"콘크리트 중력식댐과 발전소, 하류 역조정지댐","design":"콘크리트 중력식","highlight":"높은 콘크리트 댐체 · 발전동 · 하류 역조정지댐","elec":"본댐 100 MW","summary":"합천댐은 콘크리트 중력식댐으로 하류에 별도의 역조정지댐이 있는 것이 특징입니다. 실측 설계가 아닌 관계를 보여주는 교육용 재구성입니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent03Page.do?s_mid=1515"},{"id":"sihwa","name":"시화호 조력발전소","group":"조력발전","river":"한강유역 관련 사업","region":"경기 안산 시화방조제","kind":"tidal","variant":7,"feature":"시화방조제, 밀물(창조) 발전, 수차 10기와 수문 8문","design":"단류식 창조발전","highlight":"바다·호수의 조위차 · 해수 유통 · 10기 수차","elec":"254 MW (수차 10기)","summary":"시화호 조력은 바닷물과 호수의 조위차를 이용합니다. 왼쪽 바다에서 오른쪽 호수로 물이 이동하는 흐름과 수문·터빈 구간을 분리해 보여줍니다.","source":"https://www.kwater.or.kr/water/sub01/sub05/50029610/works.do?brdId=KO27&s_flag=1&s_mid=1349&s_officecode=10980085"},{"id":"imha","name":"임하댐 수상태양광","group":"수상태양광","river":"낙동강유역","region":"경북 안동","kind":"solar","variant":8,"feature":"댐 수면 위 부유형 태양광 모듈, 육상 인버터와 계통","design":"수상 PV → 인버터","highlight":"무궁화 형태를 참고한 다수 부유식 모듈섬","elec":"47.2 MW (준공 발표)","summary":"태양광 모듈이 수면 위 부유체에 배열되어 있고, 직류 전기가 케이블로 육상 인버터·변압기에 전달되는 구조를 보여줍니다.","source":"https://www.kwater.or.kr/news/repoView.do?brdId=KO26&pageNo=12&s_mid=36&seq=139299"},{"id":"banga","name":"시화 방아머리 풍력","group":"풍력발전","river":"한강유역 관련 사업","region":"경기 안산 대부도","kind":"wind","variant":9,"feature":"방아머리 풍력발전기 2기, 타워·나셀·블레이드·변압기","design":"풍력 2기","highlight":"해안 풍력터빈 2기 · 3엽 블레이드 · 전력 연결","elec":"3 MW (1.5 MW × 2)","summary":"시화방조제 인근 방아머리 풍력설비를 참고했습니다. 수력·조력과는 달리 바람의 운동에너지가 블레이드를 돌립니다.","source":"https://www.kwater.or.kr/water/sub01/sub05/50029610/works.do?brdId=KO27&s_flag=1&s_mid=1349&s_officecode=10980085"}];
+const byId=Object.fromEntries(facilities.map(f=>[f.id,f]));
+const canvas=document.getElementById('scene');
 let renderer;
-try{renderer=new THREE.WebGLRenderer({canvas:cvs,antialias:true});}catch(e){error.style.display='grid';throw e;}
-renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));renderer.setClearColor(0x101e2d);
-const scene=new THREE.Scene();scene.background=new THREE.Color(0x0e1e30);scene.fog=new THREE.Fog(0x0e1e30,95,190);
-const camera=new THREE.PerspectiveCamera(47,1,.1,300),controls=new OrbitControls(camera,cvs);
-controls.enableDamping=true;controls.dampingFactor=.07;controls.enablePan=true;controls.minDistance=12;controls.maxDistance=140;controls.maxPolarAngle=Math.PI*.97;
+try{renderer=new THREE.WebGLRenderer({canvas,antialias:true});}catch(e){document.getElementById('fail').style.display='grid';throw e;}
+renderer.setPixelRatio(Math.min(devicePixelRatio||1,1.75));
+renderer.shadowMap.enabled=true;renderer.shadowMap.type=THREE.PCFSoftShadowMap;
+renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.36;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xb6d5e6);scene.fog=new THREE.Fog(0xbed8e6,118,330);
+scene.add(new THREE.HemisphereLight(0xffffff,0x566c60,2));
+const sun=new THREE.DirectionalLight(0xfff3d8,3.15);sun.position.set(-55,85,25);sun.castShadow=true;sun.shadow.mapSize.set(2048,2048);sun.shadow.camera.left=-95;sun.shadow.camera.right=95;sun.shadow.camera.top=95;sun.shadow.camera.bottom=-95;scene.add(sun);
+const camera=new THREE.PerspectiveCamera(43,1,.1,550);
+const controls=new OrbitControls(camera,canvas);controls.enableDamping=true;controls.dampingFactor=.07;controls.enablePan=true;controls.screenSpacePanning=true;controls.minDistance=14;controls.maxDistance=215;controls.maxPolarAngle=Math.PI*.96;
 controls.mouseButtons.LEFT=THREE.MOUSE.ROTATE;controls.mouseButtons.RIGHT=THREE.MOUSE.PAN;
-cvs.addEventListener('contextmenu',e=>e.preventDefault());
-scene.add(new THREE.HemisphereLight(0xc6e8ff,0x20293a,2));
-const sun=new THREE.DirectionalLight(0xffffff,2.5);sun.position.set(-25,35,22);scene.add(sun);
-const materials={ground:0x20394b,water:0x2c9cbb,dam:0x7c909f,concrete:0x7d8e98,turbine:0xd4ad69,wire:0xf3c36c};
-function meshBox(group,x,y,z,w,h,d,c,metal=0){const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),new THREE.MeshStandardMaterial({color:c,metalness:metal,roughness:.58}));m.position.set(x,y,z);group.add(m);return m;}
-function cyl(group,x,y,z,r1,r2,h,c,rotation=0){const m=new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,20),new THREE.MeshStandardMaterial({color:c,metalness:.38,roughness:.4}));m.position.set(x,y,z);m.rotation.z=rotation;group.add(m);return m;}
-function sphere(group,x,y,z,r,c){const m=new THREE.Mesh(new THREE.SphereGeometry(r,12,10),new THREE.MeshBasicMaterial({color:c}));m.position.set(x,y,z);group.add(m);return m;}
-function line(group,a,b,color=0xf6ce72,r=.12){const vec=new THREE.Vector3().subVectors(b,a);const tube=new THREE.Mesh(new THREE.CylinderGeometry(r,r,vec.length(),8),new THREE.MeshBasicMaterial({color}));tube.position.copy(a).add(b).multiplyScalar(.5);tube.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),vec.normalize());group.add(tube);return tube;}
-function label(group,s,x,y,z){const c=document.createElement('canvas');c.width=360;c.height=60;const ctx=c.getContext('2d');ctx.fillStyle='#183550';ctx.fillRect(0,0,360,60);ctx.strokeStyle='#62ded5';ctx.strokeRect(1,1,358,58);ctx.font='bold 25px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillStyle='#ecfbff';ctx.fillText(s,180,31);const t=new THREE.CanvasTexture(c);const o=new THREE.Sprite(new THREE.SpriteMaterial({map:t,transparent:true,depthTest:false}));o.scale.set(12,2,1);o.position.set(x,y,z);group.add(o);}
+controls.touches.ONE=THREE.TOUCH.ROTATE;controls.touches.TWO=THREE.TOUCH.DOLLY_PAN;
+canvas.addEventListener('contextmenu',e=>e.preventDefault());
 const root=new THREE.Group();scene.add(root);
-const spin=[],particles=[],paths=[];
-function addPath(group,pts,clr=0x65e6de,num=10){
- const points=pts.map(p=>new THREE.Vector3(...p));for(let i=1;i<points.length;i++)line(group,points[i-1],points[i],clr,.045);
- for(let i=0;i<num;i++){const p=sphere(group,0,0,0,.28,clr);particles.push({m:p,pts:points,offset:i/num});}
+const movers=[],dots=[],labels=[],waterParts=[],rotors=[];
+const m=(c,metal=.04,rough=.77)=>new THREE.MeshStandardMaterial({color:c,metalness:metal,roughness:rough});
+const glass=m(0x77b4d6,.6,.19),rock=m(0x8a8d83),concrete=m(0xb9bdba,.11,.74),dark=m(0x384e59,.25,.6),green=m(0x477459),roof=m(0x58818d,.31,.5),steel=m(0xb6c4cb,.65,.32),rail=m(0x5e6870,.5,.45),watermat=new THREE.MeshPhysicalMaterial({color:0x337e9f,transparent:true,opacity:.86,metalness:.03,roughness:.2,side:THREE.DoubleSide});
+function add(obj,parent=root){parent.add(obj);return obj;}
+function box(x,y,z,w,h,d,mat,parent=root){const o=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat);o.position.set(x,y,z);o.castShadow=true;o.receiveShadow=true;add(o,parent);return o;}
+function cylinder(x,y,z,rt,rb,h,mat,parent=root,n=20){const o=new THREE.Mesh(new THREE.CylinderGeometry(rt,rb,h,n),mat);o.position.set(x,y,z);o.castShadow=true;add(o,parent);return o;}
+function ball(x,y,z,r,color,parent=root){const o=new THREE.Mesh(new THREE.SphereGeometry(r,12,10),new THREE.MeshBasicMaterial({color}));o.position.set(x,y,z);add(o,parent);return o;}
+function connect(a,b,r,material,parent=root){const A=new THREE.Vector3(...a),B=new THREE.Vector3(...b),v=B.clone().sub(A);const o=new THREE.Mesh(new THREE.CylinderGeometry(r,r,v.length(),10),material);o.position.copy(A.add(B).multiplyScalar(.5));o.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize());add(o,parent);return o;}
+function label(txt,x,y,z){const c=document.createElement('canvas');c.width=512;c.height=74;const ctx=c.getContext('2d');ctx.fillStyle='#163749ec';ctx.fillRect(3,3,506,68);ctx.strokeStyle='#d7f0ec';ctx.lineWidth=2;ctx.strokeRect(3,3,506,68);ctx.font='bold 29px sans-serif';ctx.fillStyle='#f8ffff';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(txt,256,38);const tex=new THREE.CanvasTexture(c);const o=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));o.position.set(x,y,z);o.scale.set(13,1.9,1);add(o);labels.push(o);return o;}
+function path(coords,col,num=10){const points=coords.map(c=>new THREE.Vector3(...c));for(let i=1;i<points.length;i++)connect(coords[i-1],coords[i],.07,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.4}));for(let i=0;i<num;i++){const dot=ball(0,0,0,.34,col);dots.push({obj:dot,pts:points,offset:i/num});}}
+function resetRoot(){for(const child of [...root.children]){root.remove(child);child.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const list=Array.isArray(o.material)?o.material:[o.material];list.forEach(mm=>{if(mm.userData?.keep)return;if(mm.map&&mm.map.isCanvasTexture)mm.map.dispose();/* shared basic materials remain reusable */});}});}movers.length=0;dots.length=0;labels.length=0;waterParts.length=0;rotors.length=0;}
+function water(x,y,z,w,d,color=0x2f8fad,opacity=.85){const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,d,24,12),new THREE.MeshPhysicalMaterial({color,transparent:true,opacity,roughness:.19,metalness:.03,side:THREE.DoubleSide}));mesh.rotation.x=-Math.PI/2;mesh.position.set(x,y,z);add(mesh);waterParts.push(mesh);return mesh;}
+function terrain(seed=1){const geom=new THREE.PlaneGeometry(195,170,66,58);geom.rotateX(-Math.PI/2);const p=geom.attributes.position;const colors=[];
+for(let i=0;i<p.count;i++){const x=p.getX(i),z=p.getZ(i),ridge=Math.pow(Math.min(Math.abs(x)/72,1.1),1.45)*26;const noise=Math.sin(x*.11+seed)*Math.cos(z*.09-seed)*2.7+Math.sin(z*.16+seed*2)*1.5;const y=Math.max(-2,ridge+noise-2);p.setY(i,y);const c=new THREE.Color(y>13?0x416854:y>5?0x648666:0x648273);colors.push(c.r,c.g,c.b);}
+geom.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));geom.computeVertexNormals();
+const mesh=new THREE.Mesh(geom,new THREE.MeshStandardMaterial({vertexColors:true,roughness:1,side:THREE.DoubleSide}));mesh.receiveShadow=true;add(mesh);
+const floor=box(0,-5,0,200,3,185,m(0x35583e));floor.receiveShadow=true;
+for(let i=0;i<85;i++){const a=Math.sin(i*37+seed)*.5+.5,b=Math.cos(i*21+seed)*.5+.5;const x=(i%2?1:-1)*(30+a*58),z=(b-.5)*130;
+const y=Math.max(0,Math.pow(Math.abs(x)/72,1.45)*26-2);const h=2.5+(i%6)*.35;const tree=cylinder(x,y+h*.48,z,.05,.35,h,m(0x694e38),root,8);const cone=new THREE.Mesh(new THREE.ConeGeometry(1.25,h*1.6,7),m(i%3===0?0x265d45:0x36704e));cone.position.set(x,y+h*1.7,z);add(cone);}
 }
-function standardBase(){meshBox(root,0,-1,0,90,1,62,0x1e3846);const grid=new THREE.GridHelper(88,22,0x385d72,0x284251);grid.position.y=-.43;root.add(grid);}
-function generator(x,z,group=root){meshBox(group,x,3,z,8,6,6,0x4d7795,.3);cyl(group,x,3,z,1.8,1.8,6,0xd4ba79,Math.PI/2);label(group,'발전기 / GEN',x,9,z);}
-function transformer(x,z){meshBox(root,x,2.2,z,5,4.2,5,0x8a73a1);for(let i=-1;i<=1;i++)cyl(root,x+i*1.25,5,z,.35,.35,2,0xbdc1d4);label(root,'변압기 → 계통',x,8.2,z);}
-function powerLine(){addPath(root,[[20,7,10],[26,9,10],[32,10,10]],0xf4c770,8);}
-function turbineAt(x,y,z){const g=new THREE.Group();g.position.set(x,y,z);root.add(g);const axle=cyl(g,0,0,0,1.1,1.1,3,0xbbd0dc,Math.PI/2);
- for(let i=0;i<6;i++){const blade=meshBox(g,0,Math.sin(i*Math.PI/3)*2,Math.cos(i*Math.PI/3)*2,1.3,.45,2,0xd4ad69,.45);blade.rotation.x=i*Math.PI/3;}spin.push({g,axis:'x',rate:1});return g;}
-function waveTiles(xmin,xmax,zmin,zmax,y){const g=new THREE.Group();g.name='water';root.add(g);
- const mat=new THREE.MeshPhongMaterial({color:0x20789d,transparent:true,opacity:.66,shininess:95,side:THREE.DoubleSide});
- for(let i=0;i<14;i++){const c=meshBox(g,xmin+(xmax-xmin)*(i+.5)/14,y,zmin+(zmax-zmin)/2,(xmax-xmin)/14,.09,zmax-zmin,0x2c87a7);c.material=mat;spin.push({g:c,axis:'wave',rate:i*.4});}
- return g;}
-function buildHydro(small=false){
- standardBase();const top=small?7:18;
- meshBox(root,-17,top/2,-5,38,top,42,0x3d6f8b);
- waveTiles(-35,2,-25,15,top+.05);
- if(!small){meshBox(root,4,9,-5,4,20,42,0x8397a3);label(root,'저수지',-16,top+4,-10);label(root,'댐 / 취수구',4,22,-12);}
- else{meshBox(root,-15,7,-5,20,3,16,0x326b80);label(root,'관로 · 소수력',-14,14,-8);}
- const start=small?[-6,8,0]:[1,17,0],mid=small?[0,5,0]:[6,11,0],end=[12,3,0];
- line(root,new THREE.Vector3(...start),new THREE.Vector3(...mid),0x5cbfe3,.85);line(root,new THREE.Vector3(...mid),new THREE.Vector3(...end),0x5cbfe3,.85);
- addPath(root,[start,mid,end],0x64e4e8,10);
- turbineAt(14,3,0);generator(20,0);transformer(31,10);powerLine();
- addPath(root,[[22,8,0],[31,7,10],[32,10,10]],0xf4cb6a,7);
- label(root,small?'소수력 수차':'수차 / TURBINE',14,8,0);
-}
-function buildTidal(){
- standardBase();
- meshBox(root,-17,2,0,37,4,54,0x236582);meshBox(root,18,2,0,37,4,54,0x1a7892);
- waveTiles(-35,0,-26,26,4.2);waveTiles(7,35,-26,26,4.1);
- meshBox(root,3.5,6,0,7,12,58,0x8b97a6);
- label(root,'바다(조석)',-18,10,-16);label(root,'시화호 측',20,10,-16);label(root,'조력 수차 · 수문',3.5,17,-1);
- for(const z of [-13,0,13]){
-  const rotor=turbineAt(3.5,3,z);rotor.scale.set(.85,.85,.85);
-  addPath(root,[[-12,3,z],[-2,3,z],[8,3,z]],0x5ee5e5,6);
+function waterReservoir(){water(0,10,37,67,75,0x2e8caa,.92);water(0,-.2,-38,16,64,0x2987a4,.93);}
+function concreteDam(xCenter,width,top=22,bays=6){const w=width;
+ // sloped concrete gravity cross-section with crest, front facing downstream negative Z
+ const pts=[[-w/2,0,0],[w/2,0,0],[w/2,0,-13],[-w/2,0,-13],[-w/2,top,2],[w/2,top,2],[w/2,top,-3],[-w/2,top,-3]];
+ const pos=[];pts.forEach(p=>pos.push(p[0]+xCenter,p[1],p[2]));
+ const inds=[0,1,5,0,5,4, 1,2,6,1,6,5, 2,3,7,2,7,6, 3,0,4,3,4,7, 4,5,6,4,6,7, 3,2,1,3,1,0];
+ const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));geo.setIndex(inds);geo.computeVertexNormals();const dam=new THREE.Mesh(geo,concrete);dam.castShadow=true;dam.receiveShadow=true;add(dam);
+ box(xCenter,top+1,0,w+3,2,7,concrete);
+ for(let i=0;i<Math.round(w/6);i++)box(xCenter-w/2+2+i*6,top/2,-7,.14,top-1,.21,m(0x8f999b));
+ const spillStart=xCenter-w*.30;for(let i=0;i<bays;i++){const x=spillStart+i*5.5;
+ box(x,top+2.5,1.6,.8,4.2,7,concrete);
+ box(x+2.1,top-.5,2.4,3.3,4,1,m(0x476d75,.65,.3));
+ if(i%2===0){const flow=water(x+2.1,top-6,-7,2.9,16,0x8cc8d9,.7);flow.rotation.x=-Math.PI*.24;flow.position.y=top-7;waterParts.push(flow);}
  }
- generator(15,17);transformer(30,18);
- addPath(root,[[17,7,17],[30,7,18],[32,10,10]],0xeec36b,7);
+ label('콘크리트 중력식댐 · 여수로',xCenter,top+11,1);
 }
-function buildSolar(){
- standardBase();waveTiles(-37,37,-28,28,1.5);
- const solarMat=new THREE.MeshStandardMaterial({color:0x1b5580,metalness:.65,roughness:.22});
- for(let x=-23;x<=16;x+=13)for(let z=-14;z<=13;z+=9){
-  meshBox(root,x,1.95,z,10,.45,6,0x8ea4b4);
-  const panel=new THREE.Mesh(new THREE.BoxGeometry(9.6,.18,5.3),solarMat);panel.position.set(x,2.6,z);panel.rotation.x=-.22;root.add(panel);
-  for(let k=-1;k<=1;k++)line(root,new THREE.Vector3(x-4,2.72,z+k*1.4),new THREE.Vector3(x+4,2.72,z+k*1.4),0x55b2e0,.04);
+function embankmentDam(xCenter,width,height=19,color=0x9b9890){
+ // massive sloped rock embankment section: front/back trapezoid
+ const W=width, y=height;const p=[[-W/2,0,-16],[W/2,0,-16],[W/2,0,17],[-W/2,0,17],[-W/2,y,-2.4],[W/2,y,-2.4],[W/2,y,2.4],[-W/2,y,2.4]];
+ const id=[0,4,5,0,5,1,1,5,6,1,6,2,2,6,7,2,7,3,3,7,4,3,4,0,4,7,6,4,6,5,0,1,2,0,2,3];
+ const buf=new THREE.BufferGeometry();buf.setAttribute('position',new THREE.Float32BufferAttribute(p.flatMap(q=>[q[0]+xCenter,q[1],q[2]]),3));buf.setIndex(id);buf.computeVertexNormals();
+ const material=m(color,.05,.92);const obj=new THREE.Mesh(buf,material);obj.castShadow=true;obj.receiveShadow=true;add(obj);
+ box(xCenter,height+.32,0,width+1,.65,4.6,m(0x777b76,.1,.7));
+ for(let i=0;i<130;i++){const x=(i*23%Math.max(5,width-2))-width/2+xCenter+1,v=(i*17%100)/100;const z=-15+13*v;
+ const y2=height*(v);const stone=new THREE.Mesh(new THREE.IcosahedronGeometry(.35+(i%5)*.16,0),m(i%3===0?0xbcb5a8:i%2?0x8e877c:0xa9a498));stone.position.set(x,y2,z);stone.scale.set(1.2,.55,1);add(stone);}
+ for(const z of [-2.5,2.5])for(let x=xCenter-width/2;x<xCenter+width/2;x+=4)box(x,height+1,z,.13,1.3,.13,steel);
+ label('사력·토석 댐체',xCenter,height+9,0);
+}
+function spillwaySide(x=33){box(x,9,3,12,18,22,concrete);
+ for(let i=0;i<4;i++){box(x-4.6+i*2.9,21,2,.6,6,15,concrete);box(x-3.2+i*2.9,16.5,6,2.3,2,1.1,m(0x567e8d,.65,.4));}
+ water(x,3,-12,11,30,0x7ac3d8,.75);label('측면 여수로 · 수문',x,28,3);}
+function house(x,z,units=2,small=false){const w=small?13:18;box(x,3.5,z,w,7,12,m(0xd9d8c8));box(x,7.6,z,w+1,1,12.6,roof);
+ for(let i=0;i<units;i++){const ux=x-w/2+2.5+i*(w-5)/Math.max(1,units-1);cylinder(ux,4,z,1.45,1.45,5,m(0xc4a871,.7,.36));}
+ for(let j=0;j<4;j++)box(x-w/2+2.5+j*3.9,4,z-6.1,2.3,2.4,.1,glass);
+ label('수력발전동 · 수차발전기',x,12,z);
+ transform(x+19,z-1);}
+function transform(x,z){box(x,2.2,z,7,4.4,6,m(0x7d8c97));for(let i=-1;i<=1;i++)cylinder(x+i*1.8,5.9,z,.34,.45,3,m(0x987c63));label('변압기 · 송전',x,9,z);}
+function hydro(id){
+ const v=byId[id],seed=v.variant;
+ terrain(seed);waterReservoir();
+ if(v.kind==='embankment'){embankmentDam(id==='juam'?-4:0,id==='andong'?60:55,id==='soyang'?21:18,id==='juam'?0x908d7e:0xa39d90);
+ spillwaySide(id==='soyang'?35:33);
+ house(id==='juam'?31:27,-29,id==='soyang'?2:2,true);
+ path([[3,10,8],[17,8,-6],[26,4,-29]],0x4ebde9,10);
+ if(id==='juam'){const smallDam=box(-14,1.1,-60,24,2.5,5,m(0x9cb5b9));label('조절지댐(개념)',-14,8,-60);path([[8,10,26],[25,5,4],[30,3,-25]],0x70f7ee,8);}
+ }else if(v.kind==='gravity'){concreteDam(0,id==='chungju'?60:52,23,id==='chungju'?6:5);house(4,-27,id==='chungju'?4:2,false);
+ path([[0,13,6],[0,10,-11],[4,4,-27]],0x5ad9e8,10);
+ if(id==='hapcheon'){box(0,1.1,-60,30,2.2,5,m(0xb9c0bc));label('하류 역조정지댐',0,7,-60);}
+ }else if(v.kind==='mixed'){embankmentDam(-16,34,18);concreteDam(20,31,21,4);house(26,-30,2,true);path([[16,12,8],[23,7,-9],[26,4,-30]],0x6bdaea,10);}
+ label('저수지 (상류)',-4,15,40);label('하천 (하류)',-2,4,-54);
+}
+function tidal(){terrain(12);
+ // coastal barrage divides western sea and the lagoon, 10 units + 8 sluice openings
+ water(0,2,38,160,75,0x307fa6,.9);water(0,.5,-41,160,77,0x3a92b0,.95);
+ box(0,4,0,150,8,14,m(0xaeb1ab));box(0,8.5,0,150,1.2,15,m(0x7e8582));
+ for(let x=-71;x<72;x+=6)box(x,9.3,-4,.2,.3,.3,rail);
+ for(let i=0;i<10;i++){const x=-54+i*8.5;const tube=cylinder(x,3,0,2.7,2.7,10,m(0xb9bcbc,.6,.35));tube.rotation.x=Math.PI/2;
+ const rotor=new THREE.Group();rotor.position.set(x,3,-1);for(let b=0;b<5;b++){const blade=box(0,1.6,0,.55,3.2,.3,steel,rotor);blade.rotation.z=b*Math.PI*2/5;}root.add(rotor);rotors.push({obj:rotor,axis:'z',speed:.7});
+ box(x,11,0,6,4,9,m(0xd7dfd7));box(x,13.5,0,6.6,1,9,roof);
  }
- label(root,'수상태양광 PV',-14,8,0);
- meshBox(root,26,3,10,7,6,6,0x7f8ba4);label(root,'인버터 DC→AC',26,9,10);
- transformer(37,22);
- addPath(root,[[-20,3,0],[0,3,10],[26,5,10],[37,6,22]],0xf6cf72,10);
- const light=new THREE.DirectionalLight(0xffe09d,3);light.position.set(-30,45,-5);root.add(light);
- const orb=sphere(root,-28,27,-19,3.3,0xf5d17b);spin.push({g:orb,axis:'sun',rate:0});
+ for(let i=0;i<8;i++){const x=30+i*5.6;box(x,5,0,.65,10,12,concrete);box(x+2.6,4,0,4,4,1,m(0x5b8c9f));}
+ house(-60,-22,2,true);transform(66,-20);
+ path([[-22,.8,-17],[-22,2,0],[-22,2,17]],0x5df5ed,16);
+ label('서해 바다 · 밀물',-20,12,-49);label('시화호 측 수역',-20,12,50);
+ label('수차발전기 10기 · 수문 8문',0,20,0);
 }
-function buildWind(){
- standardBase();waveTiles(-38,36,-28,26,.5);
- for(const x of [-23,0,23]){
-  const tower=cyl(root,x,13,0,.7,1.3,25,0xd1e2ea);
-  const hub=new THREE.Group();hub.position.set(x,26,0);root.add(hub);
-  sphere(hub,0,0,0,1.4,0xfff4dc);
-  for(let n=0;n<3;n++){const angle=n*Math.PI*2/3;const blade=meshBox(hub,-Math.sin(angle)*7,Math.cos(angle)*7,0,1.2,14,.4,0xe2ebf3);blade.rotation.z=angle;}
-  spin.push({g:hub,axis:'z',rate:.7});
+function solar(){terrain(8);water(0,8,3,155,115,0x2e89a0,.97);
+ // Real floating PV consists of many rafted panel modules, varying solar island positions
+ const entries=[[-27,-20,16,10],[15,-15,14,9],[-2,22,15,10],[36,24,12,8]];
+ const panelGeo=new THREE.BoxGeometry(2.4,.16,1.5),panelMat=m(0x133957,.6,.2),floatmat=m(0x9bb1b8,.34,.46);
+ const total=entries.reduce((sum,x)=>sum+x[2]*x[3],0);
+ const panels=new THREE.InstancedMesh(panelGeo,panelMat,total);let idx=0;
+ const meshDummy=new THREE.Object3D();
+ for(const [cx,cz,nx,nz] of entries){
+ for(let i=0;i<nx;i++)for(let j=0;j<nz;j++){
+ const x=cx+(i-(nx-1)/2)*2.5,z=cz+(j-(nz-1)/2)*1.65;
+ const allow=Math.pow((i-(nx-1)/2)/(nx/2),2)+Math.pow((j-(nz-1)/2)/(nz/2),2)<1.1;
+ meshDummy.position.set(x,9.65,z);meshDummy.rotation.set(-.21,0,0);meshDummy.scale.set(allow?1:.03,1,allow?1:.03);meshDummy.updateMatrix();panels.setMatrixAt(idx++,meshDummy.matrix);
+ if(allow&&i%3===0&&j%4===0){const pod=box(x,8.8,z,2.3,.26,1.6,floatmat);waterParts.push(pod);}
  }
- transformer(33,15);
- addPath(root,[[-23,1,0],[0,1,0],[23,1,0],[33,4,15]],0xf4c66c,10);
- label(root,'바람 → 회전자 → 발전기',0,41,0);
+ }
+ panels.count=idx;panels.castShadow=true;root.add(panels);
+ box(57,3,17,20,5,20,m(0xa4a999));box(57,6,17,14,5,11,m(0xc6d0c6));box(57,9,17,15,1,12,roof);
+ label('부유식 PV 모듈 군집',0,15,0);label('육상 인버터 · 변압기',57,15,17);
+ path([[0,10,0],[24,10,9],[57,7,17]],0xf3ca65,12);
+ }
+function wind(){
+ terrain(3);water(0,2,-36,155,75,0x3a9bac,.92);
+ box(0,3,17,140,8,15,m(0xaeb9ac));box(0,7.3,12,140,.6,1,m(0x787e7d));
+ const positions=[-27,28];
+ for(const x of positions){
+ cylinder(x,22,15,.65,2,43,m(0xe2e7e6,.45,.4));
+ const hub=new THREE.Group();hub.position.set(x,44,13);root.add(hub);cylinder(0,0,-1,1.3,1.3,3,m(0xcededc),hub).rotation.x=Math.PI/2;
+ for(let i=0;i<3;i++){const angle=i*Math.PI*2/3;const b=box(Math.sin(angle)*(-12),Math.cos(angle)*12,-2,.9,23,.35,m(0xe2e8e5),hub);b.rotation.z=angle;}
+ rotors.push({obj:hub,axis:'z',speed:.4});box(x,44,16,5,2.4,6,m(0xe8eeec));
+ }
+ transform(50,11);path([[-27,1,15],[2,1,15],[28,1,15],[50,3,11]],0xf6d180,15);
+ label('방아머리 풍력 · 2기',0,63,14);label('해안 방조제',0,12,26);
 }
-const info={
- hydro:{name:'댐 수력발전',flow:'저수지 → 수압관로 → 수차 → 발전기 → 계통',energy:'위치에너지 → 회전에너지 → 전기',equip:'취수구 · 수압관로 · 수차 · 발전기',interview:'수력 P≈ρgQHη · 방류는 안전·용수 목적과 조정',title:'댐 수력은 물의 낙차를 어떻게 전기로 바꾸나?',text:'저수지의 물이 높은 위치에서 낮은 위치로 이동하며 수압관로를 통해 수차를 회전시키고, 발전기가 기계적 회전을 전기로 바꿉니다. 유량 Q와 유효낙차 H, 효율 η가 중요합니다.',steps:['저수지 수위와 낙차','취수·관로에서 물 이동','수차 회전으로 발전기 구동','변압기·전력계통으로 송전']},
- micro:{name:'관로 소수력',flow:'수도관 유효 압력차 → 소형 수차 → 발전기 → 계통',energy:'관로 유효수두 → 소형 수차 → 전기',equip:'수도관 · 감압구간 · 소수력 발전기',interview:'용수공급 기능·수압·수질을 우선 유지',title:'관로 소수력은 기존 물 공급을 어떻게 활용하나?',text:'수도시설의 압력차 또는 낙차를 이용해 소형 수차를 회전시키는 발전 방식입니다. 수도사업 본래 목적인 안정적 용수공급과 수압 관리를 해치지 않는 것이 중요합니다.',steps:['기존 용수 관로','유효 수두·유량 활용','소형 수차·발전기 회전','급수 안정성과 계통 검증']},
- tidal:{name:'시화호 조력발전',flow:'밀물의 조위차 → 수문·수차 → 발전기 → 계통',energy:'조위차·물 흐름 → 회전 → 전기',equip:'방조제 · 수문 · 저낙차 수차 · 발전기',interview:'시화호 발전은 밀물(창조) 때 발전하는 방식',title:'시화호 조력발전은 어떻게 전기를 생산하나?',text:'시화호 조력발전은 밀물 때 바다와 호수의 수위 차를 활용하는 단류식 발전 방식입니다. 물이 수차를 통과하며 발전기를 돌립니다. 수질 개선을 위한 해수 유통도 중요한 운영 목적입니다.',steps:['밀물로 바닷물 높아짐','바다·호수 간 조위차 확보','수차 통과하며 회전','발전 및 해수 유통']},
- solar:{name:'수상태양광',flow:'태양광 → PV 직류(DC) → 인버터(AC) → 변압기·계통',energy:'빛 에너지 → 직류 전기 → 교류 전기',equip:'수상 모듈 · 부유체 · 인버터 · 변압기',interview:'일사량·인버터·계통연계·수질 관리',title:'수상태양광은 물 위에서 어떻게 발전하나?',text:'댐 수면에 부유체를 띄우고 태양전지 모듈로 빛을 직류(DC) 전기로 전환합니다. 인버터로 교류(AC)로 변환한 뒤 변압기와 전력망으로 전달합니다. 수력과 같이 발전기를 돌리는 구조가 아닙니다.',steps:['일사광 수신','태양전지 DC 발전','인버터 DC→AC 변환','변압기·송전 및 환경점검']},
- wind:{name:'풍력발전',flow:'바람 → 블레이드 회전 → 발전기 → 변압기·계통',energy:'바람 운동에너지 → 회전 → 전기',equip:'블레이드 · 타워 · 발전기 · 변압기',interview:'풍속·풍향·블레이드·안전·계통연계',title:'풍력은 어떻게 전기를 생산하나?',text:'바람이 블레이드를 회전시키고 회전 에너지가 발전기를 통해 전기로 전환됩니다. 본 화면은 물에너지 시설과 별도로 이해할 수 있도록 추가한 재생에너지 원리 모델입니다.',steps:['풍속·풍향 조건','블레이드 회전','발전기 전력 생산','변압기·계통으로 송전']}
-};
-let mode='hydro',paused=false,showFlow=true,speed=1,last=performance.now(),time=0;
-function build(){while(root.children.length){const c=root.children[0];root.remove(c);c.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){const arr=Array.isArray(o.material)?o.material:[o.material];for(const m of arr)m.dispose();}});}spin.length=0;particles.length=0;paths.length=0;
- if(mode==='hydro')buildHydro();else if(mode==='micro')buildHydro(true);else if(mode==='tidal')buildTidal();else if(mode==='solar')buildSolar();else buildWind();
- const o=info[mode];document.getElementById('current').textContent=o.name;document.getElementById('flow').textContent=o.flow;document.getElementById('principle').textContent=o.energy;document.getElementById('equipment').textContent=o.equip;document.getElementById('interview').textContent=o.interview;
- document.getElementById('theory-title').textContent=o.title;document.getElementById('theory').textContent=o.text;
- document.getElementById('steps').innerHTML=o.steps.map((t,i)=>'<div class="step"><b>'+String(i+1).padStart(2,'0')+'</b>'+t+'</div>').join('');
- document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.mode===mode)));
+let activeId='soyang',paused=false,speed=1,labelsOn=true,elapsed=0,prev=performance.now();
+function build(id){
+ activeId=id;const a=byId[id];if(!a)return;resetRoot();
+ if(a.kind==='tidal')tidal();else if(a.kind==='solar')solar();else if(a.kind==='wind')wind();else hydro(id);
+ document.getElementById('facilityTitle').textContent=a.name;
+ document.getElementById('facilitySubtitle').textContent=a.region+' · '+a.design;
+ document.getElementById('region').textContent=a.region+' · '+a.river;
+ document.getElementById('design').textContent=a.design;
+ document.getElementById('highlight').textContent=a.highlight;
+ document.getElementById('summary').textContent=a.summary;
+ document.getElementById('capacity').textContent=a.elec;
+ document.getElementById('featureText').textContent=a.feature+' — '+a.summary;
+ document.getElementById('energyFlow').textContent=a.kind==='solar'?'태양광 → PV 직류 → 인버터 교류 → 변압기':a.kind==='wind'?'바람 → 블레이드 → 발전기 → 변압기':a.kind==='tidal'?'밀물 → 터빈 → 발전기 → 변압기':'저수지 낙차 → 수차 → 발전기 → 변압기';
+ document.getElementById('official').href=a.source;
+ labels.forEach(l=>l.visible=labelsOn);
+ setView('iso');elapsed=0;
 }
-function setView(v){let p=v==='top'?[.01,91,.01]:v==='side'?[.01,28,85]:[53,38,58];camera.position.set(...p);controls.target.set(0,7,0);controls.update();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));}
-function size(){const r=cvs.getBoundingClientRect();if(cvs.width!==Math.round(r.width)||cvs.height!==Math.round(r.height)){renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();}}
-document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;build();}));
-document.getElementById('play').onclick=e=>{paused=!paused;e.currentTarget.textContent=paused?'▶ 재생':'⏸ 일시정지';e.currentTarget.classList.toggle('active',!paused);};
-document.getElementById('reset').onclick=()=>{time=0;setView('iso');build();};
-document.getElementById('flow-toggle').onclick=e=>{showFlow=!showFlow;e.currentTarget.textContent=showFlow?'흐름 표시 ✓':'흐름 숨김';};
+function setView(type){const v=type==='top'?[.01,147,.01,0,0,0]:type==='front'?[0,37,-102,0,10,0]:[87,62,106,0,11,0];camera.position.set(...v.slice(0,3));controls.target.set(...v.slice(3));controls.update();document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===type));}
+document.getElementById('facility').onchange=e=>build(e.target.value);
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
-document.getElementById('speed').oninput=e=>{speed=Number(e.target.value);document.getElementById('speed-label').textContent=speed.toFixed(1)+'×';};
-function moveDot(obj,alpha){const pts=obj.pts,s=alpha*(pts.length-1),k=Math.min(pts.length-2,Math.floor(s));obj.m.position.lerpVectors(pts[k],pts[k+1],s-k);}
-function animate(now){requestAnimationFrame(animate);const dt=Math.min(.06,(now-last)/1000);last=now;size();
- if(!paused){time+=dt*speed;
- for(const item of spin){if(item.axis==='z')item.g.rotation.z+=dt*speed*.8*item.rate;else if(item.axis==='x')item.g.rotation.x+=dt*speed*1.5*item.rate;else if(item.axis==='wave')item.g.position.y=Math.sin(time*1.8+item.rate)*.18;}
- }
- for(const p of particles){p.m.visible=showFlow;moveDot(p,(time*.13+p.offset)%1);}
- controls.update();renderer.render(scene,camera);}
-setView('iso');build();requestAnimationFrame(animate);
+document.getElementById('play').onclick=e=>{paused=!paused;e.currentTarget.textContent=paused?'▶ 재생':'⏸ 일시정지';e.currentTarget.classList.toggle('active',!paused);};
+document.getElementById('reset').onclick=()=>build(activeId);
+document.getElementById('labels').onclick=e=>{labelsOn=!labelsOn;labels.forEach(l=>l.visible=labelsOn);e.currentTarget.textContent=labelsOn?'구조물 라벨 ✓':'구조물 라벨 숨김';};
+document.getElementById('speed').oninput=e=>{speed=Number(e.target.value);document.getElementById('speedLabel').textContent=speed.toFixed(1)+'×';};
+function resize(){const r=canvas.getBoundingClientRect();const w=Math.max(1,Math.round(r.width)),h=Math.max(1,Math.round(r.height));if(canvas.width!==w||canvas.height!==h){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}}
+function animate(now){requestAnimationFrame(animate);const dt=Math.min(.06,(now-prev)/1000);prev=now;resize();if(!paused){elapsed+=dt*speed;for(const d of rotors){d.obj.rotation[d.axis]+=dt*speed*d.speed;}
+for(const x of dots){const t=(elapsed*.14+x.offset)%1,pos=t*(x.pts.length-1),i=Math.min(x.pts.length-2,Math.floor(pos));x.obj.position.lerpVectors(x.pts[i],x.pts[i+1],pos-i);}
+for(let i=0;i<waterParts.length;i++){const o=waterParts[i];if(o.isMesh && o.geometry?.type==='PlaneGeometry')o.position.y+=Math.sin(elapsed*2+i)*.001;}
+}controls.update();renderer.render(scene,camera);}
+build('soyang');requestAnimationFrame(animate);
 </script></body></html>
