@@ -127,6 +127,31 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 .short-script{border-left:4px solid #5f82d1;border-radius:9px;background:#edf4ff;color:#314a74!important;padding:12px 14px!important;margin:12px 0!important;font-size:14px!important;line-height:1.75}
 .accordion-group .qa{margin:10px 0}
 @media(max-width:650px){.accordion-group>.accordion-heading{padding:15px!important}.accordion-group>.accordion-content{padding:14px!important}}
+</style><style>
+/* 2026-11-10: 대분류 → 중분류 → 상세 질문, 3단 구조 */
+.major-help{background:#eaf1fd;border:1px solid #d5e3f6;color:#38527a;padding:14px 17px;border-radius:12px;font-size:13px;line-height:1.8;margin:18px 0}
+.major-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin:16px 0 30px;align-items:start}
+.major-group{background:#fff;border:1px solid #cfddf0;border-radius:19px;box-shadow:0 10px 28px #1b345d0b;min-width:0;overflow:hidden;scroll-margin-top:15px}
+.major-group[open]{grid-column:1/-1;border-color:#84a7e4}
+.major-head{padding:24px 22px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:16px;min-height:108px;background:#fff}
+.major-head::-webkit-details-marker{display:none}
+.major-head::after{content:"＋";margin-left:auto;color:#375fb4;font-size:29px;font-weight:400}
+.major-group[open]>.major-head{background:#eaf2ff;border-bottom:1px solid #d2e1f7}
+.major-group[open]>.major-head::after{content:"−"}
+.major-symbol{display:grid;place-items:center;flex:0 0 49px;width:49px;height:49px;border:1px solid #d5e2f4;border-radius:14px;background:#f3f8ff;font-size:26px}
+.major-headlines{min-width:0;display:block}
+.major-label{display:block;font-size:clamp(16px,2.3vw,20px);font-weight:850;color:#1f3b67;line-height:1.4}
+.major-description{display:block;font-size:12px;color:#64809f;font-weight:500;margin-top:6px;line-height:1.5}
+.major-count{display:block;font-size:11px;color:#4d6e9f;margin-top:5px;font-weight:800}
+.major-body{padding:17px 20px 21px;background:#f9fbff}
+.major-body>.accordion-group{margin:10px 0!important}
+.major-body>.accordion-group:first-child{margin-top:0!important}
+.major-body>.accordion-group:last-child{margin-bottom:0!important}
+.nav.major-nav{margin:18px 0 8px!important}
+.nav.major-nav a{background:#fff!important}
+.simulation-holder{height:700px;border-radius:14px;border:1px solid #c7d8ec;overflow:hidden;background:#0a1628;margin:15px 0}
+.simulation-holder iframe{width:100%;height:100%;display:block;border:0}
+@media(max-width:700px){.major-grid{grid-template-columns:1fr;gap:10px}.major-group[open]{grid-column:auto}.major-head{padding:17px 16px;min-height:87px;gap:11px}.major-symbol{flex-basis:42px;width:42px;height:42px;font-size:23px}.major-body{padding:10px 12px 14px}.major-description{font-size:11px}.simulation-holder{height:660px}}
 </style></head>
 <body>
 <main>
@@ -139,7 +164,11 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 <div class="metric"><small>2026년 상반기 공개경쟁</small><b>1,286명</b><small>전기통신 260명 · 블로그 표</small></div>
 <div class="metric"><small>2025 전기통신 최종 경쟁률</small><b>5.55 / 7.66</b><small>상반기 / 하반기 · 게시 표</small></div>
 <div class="metric"><small>익명 면접 준비 대본</small><b>23개 주제</b><small>확장 13개 · 기본 10개</small></div></div>
-<nav class="nav" aria-label="코레일 면접자료"><a href="#update-history">업데이트 내역</a><a href="#recruit">채용 정보</a><a href="#hiring-history">채용인원 비교</a><a href="#cutoff">필기컷·경쟁률</a><a href="#work">직무 안내</a><a href="#workplaces">전국 근무지 지도</a><a href="#lte-r-guide">LTE-R 그림</a><a href="#recent-news-2024-2026">최근 3개년 뉴스</a><a href="#technical-lte-r">LTE-R 기술면접</a><a href="#scripts">기존 대본 23개</a><a href="#online-reviews">온라인 후기</a><a href="#personality-30sec">인성 30초 템플릿</a><a href="#self-intro">자기소개서</a><a href="#sources">출처</a></nav><p class="note">각 메뉴는 기본적으로 접혀 있습니다. 메뉴 제목을 누르면 해당 자료가 펼쳐지며, 내부 질문을 다시 누르면 30초 답변이 열립니다.</p>
+<nav class="nav major-nav" aria-label="상위 카테고리 바로가기"><a href="#category-1">🏢 채용·지원 정보</a><a href="#category-2">📍 근무지·직무 안내</a><a href="#category-3">📡 LTE-R·통신기술</a><a href="#category-4">🎤 면접 전형·실전 대비</a><a href="#category-5">📰 최근 3개년 뉴스</a><a href="#category-6">📚 업데이트·출처</a></nav><p class="major-help"><strong>이용 방법</strong> · 먼저 아래의 <b>6개 큰 카테고리</b> 중 하나를 선택하세요. 선택한 카테고리 아래에서 <b>세부 메뉴</b>를 펼치고, 면접 질문을 클릭하면 <b>답변</b>이 표시됩니다. 다른 큰 카테고리를 누르면 기존 카테고리는 접힙니다.</p>
+<div class="major-grid" aria-label="대분류 메뉴: 클릭해 세부 항목 확인">
+<details class="major-group" id="category-1" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">🏢</span><span class="major-headlines"><span class="major-label">채용·지원 정보</span><span class="major-description">채용공고 · 경쟁률 · 자기소개서</span><span class="major-count">세부 메뉴 4개</span></span></summary>
+ <div class="major-body">
 <details class="panel accordion-group" id="recruit" ><summary class="accordion-heading"><span class="accordion-title">코레일 채용·급여·경쟁률 참고자료 (2025~2026)</span></summary><div class="accordion-content">
 
 <p><strong>자료 구분:</strong> 아래 수치는 사용자가 제공한 루멘(hellstudy) 블로그 스크린샷을 전사한 참고자료입니다. 한국철도공사 공식 통계와 독립적으로 대조한 결과는 아니며, 2025년 경쟁률을 2026년 경쟁률로 해석하지 않습니다.</p>
@@ -266,10 +295,33 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 </tbody></table></div>
 <p class="small">일정은 첨부된 2026년 상반기 일정표를 옮긴 참고 정보입니다. 이후 정정·변경이 있을 수 있으므로 지원 회차의 공식 공고를 기준으로 확인하세요.</p>
 </div></details>
-<details class="panel accordion-group" id="update-history"><summary class="accordion-heading"><span class="accordion-title">업데이트 내역 · 2026.11.10</span></summary><div class="accordion-content"><ul><li>코레일 기존 모든 대분류를 접이식 목차로 변경(기존 대본 검색·후기·표 보존)</li><li>LTE-R 기술면접 신규 12개 및 30초 답변, 기존 익명 대본 23개·후기 12개에 30초 버전 보강</li><li>안전·신규노선·통신·전기 기술 3개년 기사 12건 및 면접 답변</li><li>전국 주요 사업장 지도, LTE-R 구성도·핸드오버 그림, 인성면접 16개 30초 답변·빈칸형 템플릿</li></ul></div></details>
+<details class="panel accordion-group" id="self-intro"><summary class="accordion-heading"><span class="accordion-title">2026년 자기소개서 · 4문항</span></summary><div class="accordion-content"><h3>2026년 상반기 자기소개서: 4문항</h3>
+<p><strong>작성 기준:</strong> 온라인 작성, 문항별 700자 이상 1,000자 이내. 지원자 성명·출생지·학교명 등 개인정보 기재 금지. 문항과 무관한 답변, 동일 답변 반복, 타 회사명·비속어 기재 등 부적절한 작성 유의.</p>
+<ol style="line-height:1.85"><li>업무나 단체 생활 중 소외되거나 어려움을 겪는 동료(또는 친구)를 위해 먼저 다가가 배려하거나 도움을 주어 긍정적인 변화를 이끌어낸 경험을 서술해 주세요.</li>
+<li>실패할 가능성이 있거나 익숙하지 않은 낯선 분야였음에도 불구하고, 더 나은 미래를 위해 과감하게 도전하여 유의미한 결과를 얻었던 경험을 서술해 주세요.</li>
+<li>본인이 보유한 직무 관련 지식이나 전문성을 발휘하여, 고객(또는 상대방)의 요구사항을 선제적으로 해결하고 만족을 이끌어냈던 경험을 서술해 주세요.</li>
+<li>한국철도공사의 일원으로서 입사 10년 뒤 본인이 도달하고자 하는 목표와 비전은 무엇이며, 이를 달성하기 위해 어떠한 노력을 기울일 것인지 서술해 주세요.</li></ol>
+<p>※ 첨부 「3. 자기소개서.pdf」 1페이지 기준. 작성 기한 이후 수정 불가 등 유의사항은 지원 시 최신 공고 재확인.</p>
+</div></details>
+</div></details>
+<details class="major-group" id="category-2" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">📍</span><span class="major-headlines"><span class="major-label">근무지·직무 안내</span><span class="major-description">전국 사업장 지도 · 전기통신 업무</span><span class="major-count">세부 메뉴 2개</span></span></summary>
+ <div class="major-body">
 <details class="panel accordion-group" id="workplaces"><summary class="accordion-heading"><span class="accordion-title">근무지 · 전국 주요 사업장 지도</span></summary><div class="accordion-content"><p>코레일은 <strong>전국 6개 채용 권역</strong>에 분포하며 대표 지역본부, 본사, 차량정비단과 정보통신 관련 소속을 지도에 표시했습니다. 정확한 인사 배치가 아닌 <strong>역·지역 중심 대표 위치</strong>입니다.</p><p class="note">본사(대전), 서울·수도권동부·수도권서부·강원·대전충남·충북·전북·광주·전남·대구·경북·부산경남 지역본부 및 주요 차량정비단, 서울정보통신사무소·IT운영센터 등을 확인할 수 있습니다. 직렬·권역별 실제 배치는 공식 모집공고에서 확인하세요.</p><iframe title="코레일 전국 근무지 지도" src="./rail-workplaces.html?org=korail" loading="lazy" style="width:100%;height:640px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe><p><a class="source" href="./rail-workplaces.html?org=korail">지도 전체 화면 열기 →</a></p></div></details>
+<details class="panel accordion-group" id="work"><summary class="accordion-heading"><span class="accordion-title">전기통신 직무 · 면접 준비 관점</span></summary><div class="accordion-content">
+<table><tbody><tr><th>LTE-R·열차무선</th><td>열차–관제 무선통신, 통신 장애 대응, 전파 품질 및 긴급 통신</td></tr><tr><th>광전송·선로</th><td>광케이블·광모듈·전송망 점검, 회선 장애 원인 파악과 성능 검증</td></tr><tr><th>관련 철도설비</th><td>궤도회로·연동장치의 기초 안전 원리를 이해하되 실제 설비 책임은 담당 직렬별로 구분</td></tr><tr><th>현장 안전·협업</th><td>작업 허가, 관제 보고, 예방 정비, 장애 복구 기록</td></tr></tbody></table>
+<p class="note">학습용 직무 개요입니다. 실제 담당 시설과 직무 범위는 지원 회차 직무기술서가 우선합니다. 면접 답변은 안전 확보 → 보고 → 진단 → 승인된 복구 → 검증·재발 방지 순으로 구성하면 좋습니다.</p></div></details>
+</div></details>
+<details class="major-group" id="category-3" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">📡</span><span class="major-headlines"><span class="major-label">LTE-R·통신기술</span><span class="major-description">2D/3D 핸드오버 · LTE-R 기술면접</span><span class="major-count">세부 메뉴 3개</span></span></summary>
+ <div class="major-body">
 <details class="panel accordion-group" id="lte-r-guide"><summary class="accordion-heading"><span class="accordion-title">LTE-R 그림 · 구성요소 · 핸드오버</span></summary><div class="accordion-content"><p>열차 → 기지국 → 백홀 → 코어망 → 관제센터의 무선통신 흐름과 핸드오버 그림, RSRP·RSRQ·SINR 설명, KTCS-2/이음5G와의 차이를 확인할 수 있습니다.</p><iframe title="그림으로 배우는 LTE-R" src="./rail-lte-r.html" loading="lazy" style="width:100%;height:630px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe><p><a class="source" href="./rail-lte-r.html">LTE-R 이해하기 전체 화면 →</a></p></div></details>
-<details class="panel accordion-group" id="recent-news-2024-2026"><summary class="accordion-heading"><span class="accordion-title">최근 3개년 뉴스 · 안전·신규 노선·통신·전기</span></summary><div class="accordion-content"><p>코레일 및 국가철도공단 등 관계기관의 <strong>2024~2026년 주요 기사 12건</strong>을 정리했습니다. 날짜·핵심 내용·진행상태·면접 시사점·30초 답변과 공식 발표 링크를 포함합니다.</p><p><a class="source" href="./korail-news-2024-2026.html">코레일 최근 3개년 뉴스 12건 펼쳐 보기 →</a></p><iframe title="코레일 최근 3개년 핵심 뉴스" src="./korail-news-2024-2026.html" loading="lazy" style="width:100%;height:570px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe></div></details>
+<details class="panel accordion-group" id="lte-r-3d"><summary class="accordion-heading"><span class="accordion-title">LTE-R 3D 동작원리 · 열차 이동·핸드오버</span></summary><div class="accordion-content">
+<p>실제 열차처럼 선로 위를 달리는 3D 모델과 LTE-R <strong>기지국 A·B·C</strong> 사이의 연결 전환을 확인할 수 있습니다. 열차 ↔ 기지국(무선) → 백홀 → 코어망 → 관제센터(데이터 경로)를 점과 연결선으로 애니메이션 표시합니다.</p>
+<p class="note"><strong>조작 방법</strong> 재생/일시정지, 속도 변경, 입체·측면·평면 시점, 3D 회전 및 확대를 지원합니다. 실제 측정·전파 계산이 아닌 이해를 위한 교육용 모형입니다.</p>
+<div class="simulation-holder"><iframe src="./rail-lte-r-3d.html" title="LTE-R 열차 이동 및 핸드오버 3D 교육 시뮬레이터" loading="lazy" referrerpolicy="no-referrer"></iframe></div>
+<p class="sources"><a class="source" href="./rail-lte-r-3d.html" target="_blank" rel="noopener noreferrer">3D 전체 화면에서 조작하기 ↗</a> <a class="source" href="./rail-lte-r.html">2D 기본 개념 및 용어 확인 ↗</a></p>
+</div></details>
 <details class="panel accordion-group" id="technical-lte-r"><summary class="accordion-heading"><span class="accordion-title">LTE-R 중심 기술면접 12문항 · 30초 답변</span></summary><div class="accordion-content"><p>전기통신 직무에 직접 연결되는 LTE-R·기지국·무선 품질·핸드오버·비상통신 문항을 우선 정리했습니다. 기출이 아닌 학습용입니다.</p><p><a class="source" href="./rail-lte-r.html">LTE-R 개념 그림 함께 보기 →</a></p><details class="qa"><summary><span class="num">T01</span> LTE-R의 역할은? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>LTE-R은 LTE 기술을 철도 운행에 맞게 적용한 철도통합무선망입니다. 기관사·관제·현장 직원 간 음성과 운행정보, 영상 데이터를 전달하는 데 활용합니다. 저는 이동 중 통화 연속성과 비상통신 품질을 점검하고 장애 시 관제 보고와 대체통신 절차를 우선하겠습니다.</p></div></details>
 <details class="qa"><summary><span class="num">T02</span> 기존 VHF·TRS와 LTE-R의 차이는? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>기존 VHF·TRS는 주로 음성 중심의 무전 업무에 활용됐습니다. LTE-R은 음성뿐 아니라 데이터와 영상 전송을 지원할 수 있습니다. 다만 노선에 따라 기존 무전방식이 병행될 수 있으므로 모든 구간이 LTE-R로 전환됐다고 단정하지 않겠습니다.</p></div></details>
 <details class="qa"><summary><span class="num">T03</span> 기지국과 코어망은 어떤 역할을 하나요? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>기지국은 열차 단말과 무선으로 연결되고, 코어망은 단말 접속 및 통신 전달 경로를 관리합니다. 기지국에서 관제까지 이어지는 백홀 전송망도 중요합니다. 장애 시 무선·전송·코어망을 나눠 확인해야 복구 범위를 신속히 좁힐 수 있습니다.</p></div></details>
@@ -282,10 +334,10 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 <details class="qa"><summary><span class="num">T10</span> 신규 노선 개통 전 통신설비 검증은? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>개통 전 열차무선 통화, 기지국 전환, 관제·역무 통신, 비상방송과 전원·예비 경로 상태를 확인하겠습니다. 시운전 중 구간별 장애 로그와 실제 음성 품질을 기록하겠습니다. 담당 전기·신호 부서와 협조해 승인된 검수 절차를 따르겠습니다.</p></div></details>
 <details class="qa"><summary><span class="num">T11</span> 전기통신 직무에서 궤도회로와 연동장치를 알아야 하는 이유는? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>궤도회로는 열차 위치 검지, 연동장치는 안전한 진로 설정을 담당하는 신호설비입니다. 정보통신 직무와 담당 범위는 다를 수 있지만, 관제와 설비 사이 장애의 영향을 이해하려면 기본 원리가 필요합니다. 협업 시에는 권한과 보고 체계를 준수하겠습니다.</p></div></details>
 <details class="qa"><summary><span class="num">T12</span> 열차무선 장애 기록을 어떻게 활용하겠습니까? <span class="arr">30초</span></summary><div class="answer"><p><b>30초 예상 답변</b></p><p>장애 발생 시각과 열차·구간, 기지국 알람과 핸드오버 실패 이력을 함께 기록하겠습니다. 반복되는 시간대나 구간을 분석해 예방점검 우선순위를 정할 수 있습니다. 개선 조치 전후 품질을 비교해 실제 효과를 검증하겠습니다.</p></div></details></div></details>
-<details class="panel accordion-group" id="personality-30sec"><summary class="accordion-heading"><span class="accordion-title">인성면접 · 30초 답변과 빈칸 템플릿 (16개)</span></summary><div class="accordion-content"><p>자기소개, 지원동기, 강점·약점, 갈등, 도전, 실패, 안전·윤리 등 질문별 <strong>30초 모범 예시</strong>와 <strong>본인 경험을 입력해 완성하는 빈칸형 템플릿</strong>을 제공합니다.</p><iframe title="코레일 인성면접 30초 답변 작성 도구" src="./rail-personality-30sec.html?org=korail" loading="lazy" style="width:100%;height:670px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe><p><a class="source" href="./rail-personality-30sec.html?org=korail">인성면접 빈칸 템플릿 전체 화면 →</a></p></div></details>
-<details class="panel accordion-group" id="work"><summary class="accordion-heading"><span class="accordion-title">전기통신 직무 · 면접 준비 관점</span></summary><div class="accordion-content">
-<table><tbody><tr><th>LTE-R·열차무선</th><td>열차–관제 무선통신, 통신 장애 대응, 전파 품질 및 긴급 통신</td></tr><tr><th>광전송·선로</th><td>광케이블·광모듈·전송망 점검, 회선 장애 원인 파악과 성능 검증</td></tr><tr><th>관련 철도설비</th><td>궤도회로·연동장치의 기초 안전 원리를 이해하되 실제 설비 책임은 담당 직렬별로 구분</td></tr><tr><th>현장 안전·협업</th><td>작업 허가, 관제 보고, 예방 정비, 장애 복구 기록</td></tr></tbody></table>
-<p class="note">학습용 직무 개요입니다. 실제 담당 시설과 직무 범위는 지원 회차 직무기술서가 우선합니다. 면접 답변은 안전 확보 → 보고 → 진단 → 승인된 복구 → 검증·재발 방지 순으로 구성하면 좋습니다.</p></div></details>
+</div></details>
+<details class="major-group" id="category-4" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">🎤</span><span class="major-headlines"><span class="major-label">면접 전형·실전 대비</span><span class="major-description">기존 대본 23개 · 인성 30초 템플릿 · 후기</span><span class="major-count">세부 메뉴 3개</span></span></summary>
+ <div class="major-body">
 <details class="panel accordion-group" id="scripts"><summary class="accordion-heading"><span class="accordion-title">익명화된 면접 준비 대본 · 23개 주제</span></summary><div class="accordion-content"><p>실제 개인 준비 당시 작성한 문장과 꼬리질문을 유지했습니다. 공식 면접 기출 및 답변이 아닌 학습용 초안입니다.</p><div class="tabs" role="tablist" aria-label="대본 종류">
 <button class="tab" type="button" role="tab" id="advanced-tab" aria-controls="advanced" aria-selected="true" tabindex="0" data-for="advanced">확장 대본 (13)</button>
 <button class="tab" type="button" role="tab" id="basic-tab" aria-controls="basic" aria-selected="false" tabindex="-1" data-for="basic">기본 대본 (10)</button>
@@ -431,6 +483,7 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 <p class="taila">“선배에게 배우고 매뉴얼 숙지 + 반복 경험”</p><p class="short-script"><b>30초 예상 답변:</b> 입사 초기에는 LTE-R과 철도 통신설비의 운영 절차를 체계적으로 익히겠습니다. 중기에는 장비 알람과 반복 장애 사례를 분석해 예방정비에 기여하겠습니다. 장기적으로는 현장 안전을 기반으로 후배와 경험을 공유하는 통신 전문가가 되고 싶습니다.</p></div></details>
 </section>
 </div></details>
+<details class="panel accordion-group" id="personality-30sec"><summary class="accordion-heading"><span class="accordion-title">인성면접 · 30초 답변과 빈칸 템플릿 (16개)</span></summary><div class="accordion-content"><p>자기소개, 지원동기, 강점·약점, 갈등, 도전, 실패, 안전·윤리 등 질문별 <strong>30초 모범 예시</strong>와 <strong>본인 경험을 입력해 완성하는 빈칸형 템플릿</strong>을 제공합니다.</p><iframe title="코레일 인성면접 30초 답변 작성 도구" src="./rail-personality-30sec.html?org=korail" loading="lazy" style="width:100%;height:670px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe><p><a class="source" href="./rail-personality-30sec.html?org=korail">인성면접 빈칸 템플릿 전체 화면 →</a></p></div></details>
 <details class="external-section panel accordion-group" id="online-reviews"><summary class="accordion-heading"><span class="accordion-title">온라인 면접 후기 기반 질문 · 12개</span></summary><div class="accordion-content">
 
 <p class="external-desc">링커리어 지원자 후기, 2026년 공개된 면접 준비자료, 면접 교육 블로그를 교차 참고했습니다. 질문은 원문을 그대로 복제하지 않고 취지를 요약·재구성했습니다.</p>
@@ -449,18 +502,22 @@ main{max-width:1020px;margin:auto;padding:32px 22px 90px}
 <details class="external-qa"><summary><span class="external-number">K12</span> 다른 부서와 긴급 복구 방식을 두고 이견이 있다면 조정하겠습니까?</summary><div class="external-body"><div class="external-info"><strong>후기 기반 연습</strong> · 2026년 9월 면접 교육 블로그 · 전 직렬 공통 준비전략</div><p><strong>준비 방향:</strong> 사실·위험·권한·규정을 구분하고 합의 가능한 대안을 제시합니다. 블로그의 상황·경험면접 주제 분류를 바탕으로 새로 만든 질문입니다.</p><a href="https://dangtalk.co.kr/%EC%BD%94%EB%A0%88%EC%9D%BC-%EB%A9%B4%EC%A0%91-%EA%B8%B0%EC%B6%9C%EC%A7%88%EB%AC%B8-%EC%B4%9D%EC%A0%95%EB%A6%AC%EF%BD%9C%EC%83%81%ED%99%A9%EB%A9%B4%EC%A0%91%C2%B7%EA%B2%BD%ED%97%98%EB%A9%B4%EC%A0%91/" target="_blank" rel="noopener noreferrer">후기·관련 원문 보기 ↗</a><p class="short-script"><b>30초 예상 답변:</b> 긴급 복구 방식에서 의견이 다르면 우선 안전 기준과 영향 범위를 함께 확인하겠습니다. 작업 권한과 필요한 승인을 명확히 한 후 시간·위험·복구 효과를 비교해 대안을 제시하겠습니다. 합의가 어려우면 책임자 판단과 공식 절차에 따르겠습니다.</p></div></details>
 <p class="external-desc">원문은 질문별 링크에서 확인할 수 있습니다. 개인 준비 대본은 위 섹션에서 확인하세요.</p>
 </div></details>
-<details class="panel accordion-group" id="self-intro"><summary class="accordion-heading"><span class="accordion-title">2026년 자기소개서 · 4문항</span></summary><div class="accordion-content"><h3>2026년 상반기 자기소개서: 4문항</h3>
-<p><strong>작성 기준:</strong> 온라인 작성, 문항별 700자 이상 1,000자 이내. 지원자 성명·출생지·학교명 등 개인정보 기재 금지. 문항과 무관한 답변, 동일 답변 반복, 타 회사명·비속어 기재 등 부적절한 작성 유의.</p>
-<ol style="line-height:1.85"><li>업무나 단체 생활 중 소외되거나 어려움을 겪는 동료(또는 친구)를 위해 먼저 다가가 배려하거나 도움을 주어 긍정적인 변화를 이끌어낸 경험을 서술해 주세요.</li>
-<li>실패할 가능성이 있거나 익숙하지 않은 낯선 분야였음에도 불구하고, 더 나은 미래를 위해 과감하게 도전하여 유의미한 결과를 얻었던 경험을 서술해 주세요.</li>
-<li>본인이 보유한 직무 관련 지식이나 전문성을 발휘하여, 고객(또는 상대방)의 요구사항을 선제적으로 해결하고 만족을 이끌어냈던 경험을 서술해 주세요.</li>
-<li>한국철도공사의 일원으로서 입사 10년 뒤 본인이 도달하고자 하는 목표와 비전은 무엇이며, 이를 달성하기 위해 어떠한 노력을 기울일 것인지 서술해 주세요.</li></ol>
-<p>※ 첨부 「3. 자기소개서.pdf」 1페이지 기준. 작성 기한 이후 수정 불가 등 유의사항은 지원 시 최신 공고 재확인.</p>
 </div></details>
+<details class="major-group" id="category-5" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">📰</span><span class="major-headlines"><span class="major-label">최근 3개년 뉴스</span><span class="major-description">안전·노선 개통·통신·전기 관련 기사</span><span class="major-count">세부 메뉴 1개</span></span></summary>
+ <div class="major-body">
+<details class="panel accordion-group" id="recent-news-2024-2026"><summary class="accordion-heading"><span class="accordion-title">최근 3개년 뉴스 · 안전·신규 노선·통신·전기</span></summary><div class="accordion-content"><p>코레일 및 국가철도공단 등 관계기관의 <strong>2024~2026년 주요 기사 12건</strong>을 정리했습니다. 날짜·핵심 내용·진행상태·면접 시사점·30초 답변과 공식 발표 링크를 포함합니다.</p><p><a class="source" href="./korail-news-2024-2026.html">코레일 최근 3개년 뉴스 12건 펼쳐 보기 →</a></p><iframe title="코레일 최근 3개년 핵심 뉴스" src="./korail-news-2024-2026.html" loading="lazy" style="width:100%;height:570px;border:1px solid #dae3f2;border-radius:12px" referrerpolicy="no-referrer"></iframe></div></details>
+</div></details>
+<details class="major-group" id="category-6" name="korail-major">
+ <summary class="major-head"><span class="major-symbol" aria-hidden="true">📚</span><span class="major-headlines"><span class="major-label">업데이트·출처</span><span class="major-description">최근 반영한 기능 · 참고자료</span><span class="major-count">세부 메뉴 2개</span></span></summary>
+ <div class="major-body">
+<details class="panel accordion-group" id="update-history"><summary class="accordion-heading"><span class="accordion-title">업데이트 내역 · 2026.11.10</span></summary><div class="accordion-content"><ul><li>코레일 기존 모든 대분류를 접이식 목차로 변경(기존 대본 검색·후기·표 보존)</li><li>LTE-R 기술면접 신규 12개 및 30초 답변, 기존 익명 대본 23개·후기 12개에 30초 버전 보강</li><li>안전·신규노선·통신·전기 기술 3개년 기사 12건 및 면접 답변</li><li>전국 주요 사업장 지도, LTE-R 구성도·핸드오버 그림, 인성면접 16개 30초 답변·빈칸형 템플릿</li></ul></div></details>
 <details class="panel accordion-group" id="sources"><summary class="accordion-heading"><span class="accordion-title">자료 출처 및 개인정보 안내</span></summary><div class="accordion-content">
 <div class="note"><strong>개인정보 보호:</strong> 원래 개인 면접 대본의 이름·연락처 등 직접 식별정보와 PDF 작성자 메타데이터는 공개하지 않았습니다. 개인 경험은 학습자가 자신의 실제 경험으로 수정해야 합니다.</div>
 <p class="small">2025년 경쟁률과 필기 합격선, 2026년 채용 규모·급여는 제공받은 네이버 블로그 캡처 전사 수치로 공식 통계와 독립 대조하지 않았습니다. 개인 대본도 코레일 공식 기출·공식 모범답안이 아닙니다. 채용조건은 반드시 최신 공고를 확인하세요.</p>
 <div class="sources"><a class="source" href="https://info.korail.com" target="_blank" rel="noopener noreferrer">한국철도공사 공식 홈페이지 ↗</a><a class="source" href="../communication-quiz-500/">통신공학 문제은행 ↗</a><a class="source" href="../wireless-quiz-500/">무선공학 문제은행 ↗</a></div></div></details>
+</div></details>
+</div>
 
 
 
