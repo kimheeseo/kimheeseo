@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="LTE-R 3D 애니메이션: 열차 이동, 3개 기지국 간 핸드오버, 백홀과 코어망·관제 연결 개념 시각화.">
+<title>LTE-R 3D 인터랙티브 학습 시뮬레이터 | 통신직 준비</title>
+<style>
+:root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e7f0ff;background:#0b1426}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(165deg,#0e1d33,#09111e 62%,#111c30)}
+a{color:#9bccff}button{font:inherit;cursor:pointer}
+header{max-width:1390px;margin:auto;padding:22px 20px 14px}
+.back{font-size:13px;text-decoration:none;color:#acbeea}
+.eyebrow{font-size:11px;letter-spacing:.15em;color:#59ddd2;font-weight:850;margin-top:19px}
+h1{font-size:clamp(23px,3vw,35px);letter-spacing:-.045em;margin:5px 0 9px}h1 span{color:#67ded6}
+.lead{line-height:1.7;font-size:13px;color:#b4c8df;max-width:1000px;margin:0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:13px;max-width:1390px;margin:0 auto;padding:0 20px 24px}
+.scene-card{position:relative;border:1px solid #324562;border-radius:18px;background:#09192c;min-height:520px;overflow:hidden}
+#view{width:100%;height:100%;min-height:520px;display:block;touch-action:pan-y}
+.overlay{position:absolute;pointer-events:none;z-index:2;padding:13px;border:1px solid #324967;border-radius:11px;background:#0e2238df;color:#e5f6ff;box-shadow:0 5px 20px #0003}
+.overlay.top{top:14px;left:14px}.overlay.bottom{bottom:15px;left:14px;right:14px;display:flex;gap:12px;align-items:center}
+.overline{display:block;color:#9bb1cd;font-size:10px;letter-spacing:.08em}
+.status{font-size:17px;font-weight:850;margin-top:6px;color:#64e6dc}
+.signal-bar{height:7px;background:#263b55;border-radius:999px;width:min(26vw,200px);overflow:hidden;margin-top:7px}
+.signal-bar>span{display:block;height:100%;background:linear-gradient(90deg,#e0a65c,#64e4d7);width:100%;transition:width .3s}
+.stage{font-size:12px;color:#d7e9fc;line-height:1.6}
+.progress{flex:1;height:7px;background:#29405a;border-radius:20px;overflow:hidden}.progress>span{display:block;height:100%;width:0;background:#5bd5d6}
+.panel{border:1px solid #334765;border-radius:17px;background:#12243b;padding:16px}
+.panel h2{font-size:15px;margin:0 0 13px;color:#e5f0ff}
+.control-group{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.btn{border:1px solid #49617d;background:#19324c;border-radius:10px;padding:10px 7px;color:#d9e9fc;font-size:12px;font-weight:750}
+.btn:hover,.btn:focus-visible{border-color:#5ae0d4;outline:2px solid #43d4ca55}
+.btn.active{background:#205d70;border-color:#48d4cd;color:#fff}
+.btn.primary{background:#41bcae;color:#05243a;border-color:#67d9cf}
+select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;border-radius:9px;width:100%;font:inherit;font-size:12px}
+.range-line{display:flex;align-items:center;gap:10px;font-size:12px;color:#c6d8f1;margin:15px 0}
+.range-line input{flex:1;accent-color:#50dcd3}
+.metric{border:1px solid #2c4762;border-radius:12px;padding:10px 12px;margin:7px 0}
+.metric-label{display:block;color:#9fb8d1;font-size:11px}.metric strong{font-size:17px;display:block;color:#f3faff;margin-top:4px}
+.metric small{font-size:11px;color:#92adc6}
+.leg{display:flex;align-items:center;gap:9px;font-size:12px;color:#bed1e8;margin:7px 0}
+.dot{width:10px;height:10px;display:inline-block;border-radius:50%;flex:none}
+.info{max-width:1390px;padding:0 20px 28px;margin:auto}
+.explain{background:#142641;border:1px solid #314561;border-radius:15px;padding:18px}
+.explain h2{font-size:16px;margin:0 0 9px}.explain p{color:#b9cbe1;line-height:1.8;font-size:13px;margin:7px 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}
+.step{background:#192d45;border:1px solid #344f69;border-radius:13px;padding:13px;color:#c9d8ee;font-size:12px;line-height:1.7}
+.step b{display:block;color:#68e1d6;font-size:14px;margin-bottom:3px}
+.disclaimer{color:#a0b4d0;font-size:12px;margin:9px 0;line-height:1.7}
+#fallback{display:none;position:absolute;inset:0;place-items:center;text-align:center;padding:28px;color:#deecff;background:#10243b}
+#fallback a{display:inline-block;margin-top:12px}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.scene-card,#view{min-height:450px}.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:550px){header{padding:18px 12px}.layout,.info{padding-left:12px;padding-right:12px}.scene-card,#view{min-height:375px}.overlay.top{left:8px;top:8px;padding:8px}.overlay.bottom{left:8px;right:8px;bottom:8px;padding:9px}.steps{grid-template-columns:1fr}.stage{font-size:11px}}
+</style>
+</head><body>
+<header><a class="back" href="./rail-lte-r.html">← LTE-R 기본 개념으로 돌아가기</a><div class="eyebrow">INTERACTIVE TELECOM EDUCATION · THREE.JS</div>
+<h1>LTE-R <span>3D 동작 원리 시뮬레이터</span></h1>
+<p class="lead">달리는 열차와 LTE-R 기지국의 연결이 바뀌는 <b>핸드오버</b>, 그리고 기지국 → 백홀 전송망 → 코어망 → 관제센터로 정보가 전달되는 흐름을 관찰하세요. 마우스로 회전하고 휠로 확대할 수 있습니다.</p></header>
+<div class="layout">
+ <div class="scene-card">
+  <canvas id="view" aria-label="열차가 이동하며 기지국 A B C 간 핸드오버를 수행하는 3D 개념 시뮬레이션"></canvas>
+  <div class="overlay top"><span class="overline">현재 접속 기지국 / SERVING CELL</span><div id="cellStatus" class="status">기지국 A</div><span class="overline" id="rfText">개념 수신품질: 계산 중</span><div class="signal-bar"><span id="signalFill"></span></div></div>
+  <div class="overlay bottom"><span class="stage" id="stage">열차 단말 → 기지국 → 백홀 → 코어망 → 관제</span><div class="progress"><span id="progressFill"></span></div><span id="pcent" style="font-size:12px">0%</span></div>
+  <div id="fallback"><div><strong>3D 그래픽을 실행할 수 없는 환경입니다.</strong><p>WebGL 또는 외부 Three.js 모듈 연결을 확인해 주세요.</p><a href="./rail-lte-r.html">2D LTE-R 그림·용어 설명 보기</a></div></div>
+ </div>
+ <aside class="panel" aria-label="애니메이션 조작 및 핵심 데이터">
+  <h2>시뮬레이션 조작</h2><div class="control-group">
+    <button class="btn primary" id="toggle">⏸ 일시정지</button><button class="btn" id="reset">↺ 처음부터</button>
+    <button class="btn active" data-camera="iso">입체 시점</button><button class="btn" data-camera="top">위에서 보기</button>
+    <button class="btn" data-camera="side">측면 보기</button><button class="btn" id="links">연결 경로 표시 ✓</button>
+  </div>
+  <label class="range-line" for="speed">열차 속도 <input id="speed" type="range" min="0.5" max="3" value="1" step="0.5"><strong id="speedText">1×</strong></label>
+  <h2>실시간 시뮬레이션 상태</h2>
+  <div class="metric"><span class="metric-label">열차 진행 위치</span><strong id="posText">0%</strong><small>시연용 일정 구간 반복 이동</small></div>
+  <div class="metric"><span class="metric-label">접속중인 셀</span><strong id="cellText">A</strong><small>열차와 가까운 기지국을 기준으로 간소화</small></div>
+  <div class="metric"><span class="metric-label">핸드오버 이벤트</span><strong id="handoverText">대기</strong><small>Cell A → B → C</small></div>
+  <h2 style="margin-top:17px">색상으로 경로 읽기</h2>
+  <div class="leg"><span class="dot" style="background:#64e8de"></span>열차 ↔ 현재 기지국 (무선)</div>
+  <div class="leg"><span class="dot" style="background:#f5b85e"></span>기지국 ↔ 코어망 (백홀)</div>
+  <div class="leg"><span class="dot" style="background:#9d98ff"></span>코어망 ↔ 관제센터 (업무망)</div>
+  <p class="disclaimer">RSRP·전파 거리·속도 등은 실제 통신 규격에 따른 링크 시뮬레이션이 아닙니다. 거리와 셀 전환을 시각적으로 설명하는 <strong>교육용 단순 모델</strong>입니다.</p>
+ </aside>
+</div>
+<div class="info">
+ <div class="explain"><h2>이 애니메이션에서 확인할 수 있는 4단계</h2>
+  <div class="steps"><div class="step"><b>01 · 열차 이동</b>열차 단말이 선로를 따라 이동하면서 접속 가능한 기지국이 달라집니다.</div>
+  <div class="step"><b>02 · 핸드오버</b>기지국 A → B → C로 연결이 전환됩니다. 실제 망은 측정값·설정·제어 절차에 따라 전환합니다.</div>
+  <div class="step"><b>03 · 백홀 전달</b>기지국의 음성·데이터는 유선 전송망과 LTE 코어망을 거쳐 라우팅됩니다.</div>
+  <div class="step"><b>04 · 관제 연결</b>관제 담당자가 열차와 통신합니다. 실제 서비스에는 우선순위와 안전 운용 절차가 중요합니다.</div></div>
+  <p><strong>면접 포인트:</strong> LTE-R 자체는 열차제어를 판단하는 시스템이 아닙니다. 열차제어 시스템(KTCS 등)은 별도로 존재하고, LTE-R은 노선별 구성에 따라 관련 통신을 제공할 수 있습니다. 기지국 간 핸드오버가 불안정하면 통화가 끊길 수 있어 무선 신호품질과 백홀 장애를 함께 살펴야 합니다.</p>
+  <p class="disclaimer">※ 3D 구조물, 무선전파 연결선, 패킷과 위치/커버리지는 실제 철도 시설의 크기·주파수·출력·전파환경·망 토폴로지를 표현하지 않습니다. 실제 기지국 간 전환은 단순 거리 비교보다 복잡합니다. 교육용 시각화 목적입니다.</p>
+  <p><a href="./rail-lte-r.html">2D 기본 개념·용어·30초 답변</a> · <a href="./seoul-metro.html#lte-r-guide">서울교통공사 면접자료</a> · <a href="./korail.html#lte-r-guide">코레일 면접자료</a></p>
+ </div>
+</div>
+<script type="module">
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js';
+const canvas=document.querySelector('#view'),fallback=document.querySelector('#fallback');
+let renderer;
+try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});}
+catch(err){fallback.style.display='grid';throw err;}
+renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));renderer.setClearColor(0x0b1a2a);renderer.shadowMap.enabled=true;
+const scene=new THREE.Scene();scene.background=new THREE.Color(0x0c192b);scene.fog=new THREE.Fog(0x0c192b,100,220);
+const camera=new THREE.PerspectiveCamera(47,1,.1,400);
+scene.add(new THREE.AmbientLight(0xc5d9ff,1.5));
+const key=new THREE.DirectionalLight(0xffffff,2.0);key.position.set(-22,60,40);key.castShadow=true;scene.add(key);
+const fill=new THREE.PointLight(0x4de5e0,45,80);fill.position.set(10,20,6);scene.add(fill);
+function mat(color,metal=.1,rough=.72){return new THREE.MeshStandardMaterial({color,metalness:metal,roughness:rough});}
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(130,78),mat(0x162c40));ground.rotation.x=-Math.PI/2;ground.position.y=-.25;scene.add(ground);
+const grid=new THREE.GridHelper(120,30,0x31516b,0x243a51);grid.position.y=-.18;scene.add(grid);
+const railMaterial=mat(0xc4d8e4,.7,.35),ballast=mat(0x394b5b),tieMat=mat(0x4f6576,.15,.7);
+for(const z of [-1.8,1.8]){const rail=new THREE.Mesh(new THREE.BoxGeometry(106,.27,.22),railMaterial);rail.position.set(0,.45,z);scene.add(rail);}
+const bed=new THREE.Mesh(new THREE.BoxGeometry(108,.3,7.2),ballast);bed.position.set(0,.08,0);scene.add(bed);
+for(let x=-52;x<=52;x+=3){const sleeper=new THREE.Mesh(new THREE.BoxGeometry(.57,.25,5.1),tieMat);sleeper.position.set(x,.22,0);scene.add(sleeper);}
+const tr=new THREE.Group();scene.add(tr);
+function roundedVehicle(){const body=new THREE.Mesh(new THREE.BoxGeometry(11,3.2,4),mat(0xd9eaf5,.48,.4));body.position.set(0,2.65,0);body.castShadow=true;tr.add(body);
+const stripe=new THREE.Mesh(new THREE.BoxGeometry(11.05,.35,4.07),mat(0x2b9aab,.35,.4));stripe.position.set(0,2.1,0);tr.add(stripe);
+for(const side of [-1,1]){for(let x=-3.7;x<=3.7;x+=2.4){const pane=new THREE.Mesh(new THREE.PlaneGeometry(1.6,1.05),new THREE.MeshBasicMaterial({color:0x205274,side:THREE.DoubleSide}));pane.position.set(x,3.05,side*2.035);pane.rotation.y=side>0?0:Math.PI;tr.add(pane);}}
+for(const x of [-3.3,3.3]){const bogie=new THREE.Mesh(new THREE.BoxGeometry(1.8,.55,3.5),mat(0x243343,.7,.45));bogie.position.set(x,.95,0);tr.add(bogie);}}
+roundedVehicle();
+function cylinderBetween(a,b,r,color,transparent=false){const length=a.distanceTo(b);const cylinder=new THREE.Mesh(new THREE.CylinderGeometry(r,r,length,8),new THREE.MeshBasicMaterial({color,transparent,opacity:transparent?.8:1}));cylinder.position.copy(a).add(b).multiplyScalar(.5);cylinder.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),new THREE.Vector3().subVectors(b,a).normalize());scene.add(cylinder);return cylinder;}
+const stations=[-31,0,31].map((x,i)=>{
+ const g=new THREE.Group();g.position.set(x,0,-12);scene.add(g);
+ const base=new THREE.Mesh(new THREE.BoxGeometry(7,.65,7),mat(0x31465b));base.position.y=.25;g.add(base);
+ const column=new THREE.Mesh(new THREE.CylinderGeometry(.32,.52,15,12),mat(0x93aebe,.65,.34));column.position.y=7.7;g.add(column);
+ for(const y of [10.8,14.1]){const arm=new THREE.Mesh(new THREE.BoxGeometry(5.4,.16,.16),mat(0x9cc9d0,.6,.35));arm.position.y=y;g.add(arm);}
+ for(const offset of [-2.3,2.3]){const ant=new THREE.Mesh(new THREE.BoxGeometry(.6,2.3,.48),mat(0x58cad1,.3,.4));ant.position.set(offset,12.4,0);g.add(ant);}
+ const ring=new THREE.Mesh(new THREE.TorusGeometry(7,.075,6,90),new THREE.MeshBasicMaterial({color:0x46dbd1,transparent:true,opacity:.25}));ring.rotation.x=-Math.PI/2;ring.position.y=.4;g.add(ring);
+ const halo=new THREE.Mesh(new THREE.CylinderGeometry(14,14,12,48,1,true),new THREE.MeshBasicMaterial({color:0x45ccc4,side:THREE.DoubleSide,transparent:true,opacity:.035,depthWrite:false}));halo.position.y=6;g.add(halo);
+ return {x,pt:new THREE.Vector3(x,14,-12),ring,halo,base,group:g,i};
+});
+function label(text,pos,width=256){const c=document.createElement('canvas');c.width=width;c.height=70;const ctx=c.getContext('2d');ctx.fillStyle='#102a43';ctx.fillRect(3,3,width-6,64);ctx.strokeStyle='#5ad5cb';ctx.strokeRect(3,3,width-6,64);ctx.fillStyle='#e8f8ff';ctx.font='bold 26px sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(text,width/2,35);const tex=new THREE.CanvasTexture(c);const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,transparent:true,depthTest:false}));sp.scale.set(12,3.3,1);sp.position.copy(pos);scene.add(sp);return sp;}
+stations.forEach((b,i)=>label('기지국 '+['A','B','C'][i],new THREE.Vector3(b.x,19,-12)));
+function building(x,z,w,h,d,color,win){const group=new THREE.Group();const shell=new THREE.Mesh(new THREE.BoxGeometry(w,h,d),mat(color,.3,.55));shell.position.y=h/2;shell.castShadow=true;group.add(shell);
+for(let y=2;y<h-1;y+=3){const light=new THREE.Mesh(new THREE.PlaneGeometry(w*.72,.65),new THREE.MeshBasicMaterial({color:win,side:THREE.DoubleSide}));light.position.set(0,y,d/2+.03);group.add(light);}
+group.position.set(x,0,z);scene.add(group);return group;}
+building(17,-31,13,9,9,0x576184,0xebc587);
+building(47,-31,14,11,10,0x28677d,0x8be9ff);
+label('LTE 코어망',new THREE.Vector3(17,15,-31));label('관제센터',new THREE.Vector3(47,17,-31));
+const core=new THREE.Vector3(17,7,-31),control=new THREE.Vector3(47,8,-31);
+const wires=[];
+stations.forEach(st=>{const end=new THREE.Vector3(st.x,1.4,-30);wires.push(cylinderBetween(st.pt,end,.10,0xeeb15e,true));wires.push(cylinderBetween(end,core,.10,0xeeb15e,true));});
+wires.push(cylinderBetween(core,control,.14,0xafa4ff,true));
+const wireLink=cylinderBetween(new THREE.Vector3(-32,4,0),stations[0].pt,.14,0x5af1e4,true);
+const dot=new THREE.Mesh(new THREE.SphereGeometry(.45,14,10),new THREE.MeshBasicMaterial({color:0xf6e1ac}));scene.add(dot);
+const dot2=new THREE.Mesh(new THREE.SphereGeometry(.45,14,10),new THREE.MeshBasicMaterial({color:0x66f9ee}));scene.add(dot2);
+let progress=0,paused=false,speed=1,showLinks=true,activeIndex=0,lastEvent='대기',t=0,theta=.9,phi=.98,dist=103;
+function cameraUpdate(){camera.position.set(Math.cos(theta)*Math.sin(phi)*dist,Math.cos(phi)*dist,Math.sin(theta)*Math.sin(phi)*dist);camera.lookAt(0,2,-12);}
+function setCamera(type){if(type==='top'){theta=.6;phi=.16;dist=112;}else if(type==='side'){theta=.01;phi=1.27;dist=101;}else{theta=.87;phi=.95;dist=100;}cameraUpdate();document.querySelectorAll('[data-camera]').forEach(b=>b.classList.toggle('active',b.dataset.camera===type));}
+setCamera('iso');
+let dragging=false,oldX=0,oldY=0;
+canvas.addEventListener('pointerdown',e=>{dragging=true;oldX=e.clientX;oldY=e.clientY;canvas.setPointerCapture(e.pointerId);});
+canvas.addEventListener('pointermove',e=>{if(!dragging)return;theta+=(e.clientX-oldX)*.007;phi=Math.max(.12,Math.min(1.52,phi+(e.clientY-oldY)*.005));oldX=e.clientX;oldY=e.clientY;cameraUpdate();});
+canvas.addEventListener('pointerup',()=>dragging=false);
+canvas.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(35,Math.min(180,dist+e.deltaY*.08));cameraUpdate();},{passive:false});
+function moveCylinder(mesh,a,b){const v=new THREE.Vector3().subVectors(b,a);mesh.position.copy(a).add(b).multiplyScalar(.5);mesh.scale.y=v.length() / mesh.geometry.parameters.height;mesh.quaternion.setFromUnitVectors(new THREE.Vector3(0,1,0),v.normalize());}
+function interpolate(a,b,p){return a.clone().lerp(b,p);}
+function report(){document.querySelector('#cellStatus').textContent='기지국 '+['A','B','C'][activeIndex];document.querySelector('#cellText').textContent='Cell '+['A','B','C'][activeIndex];document.querySelector('#handoverText').textContent=lastEvent;
+const x=-43+progress*86,quality=Math.max(17,Math.min(100,100-Math.abs(x-stations[activeIndex].x)*2.2));
+document.querySelector('#signalFill').style.width=quality+'%';
+document.querySelector('#rfText').textContent='개념 거리 기반 품질: '+Math.round(quality)+' / 100';
+document.querySelector('#posText').textContent=Math.round(progress*100)+'%';
+document.querySelector('#progressFill').style.width=(progress*100)+'%';
+document.querySelector('#pcent').textContent=Math.round(progress*100)+'%';
+document.querySelector('#stage').textContent=lastEvent.startsWith('전환')?lastEvent+' · 핸드오버': '열차 단말 ↔ 기지국 '+['A','B','C'][activeIndex]+' → 백홀 → 코어망 → 관제';
+}
+function resize(){const box=canvas.getBoundingClientRect();let w=Math.max(1,Math.round(box.width)),h=Math.max(1,Math.round(box.height));if(canvas.width!==w||canvas.height!==h){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}}
+document.querySelector('#toggle').onclick=e=>{paused=!paused;e.currentTarget.textContent=paused?'▶ 재생':'⏸ 일시정지';e.currentTarget.classList.toggle('active',paused);};
+document.querySelector('#reset').onclick=()=>{progress=0;activeIndex=0;lastEvent='대기';t=0;report();};
+document.querySelector('#links').onclick=e=>{showLinks=!showLinks;e.currentTarget.textContent=showLinks?'연결 경로 표시 ✓':'연결 경로 숨김';};
+document.querySelector('#speed').oninput=e=>{speed=Number(e.target.value);document.querySelector('#speedText').textContent=speed+'×';};
+document.querySelectorAll('[data-camera]').forEach(b=>b.addEventListener('click',()=>setCamera(b.dataset.camera)));
+let previous=performance.now();
+function frame(now){requestAnimationFrame(frame);const delta=Math.min(.07,(now-previous)/1000);previous=now;resize();
+if(!paused){t+=delta;progress+=delta*.035*speed;if(progress>1){progress=0;lastEvent='구간 반복 재시작';activeIndex=0;}}
+const x=-43+progress*86;tr.position.x=x;
+const newIndex=x< -15.5?0:x<15.5?1:2;
+if(newIndex!==activeIndex){lastEvent='전환: '+['A','B','C'][activeIndex]+' → '+['A','B','C'][newIndex];activeIndex=newIndex;}
+stations.forEach((b,i)=>{const selected=i===activeIndex;b.ring.material.opacity=selected?.85:.17;b.halo.material.opacity=selected?.075:.018;b.ring.rotation.z=t*.18;});
+let start=new THREE.Vector3(x,4.1,0),tower=stations[activeIndex].pt;
+moveCylinder(wireLink,start,tower);
+wireLink.visible=showLinks;wires.forEach(o=>o.visible=showLinks);dot.visible=showLinks;dot2.visible=showLinks;
+const phase=(t*.28)%1;
+const hops=[start,tower,core,control],stage=Math.min(2,Math.floor(phase*3)),sub=(phase*3-stage);
+dot.position.copy(interpolate(hops[stage],hops[stage+1],sub));
+dot2.position.copy(interpolate(start,tower,(t*.5)%1));
+report();renderer.render(scene,camera);
+}
+requestAnimationFrame(frame);
+</script>
+</body></html>
