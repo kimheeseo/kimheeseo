@@ -29,29 +29,39 @@ h1{margin:6px 0;font-size:clamp(25px,3vw,37px);letter-spacing:-.045em}h1 em{colo
 #fail{display:none;position:absolute;inset:0;z-index:4;place-items:center;background:#112a41;color:white;text-align:center;padding:20px}
 @media(max-width:960px){.layout{grid-template-columns:1fr}.viewport{height:510px}}
 @media(max-width:570px){main{padding:12px 10px}.viewport{height:390px}.overlay{top:8px;left:8px;padding:9px}.sign{display:none}.sidebar{padding:13px}}
-</style></head><body><main>
+
+.earth-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#122b3c}.map-mode #scene,.map-mode .overlay,.map-mode .sign,.map-mode .model-only{display:none!important}.mode-bar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}.mode-bar button,.mode-bar a{padding:10px 14px;border-radius:9px;border:1px solid #5a8798;background:#173a4d;color:#dffaf8;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}.mode-bar button.active{background:#237e79}.map-note{font-size:12px;color:#c9dce8;line-height:1.7}.model-mode .earth-frame{display:none}.model-mode .map-note{display:none}
+</style></head><body class="map-mode"><main>
 <a class="back" href="./kwater.html#energy-3d">← K-water 면접자료로 돌아가기</a>
 <div class="eyebrow">REAL FACILITY INSPIRED 3D · WATER INFRASTRUCTURE DIGITAL TOUR</div><h1>K-water <em>실제 시설별 3D 학습 투어</em></h1>
-<p class="lead"><b>발전 방식</b>이 아니라 <b>시설 이름</b>을 선택하세요. 소양강댐(토석), 충주댐(콘크리트), 대청댐(혼합), 안동·주암댐(토석), 합천댐(콘크리트), 시화호 조력, 임하댐 수상태양광, 방아머리 풍력의 특징을 각각 다른 구조와 움직임으로 표현했습니다.</p>
-<div class="layout">
-<div class="viewport"><canvas id="scene" aria-label="실제 시설을 참고한 K-water 댐·조력·태양광 3D 교육 모델"></canvas>
+<p class="lead model-only"><b>발전 방식</b>이 아니라 <b>시설 이름</b>을 선택하세요. 소양강댐(토석), 충주댐(콘크리트), 대청댐(혼합), 안동·주암댐(토석), 합천댐(콘크리트), 시화호 조력, 임하댐 수상태양광, 방아머리 풍력의 특징을 각각 다른 구조와 움직임으로 표현했습니다.</p>
+<div class="mode-bar" role="group" aria-label="화면 선택"><button type="button" id="mapMode" class="active" aria-pressed="true">🛰 실제 위성지도</button><button type="button" id="modelMode" aria-pressed="false">⚙ 발전 원리 3D 모형</button><a id="earthLink" href="https://earth.google.com/web/search/소양강댐" target="_blank" rel="noopener noreferrer">Google Earth에서 보기 ↗</a><a id="mapsLink" href="https://www.google.com/maps/search/?api=1&amp;query=소양강댐" target="_blank" rel="noopener noreferrer">지도에서 찾기 ↗</a></div><p class="map-note">시설을 선택하면 실제 위치 주변의 위성지도를 표시합니다. 확대·이동으로 지형을 살펴보세요. 위성영상의 촬영 시점과 해상도는 지역별로 다릅니다. 입체 지형은 Google Earth에서 확인하세요.</p><div class="layout">
+<div class="viewport"><iframe id="earthMap" class="earth-frame" title="선택한 시설의 위성지도" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><canvas id="scene" aria-label="실제 시설을 참고한 K-water 댐·조력·태양광 3D 교육 모델"></canvas>
 <div class="overlay"><b id="facilityTitle">소양강댐</b><span id="facilitySubtitle">토석댐 · 저수지 · 여수로 · 수력발전동</span></div>
 <div class="sign">좌클릭: 회전 · 우클릭: 자유 이동 · 휠: 확대/축소 · 터치: 회전·이동</div>
-<div id="fail"><div><b>3D 모델을 표시하지 못했습니다.</b><p>WebGL 지원·인터넷 연결을 확인하세요.</p><a href="./kwater.html">2D 설명으로 돌아가기</a></div></div></div>
+<div id="fail" class="model-only"><div><b>3D 모델을 표시하지 못했습니다.</b><p>WebGL 지원·인터넷 연결을 확인하세요.</p><a href="./kwater.html">2D 설명으로 돌아가기</a></div></div></div>
 <aside class="sidebar"><h2>실제 시설 선택</h2><select id="facility" class="select" aria-label="실제 시설 선택"><optgroup label="다목적댐·수력"><option value="soyang">소양강댐</option><option value="chungju">충주댐</option><option value="daecheong">대청댐</option><option value="andong">안동댐</option><option value="juam">주암댐</option><option value="hapcheon">합천댐</option></optgroup><optgroup label="조력발전"><option value="sihwa">시화호 조력발전소</option></optgroup><optgroup label="수상태양광"><option value="imha">임하댐 수상태양광</option></optgroup><optgroup label="풍력발전"><option value="banga">시화 방아머리 풍력</option></optgroup></select>
-<div class="btns"><button class="btn active" id="play">⏸ 일시정지</button><button class="btn" id="reset">↺ 초기화</button><button class="btn" data-view="iso">입체 시점</button><button class="btn" data-view="top">위에서 보기</button><button class="btn" data-view="front">정면 보기</button><button class="btn" id="labels">구조물 라벨 ✓</button></div>
-<label class="speed" for="speed">움직임 속도<input id="speed" type="range" min=".3" max="2.5" step=".1" value="1"><span id="speedLabel">1.0×</span></label>
-<p class="control-note">동일한 이름표만 바꾸는 모델이 아니라 각 시설의 댐체 형식·수문·발전동·수면 및 주변 구조를 개별 구성한 교육용 장면입니다.</p>
+<div class="btns model-only"><button class="btn active" id="play">⏸ 일시정지</button><button class="btn" id="reset">↺ 초기화</button><button class="btn" data-view="iso">입체 시점</button><button class="btn" data-view="top">위에서 보기</button><button class="btn" data-view="front">정면 보기</button><button class="btn" id="labels">구조물 라벨 ✓</button></div>
+<label class="speed model-only" for="speed">움직임 속도<input id="speed" type="range" min=".3" max="2.5" step=".1" value="1"><span id="speedLabel">1.0×</span></label>
+<p class="control-note model-only">동일한 이름표만 바꾸는 모델이 아니라 각 시설의 댐체 형식·수문·발전동·수면 및 주변 구조를 개별 구성한 교육용 장면입니다.</p>
 <div class="box"><span>설치 위치 · 분류</span><strong id="region">강원 춘천</strong><p id="design">토석댐</p></div>
 <div class="box"><span>구조적 특징</span><strong id="highlight">경사식 토석댐</strong><p id="summary">댐 본체와 발전설비의 관계</p></div>
 <div class="box"><span>발전 및 운영 정보</span><strong id="capacity">수력발전</strong><p id="energyFlow">저수지 → 수압관로 → 수차/발전기 → 계통</p><a id="official" href="https://www.kwater.or.kr" target="_blank" rel="noopener noreferrer">K-water 공식 시설자료 ↗</a></div>
 </aside></div>
-<section class="hint"><h2>실제 시설을 이해하는 데 집중한 모델</h2><p id="featureText">소양강댐은 넓은 사면을 가진 토석댐과 측면 여수로가 특징입니다.</p>
+<section class="hint"><h2>시설과 발전 원리 살펴보기</h2><p id="featureText">소양강댐은 넓은 사면을 가진 토석댐과 측면 여수로가 특징입니다.</p>
 <div class="badges"><span class="badge">댐체 구조별 차이</span><span class="badge">물 이동 경로</span><span class="badge">수차·발전기·변압기</span><span class="badge">여수로·조력 수문</span><span class="badge">수상 PV 배열·풍력</span></div>
 <p><b>모델 정확도:</b> K-water 공식 자료와 공개 사진에서 확인되는 <b>시설 종류·대표적인 배치 특징</b>을 참고해 제작한 교육용 3D 장면입니다. 실제 시설의 정확한 좌표·표고·도면·수문 치수·구조 안전·전력계통을 재현한 BIM/점군·정밀 복제품은 아닙니다. 모형 안의 물·전류 흐름과 개폐는 예시 애니메이션이며 실시간 운전상태가 아닙니다. 시설명별 정확한 설명은 오른쪽 공식 링크를 참고하세요.</p>
 <p><a href="./kwater-basin-map.html">4개 유역본부 지도·담당 역할 보기</a> · <a href="./kwater.html#technical-30s">발전원리·SCADA 면접 답변 보기</a></p>
 </section></main>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script>
+<script>
+(function(){
+const searches={soyang:'소양강댐',chungju:'충주댐',daecheong:'대청댐',andong:'안동댐',juam:'주암댐',hapcheon:'합천댐',sihwa:'시화호 조력발전소',imha:'임하댐 수상태양광',banga:'방아머리 풍력발전소'};
+const select=document.getElementById('facility'), frame=document.getElementById('earthMap'), earth=document.getElementById('earthLink'), maps=document.getElementById('mapsLink');
+function updateMap(){const name=searches[select.value]||searches.soyang;frame.src='https://maps.google.com/maps?q='+encodeURIComponent(name)+'&t=k&z=15&output=embed';frame.title=name+' 위성지도';earth.href='https://earth.google.com/web/search/'+encodeURIComponent(name);maps.href='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(name);}
+function mode(map){document.body.classList.toggle('map-mode',map);document.body.classList.toggle('model-mode',!map);document.getElementById('mapMode').classList.toggle('active',map);document.getElementById('modelMode').classList.toggle('active',!map);document.getElementById('mapMode').setAttribute('aria-pressed',String(map));document.getElementById('modelMode').setAttribute('aria-pressed',String(!map));}
+select.addEventListener('change',updateMap);document.getElementById('mapMode').addEventListener('click',()=>mode(true));document.getElementById('modelMode').addEventListener('click',()=>mode(false));updateMap();
+})();
+</script><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script>
 <script type="module">
 import * as THREE from 'three';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
