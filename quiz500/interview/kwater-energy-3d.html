@@ -35,7 +35,7 @@ h1{margin:6px 0;font-size:clamp(25px,3vw,37px);letter-spacing:-.045em}h1 em{colo
 <a class="back" href="./kwater.html#energy-3d">← K-water 면접자료로 돌아가기</a>
 <div class="eyebrow">REAL FACILITY INSPIRED 3D · WATER INFRASTRUCTURE DIGITAL TOUR</div><h1>K-water <em>실제 시설별 3D 학습 투어</em></h1>
 <p class="lead model-only"><b>발전 방식</b>이 아니라 <b>시설 이름</b>을 선택하세요. 소양강댐(토석), 충주댐(콘크리트), 대청댐(혼합), 안동·주암댐(토석), 합천댐(콘크리트), 시화호 조력, 임하댐 수상태양광, 방아머리 풍력의 특징을 각각 다른 구조와 움직임으로 표현했습니다.</p>
-<div class="mode-bar" role="group" aria-label="화면 선택"><button type="button" id="mapMode" class="active" aria-pressed="true">🛰 실제 위성지도</button><button type="button" id="modelMode" aria-pressed="false">⚙ 발전 원리 3D 모형</button><a id="earthLink" href="https://earth.google.com/web/search/소양강댐" target="_blank" rel="noopener noreferrer">Google Earth에서 보기 ↗</a><a id="mapsLink" href="https://www.google.com/maps/search/?api=1&amp;query=소양강댐" target="_blank" rel="noopener noreferrer">지도에서 찾기 ↗</a></div><p class="map-note">시설을 선택하면 실제 위치 주변의 위성지도를 표시합니다. 확대·이동으로 지형을 살펴보세요. 위성영상의 촬영 시점과 해상도는 지역별로 다릅니다. 입체 지형은 Google Earth에서 확인하세요.</p><div class="layout">
+<p class="lead">엔지니어의 설비 순회·점검 동작은 <b>발전 원리 3D 모형</b>에서 볼 수 있습니다. 실제 현장 영상이 아닌 교육용 애니메이션입니다. 재생·일시정지와 속도 조절이 적용됩니다.</p><div class="mode-bar" role="group" aria-label="화면 선택"><button type="button" id="mapMode" class="active" aria-pressed="true">🛰 실제 위성지도</button><button type="button" id="modelMode" aria-pressed="false">⚙ 발전 원리 3D 모형</button><a id="earthLink" href="https://earth.google.com/web/search/소양강댐" target="_blank" rel="noopener noreferrer">Google Earth에서 보기 ↗</a><a id="mapsLink" href="https://www.google.com/maps/search/?api=1&amp;query=소양강댐" target="_blank" rel="noopener noreferrer">지도에서 찾기 ↗</a></div><p class="map-note">시설을 선택하면 실제 위치 주변의 위성지도를 표시합니다. 확대·이동으로 지형을 살펴보세요. 위성영상의 촬영 시점과 해상도는 지역별로 다릅니다. 입체 지형은 Google Earth에서 확인하세요.</p><div class="layout">
 <div class="viewport"><iframe id="earthMap" class="earth-frame" title="선택한 시설의 위성지도" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><canvas id="scene" aria-label="실제 시설을 참고한 K-water 댐·조력·태양광 3D 교육 모델"></canvas>
 <div class="overlay"><b id="facilityTitle">소양강댐</b><span id="facilitySubtitle">토석댐 · 저수지 · 여수로 · 수력발전동</span></div>
 <div class="sign">좌클릭: 회전 · 우클릭: 자유 이동 · 휠: 확대/축소 · 터치: 회전·이동</div>
@@ -82,7 +82,7 @@ controls.mouseButtons.LEFT=THREE.MOUSE.ROTATE;controls.mouseButtons.RIGHT=THREE.
 controls.touches.ONE=THREE.TOUCH.ROTATE;controls.touches.TWO=THREE.TOUCH.DOLLY_PAN;
 canvas.addEventListener('contextmenu',e=>e.preventDefault());
 const root=new THREE.Group();scene.add(root);
-const movers=[],dots=[],labels=[],waterParts=[],rotors=[];
+const movers=[],dots=[],labels=[],waterParts=[],rotors=[]; let inspectionWorkers=[];
 const m=(c,metal=.04,rough=.77)=>new THREE.MeshStandardMaterial({color:c,metalness:metal,roughness:rough});
 const glass=m(0x77b4d6,.6,.19),rock=m(0x8a8d83),concrete=m(0xb9bdba,.11,.74),dark=m(0x384e59,.25,.6),green=m(0x477459),roof=m(0x58818d,.31,.5),steel=m(0xb6c4cb,.65,.32),rail=m(0x5e6870,.5,.45),watermat=new THREE.MeshPhysicalMaterial({color:0x337e9f,transparent:true,opacity:.86,metalness:.03,roughness:.2,side:THREE.DoubleSide});
 function add(obj,parent=root){parent.add(obj);return obj;}
@@ -102,7 +102,7 @@ function resetRoot(){
    seenMat.add(mm);if(mm.map&&mm.map.isCanvasTexture)mm.map.dispose();mm.dispose();
   }}
  });}
- movers.length=0;dots.length=0;labels.length=0;waterParts.length=0;rotors.length=0;
+ movers.length=0;dots.length=0;labels.length=0;waterParts.length=0;rotors.length=0;inspectionWorkers=[];
 }
 function water(x,y,z,w,d,color=0x2f8fad,opacity=.85){const mesh=new THREE.Mesh(new THREE.PlaneGeometry(w,d,24,12),new THREE.MeshPhysicalMaterial({color,transparent:true,opacity,roughness:.19,metalness:.03,side:THREE.DoubleSide}));mesh.rotation.x=-Math.PI/2;mesh.position.set(x,y,z);add(mesh);waterParts.push(mesh);return mesh;}
 function terrain(seed=1){const geom=new THREE.PlaneGeometry(195,170,66,58);geom.rotateX(-Math.PI/2);const p=geom.attributes.position;const colors=[];
@@ -150,6 +150,20 @@ function house(x,z,units=2,small=false){const w=small?13:18;box(x,3.5,z,w,7,12,m
  label('수력발전동 · 수차발전기',x,12,z);
  transform(x+19,z-1);}
 function transform(x,z){box(x,2.2,z,7,4.4,6,m(0x7d8c97));for(let i=-1;i<=1;i++)cylinder(x+i*1.8,5.9,z,.34,.45,3,m(0x987c63));label('변압기 · 송전',x,9,z);}
+function addInspection(kind,id){
+ const x=kind==='gravity'?14:kind==='tidal'?-36:kind==='solar'?50:kind==='wind'?45:id==='juam'?31:27;
+ const z=kind==='tidal'?-11:kind==='solar'?29:kind==='wind'?22:-39;
+ const y=kind==='tidal'?8.5:kind==='solar'?3:kind==='wind'?7:0;
+ const g=new THREE.Group();g.position.set(x,y,z);root.add(g);
+ const suit=m(0xf8a825), trousers=m(0x243f58), helmet=m(0xffe16b);
+ box(0,2.25,0,1.1,1.6,.65,suit,g);cylinder(0,3.45,0,.42,.42,.7,m(0xdfb794),g,12);
+ cylinder(0,3.86,0,.53,.53,.25,helmet,g,12);
+ const arm=box(.78,2.3,0,.3,1.3,.3,suit,g);arm.rotation.z=-.7;
+ const leg1=box(-.3,.85,0,.35,1.6,.4,trousers,g),leg2=box(.3,.85,0,.35,1.6,.4,trousers,g);
+ box(1.25,1.75,.05,.8,.08,.65,m(0xb5d7e3),g);
+ inspectionWorkers.push({g,arm,leg1,leg2,x});
+ label('엔지니어 · 설비 순회 점검 (교육용)',x,y+7,z);
+}
 function hydro(id){
  const v=byId[id],seed=v.variant;
  terrain(seed);waterReservoir();
@@ -216,6 +230,7 @@ let activeId='soyang',paused=false,speed=1,labelsOn=true,elapsed=0,prev=performa
 function build(id){
  activeId=id;const a=byId[id];if(!a)return;resetRoot();
  if(a.kind==='tidal')tidal();else if(a.kind==='solar')solar();else if(a.kind==='wind')wind();else hydro(id);
+ addInspection(a.kind,id);
  document.getElementById('facilityTitle').textContent=a.name;
  document.getElementById('facilitySubtitle').textContent=a.region+' · '+a.design;
  document.getElementById('region').textContent=a.region+' · '+a.river;
@@ -246,7 +261,7 @@ document.getElementById('reset').onclick=()=>build(activeId);
 document.getElementById('labels').onclick=e=>{labelsOn=!labelsOn;labels.forEach(l=>l.visible=labelsOn);e.currentTarget.textContent=labelsOn?'구조물 라벨 ✓':'구조물 라벨 숨김';};
 document.getElementById('speed').oninput=e=>{speed=Number(e.target.value);document.getElementById('speedLabel').textContent=speed.toFixed(1)+'×';};
 function resize(){const r=canvas.getBoundingClientRect();const w=Math.max(1,Math.round(r.width)),h=Math.max(1,Math.round(r.height));if(canvas.width!==w||canvas.height!==h){renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}}
-function animate(now){requestAnimationFrame(animate);const dt=Math.min(.06,(now-prev)/1000);prev=now;resize();if(!paused){elapsed+=dt*speed;for(const d of rotors){d.obj.rotation[d.axis]+=dt*speed*d.speed;}
+function animate(now){requestAnimationFrame(animate);const dt=Math.min(.06,(now-prev)/1000);prev=now;resize();if(!paused){elapsed+=dt*speed;for(const w of inspectionWorkers){w.g.position.x=w.x+Math.sin(elapsed*.5)*2;w.leg1.rotation.x=Math.sin(elapsed*3)*.35;w.leg2.rotation.x=-w.leg1.rotation.x;w.arm.rotation.z=-.7+Math.sin(elapsed*2)*.25;}for(const d of rotors){d.obj.rotation[d.axis]+=dt*speed*d.speed;}
 for(const x of dots){const t=(elapsed*.14+x.offset)%1,pos=t*(x.pts.length-1),i=Math.min(x.pts.length-2,Math.floor(pos));x.obj.position.lerpVectors(x.pts[i],x.pts[i+1],pos-i);}
 for(let i=0;i<waterParts.length;i++){const o=waterParts[i];if(o.isMesh && o.geometry?.type==='PlaneGeometry')o.position.y+=Math.sin(elapsed*2+i)*.001;}
 }controls.update();renderer.render(scene,camera);}
