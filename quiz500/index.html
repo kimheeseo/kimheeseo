@@ -114,7 +114,7 @@ body{background:#f5f8ff;color:var(--ss-dark)}
  .ss-route-page .notice{margin-bottom:16px}
 }
 @media(prefers-reduced-motion:reduce){.ss-route-page{animation:none}}
-</style></head><body><main>
+</style><style>[hidden]{display:none!important}</style></head><body><main>
 <header class="site-top"><a class="brand" href="./" aria-label="통신직 준비 홈"><span class="brandmark" aria-hidden="true">∿</span><span>통신직 준비</span></a><nav class="topnav" aria-label="주요 메뉴"><a href="#written">필기 학습</a><a href="#organizations">기관별 면접</a><a href="#practice">직무 이해</a><a href="#recent-updates">업데이트</a></nav></header>
 <section class="ss-landing" aria-labelledby="home-title">
   <div class="ss-landing-head">
@@ -124,11 +124,11 @@ body{background:#f5f8ff;color:var(--ss-dark)}
   </div>
   <div class="ss-app" aria-label="통신직 모바일 학습 대시보드">
     <header class="ss-appbar">
-      <label class="ss-select-wrap"><span class="ss-sr-only">추천 학습 과목</span><select id="ss-subject" aria-label="추천 학습 과목"><option value="wireless">무선공학 추천학습</option><option value="communication">통신공학 추천학습</option></select><span aria-hidden="true">⌄</span></label>
+      <label class="ss-select-wrap"><span class="ss-sr-only">추천 학습 과목</span><select id="ss-subject" aria-label="추천 학습 과목"><option value="wireless">무선공학 추천학습</option><option value="communication">통신공학 추천학습</option><option value="electrical">전기기사 추천학습</option></select><span aria-hidden="true">⌄</span></label>
       <div class="ss-appbar-icons"><a href="#recent-updates" aria-label="업데이트 알림 보기" title="업데이트 알림">♧<span class="ss-notification-dot"></span></a><a href="./interview/" aria-label="기관별 면접 자료 보기" title="면접 자료">♙</a></div>
     </header>
     <div class="ss-screen">
-      <p class="ss-date-label"><span id="ss-goal">목표 시험일을 설정해 보세요.</span></p>
+      <p class="ss-date-label">매일의 학습을 차근차근 쌓아가세요.</p>
       <h2>오늘의 추천 학습을 시작해 봐요.</h2>
       <div class="ss-stat-grid" aria-live="polite">
         <div class="ss-stat ss-stat-main">
@@ -152,8 +152,7 @@ body{background:#f5f8ff;color:var(--ss-dark)}
         <a class="ss-play" id="ss-rec-link" href="./wireless-quiz-500/?unit=4" aria-label="추천 문제 풀기 시작">▶</a>
       </article>
       <a class="ss-banner" href="#written"><span><b>통신직 필기, 과목별로 집중 학습!</b><small>통신공학·무선공학의 단원별 문제로 실력 점검</small></span><span class="ss-banner-icon" aria-hidden="true">▤</span></a>
-      <article class="ss-recommend ss-review"><div class="ss-recommend-copy"><span class="ss-recommend-meta">복습 추천 · 오답 문제</span><h3 id="ss-review-title">틀린 문제 다시 풀기</h3><div class="ss-tags"><span>복습</span><span>문제은행</span></div></div><a class="ss-play" id="ss-review-link" href="./wireless-quiz-500/" aria-label="오답 복습 시작">▶</a></article>
-      <div class="ss-goal-settings"><label for="ss-exam-date">목표 시험일 설정</label><input type="date" id="ss-exam-date" aria-label="목표 시험일"><button id="ss-reset-date" type="button" aria-label="목표 시험일 삭제">초기화</button></div>
+      <section id="ss-electrical-topics" hidden aria-label="전기기사 추천학습 항목" style="margin:18px 0"><div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px"><a class="quick-chapter" href="./electrical-study.html#journal">일일 학습 기록 →</a><a class="quick-chapter" href="./electrical-study.html#subjects">과목·단원별 정리 →</a><a class="quick-chapter" href="./electrical-study.html#materials">교재·강의와 공부 방법 →</a><a class="quick-chapter" href="./electrical-study.html#reflection">오답·주간 회고 →</a></div></section><article class="ss-recommend ss-review"><div class="ss-recommend-copy"><span class="ss-recommend-meta">복습 추천 · 오답 문제</span><h3 id="ss-review-title">틀린 문제 다시 풀기</h3><div class="ss-tags"><span>복습</span><span>문제은행</span></div></div><a class="ss-play" id="ss-review-link" href="./wireless-quiz-500/" aria-label="오답 복습 시작">▶</a></article>
     </div>
     <nav class="ss-bottom-nav" aria-label="모바일 학습 바로가기"><a href="./" aria-current="page"><span aria-hidden="true">⌂</span>홈</a><a href="#written"><span aria-hidden="true">▦</span>문제은행</a><a href="#organizations"><span aria-hidden="true">◎</span>기관별</a><a href="#recent-updates"><span aria-hidden="true">☷</span>업데이트</a></nav>
   </div>
@@ -176,11 +175,23 @@ body{background:#f5f8ff;color:var(--ss-dark)}
 </main><script>document.getElementById('comp').addEventListener('click',()=>{const p=document.getElementById('compview'),b=document.getElementById('comp');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 통신공학 전체 문제 구성 보기':'▴ 전체 문제 구성 접기';});document.getElementById('wirelessCompBtn').addEventListener('click',()=>{const p=document.getElementById('wirelessCompPanel'),b=document.getElementById('wirelessCompBtn');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 무선공학 전체 문제 구성 보기':'▴ 무선공학 문제 구성 접기';});</script><script id="ss-dashboard-logic">
 (()=>{
 const byId=id=>document.getElementById(id);
-const subject=byId('ss-subject'),goal=byId('ss-goal'),dateInput=byId('ss-exam-date');
-const DATE_KEY='telecom_study_target_date_v1';
+const subject=byId('ss-subject');
 function safeJson(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{}}catch{return {}}}
 function text(id,value){byId(id).textContent=value}
 function updateSubject(){
+ const electrical=subject.value==='electrical';
+ document.querySelector('.ss-stat-grid').hidden=electrical;
+ byId('ss-electrical-topics').hidden=!electrical;
+ byId('ss-rec-link').setAttribute('aria-label',electrical?'전기기사 준비 기록 열기':'추천 문제 풀기 시작');
+ byId('ss-review-link').setAttribute('aria-label',electrical?'전기기사 회고 보기':'오답 복습 시작');
+ text('ss-review-title',electrical?'공부 방법과 시행착오 돌아보기':'틀린 문제 다시 풀기');
+ if(electrical){
+  byId('ss-rec-link').href='./electrical-study.html';
+  byId('ss-review-link').href='./electrical-study.html#reflection';
+  text('ss-rec-title','2027년 1회 전기기사 준비 기록');text('ss-rec-tag','전기기사');
+  text('ss-storage-note','일일 학습·교재·오답·회고를 기록하고, 이후 준비생에게 공부 과정을 공유합니다.');
+  return;
+ }
  const wireless=subject.value==='wireless';
  const target=wireless?'./wireless-quiz-500/':'./communication-quiz-500/';
  byId('ss-rec-link').href=wireless?'./wireless-quiz-500/?unit=4':target;
@@ -207,22 +218,9 @@ function updateSubject(){
  text('ss-accuracy-sub',attempted?'무선공학 누적 정답률':'학습 기록이 쌓이면 표시됩니다');
  text('ss-storage-note','현재 브라우저에 저장된 무선공학 학습 기록 기준입니다.');
 }
-function renderGoal(){
- const date=dateInput.value;
- if(!date){goal.textContent='목표 시험일을 설정해 보세요.';return}
- const d=new Date(date+'T00:00:00'),today=new Date();
- today.setHours(0,0,0,0);
- const days=Math.round((d-today)/86400000);
- goal.replaceChildren(document.createTextNode('목표 시험일까지 '));
- const strong=document.createElement('strong');strong.textContent=days>=0?'D-'+days:'시험일 경과';
- goal.append(strong,document.createTextNode(' · 꾸준히 학습해요.'));
-}
-try{dateInput.value=localStorage.getItem(DATE_KEY)||''}catch{}
-dateInput.addEventListener('change',()=>{try{if(dateInput.value)localStorage.setItem(DATE_KEY,dateInput.value);else localStorage.removeItem(DATE_KEY)}catch{}renderGoal()});
-byId('ss-reset-date').addEventListener('click',()=>{dateInput.value='';try{localStorage.removeItem(DATE_KEY)}catch{}renderGoal()});
 subject.addEventListener('change',updateSubject);
 window.addEventListener('pageshow',updateSubject);
-updateSubject();renderGoal();
+updateSubject();
 })();
 </script><script id="ss-screen-router">
 (()=>{
