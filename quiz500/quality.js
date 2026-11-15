@@ -41,7 +41,7 @@ function panel(q,subject){
  const details=document.createElement('details');details.className='quality-report';
  const sum=document.createElement('summary');sum.textContent='이 문항 오류 신고';details.append(sum);
  const label=document.createElement('label');label.textContent='신고 유형 ';const select=document.createElement('select');select.setAttribute('aria-label','오류 신고 유형');['문제 본문 오류','선택지 오류','정답 오류','해설 오류','그림·수식 누락','출처 오류','기타'].forEach(t=>{let o=document.createElement('option');o.value=t;o.textContent=t;select.append(o)});label.append(select);details.append(label);
- const explain=document.createElement('p');explain.textContent='GitHub 공개 이슈 작성 화면이 열립니다. 확인 후 직접 제출해야 하며, 개인정보는 적지 마세요.';details.append(explain);
+ const explain=document.createElement('p');explain.textContent='외부 문항 오류 신고 페이지가 열립니다. 내용을 확인한 뒤 직접 제출할 수 있으며, 개인정보는 입력하지 마세요.';details.append(explain);
  const a=document.createElement('a');a.target='_blank';a.rel='noopener';a.className='quality-report-link';a.textContent='신고 내용 작성하기 ↗';
  function update(){const title='[문항 오류] '+subject+' / '+q.id+' / '+select.value;const body=['과목: '+(subject==='comm'?'통신공학':'무선공학'),'문항 ID: '+q.id,'문항 유형: '+(q.kind||'미확인'),'출처 표기: '+(q.sourceLabel||q.exam||q.source||'미확인'),'오류 유형: '+select.value,'페이지: '+location.href.split('?')[0].split('#')[0],'','오류 설명:','- ','','※ 이 이슈는 공개됩니다. 개인정보를 포함하지 마세요.'].join('\n');a.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()}
  select.addEventListener('change',update);update();details.append(a);host.append(details);return host;
