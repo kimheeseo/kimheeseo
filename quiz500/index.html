@@ -37,9 +37,98 @@ details.history{margin-top:12px;border-top:1px solid #e0e7ef;padding-top:12px}.h
 a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #068a8a;outline-offset:3px}
 @media(max-width:850px){.hero{grid-template-columns:1fr 240px}.org-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){main{padding:22px 18px 64px}.site-top{align-items:flex-start;flex-direction:column;gap:13px}.topnav{gap:14px}.hero{display:block;padding:35px 0 24px}.hero h1{font-size:32px}.hero p{font-size:15px}.counter{margin-top:23px;padding:17px}.counter strong{font-size:21px;margin:8px 0 3px}.grid,.org-grid{grid-template-columns:1fr}.card{padding:19px}.section-heading{align-items:start;flex-direction:column;gap:4px}.actions .action{flex:1;min-width:130px}.org-card{padding:17px}.quick-chapter{white-space:normal}}
+</style><style id="ss-mobile-dashboard-style">
+:root{--ss-blue:#1456f4;--ss-dark:#10233e;--ss-light:#f3f7ff}
+html{scroll-behavior:smooth}
+body{background:#f5f8ff;color:var(--ss-dark)}
+.site-top{background:#fff;border:1px solid #e6eafa;border-radius:18px;padding:14px 18px;box-shadow:0 8px 30px #1b32610d}
+.brandmark{background:linear-gradient(145deg,#1456f4,#1538ad);border-radius:12px}
+.topnav a:hover{color:var(--ss-blue)}
+.ss-landing{margin:25px 0 38px;padding:42px 22px 40px;border-radius:32px;background:radial-gradient(ellipse at 50% 38%,#fff 8%,#eff5ff 62%,#e8f0ff 100%);text-align:center;overflow:hidden}
+.ss-landing-head{max-width:720px;margin:0 auto 29px}.ss-eyebrow{font-size:11px;color:#375ec0;letter-spacing:.18em;font-weight:850}
+.ss-landing-head h1{margin:12px 0 14px;font-size:clamp(33px,5vw,53px);font-weight:900;line-height:1.2;letter-spacing:-.065em;color:#142744}
+.ss-landing-head h1 span{color:var(--ss-blue)}.ss-landing-head p{max-width:590px;margin:auto;font-size:clamp(14px,2vw,19px);font-weight:650;color:#455166;line-height:1.7}
+.ss-app{width:min(100%,455px);margin:0 auto;background:#f5f6fa;border:1px solid #dfe5f1;border-radius:35px;text-align:left;overflow:hidden;box-shadow:0 24px 65px #233d7530,0 0 0 7px #ffffff88}
+.ss-appbar{display:flex;justify-content:space-between;align-items:center;gap:10px;background:white;padding:21px 23px 19px;border-bottom:1px solid #eef0f5}
+.ss-select-wrap{display:flex;align-items:center;gap:7px;min-width:0;font-size:17px;font-weight:850}
+.ss-select-wrap select{min-width:0;max-width:230px;width:100%;font:inherit;appearance:none;border:0;background:transparent;cursor:pointer;color:#101827;outline-offset:4px}
+.ss-select-wrap>span:last-child{font-size:23px;line-height:1;color:#101827}
+.ss-appbar-icons{display:flex;align-items:center;gap:16px}.ss-appbar-icons a{position:relative;color:#182237;text-decoration:none;font-size:27px;line-height:1}.ss-notification-dot{position:absolute;right:1px;top:1px;background:#1857ff;width:7px;height:7px;border-radius:50%}
+.ss-screen{padding:26px 20px 23px}.ss-date-label{font-size:15px;line-height:1.5;font-weight:650;color:#606b7d;margin:0 0 6px}.ss-date-label strong{color:var(--ss-blue)}
+.ss-screen>h2{margin:0 0 23px;line-height:1.35;letter-spacing:-.04em;font-size:23px;color:#101b2d}
+.ss-stat-grid{display:grid;grid-template-columns:1.06fr 1fr;grid-template-rows:112px 112px;gap:10px}
+.ss-stat{background:white;border-radius:16px;padding:16px;box-shadow:0 4px 18px #24345709;min-width:0}
+.ss-stat-main{grid-row:1/3;display:flex;flex-direction:column}
+.ss-stat-label{display:block;color:#6b7380;font-size:12px;font-weight:700;white-space:nowrap}
+.ss-info{font-size:11px;display:inline-grid;place-items:center;border:1px solid #aeb6c6;border-radius:50%;width:15px;height:15px}
+.ss-stat-main strong{font-size:40px;font-weight:900;letter-spacing:-.045em;color:#151a27;margin:14px 0 0}
+.ss-stat-main small{font-size:11px;color:#7d8595;line-height:1.45}
+.ss-mini-chart{margin-top:auto;height:31px;display:flex;align-items:end;gap:5px}
+.ss-mini-chart span{flex:1;background:#d8e5ff;border-radius:5px 5px 1px 1px;height:34%}.ss-mini-chart span:nth-child(2){height:52%}.ss-mini-chart span:nth-child(3){height:42%}.ss-mini-chart span:nth-child(4){height:68%}.ss-mini-chart span:nth-child(5){height:55%}.ss-mini-chart span:nth-child(6){height:83%}.ss-mini-chart span:nth-child(7){height:100%;background:#1456f4}
+.ss-stat-side{display:flex;align-items:center;gap:12px}.ss-stat-side>div:last-child{min-width:0}.ss-stat-side strong{display:block;margin-top:7px;font-size:26px;letter-spacing:-.035em;color:#101b2d}
+.ss-stat-icon{color:#1456f4;font-size:33px;line-height:1}.ss-ring{width:45px;height:45px;border:7px solid #dce7ff;border-top-color:#1456f4;border-radius:50%;flex-shrink:0}
+.ss-storage-note{margin:9px 2px 23px!important;font-size:11px!important;color:#87909f!important;text-align:right;line-height:1.5!important}
+.ss-recommend{display:flex;align-items:center;justify-content:space-between;gap:10px;background:white;border-radius:17px;padding:22px 20px;min-height:142px;box-shadow:0 4px 18px #2434570b}
+.ss-recommend-meta{font-size:12px;color:#777f8f;font-weight:650}.ss-recommend h3{margin:9px 0 12px;color:#162033;font-size:19px;letter-spacing:-.05em;line-height:1.35}
+.ss-tags{display:flex;gap:6px}.ss-tags span{border:1px solid #dfe2e8;background:#f4f5f8;padding:4px 8px;border-radius:6px;color:#5a6475;font-size:11px}
+.ss-play{display:grid;place-items:center;width:55px;height:55px;flex-shrink:0;border-radius:50%;background:#1456f4;box-shadow:0 6px 14px #1456f436;color:#fff;text-decoration:none;font-size:21px;padding-left:3px}
+.ss-play:hover{background:#003dd0;transform:translateY(-2px)}.ss-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;background:linear-gradient(115deg,#102aaf,#002fc9);color:white;margin:14px 0;padding:19px 20px;border-radius:12px}
+.ss-banner b{display:block;font-size:17px;letter-spacing:-.04em}.ss-banner small{display:block;color:#dbe5ff;margin-top:6px;font-size:12px}.ss-banner-icon{font-size:43px;color:#91b9ff}
+.ss-review{min-height:125px}.ss-goal-settings{margin-top:18px;padding-top:14px;border-top:1px solid #e3e7f0;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
+.ss-goal-settings label{width:100%;font-size:12px;font-weight:800;color:#526078}.ss-goal-settings input{flex:1;min-width:135px;padding:11px;border:1px solid #d9e1f0;border-radius:9px;background:#fff;color:#29384f;font:inherit}
+.ss-goal-settings button{padding:11px;border:1px solid #d9e1f0;border-radius:9px;background:#fff;font:inherit;font-weight:700;font-size:12px;cursor:pointer;color:#4f6077}
+.ss-bottom-nav{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e3e8f1;background:white;padding:10px 5px 14px}.ss-bottom-nav a{text-align:center;text-decoration:none;color:#7b8496;font-size:11px;font-weight:700}
+.ss-bottom-nav a span{font-size:23px;display:block;line-height:1.5}.ss-bottom-nav a[aria-current]{color:#1456f4}
+.ss-disclaimer{margin:20px auto 0!important;max-width:590px;font-size:11px!important;color:#6e7d96!important;text-align:center}
+.ss-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:650px){main{padding:12px 10px 70px}.site-top{padding:13px 14px;border-radius:13px;gap:9px}.topnav{gap:11px}.topnav a{font-size:12px}.ss-landing{margin:12px 0 28px;border-radius:22px;padding:32px 10px 30px}.ss-landing-head{margin-bottom:24px}.ss-landing-head h1{font-size:35px}.ss-landing-head p{font-size:14px}.ss-app{width:100%;border-radius:25px;box-shadow:0 18px 43px #233d751a}.ss-appbar{padding:20px 17px}.ss-screen{padding:25px 15px 18px}.ss-screen>h2{font-size:21px}.ss-stat{padding:14px 12px}.ss-stat-side{gap:8px}.ss-stat-side strong{font-size:23px}.ss-stat-icon{font-size:27px}.ss-ring{width:34px;height:34px;border-width:6px}.ss-recommend{padding:17px 16px}.ss-recommend h3{font-size:17px}.ss-play{width:49px;height:49px}.ss-banner{padding:16px}.ss-banner b{font-size:15px}}
+@media(max-width:350px){.ss-landing-head h1{font-size:29px}.ss-stat-side{gap:5px}.ss-stat-label{font-size:10px}.ss-stat-side strong{font-size:20px}.ss-screen{padding-left:11px;padding-right:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ss-play:hover{transform:none}}
 </style></head><body><main>
 <header class="site-top"><a class="brand" href="./" aria-label="통신직 준비 홈"><span class="brandmark" aria-hidden="true">∿</span><span>통신직 준비</span></a><nav class="topnav" aria-label="주요 메뉴"><a href="#written">필기 학습</a><a href="#organizations">기관별 면접</a><a href="#practice">직무 이해</a><a href="#recent-updates">업데이트</a></nav></header>
-<section class="hero" aria-labelledby="home-title"><div><div class="eyebrow2">FREE LEARNING FOR COMMUNICATIONS CAREERS</div><h1 id="home-title">공기업 통신직 준비,<br>필기부터 면접까지</h1><p>통신공학·무선공학 문제를 풀고, 목표 기관의 면접과 직무 원리를 한곳에서 학습하세요.</p><div class="actions"><a class="action" href="#written">문제 풀기</a><a class="action alt" href="#organizations">목표 기관 선택</a></div></div><aside class="counter" aria-label="누적 방문자 수"><span class="counter-label">이곳을 찾은 학습자</span><strong>집계 준비 중</strong><small>누적 방문 수는 집계 서비스 연결 후 표시됩니다.</small></aside></section>
+<section class="ss-landing" aria-labelledby="home-title">
+  <div class="ss-landing-head">
+    <span class="ss-eyebrow">PERSONALIZED STUDY · TELECOM</span>
+    <h1 id="home-title">나만을 위한 <span>맞춤 학습</span></h1>
+    <p>통신직 필기 실력을 학습 기록으로 확인하고, 오늘 필요한 학습부터 시작하세요.</p>
+  </div>
+  <div class="ss-app" aria-label="통신직 모바일 학습 대시보드">
+    <header class="ss-appbar">
+      <label class="ss-select-wrap"><span class="ss-sr-only">추천 학습 과목</span><select id="ss-subject" aria-label="추천 학습 과목"><option value="wireless">무선공학 추천학습</option><option value="communication">통신공학 추천학습</option></select><span aria-hidden="true">⌄</span></label>
+      <div class="ss-appbar-icons"><a href="#recent-updates" aria-label="업데이트 알림 보기" title="업데이트 알림">♧<span class="ss-notification-dot"></span></a><a href="./interview/" aria-label="기관별 면접 자료 보기" title="면접 자료">♙</a></div>
+    </header>
+    <div class="ss-screen">
+      <p class="ss-date-label"><span id="ss-goal">목표 시험일을 설정해 보세요.</span></p>
+      <h2>오늘의 추천 학습을 시작해 봐요.</h2>
+      <div class="ss-stat-grid" aria-live="polite">
+        <div class="ss-stat ss-stat-main">
+          <div class="ss-stat-label">학습 정답률 <span class="ss-info" title="무선공학 브라우저 학습 기록으로 계산">i</span></div>
+          <strong id="ss-accuracy">—</strong>
+          <small id="ss-accuracy-sub">학습 기록이 쌓이면 표시됩니다</small>
+          <div class="ss-mini-chart" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
+        <div class="ss-stat ss-stat-side">
+          <span class="ss-stat-icon" aria-hidden="true">✦</span>
+          <div><span class="ss-stat-label">누적 문제 풀이</span><strong id="ss-solved">—</strong></div>
+        </div>
+        <div class="ss-stat ss-stat-side">
+          <div class="ss-ring" aria-hidden="true"></div>
+          <div><span class="ss-stat-label">오답 복습</span><strong id="ss-wrong">—</strong></div>
+        </div>
+      </div>
+      <p class="ss-storage-note" id="ss-storage-note">이 브라우저의 무선공학 학습 기록을 표시합니다.</p>
+      <article class="ss-recommend">
+        <div class="ss-recommend-copy"><span class="ss-recommend-meta">추천 학습 · 핵심 개념</span><h3 id="ss-rec-title">안테나 이론과 전파</h3><div class="ss-tags"><span>필기</span><span id="ss-rec-tag">무선공학</span></div></div>
+        <a class="ss-play" id="ss-rec-link" href="./wireless-quiz-500/?unit=4" aria-label="추천 문제 풀기 시작">▶</a>
+      </article>
+      <a class="ss-banner" href="#written"><span><b>통신직 필기, 과목별로 집중 학습!</b><small>통신공학·무선공학의 단원별 문제로 실력 점검</small></span><span class="ss-banner-icon" aria-hidden="true">▤</span></a>
+      <article class="ss-recommend ss-review"><div class="ss-recommend-copy"><span class="ss-recommend-meta">복습 추천 · 오답 문제</span><h3 id="ss-review-title">틀린 문제 다시 풀기</h3><div class="ss-tags"><span>복습</span><span>문제은행</span></div></div><a class="ss-play" id="ss-review-link" href="./wireless-quiz-500/" aria-label="오답 복습 시작">▶</a></article>
+      <div class="ss-goal-settings"><label for="ss-exam-date">목표 시험일 설정</label><input type="date" id="ss-exam-date" aria-label="목표 시험일"><button id="ss-reset-date" type="button" aria-label="목표 시험일 삭제">초기화</button></div>
+    </div>
+    <nav class="ss-bottom-nav" aria-label="모바일 학습 바로가기"><a href="./" aria-current="page"><span aria-hidden="true">⌂</span>홈</a><a href="#written"><span aria-hidden="true">▦</span>문제은행</a><a href="#organizations"><span aria-hidden="true">◎</span>기관별</a><a href="#recent-updates"><span aria-hidden="true">☷</span>업데이트</a></nav>
+  </div>
+  <p class="ss-disclaimer">※ 정답률과 풀이 횟수는 저장된 실제 학습 기록을 사용합니다. 예측 점수와 AI 개인화 추천은 아직 제공하지 않습니다.</p>
+</section>
 <div class="notice"><strong>학습 안내</strong> · 기출·복원·응용 문제를 구분해 학습하세요. 일부 문항의 원문·정답·해설은 검토 중이며, 채용 정보는 반드시 해당 회차의 공식 공고로 확인하세요.</div>
 <div class="section-heading" id="written"><div><span class="eyebrow2">01 / WRITTEN EXAM</span><h2>필기 학습 시작하기</h2></div><p>원하는 과목과 단원을 선택하세요.</p></div>
 <div class="grid"><a class="card" href="./communication-quiz-500/" aria-label="통신공학 문제은행 시작"><span class="tag">필기 · 통신</span><h3>통신공학</h3><p>신호와 시스템, 변조, 디지털 전송, 부호이론과 통신 프로토콜</p><strong>문제 풀기 →</strong></a><a class="card" href="./wireless-quiz-500/" aria-label="무선공학 문제은행 시작"><span class="tag">필기 · 무선</span><h3>무선공학</h3><p>안테나, 전파, 이동통신, 위성 및 무선설비기사 학습</p><strong>문제 풀기 →</strong></a><a class="card" href="./interview/" aria-label="기관별 면접 자료 보기"><span class="tag">면접 · 직무</span><h3>면접 자료</h3><p>기관별 채용 참고자료, 예상 질문과 직무 이해</p><strong>면접 준비하기 →</strong></a></div>
@@ -54,4 +143,55 @@ a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #06
 <a class="quick-chapter" href="./wireless-quiz-500/?kind=%EC%A7%80%EB%B0%A9%EC%A7%81%20%EA%B8%B0%EC%B6%9C%20%EC%9D%91%EC%9A%A9">무선공학 지방직 응용</a>
 </div><div style="background:#fff;border:1px solid #cbdaf3;border-radius:15px;padding:17px 20px;margin:12px 0 26px"><strong>📺 통신공학 → 방송통신공학 기출 통합</strong><p style="margin:6px 0;font-size:13px">2014·2015·2016·2017·2018·2020·2022·2025년 국회사무처 9급 방송통신공학 기출 160문항을 통신공학 통합 문제은행에 추가했습니다. 시험 연도·세부 단원별 분류와 비공식 학습용 해설을 제공합니다.</p><a class="quick-chapter" href="./communication-quiz-500/?chapter=%EB%B0%A9%EC%86%A1%ED%86%B5%EC%8B%A0%EA%B3%B5%ED%95%99">통신공학에서 방송통신공학 160문항 풀기</a></div><div style="background:#fff;border:1px solid #cbdaf3;border-radius:15px;padding:17px 20px;margin:12px 0 26px"><strong>📡 1. 통신공학 · 정보통신 기출 (해양경찰)</strong><p style="margin:6px 0;font-size:13px">2020년 제2차 실기·2021년 상반기 필기 · 주관식 기출 6문항 · 모범답안 예시와 해설 6개 · 연도·단원·배점별 분류</p><a class="quick-chapter" href="./information-communication/">정보통신 기출 6문항 · 답안/해설 보기</a></div><div style="margin:-12px 0 30px"><button type="button" id="comp" aria-expanded="false" aria-controls="compview" style="border:1px solid #ccd7ea;background:white;border-radius:12px;padding:12px;cursor:pointer;font:inherit;font-weight:800;color:#3457bc">▤ 통신공학 전체 문제 구성 보기</button><div id="compview" hidden style="margin-top:12px;background:white;padding:19px;border:1px solid #dfe4f1;border-radius:12px;overflow-x:auto"><h2>기본 통신공학 단원 구성 (추가 기출은 통신공학 앱의 실시간 단원별 학습에서 확인)</h2><table class="quiz-comp-table"><thead><tr><th>단원</th><th>문항</th><th>하 / 중 / 상</th><th>단원별 바로 풀기</th></tr></thead><tbody><tr><td>신호와 시스템</td><td>176</td><td>36 / 103 / 37</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=0">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=0&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=0&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=0&amp;level=%EC%83%81">상</a></td></tr><tr><td>디지털화와 다중화</td><td>116</td><td>28 / 64 / 24</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=1">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=1&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=1&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=1&amp;level=%EC%83%81">상</a></td></tr><tr><td>아날로그 변조</td><td>148</td><td>36 / 76 / 36</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=2">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=2&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=2&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=2&amp;level=%EC%83%81">상</a></td></tr><tr><td>디지털 전송</td><td>186</td><td>38 / 104 / 44</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=3">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=3&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=3&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=3&amp;level=%EC%83%81">상</a></td></tr><tr><td>확률·랜덤 과정</td><td>123</td><td>36 / 60 / 27</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=4">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=4&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=4&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=4&amp;level=%EC%83%81">상</a></td></tr><tr><td>정보·부호이론</td><td>190</td><td>56 / 99 / 35</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=5">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=5&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=5&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=5&amp;level=%EC%83%81">상</a></td></tr><tr><td>통신 프로토콜</td><td>115</td><td>40 / 56 / 19</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=6">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=6&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=6&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=6&amp;level=%EC%83%81">상</a></td></tr><tr><td>전기·회로 기초 (코레일)</td><td>28</td><td>0 / 28 / 0</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=7">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=7&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=7&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=7&amp;level=%EC%83%81">상</a></td></tr><tr><td>전기·전자 기초 (공무원)</td><td>11</td><td>0 / 11 / 0</td><td><a class="quick-chapter" href="./communication-quiz-500/?unit=8">전체</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=8&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=8&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./communication-quiz-500/?unit=8&amp;level=%EC%83%81">상</a></td></tr><tr><th>총계</th><th>1093</th><th>—</th><th>—</th></tr></tbody></table></div></div>
 <div style="margin:8px 0 30px"><button id="wirelessCompBtn" aria-controls="wirelessCompPanel" aria-expanded="false" type="button" style="border:1px solid #ccd7ea;background:white;border-radius:12px;padding:12px;cursor:pointer;font:inherit;font-weight:800;color:#3457bc">▤ 무선공학 전체 문제 구성 보기</button><div id="wirelessCompPanel" hidden style="background:white;border:1px solid #dfe4f1;border-radius:12px;padding:18px;margin-top:12px;overflow-x:auto"><h2>무선공학 2156문항 · 11개 시험단원</h2><table class="quiz-comp-table"><thead><tr><th>단원</th><th>문항</th><th>하 / 중 / 상</th><th>단원별 바로 풀기</th></tr></thead><tbody><tr><td>Ch1 신호·시스템</td><td>79</td><td>32 / 35 / 12</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=0">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=0&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=0&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=0&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch2 음성 디지털 부호화</td><td>83</td><td>27 / 43 / 13</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=1">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=1&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=1&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=1&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch3 아날로그 변조</td><td>204</td><td>37 / 155 / 12</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=2">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=2&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=2&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=2&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch4 디지털 변조</td><td>235</td><td>35 / 187 / 13</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=3">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=3&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=3&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=3&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch5 안테나 이론</td><td>392</td><td>50 / 309 / 33</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=4">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=4&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=4&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=4&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch6 안테나 실제</td><td>107</td><td>26 / 71 / 10</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=5">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=5&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=5&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=5&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch7 급전선 이론</td><td>199</td><td>24 / 160 / 15</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=6">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=6&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=6&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=6&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch8 전파 전파 이론</td><td>249</td><td>37 / 182 / 30</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=7">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=7&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=7&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=7&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch9 고정통신 시스템</td><td>263</td><td>39 / 200 / 24</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=8">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=8&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=8&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=8&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch10 이동통신 시스템</td><td>174</td><td>25 / 133 / 16</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=9">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=9&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=9&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=9&amp;level=%EC%83%81">상</a></td></tr><tr><td>Ch11 위성통신 시스템</td><td>171</td><td>27 / 127 / 17</td><td><a class="quick-chapter" href="./wireless-quiz-500/?unit=10">전체</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=10&amp;level=%ED%95%98">하</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=10&amp;level=%EC%A4%91">중</a> <a class="quick-chapter" href="./wireless-quiz-500/?unit=10&amp;level=%EC%83%81">상</a></td></tr><tr><th>총계</th><th>2156</th><th>—</th><th>—</th></tr></tbody></table><p>원본 14개 내부 분류를 시험의 11개 단원 기준으로 집계한 표입니다.</p></div></div><section aria-labelledby="rail-guide-title" style="background:#fff;border:1px solid #dce5f2;border-radius:20px;padding:24px;margin:25px 0"><h2 id="rail-guide-title" style="margin:0 0 10px">🚄 LTE-R과 세계 철도무선</h2><p>철도 무선망 구조, 핸드오버와 3D 시뮬레이션을 익히고 한국·중국·일본·미국·유럽 사례를 비교합니다.</p><p><a class="quick-chapter" href="./interview/rail-lte-r.html">LTE-R 학습하기 →</a> <a class="quick-chapter" href="./interview/rail-lte-r-3d.html">3D 시뮬레이션 →</a> <a class="quick-chapter" href="./interview/rail-lte-r-cases.html">국가별 사례 →</a></p><p style="font-size:13px">2026.11.13 업데이트 · 기본 화면에 현장 직원의 기지국 간 이동 시뮬레이션을 추가하고, 열차 3D 및 국가별 사례와 구분했습니다.</p></section><footer>오답·정답률은 현재 브라우저에 저장되며 방문 시 초기화되지 않습니다. <a href="https://github.com/kimheeseo/kimheeseo/tree/main/quiz500">GitHub에서 파일 보기</a></footer>
-</main><script>document.getElementById('comp').addEventListener('click',()=>{const p=document.getElementById('compview'),b=document.getElementById('comp');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 통신공학 전체 문제 구성 보기':'▴ 전체 문제 구성 접기';});document.getElementById('wirelessCompBtn').addEventListener('click',()=>{const p=document.getElementById('wirelessCompPanel'),b=document.getElementById('wirelessCompBtn');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 무선공학 전체 문제 구성 보기':'▴ 무선공학 문제 구성 접기';});</script></body></html>
+</main><script>document.getElementById('comp').addEventListener('click',()=>{const p=document.getElementById('compview'),b=document.getElementById('comp');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 통신공학 전체 문제 구성 보기':'▴ 전체 문제 구성 접기';});document.getElementById('wirelessCompBtn').addEventListener('click',()=>{const p=document.getElementById('wirelessCompPanel'),b=document.getElementById('wirelessCompBtn');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 무선공학 전체 문제 구성 보기':'▴ 무선공학 문제 구성 접기';});</script><script id="ss-dashboard-logic">
+(()=>{
+const byId=id=>document.getElementById(id);
+const subject=byId('ss-subject'),goal=byId('ss-goal'),dateInput=byId('ss-exam-date');
+const DATE_KEY='telecom_study_target_date_v1';
+function safeJson(key){try{return JSON.parse(localStorage.getItem(key)||'{}')||{}}catch{return {}}}
+function text(id,value){byId(id).textContent=value}
+function updateSubject(){
+ const wireless=subject.value==='wireless';
+ const target=wireless?'./wireless-quiz-500/':'./communication-quiz-500/';
+ byId('ss-rec-link').href=wireless?'./wireless-quiz-500/?unit=4':target;
+ byId('ss-review-link').href=target;
+ text('ss-rec-title',wireless?'안테나 이론과 전파':'통신공학 핵심 개념');
+ text('ss-rec-tag',wireless?'무선공학':'통신공학');
+ if(!wireless){
+  text('ss-accuracy','—');text('ss-solved','—');text('ss-wrong','—');
+  text('ss-accuracy-sub','과목 앱에서 기록을 확인하세요');
+  text('ss-storage-note','통신공학 기록의 대시보드 연동은 준비 중입니다.');
+  return;
+ }
+ const pref=safeJson('wireless500_prefs_v2'),legacy=safeJson('wireless500_stats_v1');
+ const progress=pref.progress&&typeof pref.progress==='object'&&!Array.isArray(pref.progress)&&Object.keys(pref.progress).length?pref.progress:(legacy.progress||{});
+ let attempted=0,correct=0,wrong=0;
+ for(const row of Object.values(progress)){
+  if(!row||typeof row!=='object')continue;
+  attempted+=Math.max(0,Number(row.seen)||0);correct+=Math.max(0,Number(row.correct)||0);
+  if(row.lastCorrect===false)wrong++;
+ }
+ text('ss-accuracy',attempted?Math.round(correct/attempted*100)+'%':'—');
+ text('ss-solved',attempted?attempted.toLocaleString('ko-KR')+'회':'0회');
+ text('ss-wrong',wrong+'문항');
+ text('ss-accuracy-sub',attempted?'무선공학 누적 정답률':'학습 기록이 쌓이면 표시됩니다');
+ text('ss-storage-note','현재 브라우저에 저장된 무선공학 학습 기록 기준입니다.');
+}
+function renderGoal(){
+ const date=dateInput.value;
+ if(!date){goal.textContent='목표 시험일을 설정해 보세요.';return}
+ const d=new Date(date+'T00:00:00'),today=new Date();
+ today.setHours(0,0,0,0);
+ const days=Math.round((d-today)/86400000);
+ goal.replaceChildren(document.createTextNode('목표 시험일까지 '));
+ const strong=document.createElement('strong');strong.textContent=days>=0?'D-'+days:'시험일 경과';
+ goal.append(strong,document.createTextNode(' · 꾸준히 학습해요.'));
+}
+try{dateInput.value=localStorage.getItem(DATE_KEY)||''}catch{}
+dateInput.addEventListener('change',()=>{try{if(dateInput.value)localStorage.setItem(DATE_KEY,dateInput.value);else localStorage.removeItem(DATE_KEY)}catch{}renderGoal()});
+byId('ss-reset-date').addEventListener('click',()=>{dateInput.value='';try{localStorage.removeItem(DATE_KEY)}catch{}renderGoal()});
+subject.addEventListener('change',updateSubject);
+window.addEventListener('pageshow',updateSubject);
+updateSubject();renderGoal();
+})();
+</script></body></html>
