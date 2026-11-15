@@ -84,6 +84,36 @@ body{background:#f5f8ff;color:var(--ss-dark)}
 @media(max-width:650px){main{padding:12px 10px 70px}.site-top{padding:13px 14px;border-radius:13px;gap:9px}.topnav{gap:11px}.topnav a{font-size:12px}.ss-landing{margin:12px 0 28px;border-radius:22px;padding:32px 10px 30px}.ss-landing-head{margin-bottom:24px}.ss-landing-head h1{font-size:35px}.ss-landing-head p{font-size:14px}.ss-app{width:100%;border-radius:25px;box-shadow:0 18px 43px #233d751a}.ss-appbar{padding:20px 17px}.ss-screen{padding:25px 15px 18px}.ss-screen>h2{font-size:21px}.ss-stat{padding:14px 12px}.ss-stat-side{gap:8px}.ss-stat-side strong{font-size:23px}.ss-stat-icon{font-size:27px}.ss-ring{width:34px;height:34px;border-width:6px}.ss-recommend{padding:17px 16px}.ss-recommend h3{font-size:17px}.ss-play{width:49px;height:49px}.ss-banner{padding:16px}.ss-banner b{font-size:15px}}
 @media(max-width:350px){.ss-landing-head h1{font-size:29px}.ss-stat-side{gap:5px}.ss-stat-label{font-size:10px}.ss-stat-side strong{font-size:20px}.ss-screen{padding-left:11px;padding-right:11px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ss-play:hover{transform:none}}
+</style><style id="ss-screen-router-style">
+/* 독립 화면: 브라우저가 문서 아래로 스크롤하지 않고 탭 화면만 전환 */
+.ss-route-page[hidden]{display:none!important}
+.ss-route-page{min-height:calc(100vh - 230px);padding:10px 0 32px;animation:ss-page-enter .17s ease-out}
+.ss-route-page[data-page="home"]{padding:0;min-height:auto}
+.ss-route-page>.ss-landing{margin-top:25px}
+.ss-route-intro{margin:20px 0 28px;padding:28px 30px;border-radius:22px;background:linear-gradient(130deg,#f5f9ff 0%,#eaf1ff 100%);border:1px solid #dce7ff}
+.ss-route-intro .ss-route-eyebrow{display:block;font-size:11px;letter-spacing:.1em;font-weight:850;color:#315dd0}
+.ss-route-intro h1{margin:7px 0 5px;font-size:clamp(27px,4vw,37px);font-weight:900;letter-spacing:-.05em;color:#162748}
+.ss-route-intro p{margin:0;font-size:14px;color:#546781}
+.ss-route-back{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 13px;margin:0 0 15px;text-decoration:none;border:1px solid #d4def6;border-radius:10px;background:#fff;color:#2554bf;font-size:13px;font-weight:750}
+.ss-route-back:hover,.ss-route-back:focus-visible{background:#e9f1ff}
+.topnav a.ss-selected{color:#1555e8;border-bottom:2px solid #1555e8;padding-bottom:7px}
+.ss-bottom-nav a.ss-selected{color:#1456f4;font-weight:900}
+@keyframes ss-page-enter{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media(min-width:701px){.ss-bottom-nav{display:none!important}}
+@media(max-width:700px){
+ body{padding-bottom:84px}
+ .ss-bottom-nav{display:grid!important;grid-template-columns:repeat(5,minmax(0,1fr))!important;position:fixed;left:0;right:0;bottom:0;z-index:1000;margin:0!important;padding:8px 5px calc(9px + env(safe-area-inset-bottom,0px))!important;border-radius:0!important;border-top:1px solid #dce4f5;box-shadow:0 -6px 28px #1b325319;background:#fff;max-width:none!important}
+ .ss-bottom-nav a{padding:2px 0;font-size:10px;white-space:nowrap}
+ .ss-bottom-nav a span{font-size:21px;line-height:1.35}
+ .ss-route-page{min-height:calc(100vh - 150px);padding:8px 0 25px}
+ .ss-route-intro{margin:12px 0 22px;padding:20px 18px;border-radius:16px}
+ .ss-route-intro h1{font-size:27px}
+ .ss-route-intro p{font-size:13px}
+ .ss-route-page>.section-heading{padding-top:3px}
+ .ss-route-page>.section-heading h2{font-size:19px}
+ .ss-route-page .notice{margin-bottom:16px}
+}
+@media(prefers-reduced-motion:reduce){.ss-route-page{animation:none}}
 </style></head><body><main>
 <header class="site-top"><a class="brand" href="./" aria-label="통신직 준비 홈"><span class="brandmark" aria-hidden="true">∿</span><span>통신직 준비</span></a><nav class="topnav" aria-label="주요 메뉴"><a href="#written">필기 학습</a><a href="#organizations">기관별 면접</a><a href="#practice">직무 이해</a><a href="#recent-updates">업데이트</a></nav></header>
 <section class="ss-landing" aria-labelledby="home-title">
@@ -193,5 +223,132 @@ byId('ss-reset-date').addEventListener('click',()=>{dateInput.value='';try{local
 subject.addEventListener('change',updateSubject);
 window.addEventListener('pageshow',updateSubject);
 updateSubject();renderGoal();
+})();
+</script><script id="ss-screen-router">
+(()=>{
+  const main=document.querySelector('body > main');
+  if(!main)return;
+  const byId=id=>document.getElementById(id);
+  const keyNodes={
+    written:byId('written'),
+    organizations:byId('organizations'),
+    practice:byId('practice'),
+    updates:byId('recent-updates'),
+    rail:byId('rail-guide-title')
+  };
+  const header=main.querySelector(':scope > .site-top');
+  const footer=main.querySelector(':scope > footer');
+  const appNavigation=main.querySelector('.ss-bottom-nav');
+  const items=[...main.children];
+  const topChild=element=>{
+    let current=element;
+    while(current && current.parentElement!==main)current=current.parentElement;
+    return current;
+  };
+  const written=items.indexOf(topChild(keyNodes.written));
+  const organizations=items.indexOf(topChild(keyNodes.organizations));
+  const practice=items.indexOf(topChild(keyNodes.practice));
+  const updates=items.indexOf(topChild(keyNodes.updates));
+  const rail=items.indexOf(topChild(keyNodes.rail));
+  if(!header||!footer||!appNavigation||[written,organizations,practice,updates,rail].some(n=>n<0))return;
+  if(!(written<organizations && organizations<practice && practice<updates && updates<rail))return;
+
+  // 기존 요소를 옮겨 재활용하므로 문제은행 링크·아코디언·학습 데이터가 보존됩니다.
+  main.insertBefore(appNavigation,footer);
+  const pageMeta={
+    home:{name:'홈'},
+    bank:{name:'문제은행',eyebrow:'QUESTION BANK',description:'과목별 문제를 선택하고 단원과 난이도에 맞춰 학습하세요.'},
+    organizations:{name:'기관별 학습',eyebrow:'ORGANIZATIONS',description:'코레일·서울교통공사·한국수자원공사 직무 및 면접 준비.'},
+    practice:{name:'직무 이해',eyebrow:'CAREER PRACTICE',description:'현장 기술 개념과 LTE-R·수력발전 시뮬레이션을 학습하세요.'},
+    updates:{name:'업데이트',eyebrow:'WHAT’S NEW',description:'통신직 준비 도구의 최근 개선 사항을 확인하세요.'}
+  };
+  const screens={};
+  for(const [id,meta] of Object.entries(pageMeta)){
+    const screen=document.createElement('section');
+    screen.className='ss-route-page';
+    screen.dataset.page=id;
+    screen.id='ss-page-'+id;
+    screen.setAttribute('aria-label',meta.name);
+    screen.hidden=id!=='home';
+    if(id!=='home'){
+      const intro=document.createElement('div');
+      intro.className='ss-route-intro';
+      const kicker=document.createElement('span');
+      kicker.className='ss-route-eyebrow';
+      kicker.textContent=meta.eyebrow;
+      const heading=document.createElement('h1');
+      heading.textContent=meta.name;
+      const description=document.createElement('p');
+      description.textContent=meta.description;
+      intro.append(kicker,heading,description);
+      screen.append(intro);
+    }
+    main.insertBefore(screen,appNavigation);
+    screens[id]=screen;
+  }
+  for(const [index,item] of items.entries()){
+    if(item===header||item===footer)continue;
+    let group='bank';
+    if(index<written)group='home';
+    else if(index<organizations)group='bank';
+    else if(index<practice)group='organizations';
+    else if(index<updates)group='practice';
+    else if(index===updates)group='updates';
+    else if(index===rail)group='practice';
+    screens[group].append(item);
+  }
+
+  // 전역 탭: 홈 카드 안에 있던 하단 메뉴를 독립 화면 모두에서 사용합니다.
+  const homeLink=appNavigation.querySelector('a[href="./"]');
+  if(homeLink)homeLink.setAttribute('href','#screen=home');
+  const brand=header.querySelector('.brand');
+  if(brand)brand.setAttribute('href','#screen=home');
+  const updatesLink=appNavigation.querySelector('a[href="#recent-updates"]');
+  if(updatesLink){
+    const practiceLink=document.createElement('a');
+    practiceLink.href='#screen=practice';
+    practiceLink.innerHTML='<span aria-hidden="true">◇</span>직무 이해';
+    appNavigation.insertBefore(practiceLink,updatesLink);
+  }
+
+  const aliases={
+    '#written':'bank',
+    '#organizations':'organizations',
+    '#practice':'practice',
+    '#recent-updates':'updates'
+  };
+  for(const link of document.querySelectorAll('a[href^="#"]')){
+    const href=link.getAttribute('href');
+    if(aliases[href])link.setAttribute('href','#screen='+aliases[href]);
+  }
+  const navigationLinks=[...header.querySelectorAll('a[href^="#screen="]'),...appNavigation.querySelectorAll('a[href^="#screen="]')];
+
+  function resolvePage(){
+    const hash=decodeURIComponent(window.location.hash);
+    if(hash.startsWith('#screen=')){
+      const requested=hash.slice(8);
+      return Object.prototype.hasOwnProperty.call(screens,requested)?requested:'home';
+    }
+    return aliases[hash]||'home';
+  }
+  function renderPage(){
+    const active=resolvePage();
+    for(const [id,page] of Object.entries(screens)){
+      const visible=id===active;
+      page.hidden=!visible;
+      page.setAttribute('aria-hidden',String(!visible));
+    }
+    for(const link of navigationLinks){
+      const selected=link.getAttribute('href')==='#screen='+active;
+      link.classList.toggle('ss-selected',selected);
+      if(selected)link.setAttribute('aria-current','page');
+      else link.removeAttribute('aria-current');
+    }
+    document.title=(active==='home'?'통신직 준비':pageMeta[active].name+' | 통신직 준비');
+    window.scrollTo({top:0,behavior:'instant'});
+  }
+  window.addEventListener('hashchange',renderPage);
+  window.addEventListener('pageshow',renderPage);
+  renderPage();
 })();
 </script></body></html>
