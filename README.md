@@ -31,11 +31,11 @@
 
 | 프로젝트 | 주요 내용 | 링크 |
 | --- | --- | --- |
-| **3D 데이터센터 투어** | 캠퍼스·전력·냉각·네트워크 탐색, 서버·스토리지 랙 내부, 문 열기·닫기와 트레이·카세트 인출, Hot/Cold Aisle 표시 | [실행](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three) · [소스](https://github.com/kimheeseo/LSCNS/tree/main/DCI/DataCenter) |
+| **3D 데이터센터 투어** | 캠퍼스·전력·냉각·네트워크 탐색, 서버·스토리지 랙 내부, 문 열기·닫기와 트레이·카세트 인출, Hot/Cold Aisle 표시 | [실행](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three) |
 | **데이터센터 설계·BOM** | 전력·냉각·네트워크·광 연결 구성과 초기 계획 검토 | [실행](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/) · [고객용 간편 설계](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/customer-designer.html) |
-| **광섬유 해석 워크벤치** | 광섬유 단면·재료 설정, 모드 특성 분석, 계산 결과 시각화 | [실행](https://kimheeseo.github.io/LSCNS/COMSOL/universal_silica_v01/web/) · [소스·검증 자료](https://github.com/kimheeseo/LSCNS/tree/main/COMSOL/universal_silica_v01) |
-| **CPO Supply Chain Explorer** | CPO 구성 부품과 관련 기업·제품·공급망 탐색 | [실행](https://kimheeseo.github.io/cpo-supply-chain/) · [저장소](https://github.com/kimheeseo/cpo-supply-chain) |
-| **통신직 준비 도구 (동생용)** | 동생의 통신직 채용시험 준비를 위한 통신공학·무선공학 문제 풀이, 단원·난이도별 학습, 오답 복습과 면접 자료 | [실행](https://kimheeseo.github.io/kimheeseo/quiz500/) · [소스·이용 안내](./quiz500/) |
+| **광섬유 해석 워크벤치** | 광섬유 단면·재료 설정, 모드 특성 분석, 계산 결과 시각화 | [실행](https://kimheeseo.github.io/LSCNS/COMSOL/universal_silica_v01/web/) |
+| **CPO Supply Chain Explorer** | CPO 구성 부품과 관련 기업·제품·공급망 탐색 | [실행](https://kimheeseo.github.io/cpo-supply-chain/) |
+| **통신직 준비 도구 (동생용)** | 동생의 통신직 채용시험 준비를 위한 통신공학·무선공학 문제 풀이, 단원·난이도별 학습, 오답 복습과 면접 자료 | [실행](https://kimheeseo.github.io/kimheeseo/quiz500/) |
 
 > **통신직 준비 도구는 본인이 아닌 동생의 취업시험 준비를 위해 만든 자료입니다.**
 
