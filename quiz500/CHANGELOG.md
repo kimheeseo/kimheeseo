@@ -1,5 +1,12 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-20 · 국가직 7/9급 합격선·경쟁률 그래프
+- `quiz500/civil-service-exams/cutoff.html` 신설: 2026년 국가직 9급 일반모집 49개·7급 29개 모집단위, 2025·일부 2024 비교.
+- 급수별 전환, 7급 PSAT/2차 분리, 기술·행정·지역 검색 필터, 연도별 표·그래프, CSV 다운로드 및 출처 안내.
+- 2025 7급 전송기술 일반 컷 **76** vs 양성평등 컷 **73** 구분(2026 2차 일반 컷 73, 전년 대비 -3점). 추가합격 목표제 수치는 일반컷 대체 불가.
+- 홈페이지 기관별 카드·공무원 일정 페이지·기관별 면접 페이지에 진입 링크 통합.
+- 출처: https://gongmuwon.gosi.kr/oprut/StrSrTestStatsDtl.do?pstId=4845 · https://gongmuwon.gosi.kr/oprut/StrSrTestStatsLst.do · https://lab.megagong.net/l/gong/statistic/pass.asp · https://gosiplan.tistory.com/1074
+
 ## 2026-11-20 · 2027년 국가직 9급 시험 일정 및 공무원 섹션
 - 홈 ‘기관별 학습’에 **공무원 (국가직·지방직)** 카드와 상단 공무원 메뉴 추가. 기관별 면접 자료 목록에도 공무원 카드 추가.
 - 기존 `civil-service-exams/index.html`에 2027년 국가직 9급 접수, 필기, 합격자 발표, 면접 및 최종 합격 일정, 한국사능력검정시험 3급 이상 대체 기준과 공식 출처 링크 추가.
