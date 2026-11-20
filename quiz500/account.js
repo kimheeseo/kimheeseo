@@ -6,6 +6,9 @@
   const configured = /^https:\/\/[a-z0-9.-]+\.supabase\.co\/?$/.test(String(cfg.url || '')) &&
     /^[A-Za-z0-9._-]{20,}$/.test(String(cfg.publishableKey || ''));
   const MIN = 20;
+  const consentKey = 'telecom_study_sync_consent_v1';
+  const hasConsent = () => { try { return localStorage.getItem(consentKey) === 'yes'; } catch { return false; } };
+  const setConsent = enabled => { try { localStorage.setItem(consentKey, enabled ? 'yes' : 'no'); } catch {} };
   const storagePrefix = 'telecom_account_pending_v1_';
   let client = null, member = null, clientPromise = null, busy = false;
   let dialog, navButton, feedback, content, lastQuestion = null, questionNonce = 0;
@@ -27,7 +30,7 @@
   document.head.append(css);
   function status(text) { if (feedback) feedback.textContent = text || ''; }
   function updateButton() {
-    if (navButton) navButton.textContent = member ? '▤ 내 학습 분석' : '♙ 로그인';
+    if (navButton) navButton.textContent = member ? '▤ 내 학습 분석' : (configured ? '♙ 로그인' : '♙ 로그인 준비 중');
     if (lastQuestion) renderQuestion(lastQuestion.subject, lastQuestion.question, lastQuestion.key);
   }
   function show() {
@@ -57,15 +60,21 @@
       const form=make('form','ta-login-form');
       const email=make('input');email.type='email';email.placeholder='이메일 주소';email.autocomplete='email';email.required=true;email.setAttribute('aria-label','로그인 이메일');
       const submit=make('button','ta-primary','로그인 링크 보내기');submit.type='submit';
-      form.append(email,submit);
+      const consentLabel=make('label','ta-consent');
+      consentLabel.style.cssText='display:flex;align-items:flex-start;gap:8px;width:100%;font-size:12px;line-height:1.6;';
+      const consentInput=make('input');consentInput.type='checkbox';consentInput.required=true;consentInput.checked=hasConsent();
+      consentInput.style.cssText='width:18px;flex:0 0 18px;margin:2px 0;';
+      consentLabel.append(consentInput,make('span','','이메일을 이용한 로그인과 채점 결과의 서버 저장에 동의합니다. 수집되는 학습 기록은 문제 식별값, 단원, 난이도, 정오답, 시각이며 다른 사용자에게 개인 결과가 공개되지 않습니다.'));
+      form.append(email,consentLabel,submit);
       form.addEventListener('submit',async e=>{
-        e.preventDefault();if(!email.validity.valid)return;
+        e.preventDefault();if(!email.validity.valid||!consentInput.checked)return;
         submit.disabled=true;status('로그인 링크를 요청하는 중입니다.');
         try {
           const c=await getClient();
           const redirectTo=new URL('index.html',new URL('/kimheeseo/quiz500/',location.origin)).href;
           const {error}=await c.auth.signInWithOtp({email:email.value.trim(),options:{emailRedirectTo:redirectTo}});
           if(error)throw error;
+          setConsent(true);
           status('로그인 안내 메일을 요청했습니다. 받은편지함을 확인하세요. (메일 발송 여부는 인증 서비스 정책에 따릅니다.)');
         } catch(err){status('로그인 요청 실패: '+(err?.message||'네트워크 또는 설정을 확인하세요.'))}
         finally{submit.disabled=false}
@@ -76,6 +85,13 @@
     }
     const email=member.email||'로그인 계정';
     content.append(make('p','ta-muted',email+' 계정으로 로그인했습니다.'));
+    const consentLabel=make('label','ta-consent');
+    consentLabel.style.cssText='display:flex;align-items:flex-start;gap:9px;font-size:13px;margin:14px 0;';
+    const syncInput=make('input');syncInput.type='checkbox';syncInput.checked=hasConsent();
+    syncInput.style.cssText='width:18px;flex:0 0 18px;margin:2px 0;';
+    syncInput.addEventListener('change',()=>{setConsent(syncInput.checked);status(syncInput.checked?'새로운 채점 기록의 서버 저장이 활성화되었습니다.':'새로운 채점 기록의 서버 저장을 중지했습니다. 이미 저장된 기록은 아래에서 직접 삭제할 수 있습니다.');});
+    consentLabel.append(syncInput,make('span','','내 채점 결과를 서버에 누적하여 취약점과 전체 수험생 통계에 반영합니다.'));
+    content.append(consentLabel);
     const actions=make('div','ta-actions');
     actions.append(wrapButton('통계 새로고침',loadInsights),wrapButton('로그아웃',async()=>{
       const {error}=await client.auth.signOut();
@@ -93,6 +109,7 @@
       catch(err){status('삭제 실패: '+(err?.message||'서버 확인 필요'))}
     },'ta-danger'));
     content.append(controls);
+    content.append(make('p','ta-muted','기록 저장 동의를 해제해도 기존 기록은 삭제되지 않습니다. 아래 삭제 버튼으로 서버의 내 기록을 삭제할 수 있습니다.'));
     content.append(make('p','ta-muted','※ 공동 오답률은 사용자당 해당 문제의 최초 채점 결과 1건만 반영합니다. 전체 표본은 단원별 서로 다른 로그인 사용자 20명 이상일 때 표시합니다. 채점 결과의 악의적 조작은 로그인만으로 완전히 방지할 수 없습니다.'));
     loadInsights();
   }
@@ -103,15 +120,22 @@
     const base=make('div',secondary?'ta-meter alt':'ta-meter');
     const fill=make('i');fill.style.width=Math.max(0,Math.min(100,Number(rate)||0))+'%';base.append(fill);return base;
   }
-  let mine=[],cohort=[],insightsReady=false;
+  let mine=[],cohort=[],globalStats={},insightsReady=false;
   async function loadInsights() {
     if(!member||!client)return;
     const target=content?.querySelector('#ta-insights');if(!target)return;
     target.replaceChildren(make('p','ta-muted','로그인 기록과 공동 통계를 조회 중입니다.'));
     try{
-      const [own,others]=await Promise.all([client.rpc('telecom_my_stats'),client.rpc('telecom_cohort_topics',{p_subject:null})]);
-      if(own.error)throw own.error;if(others.error)throw others.error;
+      const [own,others,all,comm,wireless]=await Promise.all([
+        client.rpc('telecom_my_stats'),
+        client.rpc('telecom_cohort_topics',{p_subject:null}),
+        client.rpc('telecom_global_summary',{p_subject:null}),
+        client.rpc('telecom_global_summary',{p_subject:'comm'}),
+        client.rpc('telecom_global_summary',{p_subject:'wireless'})
+      ]);
+      for(const result of [own,others,all,comm,wireless])if(result.error)throw result.error;
       mine=Array.isArray(own.data)?own.data:[];cohort=Array.isArray(others.data)?others.data:[];
+      globalStats={all:all.data,comm:comm.data,wireless:wireless.data};
       insightsReady=true;renderInsights();
     }catch(err){target.replaceChildren(make('p','ta-warn','통계 조회에 실패했습니다. Supabase SQL 설치·접근권한·네트워크를 확인하세요: '+(err?.message||'')))}
   }
@@ -126,8 +150,10 @@
     const correct=filtered.reduce((n,x)=>n+Number(x.correct||0),0);
     const summary=make('div','ta-summary');
     summary.append(statCard('서버 누적 풀이',attempts+'건'),statCard('나의 정답률',attempts?fmt(100*correct/attempts):'—'),statCard('나의 오답',attempts-correct+'건'));
+    const publicSummary=globalStats[selected];
+    summary.append(statCard('전체 회원 평균',publicSummary?.rate===null||publicSummary?.rate===undefined?'표본 대기':fmt(publicSummary.rate)));
     target.append(summary);
-    if(!filtered.length){target.append(make('p','ta-muted','이 계정으로 누적된 풀이가 없습니다. 로그인한 상태에서 통신공학 또는 무선공학 문제를 풀어 주세요.'));return}
+    if(!filtered.length){target.append(make('p','ta-muted','이 계정으로 누적된 풀이가 없습니다. 서버 저장 동의를 켜고 통신공학 또는 무선공학 문제를 풀어 주세요.'));return}
     target.append(make('h3','','난이도별 나의 취약점'));
     for(const level of ['하','중','상','미분류']){
       const group=filtered.filter(x=>x.difficulty===level);
@@ -174,7 +200,7 @@
     } finally {busy=false}
   }
   function record(subject,question,correct,key) {
-    if(!configured||!member||!client||!question||!key)return;
+    if(!configured||!member||!client||!hasConsent()||!question||!key)return;
     const payload={
       p_event_id:crypto.randomUUID(),p_subject:subject,p_key:key,
       p_question_id:String(question.id||'').slice(0,100),
