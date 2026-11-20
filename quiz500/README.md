@@ -7,12 +7,20 @@
 | 통신공학 1,762 | [communication-quiz-500](./communication-quiz-500/) | [통신공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/communication-quiz-500/) |
 | 무선공학 2,156 | [wireless-quiz-500](./wireless-quiz-500/) | [무선공학 퀴즈 실행](https://kimheeseo.github.io/kimheeseo/quiz500/wireless-quiz-500/) |
 | 면접 자료 | [interview](./interview/) | [면접 자료 목록](https://kimheeseo.github.io/kimheeseo/quiz500/interview/) |
+| 2027 공무원 일정·기출 | [civil-service-exams](./civil-service-exams/) | [공무원 시험 일정](https://kimheeseo.github.io/kimheeseo/quiz500/civil-service-exams/) |
 
 **[통신직 준비 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/)**
 
 \* 웹 실행 링크는 [GitHub Pages](https://github.com/kimheeseo/kimheeseo/settings/pages)가 `main` / `/(root)` 기준으로 게시된 경우 작동합니다.
 
 **단원별 바로 풀기:** [통합 홈페이지](https://kimheeseo.github.io/kimheeseo/quiz500/)의 **전체 문제 구성 보기 → 해당 단원 전체 풀기** 버튼을 누르면 그 단원의 모든 문제만 출제됩니다. 통신공학 7개 주요 단원 및 코레일·공무원 전기 기초 보충 단원과 무선공학 11개 시험단원에 대해 각각 제공됩니다.
+
+## 2026-11-20 · 2027 공무원 시험 일정 섹션 추가
+
+- [공무원 시험 일정·기출 자료](./civil-service-exams/): 홈의 기관별 학습과 면접 자료 목록에서 진입할 수 있습니다.
+- 국가직 9급 접수 **2027.01.25 09:00~01.29 18:00**, 필기 **03.27**, 필기합격 **04.30**, 면접 **05.27~06.01**, 최종합격 **06.16**. 출처: [인사혁신처 공식 발표](https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/?cntId=4360&mode=view), [공식 소식지](https://www.mpm.go.kr/mpm/comm/newsLetter/?boardId=bbs_0000000000000033&category=&cntId=266&mode=view&pageIdx=).
+- **2027년부터 국가직 9급 필기 한국사는 한능검 3급 이상으로 대체**, 필기시험 전날까지 발표된 등급 인정. 국가직 7급 시험과 지방직 9급 시험은 각각 별도 구분.
+- 직렬별 선발 인원과 구체적인 전공 시험과목은 2027년 1월 초 세부 공고 예정으로 미확정 표시. 기존 2015~2026 기출 자료와 학습 앱 연결 유지.
 
 ## 2026-11-19 · 서울교통공사 채용·근무·합격 후기 5개 자료 종합
 
