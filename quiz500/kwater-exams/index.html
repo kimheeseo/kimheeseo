@@ -63,6 +63,27 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 @media(max-width:830px){.workspace{grid-template-columns:1fr}.sidebar{position:static}.nav-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.summary{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:560px){main{padding:13px 10px 65px}.hero{padding:19px 15px}.panel{padding:15px}.sidebar{padding:12px}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-numbers{grid-template-columns:repeat(8,1fr)}.source-grid{grid-template-columns:1fr}.chart-row{grid-template-columns:100px 1fr 35px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+
+/* K-water per-round chapter mapping and PDF-style 2-column question overview */
+.round-guide{margin:18px 0 24px;border:1px solid #d7e2f2;background:#f8fbff;border-radius:15px;padding:16px}
+.round-guide h3{margin:0 0 7px;font-size:17px;color:#254976}
+.unit-group-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:12px}
+.unit-group{border:1px solid #d8e4f3;border-radius:11px;background:#fff;min-width:0;overflow:hidden}
+.unit-group summary{cursor:pointer;padding:12px 13px;display:flex;justify-content:space-between;gap:8px;font-size:13px;font-weight:800;color:#35557a}
+.unit-group[open] summary{background:#edf4ff;border-bottom:1px solid #d9e5f5}
+.unit-group summary b{white-space:nowrap;color:#2e60b4}
+.unit-group .unit-rows{display:grid;gap:5px;padding:9px}
+.unit-entry{background:#f9fbff;border:1px solid #dfebf6;border-radius:9px;padding:9px;text-align:left;cursor:pointer;color:#345070;font:inherit;font-size:12px;line-height:1.5}
+.unit-entry:hover,.unit-entry:focus-visible{background:#e8f2ff;border-color:#9dbcef}
+.unit-entry span{display:block;font-size:10px;color:#7688a2;margin-top:3px}
+.unit-entry.solved{background:#eaf9f2;border-color:#bfe3d3}
+.question-index{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:12px}
+.question-entry{border:1px solid #dce5f2;border-radius:10px;background:#fff;padding:11px;cursor:pointer;text-align:left;color:#365579;font:inherit;font-size:12px;min-width:0}
+.question-entry b{font-weight:800}.question-entry small{display:block;margin-top:5px;color:#7890ad;font-size:11px}
+.question-entry.solved{border-color:#74b99e;background:#effbf6}
+.catalog-toggle{width:100%;border:0;background:transparent;color:#285abc;font:inherit;cursor:pointer;font-size:12px;font-weight:850;text-align:left;padding:9px 0}
+.round-guide .tiny{line-height:1.7}
+@media(max-width:650px){.round-guide{padding:12px}.unit-group-list,.question-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.unit-group summary{padding:9px 7px;font-size:11px}.unit-entry{font-size:11px;padding:8px}.question-entry{font-size:11px;padding:9px}}
 </style></head><body><main>
 <a class="crumb" href="../interview/kwater.html">← 한국수자원공사 채용·면접 페이지</a>
 <section class="hero">
@@ -81,7 +102,7 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 <button type="button" data-mode="source" aria-pressed="false">첨부 원본 1회차<small>40문항 주제·검토 기록</small></button>
 <button type="button" data-mode="history" aria-pressed="false">내 학습 기록<small>회차별 점수·오답</small></button>
 </nav>
-<div id="chapter-container" hidden style="margin:16px 0"><label class="side-label" for="chapter">학습 단원</label><select class="select" id="chapter"></select></div>
+<div id="chapter-container" hidden style="margin:16px 0"><label class="side-label" for="chapter">학습 단원</label><select class="select" id="chapter"></select><label class="side-label" for="study-round" style="display:block;margin:13px 0 5px">학습할 회차</label><select class="select" id="study-round"><option value="all">2·3·4회차 전체 · 120문항</option><option value="2">2회차 · 40문항</option><option value="3">3회차 · 40문항</option><option value="4">4회차 · 40문항</option></select><p class="tiny">회차와 단원을 동시에 선택해 원하는 문항만 공부할 수 있습니다.</p></div>
 <div class="summary" id="sidebar-stats" aria-live="polite"></div>
 <p class="tiny" style="margin-top:15px">학습기록은 현재 브라우저에만 저장됩니다. 다른 기기와 자동으로 공유되지 않습니다.</p>
 </aside>
@@ -92,13 +113,13 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 const $=sel=>document.querySelector(sel);
 const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const saveKey="kwater_study_v1";
-let db=null,source=null,mode="round",round=2,chapter="all",idx=0;
+let db=null,source=null,mode="round",round=2,chapter="all",studyRound="all",idx=0;
 let store={drafts:{},history:[]};
 try{const from=JSON.parse(localStorage.getItem(saveKey));if(from&&typeof from==="object")store={drafts:from.drafts||{},history:from.history||[]}}catch{}
 function persist(){try{localStorage.setItem(saveKey,JSON.stringify(store))}catch{}}
-function examKey(){return mode==="chapter"?"chapter:"+chapter:"round:"+round}
+function examKey(){return mode==="chapter"?"chapter:"+studyRound+":"+chapter:"round:"+round}
 function draft(){const key=examKey();if(!store.drafts[key])store.drafts[key]={answers:{},submitted:false,started:Date.now(),position:0};return store.drafts[key]}
-function questions(){const all=db.rounds.flatMap(r=>r.questions);return mode==="round"?db.rounds.find(r=>r.round===round).questions:chapter==="all"?all:all.filter(q=>q.chapter===chapter)}
+function questions(){const all=db.rounds.flatMap(r=>r.questions);return mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)))}
 function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(ans[q.id]===q.answer),0)}
 function metrics(kv){return '<div class="summary">'+kv.map(row=>'<div class="metric"><span>'+esc(row[0])+'</span><b>'+esc(row[1])+'</b></div>').join("")+'</div>'}
 function setStats(){let items=(mode==="round"||mode==="chapter")?questions():[];let d=(mode==="round"||mode==="chapter")?draft():null;let filled=d?items.filter(q=>d.answers[q.id]!==undefined).length:0;$("#sidebar-stats").innerHTML=metrics([["문항 수",items.length],["선택 완료",filled],["제출 기록",store.history.length],["학습 방식",mode==="round"?"40분":mode==="chapter"?"단원별":"조회"]])}
@@ -120,6 +141,23 @@ function finishAttempt(){
  store.history.unshift({key:examKey(),mode,round,chapter,count:items.length,answered,correct:score,date:new Date().toISOString()});
  store.history=store.history.slice(0,100);persist();render();
 }
+function renderUnitCatalog(items,d){
+ const groups=new Map();
+ for(const [i,q] of items.entries()){if(!groups.has(q.chapter))groups.set(q.chapter,[]);groups.get(q.chapter).push({q,i})}
+ const cards=[...groups.entries()].map(([name,list])=>'<details class="unit-group"><summary>'+esc(name)+' <b>'+list.length+'문항</b></summary><div class="unit-rows">'+list.map(({q,i})=>'<button type="button" class="unit-entry '+(d.answers[q.id]!==undefined?'solved':'')+'" data-jump="'+i+'"><b>문항 '+q.number+' · '+esc(q.topic)+'</b><span>'+esc(q.difficulty)+' · '+esc(q.id)+' · '+(d.answers[q.id]!==undefined?'선택 완료':'미응답')+'</span></button>').join("")+'</div></details>').join("");
+ const all=items.map((q,i)=>'<button type="button" class="question-entry '+(d.answers[q.id]!==undefined?'solved':'')+'" data-jump="'+i+'"><b>문항 '+q.number+' · '+esc(q.topic)+'</b><small>'+esc(q.chapter)+' · '+esc(q.difficulty)+'</small></button>').join("");
+ const title=mode==="round"?round+"회차 40문항 단원별 분류":"단원별 학습 문제 구성";
+ const box='<details class="round-guide" id="kwater-unit-catalog"><summary class="catalog-toggle">▤ '+title+' · '+groups.size+'개 단원 / '+items.length+'문항 펼쳐보기</summary><div class="tiny">참고 화면처럼 문항별 주제·단원을 확인하고 문항을 클릭해 이동합니다. <b>제출 전에는 정답과 해설을 공개하지 않습니다.</b></div><h3>단원별 분류</h3><div class="unit-group-list">'+cards+'</div><details style="margin-top:14px"><summary class="catalog-toggle">문항 번호 순서로 2열 전체 보기 · '+items.length+'문항</summary><div class="question-index">'+all+'</div></details></details>';
+ return box;
+}
+function bindUnitCatalog(){
+ const el=$("#kwater-unit-catalog");if(!el)return;
+ el.querySelectorAll("button[data-jump]").forEach(b=>b.addEventListener("click",()=>{
+  const stayOpen=el.open;idx=Number(b.dataset.jump);render();
+  const replacement=$("#kwater-unit-catalog");if(replacement)replacement.open=stayOpen;
+  $("#question-current")?.scrollIntoView({behavior:"smooth",block:"start"});
+ }));
+}
 function render(){
  if(!db||!source)return;
  if(mode==="source")return renderSource();
@@ -130,13 +168,14 @@ function render(){
  const q=items[idx];const answered=items.filter(x=>d.answers[x.id]!==undefined).length;
  $("#main-content").innerHTML=
  '<div class="toolbar"><div><h2>'+(mode==="round"?"K-water 창작 모의고사 "+round+"회차":"단원별 문제은행")+'</h2><span class="badge">'+esc(q.chapter)+'</span> <span class="badge">'+esc(q.difficulty)+'</span></div><div class="tiny">'+(mode==="round"?'남은 시간 <b id="timer">'+hhmm(remaining(d))+'</b> · ':'')+answered+' / '+items.length+' 선택</div></div>'+
- '<div class="progress"><i style="width:'+(answered/items.length*100)+'%"></i></div>'+
+ '<div class="progress"><i style="width:'+(answered/items.length*100)+'%"></i></div>'+renderUnitCatalog(items,d)+
  '<div class="grid-numbers" id="question-nav">'+items.map((v,i)=>'<button type="button" data-index="'+i+'" class="'+(d.answers[v.id]!==undefined?'done ':'')+(idx===i?'active':'')+'" aria-label="'+(i+1)+'번 문항으로 이동">'+(i+1)+'</button>').join("")+'</div>'+
- '<div class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+'</span></div>'+
+ '<div id="question-current" class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+'</span></div>'+
  '<div class="question-text">'+esc(q.question)+'</div>'+
  '<div class="options">'+q.options.map((t,i)=>'<button type="button" class="option '+(d.answers[q.id]===i?'selected':'')+'" data-answer="'+i+'" aria-pressed="'+(d.answers[q.id]===i)+'"><b>'+(i+1)+'</b><span>'+esc(t)+'</span></button>').join("")+'</div>'+
  '<div class="controls"><button class="btn" id="prev" type="button" '+(idx===0?'disabled':'')+'>← 이전 문항</button><button class="btn" id="next" type="button" '+(idx===items.length-1?'disabled':'')+'>다음 문항 →</button><button class="btn primary" id="submit" type="button">답안 제출·채점</button></div>'+
  '<p class="tiny">답안을 제출하면 정답 및 해설이 공개됩니다. 회차별 채점 기록은 현재 브라우저에만 남습니다.</p>';
+ bindUnitCatalog();
  $("#question-nav").querySelectorAll("button").forEach(b=>b.onclick=()=>{idx=+b.dataset.index;render()});
  $(".options").querySelectorAll("button").forEach(b=>b.onclick=()=>{d.answers[q.id]=+b.dataset.answer;persist();render()});
  $("#prev").onclick=()=>{idx--;render()};
@@ -185,10 +224,11 @@ async function init(){
  const chapters=[...new Set(db.rounds.flatMap(r=>r.questions.map(q=>q.chapter)))];
  $("#chapter").innerHTML='<option value="all">전체 단원 · 120문항</option>'+chapters.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
  $("#chapter").onchange=e=>{chapter=e.target.value;idx=0;render()};
+ $("#study-round").onchange=e=>{studyRound=e.target.value;idx=0;render()};
  document.querySelectorAll("#modes button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode,Number(b.dataset.round)||null));
  const params=new URLSearchParams(location.search);const qround=Number(params.get("round"));
  if([2,3,4].includes(qround))round=qround;
- if(params.get("mode")==="source")mode="source";else if(params.get("mode")==="chapter"){mode="chapter";const q=params.get("chapter");if(q&&chapters.includes(q))chapter=q;$("#chapter").value=chapter}
+ if(params.get("mode")==="source")mode="source";else if(params.get("mode")==="chapter"){mode="chapter";const q=params.get("chapter");if(q&&chapters.includes(q))chapter=q;$("#chapter").value=chapter;studyRound=[2,3,4].includes(qround)?String(qround):"all";$("#study-round").value=studyRound}
  setMode(mode,round);
  }catch(e){$("#main-content").innerHTML='<h2>데이터 로드 실패</h2><p>'+esc(e.message)+'</p><p>GitHub Pages 배포 이후 새로고침하시거나 저장소의 JSON 파일 경로를 확인하세요.</p>';}
 }
