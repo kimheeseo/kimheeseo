@@ -60,6 +60,7 @@ function render(subject,question){
   let panel=qs('crowd-stats-panel');
   if(!panel){panel=make('section','crowd-box');panel.id='crowd-stats-panel';panel.setAttribute('aria-label','문항 공동 정답률');qs('qQuestion').after(panel)}
   panel.replaceChildren();
+  window.TelecomAccount?.renderQuestion(subject,question,key);
   if(!api){
     panel.append(make('strong','','문항별 공동 난이도'));
     panel.append(make('div','','공동 통계 서버 연결 전 · 개인 학습 기록은 계속 저장됩니다.'));
@@ -76,7 +77,9 @@ function render(subject,question){
   refresh(subject,key,stat);
 }
 function record(subject,question,correct,graded){
-  if(!api||!consent()||!graded||!question)return;
+  if(!graded||!question)return;
+  window.TelecomAccount?.record(subject,question,correct,makeKey(question));
+  if(!api||!consent())return;
   const key=makeKey(question),identity=subject+':'+key;
   const sent=jsonRead(SENT,{}),pending=jsonRead(QUEUE,[]);
   if(!Array.isArray(pending))return;
