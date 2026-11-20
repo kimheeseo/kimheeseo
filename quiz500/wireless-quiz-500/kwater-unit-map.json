@@ -1,0 +1,141 @@
+{
+  "generated": "2026-11-20",
+  "bank": "wireless",
+  "warning": "이 파일은 단원별 보충 문제은행 연결 인덱스이며 기존 대형 앱 quiz_bank_1000.json / wireless_bank_1000.json에 문항을 물리적으로 병합하거나 앱 내장 문항 수를 변경하지 않습니다.",
+  "sourceReferenceCount": 3,
+  "newQuestionsCount": 9,
+  "items": [
+    {
+      "id": "KW-2026S-REF-22",
+      "chapter": "무선 네트워크",
+      "existingChapter": "Ch9 고정통신 시스템",
+      "bank": "wireless",
+      "origin": "PDF 원본 문항 분류 참조(지문 공개·채점 보류)",
+      "number": 22,
+      "page": 5,
+      "playable": false,
+      "link": "../kwater-exams/?mode=source"
+    },
+    {
+      "id": "KW-2026S-REF-25",
+      "chapter": "이동통신",
+      "existingChapter": "Ch10 이동통신 시스템",
+      "bank": "wireless",
+      "origin": "PDF 원본 문항 분류 참조(지문 공개·채점 보류)",
+      "number": 25,
+      "page": 6,
+      "playable": false,
+      "link": "../kwater-exams/?mode=source"
+    },
+    {
+      "id": "KW-2026S-REF-26",
+      "chapter": "위성통신",
+      "existingChapter": "Ch11 위성통신 시스템",
+      "bank": "wireless",
+      "origin": "PDF 원본 문항 분류 참조(지문 공개·채점 보류)",
+      "number": 26,
+      "page": 6,
+      "playable": false,
+      "link": "../kwater-exams/?mode=source"
+    },
+    {
+      "id": "KW-ORIG-2-22",
+      "chapter": "무선 네트워크",
+      "existingChapter": "Ch9 고정통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 2회차",
+      "round": 2,
+      "number": 22,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EB%AC%B4%EC%84%A0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC"
+    },
+    {
+      "id": "KW-ORIG-2-25",
+      "chapter": "이동통신",
+      "existingChapter": "Ch10 이동통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 2회차",
+      "round": 2,
+      "number": 25,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0"
+    },
+    {
+      "id": "KW-ORIG-2-26",
+      "chapter": "위성통신",
+      "existingChapter": "Ch11 위성통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 2회차",
+      "round": 2,
+      "number": 26,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0"
+    },
+    {
+      "id": "KW-ORIG-3-22",
+      "chapter": "무선 네트워크",
+      "existingChapter": "Ch9 고정통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 3회차",
+      "round": 3,
+      "number": 22,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EB%AC%B4%EC%84%A0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC"
+    },
+    {
+      "id": "KW-ORIG-3-25",
+      "chapter": "이동통신",
+      "existingChapter": "Ch10 이동통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 3회차",
+      "round": 3,
+      "number": 25,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0"
+    },
+    {
+      "id": "KW-ORIG-3-26",
+      "chapter": "위성통신",
+      "existingChapter": "Ch11 위성통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 3회차",
+      "round": 3,
+      "number": 26,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0"
+    },
+    {
+      "id": "KW-ORIG-4-22",
+      "chapter": "무선 네트워크",
+      "existingChapter": "Ch9 고정통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 4회차",
+      "round": 4,
+      "number": 22,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EB%AC%B4%EC%84%A0%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC"
+    },
+    {
+      "id": "KW-ORIG-4-25",
+      "chapter": "이동통신",
+      "existingChapter": "Ch10 이동통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 4회차",
+      "round": 4,
+      "number": 25,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9D%B4%EB%8F%99%ED%86%B5%EC%8B%A0"
+    },
+    {
+      "id": "KW-ORIG-4-26",
+      "chapter": "위성통신",
+      "existingChapter": "Ch11 위성통신 시스템",
+      "bank": "wireless",
+      "origin": "자체 창작 K-water 모의 4회차",
+      "round": 4,
+      "number": 26,
+      "playable": true,
+      "link": "../kwater-exams/?mode=chapter&chapter=%EC%9C%84%EC%84%B1%ED%86%B5%EC%8B%A0"
+    }
+  ]
+}
