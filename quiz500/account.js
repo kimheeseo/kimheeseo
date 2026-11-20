@@ -4,7 +4,7 @@
   'use strict';
   const cfg = window.TELECOM_ACCOUNT_CONFIG || {};
   const configured = /^https:\/\/[a-z0-9.-]+\.supabase\.co\/?$/.test(String(cfg.url || '')) &&
-    /^[A-Za-z0-9._-]{40,}$/.test(String(cfg.publishableKey || ''));
+    /^[A-Za-z0-9._-]{20,}$/.test(String(cfg.publishableKey || ''));
   const MIN = 20;
   const storagePrefix = 'telecom_account_pending_v1_';
   let client = null, member = null, clientPromise = null, busy = false;
