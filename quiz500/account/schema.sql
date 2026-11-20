@@ -3,6 +3,8 @@
 create table if not exists public.telecom_attempts (
   id bigint generated always as identity primary key,
   user_id uuid not null references auth.users(id) on delete cascade,
+  client_event_id uuid not null,
+  unique(user_id, client_event_id),
   subject text not null check (subject in ('comm','wireless')),
   question_key text not null check (question_key ~ '^[a-f0-9]{8}-[a-f0-9]{8}$'),
   question_id text not null check (char_length(question_id) between 1 and 100),
@@ -20,7 +22,7 @@ alter table public.telecom_attempts enable row level security;
 revoke all on table public.telecom_attempts from public, anon, authenticated;
 
 create or replace function public.telecom_record_attempt(
-  p_subject text, p_key text, p_question_id text, p_chapter text,
+  p_event_id uuid, p_subject text, p_key text, p_question_id text, p_chapter text,
   p_topic text, p_difficulty text, p_correct boolean
 ) returns bigint language plpgsql security definer set search_path = ''
 as $$
@@ -28,7 +30,7 @@ declare v_user uuid; v_id bigint;
 begin
   v_user := (select auth.uid());
   if v_user is null then raise exception 'login_required' using errcode='42501'; end if;
-  if p_subject is null or p_subject not in ('comm','wireless')
+  if p_event_id is null or p_subject is null or p_subject not in ('comm','wireless')
      or p_key is null or p_key !~ '^[a-f0-9]{8}-[a-f0-9]{8}$'
      or p_question_id is null or char_length(p_question_id) not between 1 and 100
      or p_chapter is null or char_length(p_chapter) not between 1 and 120
@@ -37,8 +39,10 @@ begin
      or p_correct is null
   then raise exception 'invalid_attempt' using errcode='22023'; end if;
   insert into public.telecom_attempts
-    (user_id,subject,question_key,question_id,chapter,topic,difficulty,correct)
-  values (v_user,p_subject,p_key,p_question_id,p_chapter,p_topic,p_difficulty,p_correct)
+    (user_id,client_event_id,subject,question_key,question_id,chapter,topic,difficulty,correct)
+  values (v_user,p_event_id,p_subject,p_key,p_question_id,p_chapter,p_topic,p_difficulty,p_correct)
+  on conflict (user_id,client_event_id) do update
+  set client_event_id = excluded.client_event_id
   returning id into v_id;
   return v_id;
 end $$;
@@ -113,12 +117,12 @@ begin
 end $$;
 
 -- SECURITY DEFINER aggregate functions are intentionally exposed to signed-in users ONLY.
-revoke execute on function public.telecom_record_attempt(text,text,text,text,text,text,boolean) from public,anon;
+revoke execute on function public.telecom_record_attempt(uuid,text,text,text,text,text,text,boolean) from public,anon;
 revoke execute on function public.telecom_question_stats(text,text) from public,anon;
 revoke execute on function public.telecom_cohort_topics(text) from public,anon;
 revoke execute on function public.telecom_my_stats() from public,anon;
 revoke execute on function public.telecom_delete_my_attempts() from public,anon;
-grant execute on function public.telecom_record_attempt(text,text,text,text,text,text,boolean) to authenticated;
+grant execute on function public.telecom_record_attempt(uuid,text,text,text,text,text,text,boolean) to authenticated;
 grant execute on function public.telecom_question_stats(text,text) to authenticated;
 grant execute on function public.telecom_cohort_topics(text) to authenticated;
 grant execute on function public.telecom_my_stats() to authenticated;
