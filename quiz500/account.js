@@ -232,7 +232,7 @@
     }catch(err){console.warn('Account initialization:',err?.message||err)}
   }
   function mount() {
-    const nav=document.querySelector('.site-top .topnav,header .nav,.site-top')||document.querySelector('header');
+    const nav=document.querySelector('.site-top .topnav')||document.querySelector('header .nav')||document.querySelector('.site-top')||document.querySelector('header');
     if(nav){navButton=wrapButton('♙ 로그인',show,'ta-launch');navButton.setAttribute('aria-label','회원 로그인 및 학습 통계');nav.append(navButton)}
     dialog=make('div','ta-overlay');dialog.hidden=true;
     const card=make('section','ta-dialog');card.setAttribute('role','dialog');card.setAttribute('aria-modal','true');card.setAttribute('aria-label','회원 로그인 및 학습 분석');
