@@ -1,41 +1,64 @@
-# 통신직 학습 계정 + 누적 오답률 (배포 가이드)
+# 통신직 학습 계정: Google 로그인 + 개인/전체 통계
 
-이 PR은 통신공학·무선공학 기존 문제은행과 로컬 학습 기록을 보존한 상태에서 **이메일 로그인, 계정별 서버 학습 기록, 단원·난이도별 취약점, 회원 전체 문항별 최초 응답 오답률**을 추가합니다.
+기존 GitHub Pages 문제은행(통신공학·무선공학)을 그대로 유지하면서 **Google 계정 로그인**, **개인별 누적 채점**, **문항별 전체 오답률**, **단원·난이도 취약점 분석** 기능을 확장합니다.
 
-## 구조와 동작
+## 현재 상태
 
-- 화면: `quiz500/account.js` — 포털/두 문제은행의 상단 **로그인 → 내 학습 분석** 버튼. 이메일 OTP(매직 링크), 학습 통계, 로그아웃, 서버 기록 삭제.
-- 설정: `quiz500/account-config.js` — 공개 Supabase URL 및 Publishable key만 입력. **service_role / secret key 금지.**
-- 데이터베이스: `quiz500/account/schema.sql` — Supabase PostgreSQL + Auth. 인증된 사용자별 기록, 중복 전송 이벤트 방지, 계정별/전체 RPC, RLS. 다른 회원의 원본 기록을 읽을 수 없음.
-- 연결: 기존 `crowd-stats.js`의 채점 이벤트를 회원 계정 모듈에 전달. 익명 Cloudflare Worker 통계는 기존 방식과 별도로 보존됨.
-- 로그인 후 채점한 문제만 계정 서버에 추가됩니다. 익명 시점의 기존 브라우저 기록을 자동 업로드하지 않으며, `localStorage` 기록은 기존과 같이 유지됩니다.
-- 회원 전체 집계는 **동일 계정 + 동일 문제 버전에서 첫 채점 1회만** 반영합니다. 개인 집계는 오답 복습을 포함한 모든 채점 기록을 반영합니다.
-- 문제 버전 키는 문항 ID와 질문·보기·정답 서명으로 구성됩니다. 정답 수정 시 기존 판본의 누적치와 혼합하지 않습니다.
-- 전체 비교는 단원/난이도별 **서로 다른 회원 20명 이상**일 때만 노출합니다. 문항별 20건 미만은 표본 수만 공개합니다.
-- 오프라인/일시적 실패는 계정별 브라우저 업로드 대기열에 보관하고 온라인 복귀 시 재시도합니다. 이벤트 UUID를 서버에서 중복 제거합니다.
+GitHub Pages 코드와 Supabase PostgreSQL 마이그레이션은 저장소에 준비되어 있습니다. 하지만 **Supabase 실제 프로젝트 및 Google OAuth 연결 정보가 비어 있다면 로그인과 서버 기록 저장이 동작하지 않습니다.** 웹페이지에서는 연결 전이라고 안내합니다. 가상 정답률은 표시하지 않습니다.
 
-## 운영자가 해야 할 일 (현재 실제 로그인은 연결 전)
+## 권장 구성
 
-1. [Supabase](https://supabase.com/) 프로젝트 생성. Auth → Providers에서 Email을 사용하도록 설정. 운영 시 메일 발송 설정/사용량 제한 확인.
-2. Supabase **SQL Editor**에서 `account/schema.sql`을 실행. 테이블, RLS, RPC가 생성되었는지 확인.
-3. Authentication → URL Configuration에서 Site URL을 `https://kimheeseo.github.io/kimheeseo/quiz500/`로 설정하고 Redirect URLs에 `https://kimheeseo.github.io/kimheeseo/quiz500/**`를 허용.
-4. Project Settings/API에서 공개 Project URL과 **Publishable key** (레거시 프로젝트는 `anon` 공개 키)를 `quiz500/account-config.js`에 입력. 비밀키는 절대로 커밋하지 말 것.
-5. PR 병합 후 GitHub Pages 배포. 실제 메일 링크를 통해 로그인하고 통신공학/무선공학의 정답·오답을 각각 한 번씩 제출하여 개인 대시보드 확인.
-6. 두 개의 서로 다른 계정으로 같은 문항을 풀어 집계 확인. 같은 계정으로 동일 문항 재풀이 시 **회원 전체 통계는 최초 응답을 유지**, 개인 통계만 늘어나는지 확인.
-7. 20명 미만의 집계 정답률 미노출, 회원 간 원본 기록 접근 차단(RLS), 로그아웃/기록 삭제, 오프라인 복구, 모바일 UI 확인.
+1. **로그인:** Google OAuth 2.0 (Supabase Auth의 Google provider)
+2. **학습 데이터:** Supabase PostgreSQL + 사용자별 RLS
+3. **정적 웹 호스팅:** 기존 GitHub Pages 유지
+4. **Google Drive 권한:** 요구하지 않음. 구글 Drive는 로그인 서비스나 사용자 공유 통계 DB 용도가 아닙니다.
+5. 별도 비밀번호 등록 불필요. 계정 고유 ID는 Google 로그인 후 Supabase의 auth.users.id 사용.
 
-## API (공개 PostgREST RPC 경유)
+## 연결 방법 (운영자)
 
-- `telecom_record_attempt(p_event_id,p_subject,p_key,p_question_id,p_chapter,p_topic,p_difficulty,p_correct)` — 인증된 계정의 채점 이벤트 1건
-- `telecom_my_stats()` — 내 단원·난이도별 누적 응답 (재풀이 포함)
-- `telecom_question_stats(p_subject,p_key)` — 계정별 최초 응답 기준 문항 통계 (n≥20일 때만 정답률 공개)
-- `telecom_cohort_topics(p_subject)` — 20명 이상 단원별 전체 집계
-- `telecom_delete_my_attempts()` — 내 원격 채점 기록 삭제 (기존 브라우저 기록/익명 Cloudflare 집계는 삭제되지 않음)
+1. [Supabase](https://supabase.com)에서 프로젝트 생성. SQL Editor에서 `quiz500/account/schema.sql` 전체 실행.
+2. Supabase 대시보드 Authentication → Providers → Google을 활성화하기 위한 Google OAuth Client ID, Client Secret 준비.
+3. [Google Auth Platform](https://console.cloud.google.com/auth/overview)에서 프로젝트 및 OAuth 동의 화면 설정. OAuth Client ID는 **Web application** 유형 사용.
+4. Google OAuth의 Authorized JavaScript origins에 `https://kimheeseo.github.io` 추가. Authorized redirect URIs에는 **Supabase Google provider 설정 화면에 나오는 콜백 URL** (일반적으로 `https://<project-ref>.supabase.co/auth/v1/callback`)을 정확히 추가합니다. Client Secret은 반드시 Google Cloud/Supabase 설정 화면에만 입력하고 GitHub에 올리지 않습니다.
+5. Supabase Authentication → URL Configuration에서 Site URL을 `https://kimheeseo.github.io/kimheeseo/quiz500/`, Redirect URLs에 동일 URL을 등록.
+6. `quiz500/account-config.js`의 `url` 및 **publishable key**를 채웁니다. 공개 키만 허용하며 `service_role`, Google Client Secret, Google API Secret 등 비밀키는 절대로 커밋하지 않습니다.
+7. GitHub Pages가 배포된 뒤 Google 계정 선택 → 통신공학/무선공학 문제 채점 → 상단 '내 학습 분석'의 수치를 확인합니다. 최소 2계정으로 내 기록만 읽을 수 있는지, 동일 문항 재풀이 시 공동 통계가 중복되지 않는지 확인합니다.
 
-## 유의사항
+Supabase 공식 안내: [Google 로그인](https://supabase.com/docs/guides/auth/social-login/auth-google) · [OAuth 리디렉션 URL](https://supabase.com/docs/guides/auth/redirect-urls).
 
-- GitHub Pages는 정적 호스팅입니다. **Supabase 프로젝트/메일 설정 없이 코드만 병합하면 로그인이나 서버 집계가 실제로 작동하지 않습니다.**
-- 공개된 브라우저 JavaScript 안에는 정답이 존재하므로, 로그인/RLS만으로 허위 정답 제출을 완벽히 막을 수 없습니다. 공개 서비스 운영 전 CAPTCHA, 속도 제한, 이상 응답 탐지, 이메일 인증 및 DB 백업/개인정보 처리 방침을 검토하세요.
-- 테스트용 가짜 통계는 제공하지 않습니다. 실제 표본이 생기기 전에는 수치 대신 '대기'가 표시됩니다.
-- Supabase 요금제와 이메일 발송의 무료 한도·상용 운영 조건은 서비스의 최신 정책을 확인해야 합니다.
-- 통신공학/무선공학의 과거 브라우저 기반 개인 데이터는 별도 이관 절차를 만들기 전에는 계정 통계에 포함되지 않습니다.
+## 데이터 보존·분석 규칙
+
+- 화면에서 **서버 채점 기록 저장에 동의한 로그인 회원**의 응답만 서버에 추가합니다.
+- 로그인하지 않거나 미설정 상태에서도 기존 문제 풀기, 브라우저 기반 오답노트·진도·로컬 기록은 그대로 사용 가능합니다.
+- 익명 Cloudflare 공동 통계 코드는 별도 유지합니다. 설정이 비어 있는 경우 기존과 같이 '연결 전' 표시됩니다.
+- 각 기록: 회원 ID(인증 서버에서 부여), 문항 키/버전, 주제·단원·난이도, 정오답 및 풀이 시각, 이벤트 UUID. 문항 본문이나 Google Drive 문서는 서버에 업로드하지 않습니다.
+- 전체 난이도: 한 로그인 계정당 동일 문항 버전의 **최초 풀이만** 집계합니다. 문항별 유효 응답 20건 미만은 정답률을 비공개합니다. 단원별/전체 평균은 서로 다른 회원 20명 이상에서만 노출합니다.
+- 개인 정답률: 오답 복습 포함 모든 채점 결과. 전원 평균과 개인 평균의 분모가 다른 점을 UI에서 구분합니다.
+- 같은 브라우저·계정의 네트워크 장애나 재시도로 인한 중복 기록은 이벤트 UUID로 제거합니다.
+- 다른 회원의 원본 기록은 조회 불가능하게 RLS 보호. 회원은 서버 학습 기록을 삭제할 수 있으며 익명 통계나 다른 회원 기록에는 영향을 주지 않습니다.
+- 과거 브라우저의 학습 기록을 로그인 계정에 자동 소급 이관하지 않습니다. 향후 별도 이관을 만들면 사용자 확인을 받아야 합니다.
+- 브라우저 JS에서 정답 확인이 가능한 구조이므로 악의적 통계 조작을 100% 방지할 수 없습니다. 운영 단계에서는 속도 제한, 자동화 탐지, 관리자 모니터링이 필요합니다.
+
+## 계정 통계 API
+
+- `telecom_record_attempt`: 인증 계정의 채점 이벤트 기록, UUID 기준 재전송 중복 제거
+- `telecom_my_stats`: 개인 단원/난이도별 정답·오답 집계
+- `telecom_global_summary`: 전체 최초 응답 평균 (고유 계정 수가 20 미만이면 비공개)
+- `telecom_cohort_topics`: 단원별 전체 최초 응답 비교 (고유 계정 수 20 미만이면 비공개)
+- `telecom_question_stats`: 문항별 전체 실측 정답률/난이도 (표본 20 미만이면 비공개)
+- `telecom_delete_my_attempts`: 내 서버 학습 기록 삭제
+
+## 배포 전 기능 시험 목록
+
+- [ ] Google Auth 연결 및 리디렉션 성공 / 로그아웃
+- [ ] Google Drive 권한 동의 화면 없음
+- [ ] 로그인 전·후 개인 학습기록과 정오답 채점 동일
+- [ ] 두 학습 과목 채점 이벤트 서버 기록
+- [ ] 다른 회원의 원본 데이터 비공개(RLS) 검증
+- [ ] 반복 풀이: 개인 기록 누적, 전체 난이도는 최초 1회만
+- [ ] 20명 미만 통계 비공개
+- [ ] 오프라인 재전송 및 중복 방지
+- [ ] 기록 저장 동의 해제 및 내 기록 삭제
+- [ ] PC·모바일, 공무원 메뉴 등 기존 내비게이션 유지
+
+> 유의: 실제 Supabase 프로젝트/API 키/Google OAuth Client Secret이 아직 구성되지 않았다면 연동 테스트는 미실행 상태입니다. Supabase의 무료 한도 및 Google OAuth 사용 정책은 운영 시 최신 조건을 확인하세요.
