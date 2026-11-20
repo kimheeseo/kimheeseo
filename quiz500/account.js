@@ -128,6 +128,19 @@
     summary.append(statCard('서버 누적 풀이',attempts+'건'),statCard('나의 정답률',attempts?fmt(100*correct/attempts):'—'),statCard('나의 오답',attempts-correct+'건'));
     target.append(summary);
     if(!filtered.length){target.append(make('p','ta-muted','이 계정으로 누적된 풀이가 없습니다. 로그인한 상태에서 통신공학 또는 무선공학 문제를 풀어 주세요.'));return}
+    target.append(make('h3','','난이도별 나의 취약점'));
+    for(const level of ['하','중','상','미분류']){
+      const group=filtered.filter(x=>x.difficulty===level);
+      const count=group.reduce((n,x)=>n+Number(x.attempts||0),0);
+      if(!count)continue;
+      const right=group.reduce((n,x)=>n+Number(x.correct||0),0);
+      const pct=100*right/count;
+      const row=make('div','ta-row');
+      row.append(make('strong','',(level==='미분류'?'난이도 미분류':level+' 난이도')+' · 정답률 '+fmt(pct)));
+      row.append(make('div','ta-detail','풀이 '+count+'건 · 오답 '+(count-right)+'건'));
+      row.append(pctBar(pct));
+      target.append(row);
+    }
     const map=new Map();
     filtered.forEach(x=>{const key=x.subject+':'+x.chapter;const before=map.get(key)||{subject:x.subject,chapter:x.chapter,attempts:0,correct:0,levels:{}};before.attempts+=Number(x.attempts||0);before.correct+=Number(x.correct||0);const lv=x.difficulty||'미분류';before.levels[lv]=(before.levels[lv]||0)+Number(x.attempts||0);map.set(key,before)});
     const sorted=[...map.values()].sort((a,b)=>(a.correct/a.attempts)-(b.correct/b.attempts));
