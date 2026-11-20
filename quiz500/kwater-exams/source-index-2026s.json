@@ -6,7 +6,7 @@
     "note": "원본은 사용자 제공 PDF이며 빡취쌤 Ⓒ2025 저작권 표시가 있어 문제·그림·선택지 전체를 공개 저장소에 그대로 재게시하지 않았습니다. 원본 40문항은 주제·단원·페이지·정답표 메타데이터만 분류하며, 재검증 전 자동 채점하지 않습니다.",
     "sourceFile": "2026(상)_K-water_전공모의_학생용(1).pdf",
     "isOfficialKwaterExam": false,
-    "originalAnswerStatus": "원본 정답표를 전사했으나 20·22번 등 검증 이슈가 있어 검증 전 자동 채점하지 않습니다."
+    "originalAnswerStatus": "원본 정답표 전사. 20번의 8-VSB 이상 최소 대역폭(48 MHz)은 원본과 일치함을 검증했으며, 22번 복수정답 및 그림·법령 문항 등 별도 점검 대상은 자동 채점하지 않습니다."
   },
   "questions": [
     {
@@ -362,8 +362,8 @@
       "topic": "영상 전송률",
       "summary": "화소·프레임·비트·8-VSB 대역폭 계산",
       "referenceAnswer": 2,
-      "reviewStatus": "검토 필요",
-      "reviewNote": "정답표 ②=48 MHz이나 200,000×60×24÷3=96 MHz로 산술 불일치",
+      "reviewStatus": "원문 참고(대역폭 가정 명시, 재출판·자동채점 보류)",
+      "reviewNote": "200,000화소×60프레임×24 bit=288 Mb/s. 8-VSB는 3 bit/심벌이므로 96 Mbaud. 잔류측파대 및 롤오프를 무시한 이상적 최소 VSB 대역폭=96/2=48 MHz로 원본 정답 ②와 일치. 실제 대역폭은 필터 조건에 의존.",
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
