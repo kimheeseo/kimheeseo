@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K-water 전자통신 전공 문제은행 · 모의고사 | 통신직 준비</title>
+<meta name="description" content="K-water 2026 상반기 전자통신 전공 모의고사 40문항 단원 분류, 독립 제작 3개 회차 각 40문항·40분 풀이, 채점, 해설, 단원 학습 및 오답 복습">
+<style>
+:root{color-scheme:light;--bg:#f4f7fc;--ink:#223654;--muted:#687d98;--blue:#245fc2;--line:#dce5f2;--soft:#edf4ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6}
+main{max-width:1080px;margin:0 auto;padding:22px 16px 80px}h1{font-size:clamp(28px,4vw,42px);line-height:1.3;letter-spacing:-.04em;margin:8px 0}h2{font-size:21px;letter-spacing:-.02em;margin:0 0 10px}h3{font-size:17px;line-height:1.5}
+p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-block;margin:0 0 18px;font-weight:750;text-decoration:none;font-size:13px}
+.eyebrow{color:#4072bd;font-size:12px;font-weight:850;letter-spacing:.08em}
+.hero{padding:24px 24px 20px;background:linear-gradient(130deg,#e8f2ff,#fff);border:1px solid #d0def2;border-radius:20px;margin:7px 0 16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0 5px}
+.meta span{font-size:12px;font-weight:800;background:#fff;border:1px solid #cadcf4;color:#385b91;border-radius:99px;padding:5px 10px}
+.notice{padding:13px 15px;border:1px solid #eedeb8;background:#fff9ed;border-radius:12px;font-size:13px;line-height:1.75;color:#735b31;margin:12px 0}
+.workspace{display:grid;grid-template-columns:245px minmax(0,1fr);gap:16px;align-items:start}
+.sidebar,.panel{border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 9px 24px #1b37500a}
+.sidebar{padding:16px;position:sticky;top:12px}.side-label{font-size:12px;color:#607695;font-weight:850;margin:0 0 10px}
+.nav-buttons{display:grid;gap:7px}.nav-buttons button{border:1px solid #d5e2f3;border-radius:11px;background:#fff;color:#385575;text-align:left;font-weight:750;padding:12px;font:inherit;font-size:13px;cursor:pointer}
+.nav-buttons button[aria-pressed=true]{background:#e8f1ff;border-color:#6a99dd;color:#1b55ac}
+.nav-buttons small{font-size:11px;color:#7b8da4;display:block;margin-top:4px}
+.select{width:100%;padding:11px;background:#fff;border:1px solid #cbdaf0;border-radius:10px;color:#2c476b;font:inherit;font-size:13px}
+.summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:16px}
+.metric{background:#f5f9ff;border:1px solid #e1eaf6;border-radius:12px;padding:11px;min-width:0}
+.metric span{display:block;color:#69809c;font-size:11px;font-weight:750}
+.metric b{display:block;font-size:23px;color:#275ab3;margin-top:4px}
+.panel{padding:23px;min-height:260px}
+.toolbar{display:flex;gap:9px;justify-content:space-between;align-items:center;flex-wrap:wrap;border-bottom:1px solid #e4eaf3;padding-bottom:13px;margin:0 0 15px}
+.tiny{font-size:12px;color:#71839c}
+.badge{display:inline-block;border-radius:99px;border:1px solid #bfd1ee;background:#eaf2ff;color:#305aa2;padding:3px 9px;font-size:11px;font-weight:800}
+.badge.warn{background:#fff5e5;color:#986b2b;border-color:#e9cf9e}
+.progress{width:100%;height:9px;background:#edf2fa;border-radius:99px;overflow:hidden;margin:10px 0 16px}.progress i{display:block;background:#336bd4;height:100%;border-radius:99px}
+.grid-numbers{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;margin:10px 0 21px}
+.grid-numbers button{border:1px solid #d8e1ef;background:#f8fbff;color:#596c88;padding:8px 0;border-radius:7px;font-size:12px;cursor:pointer;font-weight:800}
+.grid-numbers button.done{border-color:#73a0e4;background:#e5f1ff;color:#1d57b2}
+.grid-numbers button.active{outline:2px solid #2e63c0;outline-offset:1px}
+.question-meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap;margin:8px 0}
+.question-text{font-size:clamp(17px,2.5vw,21px);font-weight:780;color:#223758;line-height:1.7;margin:13px 0 20px;white-space:pre-line}
+.options{display:grid;gap:9px;margin:15px 0 21px}
+.option{display:flex;align-items:start;gap:12px;text-align:left;cursor:pointer;width:100%;padding:14px;border:1px solid #d9e4f2;background:#fff;color:#324a6a;border-radius:12px;font:inherit;font-size:14px;line-height:1.6}
+.option b{background:#e9f1fd;border-radius:50%;min-width:28px;height:28px;display:grid;place-items:center;color:#3964ad;font-size:12px}
+.option.selected{border:2px solid #3b74d1;padding:13px;background:#eef5ff}
+.option.correct{border-color:#2e976a;background:#ebfaf3}.option.incorrect{border-color:#d38c86;background:#fff0f0}
+.controls{display:flex;gap:9px;justify-content:space-between;flex-wrap:wrap;align-items:center;margin:16px 0}
+.btn{padding:11px 17px;border-radius:10px;border:1px solid #c2d4ef;background:#fff;color:#2d5dab;font:inherit;font-size:13px;cursor:pointer;font-weight:800}
+.btn.primary{background:#285fbf;color:white;border-color:#285fbf}.btn.danger{color:#9b4d43;border-color:#e4beb3;background:#fff6f3}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.feedback{padding:15px;border-radius:12px;border:1px solid #b6dcce;background:#f0fbf6;color:#265747;line-height:1.7;font-size:14px;margin:14px 0}
+.feedback.wrong{background:#fff7f1;border-color:#efd6c7;color:#77513d}
+.score-card{background:#edf5ff;border:1px solid #cadcf6;border-radius:16px;padding:19px;margin:13px 0}
+.score-card strong{font-size:35px;color:#1b58b5}
+.chart-row{display:grid;grid-template-columns:145px 1fr 52px;gap:9px;margin:12px 0;align-items:center;font-size:12px}
+.chart-row .track{height:10px;background:#e9f0fb;border-radius:8px;overflow:hidden}
+.chart-row .track i{display:block;height:100%;background:#366dd0}
+.chart-row b{text-align:right}
+.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.source-item{border:1px solid #dfe7f2;border-radius:11px;padding:12px;background:#fbfdff}
+.source-item summary{cursor:pointer;font-size:13px;font-weight:800;color:#344f76}
+.source-item p{font-size:12px;line-height:1.75;margin:8px 0}
+.source-item .source-title{font-weight:850;font-size:13px}
+.foot{font-size:12px;color:#778aa1;margin:18px 0;line-height:1.75}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid #85a7e5;outline-offset:3px}
+@media(max-width:830px){.workspace{grid-template-columns:1fr}.sidebar{position:static}.nav-buttons{grid-template-columns:repeat(2,minmax(0,1fr))}.summary{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:560px){main{padding:13px 10px 65px}.hero{padding:19px 15px}.panel{padding:15px}.sidebar{padding:12px}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-numbers{grid-template-columns:repeat(8,1fr)}.source-grid{grid-template-columns:1fr}.chart-row{grid-template-columns:100px 1fr 35px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style></head><body><main>
+<a class="crumb" href="../interview/kwater.html">← 한국수자원공사 채용·면접 페이지</a>
+<section class="hero">
+<div class="eyebrow">K-WATER · TELECOMMUNICATIONS · PRACTICE BANK</div>
+<h1>한국수자원공사 전자통신 문제은행</h1>
+<p>첨부된 2026 상반기 민간 모의고사 40문항의 <b>단원 분류·검토 기록</b>과 이를 참고해 독립 제작한 <b>3회차 × 40문항 = 120문항</b>을 제공합니다.</p>
+<div class="meta"><span>회차별 40문항 / 40분</span><span>문항마다 정답·해설</span><span>단원별 학습·오답 복습</span><span>비공식 창작 모의고사</span></div>
+</section>
+<div class="notice"><strong>출처·정답 주의:</strong> 제공 PDF는 <b>‘빡취쌤’ 제작(© 2025)</b> 자료이며 공식 K-water 기출이 아닙니다. 저작권이 있는 원문과 그림을 공개 저장소에 그대로 재게시하지 않고 40문항의 주제·페이지·원문 정답표만 보존했습니다. 원본의 20번(계산·정답 불일치), 22번(복수정답), 일부 그림·법령 문항은 검토 대상으로 분리해 <b>자동 채점하지 않습니다.</b> 아래 2~4회차 문제는 독립 창작입니다.</div>
+<div class="workspace"><aside class="sidebar">
+<div class="side-label">학습 모드 선택</div><nav id="modes" class="nav-buttons" aria-label="학습 모드">
+<button type="button" data-mode="round" data-round="2" aria-pressed="true">모의고사 2회차<small>신규 40문항</small></button>
+<button type="button" data-mode="round" data-round="3" aria-pressed="false">모의고사 3회차<small>신규 40문항</small></button>
+<button type="button" data-mode="round" data-round="4" aria-pressed="false">모의고사 4회차<small>신규 40문항</small></button>
+<button type="button" data-mode="chapter" aria-pressed="false">단원별 문제은행<small>120문항 단원 분류</small></button>
+<button type="button" data-mode="source" aria-pressed="false">첨부 원본 1회차<small>40문항 주제·검토 기록</small></button>
+<button type="button" data-mode="history" aria-pressed="false">내 학습 기록<small>회차별 점수·오답</small></button>
+</nav>
+<div id="chapter-container" hidden style="margin:16px 0"><label class="side-label" for="chapter">학습 단원</label><select class="select" id="chapter"></select></div>
+<div class="summary" id="sidebar-stats" aria-live="polite"></div>
+<p class="tiny" style="margin-top:15px">학습기록은 현재 브라우저에만 저장됩니다. 다른 기기와 자동으로 공유되지 않습니다.</p>
+</aside>
+<section class="panel" id="main-content" aria-live="polite"><p>문제은행을 불러오는 중입니다.</p></section></div>
+<p class="foot">자료 정리: 2026.11.20 · 출처 분류: 원본 40문항 / 자체 제작 120문항. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
+</main><script>
+"use strict";
+const $=sel=>document.querySelector(sel);
+const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const saveKey="kwater_study_v1";
+let db=null,source=null,mode="round",round=2,chapter="all",idx=0;
+let store={drafts:{},history:[]};
+try{const from=JSON.parse(localStorage.getItem(saveKey));if(from&&typeof from==="object")store={drafts:from.drafts||{},history:from.history||[]}}catch{}
+function persist(){try{localStorage.setItem(saveKey,JSON.stringify(store))}catch{}}
+function examKey(){return mode==="chapter"?"chapter:"+chapter:"round:"+round}
+function draft(){const key=examKey();if(!store.drafts[key])store.drafts[key]={answers:{},submitted:false,started:Date.now(),position:0};return store.drafts[key]}
+function questions(){const all=db.rounds.flatMap(r=>r.questions);return mode==="round"?db.rounds.find(r=>r.round===round).questions:chapter==="all"?all:all.filter(q=>q.chapter===chapter)}
+function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(ans[q.id]===q.answer),0)}
+function metrics(kv){return '<div class="summary">'+kv.map(row=>'<div class="metric"><span>'+esc(row[0])+'</span><b>'+esc(row[1])+'</b></div>').join("")+'</div>'}
+function setStats(){let items=(mode==="round"||mode==="chapter")?questions():[];let d=(mode==="round"||mode==="chapter")?draft():null;let filled=d?items.filter(q=>d.answers[q.id]!==undefined).length:0;$("#sidebar-stats").innerHTML=metrics([["문항 수",items.length],["선택 완료",filled],["제출 기록",store.history.length],["학습 방식",mode==="round"?"40분":mode==="chapter"?"단원별":"조회"]])}
+function setMode(newMode,newRound){
+ mode=newMode;if(newRound)round=newRound;
+ idx=0;
+ $("#chapter-container").hidden=mode!=="chapter";
+ document.querySelectorAll("#modes button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===mode&&(mode!=="round"||Number(b.dataset.round)===round))));
+ render()
+}
+function remaining(d){return Math.max(0,2400-Math.floor((Date.now()-(d.started||Date.now()))/1000))}
+function hhmm(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function render(){
+ if(!db||!source)return;
+ if(mode==="source")return renderSource();
+ if(mode==="history")return renderHistory();
+ const items=questions(),d=draft();idx=Math.min(Math.max(0,idx),items.length-1);d.position=idx;persist();setStats();
+ if(!items.length){$("#main-content").innerHTML='<div class="empty">해당 단원에는 학습 문제가 없습니다.</div>';return}
+ if(d.submitted)return renderScore(items,d);
+ const q=items[idx];const answered=items.filter(x=>d.answers[x.id]!==undefined).length;
+ $("#main-content").innerHTML=
+ '<div class="toolbar"><div><h2>'+(mode==="round"?"K-water 창작 모의고사 "+round+"회차":"단원별 문제은행")+'</h2><span class="badge">'+esc(q.chapter)+'</span> <span class="badge">'+esc(q.difficulty)+'</span></div><div class="tiny">'+(mode==="round"?'남은 시간 <b id="timer">'+hhmm(remaining(d))+'</b> · ':'')+answered+' / '+items.length+' 선택</div></div>'+
+ '<div class="progress"><i style="width:'+(answered/items.length*100)+'%"></i></div>'+
+ '<div class="grid-numbers" id="question-nav">'+items.map((v,i)=>'<button type="button" data-index="'+i+'" class="'+(d.answers[v.id]!==undefined?'done ':'')+(idx===i?'active':'')+'" aria-label="'+(i+1)+'번 문항으로 이동">'+(i+1)+'</button>').join("")+'</div>'+
+ '<div class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+'</span></div>'+
+ '<div class="question-text">'+esc(q.question)+'</div>'+
+ '<div class="options">'+q.options.map((t,i)=>'<button type="button" class="option '+(d.answers[q.id]===i?'selected':'')+'" data-answer="'+i+'" aria-pressed="'+(d.answers[q.id]===i)+'"><b>'+(i+1)+'</b><span>'+esc(t)+'</span></button>').join("")+'</div>'+
+ '<div class="controls"><button class="btn" id="prev" type="button" '+(idx===0?'disabled':'')+'>← 이전 문항</button><button class="btn" id="next" type="button" '+(idx===items.length-1?'disabled':'')+'>다음 문항 →</button><button class="btn primary" id="submit" type="button">답안 제출·채점</button></div>'+
+ '<p class="tiny">답안을 제출하면 정답 및 해설이 공개됩니다. 회차별 채점 기록은 현재 브라우저에만 남습니다.</p>';
+ $("#question-nav").querySelectorAll("button").forEach(b=>b.onclick=()=>{idx=+b.dataset.index;render()});
+ $(".options").querySelectorAll("button").forEach(b=>b.onclick=()=>{d.answers[q.id]=+b.dataset.answer;persist();render()});
+ $("#prev").onclick=()=>{idx--;render()};
+ $("#next").onclick=()=>{idx++;render()};
+ $("#submit").onclick=()=>{if(!window.confirm("답안을 제출하고 정답·해설을 확인하시겠습니까? 미응답 문항은 오답 처리됩니다."))return;d.submitted=true;d.finished=Date.now();const score=correctlyAnswered(items,d.answers);store.history.unshift({key:examKey(),mode,round,chapter,count:items.length,answered,correct:score,date:new Date().toISOString()});store.history=store.history.slice(0,100);persist();render()};
+}
+function renderScore(items,d){
+ const score=correctlyAnswered(items,d.answers),pct=Math.round(score/items.length*100),byGroup={};
+ items.forEach(q=>{const g=byGroup[q.chapter]||(byGroup[q.chapter]={total:0,correct:0});g.total++;if(d.answers[q.id]===q.answer)g.correct++});
+ $("#main-content").innerHTML='<div class="toolbar"><h2>모의고사 채점 결과</h2><span class="badge">답안 제출 완료</span></div>'+
+ '<div class="score-card"><strong>'+score+' / '+items.length+'</strong><p>정답률 '+pct+'% · 총 '+items.length+'문항</p></div>'+
+ '<h3>단원별 성적</h3>'+Object.entries(byGroup).map(([k,v])=>'<div class="chart-row"><span>'+esc(k)+'</span><div class="track"><i style="width:'+Math.round(v.correct/v.total*100)+'%"></i></div><b>'+v.correct+'/'+v.total+'</b></div>').join("")+
+ '<div class="controls"><button class="btn danger" id="retry">이 회차 다시 풀기</button><button class="btn" id="wrongonly">오답만 보기</button><button class="btn primary" id="allreview">전체 정답·해설 보기</button></div><div id="reviews"></div>';
+ $("#retry").onclick=()=>{if(!window.confirm("현재 회차 답안을 초기화하고 다시 푸시겠습니까? 이전 제출 기록은 유지됩니다."))return;store.drafts[examKey()]={answers:{},submitted:false,started:Date.now(),position:0};idx=0;persist();render()};
+ $("#wrongonly").onclick=()=>showReviews(items,d,true);
+ $("#allreview").onclick=()=>showReviews(items,d,false);
+ showReviews(items,d,true);
+}
+function showReviews(items,d,wrong){
+ const chosen=items.filter(q=>!wrong||d.answers[q.id]!==q.answer);
+ $("#reviews").innerHTML='<h3>'+(wrong?'오답·미응답':'전체')+' 해설 '+chosen.length+'문항</h3>'+(chosen.length?chosen.map(q=>{
+ const selected=d.answers[q.id];const correct=selected===q.answer;
+ return '<details class="source-item" style="margin:9px 0" '+(!correct?'open':'')+'><summary><span class="badge '+(correct?'':'warn')+'">'+(correct?'정답':'오답')+'</span> '+esc(q.id)+' · '+esc(q.question)+'</summary><p>내 답: '+(selected===undefined?'미응답':esc(q.options[selected]))+'</p><p><b>정답:</b> '+(q.answer+1)+'번 · '+esc(q.options[q.answer])+'</p><p><b>해설:</b> '+esc(q.explanation)+'</p><p class="tiny">단원: '+esc(q.chapter)+' / '+esc(q.topic)+'</p></details>'
+ }).join(""):'<p>선택한 조건에 해당하는 문항이 없습니다.</p>');
+}
+function renderSource(){
+ setStats();
+ const recs=source.questions;
+ const flagged=recs.filter(q=>q.reviewStatus==="검토 필요").length;
+ $("#main-content").innerHTML='<h2>2026 상반기 원본 PDF · 40문항 분류표</h2>'+
+ '<p><span class="badge warn">원본 전사·채점 보류</span> 40문항의 주제·단원·PDF 페이지·정답표를 분류했습니다. 문제 지문·선택지·그림은 저작권 및 검증을 고려해 공개 저장소에 복제하지 않았습니다.</p>'+
+ metrics([["단원 분류","12개"],["참조 문항","40개"],["검토 표시",flagged+"개"],["원본 시간","40분"]])+
+ '<div class="source-grid">'+recs.map(q=>'<details class="source-item"><summary>문항 '+q.number+' · '+esc(q.topic)+' <span class="badge '+(q.reviewStatus==="검토 필요"?'warn':'')+'">'+esc(q.chapter)+'</span></summary>'+
+ '<p class="source-title">'+esc(q.summary)+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p></details>').join("")+'</div>';
+}
+function renderHistory(){
+ setStats();
+ $("#main-content").innerHTML='<h2>나의 학습 기록</h2><p>이 브라우저에서 제출한 모의고사 채점 결과입니다. 계정·서버에 누적되지 않습니다.</p>'+
+ (store.history.length?store.history.map(v=>'<div class="source-item" style="margin:9px 0"><b>'+esc(v.mode==="round"?"신규 "+v.round+"회차":"단원별 "+v.chapter)+'</b> · '+esc(v.correct)+' / '+esc(v.count)+'문항 <span class="tiny">'+esc(new Date(v.date).toLocaleDateString("ko-KR"))+'</span></div>').join(""):'<div class="notice">아직 제출한 모의고사 기록이 없습니다.</div>');
+}
+async function init(){
+ try{const [r,s]=await Promise.all([fetch("./generated-mocks-2-4.json",{cache:"no-store"}),fetch("./source-index-2026s.json",{cache:"no-store"})]);
+ if(!r.ok||!s.ok)throw Error("JSON 데이터 서버 응답 오류");
+ db=await r.json();source=await s.json();
+ if(db.rounds.length!==3||db.rounds.some(x=>x.questions.length!==40)||source.questions.length!==40)throw Error("문제 수가 예상과 다릅니다.");
+ const chapters=[...new Set(db.rounds.flatMap(r=>r.questions.map(q=>q.chapter)))];
+ $("#chapter").innerHTML='<option value="all">전체 단원 · 120문항</option>'+chapters.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
+ $("#chapter").onchange=e=>{chapter=e.target.value;idx=0;render()};
+ document.querySelectorAll("#modes button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode,Number(b.dataset.round)||null));
+ const params=new URLSearchParams(location.search);const qround=Number(params.get("round"));
+ if([2,3,4].includes(qround))round=qround;
+ if(params.get("mode")==="source")mode="source";else if(params.get("mode")==="chapter"){mode="chapter";const q=params.get("chapter");if(q&&chapters.includes(q))chapter=q;$("#chapter").value=chapter}
+ setMode(mode,round);
+ }catch(e){$("#main-content").innerHTML='<h2>데이터 로드 실패</h2><p>'+esc(e.message)+'</p><p>GitHub Pages 배포 이후 새로고침하시거나 저장소의 JSON 파일 경로를 확인하세요.</p>';}
+}
+init();
+setInterval(()=>{if(db&&mode==="round"){const e=$("#timer");if(e){const d=draft();e.textContent=hhmm(remaining(d));if(remaining(d)===0)e.textContent="00:00 · 시간 초과(제출 필요)"}}},1000);
+</script></body></html>
