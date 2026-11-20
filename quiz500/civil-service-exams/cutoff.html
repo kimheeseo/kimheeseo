@@ -159,7 +159,7 @@ function renderTable(){
  document.querySelectorAll(".rowpick").forEach(btn=>btn.addEventListener("click",()=>{state.focus=btn.dataset.id;renderTrend();const el=$("#trend-chart");el.open=true;el.scrollIntoView({behavior:"smooth",block:"start"})}));
 }
 function renderComparison(){
- let source=filtered(),pick=source.slice(0,12),max=Math.max(100,...pick.flatMap(x=>[current(x),prior(x)]).filter(Number.isFinite));
+ let source=filtered(),pick=[...source].sort((a,b)=>Number(includesFocus(b))-Number(includesFocus(a))).slice(0,12),max=Math.max(100,...pick.flatMap(x=>[current(x),prior(x)]).filter(Number.isFinite));
  if(!pick.length){$("#compare-chart").innerHTML='<div class="empty">해당 조건의 데이터가 없습니다.</div>';return}
  $("#compare-chart").innerHTML=pick.map(x=>{const a=current(x),b=prior(x);
   return '<div class="chart-row"><span class="chart-name">'+safe(x.name)+'</span><div class="bar-lines"><div class="bar-line"><i class="bar-fill" style="width:'+Math.max(0,100*a/max)+'%"></i></div><div class="bar-line prior">'+(b==null?'<span style="font-size:10px;color:#8292a8">전년 자료 없음</span>':'<i class="bar-fill" style="width:'+Math.max(0,100*b/max)+'%"></i>')+'</div></div><span class="chart-val">'+fmt(a)+'<br><span style="color:#b8793d">'+fmt(b)+'</span></span></div>'
