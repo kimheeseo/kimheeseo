@@ -127,3 +127,30 @@ grant execute on function public.telecom_question_stats(text,text) to authentica
 grant execute on function public.telecom_cohort_topics(text) to authenticated;
 grant execute on function public.telecom_my_stats() to authenticated;
 grant execute on function public.telecom_delete_my_attempts() to authenticated;
+
+-- All-member accuracy uses the first valid attempt of each member for each question.
+-- No individual member records are returned.
+create or replace function public.telecom_global_summary(p_subject text default null)
+returns jsonb language sql stable security definer set search_path = ''
+as $$
+with firsts as (
+  select distinct on (user_id,subject,question_key)
+    user_id,correct
+  from public.telecom_attempts
+  where p_subject is null or subject=p_subject
+  order by user_id,subject,question_key,attempted_at,id
+), total as (
+  select count(distinct user_id)::int as members,
+         count(*)::int as responses,
+         count(*) filter (where correct)::int as correct
+  from firsts
+)
+select jsonb_build_object(
+  'members',members,
+  'responses',case when members>=20 then responses else null end,
+  'rate',case when members>=20 then round(100.0*correct/nullif(responses,0),1) else null end,
+  'minimumMembers',20
+) from total
+$$;
+revoke execute on function public.telecom_global_summary(text) from public,anon;
+grant execute on function public.telecom_global_summary(text) to authenticated;
