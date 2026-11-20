@@ -216,7 +216,7 @@
     clientPromise=new Promise((resolve,reject)=>{
       if(window.supabase?.createClient){resolve(window.supabase);return}
       const script=document.createElement('script');
-      script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js';
+      script.src='https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
       script.crossOrigin='anonymous';
       script.onload=()=>window.supabase?.createClient?resolve(window.supabase):reject(new Error('인증 모듈을 불러오지 못했습니다.'));
       script.onerror=()=>reject(new Error('인증 모듈 CDN 접속에 실패했습니다.'));
