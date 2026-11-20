@@ -117,7 +117,7 @@ let db=null,source=null,mode="round",round=2,chapter="all",studyRound="all",idx=
 let store={drafts:{},history:[]};
 try{const from=JSON.parse(localStorage.getItem(saveKey));if(from&&typeof from==="object")store={drafts:from.drafts||{},history:from.history||[]}}catch{}
 function persist(){try{localStorage.setItem(saveKey,JSON.stringify(store))}catch{}}
-function examKey(){return mode==="chapter"?"chapter:"+studyRound+":"+chapter:"round:"+round}
+function examKey(){return mode==="chapter"?(studyRound==="all"?"chapter:"+chapter:"chapter:"+studyRound+":"+chapter):"round:"+round}
 function draft(){const key=examKey();if(!store.drafts[key])store.drafts[key]={answers:{},submitted:false,started:Date.now(),position:0};return store.drafts[key]}
 function questions(){const all=db.rounds.flatMap(r=>r.questions);return mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)))}
 function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(ans[q.id]===q.answer),0)}
