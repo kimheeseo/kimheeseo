@@ -26,6 +26,65 @@
 .civil-2027-support p{margin:4px 0;color:#586b83;font-size:13px;line-height:1.7}
 .civil-2027-sources{font-size:12px;line-height:1.8}
 @media(max-width:650px){.civil-2027-header{padding:18px}.civil-2027-metrics{grid-template-columns:1fr}.civil-2027-timeline li{grid-template-columns:1fr;gap:0}.civil-2027-support{grid-template-columns:1fr}}
+</style><style id="civil-korail-ui">
+body{background:#f5f7fc;color:#233750}main{max-width:1060px;margin:0 auto;padding:25px 16px 78px}
+.civil-lead{font-size:15px;color:#516781;line-height:1.75}
+.civil-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:20px 0}
+.civil-summary>div{padding:15px;background:#fff;border:1px solid #d9e3f1;border-radius:15px;min-width:0}
+.civil-summary small{font-size:11px;color:#6a7d95;display:block;font-weight:800}
+.civil-summary strong{font-size:22px;color:#2859b0;display:block;margin:5px 0}
+.civil-help{background:#eaf2ff;border:1px solid #cfdef5;border-radius:12px;padding:13px 16px;margin:17px 0 22px;color:#486280;font-size:13px;line-height:1.75}
+.civil-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:start}
+.civil-category{background:#fff;border:1px solid #d2deec;border-radius:20px;overflow:hidden;min-width:0;box-shadow:0 10px 28px #182b4c0d;scroll-margin-top:18px}
+.civil-category[open]{grid-column:1/-1;border-color:#8faee8}
+.civil-category>summary{list-style:none;display:flex;align-items:center;gap:17px;min-height:132px;padding:23px 22px;cursor:pointer}
+.civil-category>summary::-webkit-details-marker,.civil-submenu>summary::-webkit-details-marker{display:none}
+.civil-category>summary:hover{background:#f8fbff}
+.civil-category[open]>summary{background:#eaf2ff;border-bottom:1px solid #dbe7f6}
+.civil-icon{width:54px;height:54px;flex:0 0 54px;border-radius:15px;border:1px solid #d5e2f0;display:grid;place-items:center;background:#f2f6fb;font-size:28px}
+.civil-name{flex:1;min-width:0}.civil-name b{display:block;color:#264267;font-size:20px;line-height:1.4}
+.civil-name small{display:block;color:#708199;font-size:13px;margin-top:7px;line-height:1.5}
+.civil-name em{display:block;color:#4b70a6;font-size:12px;font-weight:800;font-style:normal;margin-top:9px}
+.civil-sign{font-size:30px;color:#4b70b0;margin-left:auto;line-height:1}
+.civil-card-children{background:#fafcff;padding:13px 17px 18px;display:grid;gap:10px}
+.civil-submenu{border:1px solid #dae5f3;border-radius:13px;background:white;overflow:hidden;min-width:0;scroll-margin-top:22px}
+.civil-submenu>summary{padding:16px 17px;cursor:pointer;list-style:none;display:flex;align-items:center;gap:11px}
+.civil-submenu>summary:before{content:"";background:#7194ce;border-radius:50%;width:9px;height:9px;flex:0 0 9px}
+.civil-submenu>summary>span{flex:1;min-width:0;font-weight:800;font-size:14px;color:#29486c}
+.civil-submenu>summary small{font-size:12px;font-weight:500;color:#75869d;display:block;margin-top:5px}
+.civil-submenu .civil-sign{font-size:19px}
+.civil-submenu[open]>summary{border-bottom:1px solid #dbe6f5;background:#f0f5ff}
+.civil-detail{padding:16px 18px;font-size:14px;color:#495f7b;line-height:1.75;background:#fff}
+.civil-detail p{font-size:14px;line-height:1.75}
+.civil-detail .panel{padding:0;border:0;margin:8px 0;box-shadow:none}
+.civil-detail .civil-2027-header{padding:16px;margin:5px 0 12px}
+.civil-detail .civil-2027-header h2{font-size:23px}
+.civil-detail .notice{margin:9px 0}
+.civil-detail .links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.civil-detail .links a{white-space:normal;line-height:1.6}
+.civil-detail .civil-2027-metrics{gap:8px}
+.civil-btn{display:inline-flex;margin:8px 8px 4px 0;min-height:40px;align-items:center;border:1px solid #c5d6f4;border-radius:10px;background:#eff4ff;text-decoration:none;font-weight:800;font-size:12px;padding:9px 12px;color:#285bb8}
+.civil-btn:hover{background:#e1ebff}
+.civil-mini-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:10px 0}
+.civil-mini-stats>div{background:#f3f7ff;border:1px solid #dce7f8;border-radius:11px;padding:11px}
+.civil-mini-stats small{display:block;font-size:11px;color:#637a96}
+.civil-mini-stats strong{display:block;font-size:19px;color:#2a57a6;margin-top:4px}
+.civil-mini-bars{border:1px solid #dfe7f4;border-radius:11px;background:#fafcff;padding:12px;margin:13px 0}
+.civil-legend{font-size:11px;color:#698098;margin-bottom:11px}
+.civil-legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin:0 4px}
+.civil-orange{background:#df9d62}.civil-blue{background:#3a68c7}
+.civil-bar{display:grid;grid-template-columns:minmax(75px,105px) 1fr 78px;gap:10px;align-items:center;margin:9px 0;font-size:12px}
+.civil-bar>b{color:#405978}.civil-bar>small{font-size:11px;color:#41649f;font-weight:800;text-align:right}
+.civil-track{height:10px;background:#edf1f7;border-radius:5px;margin:4px 0;overflow:hidden}
+.civil-track i{display:block;height:100%;border-radius:5px}
+.civil-mini-table{overflow:auto;border:1px solid #e1e9f3;border-radius:10px;margin:12px 0}
+.civil-mini-table table{min-width:420px;font-size:12px}
+.civil-mini-table th,.civil-mini-table td{padding:10px}
+.civil-mini-table th:first-child,.civil-mini-table td:first-child{text-align:left}
+.civil-source-note{font-size:12px;color:#738399;margin:25px 0}
+:focus-visible{outline:3px solid #7194df;outline-offset:3px}
+@media(max-width:710px){main{padding:21px 12px 72px}.civil-card-grid{grid-template-columns:1fr}.civil-category[open]{grid-column:auto}.civil-category>summary{gap:13px;padding:20px 16px;min-height:130px}.civil-icon{width:49px;height:49px;flex-basis:49px;font-size:24px}.civil-name b{font-size:18px}.civil-name small{font-size:12px}.civil-card-children{padding:10px 11px 14px}.civil-detail{padding:13px 11px}.civil-mini-stats{grid-template-columns:1fr}.civil-detail .civil-2027-metrics{grid-template-columns:1fr}.civil-detail .links{grid-template-columns:1fr}.civil-summary{grid-template-columns:1fr 1fr}.civil-summary>div:last-child{grid-column:1/-1}}
+@media(max-width:420px){.civil-summary{grid-template-columns:1fr}.civil-summary>div:last-child{grid-column:auto}.civil-bar{grid-template-columns:78px 1fr 66px;gap:6px}.civil-bar>small{font-size:10px}}
 </style></head><body><main><a href="../">← 통신직 준비 홈페이지</a><h1>공무원 시험 일정 · 전기·통신 기출</h1><p class="lead">국가직·지방직 2015~2026년 상반기 시험에서 전기직과 통신직이 공부하는 <strong>전기이론·전기기기·전자공학·유선공학·통신이론</strong> 등 공개시험 자료를 찾는 경로와 별도로 제작한 연습문제를 제공합니다.</p>
 
 <section class="civil-2027-header" id="civil-service-schedule-2027" aria-labelledby="civil-2027-title">
@@ -78,4 +137,87 @@
 <section class="panel"><h2>연도별 공식 문제·정답 검색</h2><p class="small">다음 표는 해당 연도의 원문을 이미 모두 내려받아 검수했다는 뜻이 아니라, 공식 공개처에서 시행연도·직렬·과목으로 검색할 수 있도록 제공하는 안내입니다. 비공개 출제 과목은 공개 문제가 없을 수도 있습니다.</p><div class="scroll"><table><thead><tr><th>연도</th><th>국가직</th><th>지방직</th><th>확인 안내</th></tr></thead><tbody><tr><th scope="row">2015</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2016</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2017</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2018</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2019</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2020</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2021</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2022</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2023</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2024</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2025</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>해당 연도 검색 필요</td></tr><tr><th scope="row">2026</th><td><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">국가공무원 문제/정답 목록</a></td><td><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 문제/정답 목록</a></td><td>2026년 상반기 시험 범위만</td></tr></tbody></table></div>
 <p class="small">직렬별 권장 검색어: 전기직 → 전기이론 / 전기기기 / 전기자기학 / 회로이론. 통신기술직 → 통신이론 / 전자공학개론 / 유선공학개론 / 무선공학 / 정보통신. 지방직은 시행 기관·7급/9급·경력경쟁 여부에 따라 출제 과목이 달라집니다.</p></section>
 <section class="panel"><h2>확인된 공식 원문 열람처</h2><ul class="list"><li><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdLst.do" target="_blank" rel="noopener noreferrer">공식 인사혁신처 문제·정답 안내</a><span>국가직 및 일부 지방직 과목별 문제·정답 검색</span></li><li><a href="https://local.gosi.go.kr/klid/sihum/exampaper.do" target="_blank" rel="noopener noreferrer">지방자치단체 인터넷원서접수 문제·정답</a><span>시행기관·연도별 자료 확인</span></li><li><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdDtl.do?bbsId=BBSMSTR_000000000138&amp;pstId=5986" target="_blank" rel="noopener noreferrer">2026년 국가직 9급 시험 문제 공개</a><span>시험 문제를 시행기관에서 공개한 게시글</span></li><li><a href="https://gongmuwon.gosi.kr/oprut/EvmArPrblmCransGdDtl.do?bbsId=BBSMSTR_000000000138&amp;pstId=6010" target="_blank" rel="noopener noreferrer">2026년 지방직 9급 문제 공개</a><span>2026.6.20 시행 시험 문제</span></li><li><a href="https://local.gosi.go.kr/klid/sihum/exampaperView.do?pageNo=1&amp;pageUnit=10&amp;strClass=7&amp;strKeyword=&amp;strOperOrg=&amp;strOperOrgCd=10&amp;strOperYear=2025&amp;strOperYy=2025&amp;strSearch=0&amp;strSeq=3619" target="_blank" rel="noopener noreferrer">2025년 서울시 지방직 기술계고 문제 공개</a><span>통신기술(전자공학개론·유선공학개론) 및 전기시설(전기이론) 과목 명시</span></li></ul></section>
-<p class="small">기출자료 정리일: 2026-11-01 · 2027년 국가직 일정 반영일: 2026-11-20. 출제 과목 및 실제 문제 공개 여부는 연도별 공고를 우선하세요.</p></main></body></html>
+<p class="small">기출자료 정리일: 2026-11-01 · 2027년 국가직 일정 반영일: 2026-11-20. 출제 과목 및 실제 문제 공개 여부는 연도별 공고를 우선하세요.</p></main><script id="civil-korail-ui">
+(()=>{
+const main=document.querySelector("body>main");
+if(!main||document.querySelector(".civil-card-grid"))return;
+const direct=[...main.children];
+const get=id=>document.getElementById(id);
+const findPanel=s=>direct.find(el=>el.matches("section.panel")&&(el.querySelector("h2")?.textContent||"").includes(s));
+const box=(label,text)=>'<div><small>'+label+'</small><strong>'+text+'</strong></div>';
+const stats=(data)=>'<div class="civil-mini-stats">'+data.map(d=>box(d[0],d[1])).join("")+'</div>';
+const bt=(url,label)=>'<a class="civil-btn" href="'+url+'">'+label+' →</a>';
+const url=(grade,group,q,stage)=>'./cutoff.html?grade='+grade+(group?'&group='+encodeURIComponent(group):'')+(q?'&q='+encodeURIComponent(q):'')+(stage?'&stage='+encodeURIComponent(stage):'')+'#detail-table';
+const table=rows=>'<div class="civil-mini-table"><table><thead><tr>'+rows[0].map(v=>'<th>'+v+'</th>').join('')+'</tr></thead><tbody>'+rows.slice(1).map(r=>'<tr>'+r.map((v,i)=>i?'<td>'+v+'</td>':'<th scope="row">'+v+'</th>').join('')+'</tr>').join('')+'</tbody></table></div>';
+const bars=rows=>'<div class="civil-mini-bars"><div class="civil-legend">2025 <i class="civil-orange"></i> / 2026 <i class="civil-blue"></i> (일반 필기 합격선)</div>'+rows.map(r=>'<div class="civil-bar"><b>'+r[0]+'</b><div><div class="civil-track"><i class="civil-orange" style="width:'+r[1]+'%"></i></div><div class="civil-track"><i class="civil-blue" style="width:'+r[2]+'%"></i></div></div><small>'+r[1]+'→'+r[2]+'</small></div>').join('')+'</div>';
+const banner=get("civil-service-schedule-2027");
+const cutoff=get("civil-cutoff-2026");
+const timeline=get("civil-2027-timeline");
+const other=get("civil-2027-other");
+const notice=direct.find(el=>el.classList.contains("notice"));
+const study=findPanel("학습 앱에서 바로 풀기");
+const annual=findPanel("연도별 공식 문제");
+const official=findPanel("확인된 공식 원문");
+if(![banner,cutoff,timeline,other,notice,study,annual,official].every(Boolean))return;
+const intro=main.querySelector(".lead");if(intro)intro.classList.add("civil-lead");
+const overview=document.createElement("div");overview.className="civil-summary";
+overview.innerHTML=box("2027 국가직 9급 접수","1.25~1.29")+box("2027 국가직 9급 필기","3.27")+box("2027 한국사 대체","한능검 3급 이상");
+intro.insertAdjacentElement("afterend",overview);
+const help=document.createElement("div");help.className="civil-how civil-help";help.innerHTML="<b>이용 안내</b> · 6개 카테고리를 누르면 세부 메뉴가 나타납니다. 세부 메뉴를 누르면 상세 내용이 펼쳐지며, 다른 메뉴는 접힙니다.";
+overview.insertAdjacentElement("afterend",help);
+const grid=document.createElement("div");grid.className="civil-card-grid";help.insertAdjacentElement("afterend",grid);
+function card(id,emoji,title,subtitle){
+ const d=document.createElement("details");d.className="civil-category";d.id=id;
+ d.innerHTML='<summary><span class="civil-icon" aria-hidden="true">'+emoji+'</span><span class="civil-name"><b>'+title+'</b><small>'+subtitle+'</small><em></em></span><span class="civil-sign" aria-hidden="true">＋</span></summary><div class="civil-card-children"></div>';
+ grid.append(d);return d
+}
+function sub(parent,id,title,subtitle,...nodes){
+ const d=document.createElement("details");d.className="civil-submenu";d.id=id;
+ d.innerHTML='<summary><span>'+title+'<small>'+subtitle+'</small></span><b class="civil-sign" aria-hidden="true">＋</b></summary><div class="civil-detail"></div>';
+ const body=d.querySelector(".civil-detail");
+ for(const node of nodes){if(typeof node==="string")body.insertAdjacentHTML("beforeend",node);else if(node)body.append(node)}
+ parent.querySelector(".civil-card-children").append(d);return d
+}
+const A=card("civil-card-recruit","🏢","채용·지원 정보","시험일정 · 원서접수 · 한국사 대체");
+sub(A,"civil-2027-timeline-menu","국가직 9급 일정","2027년 원서접수·필기·면접·발표",banner,timeline);
+sub(A,"civil-2027-7th","국가직 7급 일정","원서접수·2차 필기·최종발표",other,stats([["원서접수","7.12~7.16"],["2차 시험","10.2"],["최종합격 발표","12.9"]]));
+sub(A,"civil-2027-local","지방직 시험 일정","시·도별 공고 확인",'<p>지방직 시험은 시행기관과 직류에 따라 공고가 다릅니다. 국가직 일정과 혼동하지 마세요.</p>'+bt("https://local.gosi.go.kr/","지방직 원서접수"));
+sub(A,"civil-2027-korean","한국사 대체·응시자격","한능검 3급 이상 · 인정 발표기한",'<p><b>2027 국가직 9급</b> 한국사 과목은 한국사능력검정시험 3급 이상으로 대체됩니다. <b>2027년 3월 26일</b>까지 결과 등급이 발표된 시험만 인정됩니다.</p><p>직렬별 상세 응시자격·모집인원 등은 해당 회차 공식 채용공고를 확인하세요.</p>');
+const B=card("civil-card-9","📊","9급 필기·커트라인","경쟁률 · 합격선 · 지역별 비교");
+sub(B,"civil-9-overview","2026 국가직 9급 전체 현황","선발·출원·응시·필기 합격자",cutoff);
+sub(B,"civil-9-admin","행정직 합격선","일반행정 · 교육행정 · 세무",table([["직렬","2025","2026"],["일반행정 전국","93","90"],["교육행정","97","96"],["세무 전국","80","77"],["고용노동","91","79"]])+bt(url(9,"행정"),"행정직 표·그래프"));
+sub(B,"civil-9-tech","기술직 합격선","전송기술 · 전기 · 전산개발",bars([["전송기술",81,79],["전기",87,84],["전산개발",93,93]])+bt(url(9,"기술"),"기술직 전체 비교"));
+sub(B,"civil-9-region","지역별 일반행정","권역별 필기 합격선",table([["권역","2026 합격선"],["강원","87"],["대전·세종·충남·충북","88"],["광주·전남","90"],["전북","89"],["대구·경북","88"],["울산·경남","89"],["제주","87"]])+bt(url(9,"지역","일반행정"),"지역 일반행정 표"));
+sub(B,"civil-9-post","우정·기타 행정직","우정사업본부 · 검찰 · 교정",'<p>지역별 우정사업본부 및 기타 행정직의 2026 필기 합격선, 모집인원과 경쟁률을 확인할 수 있습니다.</p>'+bt(url(9,"지역","우정사업본부"),"우정 지역별 통계")+bt(url(9,"행정"),"기타 행정직"));
+const C=card("civil-card-7","📈","7급 PSAT·전공시험","1차 PSAT · 2차 전공 · 직렬별 분석");
+sub(C,"civil-7-overview","국가직 7급 전체 현황","1차/2차 합격 인원 분리",stats([["선발 예정","668명"],["출원","25,598명"],["2차 합격","820명"]])+'<p><b>2차 합격자는 최종 합격자가 아닙니다.</b> 1차 PSAT와 2차 전문과목 점수를 구분해 확인하세요.</p>'+bt(url(7),"7급 전체 통계"));
+sub(C,"civil-7-psat","1차 PSAT 합격선","직렬별 PSAT 컷",table([["2026 7급","PSAT"],["전송기술","77.33"],["전기","86.66"],["전산개발","86.66"],["데이터","86.66"]])+bt(url(7,"","","psat"),"1차 PSAT 전체 표"));
+sub(C,"civil-7-second","2차 전공시험 합격선","전공시험 직렬별 필기컷",bars([["전송기술",76,73],["전기",75,73],["전산개발",86,89]])+'<p class="civil-small">2025 전송기술 76점은 일반 합격선이며, 73점은 양성평등 목표제 적용 합격선입니다.</p>'+bt(url(7,"","","cut"),"2차 전공 전체 표"));
+sub(C,"civil-7-trend","2024~2026 연도별 추이","전송기술 등 주요 직렬의 그래프",bt(url(7,"focus","전송기술","cut"),"전송기술 2차 추이")+bt(url(7,"focus","전송기술","psat"),"전송기술 PSAT 추이"));
+const D=card("civil-card-tech","📡","통신·전기 직렬 집중","전송기술 · 전기 · 전산 · 정보보호");
+sub(D,"civil-tech-telecom","전송기술 직렬","9급 79 · 7급 2차 73",stats([["9급 필기","79점"],["7급 1차 PSAT","77.33점"],["7급 2차 전공","73점"]])+'<p>2026년 출원 경쟁률은 9급 16.24:1, 7급 23.09:1입니다.</p>'+bt(url(9,"focus","전송기술"),"9급 전송기술")+bt(url(7,"focus","전송기술"),"7급 전송기술"));
+sub(D,"civil-tech-electric","전기 직렬","7급·9급 합격선 비교",bars([["9급 전기",87,84],["7급 전기",75,73]])+bt(url(9,"focus","전기"),"9급 전기")+bt(url(7,"focus","전기"),"7급 전기"));
+sub(D,"civil-tech-dev","전산개발 직렬","2025·2026 커트라인",bars([["9급 전산",93,93],["7급 전산",86,89]])+bt(url(9,"focus","전산개발"),"9급 전산개발")+bt(url(7,"focus","전산개발"),"7급 전산개발"));
+sub(D,"civil-tech-data","데이터·정보보호 직렬","2026년 기술직 비교",'<p>2026년 9급 데이터 90점·정보보호 90점, 7급 데이터 2차 88점(일반 합격선 기준).</p>'+bt(url(9,"focus","데이터"),"9급 데이터")+bt(url(9,"focus","정보보호"),"9급 정보보호")+bt(url(7,"focus","데이터"),"7급 데이터"));
+sub(D,"civil-tech-prep","직렬별 준비 포인트","공무원 시험·공기업 전형 차이",'<p>통신 관련 전공 학습을 이어갈 수 있지만 공무원 공채는 NCS 기반 공기업 전형과 전형구조가 다릅니다. 직류별 실제 과목·자격은 공식 공고를 우선하세요.</p>'+bt("../communication-quiz-500/","통신공학 학습")+bt("../wireless-quiz-500/","무선공학 학습"));
+const E=card("civil-card-study","📚","기출·학습 자료","공식 기출 · 응용문제 · 과목별 학습");
+sub(E,"civil-study-national","국가직 공식 기출","2015~2026 연도별 문제 공개처",annual);
+sub(E,"civil-study-local","지방직 공식 기출","지방직·서울시 자료",official);
+sub(E,"civil-study-app","기출 응용문제 48문항","통신공학·무선공학 연습",notice,study);
+sub(E,"civil-study-subjects","과목별 학습 가이드","통신이론 · 전자공학 · 전기이론",'<p><b>통신 관련:</b> 통신이론·전자공학개론·유선공학개론·무선공학 등</p><p><b>전기 관련:</b> 전기이론·전기기기·전기자기학·회로이론 등</p><p>해당 분야는 참고 학습 영역이며 2027년 특정 직류 확정 시험과목은 아닙니다.</p>');
+const F=card("civil-card-sources","🗂️","출처·업데이트","공식 통계 · 참고자료 · 변경 이력");
+sub(F,"civil-source-official","공식 통계·공고","인사혁신처 / 국가공무원채용시스템",bt("https://gongmuwon.gosi.kr/oprut/StrSrTestStatsDtl.do?pstId=4845","2026 9급 공식 통계")+bt("https://gongmuwon.gosi.kr/oprut/StrSrTestStatsLst.do","7·9급 시험 통계")+bt("https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/?cntId=4360&mode=view","2027 시험 일정"));
+sub(F,"civil-source-private","참고자료·민간 통계","메가공무원 등과 공식 통계 구분",'<p>2024~2025년 일부 직렬별 합격선은 민간 합격전략 자료를 참고했습니다. 공식 자료와 추가합격 적용 기준을 비교하세요.</p>'+bt("https://lab.megagong.net/l/gong/statistic/pass.asp","넥스트공무원 통계"));
+sub(F,"civil-source-caution","합격선 해석 주의","양성평등·지방인재·일반 모집 구분",'<p><b>2025 국가직 7급 전송기술:</b> 일반 합격선 <b>76점</b>, 양성평등 적용 <b>73점</b>은 다른 기준입니다. 7급 1차 PSAT와 2차 전공시험 합격선도 구별해야 합니다.</p>');
+sub(F,"civil-source-updates","업데이트 이력","2026.11.20 정리",'<p>공무원 섹션을 코레일과 동일한 6개 대분류 카드 → 세부 메뉴 → 상세 내용 구조로 개편하고, 기존 일정·통계·기출문제 링크를 유지했습니다.</p>'+bt("https://github.com/kimheeseo/kimheeseo/blob/main/quiz500/CHANGELOG.md","업데이트 일지"));
+const cards=[...grid.querySelectorAll(":scope > details.civil-category")];
+cards.forEach(card=>{
+ card.querySelector(".civil-name em").textContent="세부 메뉴 "+card.querySelectorAll(":scope > .civil-card-children > details").length+"개";
+ card.addEventListener("toggle",()=>{if(card.open)cards.forEach(o=>{if(o!==card)o.open=false});card.querySelector(":scope > summary .civil-sign").textContent=card.open?"−":"＋"});
+ const subs=[...card.querySelectorAll(":scope > .civil-card-children > details")];
+ subs.forEach(sub=>sub.addEventListener("toggle",()=>{if(sub.open)subs.forEach(o=>{if(o!==sub)o.open=false});sub.querySelector(":scope > summary .civil-sign").textContent=sub.open?"−":"＋"}));
+});
+function reveal(){if(!location.hash)return;let node;try{node=document.getElementById(decodeURIComponent(location.hash.slice(1)))}catch{return}if(!node)return;const top=node.closest(".civil-category"),bottom=node.closest(".civil-submenu");if(top)top.open=true;if(bottom)bottom.open=true;if(top||bottom)requestAnimationFrame(()=>node.scrollIntoView({block:"start"}))}
+addEventListener("hashchange",reveal);reveal();
+})();
+</script></body></html>
