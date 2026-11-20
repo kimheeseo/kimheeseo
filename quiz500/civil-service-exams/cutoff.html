@@ -197,5 +197,16 @@ $("#download-csv").addEventListener("click",()=>{
  const blob=new Blob(["\uFEFF"+lines.join("\r\n")],{type:"text/csv;charset=utf-8"}),href=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=href;a.download="national_civil_cutoff_"+state.grade+"_"+state.stage+"_2026.csv";a.click();setTimeout(()=>URL.revokeObjectURL(href),1500);
 });
+// Allow direct links from the six-category civil service study hub.
+const incoming=new URLSearchParams(location.search);
+if(incoming.get("grade")==="7")state.grade=7;
+const group=incoming.get("group");
+if(["all","focus","기술","행정","지역"].includes(group))$("#filter-group").value=group;
+const q=incoming.get("q");
+if(q)$("#filter-search").value=q.slice(0,100);
+const stage=incoming.get("stage");
+if(state.grade===7&&["psat","cut"].includes(stage)){state.stage=stage;$("#filter-stage").value=stage}
+const chosen=rows().find(row=>q&&row.name.includes(q));
+if(chosen)state.focus=chosen.id;
 refresh();
 </script></body></html>
