@@ -91,7 +91,7 @@
     consentLabel.style.cssText='display:flex;align-items:flex-start;gap:9px;font-size:13px;margin:14px 0;';
     const syncInput=make('input');syncInput.type='checkbox';syncInput.checked=hasConsent();
     syncInput.style.cssText='width:18px;flex:0 0 18px;margin:2px 0;';
-    syncInput.addEventListener('change',()=>{setConsent(syncInput.checked);status(syncInput.checked?'새로운 채점 기록의 서버 저장이 활성화되었습니다.':'새로운 채점 기록의 서버 저장을 중지했습니다. 이미 저장된 기록은 아래에서 직접 삭제할 수 있습니다.');});
+    syncInput.addEventListener('change',()=>{setConsent(syncInput.checked);if(syncInput.checked)flush();status(syncInput.checked?'새로운 채점 기록의 서버 저장이 활성화되었습니다.':'새로운 채점 기록의 서버 저장을 중지했습니다. 이미 저장된 기록은 아래에서 직접 삭제할 수 있습니다.');});
     consentLabel.append(syncInput,make('span','','내 채점 결과를 서버에 누적하여 취약점과 전체 수험생 통계에 반영합니다.'));
     content.append(consentLabel);
     const actions=make('div','ta-actions');
@@ -107,7 +107,7 @@
     const controls=make('div','ta-actions');
     controls.append(wrapButton('서버 학습 기록 삭제',async()=>{
       if(!confirm('서버에 저장된 내 채점 기록을 모두 삭제할까요? 기존 브라우저 기록은 그대로 남습니다.'))return;
-      try{const {data,error}=await client.rpc('telecom_delete_my_attempts');if(error)throw error;status('서버 기록 '+Number(data||0)+'건을 삭제했습니다.');loadInsights()}
+      try{try{localStorage.removeItem(queueKey())}catch{}const {data,error}=await client.rpc('telecom_delete_my_attempts');if(error)throw error;status('서버 기록 '+Number(data||0)+'건을 삭제했습니다.');loadInsights()}
       catch(err){status('삭제 실패: '+(err?.message||'서버 확인 필요'))}
     },'ta-danger'));
     content.append(controls);
@@ -188,13 +188,13 @@
   }
   function queueKey(){return storagePrefix+member.id}
   async function flush() {
-    if(busy||!client||!member||!navigator.onLine)return;
+    if(busy||!client||!member||!hasConsent()||!navigator.onLine)return;
     busy=true;
     const id=member.id,key=queueKey();
     try {
       let items=safeRead(key,[]);
       if(!Array.isArray(items))items=[];
-      while(member?.id===id&&items.length){
+      while(member?.id===id&&hasConsent()&&items.length){
         const item=items[0],{error}=await client.rpc('telecom_record_attempt',item);
         if(error){console.warn('Study sync:',error.message);break}
         items.shift();safeWrite(key,items);
