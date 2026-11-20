@@ -111,11 +111,20 @@ function setMode(newMode,newRound){
 }
 function remaining(d){return Math.max(0,2400-Math.floor((Date.now()-(d.started||Date.now()))/1000))}
 function hhmm(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
+function finishAttempt(){
+ if(!db||(mode!=="round"&&mode!=="chapter"))return;
+ const items=questions(),d=draft();if(d.submitted)return;
+ const answered=items.filter(q=>d.answers[q.id]!==undefined).length;
+ d.submitted=true;d.finished=Date.now();
+ const score=correctlyAnswered(items,d.answers);
+ store.history.unshift({key:examKey(),mode,round,chapter,count:items.length,answered,correct:score,date:new Date().toISOString()});
+ store.history=store.history.slice(0,100);persist();render();
+}
 function render(){
  if(!db||!source)return;
  if(mode==="source")return renderSource();
  if(mode==="history")return renderHistory();
- const items=questions(),d=draft();idx=Math.min(Math.max(0,idx),items.length-1);d.position=idx;persist();setStats();
+ const items=questions(),d=draft();idx=Math.min(Math.max(0,idx),items.length-1);d.position=idx;persist();setStats();if(mode==="round"&&!d.submitted&&remaining(d)===0){finishAttempt();return}
  if(!items.length){$("#main-content").innerHTML='<div class="empty">해당 단원에는 학습 문제가 없습니다.</div>';return}
  if(d.submitted)return renderScore(items,d);
  const q=items[idx];const answered=items.filter(x=>d.answers[x.id]!==undefined).length;
@@ -132,7 +141,7 @@ function render(){
  $(".options").querySelectorAll("button").forEach(b=>b.onclick=()=>{d.answers[q.id]=+b.dataset.answer;persist();render()});
  $("#prev").onclick=()=>{idx--;render()};
  $("#next").onclick=()=>{idx++;render()};
- $("#submit").onclick=()=>{if(!window.confirm("답안을 제출하고 정답·해설을 확인하시겠습니까? 미응답 문항은 오답 처리됩니다."))return;d.submitted=true;d.finished=Date.now();const score=correctlyAnswered(items,d.answers);store.history.unshift({key:examKey(),mode,round,chapter,count:items.length,answered,correct:score,date:new Date().toISOString()});store.history=store.history.slice(0,100);persist();render()};
+ $("#submit").onclick=()=>{if(!window.confirm("답안을 제출하고 정답·해설을 확인하시겠습니까? 미응답 문항은 오답 처리됩니다."))return;finishAttempt()};
 }
 function renderScore(items,d){
  const score=correctlyAnswered(items,d.answers),pct=Math.round(score/items.length*100),byGroup={};
@@ -184,5 +193,5 @@ async function init(){
  }catch(e){$("#main-content").innerHTML='<h2>데이터 로드 실패</h2><p>'+esc(e.message)+'</p><p>GitHub Pages 배포 이후 새로고침하시거나 저장소의 JSON 파일 경로를 확인하세요.</p>';}
 }
 init();
-setInterval(()=>{if(db&&mode==="round"){const e=$("#timer");if(e){const d=draft();e.textContent=hhmm(remaining(d));if(remaining(d)===0)e.textContent="00:00 · 시간 초과(제출 필요)"}}},1000);
+setInterval(()=>{if(db&&mode==="round"){const e=$("#timer");if(e){const d=draft();e.textContent=hhmm(remaining(d));if(remaining(d)===0){finishAttempt();}}}},1000);
 </script></body></html>
