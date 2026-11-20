@@ -51,36 +51,38 @@
     if (!content) return;
     content.replaceChildren();
     if (!configured) {
-      content.append(make('p','ta-muted','로그인 백엔드 연결 전입니다. 운영자가 Supabase 프로젝트의 공개 주소·키와 SQL 구성을 등록하면 이메일 로그인과 실측 통계가 활성화됩니다.'));
+      content.append(make('p','ta-muted','Google 로그인 연결 전입니다. 운영자가 Supabase 공개 주소·키, Google OAuth 설정, SQL 구성을 등록하면 로그인과 실측 통계가 활성화됩니다.'));
       content.append(make('p','ta-warn','현재 문제은행과 브라우저 학습 기록은 정상 사용 가능합니다. 실제 전체 수험생 데이터는 아직 누적되지 않습니다.'));
       return;
     }
     if (!member) {
-      content.append(make('p','ta-muted','이메일 주소로 일회용 로그인 링크를 받습니다. 비밀번호는 필요하지 않으며 학습 기록은 로그인 이후부터 계정에 누적됩니다.'));
+      content.append(make('p','ta-muted','별도 회원가입이나 비밀번호 없이 Google 계정으로 로그인합니다. Google Drive 파일 접근 권한은 요청하지 않습니다.'));
       const form=make('form','ta-login-form');
-      const email=make('input');email.type='email';email.placeholder='이메일 주소';email.autocomplete='email';email.required=true;email.setAttribute('aria-label','로그인 이메일');
-      const submit=make('button','ta-primary','로그인 링크 보내기');submit.type='submit';
       const consentLabel=make('label','ta-consent');
-      consentLabel.style.cssText='display:flex;align-items:flex-start;gap:8px;width:100%;font-size:12px;line-height:1.6;';
+      consentLabel.style.cssText='display:flex;align-items:flex-start;gap:9px;width:100%;font-size:12px;line-height:1.6;';
       const consentInput=make('input');consentInput.type='checkbox';consentInput.required=true;consentInput.checked=hasConsent();
       consentInput.style.cssText='width:18px;flex:0 0 18px;margin:2px 0;';
-      consentLabel.append(consentInput,make('span','','이메일을 이용한 로그인과 채점 결과의 서버 저장에 동의합니다. 수집되는 학습 기록은 문제 식별값, 단원, 난이도, 정오답, 시각이며 다른 사용자에게 개인 결과가 공개되지 않습니다.'));
-      form.append(email,consentLabel,submit);
+      consentLabel.append(consentInput,make('span','','Google 계정을 통한 로그인과 문제별 정오답·단원·난이도·풀이 시각의 계정별 서버 저장에 동의합니다. 다른 수험생에게 개인 기록은 공개되지 않습니다.'));
+      const submit=make('button','ta-primary','Google 계정으로 계속하기');submit.type='submit';
+      submit.style.cssText='width:100%;min-height:47px;display:flex;justify-content:center;align-items:center;gap:8px;';
+      form.append(consentLabel,submit);
       form.addEventListener('submit',async e=>{
-        e.preventDefault();if(!email.validity.valid||!consentInput.checked)return;
-        submit.disabled=true;status('로그인 링크를 요청하는 중입니다.');
+        e.preventDefault();
+        if(!consentInput.checked){status('기록 저장에 동의해야 로그인 기능을 이용할 수 있습니다.');return}
+        submit.disabled=true;status('Google 계정 선택 화면으로 이동하는 중입니다.');
         try {
           const c=await getClient();
-          const redirectTo=new URL('index.html',new URL('/kimheeseo/quiz500/',location.origin)).href;
-          const {error}=await c.auth.signInWithOtp({email:email.value.trim(),options:{emailRedirectTo:redirectTo}});
-          if(error)throw error;
+          const redirectTo=new URL('/kimheeseo/quiz500/',location.origin).href;
           setConsent(true);
-          status('로그인 안내 메일을 요청했습니다. 받은편지함을 확인하세요. (메일 발송 여부는 인증 서비스 정책에 따릅니다.)');
-        } catch(err){status('로그인 요청 실패: '+(err?.message||'네트워크 또는 설정을 확인하세요.'))}
-        finally{submit.disabled=false}
+          const {error}=await c.auth.signInWithOAuth({provider:'google',options:{redirectTo}});
+          if(error){setConsent(false);throw error}
+        } catch(err) {
+          status('Google 로그인 요청 실패: '+(err?.message||'네트워크 또는 OAuth 설정을 확인하세요.'));
+          submit.disabled=false;
+        }
       });
       content.append(form);
-      content.append(make('p','ta-muted','이메일은 계정 인증에만 사용하며, 다른 수험생에게 공개하지 않습니다.'));
+      content.append(make('p','ta-muted','Google 프로필의 이메일 주소는 계정 식별에만 사용합니다. Google Drive·Gmail 파일이나 콘텐츠는 읽지 않습니다.'));
       return;
     }
     const email=member.email||'로그인 계정';
