@@ -88,17 +88,17 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 <section class="hero">
 <div class="eyebrow">K-WATER · TELECOMMUNICATIONS · PRACTICE BANK</div>
 <h1>한국수자원공사 전자통신 문제은행</h1>
-<p>첨부된 2026 상반기 민간 모의고사 40문항의 <b>단원 분류·검토 기록</b>과 이를 참고해 독립 제작한 <b>3회차 × 40문항 = 120문항</b>을 제공합니다.</p>
+<p>원본 민간 모의고사 PDF는 비공개로 보관합니다. 이 공개 학습 페이지에서는 별도로 제작한 <b>3회차 × 40문항 = 120문항</b>만 제공합니다.</p>
 <div class="meta"><span>회차별 40문항 / 40분</span><span>문항마다 정답·해설</span><span>단원별 학습·오답 복습</span><span>비공식 창작 모의고사</span></div>
 </section>
-<div class="notice"><strong>출처·정답 주의:</strong> 제공 PDF는 <b>‘빡취쌤’ 제작(© 2025)</b> 자료이며 공식 K-water 기출이 아닙니다. 저작권이 있는 원문과 그림을 공개 저장소에 그대로 재게시하지 않고 40문항의 주제·페이지·원문 정답표만 보존했습니다. 원본의 22번(복수정답), 일부 그림·법령 문항은 검토 대상으로 분리해 <b>자동 채점하지 않습니다.</b> 아래 2~4회차 문제는 독립 창작입니다.</div>
+<div class="notice"><strong>출처·정답 주의:</strong> 원본 민간 제작 자료(© 2025)는 개인용 비공개 저장소에 보관하며, 원문과 정답표 및 분류 정보는 이 공개 사이트에서 제공하지 않습니다. 아래 2~4회차 문제는 공식 기출이 아닌 독립 제작 연습문제입니다.</div>
 <div class="workspace"><aside class="sidebar">
 <div class="side-label">학습 모드 선택</div><nav id="modes" class="nav-buttons" aria-label="학습 모드">
 <button type="button" data-mode="round" data-round="2" aria-pressed="true">모의고사 2회차<small>신규 40문항</small></button>
 <button type="button" data-mode="round" data-round="3" aria-pressed="false">모의고사 3회차<small>신규 40문항</small></button>
 <button type="button" data-mode="round" data-round="4" aria-pressed="false">모의고사 4회차<small>신규 40문항</small></button>
 <button type="button" data-mode="chapter" aria-pressed="false">단원별 문제은행<small>120문항 단원 분류</small></button>
-<button type="button" data-mode="source" aria-pressed="false">첨부 원본 1회차<small>40문항 주제·검토 기록</small></button>
+<button type="button" data-mode="source" aria-pressed="false">원본 자료 안내<small>개인 보관 · 비공개</small></button>
 <button type="button" data-mode="history" aria-pressed="false">내 학습 기록<small>회차별 점수·오답</small></button>
 <button type="button" data-mode="analytics" aria-pressed="false">내 학습 현황<small>정답률 · 7일 풀이 · 취약 TOP3</small></button>
 <button type="button" data-mode="review" aria-pressed="false">오늘 복습<small>1·3·7·14일 간격</small></button>
@@ -108,7 +108,7 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 <p class="tiny" style="margin-top:15px">학습기록은 현재 브라우저에만 저장됩니다. 다른 기기와 자동으로 공유되지 않습니다.</p>
 </aside>
 <section class="panel" id="main-content" aria-live="polite"><p>문제은행을 불러오는 중입니다.</p></section></div>
-<p class="foot">자료 정리: 2026.11.20 · 출처 분류: 원본 40문항 / 자체 제작 120문항. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
+<p class="foot">자료 정리: 2026.11.20 · 원본 PDF 비공개 / 독립 제작 120문항 공개. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
 </main><script src="../trust.js"></script>
 <script src="../sources.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
@@ -225,14 +225,9 @@ function wireIssue(q){
 function sourceReportForm(q){return '<details data-source-report="'+esc(q.id)+'" class="source-item" style="margin-top:10px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:9px">설명·메모 <textarea class="select" rows="3" maxlength="500"></textarea></label><p><a target="_blank" rel="noopener noreferrer" href="#">GitHub Issue 작성하기 ↗</a></p></details>'}
 function renderSource(){
  setStats();
- const recs=source.questions;
- const flagged=recs.filter(q=>q.reviewStatus==="검토 필요").length;
- $("#main-content").innerHTML='<h2>2026 상반기 원본 PDF · 40문항 분류표</h2>'+
- '<p><span class="badge warn">원본 전사·채점 보류</span> 40문항의 주제·단원·PDF 페이지·정답표를 분류했습니다. 문제 지문·선택지·그림은 저작권 및 검증을 고려해 공개 저장소에 복제하지 않았습니다.</p>'+
- metrics([["단원 분류","12개"],["참조 문항","40개"],["검토 표시",flagged+"개"],["원본 시간","40분"]])+
- '<div class="source-grid">'+recs.map(q=>'<details class="source-item"><summary>문항 '+q.number+' · '+esc(q.topic)+' <span class="badge '+(q.reviewStatus==="검토 필요"?'warn':'')+'">'+esc(q.chapter)+'</span></summary>'+
- '<p class="source-title">'+esc(q.summary)+'</p><p class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</p><p class="tiny">출처: '+esc(QuizSource.label(q,'kwater'))+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p>'+sourceReportForm(q)+'</details>').join("")+'</div>';
- document.querySelectorAll('[data-source-report]').forEach(box=>{const q=recs.find(x=>x.id===box.dataset.sourceReport);if(!q)return;const sel=box.querySelector('select'),note=box.querySelector('textarea'),link=box.querySelector('a');if(!sel||!note||!link)return;const update=()=>{const title='[문항 오류] K-water 원본 참조 / '+q.id+' / '+sel.value;const body=['문항 ID: '+q.id,'원본 PDF 참고 페이지: '+q.page,'신고 유형: '+sel.value,'메모: '+(note.value||'미작성'),'※ 공개 이슈, 개인정보 기재 금지'].join('\n');link.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({template:"question-error.md",title,body}).toString()};sel.addEventListener('change',update);note.addEventListener('input',update);update()});
+ $("#main-content").innerHTML='<h2>원본 민간 모의고사 · 비공개 자료</h2>'+
+ '<div class="notice"><strong>소유자 전용:</strong> 원본 PDF와 문항 분류·정답표는 별도 비공개 저장소에 보관합니다. 공개 GitHub Pages에서는 원본 문항, 정답, 분류 정보를 열람할 수 없습니다.</div>'+
+ '<p>별도로 제작된 2~4회차 연습문제 120문항은 이 페이지에서 계속 학습할 수 있습니다.</p>';
 }
 function renderAnalytics(){
  const all=db.rounds.flatMap(r=>r.questions),s=StudyStore.stats("kwater",all),due=s.due.length;
