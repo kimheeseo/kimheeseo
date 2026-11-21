@@ -219,7 +219,7 @@ function renderSource(){
  '<p><span class="badge warn">원본 전사·채점 보류</span> 40문항의 주제·단원·PDF 페이지·정답표를 분류했습니다. 문제 지문·선택지·그림은 저작권 및 검증을 고려해 공개 저장소에 복제하지 않았습니다.</p>'+
  metrics([["단원 분류","12개"],["참조 문항","40개"],["검토 표시",flagged+"개"],["원본 시간","40분"]])+
  '<div class="source-grid">'+recs.map(q=>'<details class="source-item"><summary>문항 '+q.number+' · '+esc(q.topic)+' <span class="badge '+(q.reviewStatus==="검토 필요"?'warn':'')+'">'+esc(q.chapter)+'</span></summary>'+
- '<p class="source-title">'+esc(q.summary)+'</p><p class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p></details>').join("")+'</div>';
+ '<p class="source-title">'+esc(q.summary)+'</p><p class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</p><p class="tiny">출처: '+esc(QuizSource.label(q,'kwater'))+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p></details>').join("")+'</div>';
 }
 function renderHistory(){
  setStats();
