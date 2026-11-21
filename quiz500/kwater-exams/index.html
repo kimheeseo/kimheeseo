@@ -184,10 +184,10 @@ function render(){
  $("#submit").onclick=()=>{if(!window.confirm("답안을 제출하고 정답·해설을 확인하시겠습니까? 미응답 문항은 오답 처리됩니다."))return;finishAttempt()};
 }
 function renderScore(items,d){
- const score=correctlyAnswered(items,d.answers),pct=Math.round(score/items.length*100),byGroup={};
- items.forEach(q=>{const g=byGroup[q.chapter]||(byGroup[q.chapter]={total:0,correct:0});g.total++;if(d.answers[q.id]===q.answer)g.correct++});
+ const scored=items.filter(q=>QuizTrust.gradeable(q,'kwater'));const pending=items.length-scored.length;const score=correctlyAnswered(items,d.answers),pct=scored.length?Math.round(score/scored.length*100):0,byGroup={};
+ scored.forEach(q=>{const g=byGroup[q.chapter]||(byGroup[q.chapter]={total:0,correct:0});g.total++;if(d.answers[q.id]===q.answer)g.correct++});
  $("#main-content").innerHTML='<div class="toolbar"><h2>모의고사 채점 결과</h2><span class="badge">답안 제출 완료</span></div>'+
- '<div class="score-card"><strong>'+score+' / '+items.length+'</strong><p>정답률 '+pct+'% · 총 '+items.length+'문항</p></div>'+
+ '<div class="score-card"><strong>'+score+' / '+scored.length+'</strong><p>정답률 '+pct+'% · 채점 대상 '+scored.length+'문항 · 채점 보류 '+pending+'문항</p></div>'+
  '<h3>단원별 성적</h3>'+Object.entries(byGroup).map(([k,v])=>'<div class="chart-row"><span>'+esc(k)+'</span><div class="track"><i style="width:'+Math.round(v.correct/v.total*100)+'%"></i></div><b>'+v.correct+'/'+v.total+'</b></div>').join("")+
  '<div class="controls"><button class="btn danger" id="retry">이 회차 다시 풀기</button><button class="btn" id="wrongonly">오답만 보기</button><button class="btn primary" id="allreview">전체 정답·해설 보기</button></div><div id="reviews"></div>';
  $("#retry").onclick=()=>{if(!window.confirm("현재 회차 답안을 초기화하고 다시 푸시겠습니까? 이전 제출 기록은 유지됩니다."))return;store.drafts[examKey()]={answers:{},submitted:false,started:Date.now(),position:0};idx=0;persist();render()};
@@ -196,10 +196,10 @@ function renderScore(items,d){
  showReviews(items,d,true);
 }
 function showReviews(items,d,wrong){
- const chosen=items.filter(q=>!wrong||d.answers[q.id]!==q.answer);
+ const chosen=items.filter(q=>!wrong||!QuizTrust.gradeable(q,'kwater')||d.answers[q.id]!==q.answer);
  $("#reviews").innerHTML='<h3>'+(wrong?'오답·미응답':'전체')+' 해설 '+chosen.length+'문항</h3>'+(chosen.length?chosen.map(q=>{
  const selected=d.answers[q.id];const correct=QuizTrust.gradeable(q,"kwater")&&selected===q.answer;
- return '<details class="source-item" style="margin:9px 0" '+(!correct?'open':'')+'><summary><span class="badge '+(correct?'':'warn')+'">'+(correct?'정답':'오답')+'</span> '+esc(q.id)+' · '+esc(q.question)+'</summary><p>내 답: '+(selected===undefined?'미응답':esc(q.options[selected]))+'</p><p><b>정답:</b> '+(QuizTrust.gradeable(q,'kwater')?(q.answer+1)+'번 · '+esc(q.options[q.answer]):'채점 보류')+'</p><p><b>해설:</b> '+esc(q.explanation)+'</p><p class="tiny">단원: '+esc(q.chapter)+' / '+esc(q.topic)+'</p></details>'
+ return '<details class="source-item" style="margin:9px 0" '+(!correct?'open':'')+'><summary><span class="badge '+(correct?'':'warn')+'">'+(correct?'정답':!QuizTrust.gradeable(q,'kwater')?'채점 보류':'오답')+'</span> '+esc(q.id)+' · '+esc(q.question)+'</summary><p>내 답: '+(selected===undefined?'미응답':esc(q.options[selected]))+'</p><p><b>정답:</b> '+(QuizTrust.gradeable(q,'kwater')?(q.answer+1)+'번 · '+esc(q.options[q.answer]):'채점 보류')+'</p><p><b>해설:</b> '+esc(q.explanation)+'</p><p class="tiny">단원: '+esc(q.chapter)+' / '+esc(q.topic)+'</p></details>'
  }).join(""):'<p>선택한 조건에 해당하는 문항이 없습니다.</p>');
 }
 function reportForm(q){
