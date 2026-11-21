@@ -1,5 +1,11 @@
 # Quiz500 | 통신공학 · 무선공학 퀴즈
 
+## 2026-11-21 · 5단계 콘솔·360px 헤드리스 브라우저 검사 추가
+
+- `validation/browser-check.mjs`: Node 22 기본 내장 모듈·WebSocket + Chrome DevTools Protocol로 **13개 주요 화면**을 360px viewport로 열고 페이지 초기화, 가로 스크롤, JavaScript 예외, `console.error`, Chrome 오류 로그를 검사한다.
+- `.github/workflows/quiz500-smoke.yml`: 기존 의존성 없는 정적 검사 이후 브라우저 검사 실행; 사이트 런타임 외부 의존성은 KaTeX CDN만 유지.
+- **본 대화에서 Chrome 테스트를 GitHub Actions 환경에서 실제 실행하여 0건을 입증하지는 못했으므로 배포 검증은 미완료**. 브라우저 검사 결과는 Actions 로그 또는 로컬의 `node quiz500/validation/browser-check.mjs`로 확인해야 한다.
+
 ## 2026-11-21 · 5단계 홈·JSON 분리·공유 메타·정적 검사
 
 - 홈 첫 화면: **오늘 복습 → 필기 학습 시작 → 모의고사 → 기관별 자료** 4개 빠른 이동 카드(모바일 1열) 추가, 최근 업데이트는 3건만 보이고 전체 내역은 [변경 일지](./changelog/)에서 `CHANGELOG.md`를 직접 읽도록 분리. 홈 푸터의 자료 출처·오류 신고 링크 유지.
