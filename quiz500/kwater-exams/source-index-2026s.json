@@ -6,7 +6,8 @@
     "note": "원본은 사용자 제공 PDF이며 빡취쌤 Ⓒ2025 저작권 표시가 있어 문제·그림·선택지 전체를 공개 저장소에 그대로 재게시하지 않았습니다. 원본 40문항은 주제·단원·페이지·정답표 메타데이터만 분류하며, 재검증 전 자동 채점하지 않습니다.",
     "sourceFile": "2026(상)_K-water_전공모의_학생용(1).pdf",
     "isOfficialKwaterExam": false,
-    "originalAnswerStatus": "원본 정답표 전사. 20번의 8-VSB 이상 최소 대역폭(48 MHz)은 원본과 일치함을 검증했으며, 22번 복수정답 및 그림·법령 문항 등 별도 점검 대상은 자동 채점하지 않습니다."
+    "originalAnswerStatus": "원본 정답표 전사. 20번의 8-VSB 이상 최소 대역폭(48 MHz)은 원본과 일치함을 검증했으며, 22번 복수정답 및 그림·법령 문항 등 별도 점검 대상은 자동 채점하지 않습니다.",
+    "statusPolicy": "All provided 2026 first-round source questions are review-only/non-playable until rights and answers are individually verified."
   },
   "questions": [
     {
@@ -25,7 +26,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-02",
@@ -43,7 +45,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-03",
@@ -61,7 +64,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-04",
@@ -79,7 +83,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-05",
@@ -97,7 +102,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-06",
@@ -115,7 +121,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-07",
@@ -133,7 +140,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-08",
@@ -151,7 +159,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-09",
@@ -169,7 +178,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-10",
@@ -187,7 +197,8 @@
       "playable": false,
       "difficulty": "하~중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-11",
@@ -205,7 +216,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-12",
@@ -223,7 +235,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-13",
@@ -241,7 +254,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-14",
@@ -259,7 +273,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-15",
@@ -277,7 +292,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-16",
@@ -295,7 +311,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-17",
@@ -313,7 +330,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-18",
@@ -331,7 +349,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-19",
@@ -349,7 +368,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-20",
@@ -367,7 +387,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-21",
@@ -385,7 +406,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-22",
@@ -406,7 +428,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-23",
@@ -424,7 +447,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-24",
@@ -442,7 +466,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-25",
@@ -460,7 +485,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-26",
@@ -478,7 +504,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-27",
@@ -496,7 +523,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-28",
@@ -514,7 +542,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-29",
@@ -532,7 +561,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-30",
@@ -550,7 +580,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-31",
@@ -568,7 +599,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-32",
@@ -586,7 +618,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-33",
@@ -604,7 +637,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-34",
@@ -622,7 +656,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-35",
@@ -640,7 +675,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-36",
@@ -658,7 +694,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-37",
@@ -676,7 +713,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-38",
@@ -694,7 +732,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-39",
@@ -712,7 +751,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     },
     {
       "id": "KW-2026S-REF-40",
@@ -730,7 +770,8 @@
       "playable": false,
       "difficulty": "중",
       "sourceAuthor": "빡취쌤 / Copyright © 2025",
-      "sourceCopyright": true
+      "sourceCopyright": true,
+      "status": "review"
     }
   ]
 }
