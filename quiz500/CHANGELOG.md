@@ -1,5 +1,14 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-21 · 1단계 문항 신뢰성 체계
+- `trust.js` 및 `status-overrides.json` 신설: verified/auto/review 3상태, Verified 단일 승인 파일, 기본 verified-only ON.
+- 4개 JSON 원천 자료에 전 문항 상태 필드 추가(총 2,996건). 임의 verified 0건. review 문항 정답 채점/누적 방지.
+- 통신공학·무선공학·K-water 화면의 상태 배지·필터·신고 이유+메모·KaTeX 수식 점검 추가.
+- 기존 쿼리 링크·기존 브라우저 저장값 보존; 다른 단계 작업은 아직 수행하지 않음.
+- 정적 JS 문법/JSON 유효성, 상태 필터·승인/보류 로직 검사 통과. 실제 브라우저 Console 오류 수는 **미검증**.
+- [단계별 검증](./validation/stage1-checklist.md).
+
+
 ## 2026-11-20 · K-water 통신공학 UI 통합 · 2~4회차 단원 카탈로그
 - `communication-quiz-500/index.html`: 상단 메뉴 **K-water 모의고사**, 학습 홈 및 문제은행 CTA, 학습 단원 및 문제은행 단원 선택지에서 K-water 120문항 별도 화면 이동. iframe 임베드로 기존 통신공학 핵심 문제·카운터·풀이 코드는 보존.
 - K-water 전용 화면에서 원본 1회차 분류표 / 창작 2·3·4회차 / 회차+단원 필터를 전환.
