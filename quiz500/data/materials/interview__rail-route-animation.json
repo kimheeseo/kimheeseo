@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "page": "interview/rail-route-animation.html",
+  "source": {
+    "name": "움직이는 철도 노선도",
+    "url": "https://news.seoul.go.kr/traffic/archives/1551",
+    "checkedDate": "2026-11-21",
+    "type": "외부 참고"
+  },
+  "reliability": "비공식",
+  "html": "<h1 id=\"title\"></h1><p>주요 역만 고른 학습용 노선 개요입니다. 지리적 거리·전체 역·지선·운영 경계를 정확히 표현하지 않으며, 움직이는 열차는 실제 위치·운행 시간표가 아닙니다.</p><button id=\"toggle\" type=\"button\" aria-pressed=\"false\">⏸ 애니메이션 일시정지</button><div id=\"routes\"></div><p id=\"source\"></p>"
+}

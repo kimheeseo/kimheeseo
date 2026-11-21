@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "page": "wireless-quiz-500/index.html",
+  "data": {
+    "CHAPTER_COMPOSITION": [
+      {
+        "chapter": "Ch1 신호·시스템",
+        "categories": [
+          "신호와 시스템"
+        ],
+        "original": 60,
+        "total": 78
+      },
+      {
+        "chapter": "Ch2 음성 디지털 부호화",
+        "categories": [
+          "디지털화와 다중화"
+        ],
+        "original": 57,
+        "total": 72
+      },
+      {
+        "chapter": "Ch3 아날로그 변조",
+        "categories": [
+          "아날로그 변조"
+        ],
+        "original": 68,
+        "total": 85
+      },
+      {
+        "chapter": "Ch4 디지털 변조",
+        "categories": [
+          "디지털 전송"
+        ],
+        "original": 71,
+        "total": 89
+      },
+      {
+        "chapter": "Ch5 안테나 이론",
+        "categories": [
+          "전자파와 주파수 분류",
+          "전자파와 안테나 이론",
+          "안테나 파라미터"
+        ],
+        "original": 63,
+        "total": 144
+      },
+      {
+        "chapter": "Ch6 안테나 실제",
+        "categories": [
+          "안테나 종류"
+        ],
+        "original": 15,
+        "total": 60
+      },
+      {
+        "chapter": "Ch7 급전선 이론",
+        "categories": [
+          "급전선·도파관"
+        ],
+        "original": 30,
+        "total": 75
+      },
+      {
+        "chapter": "Ch8 전파 전파 이론",
+        "categories": [
+          "전파 전파이론",
+          "페이딩·전리층"
+        ],
+        "original": 46,
+        "total": 131
+      },
+      {
+        "chapter": "Ch9 고정통신 시스템",
+        "categories": [
+          "무선통신 시스템"
+        ],
+        "original": 45,
+        "total": 107
+      },
+      {
+        "chapter": "Ch10 이동통신 시스템",
+        "categories": [
+          "이동통신 시스템"
+        ],
+        "original": 30,
+        "total": 75
+      },
+      {
+        "chapter": "Ch11 위성통신 시스템",
+        "categories": [
+          "위성·레이더 시스템"
+        ],
+        "original": 15,
+        "total": 84
+      }
+    ]
+  }
+}

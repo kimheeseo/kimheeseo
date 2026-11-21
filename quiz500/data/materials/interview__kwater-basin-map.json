@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "page": "interview/kwater-basin-map.html",
+  "source": {
+    "name": "K-water 4개 유역본부 역할·통합물관리시설 지도",
+    "url": "https://unpkg.com/leaflet@1.9.4/dist/leaflet.css",
+    "checkedDate": "2026-11-21",
+    "type": "외부 참고"
+  },
+  "reliability": "비공식",
+  "html": "<a href=\"./kwater.html#basin-map\">← 한국수자원공사 면접 페이지</a>\n<h1>K-water 통합물관리시설 · 4개 유역본부 지도</h1>\n<p class=\"lead\">유역본부를 선택하면 실제 본부 소재지, 운영 시설 종류, 통합물관리 업무와 대표 댐 사례를 확인할 수 있습니다. 지도에서 큰 원은 <b>유역본부 사무실 소재지</b>, 작은 점은 <b>대표 시설의 참고 위치</b>입니다.</p>\n<p class=\"note\"><strong>출처:</strong> K-water 공식 <a href=\"https://www.kwater.or.kr/busi/sub02/facilitiespresentPage.do?s_mid=1515\" target=\"_blank\" rel=\"noopener noreferrer\">통합물관리 시설</a> 및 본부별 상세 자료, 2026년 채용 유역 안내. <strong>사업장·유역 담당 범위는 행정구역과 완전히 일치하지 않습니다.</strong> 작은 점은 시설 이름을 보여주기 위한 대략적인 위치이며 정밀측량 좌표가 아닙니다. 시설 수는 공식 웹페이지에 표기된 해당 자료의 집계 기준입니다.</p>\n<div class=\"layout\"><div><div id=\"map\" role=\"region\" aria-label=\"한강 금강 영섬 낙동강 유역본부와 대표 댐 지도\">지도 불러오는 중</div><p class=\"legend\">● 큰 원: 유역본부 위치   ·   작은 원: 대표 시설 (전체 목록 아님)   ·   좌표 기반 위치 개념도 (정밀 지도 아님)</p></div>\n<div class=\"panel\"><div class=\"tabs\" id=\"tabs\"></div><div id=\"detail\" class=\"detail\" aria-live=\"polite\"></div></div></div>\n<footer>2026-11-10 정리 · 2026년 채용 안내의 한강/금강/영·섬/낙동강 선발 유역과 개별 사업장 배치는 지원 회차 공식 공고를 확인하세요. <a href=\"./kwater-energy-3d.html\">실제 시설별 3D 모델 선택하기</a></footer>"
+}

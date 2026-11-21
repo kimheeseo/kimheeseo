@@ -20,7 +20,7 @@ function mount(subject,cfg){
  section.innerHTML='<div class="hero"><span class="eyebrow">STUDY ANALYTICS · REAL RECORDS</span><h1>내 학습 현황</h1><p>내 브라우저에 실제로 저장된 풀이 기록만 집계합니다. 예측 점수나 AI 추천은 사용하지 않습니다.</p></div>'+
  '<div id="studyOverview" class="stats"></div><div class="two"><section class="panel"><h2>단원별 정답률</h2><div id="studyUnits" class="list"></div></section>'+
  '<section class="panel"><h2>자주 틀리는 단원 TOP 3</h2><div id="studyWeak" class="list"></div><hr class="thin">'+
- '<h2>복습·기록 관리</h2><p class="mini">오답은 1일 → 3일 → 7일 → 14일 순서로 재출제하고, 틀리면 1일 단계로 돌아갑니다.</p>'+
+ '<h2>최근 7일 풀이량</h2><div id="studyDaily"></div><h2>복습·기록 관리</h2><p class="mini">오답은 1일 → 3일 → 7일 → 14일 순서로 재출제하고, 틀리면 1일 단계로 돌아갑니다.</p>'+
  '<div class="actions"><button class="btn primary" id="studyDueStart" type="button">오늘 복습 시작</button><button class="btn" id="studyExport" type="button">기록 JSON 내보내기</button><button class="btn" id="studyImport" type="button">기록 JSON 가져오기</button></div><input type="file" id="studyImportFile" accept="application/json,.json" hidden><p class="mini">가져오기는 현재 과목의 기록을 백업 데이터로 교체합니다. 다른 과목 파일은 적용하지 않습니다.</p></section></div>';
  main.append(section);
  const home=document.getElementById("homeView"),stats=home?.querySelector("#topStats");
@@ -67,6 +67,7 @@ function render(subject){
   const value=document.createElement("div");value.className="value";value.textContent=n;
   const unit=document.createElement("span");unit.className="suffix";unit.textContent=suffix;value.append(unit);div.append(l,value);return div;
  }));
+ document.getElementById("studyDaily").innerHTML=data.days.map(d=>'<p class="mini">'+esc(d.date)+' · '+d.count+'회</p>').join('');
  const units=document.getElementById("studyUnits"),wrong=document.getElementById("studyWeak");
  units.replaceChildren();wrong.replaceChildren();
  for(const item of data.unitRates){

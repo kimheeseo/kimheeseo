@@ -8,9 +8,9 @@ const SENT='telecom_crowd_sent_v1',QUEUE='telecom_crowd_queue_v1';
 const MIN=20;
 const qs=id=>document.getElementById(id);
 let currentKey='', isFlushing=false, lastRendered=null;
-function jsonRead(key,fallback){try{const x=JSON.parse(localStorage.getItem(key)||'null');return x===null?fallback:x}catch{return fallback}}
-function safeSet(key,value){try{localStorage.setItem(key,value)}catch{}}
-function consent(){try{return localStorage.getItem(CONSENT)==='yes'}catch{return false}}
+function jsonRead(key,fallback){try{const x=JSON.parse(StudyStore.getRaw(key)||'null');return x===null?fallback:x}catch{return fallback}}
+function safeSet(key,value){try{StudyStore.setRaw(key,value)}catch{}}
+function consent(){try{return StudyStore.getRaw(CONSENT)==='yes'}catch{return false}}
 function keyHash(input){let h=2166136261;for(let i=0;i<input.length;i++){h^=input.charCodeAt(i);h=Math.imul(h,16777619)}return (h>>>0).toString(16).padStart(8,'0')}
 function makeKey(question){
   // 정답 수정·문항/선지 변경 시 다른 집계 키로 구분
@@ -18,7 +18,7 @@ function makeKey(question){
   return keyHash(String(question.id))+'-'+keyHash(signature);
 }
 function getVisitor(){
-  try{const old=localStorage.getItem(VISITOR);if(old&&/^[\da-f-]{36}$/i.test(old))return old}catch{}
+  try{const old=StudyStore.getRaw(VISITOR);if(old&&/^[\da-f-]{36}$/i.test(old))return old}catch{}
   let id;
   if(crypto&&typeof crypto.randomUUID==='function')id=crypto.randomUUID();
   else {

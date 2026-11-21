@@ -9,15 +9,15 @@ const root=path.resolve(import.meta.dirname,"../..");
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const mime={".html":"text/html; charset=utf-8",".js":"application/javascript; charset=utf-8",".json":"application/json; charset=utf-8",".css":"text/css; charset=utf-8",".png":"image/png",".svg":"image/svg+xml",".jpg":"image/jpeg",".woff2":"font/woff2",".pdf":"application/pdf"};
 const paths=[
- ["홈","/quiz500/","document.querySelector('main')!==null"],
- ["통신공학","/quiz500/communication-quiz-500/","typeof renderHome==='function' && !!document.querySelector('#homeView')"],
- ["무선공학","/quiz500/wireless-quiz-500/","typeof renderHome==='function' && !!document.querySelector('#homeView')"],
- ["통신공학 기존 kind 링크","/quiz500/communication-quiz-500/?kind=%EC%BD%94%EB%A0%88%EC%9D%BC%20%EA%B8%B0%EC%B6%9C","typeof renderHome==='function'"],
- ["통신공학 기존 unit 링크","/quiz500/communication-quiz-500/?unit=0","typeof renderHome==='function'"],
- ["무선공학 기존 unit 링크","/quiz500/wireless-quiz-500/?unit=0","typeof renderHome==='function'"],
- ["K-water 원본","/quiz500/kwater-exams/?mode=source","document.querySelector('.source-grid')!==null"],
+ ["홈","/quiz500/","document.querySelector('#home-bank-count')?.textContent.includes('전체')"],
+ ["통신공학","/quiz500/communication-quiz-500/","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
+ ["무선공학","/quiz500/wireless-quiz-500/","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
+ ["통신공학 기존 kind 링크","/quiz500/communication-quiz-500/?kind=%EC%BD%94%EB%A0%88%EC%9D%BC%20%EA%B8%B0%EC%B6%9C","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
+ ["통신공학 기존 unit 링크","/quiz500/communication-quiz-500/?unit=0","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
+ ["무선공학 기존 unit 링크","/quiz500/wireless-quiz-500/?unit=0","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
+ ["K-water 원본","/quiz500/kwater-exams/?mode=source","document.querySelectorAll('[data-source-report]').length===40"],
  ["K-water 모의","/quiz500/kwater-exams/?round=2","!!document.querySelector('#kwaterVerifiedOnly')"],
- ["검증 모의고사","/quiz500/mock-exam/","document.querySelector('#start')!==null"],
+ ["검증 모의고사","/quiz500/mock-exam/","!!document.querySelector('#mock-start') && !document.querySelector('#mock-setup').hidden && document.querySelector('#verified-availability').textContent.includes('전체')"],
  ["직렬별 과목표","/quiz500/exam-subjects/","document.querySelector('table')!==null"],
  ["자료 출처","/quiz500/sources/","document.querySelector('main')!==null"],
  ["공무원 합격선","/quiz500/civil-service-exams/cutoff.html","!!document.querySelector('#cutoff-body')"],
@@ -97,7 +97,13 @@ try{
   }
  }
 }finally{
- proc.kill("SIGTERM");await close();await fs.rm(profile,{recursive:true,force:true});
+ if(proc.exitCode===null&&proc.signalCode===null){
+  const exited=new Promise(resolve=>proc.once("close",resolve));
+  proc.kill("SIGTERM");
+  const terminate=setTimeout(()=>proc.kill("SIGKILL"),5000);terminate.unref();
+  await exited;clearTimeout(terminate);
+ }
+ await close();await fs.rm(profile,{recursive:true,force:true,maxRetries:8,retryDelay:200});
 }
 if(exitCode)process.exitCode=exitCode;
 else console.log("Browser smoke: 13 pages, 360px, JS exceptions and console.error = 0.");

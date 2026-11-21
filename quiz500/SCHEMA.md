@@ -1,3 +1,7 @@
+# 통합 스키마 안내
+
+현재 구현의 기준 문서는 [DATA_SCHEMA.md](./DATA_SCHEMA.md)입니다. 아래 내용은 병행 추가된 경로와 데이터의 호환 기록입니다. JSON 원본을 바꾸면 `node scripts/quiz-build-offline.cjs` 실행 후 `node scripts/quiz-offline-check.cjs`로 일치를 확인하세요.
+
 # 통신직 준비 — 정적 데이터 스키마 (2026-11-21)
 
 ## 목적

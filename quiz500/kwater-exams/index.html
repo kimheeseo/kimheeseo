@@ -1,7 +1,6 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="ko"><head><script src="../quiz-json.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>K-water 전자통신 전공 문제은행 · 모의고사 | 통신직 준비</title>
-<meta name="description" content="K-water 2026 상반기 전자통신 전공 모의고사 40문항 단원 분류, 독립 제작 3개 회차 각 40문항·40분 풀이, 채점, 해설, 단원 학습 및 오답 복습">
 <style>
 :root{color-scheme:light;--bg:#f4f7fc;--ink:#223654;--muted:#687d98;--blue:#245fc2;--line:#dce5f2;--soft:#edf4ff}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6}
@@ -84,14 +83,7 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 .catalog-toggle{width:100%;border:0;background:transparent;color:#285abc;font:inherit;cursor:pointer;font-size:12px;font-weight:850;text-align:left;padding:9px 0}
 .round-guide .tiny{line-height:1.7}
 @media(max-width:650px){.round-guide{padding:12px}.unit-group-list,.question-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.unit-group summary{padding:9px 7px;font-size:11px}.unit-entry{font-size:11px;padding:8px}.question-entry{font-size:11px;padding:9px}}
-</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"><link rel="canonical" href="https://kimheeseo.github.io/kimheeseo/quiz500/kwater-exams/">
-<meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
-<meta property="og:title" content="한국수자원공사 전자통신 모의고사 | 통신직 준비"><meta property="og:description" content="K-water 전자통신 2·3·4회차 자체 창작 모의고사 120문항과 2026 민간 원본 40문항 단원 분류.">
-<meta property="og:url" content="https://kimheeseo.github.io/kimheeseo/quiz500/kwater-exams/">
-<meta property="og:image" content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-study.png">
-<meta property="og:image:width" content="600"><meta property="og:image:height" content="315">
-<meta name="twitter:card" content="summary_large_image">
-<style>@media(max-width:360px){body{max-width:100%;overflow-x:hidden}pre,table{max-width:100%}img,iframe{max-width:100%}}</style></head><body><main>
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"><script src="../study-storage.js"></script><meta name="description" content="K-water 2026 상반기 전자통신 전공 모의고사 40문항 단원 분류, 독립 제작 3개 회차 각 40문항·40분 풀이, 채점, 해설, 단원 학습 및 오답 복습"><link rel="canonical" href="https://kimheeseo.github.io/kimheeseo/quiz500/kwater-exams/"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="통신직 준비"><meta property="og:title" content="K-water 전자통신 전공 문제은행 · 모의고사 | 통신직 준비"><meta property="og:description" content="K-water 2026 상반기 전자통신 전공 모의고사 40문항 단원 분류, 독립 제작 3개 회차 각 40문항·40분 풀이, 채점, 해설, 단원 학습 및 오답 복습"><meta property="og:url" content="https://kimheeseo.github.io/kimheeseo/quiz500/kwater-exams/"><meta property="og:image" content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-telecom.png"><meta property="og:image:width" content="1734"><meta property="og:image:height" content="907"><meta property="og:image:alt" content="통신직 준비 · 통신공학·무선공학·K-water · 오늘 복습부터 모의고사까지"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../accessibility.css"></head><body><main>
 <a class="crumb" href="../interview/kwater.html">← 한국수자원공사 채용·면접 페이지</a>
 <section class="hero">
 <div class="eyebrow">K-WATER · TELECOMMUNICATIONS · PRACTICE BANK</div>
@@ -119,7 +111,7 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 <p class="foot">자료 정리: 2026.11.20 · 출처 분류: 원본 40문항 / 자체 제작 120문항. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
 </main><script src="../trust.js"></script>
 <script src="../sources.js"></script>
-<script src="../study-storage.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
 "use strict";
 const $=sel=>document.querySelector(sel);
 const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -130,7 +122,7 @@ try{const from=StudyStore.readLegacy(saveKey);if(from&&typeof from==="object")st
 function persist(){StudyStore.writeLegacy(saveKey,store)}
 function examKey(){return mode==="review"?"review:"+new Date().toISOString().slice(0,10):mode==="chapter"?(studyRound==="all"?"chapter:"+chapter:"chapter:"+studyRound+":"+chapter):"round:"+round}
 function draft(){const key=examKey();if(!store.drafts[key])store.drafts[key]={answers:{},submitted:false,started:Date.now(),position:0};return store.drafts[key]}
-function questions(){const all=db.rounds.flatMap(r=>r.questions);const selected=mode==="review"?all.filter(q=>reviewQuestionIds.includes(q.id)):mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)));return selected.filter(q=>QuizTrust.eligible(q,"kwater"))}
+function questions(){const all=db.rounds.flatMap(r=>r.questions);const selected=mode==="review"?all.filter(q=>reviewQuestionIds.includes(q.id)):mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)));return selected.filter(q=>QuizTrust.eligible(q,"kwater")&&(mode!=="review"||QuizTrust.gradeable(q,"kwater")))}
 function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(QuizTrust.gradeable(q,"kwater")&&ans[q.id]===q.answer),0)}
 function metrics(kv){return '<div class="summary">'+kv.map(row=>'<div class="metric"><span>'+esc(row[0])+'</span><b>'+esc(row[1])+'</b></div>').join("")+'</div>'}
 function setStats(){let items=(mode==="round"||mode==="chapter")?questions():[];let d=(mode==="round"||mode==="chapter")?draft():null;let filled=d?items.filter(q=>d.answers[q.id]!==undefined).length:0;$("#sidebar-stats").innerHTML=metrics([["문항 수",items.length],["선택 완료",filled],["제출 기록",store.history.length],["학습 방식",mode==="round"?"40분":mode==="chapter"?"단원별":"조회"]])}
@@ -152,7 +144,8 @@ function finishAttempt(){
  const score=correctlyAnswered(items,d.answers);
  store.history.unshift({key:examKey(),mode,round,chapter,count:items.length,answered,correct:score,date:new Date().toISOString()});
  store.history=store.history.slice(0,100);
- for(const q of items)if(d.answers[q.id]!==undefined){StudyStore.record("kwater",q,{correct:d.answers[q.id]===q.answer,graded:QuizTrust.gradeable(q,"kwater"),durationMs:d.durations?.[q.id]??null})}
+ for(const q of items)QuizTrust.validateMath(q);
+  for(const q of items){StudyStore.record("kwater",q,{correct:d.answers[q.id]===q.answer,graded:QuizTrust.gradeable(q,"kwater"),durationMs:d.durations?.[q.id]??null,attemptId:examKey()+":"+d.finished+":"+q.id})}
  StudyStore.addSession("kwater",{kind:mode,round,chapter,questionCount:items.length,answered,correct:score,gradedCount:items.filter(q=>QuizTrust.gradeable(q,"kwater")).length});
  persist();render();
 }
@@ -222,14 +215,14 @@ function showReviews(items,d,wrong){
  }).join(""):'<p>선택한 조건에 해당하는 문항이 없습니다.</p>');
 }
 function reportForm(q){
- return '<details class="source-item" style="margin-top:15px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select" id="kwIssueReason"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:10px">추가 설명·메모 <textarea class="select" id="kwIssueMemo" rows="3" maxlength="2000" placeholder="개인정보는 입력하지 마세요"></textarea></label><p><a id="kwIssueLink" href="#" target="_blank" rel="noopener noreferrer">GitHub Issue 작성하기 ↗</a></p></details>'
+ return '<details class="source-item" style="margin-top:15px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select" id="kwIssueReason"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:10px">추가 설명·메모 <textarea class="select" id="kwIssueMemo" rows="3" maxlength="500" placeholder="개인정보는 입력하지 마세요"></textarea></label><p><a id="kwIssueLink" href="#" target="_blank" rel="noopener noreferrer">GitHub Issue 작성하기 ↗</a></p></details>'
 }
 function wireIssue(q){
  const a=$("#kwIssueLink"),reason=$("#kwIssueReason"),note=$("#kwIssueMemo");if(!a||!reason||!note)return;
- const update=()=>{const title="[문항 오류] K-water / "+q.id+" / "+reason.value;const body=["문항 ID: "+q.id,"오류 유형: "+reason.value,"상태: "+QuizTrust.label(q,"kwater"),"메모: "+(note.value||"기재되지 않음"),"※ 공개 이슈입니다. 개인정보 입력 금지."].join("\n");a.href="https://github.com/kimheeseo/kimheeseo/issues/new?"+new URLSearchParams({title,body}).toString()};
+ const update=()=>{const title="[문항 오류] K-water / "+q.id+" / "+reason.value;const body=["문항 ID: "+q.id,"오류 유형: "+reason.value,"상태: "+QuizTrust.label(q,"kwater"),"메모: "+(note.value||"기재되지 않음"),"※ 공개 이슈입니다. 개인정보 입력 금지."].join("\n");a.href="https://github.com/kimheeseo/kimheeseo/issues/new?"+new URLSearchParams({template:"question-error.md",title,body}).toString()};
  reason.addEventListener("change",update);note.addEventListener("input",update);update();
 }
-function sourceReportForm(q){return '<details data-source-report="'+esc(q.id)+'" class="source-item" style="margin-top:10px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:9px">설명·메모 <textarea class="select" rows="3" maxlength="2000"></textarea></label><p><a target="_blank" rel="noopener noreferrer" href="#">GitHub Issue 작성하기 ↗</a></p></details>'}
+function sourceReportForm(q){return '<details data-source-report="'+esc(q.id)+'" class="source-item" style="margin-top:10px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:9px">설명·메모 <textarea class="select" rows="3" maxlength="500"></textarea></label><p><a target="_blank" rel="noopener noreferrer" href="#">GitHub Issue 작성하기 ↗</a></p></details>'}
 function renderSource(){
  setStats();
  const recs=source.questions;
@@ -239,14 +232,14 @@ function renderSource(){
  metrics([["단원 분류","12개"],["참조 문항","40개"],["검토 표시",flagged+"개"],["원본 시간","40분"]])+
  '<div class="source-grid">'+recs.map(q=>'<details class="source-item"><summary>문항 '+q.number+' · '+esc(q.topic)+' <span class="badge '+(q.reviewStatus==="검토 필요"?'warn':'')+'">'+esc(q.chapter)+'</span></summary>'+
  '<p class="source-title">'+esc(q.summary)+'</p><p class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</p><p class="tiny">출처: '+esc(QuizSource.label(q,'kwater'))+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p>'+sourceReportForm(q)+'</details>').join("")+'</div>';
- document.querySelectorAll('[data-source-report]').forEach(box=>{const q=recs.find(x=>x.id===box.dataset.sourceReport);if(!q)return;const sel=box.querySelector('select'),note=box.querySelector('textarea'),link=box.querySelector('a');if(!sel||!note||!link)return;const update=()=>{const title='[문항 오류] K-water 원본 참조 / '+q.id+' / '+sel.value;const body=['문항 ID: '+q.id,'원본 PDF 참고 페이지: '+q.page,'신고 유형: '+sel.value,'메모: '+(note.value||'미작성'),'※ 공개 이슈, 개인정보 기재 금지'].join('\n');link.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()};sel.addEventListener('change',update);note.addEventListener('input',update);update()});
+ document.querySelectorAll('[data-source-report]').forEach(box=>{const q=recs.find(x=>x.id===box.dataset.sourceReport);if(!q)return;const sel=box.querySelector('select'),note=box.querySelector('textarea'),link=box.querySelector('a');if(!sel||!note||!link)return;const update=()=>{const title='[문항 오류] K-water 원본 참조 / '+q.id+' / '+sel.value;const body=['문항 ID: '+q.id,'원본 PDF 참고 페이지: '+q.page,'신고 유형: '+sel.value,'메모: '+(note.value||'미작성'),'※ 공개 이슈, 개인정보 기재 금지'].join('\n');link.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({template:"question-error.md",title,body}).toString()};sel.addEventListener('change',update);note.addEventListener('input',update);update()});
 }
 function renderAnalytics(){
  const all=db.rounds.flatMap(r=>r.questions),s=StudyStore.stats("kwater",all),due=s.due.length;
  const counts=[["오늘 복습",due+"문항"],["최근 7일 풀이",s.recent7+"회"],["누적 풀이",s.attempts+"회"],["풀이 가능한 검증문항",all.filter(q=>QuizTrust.eligible(q,"kwater")).length+"문항"]];
  $("#main-content").innerHTML='<h2>내 학습 현황</h2><p>실제 브라우저 풀이 기록만 집계합니다. 예측 점수와 AI 추천은 없습니다.</p>'+
  metrics(counts)+'<h3>단원별 정답률</h3>'+s.unitRates.map(x=>'<div class="chart-row"><span>'+esc(x.chapter)+'</span><div class="track"><i style="width:'+x.rate+'%"></i></div><b>'+x.rate+'%</b></div>').join("")+
- '<h3>자주 틀리는 단원 TOP3</h3>'+(s.topWrong.map(x=>'<p>'+esc(x.chapter)+' · 오답 '+x.wrong+'회 · 정답률 '+x.rate+'%</p>').join("")||'<p>아직 오답 기록이 없습니다.</p>')+
+ '<h3>최근 7일 풀이량</h3>'+s.days.map(d=>'<p>'+esc(d.date)+' · '+d.count+'회</p>').join('')+'<h3>자주 틀리는 단원 TOP3</h3>'+(s.topWrong.map(x=>'<p>'+esc(x.chapter)+' · 오답 '+x.wrong+'회 · 정답률 '+x.rate+'%</p>').join("")||'<p>아직 오답 기록이 없습니다.</p>')+
  '<p class="tiny">오답 복습 주기: 1일 → 3일 → 7일 → 14일 · 다시 틀리면 1일로 돌아갑니다.</p>'+
  '<div class="controls"><button type="button" class="btn primary" id="kwTodayReview">오늘 복습 시작</button><button type="button" class="btn" id="kwExport">기록 JSON 내보내기</button><button type="button" class="btn" id="kwImport">기록 JSON 가져오기</button></div><input type="file" id="kwImportFile" accept=".json,application/json" hidden>';
  $("#kwTodayReview").onclick=()=>setMode("review");
@@ -260,13 +253,11 @@ function renderHistory(){
  (store.history.length?store.history.map(v=>'<div class="source-item" style="margin:9px 0"><b>'+esc(v.mode==="round"?"신규 "+v.round+"회차":"단원별 "+v.chapter)+'</b> · '+esc(v.correct)+' / '+esc(v.count)+'문항 <span class="tiny">'+esc(new Date(v.date).toLocaleDateString("ko-KR"))+'</span></div>').join(""):'<div class="notice">아직 제출한 모의고사 기록이 없습니다.</div>');
 }
 async function init(){
- try{const [r,s]=await Promise.all([fetch("./generated-mocks-2-4.json",{cache:"no-store"}),fetch("./source-index-2026s.json",{cache:"no-store"})]);
- if(!r.ok||!s.ok)throw Error("JSON 데이터 서버 응답 오류");
- db=await r.json();source=await s.json();StudyStore.hydrate("kwater",{progress:{},bookmarks:[],history:store.history},saveKey);
+ try{[db,source]=await Promise.all([QuizJSON.load("./generated-mocks-2-4.json"),QuizJSON.load("./source-index-2026s.json")]);StudyStore.hydrate("kwater",{progress:{},bookmarks:[],history:store.history},saveKey);
  QuizSource.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizSource.register(source.questions,"kwater");QuizTrust.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizTrust.register(source.questions,"kwater");
  $("#kwaterVerifiedOnly").checked=QuizTrust.verifiedOnly();
  $("#kwaterVerifiedOnly").addEventListener("change",e=>{QuizTrust.setVerifiedOnly(e.target.checked);idx=0;render()});
- QuizTrust.loadOverrides(()=>{if(mode==="round"||mode==="chapter")render()});
+ await QuizTrust.loadOverrides();
  if(db.rounds.length!==3||db.rounds.some(x=>x.questions.length!==40)||source.questions.length!==40)throw Error("문제 수가 예상과 다릅니다.");
  const chapters=[...new Set(db.rounds.flatMap(r=>r.questions.map(q=>q.chapter)))];
  $("#chapter").innerHTML='<option value="all">전체 단원 · 120문항</option>'+chapters.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
@@ -275,7 +266,7 @@ async function init(){
  document.querySelectorAll("#modes button").forEach(b=>b.onclick=()=>setMode(b.dataset.mode,Number(b.dataset.round)||null));
  const params=new URLSearchParams(location.search);const qround=Number(params.get("round"));
  if([2,3,4].includes(qround))round=qround;
- if(params.get("mode")==="source")mode="source";else if(params.get("mode")==="chapter"){mode="chapter";const q=params.get("chapter");if(q&&chapters.includes(q))chapter=q;$("#chapter").value=chapter;studyRound=[2,3,4].includes(qround)?String(qround):"all";$("#study-round").value=studyRound}
+ if(params.get("mode")==="review")mode="review";else if(params.get("mode")==="analytics")mode="analytics";else if(params.get("mode")==="source")mode="source";else if(params.get("mode")==="chapter"){mode="chapter";const q=params.get("chapter");if(q&&chapters.includes(q))chapter=q;$("#chapter").value=chapter;studyRound=[2,3,4].includes(qround)?String(qround):"all";$("#study-round").value=studyRound}
  setMode(mode,round);
  }catch(e){$("#main-content").innerHTML='<h2>데이터 로드 실패</h2><p>'+esc(e.message)+'</p><p>GitHub Pages 배포 이후 새로고침하시거나 저장소의 JSON 파일 경로를 확인하세요.</p>';}
 }

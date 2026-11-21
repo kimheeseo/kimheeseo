@@ -1,0 +1,34 @@
+name: Quiz500 static quality
+on:
+  push:
+    paths: ['quiz500/**', 'scripts/quiz-*.cjs', '.github/workflows/quiz500.yml']
+  pull_request:
+    paths: ['quiz500/**', 'scripts/quiz-*.cjs', '.github/workflows/quiz500.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/quiz-tests.cjs
+      - run: node scripts/quiz-validate.cjs
+      - run: node scripts/quiz-integrity.cjs
+      - run: node scripts/quiz-offline-check.cjs
+      - name: Require changelog for data changes in pull requests
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          node - <<'JS'
+          const {execFileSync}=require('node:child_process');
+          const files=execFileSync('git',['diff','--name-only',process.env.BASE_SHA,'HEAD'],{encoding:'utf8'}).trim().split('\n');
+          if(files.some(f=>f.startsWith('quiz500/')&&f.endsWith('.json'))&&!files.includes('quiz500/CHANGELOG.md')){
+            throw Error('JSON 데이터 변경은 quiz500/CHANGELOG.md에 기록해야 합니다.');
+          }
+          JS

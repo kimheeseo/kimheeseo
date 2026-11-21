@@ -1,6 +1,6 @@
-<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>K-water 실제 시설별 3D 모델 · 댐·시화호 조력·수상태양광·풍력</title><meta name="description" content="한국수자원공사 실제 시설별 3D 학습: 소양강·충주·대청·안동·주암·합천댐, 시화호 조력, 임하댐 수상태양광, 방아머리 풍력. 시설 선택과 구조 설명.">
-<style>:root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e7f2ff}*{box-sizing:border-box}
+<!doctype html>
+<html lang="ko"><head><script src="../quiz-json.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K-water 실제 시설별 3D 모델 · 댐·시화호 조력·수상태양광·풍력</title><style>:root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e7f2ff}*{box-sizing:border-box}
 body{margin:0;background:#0c1c2c}main{max-width:1510px;margin:auto;padding:19px 18px 50px}
 a{color:#83e1d6}.back{font-size:13px;text-decoration:none;color:#b4cbe1}
 .eyebrow{letter-spacing:.13em;font-size:11px;color:#66e0da;font-weight:850;margin-top:15px}
@@ -31,29 +31,9 @@ h1{margin:6px 0;font-size:clamp(25px,3vw,37px);letter-spacing:-.045em}h1 em{colo
 @media(max-width:570px){main{padding:12px 10px}.viewport{height:390px}.overlay{top:8px;left:8px;padding:9px}.sign{display:none}.sidebar{padding:13px}}
 
 .earth-frame{position:absolute;inset:0;width:100%;height:100%;border:0;background:#122b3c}.map-mode #scene,.map-mode .overlay,.map-mode .sign,.map-mode .model-only{display:none!important}.mode-bar{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 0}.mode-bar button,.mode-bar a{padding:10px 14px;border-radius:9px;border:1px solid #5a8798;background:#173a4d;color:#dffaf8;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-decoration:none}.mode-bar button.active{background:#237e79}.map-note{font-size:12px;color:#c9dce8;line-height:1.7}.model-mode .earth-frame{display:none}.model-mode .map-note{display:none}
-</style></head><body class="map-mode"><main>
-<a class="back" href="./kwater.html#energy-3d">← K-water 면접자료로 돌아가기</a>
-<div class="eyebrow">REAL FACILITY INSPIRED 3D · WATER INFRASTRUCTURE DIGITAL TOUR</div><h1>K-water <em>실제 시설별 3D 학습 투어</em></h1>
-<p class="lead model-only"><b>발전 방식</b>이 아니라 <b>시설 이름</b>을 선택하세요. 소양강댐(토석), 충주댐(콘크리트), 대청댐(혼합), 안동·주암댐(토석), 합천댐(콘크리트), 시화호 조력, 임하댐 수상태양광, 방아머리 풍력의 특징을 각각 다른 구조와 움직임으로 표현했습니다.</p>
-<p class="lead">엔지니어의 설비 순회·점검 동작은 <b>발전 원리 3D 모형</b>에서 볼 수 있습니다. 실제 현장 영상이 아닌 교육용 애니메이션입니다. 재생·일시정지와 속도 조절이 적용됩니다.</p><div class="mode-bar" role="group" aria-label="화면 선택"><button type="button" id="mapMode" class="active" aria-pressed="true">🛰 실제 위성지도</button><button type="button" id="modelMode" aria-pressed="false">⚙ 발전 원리 3D 모형</button><a id="earthLink" href="https://earth.google.com/web/search/소양강댐" target="_blank" rel="noopener noreferrer">Google Earth에서 보기 ↗</a><a id="mapsLink" href="https://www.google.com/maps/search/?api=1&amp;query=소양강댐" target="_blank" rel="noopener noreferrer">지도에서 찾기 ↗</a></div><p class="map-note">시설을 선택하면 실제 위치 주변의 위성지도를 표시합니다. 확대·이동으로 지형을 살펴보세요. 위성영상의 촬영 시점과 해상도는 지역별로 다릅니다. 입체 지형은 Google Earth에서 확인하세요.</p><div class="layout">
-<div class="viewport"><iframe id="earthMap" class="earth-frame" title="선택한 시설의 위성지도" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><canvas id="scene" aria-label="실제 시설을 참고한 K-water 댐·조력·태양광 3D 교육 모델"></canvas>
-<div class="overlay"><b id="facilityTitle">소양강댐</b><span id="facilitySubtitle">토석댐 · 저수지 · 여수로 · 수력발전동</span></div>
-<div class="sign">좌클릭: 회전 · 우클릭: 자유 이동 · 휠: 확대/축소 · 터치: 회전·이동</div>
-<div id="fail" class="model-only"><div><b>3D 모델을 표시하지 못했습니다.</b><p>WebGL 지원·인터넷 연결을 확인하세요.</p><a href="./kwater.html">2D 설명으로 돌아가기</a></div></div></div>
-<aside class="sidebar"><h2>실제 시설 선택</h2><select id="facility" class="select" aria-label="실제 시설 선택"><optgroup label="다목적댐·수력"><option value="soyang">소양강댐</option><option value="chungju">충주댐</option><option value="daecheong">대청댐</option><option value="andong">안동댐</option><option value="juam">주암댐</option><option value="hapcheon">합천댐</option></optgroup><optgroup label="조력발전"><option value="sihwa">시화호 조력발전소</option></optgroup><optgroup label="수상태양광"><option value="imha">임하댐 수상태양광</option></optgroup><optgroup label="풍력발전"><option value="banga">시화 방아머리 풍력</option></optgroup></select>
-<div class="btns model-only"><button class="btn active" id="play">⏸ 일시정지</button><button class="btn" id="reset">↺ 초기화</button><button class="btn" data-view="iso">입체 시점</button><button class="btn" data-view="top">위에서 보기</button><button class="btn" data-view="front">정면 보기</button><button class="btn" id="labels">구조물 라벨 ✓</button></div>
-<label class="speed model-only" for="speed">움직임 속도<input id="speed" type="range" min=".3" max="2.5" step=".1" value="1"><span id="speedLabel">1.0×</span></label>
-<p class="control-note model-only">동일한 이름표만 바꾸는 모델이 아니라 각 시설의 댐체 형식·수문·발전동·수면 및 주변 구조를 개별 구성한 교육용 장면입니다.</p>
-<div class="box"><span>설치 위치 · 분류</span><strong id="region">강원 춘천</strong><p id="design">토석댐</p></div>
-<div class="box"><span>구조적 특징</span><strong id="highlight">경사식 토석댐</strong><p id="summary">댐 본체와 발전설비의 관계</p></div>
-<div class="box"><span>발전 및 운영 정보</span><strong id="capacity">수력발전</strong><p id="energyFlow">저수지 → 수압관로 → 수차/발전기 → 계통</p><a id="official" href="https://www.kwater.or.kr" target="_blank" rel="noopener noreferrer">K-water 공식 시설자료 ↗</a></div>
-</aside></div>
-<section class="hint"><h2>시설과 발전 원리 살펴보기</h2><p id="featureText">소양강댐은 넓은 사면을 가진 토석댐과 측면 여수로가 특징입니다.</p>
-<div class="badges"><span class="badge">댐체 구조별 차이</span><span class="badge">물 이동 경로</span><span class="badge">수차·발전기·변압기</span><span class="badge">여수로·조력 수문</span><span class="badge">수상 PV 배열·풍력</span></div>
-<p><b>모델 정확도:</b> K-water 공식 자료와 공개 사진에서 확인되는 <b>시설 종류·대표적인 배치 특징</b>을 참고해 제작한 교육용 3D 장면입니다. 실제 시설의 정확한 좌표·표고·도면·수문 치수·구조 안전·전력계통을 재현한 BIM/점군·정밀 복제품은 아닙니다. 모형 안의 물·전류 흐름과 개폐는 예시 애니메이션이며 실시간 운전상태가 아닙니다. 시설명별 정확한 설명은 오른쪽 공식 링크를 참고하세요.</p>
-<p><a href="./kwater-basin-map.html">4개 유역본부 지도·담당 역할 보기</a> · <a href="./kwater.html#technical-30s">발전원리·SCADA 면접 답변 보기</a></p>
-</section></main>
-<script>
+</style><script src="../page-data.js"></script><script src="../material-content.js" data-content="../data/materials/interview__kwater-energy-3d.json"></script><meta name="description" content="한국수자원공사 실제 시설별 3D 학습: 소양강·충주·대청·안동·주암·합천댐, 시화호 조력, 임하댐 수상태양광, 방아머리 풍력. 시설 선택과 구조 설명."><link rel="canonical" href="https://kimheeseo.github.io/kimheeseo/quiz500/interview/kwater-energy-3d.html"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="통신직 준비"><meta property="og:title" content="K-water 실제 시설별 3D 모델 · 댐·시화호 조력·수상태양광·풍력"><meta property="og:description" content="한국수자원공사 실제 시설별 3D 학습: 소양강·충주·대청·안동·주암·합천댐, 시화호 조력, 임하댐 수상태양광, 방아머리 풍력. 시설 선택과 구조 설명."><meta property="og:url" content="https://kimheeseo.github.io/kimheeseo/quiz500/interview/kwater-energy-3d.html"><meta property="og:image" content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-telecom.png"><meta property="og:image:width" content="1734"><meta property="og:image:height" content="907"><meta property="og:image:alt" content="통신직 준비 · 통신공학·무선공학·K-water · 오늘 복습부터 모의고사까지"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../accessibility.css"></head><body class="map-mode"><main aria-busy="true">자료를 불러오는 중입니다.</main>
+<script>window.QuizMaterialReady.then(()=>{
+
 (function(){
 const searches={soyang:'소양강댐',chungju:'충주댐',daecheong:'대청댐',andong:'안동댐',juam:'주암댐',hapcheon:'합천댐',sihwa:'시화호 조력발전소',imha:'임하댐 수상태양광',banga:'방아머리 풍력발전소'};
 const select=document.getElementById('facility'), frame=document.getElementById('earthMap'), earth=document.getElementById('earthLink'), maps=document.getElementById('mapsLink');
@@ -61,11 +41,14 @@ function updateMap(){const name=searches[select.value]||searches.soyang;frame.sr
 function mode(map){document.body.classList.toggle('map-mode',map);document.body.classList.toggle('model-mode',!map);document.getElementById('mapMode').classList.toggle('active',map);document.getElementById('modelMode').classList.toggle('active',!map);document.getElementById('mapMode').setAttribute('aria-pressed',String(map));document.getElementById('modelMode').setAttribute('aria-pressed',String(!map));}
 select.addEventListener('change',updateMap);document.getElementById('mapMode').addEventListener('click',()=>mode(true));document.getElementById('modelMode').addEventListener('click',()=>mode(false));updateMap();
 })();
-</script><script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script>
-<script type="module">
-import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
-const facilities=[{"id":"soyang","name":"소양강댐","group":"다목적댐·수력","river":"한강유역","region":"강원 춘천","kind":"embankment","variant":1,"feature":"대형 토석댐(사력·점토)과 측면 여수로, 우안 발전동","design":"토석댐","highlight":"넓은 경사식 사력 댐체 · 우측 여수로 · 수차 2기","elec":"200 MW (시설용량)","summary":"소양강댐은 콘크리트 중력댐이 아니라 거대한 토석댐입니다. 산지 사이 사력 댐체, 측면 여수로와 발전동을 서로 구분해 모델링했습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresentPage.do?s_mid=1515"},{"id":"chungju","name":"충주댐","group":"다목적댐·수력","river":"한강유역","region":"충북 충주","kind":"gravity","variant":2,"feature":"콘크리트 중력식댐, 중앙 수문군과 댐 직하부 발전소","design":"콘크리트 중력식","highlight":"직선형 콘크리트 댐체 · 다수 수문 · 전면 발전동","elec":"412 MW (시설용량)","summary":"콘크리트 중력식 댐체의 하류 경사면과 여러 수문, 댐 아래 대형 발전동을 표현했습니다. 소양강댐과 구조를 비교하세요.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresentPage.do?s_mid=1515"},{"id":"daecheong","name":"대청댐","group":"다목적댐·수력","river":"금강유역","region":"대전·충북 청주","kind":"mixed","variant":3,"feature":"콘크리트 중력식 + 석괴식 복합형댐","design":"혼합형(콘크리트·석괴)","highlight":"콘크리트 수문 구간과 석괴 댐체의 결합","elec":"90 MW (45 MW × 2)","summary":"대청댐은 콘크리트 중력식과 석괴식이 결합된 혼합형입니다. 왼쪽 토석 구간과 오른쪽 수문 있는 콘크리트 구조가 다르게 보이도록 했습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent02Page.do?s_mid=1515"},{"id":"andong","name":"안동댐","group":"다목적댐·수력","river":"낙동강유역","region":"경북 안동","kind":"embankment","variant":4,"feature":"중앙차수벽형 토석댐, 긴 제방형 댐체","design":"중앙차수벽형 토석댐","highlight":"긴 토석댐 · 산지 저수지 · 하류 발전설비","elec":"수력발전시설","summary":"안동댐은 길고 경사면이 넓은 중앙차수벽형 토석댐입니다. 충주댐과 달리 수문이 댐 벽 중앙에 반복되는 형태로 단순화하지 않았습니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent03Page.do?s_mid=1515"},{"id":"juam","name":"주암댐","group":"다목적댐·수력","river":"영·섬유역","region":"전남 순천","kind":"embankment","variant":5,"feature":"중앙차수벽형 토석댐, 조절지댐·도수터널","design":"토석댐 + 조절지댐","highlight":"주암 본댐 · 도수터널 모형 · 조절지 발전","elec":"조절지댐 발전설비 포함","summary":"주암 본댐과 조절지댐 연결 개념을 함께 보여줍니다. 물을 단순히 댐 아래로 방류하는 것 외에 도수터널과 하류 공급 계통이 중요한 시설입니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent09Page.do?s_mid=1515"},{"id":"hapcheon","name":"합천댐","group":"다목적댐·수력","river":"낙동강유역","region":"경남 합천","kind":"gravity","variant":6,"feature":"콘크리트 중력식댐과 발전소, 하류 역조정지댐","design":"콘크리트 중력식","highlight":"높은 콘크리트 댐체 · 발전동 · 하류 역조정지댐","elec":"본댐 100 MW","summary":"합천댐은 콘크리트 중력식댐으로 하류에 별도의 역조정지댐이 있는 것이 특징입니다. 실측 설계가 아닌 관계를 보여주는 교육용 재구성입니다.","source":"https://www.kwater.or.kr/busi/sub02/facilitiespresent03Page.do?s_mid=1515"},{"id":"sihwa","name":"시화호 조력발전소","group":"조력발전","river":"한강유역 관련 사업","region":"경기 안산 시화방조제","kind":"tidal","variant":7,"feature":"시화방조제, 밀물(창조) 발전, 수차 10기와 수문 8문","design":"단류식 창조발전","highlight":"바다·호수의 조위차 · 해수 유통 · 10기 수차","elec":"254 MW (수차 10기)","summary":"시화호 조력은 바닷물과 호수의 조위차를 이용합니다. 왼쪽 바다에서 오른쪽 호수로 물이 이동하는 흐름과 수문·터빈 구간을 분리해 보여줍니다.","source":"https://www.kwater.or.kr/water/sub01/sub05/50029610/works.do?brdId=KO27&s_flag=1&s_mid=1349&s_officecode=10980085"},{"id":"imha","name":"임하댐 수상태양광","group":"수상태양광","river":"낙동강유역","region":"경북 안동","kind":"solar","variant":8,"feature":"댐 수면 위 부유형 태양광 모듈, 육상 인버터와 계통","design":"수상 PV → 인버터","highlight":"무궁화 형태를 참고한 다수 부유식 모듈섬","elec":"47.2 MW (준공 발표)","summary":"태양광 모듈이 수면 위 부유체에 배열되어 있고, 직류 전기가 케이블로 육상 인버터·변압기에 전달되는 구조를 보여줍니다.","source":"https://www.kwater.or.kr/news/repoView.do?brdId=KO26&pageNo=12&s_mid=36&seq=139299"},{"id":"banga","name":"시화 방아머리 풍력","group":"풍력발전","river":"한강유역 관련 사업","region":"경기 안산 대부도","kind":"wind","variant":9,"feature":"방아머리 풍력발전기 2기, 타워·나셀·블레이드·변압기","design":"풍력 2기","highlight":"해안 풍력터빈 2기 · 3엽 블레이드 · 전력 연결","elec":"3 MW (1.5 MW × 2)","summary":"시화방조제 인근 방아머리 풍력설비를 참고했습니다. 수력·조력과는 달리 바람의 운동에너지가 블레이드를 돌립니다.","source":"https://www.kwater.or.kr/water/sub01/sub05/50029610/works.do?brdId=KO27&s_flag=1&s_mid=1349&s_officecode=10980085"}];
+
+}).catch(()=>{});</script>
+<script type="module">await window.QuizMaterialReady;
+const PAGE_DATA=await QuizPageData.load('../data/pages/interview__kwater-energy-3d.json');
+
+import * as THREE from '../native-3d.js';
+import {OrbitControls} from '../native-3d.js';
+const facilities=PAGE_DATA.facilities;
 const byId=Object.fromEntries(facilities.map(f=>[f.id,f]));
 const canvas=document.getElementById('scene');
 let renderer;
@@ -266,4 +249,4 @@ for(const x of dots){const t=(elapsed*.14+x.offset)%1,pos=t*(x.pts.length-1),i=M
 for(let i=0;i<waterParts.length;i++){const o=waterParts[i];if(o.isMesh && o.geometry?.type==='PlaneGeometry')o.position.y+=Math.sin(elapsed*2+i)*.001;}
 }controls.update();renderer.render(scene,camera);}
 build('soyang');requestAnimationFrame(animate);
-</script></body></html>
+</script><script src="../materials.js"></script></body></html>

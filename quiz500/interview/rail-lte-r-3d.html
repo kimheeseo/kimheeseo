@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="LTE-R 3D 애니메이션: 열차 이동, 3개 기지국 간 핸드오버, 백홀과 코어망·관제 연결 개념 시각화.">
+<html lang="ko"><head><script src="../quiz-json.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>LTE-R 3D 인터랙티브 학습 시뮬레이터 | 통신직 준비</title>
 <style>
 :root{font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:#e7f0ff;background:#0b1426}
@@ -49,8 +48,8 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
 @media(max-width:950px){.layout{grid-template-columns:1fr}.scene-card,#view{min-height:450px}.steps{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:550px){header{padding:18px 12px}.layout,.info{padding-left:12px;padding-right:12px}.scene-card,#view{min-height:375px}.overlay.top{left:8px;top:8px;padding:8px}.overlay.bottom{left:8px;right:8px;bottom:8px;padding:9px}.steps{grid-template-columns:1fr}.stage{font-size:11px}}
 </style>
-</head><body>
-<header><a class="back" href="./rail-lte-r.html">← LTE-R 기본 개념으로 돌아가기</a><div class="eyebrow">INTERACTIVE TELECOM EDUCATION · THREE.JS</div>
+<meta name="description" content="LTE-R 3D 애니메이션: 열차 이동, 3개 기지국 간 핸드오버, 백홀과 코어망·관제 연결 개념 시각화."><link rel="canonical" href="https://kimheeseo.github.io/kimheeseo/quiz500/interview/rail-lte-r-3d.html"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="통신직 준비"><meta property="og:title" content="LTE-R 3D 인터랙티브 학습 시뮬레이터 | 통신직 준비"><meta property="og:description" content="LTE-R 3D 애니메이션: 열차 이동, 3개 기지국 간 핸드오버, 백홀과 코어망·관제 연결 개념 시각화."><meta property="og:url" content="https://kimheeseo.github.io/kimheeseo/quiz500/interview/rail-lte-r-3d.html"><meta property="og:image" content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-telecom.png"><meta property="og:image:width" content="1734"><meta property="og:image:height" content="907"><meta property="og:image:alt" content="통신직 준비 · 통신공학·무선공학·K-water · 오늘 복습부터 모의고사까지"><link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../accessibility.css"></head><body>
+<header><a class="back" href="./rail-lte-r.html">← LTE-R 기본 개념으로 돌아가기</a><div class="eyebrow">INTERACTIVE TELECOM EDUCATION · CANVAS 3D</div>
 <h1>LTE-R <span>3D 동작 원리 시뮬레이터</span></h1>
 <p class="lead">달리는 열차와 LTE-R 기지국의 연결이 바뀌는 <b>핸드오버</b>, 그리고 기지국 → 백홀 전송망 → 코어망 → 관제센터로 정보가 전달되는 흐름을 관찰하세요. 마우스 왼쪽 버튼으로 회전하고 오른쪽 버튼으로 자유 이동, 휠로 확대할 수 있습니다.</p></header>
 <div class="layout">
@@ -58,7 +57,7 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
   <canvas id="view" aria-label="열차가 이동하며 기지국 A B C 간 핸드오버를 수행하는 3D 개념 시뮬레이션"></canvas>
   <div class="overlay top"><span class="overline">현재 접속 기지국 / SERVING CELL</span><div id="cellStatus" class="status">기지국 A</div><span class="overline" id="rfText">개념 수신품질: 계산 중</span><div class="signal-bar"><span id="signalFill"></span></div></div>
   <div class="overlay bottom"><span class="stage" id="stage">열차 단말 → 기지국 → 백홀 → 코어망 → 관제</span><div class="progress"><span id="progressFill"></span></div><span id="pcent" style="font-size:12px">0%</span></div>
-  <div id="fallback"><div><strong>3D 그래픽을 실행할 수 없는 환경입니다.</strong><p>WebGL 또는 외부 Three.js 모듈 연결을 확인해 주세요.</p><a href="./rail-lte-r.html">2D LTE-R 그림·용어 설명 보기</a></div></div>
+  <div id="fallback"><div><strong>3D 그래픽을 실행할 수 없는 환경입니다.</strong><p>WebGL 또는 외부 Canvas 3D 모듈 연결을 확인해 주세요.</p><a href="./rail-lte-r.html">2D LTE-R 그림·용어 설명 보기</a></div></div>
  </div>
  <aside class="panel" aria-label="애니메이션 조작 및 핵심 데이터">
   <h2>시뮬레이션 조작</h2><div class="control-group">
@@ -91,9 +90,9 @@ select{border:1px solid #50637e;background:#1b354c;color:white;padding:9px;borde
   <p><a href="./rail-lte-r.html">2D 기본 개념·용어·30초 답변</a> · <a href="./seoul-metro.html#lte-r-guide">서울교통공사 면접자료</a> · <a href="./korail.html#lte-r-guide">코레일 면접자료</a></p>
  </div>
 </div>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.1/examples/jsm/"}}</script><script type="module">
-import * as THREE from 'three';
-import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+<script type="module">
+import * as THREE from '../native-3d.js';
+import {OrbitControls} from '../native-3d.js';
 const canvas=document.querySelector('#view'),fallback=document.querySelector('#fallback');
 let renderer;
 try{renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:false});}
@@ -198,7 +197,7 @@ document.querySelector('#links').onclick=e=>{showLinks=!showLinks;e.currentTarge
 document.querySelector('#speed').oninput=e=>{speed=Number(e.target.value);document.querySelector('#speedText').textContent=speed+'×';};
 document.querySelectorAll('[data-camera]').forEach(b=>b.addEventListener('click',()=>setCamera(b.dataset.camera)));
 let previous=performance.now();
-function frame(now){requestAnimationFrame(frame);const delta=Math.min(.07,(now-previous)/1000);previous=now;resize();
+function frame(now){requestAnimationFrame(frame);const delta=Math.min(.07,Math.max(0,(now-previous)/1000));previous=now;resize();
 if(!paused){t+=delta;progress+=delta*.035*speed;if(progress>1){progress=0;lastEvent='구간 반복 재시작';activeIndex=0;}}
 const x=-43+progress*86;tr.position.x=x;
 const newIndex=x< -15.5?0:x<15.5?1:2;
@@ -215,4 +214,4 @@ report();controls.update();renderer.render(scene,camera);
 }
 requestAnimationFrame(frame);
 </script>
-</body></html>
+<script src="../materials.js"></script></body></html>
