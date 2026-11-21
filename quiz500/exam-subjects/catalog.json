@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "checkedDate": "2026-11-21",
+  "notice": "과목·시간·문항수는 사용자가 제공한 공고에서 확인된 것만 공식 시험 정보로 표시합니다. K-water 40문항·40분은 민간 참고 모의고사에 관한 사항이며 채용 공고의 공식 시험구성 확인값이 아닙니다.",
+  "agencies": [
+    {
+      "id": "national9",
+      "name": "국가직 9급",
+      "track": "방송통신(전송기술)",
+      "examSubjects": null,
+      "questionCount": null,
+      "durationMinutes": null,
+      "coverage": [
+        {
+          "name": "통신공학·정보통신 기초",
+          "bank": "comm",
+          "status": "보충 학습 가능"
+        },
+        {
+          "name": "무선통신 개념",
+          "bank": "wireless",
+          "status": "보충 학습 가능"
+        }
+      ],
+      "source": {
+        "name": "인사혁신처 국가직 2026 필기 합격선·공고 시스템",
+        "url": "https://gongmuwon.gosi.kr/oprut/StrSrTestStatsDtl.do?pstId=4845",
+        "checkedDate": "2026-11-21",
+        "type": "공식 공개"
+      },
+      "reliability": "공식",
+      "cutoff": {
+        "value": 79,
+        "year": 2026,
+        "unit": "점",
+        "stage": "9급 전송기술 필기 일반 합격선",
+        "checkedDate": "2026-11-21",
+        "reliability": "공식"
+      }
+    },
+    {
+      "id": "national7",
+      "name": "국가직 7급",
+      "track": "방송통신(전송기술)",
+      "examSubjects": null,
+      "questionCount": null,
+      "durationMinutes": null,
+      "coverage": [
+        {
+          "name": "통신공학 기초",
+          "bank": "comm",
+          "status": "보충 학습 가능"
+        },
+        {
+          "name": "무선공학 기초",
+          "bank": "wireless",
+          "status": "보충 학습 가능"
+        }
+      ],
+      "source": {
+        "name": "인사혁신처 시험별 통계 공개처 및 2026년 직렬별 참고 정리",
+        "url": "https://gongmuwon.gosi.kr/oprut/StrSrTestStatsLst.do",
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "cutoff": {
+        "value": 73,
+        "year": 2026,
+        "unit": "점",
+        "stage": "7급 전송기술 2차 일반 합격선",
+        "checkedDate": "2026-11-21",
+        "reliability": "비공식"
+      }
+    },
+    {
+      "id": "seoulmetro",
+      "name": "서울교통공사",
+      "track": "정보통신",
+      "examSubjects": null,
+      "questionCount": null,
+      "durationMinutes": null,
+      "coverage": [
+        {
+          "name": "통신공학",
+          "bank": "comm",
+          "status": "기초 학습 가능"
+        },
+        {
+          "name": "무선공학",
+          "bank": "wireless",
+          "status": "기초 학습 가능"
+        }
+      ],
+      "source": {
+        "name": "서울교통공사 채용 자료 정리(시험 공고 세부 확인 필요)",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "cutoff": null
+    },
+    {
+      "id": "korail",
+      "name": "한국철도공사(코레일)",
+      "track": "전기통신",
+      "examSubjects": null,
+      "questionCount": null,
+      "durationMinutes": null,
+      "coverage": [
+        {
+          "name": "전기·통신 기초",
+          "bank": "comm",
+          "status": "일부 보충 학습 가능"
+        },
+        {
+          "name": "무선·이동통신",
+          "bank": "wireless",
+          "status": "일부 보충 학습 가능"
+        }
+      ],
+      "source": {
+        "name": "루멘 민간 블로그 스크린샷 기반 2025~26 채용 참고 자료",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "cutoff": null
+    },
+    {
+      "id": "kwater",
+      "name": "한국수자원공사(K-water)",
+      "track": "전자통신",
+      "examSubjects": null,
+      "questionCount": null,
+      "durationMinutes": null,
+      "coverage": [
+        {
+          "name": "전자·통신",
+          "bank": "kwater",
+          "status": "자체 예상 120문항 학습 가능"
+        },
+        {
+          "name": "수자원·수처리 기초",
+          "bank": "kwater",
+          "status": "민간 원본 참고범위 기반"
+        }
+      ],
+      "referencePractice": {
+        "questionCount": 40,
+        "durationMinutes": 40,
+        "label": "사용자 제공 2026 상반기 민간 모의고사; 공식 공고 아님"
+      },
+      "source": {
+        "name": "빡취쌤 2026 상반기 K-water 전공 민간 모의고사",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "cutoff": null
+    }
+  ]
+}
