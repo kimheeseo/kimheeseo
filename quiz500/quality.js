@@ -22,7 +22,7 @@ function classification(q){
 }
 function originalPdf(q,subject){
  if(subject!=='comm')return null;
- if(q.source&&availablePdfs.has(q.source))return './source-pdfs/'+encodeURIComponent(q.source)+'#page='+Math.max(1,Number(q.page)||1);
+ const legacy=typeof q.source==='string'?q.source:q.legacySource;if(legacy&&availablePdfs.has(legacy))return './source-pdfs/'+encodeURIComponent(legacy)+'#page='+Math.max(1,Number(q.page)||1);
  const m=String(q.kind||'').match(/(2024|2025|2026)년도 지방공무원 9급/);
  if(m){const p='local-9-communication/'+m[1]+'-local-9-communication.pdf';if(availablePdfs.has(p))return './source-pdfs/'+p}
  return null;
@@ -31,7 +31,9 @@ function dedupe(items){const seen=new Set();return items.filter(q=>{const key=JS
 function panel(q,subject){
  const host=document.createElement('section');host.className='quality-panel';host.setAttribute('aria-label','문항 출처와 오류 신고');
  const title=document.createElement('strong');title.textContent=classification(q);host.append(title);
- const src=document.createElement('p');src.textContent='출처 표기: '+(q.sourceLabel||q.exam||q.source||('기존 학습 자료 '+(q.page||'?')+'쪽'))+'.';host.append(src);
+ const src=document.createElement('p');const attribution=window.QuizSource?QuizSource.normalize(q,subject):null;
+ src.textContent='출처: '+(attribution?.name||q.sourceLabel||q.exam||('기존 학습 자료 '+(q.page||'?')+'쪽'))+' · 유형: '+(attribution?.type||'외부 참고')+' · 메타 확인: '+(attribution?.checkedDate||'미확인')+'.';host.append(src);
+ if(attribution?.url){const info=document.createElement('a');info.href=attribution.url;info.target='_blank';info.rel='noopener noreferrer';info.textContent='출처 원문·안내 링크 ↗';host.append(info)}
  const state=document.createElement('p');state.textContent='검토 상태: 원문·정답·해설 개별 검증 여부를 별도로 표시합니다.';host.append(state);
  if(window.QuizTrust){host.prepend(QuizTrust.statusTag(q,subject))}
 
@@ -47,7 +49,7 @@ function panel(q,subject){
  const memo=document.createElement('textarea');memo.setAttribute('aria-label','문항 오류 신고 메모');memo.maxLength=2000;memo.placeholder='어느 부분이 잘못되었는지 적어주세요. 공개 이슈이므로 개인정보는 넣지 마세요.';memoLabel.append(memo);details.append(memoLabel);
  const explain=document.createElement('p');explain.textContent='외부 문항 오류 신고 페이지가 열립니다. 내용을 확인한 뒤 직접 제출할 수 있으며, 개인정보는 입력하지 마세요.';details.append(explain);
  const a=document.createElement('a');a.target='_blank';a.rel='noopener';a.className='quality-report-link';a.textContent='신고 내용 작성하기 ↗';
- function update(){const title='[문항 오류] '+subject+' / '+q.id+' / '+select.value;const body=['과목: '+(subject==='comm'?'통신공학':'무선공학'),'문항 ID: '+q.id,'문항 유형: '+(q.kind||'미확인'),'출처 표기: '+(q.sourceLabel||q.exam||q.source||'미확인'),'오류 유형: '+select.value,'페이지: '+location.href.split('?')[0].split('#')[0],'','오류 설명:',memo.value||'- (메모 없음)','','※ 이 이슈는 공개됩니다. 개인정보를 포함하지 마세요.'].join('\n');a.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()}
+ function update(){const title='[문항 오류] '+subject+' / '+q.id+' / '+select.value;const body=['과목: '+(subject==='comm'?'통신공학':'무선공학'),'문항 ID: '+q.id,'문항 유형: '+(q.kind||'미확인'),'출처 표기: '+(window.QuizSource?QuizSource.normalize(q,subject).name:(q.sourceLabel||q.exam||'미확인')),'오류 유형: '+select.value,'페이지: '+location.href.split('?')[0].split('#')[0],'','오류 설명:',memo.value||'- (메모 없음)','','※ 이 이슈는 공개됩니다. 개인정보를 포함하지 마세요.'].join('\n');a.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()}
  select.addEventListener('change',update);memo.addEventListener('input',update);update();details.append(a);host.append(details);return host;
 }
 window.QuizQuality={prepareComm,panel,dedupe};
