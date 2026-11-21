@@ -1,5 +1,15 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-21 · 3단계 학습 기록·복습
+
+- `study-storage.js` 공통 localStorage 래퍼: 문항 ID별 누적 풀이/정오/최근 시각/풀이 시간/북마크/메모, 복습 stage 및 dueAt, 개별 풀이 이벤트, 세션 기록, JSON 내보내기/가져오기.
+- 기존 통신공학 `comms500_prefs_v2`, 무선공학 `wireless500_prefs_v2`, K-water `kwater_study_v1` 저장값은 그대로 보존하며 새로운 `quiz500_study_v1_*` 키를 병행. 기존 기록의 알 수 없는 풀이 시간·이벤트는 만들지 않음.
+- `study-ui.js`가 통신공학·무선공학 화면에 홈 오늘 복습 카드와 **내 학습 현황** 탭(단원별 정답률·최근 7일 실제 풀이 횟수·오답 TOP3)·개인 메모 및 백업/복원 UI 추가. K-water 페이지도 동일한 저장/내보내기/복습/현황 로직 연동.
+- 간격 반복: 오답일로부터 1일→해당 문항 맞히면 3일→7일→14일; 틀리면 처음(1일)으로. `review` 채점 보류 문항은 오답 스케줄에 넣지 않음.
+- 단위 테스트에서 1/3/7/14일, review pending 제외, 기존 집계 무중복 이관 및 잘못된 과거 날짜 처리 검증. 실제 브라우저 360px/Console은 수동 실측 필요.
+- [상세 테스트](./validation/stage3-checklist.md). 모의고사 전용 구성/기관별 과목표는 4단계 진행 대상.
+
+
 ## 2026-11-21 · 2단계 자료 출처·저작권 메타
 - `sources.js` 및 `sources/index.html`, `materials-provenance.json` 신설.
 - 모든 원천 질문 JSON의 `source` 객체 필드 정규화(출처명/URL(없으면 null)/메타 확인일/유형), 기존 PDF 경로 `legacySource` 유지. `quality.js`의 표시·원본 링크 처리도 호환성 보강.
