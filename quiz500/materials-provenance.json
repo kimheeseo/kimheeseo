@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "inspectedDate": "2026-11-21",
+  "usage": "Static material-level metadata. Per-question structured source lives in each question JSON; cutoff rows have per-year reliability.",
+  "items": [
+    {
+      "path": "quiz500/communication-quiz-500/index.html",
+      "source": {
+        "name": "통신공학 학습 PDF 및 공개 시험 참고자료",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "notes": "문항별 source 참조; 전체 학습 문제를 공식 기출로 표시하지 않음"
+    },
+    {
+      "path": "quiz500/wireless-quiz-500/index.html",
+      "source": {
+        "name": "무선공학 학습자료 및 무선설비기사 참고",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "notes": "일부 민간 원문 추출 문제·기출 참조"
+    },
+    {
+      "path": "quiz500/kwater-exams/index.html",
+      "source": {
+        "name": "K-water 전자통신 2~4회차 자체 제작 문제",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "자체 창작"
+      },
+      "reliability": "비공식",
+      "notes": "원본 1회차 분류는 외부 참고(비공식)로 별도 구분"
+    },
+    {
+      "path": "quiz500/interview/kwater.html",
+      "source": {
+        "name": "한국수자원공사 면접·채용 참고 정리",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "notes": "직무·시험사항은 공식 공고 확인 필요"
+    },
+    {
+      "path": "quiz500/interview/korail.html",
+      "source": {
+        "name": "코레일 채용·전기통신 면접 참고 정리",
+        "url": null,
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "비공식",
+      "notes": "민간 후기·복원 자료의 원문/권리 개별 확인 필요"
+    },
+    {
+      "path": "quiz500/civil-service-exams/index.html",
+      "source": {
+        "name": "2027 국가직 9급 일정 인사혁신처 공개",
+        "url": "https://www.mpm.go.kr/mpm/comm/newsPress/newsPressRelease/?cntId=4360&mode=view",
+        "checkedDate": "2026-11-21",
+        "type": "공식 공개"
+      },
+      "reliability": "공식",
+      "notes": "지방직 안내는 별도 공고 필요"
+    },
+    {
+      "path": "quiz500/civil-service-exams/cutoff.html",
+      "source": {
+        "name": "2026 9급 공식 통계·7급 민간 정리·과년도 비교",
+        "url": "https://gongmuwon.gosi.kr/oprut/StrSrTestStatsDtl.do?pstId=4845",
+        "checkedDate": "2026-11-21",
+        "type": "외부 참고"
+      },
+      "reliability": "혼합(9급 공식, 7급/과년도 비공식)",
+      "notes": "직렬별 2026·2025·2024 필드 신뢰 등급 참조"
+    }
+  ]
+}
