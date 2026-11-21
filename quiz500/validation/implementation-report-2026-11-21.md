@@ -380,3 +380,11 @@
 - `scripts/quiz-offline-check.cjs`
 - `scripts/quiz-study-tests.cjs`
 - `scripts/quiz-tests.cjs`
+
+
+## PR 최신 main 충돌 해소
+
+- main b9c2f80의 K-water 원본 40개 개별 신고, 헤드리스 브라우저 CI와 8분 제한을 통합했습니다.
+- README·CHANGELOG·5단계 체크리스트는 두 변경의 기록을 모두 보존했습니다.
+- CI 초기화 검사는 비공개 전역 함수 이름 대신 실제 DOM 준비 상태를 확인합니다.
+- 사이트 라이브러리 의존성과 실제 문항 내용·ID는 바꾸지 않았습니다.

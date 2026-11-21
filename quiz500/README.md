@@ -308,3 +308,15 @@ quiz500/
 - [한국수자원공사 2020~2026 전자통신직 모집인원](./interview/kwater.html#telecom-recruitment)
 - 수자원공사 2026 상반기: 1차 164명 중 전자통신 8명, 2차 207명 중 16명. 모집 회차와 전형을 분리하였고, 각 연도 직렬별 세부 모집표를 대조할 수 없을 때 채용인원을 임의로 추정하지 않았습니다.
 - 서울교통공사 페이지의 익명 커뮤니티 참고사항에서는 **특정 온라인 게시판 외부 링크와 미확인 게시물 상태 표시를 제거**했습니다.
+
+
+## 2026-11-21 · 최신 병행 변경 통합
+
+## 2026-11-21 · 5단계 콘솔·360px 헤드리스 브라우저 검사 추가
+
+- `validation/browser-check.mjs`: Node 22 기본 내장 모듈·WebSocket + Chrome DevTools Protocol로 **13개 주요 화면**을 360px viewport로 열고 페이지 초기화, 가로 스크롤, JavaScript 예외, `console.error`, Chrome 오류 로그를 검사한다.
+- `.github/workflows/quiz500-smoke.yml`: 기존 의존성 없는 정적 검사 이후 브라우저 검사 실행; 사이트 런타임 외부 의존성은 KaTeX CDN만 유지.
+- **본 대화에서 Chrome 테스트를 GitHub Actions 환경에서 실제 실행하여 0건을 입증하지는 못했으므로 배포 검증은 미완료**. 브라우저 검사 결과는 Actions 로그 또는 로컬의 `node quiz500/validation/browser-check.mjs`로 확인해야 한다.
+
+
+K-water 원본 40개 참조 항목의 개별 오류 신고도 유지했습니다. 브라우저 CI 준비 여부 판정은 전역 함수 대신 실제 화면의 초기화 상태를 확인하도록 조정했습니다.

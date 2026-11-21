@@ -189,3 +189,15 @@
 
 
 통합 구현: 기존 `/mock-exam/`, `/exam-subjects/`, `/changelog/` 주소는 공통 화면으로 연결합니다. 혼합 과목, 기존 모의고사 기록·목표 기관을 유지합니다. JSON 원본과 file://용 미러는 생성 스크립트 및 일치 검사로 관리합니다.
+
+
+## 2026-11-21 · 최신 병행 변경 통합
+
+## 2026-11-21 · 5단계 브라우저 콘솔 자동 점검 보강
+
+- `quiz500/validation/browser-check.mjs` 신규: Chrome headless(Node 22·내장 CDP WebSocket)로 사이트 주요 13개 URL과 기존 딥링크를 방문, 360px 가로 넘침, JS 예외, console.error/Chrome Log 오류 포착. npm 신규 라이브러리 없음.
+- `.github/workflows/quiz500-smoke.yml` 정적 검사 뒤 브라우저 검사 추가(8분 제한). 실제 CI 실행 결과는 이 변경 기록에 PASS로 기재하지 않음.
+- 전체 1~5단계 기존 스키마·문항·저장 키·URL은 이번 검사 추가에서 변경하지 않음.
+
+
+K-water 원본 40개 참조 항목의 개별 오류 신고도 유지했습니다. 브라우저 CI 준비 여부 판정은 전역 함수 대신 실제 화면의 초기화 상태를 확인하도록 조정했습니다.

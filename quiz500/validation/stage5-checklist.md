@@ -32,3 +32,16 @@
 
 
 통합 갱신: [최신 단계별 보고서](./implementation-report-2026-11-21.md).오프라인 JSON 미러는 `node scripts/quiz-build-offline.cjs`로 생성하고 `node scripts/quiz-offline-check.cjs`로 검사합니다.
+
+
+## 2026-11-21 · 최신 병행 변경 통합
+
+
+## 추가 브라우저 자동 점검 (2026-11-21)
+
+- 루트에서 Node 22 + Chrome/Chromium 설치 환경으로 `node quiz500/validation/browser-check.mjs` 실행.
+- 13개 화면(메인·통신/무선 및 기존 kind/unit 딥링크·K-water 원본/모의·공무원 컷·모의고사·기관 과목·출처·변경일지)을 모바일 360px로 엽니다.
+- **실패 판정:** 앱 초기화 불능, JS Runtime exception, `console.error`, Chrome Log error, 360px 문서 가로 넘침. GitHub Actions `quiz500-smoke.yml`에 정적 검사 다음 단계로 실행됩니다.
+- 테스트 실행이 되지 않았거나 Chrome 환경을 확보하지 못한 경우 **콘솔 에러 0건이라고 기록하지 마세요.**
+
+K-water 원본 40개 참조 항목의 개별 오류 신고도 유지했습니다. 브라우저 CI 준비 여부 판정은 전역 함수 대신 실제 화면의 초기화 상태를 확인하도록 조정했습니다.
