@@ -42,7 +42,7 @@
 1. `?kind=`, `?chapter=`, `?unit=`, `?year=`, `?level=` 등 기존 파라미터와 도메인·디렉터리 경로 보존.
 2. 문항 ID 변경 시 이전 학습 기록이 끊기므로 동등한 새 문항도 기존 ID를 조용히 덮어쓰지 않는다.
 3. 기존 `legacySource` PDF 링크는 `QuizQuality`가 활용한다. 임의 제거 금지.
-4. 정적 JSON은 GitHub Pages URL에서 `fetch`한다. 사용자가 개인 파일(`file://`)로 열 때 교차 출처 제한 때문에 JSON 로드가 실패할 수 있으며, 그 경우에도 오류 안내를 표시한다.
+4. 정적 JSON은 GitHub Pages에서 `fetch`하는 원본 데이터이다. `file://` 로컬 실행에서 fetch가 차단되면 해당 폴더의 `offline-bank.js` 미러 스크립트를 불러오도록 하여 기존 오프라인 학습을 보존한다. JSON 수정 시 `offline-bank.js`를 동기 재생성하고 `validation/check.mjs` 동기 검사를 통과해야 한다.
 5. 데이터 변경마다 `quiz500/CHANGELOG.md`에 날짜·변경 건수·승인 근거·검증 결과 기록. 자동 갱신 명령은 CI가 없으므로 커밋 관리 절차에 포함한다.
 
 ## 검증
