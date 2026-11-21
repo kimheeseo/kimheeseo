@@ -1,5 +1,13 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-21 · 2단계 자료 출처·저작권 메타
+- `sources.js` 및 `sources/index.html`, `materials-provenance.json` 신설.
+- 모든 원천 질문 JSON의 `source` 객체 필드 정규화(출처명/URL(없으면 null)/메타 확인일/유형), 기존 PDF 경로 `legacySource` 유지. `quality.js`의 표시·원본 링크 처리도 호환성 보강.
+- 검토 후보 753건 `validation/external-text-candidates-2026-11-21.csv` 생성. 외부 원문 대조 미완료·삭제/대체 미수행.
+- 국가직 9급(공식)·7급(비공식 비교 정리) 78개 모집단위의 출처 확인일·신뢰 등급 및 과년도 비교값 비공식 명시. 국가직 일정 공식/지방직 공고 필요 구분. 코레일 커트라인·경쟁률 블로그 발췌 비공식 표시.
+- [자료 출처·이용 안내](./sources/) 홈 푸터 연결. 실제 브라우저 콘솔·모바일 확인은 별도.
+
+
 ## 2026-11-21 · 1단계 문항 신뢰성 체계
 - `trust.js` 및 `status-overrides.json` 신설: verified/auto/review 3상태, Verified 단일 승인 파일, 기본 verified-only ON.
 - 4개 JSON 원천 자료에 전 문항 상태 필드 추가(총 2,996건). 임의 verified 0건. review 문항 정답 채점/누적 방지.
