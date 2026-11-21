@@ -34,7 +34,7 @@ function panel(q,subject){
  const src=document.createElement('p');const attribution=window.QuizSource?QuizSource.normalize(q,subject):null;
  src.textContent='출처: '+(attribution?.name||q.sourceLabel||q.exam||('기존 학습 자료 '+(q.page||'?')+'쪽'))+' · 유형: '+(attribution?.type||'외부 참고')+' · 메타 확인: '+(attribution?.checkedDate||'미확인')+'.';host.append(src);
  if(attribution?.url){const info=document.createElement('a');info.href=attribution.url;info.target='_blank';info.rel='noopener noreferrer';info.textContent='출처 원문·안내 링크 ↗';host.append(info)}
- const state=document.createElement('p');state.textContent='검토 상태: 원문·정답·해설 개별 검증 여부를 별도로 표시합니다.';host.append(state);
+ const state=document.createElement('p');const trust=window.QuizTrust?QuizTrust.status(q,subject):'review';state.textContent=trust==='verified'?'검증 완료: 원문·정답·해설의 검증 승인 기록이 있습니다.':trust==='auto'?'미검증: 표시된 답은 잠정 학습용 답안이며 원문·정답·해설을 아직 대조하지 않았습니다. 확정 정답으로 암기하지 마세요.':'검토 중: 원문·수식·보기·정답 등에 확인이 필요한 부분이 있어 자동 채점을 보류합니다.';state.className=trust==='verified'?'quality-check-note':'quality-warning';host.append(state);
  if(window.QuizTrust){host.prepend(QuizTrust.statusTag(q,subject))}
 
  if(q.legacyId){const m=document.createElement('p');m.textContent='중복되던 ID를 구분했습니다. 이전 ID: '+q.legacyId+'. 기존 ID에 저장된 기록은 당시 실제 표시된 첫 문항에 남습니다.';host.append(m)}
@@ -43,7 +43,7 @@ function panel(q,subject){
  else if(q.glyphReview&&q.sourceTag==='BROADCAST'){const p=document.createElement('p');p.textContent='아래의 원문 이미지 확인 메뉴에서 시험지를 열어 보세요.';host.append(p)}
  else if(q.glyphReview){const p=document.createElement('p');p.textContent='연결 가능한 원문 PDF는 현재 확인되지 않았습니다.';host.append(p)}
  const details=document.createElement('details');details.className='quality-report';
- const sum=document.createElement('summary');sum.textContent='정답/해설 오류 신고';details.append(sum);
+ const sum=document.createElement('summary');sum.textContent='⚑ 이 문항 오류 신고 · 정답/해설/수식';sum.style.cssText='cursor:pointer;font-weight:800;color:var(--primary,#245fc2);padding:10px 0';details.append(sum);
  const label=document.createElement('label');label.textContent='신고 유형 ';const select=document.createElement('select');select.setAttribute('aria-label','오류 신고 유형');['정답 오류','해설 오류','문제 오타','수식 깨짐','기타'].forEach(t=>{let o=document.createElement('option');o.value=t;o.textContent=t;select.append(o)});label.append(select);details.append(label);
  const memoLabel=document.createElement('label');memoLabel.textContent='추가 설명·메모 (선택, 최대 500자) ';memoLabel.style.display='block';memoLabel.className='trust-report';
  const memo=document.createElement('textarea');memo.setAttribute('aria-label','문항 오류 신고 메모');memo.maxLength=500;memo.placeholder='어느 부분이 잘못되었는지 적어주세요. 공개 이슈이므로 개인정보는 넣지 마세요.';memoLabel.append(memo);details.append(memoLabel);
