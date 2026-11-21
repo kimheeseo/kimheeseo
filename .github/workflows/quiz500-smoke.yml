@@ -18,3 +18,5 @@ jobs:
           node-version: '22'
       - name: Static JS, JSON, SEO, and question checks
         run: node quiz500/validation/check.mjs
+      - name: Browser 360px and console errors (Chrome)
+        run: node quiz500/validation/browser-check.mjs
