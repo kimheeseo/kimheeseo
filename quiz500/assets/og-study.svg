@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="통신직 준비 · 통신공학 무선공학 모의고사">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f6faff"/><stop offset="1" stop-color="#dfefff"/></linearGradient><linearGradient id="band" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#173b87"/><stop offset="1" stop-color="#2166d4"/></linearGradient></defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<path d="M0 468 Q240 360 480 466 T1200 380 V630 H0Z" fill="#c1dcff"/>
+<path d="M0 558 Q280 432 530 537 T1200 477 V630 H0Z" fill="#3d8ce2"/>
+<path d="M0 616 Q370 518 710 608 T1200 551 V630 H0Z" fill="#123c8d"/>
+<g fill="none" stroke="#9cbee9" stroke-width="3" opacity=".45"><path d="M30 48h160l55 54h170"/><path d="M870 68h165l80 80h86"/><path d="M790 110h130l55 52h116"/></g>
+<g stroke="#2857a1" stroke-width="7" fill="none"><path d="M115 192V500M64 245h102M70 310h94M78 382h77M80 440h71"/><path d="M65 250l105 60-103 71 98 63M163 250L60 310l104 71-102 63"/><path d="M166 198q40 32 0 69M181 179q61 48 0 106M194 160q84 62 0 144"/></g>
+<text x="280" y="130" font-family="sans-serif" font-size="24" fill="#266cc0" font-weight="700" letter-spacing="3">TELECOM CAREER STUDY</text>
+<text x="275" y="272" font-family="Noto Sans KR, NanumSquare, sans-serif" font-weight="900" font-size="100" fill="#0b2859">통신직 준비</text>
+<rect x="270" y="310" width="686" height="92" rx="40" fill="url(#band)"/>
+<text x="320" y="373" font-family="Noto Sans KR, NanumSquare, sans-serif" font-size="43" font-weight="800" fill="#fff">통신공학 · 무선공학 · 모의고사</text>
+<text x="284" y="450" font-family="Noto Sans KR, NanumSquare, sans-serif" font-size="26" fill="#244b86">기관별 채용정보 · 문항 검증 · 오답 복습</text>
+<g transform="translate(1000 430)" stroke="#2665bf" stroke-width="6" fill="#fff"><rect x="-28" y="-45" width="156" height="155" rx="15"/><path d="M-1 -7l12 12 25-26M-1 48l12 12 25-26"/><path d="M52 -7h54M52 48h54"/></g>
+</svg>
