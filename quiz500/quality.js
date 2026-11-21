@@ -32,7 +32,9 @@ function panel(q,subject){
  const host=document.createElement('section');host.className='quality-panel';host.setAttribute('aria-label','문항 출처와 오류 신고');
  const title=document.createElement('strong');title.textContent=classification(q);host.append(title);
  const src=document.createElement('p');src.textContent='출처 표기: '+(q.sourceLabel||q.exam||q.source||('기존 학습 자료 '+(q.page||'?')+'쪽'))+'.';host.append(src);
- const state=document.createElement('p');state.textContent='검토 상태: 이번 점검은 데이터 형식 자동 점검입니다. 원문·정답·해설의 개별 대조 여부는 이 표시만으로 확인할 수 없습니다.';host.append(state);
+ const state=document.createElement('p');state.textContent='검토 상태: 원문·정답·해설 개별 검증 여부를 별도로 표시합니다.';host.append(state);
+ if(window.QuizTrust){host.prepend(QuizTrust.statusTag(q,subject))}
+
  if(q.legacyId){const m=document.createElement('p');m.textContent='중복되던 ID를 구분했습니다. 이전 ID: '+q.legacyId+'. 기존 ID에 저장된 기록은 당시 실제 표시된 첫 문항에 남습니다.';host.append(m)}
  if(q.glyphReview){const w=document.createElement('p');w.className='quality-warning';w.textContent='수식·그림 표시 확인 필요: 일부 문자가 깨져 보일 수 있어 이 문항은 자동 채점을 보류합니다. 아래 원문 자료가 있으면 확인해 주세요.';host.append(w)}
  const pdf=originalPdf(q,subject);if(pdf){const a=document.createElement('a');a.href=pdf;a.target='_blank';a.rel='noopener';a.textContent='해당 시험지 PDF 열기 ↗';host.append(a)}
@@ -40,11 +42,13 @@ function panel(q,subject){
  else if(q.glyphReview){const p=document.createElement('p');p.textContent='연결 가능한 원문 PDF는 현재 확인되지 않았습니다.';host.append(p)}
  const details=document.createElement('details');details.className='quality-report';
  const sum=document.createElement('summary');sum.textContent='이 문항 오류 신고';details.append(sum);
- const label=document.createElement('label');label.textContent='신고 유형 ';const select=document.createElement('select');select.setAttribute('aria-label','오류 신고 유형');['문제 본문 오류','선택지 오류','정답 오류','해설 오류','그림·수식 누락','출처 오류','기타'].forEach(t=>{let o=document.createElement('option');o.value=t;o.textContent=t;select.append(o)});label.append(select);details.append(label);
+ const label=document.createElement('label');label.textContent='신고 유형 ';const select=document.createElement('select');select.setAttribute('aria-label','오류 신고 유형');['정답 오류','해설 오류','문제 오타','수식 깨짐','기타'].forEach(t=>{let o=document.createElement('option');o.value=t;o.textContent=t;select.append(o)});label.append(select);details.append(label);
+ const memoLabel=document.createElement('label');memoLabel.textContent='추가 설명·메모 (선택) ';memoLabel.style.display='block';memoLabel.className='trust-report';
+ const memo=document.createElement('textarea');memo.setAttribute('aria-label','문항 오류 신고 메모');memo.maxLength=2000;memo.placeholder='어느 부분이 잘못되었는지 적어주세요. 공개 이슈이므로 개인정보는 넣지 마세요.';memoLabel.append(memo);details.append(memoLabel);
  const explain=document.createElement('p');explain.textContent='외부 문항 오류 신고 페이지가 열립니다. 내용을 확인한 뒤 직접 제출할 수 있으며, 개인정보는 입력하지 마세요.';details.append(explain);
  const a=document.createElement('a');a.target='_blank';a.rel='noopener';a.className='quality-report-link';a.textContent='신고 내용 작성하기 ↗';
- function update(){const title='[문항 오류] '+subject+' / '+q.id+' / '+select.value;const body=['과목: '+(subject==='comm'?'통신공학':'무선공학'),'문항 ID: '+q.id,'문항 유형: '+(q.kind||'미확인'),'출처 표기: '+(q.sourceLabel||q.exam||q.source||'미확인'),'오류 유형: '+select.value,'페이지: '+location.href.split('?')[0].split('#')[0],'','오류 설명:','- ','','※ 이 이슈는 공개됩니다. 개인정보를 포함하지 마세요.'].join('\n');a.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()}
- select.addEventListener('change',update);update();details.append(a);host.append(details);return host;
+ function update(){const title='[문항 오류] '+subject+' / '+q.id+' / '+select.value;const body=['과목: '+(subject==='comm'?'통신공학':'무선공학'),'문항 ID: '+q.id,'문항 유형: '+(q.kind||'미확인'),'출처 표기: '+(q.sourceLabel||q.exam||q.source||'미확인'),'오류 유형: '+select.value,'페이지: '+location.href.split('?')[0].split('#')[0],'','오류 설명:',memo.value||'- (메모 없음)','','※ 이 이슈는 공개됩니다. 개인정보를 포함하지 마세요.'].join('\n');a.href='https://github.com/kimheeseo/kimheeseo/issues/new?'+new URLSearchParams({title,body}).toString()}
+ select.addEventListener('change',update);memo.addEventListener('input',update);update();details.append(a);host.append(details);return host;
 }
 window.QuizQuality={prepareComm,panel,dedupe};
 })();
