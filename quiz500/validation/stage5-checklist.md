@@ -29,3 +29,6 @@
 
 ## 제약
 외부 서비스 연결 없이 정적 GitHub Pages에서 작동. 외부 런타임 의존성은 KaTeX CDN만 사용.
+
+
+통합 갱신: [최신 단계별 보고서](./implementation-report-2026-11-21.md).오프라인 JSON 미러는 `node scripts/quiz-build-offline.cjs`로 생성하고 `node scripts/quiz-offline-check.cjs`로 검사합니다.

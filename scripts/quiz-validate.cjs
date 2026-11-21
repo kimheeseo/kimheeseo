@@ -1,0 +1,4 @@
+const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');const root=path.resolve(__dirname,'../quiz500');let scripts=0,json=0;
+function files(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(d=>d.isDirectory()?files(path.join(dir,d.name)):[path.join(dir,d.name)])}
+for(const f of files(root)){const s=fs.readFileSync(f,'utf8');if(f.endsWith('.js')){require('node:child_process').execFileSync(process.execPath,['--check',f],{stdio:'pipe'});scripts++}if(f.endsWith('.json')){JSON.parse(s);json++}if(f.endsWith('.html'))for(const m of s.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)){if(/\bsrc\s*=|application\/ld\+json|application\/json|importmap/.test(m[1]))continue;new vm.Script(/type=["']module/.test(m[1])?'(async()=>{'+m[2].replace(/\bimport\s+[^;]+;/g,'')+'})()':m[2],{filename:f});scripts++}}
+console.log('Parsed JS blocks:',scripts,'JSON:',json);

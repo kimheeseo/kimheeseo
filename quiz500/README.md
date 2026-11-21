@@ -1,37 +1,16 @@
 # Quiz500 | 통신공학 · 무선공학 퀴즈
 
-## 2026-11-21 · 5단계 홈·JSON 분리·공유 메타·정적 검사
+## 현재 구현 · 2026-11-21
 
-- 홈 첫 화면: **오늘 복습 → 필기 학습 시작 → 모의고사 → 기관별 자료** 4개 빠른 이동 카드(모바일 1열) 추가, 최근 업데이트는 3건만 보이고 전체 내역은 [변경 일지](./changelog/)에서 `CHANGELOG.md`를 직접 읽도록 분리. 홈 푸터의 자료 출처·오류 신고 링크 유지.
-- 통신공학·무선공학의 `file://` 직접 열기 호환을 위해 JSON 동기 미러 `offline-bank.js` 2개를 추가했다. GitHub Pages에서는 JSON을 우선 읽고, CORS·네트워크 오류 시에만 로컬 스크립트로 복구한다. 정적 검사에서 JSON과 미러가 완전히 일치하는지 확인한다.
-- 통신공학·무선공학 학습 앱의 대용량 `const BANK=[...]` 문항 배열을 HTML에서 제거. 두 앱은 기존 정적 `quiz_bank_1000.json` / `wireless_bank_1000.json`을 fetch한 다음 외부 `app.js`를 실행. 추가 무선설비기사 문항 작성·병합 로직과 통신공학 K-water iframe 연계 코드는 그대로 유지. `?kind=`, `?chapter=`, `?unit=` 등 기존 딥링크 파서 보존.
-- 공무원 7·9급 78개 합격선/경쟁률 데이터는 [`cutoff-data.json`](./civil-service-exams/cutoff-data.json)으로 HTML에서 분리. K-water 40+120문항, 기관 과목표, 출처 메타는 기존부터 외부 JSON으로 관리.
-- [문항·출처·기관 데이터 스키마](./SCHEMA.md) 작성: 문항 ID 안정성, `status` 승인 규칙, `source`/구 PDF 경로, 확인일·신뢰도, URL 호환 및 CHANGELOG 기재 원칙.
-- 주요 14페이지에 canonical, Open Graph title/description/image, Twitter 카드 메타 추가; 기존 HTML `title`과 `description` 유지. 사용자 요청 OG 이미지로 [PNG](./assets/og-study.png)(600×315, 소셜 미리보기용)와 [SVG 원본](./assets/og-study.svg)(1200×630) 등록. KakaoTalk 등 플랫폼이 실제 이미지를 추출하는지는 배포 후 공유 미리보기 확인 필요.
-- 모바일 360px 안전 폭 CSS 추가. 기존 구조·다크모드·키보드 인터랙션은 그대로 유지.
-- `validation/check.mjs` 및 `.github/workflows/quiz500-smoke.yml` 추가: Node 22 의존성 없는 JS 구문, JSON/상태·출처, 이미지 파일, SEO, 문항 수·기관 정보, 변경 3건 및 URL 호환 정적 CI 검사. 실제 모바일 레이아웃/브라우저 Console 0건 검증은 별도 수행해야 함.
-- [단계별 최종 점검표](./validation/stage5-checklist.md). 이전 1~4단계 기록·원본 자료는 변경 없이 유지.
+- [학습 홈](./) · [복습·현황·모의고사](./learning.html?mode=mock) · [직렬별 과목표](./exam-subjects.html) · [변경 일지](./changelog.html)
+- 원본 등록 4,038개 / 실제 풀이 목록 4,024개(기존 내용 누락 통신 14개 보류). 검증 승인 0개이므로 기본 검증 전용 및 모의고사는 출제할 수 없습니다. 승인 전에는 일반 학습의 검증 전용 설정을 끄고 연습하세요. 검토 중은 채점 보류입니다.
+- [문항 검증 승인](./status-overrides.json) · [자료 이용 안내](./sources/) · [외부 지문 검토 CSV](./validation/external-text-review-2026-11-21.csv)
+- [데이터 스키마](./DATA_SCHEMA.md) · [단계별 구현·검증 보고서](./validation/implementation-report-2026-11-21.md)
+- 서버/로그인 없이 GitHub Pages에서 실행. 저장은 StudyStore로 통합하며 전체/과목별 JSON 백업 및 이전 형식 백업을 지원합니다. file:// 직접 열기용 JSON 미러도 보존했습니다. 이 환경의 직접 실행 실측은 브라우저 정책으로 제한되었으며 HTTP 미리보기를 권장합니다.
+- 외부 CDN은 KaTeX만 사용합니다. 기존 3D 교육 모형은 자체 Canvas 엔진, 유역 위치는 자체 SVG로 표시합니다.
+- 검증 명령: `node scripts/quiz-tests.cjs`, `node scripts/quiz-validate.cjs`, `node scripts/quiz-integrity.cjs`, `node scripts/quiz-offline-check.cjs` (저장소 루트).
 
-
-## 2026-11-21 · 4단계 검증문항 모의고사 및 직렬별 과목표
-
-- [검증문항 모의고사](./mock-exam/): 과목(통신공학/무선공학/K-water 창작/통신+무선), 문항 수(10/20/40/50/100), 제한 시간(10/20/40/60/90/120분) 사용자 선택. **오직 `status-overrides.json`에서 `verified`로 승인되고 구조가 온전한 문항만 출제**. 승인 0개이면 시험 시작 비활성/안내.
-- 시간 종료 자동 제출, 문항 이동·미응답 오답 처리, 점수(100점 환산), 단원별 정답률, 오답 해설, `StudyStore` 개별 기록 및 `mock` 세션 결과 저장.
-- [기관·직렬별 시험 과목표](./exam-subjects/), `exam-subjects/catalog.json`: 국가직 9급/7급 통신기술 계열, 서울교통공사 정보통신, 코레일 전기통신, K-water 전자통신을 비교. 사용자가 제공한 공식 공고에서 확인되지 않은 **과목·문항 수·제한시간은 `공고 확인 필요`** 로 유지. K-water 40문항·40분은 민간 모의의 참고 조건으로만 표시.
-- 2026년 국가직 9급 전송기술 일반 필기 79점(공식) 및 국가직 7급 2차 73점(비공식 참고 정리)을 메타 확인일·신뢰 등급과 함께 표시. 기타 기관 합격선은 확인 불가하여 빈 값. **자체 모의고사의 가점/과목·배점 체계는 공식 시험과 달라 직접 합격 예측이 아님.**
-- 목표 기관은 브라우저에 저장. 문항 원본 교체·삭제하지 않고 기존 URL 쿼리 파서 유지.
-- [4단계 테스트](./validation/stage4-checklist.md). 정적 코드 검사 완료, 실제 브라우저 동작·Console 0건 실측은 미완료.
-
-
-## 2026-11-21 · 3단계 학습 기록·복습
-
-- `study-storage.js` 공통 localStorage 래퍼: 문항 ID별 누적 풀이/정오/최근 시각/풀이 시간/북마크/메모, 복습 stage 및 dueAt, 개별 풀이 이벤트, 세션 기록, JSON 내보내기/가져오기.
-- 기존 통신공학 `comms500_prefs_v2`, 무선공학 `wireless500_prefs_v2`, K-water `kwater_study_v1` 저장값은 그대로 보존하며 새로운 `quiz500_study_v1_*` 키를 병행. 기존 기록의 알 수 없는 풀이 시간·이벤트는 만들지 않음.
-- `study-ui.js`가 통신공학·무선공학 화면에 홈 오늘 복습 카드와 **내 학습 현황** 탭(단원별 정답률·최근 7일 실제 풀이 횟수·오답 TOP3)·개인 메모 및 백업/복원 UI 추가. K-water 페이지도 동일한 저장/내보내기/복습/현황 로직 연동.
-- 간격 반복: 오답일로부터 1일→해당 문항 맞히면 3일→7일→14일; 틀리면 처음(1일)으로. `review` 채점 보류 문항은 오답 스케줄에 넣지 않음.
-- 단위 테스트에서 1/3/7/14일, review pending 제외, 기존 집계 무중복 이관 및 잘못된 과거 날짜 처리 검증. 실제 브라우저 360px/Console은 수동 실측 필요.
-- [상세 테스트](./validation/stage3-checklist.md). 모의고사 전용 구성/기관별 과목표는 4단계 진행 대상.
-
+아래 기록은 당시 단계별 변경 이력입니다.
 
 ## 2026-11-21 · 2단계 자료 출처·저작권 정리 (원본 유지)
 

@@ -1,0 +1,2 @@
+/* Generated from status-overrides.json; edit JSON and run scripts/quiz-build-offline.cjs. */
+window.QuizJSON.accept(new URL("status-overrides.json",document.currentScript.src).href,{"schemaVersion":1,"policy":"verified only after original, correct answer and explanation have been individually checked","instructions":"Only this file can promote a question to verified. Keys: comm:Q001, wireless:W001, kwater:KW-ORIG-2-01. Never automatically promote. Review status cannot be overridden before its cause is fixed.","overrides":{}});

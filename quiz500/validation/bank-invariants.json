@@ -1,0 +1,26 @@
+{
+  "fields": [
+    "id",
+    "chapter",
+    "topic",
+    "question",
+    "options",
+    "answer",
+    "explanation",
+    "difficulty"
+  ],
+  "subjects": {
+    "comm": {
+      "count": 1748,
+      "sha256": "f894c391c24dd9a95a487896549292ff118c9de96f5a60d9eb8aa75c071fd26f"
+    },
+    "wireless": {
+      "count": 2156,
+      "sha256": "553e7da65312036b127101da6de2f50e08b1fe43e41828a390a0475793a7e564"
+    },
+    "kwater": {
+      "count": 120,
+      "sha256": "e16cc1e1a6375df77006b45ba0b2329f269cd754c59001d607ab60223bc5cf0d"
+    }
+  }
+}

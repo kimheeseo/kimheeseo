@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "page": "interview/rail-workplaces.html",
+  "source": {
+    "name": "철도기관 근무지·사업장 지도",
+    "url": "https://www.google.com/maps",
+    "checkedDate": "2026-11-21",
+    "type": "외부 참고"
+  },
+  "reliability": "비공식",
+  "html": "\n<a href=\"./\">← 면접 자료 목록</a><h1 id=\"page-title\">철도기관 주요 근무지·사업장 지도</h1>\n<p class=\"tip\"><b>지도 이용 안내:</b> 공식 기관 자료로 확인한 <b>지역본부명·기지명</b>과 지역을 바탕으로 <b>대표 역 또는 해당 지역 중심에 참고용 핀</b>을 찍었습니다. <b>정확한 사무실 입구·사업장 경계·채용 배치 장소를 뜻하지 않습니다.</b> 특히 ‘서울정보통신사무소·IT운영센터’는 권역 안내이며 실제 상세 근무지 주소와 다릅니다. 기관별 실제 배치·전보 규정은 해당 회차 공식 채용공고가 우선합니다.</p>\n<div class=\"tools\"><button id=\"metro-tab\" type=\"button\">서울교통공사</button><button id=\"korail-tab\" type=\"button\">코레일</button><label for=\"category\">구분</label><select id=\"category\"><option value=\"all\">전체 사업장</option><option value=\"본사\">본사</option><option value=\"지역본부\">지역본부</option><option value=\"차량기지\">차량기지</option><option value=\"차량정비단\">차량정비단</option><option value=\"통신/IT\">통신·IT</option></select><span id=\"count\"></span></div>\n<div class=\"layout\"><div class=\"map-wrap\"><iframe id=\"map\" title=\"구글 지도: 선택한 사업장의 참고 위치\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe><p>지도에 표시된 위치는 대표역 또는 권역 참고점입니다. <a id=\"map-external\" href=\"https://www.google.com/maps\" target=\"_blank\" rel=\"noopener noreferrer\">Google 지도에서 보기 ↗</a></p></div><div class=\"list\" id=\"place-list\" aria-label=\"사업장 목록\"></div></div>\n<div class=\"detail\" id=\"detail\" aria-live=\"polite\"><h2>장소를 선택해 주세요</h2></div>\n<div class=\"detail\"><h2>출처 및 범위</h2><p><a href=\"https://info.korail.com/info/contents.do?key=884\" target=\"_blank\" rel=\"noopener noreferrer\">한국철도공사 공식 지역본부·차량정비단 소재역 안내</a> · <a href=\"https://www.hallym.ac.kr/CrossEditor/binary/files/000005/2026%EB%85%84_%EC%83%81%EB%B0%98%EA%B8%B0_%ED%95%9C%EA%B5%AD%EC%B2%A0%EB%8F%84%EA%B3%B5%EC%82%AC_%EC%8B%A0%EC%9E%85%EC%82%AC%EC%9B%90_%EC%B1%84%EC%9A%A9_%EC%B0%B8%EA%B3%A0%EC%9E%90%EB%A3%8C.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">2026 코레일 채용 권역·배치가능 소속 안내</a> · <a href=\"https://www.joongang.co.kr/article/25143355\" target=\"_blank\" rel=\"noopener noreferrer\">서울교통공사 11개 차량사업소 이름과 운영 사례</a>. 서울교통공사는 수도권 중심이고 코레일은 전국 단위입니다. 비공개 또는 개별 현업소·역·사업소를 모두 열거한 완전한 인사 배치 지도는 아닙니다.</p></div><footer>지도: Google Maps · 좌표는 역·권역 수준의 참고점 · 지도 방식 변경 2026-11-13</footer>"
+}

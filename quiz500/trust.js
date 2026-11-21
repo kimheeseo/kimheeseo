@@ -4,14 +4,16 @@
 const STORE="quiz_trust_verified_only_v1";
 const VALID=new Set(["verified","auto","review"]);
 const overrideMap=new Map(),subjects=new Map();
-let onlyVerified=true,mathReady=false;
-try {onlyVerified=g.localStorage.getItem(STORE)!=="false";}catch{}
+let onlyVerified=true;
+const rootURL=new URL(".",document.currentScript?.src||location.href);
+try {onlyVerified=StudyStore.getRaw(STORE)!=="false";}catch{}
 const fails=new Set();
 function needsReview(q){
  const lines=[q.question||"",q.explanation||"",...(Array.isArray(q.options)?q.options:[])].join("\n");
  const noAnswer=!(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<(q.options||[]).length);
  return noAnswer||!String(q.question||"").trim()||!Array.isArray(q.options)||q.options.length<2||
  /[\uE000-\uF8FF]/.test(lines)||q.glyphReview===true||
+ /수식.{0,8}(깨짐|누락)|그림.{0,8}(누락|미포함)|원문.{0,8}확인 필요/.test(lines)||
  (q.sourceTag==="BROADCAST"&&q.sourceQuality&&q.sourceQuality!=="텍스트 추출");
 }
 function rawStatus(q){return q.status==="review"||needsReview(q)?"review":"auto"}
@@ -32,7 +34,7 @@ function gradeable(q,subject){
  return !!q&&status(q,subject)!=="review"&&Number.isInteger(q.answer)&&q.answer>=0&&Array.isArray(q.options)&&q.answer<q.options.length;
 }
 function label(q,subject){return({verified:"검증됨",auto:"미검증",review:"검토 중"})[status(q,subject)]}
-function setVerifiedOnly(v){onlyVerified=!!v;try{g.localStorage.setItem(STORE,String(onlyVerified))}catch{}}
+function setVerifiedOnly(v){onlyVerified=!!v;try{StudyStore.setRaw(STORE,String(onlyVerified))}catch{}}
 function verifiedOnly(){return onlyVerified}
 function eligible(q,subject){return !onlyVerified||status(q,subject)==="verified"}
 function verifiedCount(questions,subject){return questions.filter(q=>status(q,subject)==="verified").length}
@@ -42,7 +44,16 @@ function equations(text){
  let m;while((m=regex.exec(value)))all.push(m[1]??m[2]??m[3]??m[4]);
  return all;
 }
+function brokenMath(text){
+ const value=String(text||'');
+ for(const [left,right]of [['\\(','\\)'],['\\[','\\]']])if(value.split(left).length!==value.split(right).length)return true;
+ const clean=value.replace(/\\\$/g,'');
+ const double=(clean.match(/\$\$/g)||[]).length;
+ const singles=(clean.replace(/\$\$/g,'').match(/\$/g)||[]).length;
+ return double%2!==0||singles%2!==0;
+}
 function validateMath(q){
+ if([q.question,q.explanation,...(q.options||[])].some(brokenMath)){markMathFailure(q);return false}
  const terms=[q.question,q.explanation,...(q.options||[])].flatMap(equations);
  if(!terms.length)return true;
  if(!g.katex||typeof g.katex.renderToString!=="function"){markMathFailure(q);return false}
@@ -96,7 +107,7 @@ function attach(questions,subject,options={}){
  document.head.append(script);
 }
 function loadOverrides(done){
- fetch("../status-overrides.json",{cache:"no-cache"}).then(resp=>resp.ok?resp.json():{overrides:{}})
+ return QuizJSON.load(new URL("status-overrides.json",rootURL))
  .then(data=>{
   overrideMap.clear();
   const src=data?.overrides||{};
