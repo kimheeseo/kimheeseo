@@ -3,6 +3,7 @@
 ## 2026-11-21 · 5단계 홈·JSON 분리·공유 메타·정적 검사
 
 - 홈 첫 화면: **오늘 복습 → 필기 학습 시작 → 모의고사 → 기관별 자료** 4개 빠른 이동 카드(모바일 1열) 추가, 최근 업데이트는 3건만 보이고 전체 내역은 [변경 일지](./changelog/)에서 `CHANGELOG.md`를 직접 읽도록 분리. 홈 푸터의 자료 출처·오류 신고 링크 유지.
+- 통신공학·무선공학의 `file://` 직접 열기 호환을 위해 JSON 동기 미러 `offline-bank.js` 2개를 추가했다. GitHub Pages에서는 JSON을 우선 읽고, CORS·네트워크 오류 시에만 로컬 스크립트로 복구한다. 정적 검사에서 JSON과 미러가 완전히 일치하는지 확인한다.
 - 통신공학·무선공학 학습 앱의 대용량 `const BANK=[...]` 문항 배열을 HTML에서 제거. 두 앱은 기존 정적 `quiz_bank_1000.json` / `wireless_bank_1000.json`을 fetch한 다음 외부 `app.js`를 실행. 추가 무선설비기사 문항 작성·병합 로직과 통신공학 K-water iframe 연계 코드는 그대로 유지. `?kind=`, `?chapter=`, `?unit=` 등 기존 딥링크 파서 보존.
 - 공무원 7·9급 78개 합격선/경쟁률 데이터는 [`cutoff-data.json`](./civil-service-exams/cutoff-data.json)으로 HTML에서 분리. K-water 40+120문항, 기관 과목표, 출처 메타는 기존부터 외부 JSON으로 관리.
 - [문항·출처·기관 데이터 스키마](./SCHEMA.md) 작성: 문항 ID 안정성, `status` 승인 규칙, `source`/구 PDF 경로, 확인일·신뢰도, URL 호환 및 CHANGELOG 기재 원칙.
