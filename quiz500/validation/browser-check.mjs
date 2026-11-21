@@ -97,7 +97,13 @@ try{
   }
  }
 }finally{
- proc.kill("SIGTERM");await close();await fs.rm(profile,{recursive:true,force:true});
+ if(proc.exitCode===null&&proc.signalCode===null){
+  const exited=new Promise(resolve=>proc.once("close",resolve));
+  proc.kill("SIGTERM");
+  const terminate=setTimeout(()=>proc.kill("SIGKILL"),5000);terminate.unref();
+  await exited;clearTimeout(terminate);
+ }
+ await close();await fs.rm(profile,{recursive:true,force:true,maxRetries:8,retryDelay:200});
 }
 if(exitCode)process.exitCode=exitCode;
 else console.log("Browser smoke: 13 pages, 360px, JS exceptions and console.error = 0.");
