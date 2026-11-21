@@ -108,7 +108,8 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 </aside>
 <section class="panel" id="main-content" aria-live="polite"><p>문제은행을 불러오는 중입니다.</p></section></div>
 <p class="foot">자료 정리: 2026.11.20 · 출처 분류: 원본 40문항 / 자체 제작 120문항. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
-</main><script src="../trust.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
+</main><script src="../trust.js"></script>
+<script src="../sources.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
 "use strict";
 const $=sel=>document.querySelector(sel);
 const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -170,7 +171,7 @@ function render(){
  '<div class="toolbar"><div><h2>'+(mode==="round"?"K-water 창작 모의고사 "+round+"회차":"단원별 문제은행")+'</h2><span class="badge">'+esc(q.chapter)+'</span> <span class="badge">'+esc(q.difficulty)+'</span></div><div class="tiny">'+(mode==="round"?'남은 시간 <b id="timer">'+hhmm(remaining(d))+'</b> · ':'')+answered+' / '+items.length+' 선택</div></div>'+
  '<div class="progress"><i style="width:'+(answered/items.length*100)+'%"></i></div>'+renderUnitCatalog(items,d)+
  '<div class="grid-numbers" id="question-nav">'+items.map((v,i)=>'<button type="button" data-index="'+i+'" class="'+(d.answers[v.id]!==undefined?'done ':'')+(idx===i?'active':'')+'" aria-label="'+(i+1)+'번 문항으로 이동">'+(i+1)+'</button>').join("")+'</div>'+
- '<div id="question-current" class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+'</span></div>'+
+ '<div id="question-current" class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+' · '+esc(QuizSource.label(q,'kwater'))+'</span></div>'+
  '<div class="question-text">'+esc(q.question)+'</div><div class="question-meta"><span class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</span></div>'+
  '<div class="options">'+q.options.map((t,i)=>'<button type="button" class="option '+(d.answers[q.id]===i?'selected':'')+'" data-answer="'+i+'" aria-pressed="'+(d.answers[q.id]===i)+'"><b>'+(i+1)+'</b><span>'+esc(t)+'</span></button>').join("")+'</div>'+
  '<div class="controls"><button class="btn" id="prev" type="button" '+(idx===0?'disabled':'')+'>← 이전 문항</button><button class="btn" id="next" type="button" '+(idx===items.length-1?'disabled':'')+'>다음 문항 →</button><button class="btn primary" id="submit" type="button">답안 제출·채점</button></div>'+
@@ -229,7 +230,7 @@ async function init(){
  try{const [r,s]=await Promise.all([fetch("./generated-mocks-2-4.json",{cache:"no-store"}),fetch("./source-index-2026s.json",{cache:"no-store"})]);
  if(!r.ok||!s.ok)throw Error("JSON 데이터 서버 응답 오류");
  db=await r.json();source=await s.json();
- QuizTrust.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizTrust.register(source.questions,"kwater");
+ QuizSource.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizSource.register(source.questions,"kwater");QuizTrust.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizTrust.register(source.questions,"kwater");
  $("#kwaterVerifiedOnly").checked=QuizTrust.verifiedOnly();
  $("#kwaterVerifiedOnly").addEventListener("change",e=>{QuizTrust.setVerifiedOnly(e.target.checked);idx=0;render()});
  QuizTrust.loadOverrides(()=>{if(mode==="round"||mode==="chapter")render()});
