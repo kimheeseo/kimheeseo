@@ -65,12 +65,13 @@ try{
    if(packet.id&&pending.has(packet.id)){const p=pending.get(packet.id);pending.delete(packet.id);if(packet.error)p.reject(Error(packet.error.message));else p.resolve(packet.result);return}
    if(packet.method==="Runtime.exceptionThrown")errors.push("Runtime: "+(packet.params.exceptionDetails.exception?.description||packet.params.exceptionDetails.text));
    if(packet.method==="Runtime.consoleAPICalled"&&packet.params.type==="error")errors.push("console.error: "+packet.params.args.map(a=>a.value??a.description??"").join(" "));
+   if(packet.method==="Log.entryAdded"&&packet.params.entry?.level==="error")errors.push("Chrome log: "+packet.params.entry.text);
   };
   const send=(method,params={})=>new Promise((resolve,reject)=>{
    const id=++counter;pending.set(id,{resolve,reject});ws.send(JSON.stringify({id,method,params}));
   });
   try{
-   await send("Runtime.enable");await send("Page.enable");
+   await send("Runtime.enable");await send("Page.enable");await send("Log.enable");
    await send("Emulation.setDeviceMetricsOverride",{width:360,height:800,deviceScaleFactor:1,mobile:true});
    await send("Page.navigate",{url:local+route});
    let loaded=false,last="";
