@@ -84,7 +84,7 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 .catalog-toggle{width:100%;border:0;background:transparent;color:#285abc;font:inherit;cursor:pointer;font-size:12px;font-weight:850;text-align:left;padding:9px 0}
 .round-guide .tiny{line-height:1.7}
 @media(max-width:650px){.round-guide{padding:12px}.unit-group-list,.question-index{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.unit-group summary{padding:9px 7px;font-size:11px}.unit-entry{font-size:11px;padding:8px}.question-entry{font-size:11px;padding:9px}}
-</style></head><body><main>
+</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css"></head><body><main>
 <a class="crumb" href="../interview/kwater.html">← 한국수자원공사 채용·면접 페이지</a>
 <section class="hero">
 <div class="eyebrow">K-WATER · TELECOMMUNICATIONS · PRACTICE BANK</div>
@@ -103,12 +103,12 @@ p{color:#536982;margin:8px 0 14px}a{color:var(--blue)}.crumb{display:inline-bloc
 <button type="button" data-mode="history" aria-pressed="false">내 학습 기록<small>회차별 점수·오답</small></button>
 </nav>
 <div id="chapter-container" hidden style="margin:16px 0"><label class="side-label" for="chapter">학습 단원</label><select class="select" id="chapter"></select><label class="side-label" for="study-round" style="display:block;margin:13px 0 5px">학습할 회차</label><select class="select" id="study-round"><option value="all">2·3·4회차 전체 · 120문항</option><option value="2">2회차 · 40문항</option><option value="3">3회차 · 40문항</option><option value="4">4회차 · 40문항</option></select><p class="tiny">회차와 단원을 동시에 선택해 원하는 문항만 공부할 수 있습니다.</p></div>
-<div class="summary" id="sidebar-stats" aria-live="polite"></div>
+<div class="notice" style="margin:12px 0"><label for="kwaterVerifiedOnly"><input id="kwaterVerifiedOnly" type="checkbox" checked> 검증된 문항만 풀기</label><p class="tiny">검증 완료 0문항일 때는 끄고 미검증 예상문항을 연습하세요.</p></div><div class="summary" id="sidebar-stats" aria-live="polite"></div>
 <p class="tiny" style="margin-top:15px">학습기록은 현재 브라우저에만 저장됩니다. 다른 기기와 자동으로 공유되지 않습니다.</p>
 </aside>
 <section class="panel" id="main-content" aria-live="polite"><p>문제은행을 불러오는 중입니다.</p></section></div>
 <p class="foot">자료 정리: 2026.11.20 · 출처 분류: 원본 40문항 / 자체 제작 120문항. 각 문항의 실제 기관 출제 여부는 확인된 바 없으며, 독립 제작 문제는 공식 기출·정답이 아닙니다. <a href="../communication-quiz-500/">통신공학 문제은행</a> · <a href="../wireless-quiz-500/">무선공학 문제은행</a></p>
-</main><script>
+</main><script src="../trust.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.js"></script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js"></script><script>
 "use strict";
 const $=sel=>document.querySelector(sel);
 const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -119,8 +119,8 @@ try{const from=JSON.parse(localStorage.getItem(saveKey));if(from&&typeof from===
 function persist(){try{localStorage.setItem(saveKey,JSON.stringify(store))}catch{}}
 function examKey(){return mode==="chapter"?(studyRound==="all"?"chapter:"+chapter:"chapter:"+studyRound+":"+chapter):"round:"+round}
 function draft(){const key=examKey();if(!store.drafts[key])store.drafts[key]={answers:{},submitted:false,started:Date.now(),position:0};return store.drafts[key]}
-function questions(){const all=db.rounds.flatMap(r=>r.questions);return mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)))}
-function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(ans[q.id]===q.answer),0)}
+function questions(){const all=db.rounds.flatMap(r=>r.questions);const selected=mode==="round"?db.rounds.find(r=>r.round===round).questions:all.filter(q=>(chapter==="all"||q.chapter===chapter)&&(studyRound==="all"||q.round===Number(studyRound)));return selected.filter(q=>QuizTrust.eligible(q,"kwater"))}
+function correctlyAnswered(items,ans){return items.reduce((n,q)=>n+Number(QuizTrust.gradeable(q,"kwater")&&ans[q.id]===q.answer),0)}
 function metrics(kv){return '<div class="summary">'+kv.map(row=>'<div class="metric"><span>'+esc(row[0])+'</span><b>'+esc(row[1])+'</b></div>').join("")+'</div>'}
 function setStats(){let items=(mode==="round"||mode==="chapter")?questions():[];let d=(mode==="round"||mode==="chapter")?draft():null;let filled=d?items.filter(q=>d.answers[q.id]!==undefined).length:0;$("#sidebar-stats").innerHTML=metrics([["문항 수",items.length],["선택 완료",filled],["제출 기록",store.history.length],["학습 방식",mode==="round"?"40분":mode==="chapter"?"단원별":"조회"]])}
 function setMode(newMode,newRound){
@@ -134,7 +134,7 @@ function remaining(d){return Math.max(0,2400-Math.floor((Date.now()-(d.started||
 function hhmm(s){return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0")}
 function finishAttempt(){
  if(!db||(mode!=="round"&&mode!=="chapter"))return;
- const items=questions(),d=draft();if(d.submitted)return;
+ const items=questions(),d=draft();if(!items.length||d.submitted)return;
  const answered=items.filter(q=>d.answers[q.id]!==undefined).length;
  d.submitted=true;d.finished=Date.now();
  const score=correctlyAnswered(items,d.answers);
@@ -162,20 +162,21 @@ function render(){
  if(!db||!source)return;
  if(mode==="source")return renderSource();
  if(mode==="history")return renderHistory();
- const items=questions(),d=draft();idx=Math.min(Math.max(0,idx),items.length-1);d.position=idx;persist();setStats();if(mode==="round"&&!d.submitted&&remaining(d)===0){finishAttempt();return}
+ const items=questions(),d=draft();if(items.length===0){setStats();$("#main-content").innerHTML='<h2>검증된 문항이 없습니다</h2><p>현재 검증 승인 목록이 비어 있습니다. 왼쪽의 <b>검증된 문항만 풀기</b> 옵션을 끄면 미검증 창작 모의고사를 연습할 수 있습니다. 검토 중 문항은 채점하지 않습니다.</p>';return}idx=Math.min(Math.max(0,idx),items.length-1);d.position=idx;persist();setStats();if(mode==="round"&&!d.submitted&&remaining(d)===0){finishAttempt();return}
  if(!items.length){$("#main-content").innerHTML='<div class="empty">해당 단원에는 학습 문제가 없습니다.</div>';return}
  if(d.submitted)return renderScore(items,d);
- const q=items[idx];const answered=items.filter(x=>d.answers[x.id]!==undefined).length;
+ const q=items[idx];QuizTrust.validateMath(q);const answered=items.filter(x=>d.answers[x.id]!==undefined).length;
  $("#main-content").innerHTML=
  '<div class="toolbar"><div><h2>'+(mode==="round"?"K-water 창작 모의고사 "+round+"회차":"단원별 문제은행")+'</h2><span class="badge">'+esc(q.chapter)+'</span> <span class="badge">'+esc(q.difficulty)+'</span></div><div class="tiny">'+(mode==="round"?'남은 시간 <b id="timer">'+hhmm(remaining(d))+'</b> · ':'')+answered+' / '+items.length+' 선택</div></div>'+
  '<div class="progress"><i style="width:'+(answered/items.length*100)+'%"></i></div>'+renderUnitCatalog(items,d)+
  '<div class="grid-numbers" id="question-nav">'+items.map((v,i)=>'<button type="button" data-index="'+i+'" class="'+(d.answers[v.id]!==undefined?'done ':'')+(idx===i?'active':'')+'" aria-label="'+(i+1)+'번 문항으로 이동">'+(i+1)+'</button>').join("")+'</div>'+
  '<div id="question-current" class="question-meta"><span class="badge">'+(idx+1)+' / '+items.length+'</span><span class="tiny">'+esc(q.topic)+' · '+esc(q.id)+'</span></div>'+
- '<div class="question-text">'+esc(q.question)+'</div>'+
+ '<div class="question-text">'+esc(q.question)+'</div><div class="question-meta"><span class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</span></div>'+
  '<div class="options">'+q.options.map((t,i)=>'<button type="button" class="option '+(d.answers[q.id]===i?'selected':'')+'" data-answer="'+i+'" aria-pressed="'+(d.answers[q.id]===i)+'"><b>'+(i+1)+'</b><span>'+esc(t)+'</span></button>').join("")+'</div>'+
  '<div class="controls"><button class="btn" id="prev" type="button" '+(idx===0?'disabled':'')+'>← 이전 문항</button><button class="btn" id="next" type="button" '+(idx===items.length-1?'disabled':'')+'>다음 문항 →</button><button class="btn primary" id="submit" type="button">답안 제출·채점</button></div>'+
- '<p class="tiny">답안을 제출하면 정답 및 해설이 공개됩니다. 회차별 채점 기록은 현재 브라우저에만 남습니다.</p>';
+ '<p class="tiny">답안을 제출하면 정답 및 해설이 공개됩니다. 회차별 채점 기록은 현재 브라우저에만 남습니다.</p>'+reportForm(q);
  bindUnitCatalog();
+ QuizTrust.renderMath(q,[$(".question-text"),$(".options")]);wireIssue(q);
  $("#question-nav").querySelectorAll("button").forEach(b=>b.onclick=()=>{idx=+b.dataset.index;render()});
  $(".options").querySelectorAll("button").forEach(b=>b.onclick=()=>{d.answers[q.id]=+b.dataset.answer;persist();render()});
  $("#prev").onclick=()=>{idx--;render()};
@@ -197,9 +198,17 @@ function renderScore(items,d){
 function showReviews(items,d,wrong){
  const chosen=items.filter(q=>!wrong||d.answers[q.id]!==q.answer);
  $("#reviews").innerHTML='<h3>'+(wrong?'오답·미응답':'전체')+' 해설 '+chosen.length+'문항</h3>'+(chosen.length?chosen.map(q=>{
- const selected=d.answers[q.id];const correct=selected===q.answer;
- return '<details class="source-item" style="margin:9px 0" '+(!correct?'open':'')+'><summary><span class="badge '+(correct?'':'warn')+'">'+(correct?'정답':'오답')+'</span> '+esc(q.id)+' · '+esc(q.question)+'</summary><p>내 답: '+(selected===undefined?'미응답':esc(q.options[selected]))+'</p><p><b>정답:</b> '+(q.answer+1)+'번 · '+esc(q.options[q.answer])+'</p><p><b>해설:</b> '+esc(q.explanation)+'</p><p class="tiny">단원: '+esc(q.chapter)+' / '+esc(q.topic)+'</p></details>'
+ const selected=d.answers[q.id];const correct=QuizTrust.gradeable(q,"kwater")&&selected===q.answer;
+ return '<details class="source-item" style="margin:9px 0" '+(!correct?'open':'')+'><summary><span class="badge '+(correct?'':'warn')+'">'+(correct?'정답':'오답')+'</span> '+esc(q.id)+' · '+esc(q.question)+'</summary><p>내 답: '+(selected===undefined?'미응답':esc(q.options[selected]))+'</p><p><b>정답:</b> '+(QuizTrust.gradeable(q,'kwater')?(q.answer+1)+'번 · '+esc(q.options[q.answer]):'채점 보류')+'</p><p><b>해설:</b> '+esc(q.explanation)+'</p><p class="tiny">단원: '+esc(q.chapter)+' / '+esc(q.topic)+'</p></details>'
  }).join(""):'<p>선택한 조건에 해당하는 문항이 없습니다.</p>');
+}
+function reportForm(q){
+ return '<details class="source-item" style="margin-top:15px"><summary>정답/해설 오류 신고</summary><label>사유 <select class="select" id="kwIssueReason"><option>정답 오류</option><option>해설 오류</option><option>문제 오타</option><option>수식 깨짐</option><option>기타</option></select></label><label style="display:block;margin-top:10px">추가 설명·메모 <textarea class="select" id="kwIssueMemo" rows="3" maxlength="2000" placeholder="개인정보는 입력하지 마세요"></textarea></label><p><a id="kwIssueLink" href="#" target="_blank" rel="noopener noreferrer">GitHub Issue 작성하기 ↗</a></p></details>'
+}
+function wireIssue(q){
+ const a=$("#kwIssueLink"),reason=$("#kwIssueReason"),note=$("#kwIssueMemo");if(!a||!reason||!note)return;
+ const update=()=>{const title="[문항 오류] K-water / "+q.id+" / "+reason.value;const body=["문항 ID: "+q.id,"오류 유형: "+reason.value,"상태: "+QuizTrust.label(q,"kwater"),"메모: "+(note.value||"기재되지 않음"),"※ 공개 이슈입니다. 개인정보 입력 금지."].join("\n");a.href="https://github.com/kimheeseo/kimheeseo/issues/new?"+new URLSearchParams({title,body}).toString()};
+ reason.addEventListener("change",update);note.addEventListener("input",update);update();
 }
 function renderSource(){
  setStats();
@@ -209,7 +218,7 @@ function renderSource(){
  '<p><span class="badge warn">원본 전사·채점 보류</span> 40문항의 주제·단원·PDF 페이지·정답표를 분류했습니다. 문제 지문·선택지·그림은 저작권 및 검증을 고려해 공개 저장소에 복제하지 않았습니다.</p>'+
  metrics([["단원 분류","12개"],["참조 문항","40개"],["검토 표시",flagged+"개"],["원본 시간","40분"]])+
  '<div class="source-grid">'+recs.map(q=>'<details class="source-item"><summary>문항 '+q.number+' · '+esc(q.topic)+' <span class="badge '+(q.reviewStatus==="검토 필요"?'warn':'')+'">'+esc(q.chapter)+'</span></summary>'+
- '<p class="source-title">'+esc(q.summary)+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p></details>').join("")+'</div>';
+ '<p class="source-title">'+esc(q.summary)+'</p><p class="badge">'+esc(QuizTrust.label(q,'kwater'))+'</p><p>PDF 원본 '+q.page+'쪽 · 정답표: '+(Array.isArray(q.referenceAnswer)?q.referenceAnswer.join(", "):q.referenceAnswer)+'번</p><p>'+esc(q.reviewStatus)+' · '+esc(q.reviewNote)+'</p><p><a href="?mode=chapter&chapter='+encodeURIComponent(q.chapter)+'">이 단원 신규 연습문제 풀기 →</a></p></details>').join("")+'</div>';
 }
 function renderHistory(){
  setStats();
@@ -220,6 +229,10 @@ async function init(){
  try{const [r,s]=await Promise.all([fetch("./generated-mocks-2-4.json",{cache:"no-store"}),fetch("./source-index-2026s.json",{cache:"no-store"})]);
  if(!r.ok||!s.ok)throw Error("JSON 데이터 서버 응답 오류");
  db=await r.json();source=await s.json();
+ QuizTrust.register(db.rounds.flatMap(r=>r.questions),"kwater");QuizTrust.register(source.questions,"kwater");
+ $("#kwaterVerifiedOnly").checked=QuizTrust.verifiedOnly();
+ $("#kwaterVerifiedOnly").addEventListener("change",e=>{QuizTrust.setVerifiedOnly(e.target.checked);idx=0;render()});
+ QuizTrust.loadOverrides(()=>{if(mode==="round"||mode==="chapter")render()});
  if(db.rounds.length!==3||db.rounds.some(x=>x.questions.length!==40)||source.questions.length!==40)throw Error("문제 수가 예상과 다릅니다.");
  const chapters=[...new Set(db.rounds.flatMap(r=>r.questions.map(q=>q.chapter)))];
  $("#chapter").innerHTML='<option value="all">전체 단원 · 120문항</option>'+chapters.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
