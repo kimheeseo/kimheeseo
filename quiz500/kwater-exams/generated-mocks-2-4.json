@@ -38,7 +38,13 @@
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-02",
@@ -62,7 +68,13 @@
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-03",
@@ -86,7 +98,13 @@
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-04",
@@ -110,7 +128,13 @@
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-05",
@@ -134,7 +158,13 @@
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-06",
@@ -158,7 +188,13 @@
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-07",
@@ -182,7 +218,13 @@
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-08",
@@ -206,7 +248,13 @@
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-09",
@@ -230,7 +278,13 @@
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-10",
@@ -254,7 +308,13 @@
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-11",
@@ -278,7 +338,13 @@
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-12",
@@ -302,7 +368,13 @@
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-13",
@@ -326,7 +398,13 @@
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-14",
@@ -350,7 +428,13 @@
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-15",
@@ -374,7 +458,13 @@
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-16",
@@ -398,7 +488,13 @@
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-17",
@@ -422,7 +518,13 @@
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-18",
@@ -446,7 +548,13 @@
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-19",
@@ -470,7 +578,13 @@
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-20",
@@ -494,7 +608,13 @@
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-21",
@@ -518,7 +638,13 @@
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-22",
@@ -542,7 +668,13 @@
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-23",
@@ -566,7 +698,13 @@
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-24",
@@ -590,7 +728,13 @@
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-25",
@@ -614,7 +758,13 @@
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-26",
@@ -638,7 +788,13 @@
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-27",
@@ -662,7 +818,13 @@
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-28",
@@ -686,7 +848,13 @@
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-29",
@@ -710,7 +878,13 @@
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-30",
@@ -734,7 +908,13 @@
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-31",
@@ -758,7 +938,13 @@
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-32",
@@ -782,7 +968,13 @@
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-33",
@@ -806,7 +998,13 @@
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-34",
@@ -830,7 +1028,13 @@
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-35",
@@ -854,7 +1058,13 @@
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-36",
@@ -878,7 +1088,13 @@
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-37",
@@ -902,7 +1118,13 @@
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-38",
@@ -926,7 +1148,13 @@
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-39",
@@ -950,7 +1178,13 @@
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-2-40",
@@ -974,7 +1208,13 @@
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         }
       ]
     },
@@ -1005,7 +1245,13 @@
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-02",
@@ -1029,7 +1275,13 @@
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-03",
@@ -1053,7 +1305,13 @@
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-04",
@@ -1077,7 +1335,13 @@
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-05",
@@ -1101,7 +1365,13 @@
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-06",
@@ -1125,7 +1395,13 @@
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-07",
@@ -1149,7 +1425,13 @@
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-08",
@@ -1173,7 +1455,13 @@
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-09",
@@ -1197,7 +1485,13 @@
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-10",
@@ -1221,7 +1515,13 @@
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-11",
@@ -1245,7 +1545,13 @@
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-12",
@@ -1269,7 +1575,13 @@
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-13",
@@ -1293,7 +1605,13 @@
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-14",
@@ -1317,7 +1635,13 @@
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-15",
@@ -1341,7 +1665,13 @@
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-16",
@@ -1365,7 +1695,13 @@
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-17",
@@ -1389,7 +1725,13 @@
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-18",
@@ -1413,7 +1755,13 @@
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-19",
@@ -1437,7 +1785,13 @@
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-20",
@@ -1461,7 +1815,13 @@
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-21",
@@ -1485,7 +1845,13 @@
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-22",
@@ -1509,7 +1875,13 @@
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-23",
@@ -1533,7 +1905,13 @@
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-24",
@@ -1557,7 +1935,13 @@
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-25",
@@ -1581,7 +1965,13 @@
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-26",
@@ -1605,7 +1995,13 @@
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-27",
@@ -1629,7 +2025,13 @@
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-28",
@@ -1653,7 +2055,13 @@
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-29",
@@ -1677,7 +2085,13 @@
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-30",
@@ -1701,7 +2115,13 @@
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-31",
@@ -1725,7 +2145,13 @@
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-32",
@@ -1749,7 +2175,13 @@
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-33",
@@ -1773,7 +2205,13 @@
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-34",
@@ -1797,7 +2235,13 @@
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-35",
@@ -1821,7 +2265,13 @@
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-36",
@@ -1845,7 +2295,13 @@
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-37",
@@ -1869,7 +2325,13 @@
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-38",
@@ -1893,7 +2355,13 @@
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-39",
@@ -1917,7 +2385,13 @@
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-3-40",
@@ -1941,7 +2415,13 @@
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         }
       ]
     },
@@ -1972,7 +2452,13 @@
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-02",
@@ -1996,7 +2482,13 @@
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-03",
@@ -2020,7 +2512,13 @@
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-04",
@@ -2044,7 +2542,13 @@
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-05",
@@ -2068,7 +2572,13 @@
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-06",
@@ -2092,7 +2602,13 @@
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-07",
@@ -2116,7 +2632,13 @@
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-08",
@@ -2140,7 +2662,13 @@
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-09",
@@ -2164,7 +2692,13 @@
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-10",
@@ -2188,7 +2722,13 @@
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-11",
@@ -2212,7 +2752,13 @@
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-12",
@@ -2236,7 +2782,13 @@
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-13",
@@ -2260,7 +2812,13 @@
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-14",
@@ -2284,7 +2842,13 @@
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-15",
@@ -2308,7 +2872,13 @@
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-16",
@@ -2332,7 +2902,13 @@
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-17",
@@ -2356,7 +2932,13 @@
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-18",
@@ -2380,7 +2962,13 @@
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-19",
@@ -2404,7 +2992,13 @@
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-20",
@@ -2428,7 +3022,13 @@
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-21",
@@ -2452,7 +3052,13 @@
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-22",
@@ -2476,7 +3082,13 @@
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-23",
@@ -2500,7 +3112,13 @@
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-24",
@@ -2524,7 +3142,13 @@
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-25",
@@ -2548,7 +3172,13 @@
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-26",
@@ -2572,7 +3202,13 @@
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-27",
@@ -2596,7 +3232,13 @@
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-28",
@@ -2620,7 +3262,13 @@
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-29",
@@ -2644,7 +3292,13 @@
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-30",
@@ -2668,7 +3322,13 @@
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-31",
@@ -2692,7 +3352,13 @@
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-32",
@@ -2716,7 +3382,13 @@
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-33",
@@ -2740,7 +3412,13 @@
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-34",
@@ -2764,7 +3442,13 @@
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-35",
@@ -2788,7 +3472,13 @@
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-36",
@@ -2812,7 +3502,13 @@
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-37",
@@ -2836,7 +3532,13 @@
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-38",
@@ -2860,7 +3562,13 @@
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-39",
@@ -2884,7 +3592,13 @@
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         },
         {
           "id": "KW-ORIG-4-40",
@@ -2908,7 +3622,13 @@
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
           "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
-          "status": "auto"
+          "status": "auto",
+          "source": {
+            "name": "K-water 독립 제작 예상문제 (공식 기출 아님)",
+            "url": null,
+            "checkedDate": "2026-11-21",
+            "type": "자체 창작"
+          }
         }
       ]
     }
