@@ -51,6 +51,17 @@ test("status and attribution in all source questions",()=>{
  }
  assert.equal(Object.keys(json("status-overrides.json").overrides).length,0);
 });
+test("offline mirror equals canonical JSON",()=>{
+ for(const subject of ["communication-quiz-500","wireless-quiz-500"]){
+  const canonical=json(subject+"/"+(subject==="communication-quiz-500"?"quiz_bank_1000.json":"wireless_bank_1000.json"));
+  const offline=read(subject+"/offline-bank.js");
+  assert.match(offline,/window\.__quizBank=/);
+  const start=offline.indexOf("window.__quizBank=")+"window.__quizBank=".length;
+  const arr=JSON.parse(offline.slice(start).trim().replace(/;\s*$/,""));
+  assert.equal(JSON.stringify(arr),JSON.stringify(canonical));
+  assert.match(read(subject+"/index.html"),/offline-bank\.js/);
+ }
+});
 test("K-water 3x40 and 12 units",()=>{
  const rounds=json("kwater-exams/generated-mocks-2-4.json").rounds;
  assert.deepEqual(rounds.map(r=>r.questions.length),[40,40,40]);
