@@ -91,7 +91,7 @@ function attach(questions,subject,options={}){
   const checkbox=document.createElement("input");
   checkbox.type="checkbox";checkbox.id=id;checkbox.checked=verifiedOnly();
   const l=document.createElement("label");l.htmlFor=id;l.append(checkbox,document.createTextNode(" 검증된 문항만 풀기"));
-  const help=document.createElement("small");help.textContent="기본 켜짐 · 검증 문항이 0개라면 끄고 미검증 문항을 연습할 수 있습니다.";
+  const help=document.createElement("small");help.textContent="기본 켜짐 · 검증 문항이 0개면 미검증 연습이 제한됩니다. 끌 경우 잠정 답안만 제공되므로 원문 검증 전 확정 정답으로 암기하지 마세요.";
   container.append(l,help);
   const panel=section.querySelector("#availableText, #bankCount, .searchbar");
   if(panel)panel.insertAdjacentElement("beforebegin",container);
