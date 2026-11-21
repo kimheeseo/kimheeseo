@@ -1,5 +1,17 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-21 · 5단계 홈·JSON 분리·공유 메타·정적 검사
+
+- 홈 첫 화면: **오늘 복습 → 필기 학습 시작 → 모의고사 → 기관별 자료** 4개 빠른 이동 카드(모바일 1열) 추가, 최근 업데이트는 3건만 보이고 전체 내역은 [변경 일지](./changelog/)에서 `CHANGELOG.md`를 직접 읽도록 분리. 홈 푸터의 자료 출처·오류 신고 링크 유지.
+- 통신공학·무선공학 학습 앱의 대용량 `const BANK=[...]` 문항 배열을 HTML에서 제거. 두 앱은 기존 정적 `quiz_bank_1000.json` / `wireless_bank_1000.json`을 fetch한 다음 외부 `app.js`를 실행. 추가 무선설비기사 문항 작성·병합 로직과 통신공학 K-water iframe 연계 코드는 그대로 유지. `?kind=`, `?chapter=`, `?unit=` 등 기존 딥링크 파서 보존.
+- 공무원 7·9급 78개 합격선/경쟁률 데이터는 [`cutoff-data.json`](./civil-service-exams/cutoff-data.json)으로 HTML에서 분리. K-water 40+120문항, 기관 과목표, 출처 메타는 기존부터 외부 JSON으로 관리.
+- [문항·출처·기관 데이터 스키마](./SCHEMA.md) 작성: 문항 ID 안정성, `status` 승인 규칙, `source`/구 PDF 경로, 확인일·신뢰도, URL 호환 및 CHANGELOG 기재 원칙.
+- 주요 14페이지에 canonical, Open Graph title/description/image, Twitter 카드 메타 추가; 기존 HTML `title`과 `description` 유지. 사용자 요청 OG 이미지로 [PNG](./assets/og-study.png)(600×315, 소셜 미리보기용)와 [SVG 원본](./assets/og-study.svg)(1200×630) 등록. KakaoTalk 등 플랫폼이 실제 이미지를 추출하는지는 배포 후 공유 미리보기 확인 필요.
+- 모바일 360px 안전 폭 CSS 추가. 기존 구조·다크모드·키보드 인터랙션은 그대로 유지.
+- `validation/check.mjs` 및 `.github/workflows/quiz500-smoke.yml` 추가: Node 22 의존성 없는 JS 구문, JSON/상태·출처, 이미지 파일, SEO, 문항 수·기관 정보, 변경 3건 및 URL 호환 정적 CI 검사. 실제 모바일 레이아웃/브라우저 Console 0건 검증은 별도 수행해야 함.
+- [단계별 최종 점검표](./validation/stage5-checklist.md). 이전 1~4단계 기록·원본 자료는 변경 없이 유지.
+
+
 ## 2026-11-21 · 4단계 검증문항 모의고사 및 직렬별 과목표
 
 - [검증문항 모의고사](./mock-exam/): 과목(통신공학/무선공학/K-water 창작/통신+무선), 문항 수(10/20/40/50/100), 제한 시간(10/20/40/60/90/120분) 사용자 선택. **오직 `status-overrides.json`에서 `verified`로 승인되고 구조가 온전한 문항만 출제**. 승인 0개이면 시험 시작 비활성/안내.
