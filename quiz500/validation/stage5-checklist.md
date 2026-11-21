@@ -29,3 +29,10 @@
 
 ## 제약
 외부 서비스 연결 없이 정적 GitHub Pages에서 작동. 외부 런타임 의존성은 KaTeX CDN만 사용.
+
+## 추가 브라우저 자동 점검 (2026-11-21)
+
+- 루트에서 Node 22 + Chrome/Chromium 설치 환경으로 `node quiz500/validation/browser-check.mjs` 실행.
+- 13개 화면(메인·통신/무선 및 기존 kind/unit 딥링크·K-water 원본/모의·공무원 컷·모의고사·기관 과목·출처·변경일지)을 모바일 360px로 엽니다.
+- **실패 판정:** 앱 초기화 불능, JS Runtime exception, `console.error`, Chrome Log error, 360px 문서 가로 넘침. GitHub Actions `quiz500-smoke.yml`에 정적 검사 다음 단계로 실행됩니다.
+- 테스트 실행이 되지 않았거나 Chrome 환경을 확보하지 못한 경우 **콘솔 에러 0건이라고 기록하지 마세요.**
