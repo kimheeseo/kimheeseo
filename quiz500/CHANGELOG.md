@@ -1,5 +1,11 @@
 # 통신직 준비 툴 업데이트 일지 (CHANGELOG)
 
+## 2026-11-21 · 5단계 브라우저 콘솔 자동 점검 보강
+
+- `quiz500/validation/browser-check.mjs` 신규: Chrome headless(Node 22·내장 CDP WebSocket)로 사이트 주요 13개 URL과 기존 딥링크를 방문, 360px 가로 넘침, JS 예외, console.error/Chrome Log 오류 포착. npm 신규 라이브러리 없음.
+- `.github/workflows/quiz500-smoke.yml` 정적 검사 뒤 브라우저 검사 추가(8분 제한). 실제 CI 실행 결과는 이 변경 기록에 PASS로 기재하지 않음.
+- 전체 1~5단계 기존 스키마·문항·저장 키·URL은 이번 검사 추가에서 변경하지 않음.
+
 ## 2026-11-21 · 5단계 홈·JSON 분리·공유 메타·정적 검사
 
 - 홈 첫 화면: **오늘 복습 → 필기 학습 시작 → 모의고사 → 기관별 자료** 4개 빠른 이동 카드(모바일 1열) 추가, 최근 업데이트는 3건만 보이고 전체 내역은 [변경 일지](./changelog/)에서 `CHANGELOG.md`를 직접 읽도록 분리. 홈 푸터의 자료 출처·오류 신고 링크 유지.
