@@ -93,17 +93,24 @@
 (()=>{
  const warn=document.createElement("div");warn.id="quizDataLoadStatus";warn.className="mini";warn.textContent="학습 데이터를 불러오는 중입니다...";
  const root=document.querySelector("main.layout");root?.insertBefore(warn,root.firstChild);
- fetch("./quiz_bank_1000.json",{cache:"no-store"})
- .then(r=>{if(!r.ok)throw Error("문항 JSON 응답 "+r.status);return r.json()})
- .then(questions=>{
-  if(!Array.isArray(questions)||questions.length<1000)throw Error("문항 JSON 형식 또는 수량이 올바르지 않습니다.");
+ function launch(questions){
+  if(!Array.isArray(questions)||questions.length<1000){warn.textContent="문항 데이터 수량·형식 오류";return}
   window.__quizBank=questions;
   const app=document.createElement("script");app.src="./app.js";
   app.onload=()=>{warn.remove();window.dispatchEvent(new Event("quiz500-app-ready"))};
   app.onerror=()=>{warn.textContent="문제은행 실행 스크립트 로드 실패 · 새로고침하거나 저장소를 확인하세요."};
   document.body.append(app);
- })
- .catch(err=>{warn.textContent="문항 데이터를 불러오지 못했습니다: "+err.message+". GitHub Pages에 배포됐는지 확인하세요."});
+ }
+ fetch("./quiz_bank_1000.json",{cache:"no-store"})
+ .then(r=>{if(!r.ok)throw Error("문항 JSON 응답 "+r.status);return r.json()})
+ .then(questions=>launch(questions))
+ .catch(err=>{
+  warn.textContent="JSON 로드 실패("+err.message+"). 호환 오프라인 데이터를 확인합니다...";
+  const backup=document.createElement("script");backup.src="./offline-bank.js";
+  backup.onload=()=>{if(Array.isArray(window.__quizBank))launch(window.__quizBank);else warn.textContent="오프라인 데이터 형식 오류입니다."};
+  backup.onerror=()=>{warn.textContent="데이터를 불러오지 못했습니다. GitHub Pages 배포 또는 로컬 파일 구성을 확인하세요."};
+  document.body.append(backup);
+ });
 })();</script>
 <script id="embedded-kwater-integrator">
 window.addEventListener("quiz500-app-ready",()=>{
