@@ -37,7 +37,8 @@
           "explanation": "응집제를 투입하고 교반해 콜로이드성 입자가 응집되도록 한다.",
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-02",
@@ -60,7 +61,8 @@
           "explanation": "25×600=15,000원이다. 기본요금이 없다고 가정한다.",
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-03",
@@ -83,7 +85,8 @@
           "explanation": "유역 물환경 관리는 수계의 상·하류 연계성을 고려한다.",
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-04",
@@ -106,7 +109,8 @@
           "explanation": "체거름은 공극 크기에 따른 물리적 입자 제거 현상이다.",
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-05",
@@ -129,7 +133,8 @@
           "explanation": "홍수 시 저수량과 방류량을 조절해 하류 홍수 위험을 줄인다.",
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-06",
@@ -152,7 +157,8 @@
           "explanation": "유량×시간=12×10=120 m³.",
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-07",
@@ -175,7 +181,8 @@
           "explanation": "투명한 정보 제공은 공공서비스의 신뢰 확보 수단이다.",
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-08",
@@ -198,7 +205,8 @@
           "explanation": "필댐은 흙댐·사력댐 등 성토 재료를 활용한다.",
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-09",
@@ -221,7 +229,8 @@
           "explanation": "보는 하천 수위 유지와 취수 등에 활용될 수 있다.",
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-10",
@@ -244,7 +253,8 @@
           "explanation": "광역상수도는 여러 지역에 수돗물을 공급하는 광역적 시설 체계다.",
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-11",
@@ -267,7 +277,8 @@
           "explanation": "LC 공진의 각주파수 ω₀=1/√(LC), f₀=ω₀/(2π)이다.",
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-12",
@@ -290,7 +301,8 @@
           "explanation": "일반 AM은 반송파와 포락선이 존재하며 과변조가 없어야 단순 포락선 검파가 가능하다.",
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-13",
@@ -313,7 +325,8 @@
           "explanation": "나이퀴스트 표본화율은 최고 주파수의 2배다.",
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-14",
@@ -336,7 +349,8 @@
           "explanation": "해밍(7,4)은 정보 4비트+패리티 3비트다.",
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-15",
@@ -359,7 +373,8 @@
           "explanation": "ATSC 1.0 지상파 방송의 RF 전송 방식은 8-VSB다.",
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-16",
@@ -382,7 +397,8 @@
           "explanation": "2 Hz와 6 Hz의 공통 기본주파수는 최대공약수 2 Hz다.",
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-17",
@@ -405,7 +421,8 @@
           "explanation": "CRC는 생성다항식으로 나머지를 계산하여 주로 오류 검출에 사용한다.",
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-18",
@@ -428,7 +445,8 @@
           "explanation": "인터리빙은 연속 오류 위치를 분산시켜 부호의 정정능력 활용에 도움을 준다.",
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-19",
@@ -451,7 +469,8 @@
           "explanation": "등화는 채널 왜곡을 보상해 ISI를 줄인다.",
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-20",
@@ -474,7 +493,8 @@
           "explanation": "640×480×24×30=221,184,000 bit/s다.",
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-21",
@@ -497,7 +517,8 @@
           "explanation": "IPv6는 128비트 주소체계를 사용한다.",
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-22",
@@ -520,7 +541,8 @@
           "explanation": "Wi-Fi에서는 충돌 감지가 어려워 CSMA/CA 기반 접근을 사용한다.",
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-23",
@@ -543,7 +565,8 @@
           "explanation": "DHCP는 IP 주소, 서브넷, 게이트웨이 등의 네트워크 설정을 할당한다.",
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-24",
@@ -566,7 +589,8 @@
           "explanation": "FM 변조지수 β=Δf/fm=6/2=3이다.",
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-25",
@@ -589,7 +613,8 @@
           "explanation": "LTE UL은 SC-FDMA 기반, DL은 OFDMA 기반이다.",
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-26",
@@ -612,7 +637,8 @@
           "explanation": "같은 매질에서 빛의 속도는 유사하나 LEO의 경로 길이가 짧아 지연이 작다.",
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-27",
@@ -635,7 +661,8 @@
           "explanation": "최종값정리: lim s→0 sF(s)=5/5=1.",
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-28",
@@ -658,7 +685,8 @@
           "explanation": "영구자석형 가동코일 계기는 평균 토크가 직류 방향에 따라 발생한다.",
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-29",
@@ -681,7 +709,8 @@
           "explanation": "와이퍼 위치에 따라 두 단자 간 저항비·출력 전압이 변한다.",
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-30",
@@ -704,7 +733,8 @@
           "explanation": "이상적 op-amp는 입력 전류가 0이므로 입력 임피던스가 무한대다.",
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-31",
@@ -727,7 +757,8 @@
           "explanation": "NPN 이미터 팔로어에서 Ve≈Vb−VBE=4.3 V.",
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-32",
@@ -750,7 +781,8 @@
           "explanation": "반전증폭기의 전압이득 Av=−Rf/Rin=−10/2=−5.",
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-33",
@@ -773,7 +805,8 @@
           "explanation": "CE 증폭기는 출력이 입력에 대해 반전되는 특성이 있다.",
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-34",
@@ -796,7 +829,8 @@
           "explanation": "CMOS 인버터는 입력을 반전한다.",
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-35",
@@ -819,7 +853,8 @@
           "explanation": "옴의 법칙 Rc=6V/0.002A=3000Ω이다.",
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-36",
@@ -842,7 +877,8 @@
           "explanation": "반가산기의 합은 XOR, 자리올림은 AND다.",
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-37",
@@ -865,7 +901,8 @@
           "explanation": "모든 입력조합에서 1이므로 항등함수 1이다.",
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-38",
@@ -888,7 +925,8 @@
           "explanation": "게이트 전압에 대해 미분하면 gm=2K(VGS−VTH)이다.",
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-39",
@@ -911,7 +949,8 @@
           "explanation": "B(A+NOT A)=B다.",
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-2-40",
@@ -934,7 +973,8 @@
           "explanation": "2^8=256이므로 8개의 상태 비트가 필요하다.",
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         }
       ]
     },
@@ -964,7 +1004,8 @@
           "explanation": "침전은 중력으로 가라앉는 입자를 분리한다.",
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-02",
@@ -987,7 +1028,8 @@
           "explanation": "(130−100)/100×100=30%이다.",
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-03",
@@ -1010,7 +1052,8 @@
           "explanation": "비점오염은 넓은 토지면에서 강우 유출 등을 통해 유입되는 오염이다.",
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-04",
@@ -1033,7 +1076,8 @@
           "explanation": "역세척은 물 또는 공기·물을 역방향으로 흘려 여재에 축적된 입자를 제거한다.",
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-05",
@@ -1056,7 +1100,8 @@
           "explanation": "갈수기에는 제한된 저수량을 고려한 용수 배분이 중요하다.",
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-06",
@@ -1079,7 +1124,8 @@
           "explanation": "30 mm=0.03 m이므로 0.03×2000=60 m³.",
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-07",
@@ -1102,7 +1148,8 @@
           "explanation": "수도 서비스는 공급 신뢰성 및 수질 적합성으로 평가할 수 있다.",
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-08",
@@ -1125,7 +1172,8 @@
           "explanation": "중력댐은 자체 중량을 이용해 수압 등에 저항한다.",
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-09",
@@ -1148,7 +1196,8 @@
           "explanation": "가동보는 수문 개폐로 수위와 흐름을 조절한다.",
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-10",
@@ -1171,7 +1220,8 @@
           "explanation": "배수지는 물을 저장해 시간별 수요 변동을 완충한다.",
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-11",
@@ -1194,7 +1244,8 @@
           "explanation": "공진주파수는 1/√L에 비례하므로 4배 L은 주파수 1/2배다.",
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-12",
@@ -1217,7 +1268,8 @@
           "explanation": "변조율은 m×100%=60%이다.",
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-13",
@@ -1240,7 +1292,8 @@
           "explanation": "양자화 레벨 수는 2^8=256이다.",
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-14",
@@ -1263,7 +1316,8 @@
           "explanation": "패리티 검사 결과인 신드롬은 오류 위치 추정에 이용된다.",
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-15",
@@ -1286,7 +1340,8 @@
           "explanation": "ATSC 1.0 시스템은 AC-3 오디오 규격을 채택했다.",
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-16",
@@ -1309,7 +1364,8 @@
           "explanation": "곱→합 공식으로 (1/2)[cos(2π·8t)+cos(2π·2t)]이다.",
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-17",
@@ -1332,7 +1388,8 @@
           "explanation": "ARQ는 오류 검출 후 ACK/NAK·타이머 등을 이용해 재전송한다.",
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-18",
@@ -1355,7 +1412,8 @@
           "explanation": "인터리빙/디인터리빙 과정에서 메모리 및 지연이 요구된다.",
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-19",
@@ -1378,7 +1436,8 @@
           "explanation": "DTE는 데이터를 생성·소비하는 통신 단말 장치를 가리킨다.",
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-20",
@@ -1401,7 +1460,8 @@
           "explanation": "100,000×8×24=19,200,000 b/s다.",
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-21",
@@ -1424,7 +1484,8 @@
           "explanation": "IPv6의 기본 헤더는 고정 길이 40바이트다.",
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-22",
@@ -1447,7 +1508,8 @@
           "explanation": "RTS/CTS는 매체 예약·NAV 설정으로 숨은 단말 충돌을 완화할 수 있다.",
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-23",
@@ -1470,7 +1532,8 @@
           "explanation": "RIP은 거리벡터 라우팅 프로토콜로 홉 수를 메트릭으로 이용한다.",
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-24",
@@ -1493,7 +1556,8 @@
           "explanation": "Δf=βfm=4×1 kHz=4 kHz.",
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-25",
@@ -1516,7 +1580,8 @@
           "explanation": "LTE DL은 OFDMA를 사용한다.",
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-26",
@@ -1539,7 +1604,8 @@
           "explanation": "LEO의 빠른 상대 이동은 도플러 편이와 핸드오버 관리가 중요하다.",
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-27",
@@ -1562,7 +1628,8 @@
           "explanation": "lim s→0 sF(s)=12/3=4다.",
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-28",
@@ -1585,7 +1652,8 @@
           "explanation": "교류자속에 의한 와류와 자기장의 상호작용으로 토크가 발생한다.",
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-29",
@@ -1608,7 +1676,8 @@
           "explanation": "전압분배: 10×3/(2+3)=6 V.",
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-30",
@@ -1631,7 +1700,8 @@
           "explanation": "이상적 모델에서 개방루프 전압이득은 무한대다.",
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-31",
@@ -1654,7 +1724,8 @@
           "explanation": "Ic≈βIb=100×20 μA=2 mA.",
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-32",
@@ -1677,7 +1748,8 @@
           "explanation": "비반전 이득=1+Rf/Rg=1+4=5.",
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-33",
@@ -1700,7 +1772,8 @@
           "explanation": "MOSFET은 절연 게이트 구조로 입력 임피던스가 매우 높다.",
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-34",
@@ -1723,7 +1796,8 @@
           "explanation": "NAND 출력은 NOT(A·B)로 두 입력 모두 1이면 0이다.",
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-35",
@@ -1746,7 +1820,8 @@
           "explanation": "Ic≈βIb=80×25 μA=2 mA.",
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-36",
@@ -1769,7 +1844,8 @@
           "explanation": "Carry는 A·B다.",
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-37",
@@ -1792,7 +1868,8 @@
           "explanation": "A(B+NOT B)=A다.",
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-38",
@@ -1815,7 +1892,8 @@
           "explanation": "gm=2ID/Vov=2×2mA/0.2V=20 mS.",
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-39",
@@ -1838,7 +1916,8 @@
           "explanation": "XOR는 입력이 다를 때만 1이다.",
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-3-40",
@@ -1861,7 +1940,8 @@
           "explanation": "2^10=1024<1025≤2^11이므로 11비트다.",
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         }
       ]
     },
@@ -1891,7 +1971,8 @@
           "explanation": "소독은 병원성 미생물의 불활성화를 목적으로 한다.",
           "sourceReferenceQuestion": 1,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-02",
@@ -1914,7 +1995,8 @@
           "explanation": "12 m³/h×20 h=240 m³이다.",
           "sourceReferenceQuestion": 2,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-03",
@@ -1937,7 +2019,8 @@
           "explanation": "유역 물환경 분석에는 수문·수질 자료를 함께 이용한다.",
           "sourceReferenceQuestion": 3,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-04",
@@ -1960,7 +2043,8 @@
           "explanation": "부착은 입자-여재 간 표면 상호작용으로 발생한다.",
           "sourceReferenceQuestion": 4,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-05",
@@ -1983,7 +2067,8 @@
           "explanation": "여유 저류공간이 홍수의 첨두유량 완화에 기여한다.",
           "sourceReferenceQuestion": 5,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-06",
@@ -2006,7 +2091,8 @@
           "explanation": "유사량은 하천이 운반하는 토사의 양으로 통상 질량/시간 등으로 나타낸다.",
           "sourceReferenceQuestion": 6,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-07",
@@ -2029,7 +2115,8 @@
           "explanation": "비상계획은 위험 감시, 대응체계, 복구 조치 등을 포함한다.",
           "sourceReferenceQuestion": 7,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-08",
@@ -2052,7 +2139,8 @@
           "explanation": "유효저수용량은 정상 운영을 위해 활용 가능한 저수공간의 용량이다.",
           "sourceReferenceQuestion": 8,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-09",
@@ -2075,7 +2163,8 @@
           "explanation": "취수에는 공급 목적과 하천의 물환경·유량 관리가 함께 관련된다.",
           "sourceReferenceQuestion": 9,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-10",
@@ -2098,7 +2187,8 @@
           "explanation": "관로 운전 상태 판단에는 압력과 유량, 밸브 상태가 직접 관련된다.",
           "sourceReferenceQuestion": 10,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-11",
@@ -2121,7 +2211,8 @@
           "explanation": "하틀리 발진기는 인덕터 탭 또는 결합 인덕터를 이용한 귀환을 사용한다.",
           "sourceReferenceQuestion": 11,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-12",
@@ -2144,7 +2235,8 @@
           "explanation": "DSB-SC는 양측파대를 남기되 반송파를 억압한다.",
           "sourceReferenceQuestion": 12,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-13",
@@ -2167,7 +2259,8 @@
           "explanation": "전체 범위 16 V를 256단계로 나누면 Δ=16/256=0.0625 V다.",
           "sourceReferenceQuestion": 13,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-14",
@@ -2190,7 +2283,8 @@
           "explanation": "2^r≥m+r+1. m=11일 때 r=4이면 16≥16이다.",
           "sourceReferenceQuestion": 14,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-15",
@@ -2213,7 +2307,8 @@
           "explanation": "8단계 신호의 비트/심벌=log₂8=3이다.",
           "sourceReferenceQuestion": 15,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-16",
@@ -2236,7 +2331,8 @@
           "explanation": "기본주파수=1/T=1/0.25=4 Hz다.",
           "sourceReferenceQuestion": 16,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-17",
@@ -2259,7 +2355,8 @@
           "explanation": "일반적인 해밍 SEC 코드는 단일 비트 오류 정정, CRC는 오류 검출에 주로 이용된다.",
           "sourceReferenceQuestion": 17,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-18",
@@ -2282,7 +2379,8 @@
           "explanation": "인터리버 설계에 따라 burst error가 여러 코드워드에 분산된다.",
           "sourceReferenceQuestion": 18,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-19",
@@ -2305,7 +2403,8 @@
           "explanation": "채널 임펄스응답의 지연 성분이 생기면 수신 등화로 ISI를 보상할 수 있다.",
           "sourceReferenceQuestion": 19,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-20",
@@ -2328,7 +2427,8 @@
           "explanation": "300 Mb/s ÷3 bit/symbol=100 Mbaud. 실제 점유대역은 필터 및 방식에 좌우된다.",
           "sourceReferenceQuestion": 20,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-21",
@@ -2351,7 +2451,8 @@
           "explanation": "IPv6에서는 확장 헤더 체인으로 선택적 기능을 실을 수 있다.",
           "sourceReferenceQuestion": 21,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-22",
@@ -2374,7 +2475,8 @@
           "explanation": "Ad-hoc 네트워크는 인프라 AP 없이 노드가 직접 통신할 수 있다.",
           "sourceReferenceQuestion": 22,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-23",
@@ -2397,7 +2499,8 @@
           "explanation": "SNMP는 관리 시스템이 네트워크 장치 상태 등을 모니터링·관리하는 프로토콜이다.",
           "sourceReferenceQuestion": 23,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-24",
@@ -2420,7 +2523,8 @@
           "explanation": "PM은 메시지 신호에 비례하여 반송파의 순간 위상을 변화시킨다.",
           "sourceReferenceQuestion": 24,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-25",
@@ -2443,7 +2547,8 @@
           "explanation": "CP는 다중경로 지연으로 인한 ISI 및 부반송파 직교성 훼손을 줄이는 데 도움된다.",
           "sourceReferenceQuestion": 25,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-26",
@@ -2466,7 +2571,8 @@
           "explanation": "GEO는 지구 자전과 같은 각속도로 공전한다.",
           "sourceReferenceQuestion": 26,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-27",
@@ -2489,7 +2595,8 @@
           "explanation": "최종값정리는 안정 조건에서 적용 가능하며, 우반평면·허수축 진동 극이 있으면 부적절하다.",
           "sourceReferenceQuestion": 27,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-28",
@@ -2512,7 +2619,8 @@
           "explanation": "열전형 계기는 히터에 생긴 열을 열전대 전압으로 변환해 측정한다.",
           "sourceReferenceQuestion": 28,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-29",
@@ -2535,7 +2643,8 @@
           "explanation": "무부하 이상 선형 전위차계에서 절반 저항 비는 출력 6 V를 뜻한다.",
           "sourceReferenceQuestion": 29,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-30",
@@ -2558,7 +2667,8 @@
           "explanation": "음의 되먹임으로 선형 영역에서 V+≈V−, 입력전류≈0을 가정한다.",
           "sourceReferenceQuestion": 30,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-31",
@@ -2581,7 +2691,8 @@
           "explanation": "정상 능동영역에서 BE는 순방향, BC는 역방향이다.",
           "sourceReferenceQuestion": 31,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-32",
@@ -2604,7 +2715,8 @@
           "explanation": "Vo=−3×0.8=−2.4 V(출력 포화 없음 가정).",
           "sourceReferenceQuestion": 32,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-33",
@@ -2627,7 +2739,8 @@
           "explanation": "JFET의 핀치오프는 채널의 일부가 좁아져 포화 동작에 들어가는 것을 의미한다.",
           "sourceReferenceQuestion": 33,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-34",
@@ -2650,7 +2763,8 @@
           "explanation": "NOR 출력은 NOT(A+B)이며 둘 다 0일 때 1이다.",
           "sourceReferenceQuestion": 34,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-35",
@@ -2673,7 +2787,8 @@
           "explanation": "V=IR=0.0015×4000=6 V다.",
           "sourceReferenceQuestion": 35,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-36",
@@ -2696,7 +2811,8 @@
           "explanation": "T FF는 T=1일 때 토글, T=0일 때 유지된다.",
           "sourceReferenceQuestion": 36,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-37",
@@ -2719,7 +2835,8 @@
           "explanation": "B(A+NOT A)=B다.",
           "sourceReferenceQuestion": 37,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-38",
@@ -2742,7 +2859,8 @@
           "explanation": "같은 K·채널 길이 변조 무시 조건에서 ID∝Vov²이므로 4배다.",
           "sourceReferenceQuestion": 38,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-39",
@@ -2765,7 +2883,8 @@
           "explanation": "OR는 한 입력만 1이어도 1을 출력한다.",
           "sourceReferenceQuestion": 39,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         },
         {
           "id": "KW-ORIG-4-40",
@@ -2788,7 +2907,8 @@
           "explanation": "n개의 FF는 2^n개의 상태를 표현한다.",
           "sourceReferenceQuestion": 40,
           "relation": "동일 출제영역 기반 자체 제작, 원본 문제 복제 아님",
-          "reviewStatus": "자체 논리·정답 검증 필요(비공식)"
+          "reviewStatus": "자체 논리·정답 검증 필요(비공식)",
+          "status": "auto"
         }
       ]
     }
