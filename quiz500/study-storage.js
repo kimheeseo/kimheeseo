@@ -29,7 +29,7 @@ function hydrate(subject,legacy={},legacyKey){
   const correct=Math.max(0,Math.floor(Number(v.correct||0)));
   const wrong=Math.max(0,Math.floor(Number(v.wrong||0)));
   doc.items[id]={id,attempts:seen,correct,wrong,pending:Math.max(0,seen-correct-wrong),
-   lastAt:v.lastAt&&Number.isFinite(Date.parse(v.lastAt))?new Date(v.lastAt).toISOString():null,
+   lastAt:v.lastAt&&Number.isFinite(new Date(v.lastAt).getTime())?new Date(v.lastAt).toISOString():null,
    lastDurationMs:null,totalDurationMs:null,bookmark:bookmarks.has(id),memo:"",
    chapter:null,topic:null,stage:null,nextDueAt:null,lastCorrect:typeof v.lastCorrect==="boolean"?v.lastCorrect:null};
  }
