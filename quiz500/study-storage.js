@@ -1,6 +1,6 @@
 /* Single persistence boundary. Keep schemaVersion=1 and old keys for existing users. */
 (function(root){'use strict';
-const PREFIX='quiz500_study_v1_',SUBJECTS=['comm','wireless','kwater'],INTERVALS=[1,3,7,14],DAY=86400000;
+const PREFIX='quiz500_study_v1_',SUBJECTS=['comm','wireless','kwater'],INTERVALS=[1,3,7,14],DAY=86400000,EXTRA_SEVENDAY='wireless-first-pass-7days-v1';
 const LEGACY={comm:'comms500_prefs_v2',wireless:'wireless500_prefs_v2',kwater:'kwater_study_v1'};
 const memory=Object.create(null),oldKeys={...LEGACY};
 let storageOK=true;
@@ -76,10 +76,19 @@ function addSession(subject,session){const d=load(subject);if(session.id&&d.sess
 function backup(subject,legacy){return {format:'quiz500-study-backup',version:1,subject,exportedAt:new Date().toISOString(),record:JSON.parse(JSON.stringify(load(subject))),legacy:legacySnapshot(subject,legacy)}}
 function download(data,name){const href=URL.createObjectURL(new Blob([JSON.stringify(data,null,2)],{type:'application/json;charset=utf-8'})),a=document.createElement('a');a.href=href;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(href),1500)}
 function exportFile(subject,legacy){download(backup(subject,legacy),'quiz500_'+subject+'_backup.json')}
-function exportAll(){download({format:'quiz500-study-all',version:1,exportedAt:new Date().toISOString(),subjects:SUBJECTS.map(s=>backup(s))},'quiz500_all_backup.json')}
+function validSevenDay(v){
+ if(!ownObject(v)||!ownObject(v.checks)||!ownObject(v.scores))return false;
+ const indices=Object.keys(v.checks).concat(Object.keys(v.scores));
+ if(indices.length>14||indices.some(k=>!/^[0-6]$/.test(k)))return false;
+ for(const c of Object.values(v.checks))if(!ownObject(c)||typeof c.read!=='boolean'&&c.read!==undefined||typeof c.review!=='boolean'&&c.review!==undefined)return false;
+ for(const c of Object.values(v.scores))if(!ownObject(c)||!Number.isInteger(c.score)||c.score<0||c.score>3||!Array.isArray(c.answers)||c.answers.length!==3||c.answers.some(a=>!Number.isInteger(a)||a< -1||a>2))return false;
+ return JSON.stringify(v).length<=50000;
+}
+function sevenDaySnapshot(){try{const raw=getRaw(EXTRA_SEVENDAY);if(!raw)return null;const parsed=JSON.parse(raw);return validSevenDay(parsed)?parsed:null}catch{return null}}
+function exportAll(){download({format:'quiz500-study-all',version:1,exportedAt:new Date().toISOString(),subjects:SUBJECTS.map(s=>backup(s)),extras:{wirelessFirstPass7Day:sevenDaySnapshot()}},'quiz500_all_backup.json')}
 function validateBackup(p,subject){if(p.format!=='quiz500-study-backup'||p.version!==1||p.subject!==subject||!valid(p.record,subject))throw Error('백업 파일의 과목·기록 형식이 올바르지 않습니다.');return p}
-function applyBackups(backups){
- const writes=[];for(const p of backups){writes.push([PREFIX+p.subject,JSON.stringify(p.record)]);if(p.legacy&&ownObject(p.legacy))writes.push([oldKeys[p.subject],JSON.stringify(legacySnapshot(p.subject,p.legacy,p.record))])}
+function applyBackups(backups,sevenDay){
+ const writes=[];for(const p of backups){writes.push([PREFIX+p.subject,JSON.stringify(p.record)]);if(p.legacy&&ownObject(p.legacy))writes.push([oldKeys[p.subject],JSON.stringify(legacySnapshot(p.subject,p.legacy,p.record))])}if(sevenDay&&validSevenDay(sevenDay))writes.push([EXTRA_SEVENDAY,JSON.stringify(sevenDay)]);
  const before=writes.map(([k])=>[k,getRaw(k)]);for(const [k,v] of writes)if(!setRaw(k,v)){for(const [old,value] of before)value===null?removeRaw(old):setRaw(old,value);throw Error('브라우저 저장 공간이 부족하거나 저장이 차단되었습니다. 기존 기록을 복원했습니다.')}
  for(const p of backups)memory[p.subject]=JSON.parse(JSON.stringify(p.record));return true;
 }
@@ -92,7 +101,7 @@ function oldBackup(subject,parsed){
  record.migrations=['legacy-v2:'+oldKeys[subject]];return {format:'quiz500-study-backup',version:1,subject,record,legacy:parsed};
 }
 async function importFile(subject,file){const parsed=await parseFile(file);const p=validateBackup(oldBackup(subject,parsed),subject);if(!root.confirm('현재 과목 기록을 백업으로 교체합니다. 먼저 내보내기를 권장합니다. 계속할까요?'))return false;return applyBackups([p])}
-async function importAll(file){const p=await parseFile(file);if(p.format!=='quiz500-study-all'||p.version!==1||!Array.isArray(p.subjects)||p.subjects.length!==3||new Set(p.subjects.map(x=>x.subject)).size!==3)throw Error('전체 과목 백업 파일이 아닙니다.');for(const s of SUBJECTS)validateBackup(p.subjects.find(x=>x.subject===s)||{},s);if(!root.confirm('세 과목의 현재 학습 기록을 백업으로 교체할까요?'))return false;return applyBackups(p.subjects)}
+async function importAll(file){const p=await parseFile(file);if(p.format!=='quiz500-study-all'||p.version!==1||!Array.isArray(p.subjects)||p.subjects.length!==3||new Set(p.subjects.map(x=>x.subject)).size!==3)throw Error('전체 과목 백업 파일이 아닙니다.');for(const s of SUBJECTS)validateBackup(p.subjects.find(x=>x.subject===s)||{},s);const extra=p.extras?.wirelessFirstPass7Day??null;if(extra&&!validSevenDay(extra))throw Error('무선공학 1회독 진도 형식이 올바르지 않습니다.');if(!root.confirm('세 과목의 학습 기록과 포함된 1회독 진도를 백업으로 교체할까요?'))return false;return applyBackups(p.subjects,extra)}
 function reset(subject){memory[subject]=empty(subject);memory[subject].migrations=['legacy-v2:'+oldKeys[subject],'legacy-mock-sessions-v1'];write(subject);if(subject!=='kwater')writeLegacy(oldKeys[subject],legacySnapshot(subject));}
 root.addEventListener?.('quiz-storage-error',()=>{if(!root.document?.body||document.getElementById('storage-error'))return;const notice=document.createElement('p');notice.id='storage-error';notice.setAttribute('role','alert');notice.style.cssText='padding:16px;background:#fff2da;color:#603600;border:2px solid #825100';notice.textContent='브라우저 저장이 차단되었거나 공간이 부족합니다. 기록 JSON을 내보내 보관하세요. 새로고침하면 저장되지 않은 기록이 사라질 수 있습니다.';document.body.prepend(notice)});
 root.StudyStore={getRaw,setRaw,removeRaw,readLegacy,writeLegacy,hydrate,load,item,record,setBookmark,setMemo,due,stats,addSession,backup,exportFile,importFile,exportAll,importAll,legacyKey:s=>oldKeys[s],storageOK:()=>storageOK,reset,validateBackup};
