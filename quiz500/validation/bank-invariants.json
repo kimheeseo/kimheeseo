@@ -11,6 +11,20 @@
   ],
   "subjects": {
     "comm": {
+      "count": 1768,
+      "sha256": "14c607fd0d158c7b5f92dfeffeb78313a48b8d50b8c0b72d8642f9d73376c2ae"
+    },
+    "wireless": {
+      "count": 2166,
+      "sha256": "2eeaf9982eb68d47cfde2f39404a8a9462a979bef4bb03845aa5d1572e985f39"
+    },
+    "kwater": {
+      "count": 120,
+      "sha256": "e16cc1e1a6375df77006b45ba0b2329f269cd754c59001d607ab60223bc5cf0d"
+    }
+  },
+  "legacySubjects": {
+    "comm": {
       "count": 1748,
       "sha256": "f894c391c24dd9a95a487896549292ff118c9de96f5a60d9eb8aa75c071fd26f"
     },

@@ -253,7 +253,7 @@ async function init(){
  $("#kwaterVerifiedOnly").checked=QuizTrust.verifiedOnly();
  $("#kwaterVerifiedOnly").addEventListener("change",e=>{QuizTrust.setVerifiedOnly(e.target.checked);idx=0;render()});
  await QuizTrust.loadOverrides();
- if(db.rounds.length!==3||db.rounds.some(x=>x.questions.length!==40)||source.questions.length!==40)throw Error("문제 수가 예상과 다릅니다.");
+ if(db.rounds.length!==3||db.rounds.some(x=>x.questions.length!==40)||(source.meta?.sourceVisibility==='private'?source.questions.length!==0:source.questions.length!==40))throw Error("문제 수가 예상과 다릅니다.");
  const chapters=[...new Set(db.rounds.flatMap(r=>r.questions.map(q=>q.chapter)))];
  $("#chapter").innerHTML='<option value="all">전체 단원 · 120문항</option>'+chapters.map(c=>'<option value="'+esc(c)+'">'+esc(c)+'</option>').join("");
  $("#chapter").onchange=e=>{chapter=e.target.value;idx=0;render()};

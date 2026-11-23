@@ -1,2 +1,2 @@
-/* Public access placeholder: original PDF, index and answer key are held privately. */
+/* Generated from kwater-exams/source-index-2026s.json; edit JSON and run scripts/quiz-build-offline.cjs. */
 window.QuizJSON.accept(new URL("source-index-2026s.json",document.currentScript.src).href,{"meta":{"name":"K-water 원본 모의고사 비공개","questionCount":0,"durationMinutes":40,"note":"원본 PDF, 문항·분류 정보 및 정답표는 비공개 개인 보관 중입니다. 이 공개 사이트에서는 원본 데이터를 제공하지 않습니다.","sourceVisibility":"private","isOfficialKwaterExam":false,"statusPolicy":"Private original. No publicly retrievable source questions or answer metadata."},"questions":[]});

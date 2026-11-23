@@ -89,6 +89,7 @@ const BROADCAST_KIND='국회사무처 9급 기출';
 const IMAGE_CACHE=new Map();
 function updateDynamicCounts(){const n=BANK.length;document.title='통신공학 '+n+' | 암기 퀴즈';const heading=document.querySelector('#homeView .hero h1');if(heading)heading.innerHTML='암기한 통신공학,<br>'+n+'문제로 확인하세요.';const composition=document.querySelector('#compositionPanel h2');if(composition)composition.textContent='단원별 '+n+'문항 구성';const btext=document.querySelector('#bankView .hero p');if(btext)btext.textContent=n+'문항을 검색하고 정답·해설·출처를 확인할 수 있습니다.';}
 function sourceText(q){
+ if(q.setId==='korail-2026h1-practice-2')return '자체 창작 응용 2회 · '+q.number+'번 · 공식 기출 아님';
  if(q.sourceTag==='BROADCAST')return q.sourceLabel+' · '+q.no+'번 · 원문 PDF '+(q.page||'?')+'쪽 · '+q.answerStatus;
  if(q.year&&q.exam)return q.year+'년도 '+q.exam+' 기출 · '+(q.no||'?')+'번';
  if(q.sourceLabel)return q.sourceQuestion?q.sourceLabel+' · 참고/복원 '+q.sourceQuestion+'번 · PDF '+q.sourcePage+'쪽':q.sourceLabel+' · 공개 기출의 전공 범위 참고';

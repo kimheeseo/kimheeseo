@@ -7,6 +7,8 @@
 통신: `communication-quiz-500/quiz_bank_1000.json` (원본 1,762개, 기존 로더가 내용 없는 14개 보류)
 무선: `wireless-quiz-500/wireless_bank_1000.json` (1,074개) + `data/wireless-supplement.json` (1,082개)
 K-water: `kwater-exams/generated-mocks-2-4.json`의 `rounds[].questions` (120개)
+코레일 창작 응용 2회: `korail-2026/generated-mock-2.json.questions` 30개를 `subject`(comm 20 / wireless 10)별로 공용 로더가 한 번씩 추가한다. `setId`는 세트 식별자, `number`는 세트 내 순서, `reference`는 기존 복원문항 ID/번호/PDF 쪽수(유형 참고용)이다. 창작 문항 자체의 원문 PDF 쪽수로 표시하지 않는다. 정답은 0부터 시작하며 신규 ID는 `KORAIL-2026H1-P2-01`~`30`이다.
+
 레거시 JSON과 무선 보충 JS 파일은 과거 URL 호환용으로 보존하며 신규 학습 앱은 위 공용 로더를 사용한다.
 
 | 필드 | 형식 / 규칙 |

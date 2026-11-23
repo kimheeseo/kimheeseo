@@ -1,0 +1,1096 @@
+{
+  "schemaVersion": 1,
+  "id": "korail-2026h1-practice-2",
+  "title": "코레일 전기통신직 기출 유형 · 창작 응용 2회",
+  "checkedDate": "2026-11-23",
+  "origin": "독립 창작 예상문항 · 공식 기출 아님",
+  "note": "첨부 복원모의고사 30문항의 주제별 구성에 맞춰 독립 작성한 5지선다 연습 세트. 기초 개념과 1~3단계 계산 중심의 학습용 난이도로, 실제 시험과 동등함을 보장하지 않음. 정답·해설은 잠정 학습용이며 검증 승인은 별도.",
+  "source": {
+    "name": "사용자 제공 민간 복원모의고사 · 전자공학플라자",
+    "url": "https://cafe.naver.com/electronplaza",
+    "checkedDate": "2026-11-23",
+    "type": "외부 참고"
+  },
+  "questions": [
+    {
+      "id": "KORAIL-2026H1-P2-01",
+      "number": 1,
+      "subject": "comm",
+      "chapter": "디지털 전송",
+      "topic": "QAM",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 1,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1030",
+        "number": 1,
+        "pdfPage": 3,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "64-QAM으로 심벌율 200 ksymbol/s의 데이터를 전송한다. 오류정정부호와 부가 정보가 없을 때 비트율은?",
+      "options": [
+        "1.2 Mbit/s",
+        "0.2 Mbit/s",
+        "0.6 Mbit/s",
+        "6.4 Mbit/s",
+        "12.8 Mbit/s"
+      ],
+      "answer": 0,
+      "explanation": "64개 상태는 심벌당 log₂64=6 bit를 나타낸다. 비트율은 200,000×6=1,200,000 bit/s=1.2 Mbit/s이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-02",
+      "number": 2,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "휘스톤 브리지",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 2,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1032",
+        "number": 2,
+        "pdfPage": 3,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "휘스톤 브리지의 위쪽 가지는 R₁-R₂, 아래쪽 가지는 R₃-R₄의 직렬 연결이다. 두 가지의 양 끝에 전원을 연결하고 각 중점 사이의 검류계 전류가 0이다. R₁=120Ω, R₂=80Ω, R₃=90Ω일 때 R₄는?",
+      "options": [
+        "40Ω",
+        "60Ω",
+        "90Ω",
+        "120Ω",
+        "135Ω"
+      ],
+      "answer": 1,
+      "explanation": "각 중점의 전위가 같으므로 \\(R_1/R_2=R_3/R_4\\)이다. 따라서 R₄=80×90/120=60Ω이다. 전원은 두 직렬 가지에 병렬로 연결된다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-03",
+      "number": 3,
+      "subject": "wireless",
+      "chapter": "급전선·도파관",
+      "topic": "무왜형 선로",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 3,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1031",
+        "number": 3,
+        "pdfPage": 3,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "분포정수 선로의 R=4Ω/km, L=2mH/km, C=20nF/km이다. 무왜형 조건을 만족시키는 G는?",
+      "options": [
+        "4μS/km",
+        "10μS/km",
+        "40μS/km",
+        "20μS/km",
+        "400μS/km"
+      ],
+      "answer": 2,
+      "explanation": "무왜형 조건은 \\(R/L=G/C\\)이다. G=RC/L=4×20×10⁻⁹/(2×10⁻³)=40×10⁻⁶ S/km이다. 모든 정수의 길이 기준을 km로 통일한다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-04",
+      "number": 4,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "RLC 공진",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 4,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1034",
+        "number": 4,
+        "pdfPage": 3,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "교류 실효전압 100V를 R=10Ω인 RLC 직렬회로에 인가한다. 유한한 R을 가지며 공진한 상태에서 전류 실효값과 역률은?",
+      "options": [
+        "1A / 1",
+        "10A / 0",
+        "100A / 1",
+        "10A / 1",
+        "100A / 0"
+      ],
+      "answer": 3,
+      "explanation": "직렬 공진에서는 유도성·용량성 리액턴스가 상쇄되어 Z=R=10Ω이다. I=100/10=10A이고 전압과 전류가 동상이므로 역률은 1이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-05",
+      "number": 5,
+      "subject": "wireless",
+      "chapter": "아날로그 변조",
+      "topic": "FM 프리엠퍼시스",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 5,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1033",
+        "number": 5,
+        "pdfPage": 4,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "FM 송신기의 프리엠퍼시스로 음성의 고주파 성분을 강조했다. 수신기에서 신호의 원래 주파수 특성을 복원하면서 고주파 잡음을 줄이는 회로는?",
+      "options": [
+        "주파수 체배기",
+        "주파수 혼합기",
+        "음성 클리퍼",
+        "반송파 발진기",
+        "디엠퍼시스 회로"
+      ],
+      "answer": 4,
+      "explanation": "디엠퍼시스는 송신 시 강조한 고주파 성분을 감쇠해 원래의 상대적인 주파수 특성을 복원한다. 이때 복조 과정에서 나타나는 고주파 잡음도 함께 줄인다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-06",
+      "number": 6,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "정전용량·에너지",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 6,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1036",
+        "number": 6,
+        "pdfPage": 4,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "평행판 콘덴서의 판 면적은 12cm², 간격은 2mm, 유전율은 1.0×10⁻¹¹F/m이다. 가장자리 효과를 무시하고 200V를 인가할 때 저장 에너지는?",
+      "options": [
+        "0.12μJ",
+        "0.012μJ",
+        "0.06μJ",
+        "0.24μJ",
+        "1.2μJ"
+      ],
+      "answer": 0,
+      "explanation": "A=12×10⁻⁴m², d=2×10⁻³m이므로 \\(C=\\varepsilon A/d\\)=6×10⁻¹²F이다. W=CV²/2=1.2×10⁻⁷J=0.12μJ이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-07",
+      "number": 7,
+      "subject": "comm",
+      "chapter": "정보·부호이론",
+      "topic": "채널용량",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 7,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1038",
+        "number": 7,
+        "pdfPage": 4,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "대역폭 3kHz인 가산 백색 가우스 잡음 채널의 선형 신호대잡음비 S/N이 31이다. 샤논 채널용량은?",
+      "options": [
+        "3kbit/s",
+        "15kbit/s",
+        "9kbit/s",
+        "31kbit/s",
+        "93kbit/s"
+      ],
+      "answer": 1,
+      "explanation": "\\(C=B\\log_2(1+S/N)\\)=3000 log₂32=3000×5=15,000 bit/s이다. 31은 dB 값이 아니라 선형 전력비이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-08",
+      "number": 8,
+      "subject": "wireless",
+      "chapter": "전자파와 안테나 이론",
+      "topic": "기자력",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 8,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1035",
+        "number": 8,
+        "pdfPage": 4,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "평균 자로 길이가 0.2m인 균일한 자기회로에 200회 코일을 감고 0.4A를 흘린다. 누설자속과 공극을 무시할 때 기자력과 자계 세기의 조합은?",
+      "options": [
+        "80A·turn / 16A/m",
+        "500A·turn / 2500A/m",
+        "80A·turn / 400A/m",
+        "400A·turn / 80A/m",
+        "40A·turn / 200A/m"
+      ],
+      "answer": 2,
+      "explanation": "기자력 F=NI=200×0.4=80A·turn이다. 균일 자로에서 \\(H=NI/\\ell\\)=80/0.2=400A/m이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-09",
+      "number": 9,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "전압계 배율기",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 9,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1040",
+        "number": 9,
+        "pdfPage": 5,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "내부저항 100Ω, 최대 눈금 전류 2mA인 계기를 20V 전압계로 사용한다. 계기와 직렬로 추가할 배율저항은?",
+      "options": [
+        "0.1kΩ",
+        "1.0kΩ",
+        "10.0kΩ",
+        "9.9kΩ",
+        "10.1kΩ"
+      ],
+      "answer": 3,
+      "explanation": "20V에서 2mA가 흐르려면 전체 저항이 20/0.002=10,000Ω이어야 한다. 계기 내부저항 100Ω을 제외한 배율저항은 9900Ω=9.9kΩ이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-10",
+      "number": 10,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "동기발전기",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 10,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1042",
+        "number": 10,
+        "pdfPage": 5,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "3상 동기발전기를 이미 운전 중인 모선에 병입하려 한다. 병입 조건으로 반드시 같아야 할 항목만 묶은 것은?",
+      "options": [
+        "전압 크기·정격용량·제조사",
+        "정격용량·회전자 질량·극수",
+        "주파수·냉각 방식·정격용량",
+        "상순서·제조사·회전자 질량",
+        "전압 크기·주파수·상순서·병입 순간의 위상"
+      ],
+      "answer": 4,
+      "explanation": "병입 순간의 전압 크기와 위상, 주파수, 상순서가 맞아야 돌입·순환 전류와 충격을 줄일 수 있다. 정격용량과 제조사까지 같을 필요는 없다. 여기서는 정현파 3상 전원을 가정한다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-11",
+      "number": 11,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "변압기 절연유",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 11,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1044",
+        "number": 11,
+        "pdfPage": 5,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "변압기 절연유를 선정할 때 절연성과 자연 대류 냉각, 화재 안전을 함께 고려한 조합으로 가장 적절한 것은?",
+      "options": [
+        "높은 절연내력 / 낮은 점도 / 높은 인화점",
+        "높은 절연내력 / 높은 점도 / 낮은 인화점",
+        "낮은 절연내력 / 낮은 점도 / 높은 인화점",
+        "낮은 절연내력 / 높은 점도 / 낮은 인화점",
+        "높은 절연내력 / 높은 점도 / 낮은 인화점·높은 휘발성"
+      ],
+      "answer": 0,
+      "explanation": "높은 절연내력은 절연에, 낮은 점도는 유동·대류 냉각에, 높은 인화점은 화재 안전에 유리하다. 실제 선정에는 규격 적합성 등 추가 조건도 필요하다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-12",
+      "number": 12,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "보호 개폐장치",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 12,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1046",
+        "number": 12,
+        "pdfPage": 5,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "수전설비에서 상위 보호장치와 협조하여 고장 구간을 자동으로 분리하는 역할에 해당하는 기기는?",
+      "options": [
+        "계기용 변압기(PT)",
+        "자동고장구분개폐기(ASS)",
+        "변류기(CT)",
+        "피뢰기(LA)",
+        "진상 콘덴서"
+      ],
+      "answer": 1,
+      "explanation": "ASS는 보호 협조를 통해 고장 구간을 구분·분리하는 데 사용된다. PT와 CT는 계측·보호용 변성기이고, 피뢰기는 서지 보호, 진상 콘덴서는 역률 개선에 사용된다. 모든 고장전류를 ASS 단독으로 차단한다고 해석하지 않는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-13",
+      "number": 13,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "송전용량",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 13,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1048",
+        "number": 13,
+        "pdfPage": 6,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "교육용 송전용량 근사식 P[MW]=1.2×V[kV]²/ℓ[km]를 적용한다. V=200kV, ℓ=100km일 때 P는? (계수와 단위는 이 문제의 가정이다.)",
+      "options": [
+        "120MW",
+        "240MW",
+        "480MW",
+        "960MW",
+        "1200MW"
+      ],
+      "answer": 2,
+      "explanation": "주어진 식과 단위를 그대로 쓰면 P=1.2×200²/100=480MW이다. 이 경험식 결과를 실제 설비의 열용량이나 안정도 한계로 단정하지 않는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-14",
+      "number": 14,
+      "subject": "comm",
+      "chapter": "신호와 시스템",
+      "topic": "평균전력",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 14,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1050",
+        "number": 14,
+        "pdfPage": 6,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "6Ω 순수 저항에 v(t)=60 cos(ωt+π/4)V를 인가한다. 평균 소비전력은?",
+      "options": [
+        "150W",
+        "600W",
+        "900W",
+        "300W",
+        "3600W"
+      ],
+      "answer": 3,
+      "explanation": "최댓값 Vm=60V이므로 Vrms=60/√2 V이다. 평균 전력 \\(P=V_{\\mathrm{rms}}^2/R\\)=60²/(2×6)=300W이다. 순수 저항에서는 초기 위상이 평균 전력에 영향을 주지 않는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-15",
+      "number": 15,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "단상 전동기",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 15,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1052",
+        "number": 15,
+        "pdfPage": 6,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "콘덴서 기동형 단상 유도전동기에서 보조권선에 기동용 콘덴서를 연결하는 직접적인 목적은?",
+      "options": [
+        "교류 전원을 직류로 바꾸기 위해",
+        "주권선의 저항을 0Ω으로 만들기 위해",
+        "전원 주파수를 두 배로 높이기 위해",
+        "회전자의 관성을 제거하기 위해",
+        "주권선과 보조권선 전류에 위상차를 만들어 기동 토크를 얻기 위해"
+      ],
+      "answer": 4,
+      "explanation": "주권선과 보조권선 전류의 위상차가 회전자계를 형성하는 데 기여하여 기동 토크를 만든다. 콘덴서가 정류기나 주파수 변환기로 작용하는 것은 아니다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-16",
+      "number": 16,
+      "subject": "wireless",
+      "chapter": "급전선·도파관",
+      "topic": "VSWR",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 16,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1037",
+        "number": 16,
+        "pdfPage": 6,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "손실이 없는 선로에서 전압 정재파비가 5이다. 부하 반사계수의 크기는?",
+      "options": [
+        "2/3",
+        "1/5",
+        "1/3",
+        "1/2",
+        "4/5"
+      ],
+      "answer": 0,
+      "explanation": "\\(S=\\frac{1+|\\Gamma|}{1-|\\Gamma|}\\)를 풀면 |Γ|=(S−1)/(S+1)=(5−1)/(5+1)=2/3이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-17",
+      "number": 17,
+      "subject": "comm",
+      "chapter": "신호와 시스템",
+      "topic": "교류 실효값",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 17,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1054",
+        "number": 17,
+        "pdfPage": 7,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "v(t)=80√2 sin(120πt+π/6)V에서 전압의 실효값과 주파수는? (t의 단위: s)",
+      "options": [
+        "80V / 120Hz",
+        "80V / 60Hz",
+        "80√2V / 60Hz",
+        "80V / 120πHz",
+        "40V / 60Hz"
+      ],
+      "answer": 1,
+      "explanation": "정현파의 Vrms=Vm/√2=80V이다. ω=120π rad/s이므로 f=ω/(2π)=60Hz이다. 초기 위상은 실효값과 주파수를 바꾸지 않는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-18",
+      "number": 18,
+      "subject": "comm",
+      "chapter": "신호와 시스템",
+      "topic": "푸리에 급수",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 18,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1056",
+        "number": 18,
+        "pdfPage": 7,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "직류 성분을 포함하는 주기 전압 v(t)=3+4√2 cos(ωt)V의 실효값은? (ω>0)",
+      "options": [
+        "3V",
+        "4V",
+        "5V",
+        "7V",
+        "3+4√2 V"
+      ],
+      "answer": 2,
+      "explanation": "직류 성분 3V와 교류 성분 실효값 4V는 평균 제곱값에서 더해진다. 전체 실효값은 \\(\\sqrt{3^2+4^2}=5\\,\\mathrm{V}\\)이다. 한 주기 동안 교차항의 평균은 0이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-19",
+      "number": 19,
+      "subject": "wireless",
+      "chapter": "전자파와 안테나 이론",
+      "topic": "자계 방향",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 19,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1039",
+        "number": 19,
+        "pdfPage": 7,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "공기 중의 무한히 긴 직선 도선에 8A가 흐른다. 도선 중심에서 4cm 떨어진 곳의 자계 세기 H는 약 얼마인가?",
+      "options": [
+        "3.18A/m",
+        "15.9A/m",
+        "63.7A/m",
+        "31.8A/m",
+        "318A/m"
+      ],
+      "answer": 3,
+      "explanation": "앙페르 법칙에 따라 \\(H=I/(2\\pi r)\\)=8/(2π×0.04)=100/π≈31.8A/m이다. 여기서는 자속밀도 B가 아니라 자계 세기 H를 묻는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-20",
+      "number": 20,
+      "subject": "wireless",
+      "chapter": "급전선·도파관",
+      "topic": "분포정수",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 20,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1041",
+        "number": 20,
+        "pdfPage": 7,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "무손실 전송선로에서 L=0.25μH/m, C=100pF/m이다. 특성 임피던스는?",
+      "options": [
+        "5Ω",
+        "25Ω",
+        "100Ω",
+        "500Ω",
+        "50Ω"
+      ],
+      "answer": 4,
+      "explanation": "무손실 선로의 특성 임피던스는 \\(Z_0=\\sqrt{L/C}\\)이다. √(0.25×10⁻⁶/(100×10⁻¹²))=√2500=50Ω이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-21",
+      "number": 21,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "전원 등가회로",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 21,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1058",
+        "number": 21,
+        "pdfPage": 8,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "테브낭 등가전압이 12V, 직렬저항이 6Ω인 선형 2단자 회로를 노튼 등가로 바꾼다. 올바른 구성은?",
+      "options": [
+        "2A 전류원과 6Ω 저항의 병렬 연결",
+        "2A 전류원과 6Ω 저항의 직렬 연결",
+        "72A 전류원과 6Ω 저항의 병렬 연결",
+        "12A 전류원과 2Ω 저항의 병렬 연결",
+        "2A 전압원과 6Ω 저항의 직렬 연결"
+      ],
+      "answer": 0,
+      "explanation": "노튼 전류는 단락전류 IN=Vth/Rth=12/6=2A이고 등가저항은 같은 6Ω이다. 노튼 회로의 전류원과 저항은 병렬로 연결된다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-22",
+      "number": 22,
+      "subject": "comm",
+      "chapter": "신호와 시스템",
+      "topic": "교류 유효전력",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 22,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1060",
+        "number": 22,
+        "pdfPage": 8,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "전압과 전류가 v(t)=200√2 sin(ωt)V, i(t)=10√2 sin(ωt−π/3)A이다. 부하의 유효전력은?",
+      "options": [
+        "0.5kW",
+        "1kW",
+        "2kW",
+        "2√2kW",
+        "4kW"
+      ],
+      "answer": 1,
+      "explanation": "Vrms=200V, Irms=10A, 전류 지상각은 π/3이다. \\(P=VI\\cos\\varphi\\)=200×10×0.5=1000W=1kW이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-23",
+      "number": 23,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "직류 분권발전기",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 23,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1062",
+        "number": 23,
+        "pdfPage": 8,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "직류 분권발전기의 유기기전력이 240V, 단자전압이 220V, 외부 부하 출력이 4.4kW, 분권계자저항이 110Ω이다. 브러시 전압강하를 무시할 때 전기자저항은 약?",
+      "options": [
+        "0.50Ω",
+        "1.00Ω",
+        "0.91Ω",
+        "1.10Ω",
+        "10.0Ω"
+      ],
+      "answer": 2,
+      "explanation": "외부 부하전류 IL=4400/220=20A, 계자전류 If=220/110=2A이다. 발전기의 전기자전류 Ia=IL+If=22A이므로 Ra=(240−220)/22≈0.91Ω이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-24",
+      "number": 24,
+      "subject": "wireless",
+      "chapter": "아날로그 변조",
+      "topic": "SSB·DSB",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 24,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1043",
+        "number": 24,
+        "pdfPage": 8,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "음성 신호의 최고 주파수가 5kHz일 때 이상적인 DSB-SC와 SSB의 양의 주파수 축상 점유 대역폭 조합은?",
+      "options": [
+        "DSB-SC 5kHz / SSB 10kHz",
+        "DSB-SC 10kHz / SSB 10kHz",
+        "DSB-SC 5kHz / SSB 5kHz",
+        "DSB-SC 10kHz / SSB 5kHz",
+        "DSB-SC 20kHz / SSB 10kHz"
+      ],
+      "answer": 3,
+      "explanation": "기저대역이 0~5kHz이면 DSB-SC는 반송파 양쪽에 측파대가 생겨 대역폭 2fm=10kHz이다. SSB는 한쪽 측파대만 보내 fm=5kHz이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-25",
+      "number": 25,
+      "subject": "wireless",
+      "chapter": "전자파와 안테나 이론",
+      "topic": "전속밀도",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 25,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1045",
+        "number": 25,
+        "pdfPage": 9,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "선형·등방성 유전체에서 유전율 ε=4×10⁻¹¹F/m, 전계 세기 E=3kV/m이다. 전속밀도 D의 크기는?",
+      "options": [
+        "1.2×10⁻¹⁰C/m²",
+        "7.5×10¹³C/m²",
+        "1.2×10⁻⁵C/m²",
+        "7.5×10⁷C/m²",
+        "1.2×10⁻⁷C/m²"
+      ],
+      "answer": 4,
+      "explanation": "D=εE=(4×10⁻¹¹)×(3×10³)=1.2×10⁻⁷C/m²이다. 3kV/m는 3000V/m로 변환해야 한다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-26",
+      "number": 26,
+      "subject": "wireless",
+      "chapter": "전자파와 안테나 이론",
+      "topic": "토로이드",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 26,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1047",
+        "number": 26,
+        "pdfPage": 9,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "누설·프린징을 무시한 토로이드의 평균 반지름은 0.1m, 단면적은 4cm², 권수는 500회, 비투자율은 1000이다. 자기인덕턴스는? (μ₀=4π×10⁻⁷H/m)",
+      "options": [
+        "200mH",
+        "20mH",
+        "50mH",
+        "100mH",
+        "2000mH"
+      ],
+      "answer": 0,
+      "explanation": "자로 길이 ℓ=2πr, A=4×10⁻⁴m²이다. \\(L=\\mu_0\\mu_r N^2 A/(2\\pi r)\\)=0.2H=200mH이다. 선형 자성체의 비투자율이 일정하다고 가정한다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-27",
+      "number": 27,
+      "subject": "wireless",
+      "chapter": "전자파와 안테나 이론",
+      "topic": "자기 토크",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 27,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "W1049",
+        "number": 27,
+        "pdfPage": 9,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "면적 0.01m²인 평면 코일 20회에 2A가 흐른다. 균일 자속밀도 B=0.5T와 코일 면의 법선이 이루는 각이 30°일 때 토크는?",
+      "options": [
+        "0.05N·m",
+        "0.10N·m",
+        "0.20N·m",
+        "0.40N·m",
+        "1.00N·m"
+      ],
+      "answer": 1,
+      "explanation": "코일의 자기모멘트는 m=NIA이고, 토크 크기는 \\(\\tau=NIAB\\sin\\theta\\)이다. θ는 코일 면이 아니라 법선과 B 사이의 각이므로 20×2×0.01×0.5×sin30°=0.10N·m이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-28",
+      "number": 28,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "송전선 보호",
+      "difficulty": "하",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 28,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1064",
+        "number": 28,
+        "pdfPage": 9,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "가공 송전선에서 바람에 의한 미풍 진동을 줄이는 장치와, 복도체를 구성하는 소도체 사이 간격을 유지하는 장치를 순서대로 고른 것은?",
+      "options": [
+        "스페이서 / 피뢰기",
+        "아킹혼 / 댐퍼",
+        "댐퍼 / 스페이서",
+        "피뢰기 / 단로기",
+        "단로기 / 아킹혼"
+      ],
+      "answer": 2,
+      "explanation": "댐퍼는 전선 진동 에너지를 소산시켜 진동을 줄인다. 스페이서는 복도체 소도체 사이의 간격을 유지한다. 아킹혼은 섬락 시 아크에 의한 애자 손상을 줄이는 보호 장치이다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-29",
+      "number": 29,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "페이저·인덕터",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 29,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1066",
+        "number": 29,
+        "pdfPage": 10,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "인덕턴스 0.05H인 이상적인 코일에 각주파수 1000rad/s의 전압 페이저 100∠−10°V를 인가한다. 전류 페이저는? (전압·전류는 실효값 페이저)",
+      "options": [
+        "2∠80°A",
+        "2∠−10°A",
+        "5∠−100°A",
+        "2∠−100°A",
+        "0.5∠−100°A"
+      ],
+      "answer": 3,
+      "explanation": "Z=jωL=j50=50∠90°Ω이다. I=V/Z=(100/50)∠(−10°−90°)=2∠−100°A이다. 순수 인덕터 전류는 전압보다 90° 늦는다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    },
+    {
+      "id": "KORAIL-2026H1-P2-30",
+      "number": 30,
+      "subject": "comm",
+      "chapter": "전기·회로 기초 (코레일)",
+      "topic": "3상 전력",
+      "difficulty": "중",
+      "kind": "코레일 기출 응용 2회",
+      "setId": "korail-2026h1-practice-2",
+      "sourceLabel": "코레일 기출 유형 · 창작 응용 2회",
+      "sourceQuestion": 30,
+      "sourceExam": "코레일 전기통신직 대비 창작 응용 2회 (공식 기출 아님)",
+      "reference": {
+        "id": "Q1068",
+        "number": 30,
+        "pdfPage": 10,
+        "relation": "동일 주제·유사 풀이 단계"
+      },
+      "question": "평형 3상 부하의 선간전압은 400V, 선전류는 25A, 역률은 0.8이다. 전체 유효전력은 약 얼마인가?",
+      "options": [
+        "8.00kW",
+        "10.00kW",
+        "17.32kW",
+        "24.00kW",
+        "13.86kW"
+      ],
+      "answer": 4,
+      "explanation": "평형 3상 전력 \\(P=\\sqrt{3}V_L I_L\\cos\\varphi\\)=√3×400×25×0.8=8000√3W≈13.86kW이다. 선간전압·선전류를 사용하므로 √3이 포함된다.",
+      "status": "auto",
+      "source": {
+        "name": "통신직 준비 자체 제작 · 코레일 유형 응용 2회",
+        "url": "https://kimheeseo.github.io/kimheeseo/quiz500/korail-2026/#mock2",
+        "checkedDate": "2026-11-23",
+        "type": "자체 창작"
+      }
+    }
+  ]
+}

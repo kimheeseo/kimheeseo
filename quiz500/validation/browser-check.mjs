@@ -9,13 +9,16 @@ const root=path.resolve(import.meta.dirname,"../..");
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const mime={".html":"text/html; charset=utf-8",".js":"application/javascript; charset=utf-8",".json":"application/json; charset=utf-8",".css":"text/css; charset=utf-8",".png":"image/png",".svg":"image/svg+xml",".jpg":"image/jpeg",".woff2":"font/woff2",".pdf":"application/pdf"};
 const paths=[
- ["홈","/quiz500/","document.querySelector('#home-bank-count')?.textContent.includes('전체')"],
+ ["홈","/quiz500/","document.querySelector('#home-bank-count')?.textContent.includes('4,068')"],
+ ["코레일 PDF·창작 2회","/quiz500/korail-2026/","document.querySelectorAll('#mock2-questions .question').length===30"],
+ ["코레일 창작 2회 통신","/quiz500/communication-quiz-500/?kind="+encodeURIComponent('코레일 기출 응용 2회'),"document.querySelector('#kindSelect')?.value==='코레일 기출 응용 2회'"],
+ ["코레일 창작 2회 무선","/quiz500/wireless-quiz-500/?kind="+encodeURIComponent('코레일 기출 응용 2회'),"document.querySelector('#kindSelect')?.value==='코레일 기출 응용 2회'"],
  ["통신공학","/quiz500/communication-quiz-500/","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
  ["무선공학","/quiz500/wireless-quiz-500/","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
  ["통신공학 기존 kind 링크","/quiz500/communication-quiz-500/?kind=%EC%BD%94%EB%A0%88%EC%9D%BC%20%EA%B8%B0%EC%B6%9C","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
  ["통신공학 기존 unit 링크","/quiz500/communication-quiz-500/?unit=0","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
  ["무선공학 기존 unit 링크","/quiz500/wireless-quiz-500/?unit=0","document.querySelectorAll('#topStats .stat').length===4 && !!document.querySelector('#homeView .trust-switch')"],
- ["K-water 원본","/quiz500/kwater-exams/?mode=source","document.querySelectorAll('[data-source-report]').length===40"],
+ ["K-water 원본","/quiz500/kwater-exams/?mode=source","document.querySelector('#main-content')?.textContent.includes('원본 민간 모의고사 · 비공개 자료') && document.querySelectorAll('[data-source-report]').length===0"],
  ["K-water 모의","/quiz500/kwater-exams/?round=2","!!document.querySelector('#kwaterVerifiedOnly')"],
  ["검증 모의고사","/quiz500/mock-exam/","!!document.querySelector('#mock-start') && !document.querySelector('#mock-setup').hidden && document.querySelector('#verified-availability').textContent.includes('전체')"],
  ["직렬별 과목표","/quiz500/exam-subjects/","document.querySelector('table')!==null"],
