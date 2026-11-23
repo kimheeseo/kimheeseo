@@ -1,6 +1,7 @@
 /* 학습 데이터의 출처·검토 상태 표시. 원본 데이터는 변경하지 않습니다. */
 (function(){
 'use strict';
+const assetBase=typeof document==='undefined'?null:new URL('.',document.currentScript.src);
 const availablePdfs=new Set(["local-9-communication/2024-local-9-communication.pdf","local-9-communication/2025-local-9-communication.pdf","local-9-communication/2026-local-9-communication.pdf","military-9-communication/2026-military-9-communication.pdf","morningstudy-national-grade-7-2016-subject-048.pdf","morningstudy-national-grade-7-2017-subject-050.pdf","morningstudy-national-grade-7-2018-subject-052.pdf","morningstudy-national-grade-7-2019-subject-051.pdf","morningstudy-national-grade-7-2020-subject-052.pdf","morningstudy-national-grade-7-second-2021-subject-051.pdf","morningstudy-national-grade-7-second-2022-subject-051.pdf","morningstudy-national-grade-7-second-2023-subject-053.pdf","morningstudy-national-grade-7-second-2024-subject-047.pdf","morningstudy-national-grade-7-second-2025-subject-050.pdf","morningstudy-national-grade-7-second-2026-subject-050.pdf","national-7-communication-2007-2015/2007-national-7-communication.pdf","national-7-communication-2007-2015/2008-national-7-communication.pdf","national-7-communication-2007-2015/2009-national-7-communication.pdf","national-7-communication-2007-2015/2010-national-7-communication.pdf","national-7-communication-2007-2015/2011-national-7-communication.pdf","national-7-communication-2007-2015/2012-national-7-communication.pdf","national-7-communication-2007-2015/2013-national-7-communication.pdf","national-7-communication-2007-2015/2014-national-7-communication.pdf","national-7-communication-2007-2015/2015-national-7-communication.pdf"]);
 function hasBadGlyph(q){return /[\uE000-\uF8FF]/.test([q.question||'',...(q.options||[])].join(' '))}
 function prepareComm(bank){
@@ -21,6 +22,7 @@ function classification(q){
  return '개념 학습 문항';
 }
 function originalPdf(q,subject){
+ if(q.kind==='코레일 기출')return new URL('korail-2026/korail-2026h1-restored.pdf',assetBase).href+'#page='+Math.max(1,Number(q.sourcePage)||1);
  if(subject!=='comm')return null;
  const legacy=typeof q.source==='string'?q.source:q.legacySource;if(legacy&&availablePdfs.has(legacy))return './source-pdfs/'+encodeURIComponent(legacy)+'#page='+Math.max(1,Number(q.page)||1);
  const m=String(q.kind||'').match(/(2024|2025|2026)년도 지방공무원 9급/);
