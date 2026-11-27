@@ -9,8 +9,7 @@
 <p align="center">
   <a href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three">3D 데이터센터 투어</a> ·
   <a href="https://kimheeseo.github.io/LSCNS/COMSOL/universal_silica_v01/web/">광섬유 해석 워크벤치</a> ·
-  <a href="https://kimheeseo.github.io/cpo-supply-chain/">CPO Explorer</a> ·
-  <a href="https://kimheeseo.github.io/kimheeseo/quiz500/">동생 통신직 준비 자료</a>
+  <a href="https://kimheeseo.github.io/cpo-supply-chain/">CPO Explorer</a>
 </p>
 
 ---
@@ -35,9 +34,6 @@
 | **데이터센터 설계·BOM** | 전력·냉각·네트워크·광 연결 구성과 초기 계획 검토 | [실행](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/) · [고객용 간편 설계](https://kimheeseo.github.io/LSCNS/DCI/DataCenter/customer-designer.html) |
 | **광섬유 해석 워크벤치** | 광섬유 단면·재료 설정, 모드 특성 분석, 계산 결과 시각화 | [실행](https://kimheeseo.github.io/LSCNS/COMSOL/universal_silica_v01/web/) |
 | **CPO Supply Chain Explorer** | CPO 구성 부품과 관련 기업·제품·공급망 탐색 | [실행](https://kimheeseo.github.io/cpo-supply-chain/) |
-| **통신직 준비 도구 (동생용)** | 동생의 통신직 채용시험 준비를 위한 통신공학·무선공학 문제 풀이, 단원·난이도별 학습, 오답 복습과 면접 자료 | [실행](https://kimheeseo.github.io/kimheeseo/quiz500/) |
-
-> **통신직 준비 도구는 본인이 아닌 동생의 취업시험 준비를 위해 만든 자료입니다.**
 
 > 데이터센터 형상·장비 구성·BOM은 학습 및 초기 검토를 위한 개념 모델입니다. 광섬유 해석의 계산 방식·정확도·제약은 각 프로젝트의 검증 자료를 확인해 주세요.
 
