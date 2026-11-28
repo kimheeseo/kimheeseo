@@ -1,9 +1,9 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 19,
-  "unique_posts": 12,
+  "received_links": 39,
+  "unique_posts": 32,
   "duplicate_links": 7,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
@@ -210,10 +210,330 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "게시글 및 댓글 본문 접근 실패. 아직 통신직/NCS 또는 기타 여부를 판별할 수 없음."
+    },
+    {
+      "id": "1450582",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450582&page=13",
+      "submitted_positions": [
+        20
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450589",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450589&page=13",
+      "submitted_positions": [
+        21
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450607",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450607&page=13",
+      "submitted_positions": [
+        22
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450606",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450606&page=13",
+      "submitted_positions": [
+        23
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450603",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450603&page=13",
+      "submitted_positions": [
+        24
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450679",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450679&page=12",
+      "submitted_positions": [
+        25
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450680",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450680&page=12",
+      "submitted_positions": [
+        26
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450671",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450671&page=12",
+      "submitted_positions": [
+        27
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450672",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450672&page=12",
+      "submitted_positions": [
+        28
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450670",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450670&page=12",
+      "submitted_positions": [
+        29
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450666",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450666&page=12",
+      "submitted_positions": [
+        30
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450662",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450662&page=12",
+      "submitted_positions": [
+        31
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450656",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450656&page=12",
+      "submitted_positions": [
+        32
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450651",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450651&page=12",
+      "submitted_positions": [
+        33
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450648",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450648&page=12",
+      "submitted_positions": [
+        34
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450643",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450643&page=12",
+      "submitted_positions": [
+        35
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450641",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450641&page=12",
+      "submitted_positions": [
+        36
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450639",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450639&page=12",
+      "submitted_positions": [
+        37
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450633",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450633&page=12",
+      "submitted_positions": [
+        38
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450631",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450631&page=12",
+      "submitted_positions": [
+        39
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
-  "presentation_policy": "수험자 반응을 익명 요약으로 소개하고 개별 게시글 주소는 화면에 노출하지 않음. 원문 미확인 12건과 공개 검색에서 확인한 별개 반응의 출처를 혼동하지 않음.",
+  "presentation_policy": "화면에 원문 URL 및 작성자 식별정보를 노출하지 않고 수험생 반응을 요약한다. 캡처 투표 결과는 시험 전체 체감으로 별도 표시한다. 원문 미확인 제보는 후기 내용으로 단정하지 않는다.",
   "verified_public_reactions": [
     {
       "id": "r1",
@@ -264,5 +584,38 @@
     "job_questions": 40,
     "duration_minutes": 90,
     "basis": "기존 2026년 하반기 채용공고 요약을 따름. 전형별 차이 가능."
-  }
+  },
+  "poll_snapshots": [
+    {
+      "snapshot_id": "2026-11-28-seoul-metro-difficulty",
+      "title": "서교 난이도 투표중",
+      "assessed_scope": "서울교통공사 필기 전체 (NCS 전용 설문이 아님)",
+      "posted_at": "2026-11-28 13:18:24",
+      "screen_date": "2026-11-28",
+      "poll_end_at": "2026-11-29 13:20",
+      "status_at_capture": "투표 진행 중",
+      "total_votes": 113,
+      "options": [
+        {
+          "label": "어려웠다",
+          "votes": 97,
+          "display_percent": 86
+        },
+        {
+          "label": "쉬웠다",
+          "votes": 11,
+          "display_percent": 10
+        },
+        {
+          "label": "보통이다",
+          "votes": 5,
+          "display_percent": 4
+        }
+      ],
+      "evidence_type": "user_provided_screenshot",
+      "verified_from": "uploaded image in current conversation",
+      "methodology": "온라인 게시글 참여자의 자발적 비확률표본; 최종 집계 아님",
+      "note": "투표 표제는 '서교 난이도'로 NCS만의 난이도를 물은 것이 아님. 공식 설문조사나 전체 응시자 통계로 사용하지 않음."
+    }
+  ]
 }
