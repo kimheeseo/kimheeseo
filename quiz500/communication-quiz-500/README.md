@@ -102,7 +102,7 @@ GitHub Pages가 404를 표시하면 [저장소 Settings → Pages](https://githu
 - 첨부 8개 시험지에서 **160문항**을 좌·우 열별로 추출했습니다(연도별 20문항).
 - 문제 페이지의 **원문 시험지 페이지 보기**에서 PDF 렌더링 이미지를 직접 열어 도표·수식·보기와 대조할 수 있습니다.
 - 추출본 중 **150문항에 5개 선택지 텍스트**가 존재하나, 이미지·수식·줄바꿈을 포함하는 문항은 별도 검수가 필요합니다. 원본 정답표는 미첨부이므로 채점 기능은 보류했습니다.
-- 원본 이미지 데이터: [`../broadcast-telecom/sourcepages/`](../broadcast-telecom/sourcepages/) (2014, 2015, 2016, 2017, 2018, 2020, 2022, 2025).
+- 원본 이미지 데이터: [대표 원본 이미지 데이터: 2014년](../broadcast-telecom/sourcepages/2014.json) (2014, 2015, 2016, 2017, 2018, 2020, 2022, 2025).
 
 ## 정보통신 주관식 기출 (2026-11-01)
 
@@ -123,7 +123,7 @@ GitHub Pages가 404를 표시하면 [저장소 Settings → Pages](https://githu
 - 국가공무원 7급 통신이론 기출 **250문항**을 `국가직 통신이론` 단원으로 추가했습니다.
 - 문제 유형에서 `2016년도 국가직 7급 채용 기출`부터 `2026년도 국가직 7급 채용 기출`까지 연도별로 선택할 수 있습니다.
 - 각 문항 풀이 화면에 연도·채용 구분·문항 번호·원본 PDF 페이지를 표시합니다.
-- 원본 PDF 11개는 [`source-pdfs/`](./source-pdfs/)에, 문제은행 데이터는 [`national-7-communication.json`](./national-7-communication.json)에 보관합니다.
+- 원본 PDF 11개는 [대표 원본 PDF: 2016년](./source-pdfs/morningstudy-national-grade-7-2016-subject-048.pdf)에, 문제은행 데이터는 [`national-7-communication.json`](./national-7-communication.json)에 보관합니다.
 - 일부 공개 해설에서 정답 미확정 또는 문항 오류로 확인된 문항은 `공식 정답 확인 필요`로 표시합니다.
 
 ## 방송통신공학 기출 160문항 통신공학 통합 (2026-11-01)

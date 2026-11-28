@@ -990,84 +990,6 @@
       }
     },
     {
-      "id": "quiz500/interview/seoul-metro.html:row:16",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "채용 주체·전형  서울교통공사 9호선운영부문 · 2026년 신규직 공개채용 필기전형",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
-      "id": "quiz500/interview/seoul-metro.html:row:17",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "필기전형 결과  지원자가 필기시험에 합격했다는 안내",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
-      "id": "quiz500/interview/seoul-metro.html:row:18",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "지원분야 합격선   53.80점",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
-      "id": "quiz500/interview/seoul-metro.html:row:19",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "평가 항목  직무수행능력평가, NCS 직업기초능력평가, 필기시험 가산점수, 필기시험 총점",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
-      "id": "quiz500/interview/seoul-metro.html:row:20",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "개인별 취득점수·가산점  공개하지 않음(가림 처리 또는 확인 불가)",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
-      "id": "quiz500/interview/seoul-metro.html:row:21",
-      "page": "quiz500/interview/seoul-metro.html",
-      "text": "상세 지원 직렬·발표일  첨부 화면만으로 확인 불가",
-      "checkedDate": "2026-11-21",
-      "reliability": "비공식",
-      "source": {
-        "name": "서울교통공사 정보통신직 | 면접 자료 · 통신직 준비",
-        "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
-        "checkedDate": "2026-11-21",
-        "type": "외부 참고"
-      }
-    },
-    {
       "id": "quiz500/interview/seoul-metro.html:row:22",
       "page": "quiz500/interview/seoul-metro.html",
       "text": "25명  591명  23.64:1  61.6%  14.56:1  38명   72.00",
@@ -1516,7 +1438,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1529,7 +1451,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1542,7 +1464,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1555,7 +1477,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1568,7 +1490,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1581,7 +1503,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1594,7 +1516,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"
@@ -1607,7 +1529,7 @@
       "checkedDate": "2026-11-21",
       "reliability": "비공식",
       "source": {
-        "name": "서울교통공사 2026 채용·근무·합격 후기 종합 가이드 | 통신직 준비",
+        "name": "서울교통공사 2026 채용 안내",
         "url": "https://seoulmetro.incruit.com/hire/viewhire.asp?projectid=108",
         "checkedDate": "2026-11-21",
         "type": "외부 참고"

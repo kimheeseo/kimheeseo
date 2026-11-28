@@ -1,358 +1,41 @@
 <!doctype html>
-<html lang="ko"><head><script src="quiz-json.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>통신직 준비 | 통신공학·무선공학·면접</title><style>
-:root{font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR","Malgun Gothic",sans-serif;color-scheme:light}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f5f7fc;color:#202d46}
-main{max-width:1020px;margin:0 auto;padding:70px 24px 100px}
-.kicker{font-size:13px;letter-spacing:.16em;font-weight:800;color:#4667cc}
-h1{font-size:clamp(30px,6vw,47px);margin:10px 0 16px;letter-spacing:-.05em}
-p{color:#596982;line-height:1.7}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin:40px 0}
-.card{background:white;padding:28px;border:1px solid #dde4f2;border-radius:22px;box-shadow:0 14px 38px #17294c0c;text-decoration:none;color:inherit;transition:transform .15s,box-shadow .15s}
-.card:hover,.card:focus-visible{transform:translateY(-3px);box-shadow:0 18px 42px #17294c20;outline:2px solid #5277e0;outline-offset:2px}
-.card h2{margin:12px 0;font-size:24px}.card strong{color:#355cce}.card span{font-size:29px}
-footer{font-size:13px;color:#6d7b95;margin-top:32px}footer a{color:#395ed0}
-@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){main{padding:46px 18px}.grid{grid-template-columns:1fr}}
-</style><style>.quick-chapter{color:#3157ca;display:inline-block;padding:5px 8px;border:1px solid #b7c8f7;border-radius:8px;text-decoration:none;font-weight:750;white-space:nowrap}.quick-chapter:hover,.quick-chapter:focus-visible{background:#eef2ff;outline:2px solid #496bdd}.quiz-comp-table{width:100%;text-align:right;font-size:13px;border-collapse:collapse}.quiz-comp-table th,.quiz-comp-table td{padding:9px 5px;border-bottom:1px solid #e3e9f2;white-space:nowrap}.quiz-comp-table td:first-child,.quiz-comp-table th:first-child{text-align:left}</style><style>.quick-chapter{display:inline-block;text-decoration:none;font-size:12px;border-radius:8px;padding:6px 8px;margin:2px;border:1px solid #adc1f3;background:#f9fbff;color:#345ac6;font-weight:750}.quick-chapter:hover,.quick-chapter:focus-visible{background:#e8edff;outline:1px solid #6580dd}.quiz-comp-table{width:100%;font-size:12px;border-collapse:collapse;min-width:620px}.quiz-comp-table td,.quiz-comp-table th{border-bottom:1px solid #e6ebf4;text-align:left;padding:8px 6px;white-space:nowrap}.quiz-comp-table td:last-child{white-space:normal}.quiz-comp-table th:nth-child(2),.quiz-comp-table td:nth-child(2){text-align:right}</style><style>
-:root{--ink:#172840;--muted:#54667d;--brand:#184f7c;--teal:#007b79;--line:#d9e4ed;--surface:#fff}
-body{background:#f4f7fa;color:var(--ink)}main{max-width:1120px;padding:32px 24px 80px}
-.site-top{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 0 24px;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:11px;font-size:17px;font-weight:850;text-decoration:none;color:var(--ink)}
-.brandmark{width:38px;height:38px;border-radius:11px;background:#174968;color:white;display:grid;place-items:center;font-size:20px}
-.topnav{display:flex;gap:16px;flex-wrap:wrap}.topnav a{color:#425c72;font-size:14px;font-weight:700;text-decoration:none}
-.hero{display:grid;grid-template-columns:1fr 300px;gap:28px;align-items:center;padding:50px 0 38px}
-.hero h1{margin:12px 0 14px;font-size:clamp(32px,4vw,48px);line-height:1.2;letter-spacing:-.045em}
-.hero p{max-width:680px;font-size:16px;line-height:1.75;margin:0;color:#4c6075}
-.eyebrow2{color:var(--teal);font-size:12px;font-weight:850;letter-spacing:.12em}
-.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
-.action{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 18px;border-radius:10px;text-decoration:none;font-weight:800;color:#fff;background:#195776;border:1px solid #195776}
-.action.alt{background:white;color:#195776;border-color:#b9ceda}
-.counter{background:#e8f2f1;border:1px solid #cadfdd;border-radius:18px;padding:22px;color:#173f49}
-.counter .counter-label{font-size:13px;font-weight:800;color:#416269}.counter strong{display:block;font-size:25px;margin:12px 0 4px;letter-spacing:-.03em}.counter small{display:block;font-size:13px;line-height:1.55;color:#4a646c}
-.section-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:20px 0 14px}.section-heading h2{font-size:23px;margin:0}.section-heading p{font-size:14px;margin:0}
-.grid{gap:14px;margin:0 0 24px}.card{padding:22px;border-radius:16px;box-shadow:0 8px 24px #17294c0a}.card h2,.card h3{font-size:20px;margin:10px 0}.card p{font-size:14px;margin:0 0 12px;line-height:1.65}.card strong{font-size:14px;color:#126c70}
-.card .tag{font-size:12px;font-weight:800;color:#007b79}.org-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-bottom:26px}.org-card{display:block;padding:18px 20px;border:1px solid var(--line);border-radius:15px;background:white;text-decoration:none;color:var(--ink)}.org-card b{display:block;font-size:17px}.org-card span{display:block;margin-top:7px;font-size:13px;color:var(--muted);line-height:1.5}.org-card strong{display:block;margin-top:12px;font-size:13px;color:#126c70}.org-card-links{display:flex;flex-wrap:wrap;gap:8px 12px;margin-top:12px}.org-card-links a{font-size:13px;font-weight:800;color:#126c70;text-decoration:none}.org-card-links a:hover{text-decoration:underline}.org-card-links a:focus-visible{outline:3px solid #068a8a;outline-offset:3px;border-radius:2px}
-.notice{padding:14px 17px;background:#edf4f8;border-left:3px solid #4c829e;border-radius:8px;color:#354e62;font-size:13px;line-height:1.7;margin:12px 0 28px}
-details.history{margin-top:12px;border-top:1px solid #e0e7ef;padding-top:12px}.history summary{cursor:pointer;font-weight:800;color:#245c78;padding:8px 0}.history ul{margin:8px 0;padding-left:20px;line-height:1.75;color:#596982}
-a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid #068a8a;outline-offset:3px}
-@media(max-width:850px){.hero{grid-template-columns:1fr 240px}.org-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){main{padding:22px 18px 64px}.site-top{align-items:flex-start;flex-direction:column;gap:13px}.topnav{gap:14px}.hero{display:block;padding:35px 0 24px}.hero h1{font-size:32px}.hero p{font-size:15px}.counter{margin-top:23px;padding:17px}.counter strong{font-size:21px;margin:8px 0 3px}.grid,.org-grid{grid-template-columns:1fr}.card{padding:19px}.section-heading{align-items:start;flex-direction:column;gap:4px}.actions .action{flex:1;min-width:130px}.org-card{padding:17px}.quick-chapter{white-space:normal}}
-</style><style id="ss-mobile-dashboard-style">
-:root{--ss-blue:#1456f4;--ss-dark:#10233e;--ss-light:#f3f7ff}
-html{scroll-behavior:smooth}
-body{background:#f5f8ff;color:var(--ss-dark)}
-.site-top{background:#fff;border:1px solid #e6eafa;border-radius:18px;padding:14px 18px;box-shadow:0 8px 30px #1b32610d}
-.brandmark{background:linear-gradient(145deg,#1456f4,#1538ad);border-radius:12px}
-.topnav a:hover{color:var(--ss-blue)}
-.ss-landing{margin:25px 0 38px;padding:42px 22px 40px;border-radius:32px;background:radial-gradient(ellipse at 50% 38%,#fff 8%,#eff5ff 62%,#e8f0ff 100%);text-align:center;overflow:hidden}
-.ss-landing-head{max-width:720px;margin:0 auto 29px}.ss-eyebrow{font-size:11px;color:#375ec0;letter-spacing:.18em;font-weight:850}
-.ss-landing-head h1{margin:12px 0 14px;font-size:clamp(33px,5vw,53px);font-weight:900;line-height:1.2;letter-spacing:-.065em;color:#142744}
-.ss-landing-head h1 span{color:var(--ss-blue)}.ss-landing-head p{max-width:590px;margin:auto;font-size:clamp(14px,2vw,19px);font-weight:650;color:#455166;line-height:1.7}
-.ss-app{width:min(100%,455px);margin:0 auto;background:#f5f6fa;border:1px solid #dfe5f1;border-radius:35px;text-align:left;overflow:hidden;box-shadow:0 24px 65px #233d7530,0 0 0 7px #ffffff88}
-.ss-appbar{display:flex;justify-content:space-between;align-items:center;gap:10px;background:white;padding:21px 23px 19px;border-bottom:1px solid #eef0f5}
-.ss-select-wrap{display:flex;align-items:center;gap:7px;min-width:0;font-size:17px;font-weight:850}
-.ss-select-wrap select{min-width:0;max-width:230px;width:100%;font:inherit;appearance:none;border:0;background:transparent;cursor:pointer;color:#101827;outline-offset:4px}
-.ss-select-wrap>span:last-child{font-size:23px;line-height:1;color:#101827}
-.ss-appbar-icons{display:flex;align-items:center;gap:16px}.ss-appbar-icons a{position:relative;color:#182237;text-decoration:none;font-size:27px;line-height:1}.ss-notification-dot{position:absolute;right:1px;top:1px;background:#1857ff;width:7px;height:7px;border-radius:50%}
-.ss-screen{padding:26px 20px 23px}.ss-date-label{font-size:15px;line-height:1.5;font-weight:650;color:#606b7d;margin:0 0 6px}.ss-date-label strong{color:var(--ss-blue)}
-.ss-screen>h2{margin:0 0 23px;line-height:1.35;letter-spacing:-.04em;font-size:23px;color:#101b2d}
-.ss-stat-grid{display:grid;grid-template-columns:1.06fr 1fr;grid-template-rows:112px 112px;gap:10px}
-.ss-stat{background:white;border-radius:16px;padding:16px;box-shadow:0 4px 18px #24345709;min-width:0}
-.ss-stat-main{grid-row:1/3;display:flex;flex-direction:column}
-.ss-stat-label{display:block;color:#6b7380;font-size:12px;font-weight:700;white-space:nowrap}
-.ss-info{font-size:11px;display:inline-grid;place-items:center;border:1px solid #aeb6c6;border-radius:50%;width:15px;height:15px}
-.ss-stat-main strong{font-size:40px;font-weight:900;letter-spacing:-.045em;color:#151a27;margin:14px 0 0}
-.ss-stat-main small{font-size:11px;color:#7d8595;line-height:1.45}
-.ss-mini-chart{margin-top:auto;height:31px;display:flex;align-items:end;gap:5px}
-.ss-mini-chart span{flex:1;background:#d8e5ff;border-radius:5px 5px 1px 1px;height:34%}.ss-mini-chart span:nth-child(2){height:52%}.ss-mini-chart span:nth-child(3){height:42%}.ss-mini-chart span:nth-child(4){height:68%}.ss-mini-chart span:nth-child(5){height:55%}.ss-mini-chart span:nth-child(6){height:83%}.ss-mini-chart span:nth-child(7){height:100%;background:#1456f4}
-.ss-stat-side{display:flex;align-items:center;gap:12px}.ss-stat-side>div:last-child{min-width:0}.ss-stat-side strong{display:block;margin-top:7px;font-size:26px;letter-spacing:-.035em;color:#101b2d}
-.ss-stat-icon{color:#1456f4;font-size:33px;line-height:1}.ss-ring{width:45px;height:45px;border:7px solid #dce7ff;border-top-color:#1456f4;border-radius:50%;flex-shrink:0}
-.ss-storage-note{margin:9px 2px 23px!important;font-size:11px!important;color:#87909f!important;text-align:right;line-height:1.5!important}
-.ss-recommend{display:flex;align-items:center;justify-content:space-between;gap:10px;background:white;border-radius:17px;padding:22px 20px;min-height:142px;box-shadow:0 4px 18px #2434570b}
-.ss-recommend-meta{font-size:12px;color:#777f8f;font-weight:650}.ss-recommend h3{margin:9px 0 12px;color:#162033;font-size:19px;letter-spacing:-.05em;line-height:1.35}
-.ss-tags{display:flex;gap:6px}.ss-tags span{border:1px solid #dfe2e8;background:#f4f5f8;padding:4px 8px;border-radius:6px;color:#5a6475;font-size:11px}
-.ss-play{display:grid;place-items:center;width:55px;height:55px;flex-shrink:0;border-radius:50%;background:#1456f4;box-shadow:0 6px 14px #1456f436;color:#fff;text-decoration:none;font-size:21px;padding-left:3px}
-.ss-play:hover{background:#003dd0;transform:translateY(-2px)}.ss-banner{display:flex;align-items:center;justify-content:space-between;gap:10px;text-decoration:none;background:linear-gradient(115deg,#102aaf,#002fc9);color:white;margin:14px 0;padding:19px 20px;border-radius:12px}
-.ss-banner b{display:block;font-size:17px;letter-spacing:-.04em}.ss-banner small{display:block;color:#dbe5ff;margin-top:6px;font-size:12px}.ss-banner-icon{font-size:43px;color:#91b9ff}
-.ss-review{min-height:125px}.ss-goal-settings{margin-top:18px;padding-top:14px;border-top:1px solid #e3e7f0;display:flex;gap:7px;align-items:center;flex-wrap:wrap}
-.ss-goal-settings label{width:100%;font-size:12px;font-weight:800;color:#526078}.ss-goal-settings input{flex:1;min-width:135px;padding:11px;border:1px solid #d9e1f0;border-radius:9px;background:#fff;color:#29384f;font:inherit}
-.ss-goal-settings button{padding:11px;border:1px solid #d9e1f0;border-radius:9px;background:#fff;font:inherit;font-weight:700;font-size:12px;cursor:pointer;color:#4f6077}
-.ss-bottom-nav{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e3e8f1;background:white;padding:10px 5px 14px}.ss-bottom-nav a{text-align:center;text-decoration:none;color:#7b8496;font-size:11px;font-weight:700}
-.ss-bottom-nav a span{font-size:23px;display:block;line-height:1.5}.ss-bottom-nav a[aria-current]{color:#1456f4}
-.ss-disclaimer{margin:20px auto 0!important;max-width:590px;font-size:11px!important;color:#6e7d96!important;text-align:center}
-.ss-sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-@media(max-width:650px){main{padding:12px 10px 70px}.site-top{padding:13px 14px;border-radius:13px;gap:9px}.topnav{gap:11px}.topnav a{font-size:12px}.ss-landing{margin:12px 0 28px;border-radius:22px;padding:32px 10px 30px}.ss-landing-head{margin-bottom:24px}.ss-landing-head h1{font-size:35px}.ss-landing-head p{font-size:14px}.ss-app{width:100%;border-radius:25px;box-shadow:0 18px 43px #233d751a}.ss-appbar{padding:20px 17px}.ss-screen{padding:25px 15px 18px}.ss-screen>h2{font-size:21px}.ss-stat{padding:14px 12px}.ss-stat-side{gap:8px}.ss-stat-side strong{font-size:23px}.ss-stat-icon{font-size:27px}.ss-ring{width:34px;height:34px;border-width:6px}.ss-recommend{padding:17px 16px}.ss-recommend h3{font-size:17px}.ss-play{width:49px;height:49px}.ss-banner{padding:16px}.ss-banner b{font-size:15px}}
-@media(max-width:350px){.ss-landing-head h1{font-size:29px}.ss-stat-side{gap:5px}.ss-stat-label{font-size:10px}.ss-stat-side strong{font-size:20px}.ss-screen{padding-left:11px;padding-right:11px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ss-play:hover{transform:none}}
-</style><style id="ss-screen-router-style">
-/* 독립 화면: 브라우저가 문서 아래로 스크롤하지 않고 탭 화면만 전환 */
-.ss-route-page[hidden]{display:none!important}
-.ss-route-page{min-height:calc(100vh - 230px);padding:10px 0 32px;animation:ss-page-enter .17s ease-out}
-.ss-route-page[data-page="home"]{padding:0;min-height:auto}
-.ss-route-page>.ss-landing{margin-top:25px}
-.ss-route-intro{margin:20px 0 28px;padding:28px 30px;border-radius:22px;background:linear-gradient(130deg,#f5f9ff 0%,#eaf1ff 100%);border:1px solid #dce7ff}
-.ss-route-intro .ss-route-eyebrow{display:block;font-size:11px;letter-spacing:.1em;font-weight:850;color:#315dd0}
-.ss-route-intro h1{margin:7px 0 5px;font-size:clamp(27px,4vw,37px);font-weight:900;letter-spacing:-.05em;color:#162748}
-.ss-route-intro p{margin:0;font-size:14px;color:#546781}
-.ss-route-back{display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:9px 13px;margin:0 0 15px;text-decoration:none;border:1px solid #d4def6;border-radius:10px;background:#fff;color:#2554bf;font-size:13px;font-weight:750}
-.ss-route-back:hover,.ss-route-back:focus-visible{background:#e9f1ff}
-.topnav a.ss-selected{color:#1555e8;border-bottom:2px solid #1555e8;padding-bottom:7px}
-.ss-bottom-nav a.ss-selected{color:#1456f4;font-weight:900}
-@keyframes ss-page-enter{from{opacity:.35;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
-@media(min-width:701px){.ss-bottom-nav{display:none!important}}
-@media(max-width:700px){
- body{padding-bottom:84px}
- .ss-bottom-nav{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;position:fixed;left:0;right:0;bottom:0;z-index:1000;margin:0!important;padding:8px 5px calc(9px + env(safe-area-inset-bottom,0px))!important;border-radius:0!important;border-top:1px solid #dce4f5;box-shadow:0 -6px 28px #1b325319;background:#fff;max-width:none!important}
- .ss-bottom-nav a{padding:2px 0;font-size:10px;white-space:nowrap}
- .ss-bottom-nav a span{font-size:21px;line-height:1.35}
- .ss-route-page{min-height:calc(100vh - 150px);padding:8px 0 25px}
- .ss-route-intro{margin:12px 0 22px;padding:20px 18px;border-radius:16px}
- .ss-route-intro h1{font-size:27px}
- .ss-route-intro p{font-size:13px}
- .ss-route-page>.section-heading{padding-top:3px}
- .ss-route-page>.section-heading h2{font-size:19px}
- .ss-route-page .notice{margin-bottom:16px}
-}
-@media(prefers-reduced-motion:reduce){.ss-route-page{animation:none}}
-</style><style>[hidden]{display:none!important}</style><script src="study-storage.js"></script><style>
-.home-actions{max-width:980px;margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;text-align:left}
-.home-task{min-width:0;padding:23px 24px;background:#fff;border:1px solid #cfdeec;border-radius:18px;display:flex;flex-direction:column;align-items:flex-start}
-.home-task h2{font-size:clamp(19px,2.5vw,24px);line-height:1.35;color:#18395f;margin:10px 0 8px;letter-spacing:-.04em}
-.home-task p{font-size:13px;color:#52677b;line-height:1.65;margin:0 0 16px}
-.home-task .tag{font-size:12px;color:#176f7b;font-weight:850;letter-spacing:.02em}
-.home-task .action{font-size:14px;padding:11px 14px;min-height:42px}
-.home-task .home-buttons{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:auto}
-.home-task .home-buttons .action{margin:0}
-.home-task .home-helper{font-size:12px;margin:14px 0 0;line-height:1.65;color:#6a7c8d}
-.home-shortcuts{max-width:980px;margin:13px auto 0;text-align:left;display:flex;align-items:center;flex-wrap:wrap;gap:8px}
-.home-shortcuts .home-shortcuts-title{font-size:12px;color:#61718c;font-weight:800;margin-right:3px}
-.home-shortcuts a{border:1px solid #cfdeeb;background:#fff;border-radius:9px;padding:8px 11px;font-size:12px;font-weight:800;text-decoration:none;color:#186e7f}
-.home-shortcuts a:hover,.home-shortcuts a:focus-visible{background:#edf7f9;text-decoration:underline}
-.home-metadata{font-size:12px!important;color:#667b8f!important;margin:12px auto 0!important;line-height:1.6!important}
-.home-footnote{max-width:980px;margin:12px auto 0!important;color:#728298!important;text-align:right;font-size:11px!important;line-height:1.6!important}
-.ss-landing{padding:28px 18px 24px}.ss-landing-head{margin-bottom:20px}.ss-landing-head h1{font-size:clamp(27px,4vw,39px);margin:9px 0}.ss-landing-head p{font-size:14px}
-@media(max-width:720px){.home-actions{grid-template-columns:1fr;gap:10px}.home-task{padding:18px}.home-task h2{font-size:21px}.home-shortcuts{gap:7px}.home-shortcuts a{flex:1 1 auto;text-align:center}.ss-landing{padding:22px 12px 18px}.ss-landing-head{margin-bottom:16px}.home-footnote{text-align:center}}
-@media(max-width:390px){.home-task .home-buttons{width:100%}.home-task .home-buttons a{flex:1 1 auto;font-size:12px;text-align:center}}
-</style><script src="./trust.js"></script><script src="./sources.js"></script><script src="./quality.js"></script><script src="./bank-loader.js"></script><meta name="description" content="통신직 준비: 통신공학 학습문제와 무선공학 문제은행 및 코레일 복원모의고사와 공기업 면접 자료"><link rel="canonical" href="https://kimheeseo.github.io/kimheeseo/quiz500/"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:site_name" content="통신직 준비"><meta property="og:title" content="통신직 준비 | 통신공학·무선공학·면접"><meta property="og:description" content="통신직 준비: 통신공학 학습문제와 무선공학 문제은행 및 코레일 복원모의고사와 공기업 면접 자료"><meta property="og:url" content="https://kimheeseo.github.io/kimheeseo/quiz500/"><meta property="og:image" content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-telecom.png"><meta property="og:image:width" content="1734"><meta property="og:image:height" content="907"><meta property="og:image:alt" content="통신직 준비 · 통신공학·무선공학·K-water · 오늘 복습부터 모의고사까지"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="accessibility.css"><link rel="stylesheet" href="./datacenter.css?v=20261127"><link rel="stylesheet" href="./app-shell.css?v=20261127-app1"><style id="seoul-metro-ncs-entry-style">
-.ss-news-card{display:flex;flex-direction:column;gap:7px;margin:14px auto 18px;padding:16px 19px;max-width:780px;border:1px solid #b7cdfb;border-radius:15px;background:#fff;text-decoration:none;color:#15345c;box-shadow:0 7px 20px #2853ad12}
-.ss-news-card .ss-news-date{font-size:12px;font-weight:800;color:#2d65c9}
-.ss-news-card strong{font-size:17px;line-height:1.4;color:#16366a}
-.ss-news-card small{font-size:12px;line-height:1.6;color:#566a83}
-.ss-news-card:hover,.ss-news-card:focus-visible{border-color:#2557ce;background:#f7faff;outline:2px solid #4f79ef;outline-offset:2px}
-@media(max-width:650px){.ss-news-card{margin:12px 0 16px;padding:15px}.ss-news-card strong{font-size:15px}}
-</style></head><body><main>
-<header class="site-top"><a class="brand" href="./" aria-label="통신직 준비 홈"><span class="brandmark" aria-hidden="true">∿</span><span>통신직 준비</span></a><nav class="topnav" aria-label="주요 메뉴"><a href="#written">필기 학습</a><a href="#organizations">기관별 면접</a><a href="./civil-service-exams/">공무원</a><a href="#practice">직무 이해</a><a href="#datacenter">데이터센터</a><a href="#recent-updates">업데이트</a></nav></header>
-<section class="ss-landing" aria-labelledby="home-title">
-<div class="ss-landing-head">
-<span class="ss-eyebrow">통신직 준비 · 오늘의 학습</span>
-<h1 id="home-title">오늘 할 학습과 <span>모의고사</span></h1>
-<p>복습할 문제를 확인하고, 실전 모의고사로 학습을 이어가세요.</p>
-<p id="home-bank-count" class="home-metadata" role="status">학습 자료를 불러오는 중입니다.</p>
+<html lang="ko"><head><meta charset="utf-8"><title>통신직 준비 | 오늘의 학습</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><meta content="통신직 준비: 통신공학 학습문제와 무선공학 문제은행 및 코레일 복원모의고사와 공기업 면접 자료" name="description"/><link href="https://kimheeseo.github.io/kimheeseo/quiz500/" rel="canonical"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="통신직 준비" property="og:site_name"/><meta content="통신직 준비 | 통신공학·무선공학·면접" property="og:title"/><meta content="통신직 준비: 통신공학 학습문제와 무선공학 문제은행 및 코레일 복원모의고사와 공기업 면접 자료" property="og:description"/><meta content="https://kimheeseo.github.io/kimheeseo/quiz500/" property="og:url"/><meta content="https://kimheeseo.github.io/kimheeseo/quiz500/assets/og-telecom.png" property="og:image"/><meta content="1734" property="og:image:width"/><meta content="907" property="og:image:height"/><meta content="통신직 준비 · 통신공학·무선공학·K-water · 오늘 복습부터 모의고사까지" property="og:image:alt"/><link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link rel="stylesheet" href="./home.css?v=20261128">
+<script src="./quiz-json.js"></script><script src="./study-storage.js"></script><script src="./trust.js"></script><script src="./sources.js"></script><script src="./quality.js"></script><script src="./bank-loader.js"></script>
+</head><body>
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<header class="site-top"><div class="header-inner"><a class="brand" href="#today"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v4m5-9v9m5-14v14m5-19v19"/></svg><span>통신직 준비</span></a><nav class="topnav" aria-label="주요 메뉴"><a href="#today" data-section="today"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>홈</span></a><a href="#written" data-section="written"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14M3 3h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v16h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3z"/></svg><span>문제은행</span></a><a href="#organizations" data-section="organizations"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h1m4 0h1M9 11h1m4 0h1m-6 4h1m4 0h1m-5 6v-4h4v4"/></svg><span>기관별</span></a><a href="./learning.html?mode=analytics" class="page-link"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M8 16v-5m5 5V7m5 9v-8"/></svg><span>내 학습 현황</span></a><button type="button" class="more-toggle" aria-expanded="false" aria-controls="more-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>더보기</span></button></nav></div></header>
+<div id="more-menu" class="more-menu" hidden><strong>더보기</strong><a href="#practice">직무 이해 · 개념 학습</a><a href="#tools">도구</a><a href="#recent-updates">업데이트</a><button type="button" id="close-more">닫기</button></div>
+<main id="main">
+<section id="today" class="section today" aria-labelledby="home-title">
+<div class="section-intro"><span class="eyebrow">하루 한 걸음, 통신직 합격까지</span><h1 id="home-title">오늘의 학습</h1><p>내 기록을 살펴보고, 오늘의 한 문제를 시작하세요.</p></div>
+<div class="today-grid">
+<article class="today-task" aria-busy="true" id="today-task"><span class="eyebrow">오늘의 추천</span><h2 id="today-study-title">오늘의 학습을 준비하고 있어요</h2><p id="today-message" class="skeleton" aria-hidden="true">&nbsp;</p><a class="button" id="today-primary" href="./wireless-first-pass/">무선공학 1회독 시작</a><a id="today-secondary" href="./learning.html?mode=analytics">내 학습 현황</a><p class="review-count">복습 대기 <b id="home-due-count" class="skeleton">—</b>문항</p></article>
+<div class="stats-card" id="study-stats" aria-busy="true"><h2>차곡차곡 쌓이는 내 기록</h2><div class="stats"><div><span>누적 정답률</span><strong id="appAccuracy" class="skeleton">—</strong></div><div><span>채점한 문항</span><strong id="appGraded" class="skeleton">—</strong></div></div><p id="appAccuracyNote">첫 풀이부터 이곳에 기록됩니다.</p><p id="home-bank-count" class="skeleton" aria-live="polite">&nbsp;</p></div>
 </div>
-<section class="app-stats" aria-label="나의 누적 학습 현황">
-<div class="app-stat"><span>누적 정답률</span><strong id="appAccuracy">—</strong><small id="appAccuracyNote">학습 기록을 확인하는 중입니다.</small></div>
-<div class="app-stat"><span>누적 채점 문항</span><strong id="appGraded">0</strong><small>채점 보류 문항 제외</small></div>
+<nav class="personal-shortcuts" aria-label="개인 학습 바로가기"><a class="page-link" href="./learning.html?mode=analytics"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M8 16v-5m5 5V7m5 9v-8"/></svg>내 학습 현황</a><a class="page-link" href="./learning.html?mode=analytics#record-transfer">기록 백업·복원</a></nav>
+<details class="help"><summary>오늘의 학습 도움말</summary><p>오답 복습은 1·3·7·14일 간격으로 진행됩니다. 복습 대기 문제 중 현재 검증 필터에서 출제할 수 있는 문제가 있을 때 복습을 추천합니다.</p><p id="home-due-availability">검증된 출제 가능 문항이 없으면 일반 모의고사는 시작되지 않습니다.</p></details>
+<noscript><p>학습 기록을 표시하려면 JavaScript를 활성화하세요. 아래 자료 링크는 바로 열 수 있습니다.</p></noscript>
 </section>
-<div class="home-actions">
-<article class="home-task" aria-labelledby="today-study-title">
-<span class="tag">01 · 오늘 할 학습</span>
-<h2 id="today-study-title">복습할 문제 <b id="home-due-count">0</b>개</h2>
-<p>틀린 문제를 다시 풀거나 오늘 공부할 과목을 선택하세요.</p>
-<div class="home-buttons">
-<a class="action" href="./learning.html?mode=review">오늘 복습 시작</a>
-<a class="action alt" href="./wireless-first-pass/">무선공학 1회독</a>
+<section id="written" class="section" aria-labelledby="written-title"><div class="section-intro"><h2 id="written-title">문제은행·모의고사</h2><p>필기 학습은 과목별로, 실전 연습은 시간에 맞춰.</p></div>
+<h3 class="group-title">필기 학습</h3><div class="card-grid">
+<article class="study-card "><span class="badge past">기출</span><h3>통신공학</h3><p>신호·변조·디지털 전송부터 부호이론까지.</p><div class="card-actions"><a class="button" href="./communication-quiz-500/">문제 풀기</a></div></article>
+<article class="study-card "><span class="badge past">기출</span><h3>무선공학</h3><p>안테나·전파·이동통신의 핵심을 익혀요.</p><div class="card-actions"><a class="button" href="./wireless-quiz-500/">문제 풀기</a></div></article>
+<article class="study-card "><span class="badge review">검토 중</span><h3>시간제한 모의고사</h3><p>과목과 문항 수를 정하고 실전을 연습해요.</p><div class="card-actions"><a class="button" href="./learning.html?mode=mock">모의고사 설정</a></div></article>
 </div>
-<p id="home-due-availability" class="home-helper" role="status">오답 복습은 1·3·7·14일 간격입니다. 검증 상태에 따라 출제가 제한될 수 있습니다.</p>
-</article>
-<article class="home-task" aria-labelledby="today-mock-title">
-<span class="tag">02 · 모의고사</span>
-<h2 id="today-mock-title">실전처럼 시간 정해 풀기</h2>
-<p>검증된 문항으로 구성하는 모의고사와 K-water 자체 제작 모의고사를 선택할 수 있습니다.</p>
-<div class="home-buttons">
-<a class="action" href="./learning.html?mode=mock">모의고사 설정</a>
-<a class="action alt" href="./kwater-exams/">K-water 40문항</a>
-</div>
-<p class="home-helper">검증된 출제 가능 문항이 없으면 일반 모의고사는 시작되지 않습니다. K-water 문제는 공식 기출이 아닌 창작 문제입니다.</p>
-</article>
-</div>
-<a class="ss-news-card" id="seoul-metro-ncs-reviews-2026" href="./interview/community-posts-2026-11-28.html" aria-label="서울교통공사 2026년 하반기 NCS 후기 및 필기시험 투표 결과 확인">
- <span class="ss-news-date">2026.11.28 · 서울교통공사</span>
- <strong>2026년 하반기 NCS·필기 후기 확인 →</strong>
- <small>NCS 시간 부족·체감 난이도 · 필기 전체 난이도 투표 113명 · 기타 차량직 예상컷 투표 79명</small>
-</a>
-<nav class="home-shortcuts" aria-label="추가 학습 바로가기">
-<span class="home-shortcuts-title">바로가기</span>
-<a href="./communication-quiz-500/">통신공학 문제은행</a>
-<a href="./wireless-quiz-500/">무선공학 문제은행</a>
-<a href="./learning.html?mode=analytics">내 학습 현황</a><a href="./learning.html?mode=analytics#record-transfer">기록 옮기기·백업</a>
-<a href="#screen=organizations">기관별 자료</a>
-<a href="#screen=practice">직무 이해</a>
-<a href="#datacenter">데이터센터 · 3D 투어/BOM</a>
-</nav>
-<p class="home-footnote">개발 변경 기록은 상단 ‘업데이트’ 메뉴에서 확인할 수 있습니다. <a href="./changelog.html">전체 변경 일지</a></p>
-<nav class="ss-bottom-nav" aria-label="모바일 학습 바로가기"><a href="./" aria-current="page"><span aria-hidden="true">⌂</span>홈</a><a href="#written"><span aria-hidden="true">▦</span>문제은행</a><a href="#organizations"><span aria-hidden="true">◎</span>기관별</a><a href="#recent-updates"><span aria-hidden="true">☷</span>업데이트</a></nav>
-</section><div class="notice"><strong>학습 안내</strong> · 기출·복원·응용 문제를 구분해 학습하세요. 일부 문항의 원문·정답·해설은 검토 중이며, 채용 정보는 반드시 해당 회차의 공식 공고로 확인하세요.</div>
-<div class="section-heading" id="written"><div><span class="eyebrow2">01 / WRITTEN EXAM</span><h2>필기 학습 시작하기</h2></div><p>원하는 과목과 단원을 선택하세요.</p></div>
-<div class="grid"><a class="card" href="./communication-quiz-500/" aria-label="통신공학 문제은행 시작"><span class="tag">필기 · 통신</span><h3>통신공학</h3><p>신호와 시스템, 변조, 디지털 전송, 부호이론과 통신 프로토콜</p><strong>문제 풀기 →</strong></a><a class="card" href="./wireless-quiz-500/" aria-label="무선공학 문제은행 시작"><span class="tag">필기 · 무선</span><h3>무선공학</h3><p>안테나, 전파, 이동통신, 위성 및 무선설비기사 학습</p><strong>문제 풀기 →</strong></a><a class="card" href="./interview/" aria-label="기관별 면접 자료 보기"><span class="tag">면접 · 직무</span><h3>면접 자료</h3><p>기관별 채용 참고자료, 예상 질문과 직무 이해</p><strong>면접 준비하기 →</strong></a></div>
-<div class="section-heading" id="organizations"><div><span class="eyebrow2">02 / ORGANIZATIONS</span><h2>목표 기관별로 준비하기</h2></div><p>공고는 확인일과 지원 전형을 함께 살펴보세요.</p></div>
-<div class="org-grid"><a class="org-card" href="./interview/seoul-metro.html"><b>서울교통공사</b><span>정보통신직 · 채용 및 면접 자료</span><strong>학습하기 →</strong></a><a class="org-card" href="./interview/community-posts-2026-11-28.html"><b>서울교통공사 · 2026 하반기 필기 후기</b><span>NCS 지문량·시간 관리·체감 난이도, 설문 113명 / 차량직 예상 합격선 79명(기타) · 일부 원문 미확인</span><strong>NCS 후기·투표 보기 →</strong></a><div class="org-card"><b>코레일</b><span>전기통신직 · 복원문제와 창작 응용</span><div class="org-card-links"><a href="./korail-2026/">복원 PDF·창작 2회 학습 →</a><a href="./interview/korail.html">채용·면접 자료 →</a></div><span>기존 복원 30문항 · 창작 응용 2회 30문항 추가</span></div><div class="org-card"><b>한국수자원공사 (K-water)</b><span>전자통신직 · 물관리와 발전 설비</span><div class="org-card-links"><a href="./interview/kwater.html">채용·면접 학습 →</a><a href="./kwater-exams/">전공모의고사 풀기 →</a></div><span>모의고사: 원본 비공개 · 창작 3회차 120문항</span></div><a class="org-card" href="./civil-service-exams/"><b>공무원 (국가직·지방직)</b><span>2027년 공채 일정 · 2026년 7·9급 커트라인·경쟁률 표·그래프</span><strong>시험 일정·합격선 보기 →</strong></a></div>
-<div class="section-heading" id="practice"><div><span class="eyebrow2">03 / CONCEPTS IN PRACTICE</span><h2>그림으로 직무 이해하기</h2></div><p>개념을 살펴보고 면접으로 연결하세요.</p></div>
-<div class="org-grid"><a class="org-card" href="./interview/rail-lte-r.html"><b>LTE-R 기본 개념</b><span>철도 무선망과 핸드오버</span><strong>그림 보기 →</strong></a><a class="org-card" href="./interview/rail-lte-r-3d.html"><b>LTE-R 3D</b><span>열차 이동과 기지국 전환</span><strong>시뮬레이션 →</strong></a><a class="org-card" href="./interview/kwater-hydropower-3d.html"><b>수력발전 원리</b><span>물의 흐름에서 전기 생산까지</span><strong>시뮬레이션 →</strong></a><a class="org-card" href="./wireless-first-pass/"><b>무선공학 1회독 · 7일 코스</b><span>신호·변조·안테나·전파·이동통신·위성통신 · PDF 원본 비공개</span><strong>일차별 학습 시작 →</strong></a></div>
-<section id="datacenter" class="dc-tools" aria-labelledby="dcToolsTitle">
-<h2 id="dcToolsTitle">데이터센터 설계·3D 투어</h2>
-<p>공간과 설비를 둘러보고 통신·전력·냉각의 연결 관계를 확인하세요.</p>
-<div class="dc-tool-bar"><div class="dc-tool-tabs" role="tablist" aria-label="데이터센터 도구 선택">
-<button type="button" id="dcTourTab" role="tab" aria-selected="true" aria-controls="dcToolPanel" data-dc-tool="tour">3D 투어</button>
-<button type="button" id="dcBomTab" role="tab" aria-selected="false" aria-controls="dcToolPanel" tabindex="-1" data-dc-tool="bom">BOM 설계</button>
-</div><a id="dcToolOpen" class="dc-tool-open" href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three" target="_blank" rel="noopener noreferrer">데이터센터 3D 투어 새 탭에서 크게 보기</a></div>
-<p id="dcToolDescription" class="dc-tool-description">캠퍼스·전산실·전기실·MMR과 랙 구성을 살펴보세요.</p>
-<p id="dcToolStatus" class="dc-tool-status" role="status">데이터센터 도구를 선택해 살펴보세요.</p>
-<div id="dcToolPanel" class="dc-tool-panel" role="tabpanel" aria-labelledby="dcTourTab"><iframe id="dcToolFrame" title="데이터센터 3D 투어" loading="lazy" allow="fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
-<p class="dc-tool-note">교육·설계 검토용 도구입니다. 설비 배치와 운전 수치는 개념 모델 및 입력 가정에 따르며 실제 현장 설계·제품 사양과 구분해 확인하세요.</p>
-<noscript><p><a href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three">3D 투어 열기</a> · <a href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/">BOM 설계 열기</a></p></noscript>
+<details class="help"><summary>과목별 구성·추가 기출 보기</summary>
+<details><summary>통신공학 단원별 구성</summary><div id="compview" class="table-scroll"></div></details><details><summary>무선공학 단원별 구성</summary><div id="wirelessCompPanel" class="table-scroll"></div></details>
+<div class="extra-links"><a href="./communication-quiz-500/?chapter=방송통신공학">방송통신공학 기출</a><a href="./information-communication/">정보통신 주관식 기출·답안</a><a href="./communication-quiz-500/?kind=국가직%20기출%20응용">통신공학 국가직 응용</a><a href="./wireless-quiz-500/?kind=지방직%20기출%20응용">무선공학 지방직 응용</a></div></details>
 </section>
-<section class="panel"><div><h2 id="recent-updates">최근 업데이트</h2><ul id="updates-summary"></ul><a href="./changelog.html">전체 변경 일지 보기</a></div></section><div style="margin:-12px 0 22px;background:#fff;border:1px solid #dce4f2;border-radius:13px;padding:14px 17px">
-<strong>국가직·지방직 공무원 기출 학습</strong><p style="margin:6px 0 10px;font-size:13px">2015~2026년 공식 문제·정답 공개처 안내 및 신규 기출 응용 48문항(국가직·지방직 유형 구분)을 제공합니다.</p>
-<a class="quick-chapter" href="./civil-service-exams/">공식 기출·정답 자료 안내</a>
-<a class="quick-chapter" href="./communication-quiz-500/?kind=%EA%B5%AD%EA%B0%80%EC%A7%81%20%EA%B8%B0%EC%B6%9C%20%EC%9D%91%EC%9A%A9">통신공학 국가직 응용</a>
-<a class="quick-chapter" href="./wireless-quiz-500/?kind=%EC%A7%80%EB%B0%A9%EC%A7%81%20%EA%B8%B0%EC%B6%9C%20%EC%9D%91%EC%9A%A9">무선공학 지방직 응용</a>
-</div><div style="background:#fff;border:1px solid #cbdaf3;border-radius:15px;padding:17px 20px;margin:12px 0 26px"><strong>📺 통신공학 → 방송통신공학 기출 통합</strong><p style="margin:6px 0;font-size:13px">2014·2015·2016·2017·2018·2020·2022·2025년 국회사무처 9급 방송통신공학 기출 160문항을 통신공학 통합 문제은행에 추가했습니다. 시험 연도·세부 단원별 분류와 비공식 학습용 해설을 제공합니다.</p><a class="quick-chapter" href="./communication-quiz-500/?chapter=%EB%B0%A9%EC%86%A1%ED%86%B5%EC%8B%A0%EA%B3%B5%ED%95%99">통신공학에서 방송통신공학 160문항 풀기</a></div><div style="background:#fff;border:1px solid #cbdaf3;border-radius:15px;padding:17px 20px;margin:12px 0 26px"><strong>📡 1. 통신공학 · 정보통신 기출 (해양경찰)</strong><p style="margin:6px 0;font-size:13px">2020년 제2차 실기·2021년 상반기 필기 · 주관식 기출 6문항 · 모범답안 예시와 해설 6개 · 연도·단원·배점별 분류</p><a class="quick-chapter" href="./information-communication/">정보통신 기출 6문항 · 답안/해설 보기</a></div><div style="margin:-12px 0 30px"><button type="button" id="comp" aria-expanded="false" aria-controls="compview" style="border:1px solid #ccd7ea;background:white;border-radius:12px;padding:12px;cursor:pointer;font:inherit;font-weight:800;color:#3457bc">▤ 통신공학 전체 문제 구성 보기</button><div id="compview" hidden style="margin-top:12px;background:white;padding:19px;border:1px solid #dfe4f1;border-radius:12px;overflow-x:auto"></div></div>
-<div style="margin:8px 0 30px"><button id="wirelessCompBtn" aria-controls="wirelessCompPanel" aria-expanded="false" type="button" style="border:1px solid #ccd7ea;background:white;border-radius:12px;padding:12px;cursor:pointer;font:inherit;font-weight:800;color:#3457bc">▤ 무선공학 전체 문제 구성 보기</button><div id="wirelessCompPanel" hidden style="background:white;border:1px solid #dfe4f1;border-radius:12px;padding:18px;margin-top:12px;overflow-x:auto"></div></div><section aria-labelledby="rail-guide-title" style="background:#fff;border:1px solid #dce5f2;border-radius:20px;padding:24px;margin:25px 0"><h2 id="rail-guide-title" style="margin:0 0 10px">🚄 LTE-R과 세계 철도무선</h2><p>철도 무선망 구조, 핸드오버와 3D 시뮬레이션을 익히고 한국·중국·일본·미국·유럽 사례를 비교합니다.</p><p><a class="quick-chapter" href="./interview/rail-lte-r.html">LTE-R 학습하기 →</a> <a class="quick-chapter" href="./interview/rail-lte-r-3d.html">3D 시뮬레이션 →</a> <a class="quick-chapter" href="./interview/rail-lte-r-cases.html">국가별 사례 →</a></p><p style="font-size:13px">2026.11.13 업데이트 · 기본 화면에 현장 직원의 기지국 간 이동 시뮬레이션을 추가하고, 열차 3D 및 국가별 사례와 구분했습니다.</p></section><footer>개인 오답·정답률은 현재 브라우저에 저장되며 자동 초기화되지 않습니다. 다른 수험생과의 공동 정답률은 통계 서버가 연결된 후 익명 참여자의 최초 응답을 기준으로 누적합니다. <a href="./sources/" style="display:inline-block;margin-left:9px;font-weight:800">자료 출처·이용 안내</a> · <a href="https://github.com/kimheeseo/kimheeseo/issues/new" target="_blank" rel="noopener noreferrer">오류 제보</a><p><a href="./sources/">자료 출처·이용 안내</a> · <a href="https://github.com/kimheeseo/kimheeseo/issues/new">피드백·오류 제보</a> · <a href="./changelog.html">변경 일지</a></p></footer>
-</main><script>document.getElementById('comp').addEventListener('click',()=>{const p=document.getElementById('compview'),b=document.getElementById('comp');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 통신공학 전체 문제 구성 보기':'▴ 전체 문제 구성 접기';});document.getElementById('wirelessCompBtn').addEventListener('click',()=>{const p=document.getElementById('wirelessCompPanel'),b=document.getElementById('wirelessCompBtn');p.hidden=!p.hidden;b.setAttribute('aria-expanded',String(!p.hidden));b.textContent=p.hidden?'▤ 무선공학 전체 문제 구성 보기':'▴ 무선공학 문제 구성 접기';});</script><script src="./datacenter.js?v=20261127"></script><script id="ss-screen-router">
-(()=>{
-  const main=document.querySelector('body > main');
-  if(!main)return;
-  const byId=id=>document.getElementById(id);
-  const keyNodes={
-    written:byId('written'),
-    organizations:byId('organizations'),
-    practice:byId('practice'),
-    datacenter:byId('datacenter'),
-    updates:byId('recent-updates'),
-    rail:byId('rail-guide-title')
-  };
-  const header=main.querySelector(':scope > .site-top');
-  const footer=main.querySelector(':scope > footer');
-  const appNavigation=main.querySelector('.ss-bottom-nav');
-  const items=[...main.children];
-  const topChild=element=>{
-    let current=element;
-    while(current && current.parentElement!==main)current=current.parentElement;
-    return current;
-  };
-  const written=items.indexOf(topChild(keyNodes.written));
-  const organizations=items.indexOf(topChild(keyNodes.organizations));
-  const practice=items.indexOf(topChild(keyNodes.practice));
-  const datacenter=items.indexOf(topChild(keyNodes.datacenter));
-  const updates=items.indexOf(topChild(keyNodes.updates));
-  const rail=items.indexOf(topChild(keyNodes.rail));
-  if(!header||!footer||!appNavigation||[written,organizations,practice,datacenter,updates,rail].some(n=>n<0))return;
-  if(!(written<organizations && organizations<practice && practice<datacenter && datacenter<updates && updates<rail))return;
-
-  // 기존 요소를 옮겨 재활용하므로 문제은행 링크·아코디언·학습 데이터가 보존됩니다.
-  main.insertBefore(appNavigation,footer);
-  const pageMeta={
-    home:{name:'홈'},
-    bank:{name:'문제은행',eyebrow:'QUESTION BANK',description:'과목별 문제를 선택하고 단원과 난이도에 맞춰 학습하세요.'},
-    organizations:{name:'기관별 학습',eyebrow:'ORGANIZATIONS',description:'코레일·서울교통공사·한국수자원공사 직무 및 면접 준비.'},
-    practice:{name:'직무 이해',eyebrow:'CAREER PRACTICE',description:'현장 기술 개념과 LTE-R·수력발전 시뮬레이션을 학습하세요.'},
-    datacenter:{name:'데이터센터',eyebrow:'DATA CENTER',description:'3D 투어와 BOM 설계로 데이터센터의 통신·전력·냉각 구성을 확인하세요.'},
-    updates:{name:'업데이트',eyebrow:'WHAT’S NEW',description:'통신직 준비 도구의 최근 개선 사항을 확인하세요.'}
-  };
-  const screens={};
-  for(const [id,meta] of Object.entries(pageMeta)){
-    const screen=document.createElement('section');
-    screen.className='ss-route-page';
-    screen.dataset.page=id;
-    screen.id='ss-page-'+id;
-    screen.setAttribute('aria-label',meta.name);
-    screen.hidden=id!=='home';
-    if(id!=='home'){
-      const intro=document.createElement('div');
-      intro.className='ss-route-intro';
-      const kicker=document.createElement('span');
-      kicker.className='ss-route-eyebrow';
-      kicker.textContent=meta.eyebrow;
-      const heading=document.createElement('h1');
-      heading.textContent=meta.name;
-      const description=document.createElement('p');
-      description.textContent=meta.description;
-      intro.append(kicker,heading,description);
-      screen.append(intro);
-    }
-    main.insertBefore(screen,appNavigation);
-    screens[id]=screen;
-  }
-  for(const [index,item] of items.entries()){
-    if(item===header||item===footer)continue;
-    let group='bank';
-    if(index<written)group='home';
-    else if(index<organizations)group='bank';
-    else if(index<practice)group='organizations';
-    else if(index<datacenter)group='practice';
-    else if(index<updates)group='datacenter';
-    else if(index===updates)group='updates';
-    else if(index===rail)group='practice';
-    screens[group].append(item);
-  }
-
-  // 전역 탭: 홈 카드 안에 있던 하단 메뉴를 독립 화면 모두에서 사용합니다.
-  const homeLink=appNavigation.querySelector('a[href="./"]');
-  if(homeLink)homeLink.setAttribute('href','#screen=home');
-  const brand=header.querySelector('.brand');
-  if(brand)brand.setAttribute('href','#screen=home');
-  const updatesLink=appNavigation.querySelector('a[href="#recent-updates"]');
-  if(updatesLink){
-    const practiceLink=document.createElement('a');
-    practiceLink.href='#screen=practice';
-    practiceLink.innerHTML='<span aria-hidden="true">◇</span>직무 이해';
-    appNavigation.insertBefore(practiceLink,updatesLink);
-    const dcLink=document.createElement('a');
-    dcLink.href='#screen=datacenter';
-    dcLink.innerHTML='<span aria-hidden="true">▥</span>데이터센터';
-    appNavigation.insertBefore(dcLink,updatesLink);
-  }
-
-  const aliases={
-    '#written':'bank',
-    '#organizations':'organizations',
-    '#practice':'practice',
-    '#datacenter':'datacenter',
-    '#recent-updates':'updates'
-  };
-  for(const link of document.querySelectorAll('a[href^="#"]')){
-    const href=link.getAttribute('href');
-    if(aliases[href])link.setAttribute('href','#screen='+aliases[href]);
-  }
-  const navigationLinks=[...header.querySelectorAll('a[href^="#screen="]'),...appNavigation.querySelectorAll('a[href^="#screen="]')];
-
-  function resolvePage(){
-    const hash=decodeURIComponent(window.location.hash);
-    if(hash.startsWith('#screen=')){
-      const requested=hash.slice(8);
-      return Object.prototype.hasOwnProperty.call(screens,requested)?requested:'home';
-    }
-    return aliases[hash]||'home';
-  }
-  function renderPage(){
-    const active=resolvePage();
-    document.body.classList.toggle('screen-datacenter',active==='datacenter');
-    for(const [id,page] of Object.entries(screens)){
-      const visible=id===active;
-      page.hidden=!visible;
-      page.setAttribute('aria-hidden',String(!visible));
-    }
-    for(const link of navigationLinks){
-      const selected=link.getAttribute('href')==='#screen='+active;
-      link.classList.toggle('ss-selected',selected);
-      if(selected)link.setAttribute('aria-current','page');
-      else link.removeAttribute('aria-current');
-    }
-    window.dispatchEvent(new CustomEvent('quiz-screen-changed',{detail:{page:active}}));
-    document.title=(active==='home'?'통신직 준비':pageMeta[active].name+' | 통신직 준비');
-    window.scrollTo({top:0,behavior:'instant'});
-  }
-  window.addEventListener('hashchange',renderPage);
-  window.addEventListener('pageshow',renderPage);
-  renderPage();
-})();
-</script><script src="./home.js?v=20261127-app1"></script></body></html>
+<section id="organizations" class="section" aria-labelledby="org-title"><div class="section-intro"><h2 id="org-title">기관별 준비</h2><p>목표 기관의 채용 자료와 면접·전공 학습을 모았어요.</p></div><div class="org-grid">
+<article class="study-card "><span class="badge review">검토 중</span><h3>서울교통공사</h3><p>정보통신직 채용과 기술면접을 준비해요.</p><div class="card-actions"><a class="button" href="./interview/seoul-metro.html">채용 및 면접 자료</a></div></article>
+<article class="study-card "><span class="badge restored">복원</span><h3>코레일</h3><p>전기통신직 복원 문제와 창작 응용 학습.</p><div class="card-actions"><a class="button" href="./korail-2026/">복원 PDF·창작 학습</a><a href="./interview/korail.html">채용·면접 자료</a></div></article>
+<article class="study-card "><span class="badge created">창작</span><h3>한국수자원공사 (K-water)</h3><p>전자통신직 채용과 전공모의고사 준비.</p><div class="card-actions"><a class="button" href="./interview/kwater.html">채용·면접 학습</a><a href="./kwater-exams/">전공모의고사 풀기</a></div></article>
+<article class="study-card "><span class="badge past">기출</span><h3>공무원 (국가직·지방직)</h3><p>공채 일정과 합격선·경쟁률을 확인해요.</p><div class="card-actions"><a class="button" href="./civil-service-exams/">시험 일정·합격선 보기</a></div></article>
+</div><p class="section-link"><a href="./interview/">기관별 면접 자료 전체 보기</a></p>
+</section>
+<section id="practice" class="section auxiliary" aria-labelledby="concept-title"><div class="section-intro"><h2 id="concept-title">개념 학습</h2><p>그림과 시뮬레이션으로 직무의 원리를 이해해요.</p></div><div class="concept-grid"><a href="./wireless-first-pass/">무선공학 1회독 · 7일 코스</a><a href="./interview/rail-lte-r.html">LTE-R 기본 개념</a><a href="./interview/rail-lte-r-3d.html">LTE-R 3D 시뮬레이션</a><a href="./interview/rail-lte-r-cases.html">세계 철도무선 사례</a><a href="./interview/kwater-hydropower-3d.html">수력발전 원리</a></div></section>
+<section id="recent-updates" class="section auxiliary" aria-labelledby="updates-title"><div class="section-intro"><h2 id="updates-title">최근 업데이트</h2></div><ul id="updates-summary" class="updates"><li>2026.11.28 · 홈 학습 동선·디자인 정리</li><li>2026.11.27 · 데이터센터 3D 투어·BOM 설계 연결</li></ul><a href="./changelog.html">전체 변경 일지 보기</a></section>
+<section id="tools" class="section auxiliary" aria-labelledby="tools-title"><div class="section-intro"><h2 id="tools-title">도구</h2><p>데이터센터의 통신·전력·냉각 구성을 살펴보세요.</p></div><div class="tool-links"><a class="page-link" href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/LS_Datacenter_3D.html?engine=three" target="_blank" rel="noopener noreferrer">데이터센터 3D 투어 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6m0-6L10 14M9 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5"/></svg><span class="sr-only">(새 탭)</span></a><a class="page-link" href="https://kimheeseo.github.io/LSCNS/DCI/DataCenter/" target="_blank" rel="noopener noreferrer">BOM 설계 <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h6v6m0-6L10 14M9 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-5"/></svg><span class="sr-only">(새 탭)</span></a></div></section>
+<footer><details class="help" open><summary>학습 안내</summary><p>기출·복원·창작·검토 중 뱃지는 자료의 성격을 구분합니다. 과목별 문제은행에는 여러 유형이 함께 포함되며, 개별 문항의 상태와 출처를 확인하세요. 일부 문항의 원문·정답·해설은 검토 중입니다.</p><p>K-water 모의고사는 공식 기출이 아닌 창작 문제이며 참고 PDF 원본은 비공개입니다. 채용 정보는 해당 회차의 공식 공고를 확인하세요. 데이터센터 도구는 교육·설계 검토용이며 실제 제품 사양과 구분해 확인하세요.</p><p>개인 오답·정답률은 현재 브라우저에 저장됩니다. 공동 정답률은 통계 서버 연결 후 누적됩니다. 기기 변경 전 기록을 백업하세요.</p><div class="badge-legend"><span class="badge past">기출</span><span class="badge restored">복원</span><span class="badge created">창작</span><span class="badge review">검토 중</span></div></details><div class="footer-links"><a href="./sources/">자료 출처·이용 안내</a><a href="https://github.com/kimheeseo/kimheeseo/issues/new" target="_blank" rel="noopener noreferrer">오류 제보</a><span>통신직 준비</span></div></footer>
+</main><nav class="bottom-nav" aria-label="모바일 주요 메뉴"><a href="#today" data-section="today"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg><span>홈</span></a><a href="#written" data-section="written"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14M3 3h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5v16h-5a4 4 0 0 0-4 2 4 4 0 0 0-4-2H3z"/></svg><span>문제은행</span></a><a href="#organizations" data-section="organizations"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h1m4 0h1M9 11h1m4 0h1m-6 4h1m4 0h1m-5 6v-4h4v4"/></svg><span>기관별</span></a><a href="./learning.html?mode=analytics" class="page-link" aria-label="내 학습 현황"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18M8 16v-5m5 5V7m5 9v-8"/></svg><span>내 학습</span></a><button type="button" class="more-toggle" aria-expanded="false" aria-controls="more-menu"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg><span>더보기</span></button></nav><script src="./home-nav.js?v=20261128"></script><script src="./home.js?v=20261128"></script></body></html>
