@@ -1,10 +1,10 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 92,
-  "unique_posts": 82,
-  "duplicate_links": 10,
+  "received_links": 107,
+  "unique_posts": 94,
+  "duplicate_links": 13,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
     "other": "본문 확인 결과 통신직 및 NCS에 해당하지 않는 자료",
@@ -567,7 +567,8 @@
       "id": "1450703",
       "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450703&page=11",
       "submitted_positions": [
-        42
+        42,
+        107
       ],
       "title": null,
       "article_date": null,
@@ -577,7 +578,8 @@
       "review_status": "source_unavailable",
       "classification": "pending",
       "checked_date": "2026-11-28",
-      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음.",
+      "search_keyword_on_resubmission": "통신"
     },
     {
       "id": "1450713",
@@ -903,7 +905,8 @@
       "id": "1449957",
       "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1449957&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
       "submitted_positions": [
-        63
+        63,
+        104
       ],
       "submission_batch": "telecom_search_2026_11_28",
       "user_search_keyword": "통신",
@@ -1374,6 +1377,215 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "1450874",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450874&page=9",
+      "submitted_positions": [
+        93
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450873",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450873&page=9",
+      "submitted_positions": [
+        94
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450862",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450862&page=9",
+      "submitted_positions": [
+        95
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450861",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450861&page=9",
+      "submitted_positions": [
+        96,
+        99
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1451297",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451297&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        97
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "1451300",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451300&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        98
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "1450860",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450860&page=9",
+      "submitted_positions": [
+        100
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450907",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450907&page=9",
+      "submitted_positions": [
+        101
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450906",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450906&page=9",
+      "submitted_positions": [
+        102
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1450905",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450905&page=9",
+      "submitted_positions": [
+        103
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "1449963",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1449963&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        105
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "1450407",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450407&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        106
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
@@ -1548,6 +1760,32 @@
       "content_review_status": "pending",
       "intended_category_on_review": "본문 확인 시 통신직 또는 NCS는 통신직, 나머지는 기타",
       "note": "작성일·내용 확인 전에는 시험 후기인지 판단 불가."
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch3",
+      "label": "통신 키워드 추가 제보 (3차)",
+      "submitted_date": "2026-11-28",
+      "links_received": 6,
+      "unique_posts": 4,
+      "duplicates": 2,
+      "unique_new_posts": 4,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 후 통신직·NCS는 통신직, 기타 주제는 기타",
+      "note": "이번 6개 검색 URL 중 1449957·1450703은 기존 게시글 중복. 원문에 접근할 수 없어 검토 대기로 보존"
+    },
+    {
+      "id": "unverified_new_links_2026_11_28_batch2",
+      "label": "일반 링크 추가 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 9,
+      "unique_posts": 8,
+      "duplicates": 1,
+      "unique_new_posts": 8,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 후 통신직·NCS는 통신직, 기타 주제는 기타",
+      "note": "1450861 중복 1건 제거; 개별 본문/댓글 확인 불가"
     }
   ]
 }
