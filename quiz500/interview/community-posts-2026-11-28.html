@@ -28,6 +28,18 @@ h1{font-size:clamp(28px,5vw,39px);letter-spacing:-.04em;line-height:1.3;margin:7
 .empty{color:#6c809b;font-size:14px;padding:28px;background:white;border-radius:14px;border:1px dashed #c5d4e8;grid-column:1/-1}
 .small{font-size:12px;color:#73829a}footer{font-size:12px;margin-top:30px;color:#74849d}
 @media(max-width:680px){main{padding:19px 12px 55px}.cards{grid-template-columns:1fr}.card{padding:18px}.stat{padding:12px}.stat b{font-size:19px}.controls button{flex:1}}
+
+.poll{background:#fff;border:1px solid #dce5f2;border-radius:17px;padding:20px;margin:18px 0 25px}
+.poll-top{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.poll-label{font-size:11px;font-weight:850;letter-spacing:.05em;color:#4d70b5}
+.poll h2{margin:7px 0 0;font-size:19px;letter-spacing:-.03em}
+.poll-size{font-weight:800;color:#315bc6;font-size:13px;padding:7px 11px;background:#edf3ff;border-radius:8px}
+.poll-intro{font-size:13px;margin:12px 0 15px}
+.poll-bars{display:grid;gap:13px}.poll-head{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px;margin-bottom:5px}
+.poll-value{font-weight:800;color:#254d91;font-variant-numeric:tabular-nums}.poll-value small{color:#6d7b90;font-size:11px;font-weight:500}
+.poll-track{height:10px;background:#e7ebf2;overflow:hidden;border-radius:999px}.poll-fill{height:100%;border-radius:999px;background:#9faec9}.poll-fill.majority{background:#435ca8}
+.poll-disclaimer{font-size:12px;color:#728097;line-height:1.7;margin:15px 0 0}
+@media(max-width:680px){.poll{padding:15px}.poll h2{font-size:17px}}
 </style>
 </head><body><main>
 <a class="back" href="./seoul-metro.html">← 서울교통공사 정보통신직</a>
@@ -35,8 +47,15 @@ h1{font-size:clamp(28px,5vw,39px);letter-spacing:-.04em;line-height:1.3;margin:7
 <h1>NCS 후기 <span style="color:#3763b8">2026.11.28</span></h1>
 <p class="lead">서울교통공사 하반기 필기시험 이후 언급된 수험자 반응을 짧게 묶었습니다. 정보통신직 취업 준비에 활용할 수 있도록 NCS 관련 내용과 다른 직렬 전공 의견을 분리했습니다.</p>
 <div class="chips"><span class="chip">직업기초능력평가 NCS</span><span class="chip">2026년 하반기</span><span class="chip">개인 체감 후기</span></div>
-<div class="banner"><b>해석 유의</b><div>확인된 소수의 당일 공개 반응만 요약했습니다. 전체 응시자 통계나 공식 출제 분석은 아닙니다. 별도로 전달받은 개별 게시글 12건은 본문·댓글을 확인하지 못해 이 요약의 직접 근거로 사용하지 않았습니다.</div></div>
+<div class="banner"><b>해석 유의</b><div>확인된 소수의 당일 공개 반응만 요약했습니다. 전체 응시자 통계나 공식 출제 분석은 아닙니다. 별도로 받은 개별 게시글 32건은 본문·댓글을 확인하지 못해 이 요약의 근거로 사용하지 않았습니다. 아래 투표는 NCS만이 아니라 필기시험 전반에 대한 체감 결과입니다.</div></div>
 <div class="stats"><div class="stat"><b>40문항</b><small>NCS 일반전형</small></div><div class="stat"><b>40문항</b><small>직무수행능력 일반전형</small></div><div class="stat"><b>90분</b><small>두 평가 합산 시험시간</small></div></div>
+
+<section class="poll" aria-label="서울교통공사 2026년 하반기 필기시험 전체 난이도 투표">
+<div class="poll-top"><div><span class="poll-label">2026.11.28 · 참여자 투표 스냅샷</span><h2>필기시험 전체 체감 난이도</h2></div><div class="poll-size">113명 참여</div></div>
+<p class="poll-intro">온라인 수험자 투표에서 ‘어려웠다’ 응답이 가장 많았습니다. 이 투표는 NCS만 별도로 묻는 설문이 아닙니다.</p>
+<div id="poll-bars" class="poll-bars"><p class="small">투표 결과 불러오는 중</p></div>
+<p class="poll-disclaimer">2026.11.28 화면 당시 중간 집계입니다. 투표 마감 예정은 11.29 13:20이며, 자발적 응답이므로 전체 응시자의 공식 난이도 지표는 아닙니다.</p>
+</section>
 <div class="controls" aria-label="후기 분류">
 <button type="button" data-category="ncs" aria-pressed="true">NCS 반응</button>
 <button type="button" data-category="other" aria-pressed="false">기타(전공)</button>
@@ -55,6 +74,21 @@ const root=document.querySelector('#reaction-cards');
 try{
 const data=await QuizJSON.load('../data/community-posts-2026-11-28.json');
 const feedback=data.verified_public_reactions||[];
+const poll=(data.poll_snapshots||[])[0];
+const pollHost=document.getElementById('poll-bars');
+if(poll){
+ pollHost.replaceChildren();
+ for(const option of poll.options){
+  const item=document.createElement('div');
+  const head=document.createElement('div');head.className='poll-head';
+  const name=document.createElement('span');name.textContent=option.label;
+  const value=document.createElement('span');value.className='poll-value';value.textContent=option.display_percent+'% ';
+  const count=document.createElement('small');count.textContent='('+option.votes+'명)';value.append(count);head.append(name,value);
+  const bar=document.createElement('div');bar.className='poll-track';bar.setAttribute('role','img');bar.setAttribute('aria-label',option.label+' '+option.votes+'명, '+option.display_percent+'퍼센트');
+  const fill=document.createElement('div');fill.className='poll-fill'+(option.label==='어려웠다'?' majority':'');fill.style.width=option.display_percent+'%';bar.append(fill);
+  item.append(head,bar);pollHost.append(item);
+ }
+}
 function show(category){
 root.replaceChildren();
 const selected=feedback.filter(x=>x.group===category);
