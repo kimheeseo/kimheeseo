@@ -1,9 +1,9 @@
 {
-  "schema_version": 9,
+  "schema_version": 10,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 107,
-  "unique_posts": 94,
+  "received_links": 109,
+  "unique_posts": 96,
   "duplicate_links": 13,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
@@ -1586,6 +1586,42 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "1450791",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450791&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        108
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch4",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "사용자가 '통신' 검색 결과에서 공유. PC·모바일 원문/댓글 미접근, 글 작성일/통신직·NCS 관련성 미확인. 2026.11.28 시험 당일 실제 수험생 후기로 인용하지 않음."
+    },
+    {
+      "id": "1450942",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450942&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        109
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch4",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "사용자가 '통신' 검색 결과에서 공유. PC·모바일 원문/댓글 미접근, 글 작성일/통신직·NCS 관련성 미확인. 2026.11.28 시험 당일 실제 수험생 후기로 인용하지 않음."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
@@ -1786,6 +1822,18 @@
       "content_review_status": "pending",
       "intended_category_on_review": "본문 확인 후 통신직·NCS는 통신직, 기타 주제는 기타",
       "note": "1450861 중복 1건 제거; 개별 본문/댓글 확인 불가"
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch4",
+      "label": "통신 검색 추가 제보 (4차)",
+      "submitted_date": "2026-11-28",
+      "links_received": 2,
+      "unique_posts": 2,
+      "duplicates": 0,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "NCS 및 정보통신·통신직 자료면 통신직, 비관련 자료면 기타",
+      "note": "원문·댓글 열람 불가 및 검색 스니펫으로 본문 검증 불가. 검색 키워드는 분류 근거가 아니므로 2건 모두 검토 대기."
     }
   ]
 }
