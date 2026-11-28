@@ -1,9 +1,9 @@
 {
-  "schema_version": 3,
+  "schema_version": 4,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 39,
-  "unique_posts": 32,
+  "received_links": 52,
+  "unique_posts": 45,
   "duplicate_links": 7,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
@@ -530,10 +530,218 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "1450692",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450692&page=11",
+      "submitted_positions": [
+        40
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450693",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450693&page=11",
+      "submitted_positions": [
+        41
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450703",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450703&page=11",
+      "submitted_positions": [
+        42
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450713",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450713&page=11",
+      "submitted_positions": [
+        43
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450719",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450719&page=11",
+      "submitted_positions": [
+        44
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450721",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450721&page=11",
+      "submitted_positions": [
+        45
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450724",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450724&page=11",
+      "submitted_positions": [
+        46
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450732",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450732&page=11",
+      "submitted_positions": [
+        47
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450734",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450734&page=11",
+      "submitted_positions": [
+        48
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450684",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450684&page=11",
+      "submitted_positions": [
+        49
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450737",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450737&page=11",
+      "submitted_positions": [
+        50
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450685",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450685&page=11",
+      "submitted_positions": [
+        51
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450687",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450687&page=11",
+      "submitted_positions": [
+        52
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
-  "presentation_policy": "화면에 원문 URL 및 작성자 식별정보를 노출하지 않고 수험생 반응을 요약한다. 캡처 투표 결과는 시험 전체 체감으로 별도 표시한다. 원문 미확인 제보는 후기 내용으로 단정하지 않는다.",
+  "presentation_policy": "원문·댓글 확인 불가 제보는 분류 보류, 사용자 화면에 원문 URL/닉네임 공개하지 않음. 실제 보이는 사용자 제공 난이도·차량직 예상컷 투표는 각각 시험 전체와 기타(차량직)로 구분하며 미확정임을 고지.",
   "verified_public_reactions": [
     {
       "id": "r1",
@@ -616,6 +824,43 @@
       "verified_from": "uploaded image in current conversation",
       "methodology": "온라인 게시글 참여자의 자발적 비확률표본; 최종 집계 아님",
       "note": "투표 표제는 '서교 난이도'로 NCS만의 난이도를 물은 것이 아님. 공식 설문조사나 전체 응시자 통계로 사용하지 않음."
+    },
+    {
+      "snapshot_id": "2026-11-28-seoul-metro-vehicle-cut-prediction",
+      "title": "차량 컷 몇 예상??",
+      "assessed_scope": "서울교통공사 차량직 예상 합격선(비공식 예측·확정 합격선 아님)",
+      "category": "other",
+      "posted_at": "2026-11-28 13:33:08",
+      "screen_date": "2026-11-28",
+      "poll_end_at": "2026-11-29 13:40",
+      "status_at_capture": "투표 진행 중",
+      "total_votes": 79,
+      "options": [
+        {
+          "label": "76~80점",
+          "votes": 24,
+          "display_percent": 30
+        },
+        {
+          "label": "66~70점",
+          "votes": 22,
+          "display_percent": 28
+        },
+        {
+          "label": "71~75점",
+          "votes": 19,
+          "display_percent": 24
+        },
+        {
+          "label": "60~65점",
+          "votes": 14,
+          "display_percent": 18
+        }
+      ],
+      "evidence_type": "user_provided_screenshot",
+      "verified_from": "uploaded image in current conversation",
+      "methodology": "익명 온라인 설문·자발적 참여; 예상 합격선에 관한 의견이며 공식 합격선이나 응시자 점수 분포가 아님",
+      "note": "질문이 '차량 컷 몇 예상??'이므로 차량직 외의 정보통신/통신직 합격선으로 전용할 수 없음."
     }
   ]
 }
