@@ -1,10 +1,10 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 80,
-  "unique_posts": 71,
-  "duplicate_links": 9,
+  "received_links": 92,
+  "unique_posts": 82,
+  "duplicate_links": 10,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
     "other": "본문 확인 결과 통신직 및 NCS에 해당하지 않는 자료",
@@ -1178,6 +1178,202 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "1451233",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451233&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        81
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451216",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451216&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        82
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451208",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451208&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        83
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451189",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451189&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        84
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451165",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451165&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        85
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451121",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451121&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        86,
+        87
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451084",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451084&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        88
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1451049",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1451049&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=1",
+      "submitted_positions": [
+        89
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "1450877",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450877&page=9",
+      "submitted_positions": [
+        90
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "1450876",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450876&page=9",
+      "submitted_positions": [
+        91
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "1450875",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450875&page=9",
+      "submitted_positions": [
+        92
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
@@ -1328,6 +1524,30 @@
       "content_review_status": "pending",
       "intended_category_on_review": "NCS·정보통신 관련 내용은 통신직, 다른 직렬 및 무관한 내용은 기타",
       "note": "10건 모두 원문과 댓글 확인 불가. 본문에서 시험을 언급하는지조차 확인되지 않았으므로 실제 시험 당일 후기라고 확정하지 않음."
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch2",
+      "label": "통신 키워드 검색 추가 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 9,
+      "unique_posts": 8,
+      "duplicates": 1,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 시 통신직 또는 NCS는 통신직, 나머지는 기타",
+      "note": "검색 조건만 통신이며 원문은 접근 불가. 시험 당일 후기라고 단정할 수 없음."
+    },
+    {
+      "id": "unverified_new_links_2026_11_28",
+      "label": "일반 제보 3건",
+      "submitted_date": "2026-11-28",
+      "links_received": 3,
+      "unique_posts": 3,
+      "duplicates": 0,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 시 통신직 또는 NCS는 통신직, 나머지는 기타",
+      "note": "작성일·내용 확인 전에는 시험 후기인지 판단 불가."
     }
   ]
 }
