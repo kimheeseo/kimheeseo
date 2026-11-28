@@ -1,10 +1,10 @@
 {
-  "schema_version": 5,
+  "schema_version": 6,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 62,
-  "unique_posts": 55,
-  "duplicate_links": 7,
+  "received_links": 70,
+  "unique_posts": 61,
+  "duplicate_links": 9,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
     "other": "본문 확인 결과 통신직 및 NCS에 해당하지 않는 자료",
@@ -898,6 +898,116 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1449957",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1449957&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        63
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "1449621",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1449621&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        64,
+        69
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "1449595",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1449595&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        65,
+        70
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "1447950",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1447950&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        66
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "1447464",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1447464&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        67
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "1447312",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1447312&s_type=search_subject_memo&s_keyword=%ED%86%B5%EC%8B%A0&page=2",
+      "submitted_positions": [
+        68
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
@@ -1023,5 +1133,19 @@
       "note": "질문이 '차량 컷 몇 예상??'이므로 차량직 외의 정보통신/통신직 합격선으로 전용할 수 없음."
     }
   ],
-  "last_submission_date": "2026-11-28"
+  "last_submission_date": "2026-11-28",
+  "submission_batches": [
+    {
+      "id": "telecom_search_2026_11_28",
+      "label": "통신 관련 검색 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 8,
+      "unique_posts": 6,
+      "duplicates": 2,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "관련 내용이 통신직 또는 NCS면 통신직, 그렇지 않으면 기타",
+      "note": "원문 확인 전이므로 2026.11.28 시험 당일 반응으로 간주하지 않음."
+    }
+  ]
 }
