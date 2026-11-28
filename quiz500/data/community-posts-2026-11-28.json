@@ -1,0 +1,1739 @@
+{
+  "schema_version": 10,
+  "collected_on": "2026-11-28",
+  "origin": "nonofficial_exam_feedback",
+  "received_links": 109,
+  "unique_posts": 96,
+  "duplicate_links": 13,
+  "classification_policy": {
+    "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
+    "other": "본문 확인 결과 통신직 및 NCS에 해당하지 않는 자료",
+    "pending": "본문·댓글에 접근할 수 없어 주제 확인이 불가능한 자료",
+    "rule": "NCS는 다른 직렬이 언급되더라도 통신직으로 분류. 본문·댓글 미확인 자료는 추측 분류하지 않음."
+  },
+  "records": [
+    {
+      "id": "submission-001",
+      "submitted_positions": [
+        1,
+        2,
+        4,
+        5,
+        6
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-002",
+      "submitted_positions": [
+        3
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-003",
+      "submitted_positions": [
+        7
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-004",
+      "submitted_positions": [
+        8
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-005",
+      "submitted_positions": [
+        9
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-006",
+      "submitted_positions": [
+        10
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-007",
+      "submitted_positions": [
+        11,
+        12,
+        13
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-008",
+      "submitted_positions": [
+        14
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-009",
+      "submitted_positions": [
+        15
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "공유된 URL만 확인. 직접 원문/댓글 접근 불가. NCS·정보통신직 포함 여부를 추측하지 않음."
+    },
+    {
+      "id": "submission-010",
+      "submitted_positions": [
+        16
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "게시글 및 댓글 본문 접근 실패. 아직 통신직/NCS 또는 기타 여부를 판별할 수 없음."
+    },
+    {
+      "id": "submission-011",
+      "submitted_positions": [
+        17,
+        18
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "게시글 및 댓글 본문 접근 실패. 아직 통신직/NCS 또는 기타 여부를 판별할 수 없음."
+    },
+    {
+      "id": "submission-012",
+      "submitted_positions": [
+        19
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "게시글 및 댓글 본문 접근 실패. 아직 통신직/NCS 또는 기타 여부를 판별할 수 없음."
+    },
+    {
+      "id": "submission-013",
+      "submitted_positions": [
+        20
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-014",
+      "submitted_positions": [
+        21
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-015",
+      "submitted_positions": [
+        22
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-016",
+      "submitted_positions": [
+        23
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-017",
+      "submitted_positions": [
+        24
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-018",
+      "submitted_positions": [
+        25
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-019",
+      "submitted_positions": [
+        26
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-020",
+      "submitted_positions": [
+        27
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-021",
+      "submitted_positions": [
+        28
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-022",
+      "submitted_positions": [
+        29
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-023",
+      "submitted_positions": [
+        30
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-024",
+      "submitted_positions": [
+        31
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-025",
+      "submitted_positions": [
+        32
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-026",
+      "submitted_positions": [
+        33
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-027",
+      "submitted_positions": [
+        34
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-028",
+      "submitted_positions": [
+        35
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-029",
+      "submitted_positions": [
+        36
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-030",
+      "submitted_positions": [
+        37
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-031",
+      "submitted_positions": [
+        38
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-032",
+      "submitted_positions": [
+        39
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "PC/모바일 원문 및 댓글 확인 불가. 별도 캡처/근거 없이 직렬·NCS 여부 또는 글 내용을 추정하지 않음."
+    },
+    {
+      "id": "submission-033",
+      "submitted_positions": [
+        40
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-034",
+      "submitted_positions": [
+        41
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-035",
+      "submitted_positions": [
+        42,
+        107
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음.",
+      "search_keyword_on_resubmission": "통신"
+    },
+    {
+      "id": "submission-036",
+      "submitted_positions": [
+        43
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-037",
+      "submitted_positions": [
+        44
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-038",
+      "submitted_positions": [
+        45
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-039",
+      "submitted_positions": [
+        46
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-040",
+      "submitted_positions": [
+        47
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-041",
+      "submitted_positions": [
+        48
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-042",
+      "submitted_positions": [
+        49
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-043",
+      "submitted_positions": [
+        50
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-044",
+      "submitted_positions": [
+        51
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-045",
+      "submitted_positions": [
+        52
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "submission-046",
+      "submitted_positions": [
+        53
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-047",
+      "submitted_positions": [
+        54
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-048",
+      "submitted_positions": [
+        55
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-049",
+      "submitted_positions": [
+        56
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-050",
+      "submitted_positions": [
+        57
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-051",
+      "submitted_positions": [
+        58
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-052",
+      "submitted_positions": [
+        59
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-053",
+      "submitted_positions": [
+        60
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-054",
+      "submitted_positions": [
+        61
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-055",
+      "submitted_positions": [
+        62
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "submission-056",
+      "submitted_positions": [
+        63,
+        104
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-057",
+      "submitted_positions": [
+        64,
+        69
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-058",
+      "submitted_positions": [
+        65,
+        70
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-059",
+      "submitted_positions": [
+        66
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-060",
+      "submitted_positions": [
+        67
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-061",
+      "submitted_positions": [
+        68
+      ],
+      "submission_batch": "telecom_search_2026_11_28",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공된 검색 URL에 '통신' 키워드 포함. 게시글 본문·댓글은 접근 제한으로 미검증. 날짜와 통신직/NCS 실제 관련성 미확정; 11.28 시험 후기와 별도로 관리."
+    },
+    {
+      "id": "submission-062",
+      "submitted_positions": [
+        71
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-063",
+      "submitted_positions": [
+        72
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-064",
+      "submitted_positions": [
+        73
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-065",
+      "submitted_positions": [
+        74
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-066",
+      "submitted_positions": [
+        75
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-067",
+      "submitted_positions": [
+        76
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-068",
+      "submitted_positions": [
+        77
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-069",
+      "submitted_positions": [
+        78
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-070",
+      "submitted_positions": [
+        79
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-071",
+      "submitted_positions": [
+        80
+      ],
+      "submission_batch": "exam_followup_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "신규 시험 후기 관련 제보. PC·모바일 원문 및 댓글 접근 불가; 실제 NCS/통신직 관련성 및 작성일 미확인. 확인 전 통신직·기타로 확정하지 않음."
+    },
+    {
+      "id": "submission-072",
+      "submitted_positions": [
+        81
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-073",
+      "submitted_positions": [
+        82
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-074",
+      "submitted_positions": [
+        83
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-075",
+      "submitted_positions": [
+        84
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-076",
+      "submitted_positions": [
+        85
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-077",
+      "submitted_positions": [
+        86,
+        87
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-078",
+      "submitted_positions": [
+        88
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-079",
+      "submitted_positions": [
+        89
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch2",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "URL 검색어 '통신'만 확인됨. 원문·댓글/작성일 미확인. 실제 NCS·통신직 관련성은 검증 전이며 시험 당일 후기에 산입하지 않음."
+    },
+    {
+      "id": "submission-080",
+      "submitted_positions": [
+        90
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "submission-081",
+      "submitted_positions": [
+        91
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "submission-082",
+      "submitted_positions": [
+        92
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글/작성일 미확인. 시험 당일 후기·NCS·통신직 여부를 추정하지 않음."
+    },
+    {
+      "id": "submission-083",
+      "submitted_positions": [
+        93
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-084",
+      "submitted_positions": [
+        94
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-085",
+      "submitted_positions": [
+        95
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-086",
+      "submitted_positions": [
+        96,
+        99
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-087",
+      "submitted_positions": [
+        97
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "submission-088",
+      "submitted_positions": [
+        98
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "submission-089",
+      "submitted_positions": [
+        100
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-090",
+      "submitted_positions": [
+        101
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-091",
+      "submitted_positions": [
+        102
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-092",
+      "submitted_positions": [
+        103
+      ],
+      "submission_batch": "unverified_new_links_2026_11_28_batch2",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL의 본문·댓글 및 게시일 접근 불가. 시험 후기, NCS·통신직·기타 관련성 미확인. 추측 분류하지 않음."
+    },
+    {
+      "id": "submission-093",
+      "submitted_positions": [
+        105
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "submission-094",
+      "submitted_positions": [
+        106
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch3",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "제공 URL 검색 조건은 '통신'이나 본문·댓글이 접근 불가. 게시일과 통신직·NCS 실제 관련성 미확인. 당일 시험 후기 근거로 사용하지 않음."
+    },
+    {
+      "id": "submission-095",
+      "submitted_positions": [
+        108
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch4",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "사용자가 '통신' 검색 결과에서 공유. PC·모바일 원문/댓글 미접근, 글 작성일/통신직·NCS 관련성 미확인. 2026.11.28 시험 당일 실제 수험생 후기로 인용하지 않음."
+    },
+    {
+      "id": "submission-096",
+      "submitted_positions": [
+        109
+      ],
+      "submission_batch": "telecom_search_2026_11_28_batch4",
+      "user_search_keyword": "통신",
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "사용자가 '통신' 검색 결과에서 공유. PC·모바일 원문/댓글 미접근, 글 작성일/통신직·NCS 관련성 미확인. 2026.11.28 시험 당일 실제 수험생 후기로 인용하지 않음."
+    }
+  ],
+  "title": "2026년 하반기 NCS 후기 · 2026.11.28",
+  "presentation_policy": "비공식 개인 반응과 사용자 제공 투표 스냅샷. 특정 서비스명·원문 링크·작성자 식별정보는 공개하지 않음. 미확인 제보는 반응 통계에서 제외.",
+  "verified_public_reactions": [
+    {
+      "id": "r1",
+      "group": "ncs",
+      "topic": "지문량·시간 관리",
+      "summary": "일부 응시자는 NCS 지문량이 많아 전공 영역을 빠르게 마쳤는데도 시간이 부족했다고 느꼈다.",
+      "scope": "2026-11-28 당일 공개 검색 결과의 개별 후기",
+      "evidence_kind": "검색 결과 발췌",
+      "linked_to_submitted_posts": false
+    },
+    {
+      "id": "r2",
+      "group": "ncs",
+      "topic": "체감 난이도",
+      "summary": "NCS가 예상보다 어렵다고 평가한 응시자가 있었다. 체감 난이도는 개인별로 다르며 시험 전체의 난이도로 일반화할 수 없다.",
+      "scope": "2026-11-28 당일 공개 검색 결과의 개별 후기",
+      "evidence_kind": "검색 결과 발췌",
+      "linked_to_submitted_posts": false
+    },
+    {
+      "id": "r3",
+      "group": "ncs",
+      "topic": "계산 문항·추측 답안",
+      "summary": "일부 응시자는 계산 문항 등을 충분히 풀지 못해 여러 문항을 추측하여 답했다고 전했다.",
+      "scope": "2026-11-28 당일 공개 검색 결과의 개별 후기",
+      "evidence_kind": "검색 결과 발췌",
+      "linked_to_submitted_posts": false
+    },
+    {
+      "id": "r4",
+      "group": "other",
+      "topic": "전공 영역의 직렬별 체감 차이",
+      "summary": "기계 전공이 비교적 쉬웠다는 응시 의견과 경제 전공이 어려웠다는 의견이 각각 나왔다. 다른 직렬의 체감 차이를 정보통신 전공 난이도로 해석할 수는 없다.",
+      "scope": "2026-11-28 당일 공개 검색 결과의 직렬별 개인 후기",
+      "evidence_kind": "검색 결과 발췌",
+      "linked_to_submitted_posts": false
+    }
+  ],
+  "exam_context": {
+    "organization": "서울교통공사",
+    "period": "2026년 하반기",
+    "exam_date": "2026-11-28",
+    "ncs_questions": 40,
+    "job_questions": 40,
+    "duration_minutes": 90,
+    "basis": "기존 2026년 하반기 채용공고 요약을 따름. 전형별 차이 가능."
+  },
+  "poll_snapshots": [
+    {
+      "snapshot_id": "2026-11-28-seoul-metro-difficulty",
+      "title": "서교 난이도 투표중",
+      "assessed_scope": "서울교통공사 필기 전체 (NCS 전용 설문이 아님)",
+      "posted_at": "2026-11-28 13:18:24",
+      "screen_date": "2026-11-28",
+      "poll_end_at": "2026-11-29 13:20",
+      "status_at_capture": "투표 진행 중",
+      "total_votes": 113,
+      "options": [
+        {
+          "label": "어려웠다",
+          "votes": 97,
+          "display_percent": 86
+        },
+        {
+          "label": "쉬웠다",
+          "votes": 11,
+          "display_percent": 10
+        },
+        {
+          "label": "보통이다",
+          "votes": 5,
+          "display_percent": 4
+        }
+      ],
+      "evidence_type": "user_provided_screenshot",
+      "verified_from": "uploaded image in current conversation",
+      "methodology": "온라인 게시글 참여자의 자발적 비확률표본; 최종 집계 아님",
+      "note": "투표 표제는 '서교 난이도'로 NCS만의 난이도를 물은 것이 아님. 공식 설문조사나 전체 응시자 통계로 사용하지 않음."
+    },
+    {
+      "snapshot_id": "2026-11-28-seoul-metro-vehicle-cut-prediction",
+      "title": "차량 컷 몇 예상??",
+      "assessed_scope": "서울교통공사 차량직 예상 합격선(비공식 예측·확정 합격선 아님)",
+      "category": "other",
+      "posted_at": "2026-11-28 13:33:08",
+      "screen_date": "2026-11-28",
+      "poll_end_at": "2026-11-29 13:40",
+      "status_at_capture": "투표 진행 중",
+      "total_votes": 79,
+      "options": [
+        {
+          "label": "76~80점",
+          "votes": 24,
+          "display_percent": 30
+        },
+        {
+          "label": "66~70점",
+          "votes": 22,
+          "display_percent": 28
+        },
+        {
+          "label": "71~75점",
+          "votes": 19,
+          "display_percent": 24
+        },
+        {
+          "label": "60~65점",
+          "votes": 14,
+          "display_percent": 18
+        }
+      ],
+      "evidence_type": "user_provided_screenshot",
+      "verified_from": "uploaded image in current conversation",
+      "methodology": "익명 온라인 설문·자발적 참여; 예상 합격선에 관한 의견이며 공식 합격선이나 응시자 점수 분포가 아님",
+      "note": "질문이 '차량 컷 몇 예상??'이므로 차량직 외의 정보통신/통신직 합격선으로 전용할 수 없음."
+    }
+  ],
+  "last_submission_date": "2026-11-28",
+  "submission_batches": [
+    {
+      "id": "telecom_search_2026_11_28",
+      "label": "통신 관련 검색 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 8,
+      "unique_posts": 6,
+      "duplicates": 2,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "관련 내용이 통신직 또는 NCS면 통신직, 그렇지 않으면 기타",
+      "note": "원문 확인 전이므로 2026.11.28 시험 당일 반응으로 간주하지 않음."
+    },
+    {
+      "id": "exam_followup_2026_11_28",
+      "label": "서울교통공사 시험 후기 추가 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 10,
+      "unique_posts": 10,
+      "duplicates": 0,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "NCS·정보통신 관련 내용은 통신직, 다른 직렬 및 무관한 내용은 기타",
+      "note": "10건 모두 원문과 댓글 확인 불가. 본문에서 시험을 언급하는지조차 확인되지 않았으므로 실제 시험 당일 후기라고 확정하지 않음."
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch2",
+      "label": "통신 키워드 검색 추가 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 9,
+      "unique_posts": 8,
+      "duplicates": 1,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 시 통신직 또는 NCS는 통신직, 나머지는 기타",
+      "note": "검색 조건만 통신이며 원문은 접근 불가. 시험 당일 후기라고 단정할 수 없음."
+    },
+    {
+      "id": "unverified_new_links_2026_11_28",
+      "label": "일반 제보 3건",
+      "submitted_date": "2026-11-28",
+      "links_received": 3,
+      "unique_posts": 3,
+      "duplicates": 0,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 시 통신직 또는 NCS는 통신직, 나머지는 기타",
+      "note": "작성일·내용 확인 전에는 시험 후기인지 판단 불가."
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch3",
+      "label": "통신 키워드 추가 제보 (3차)",
+      "submitted_date": "2026-11-28",
+      "links_received": 6,
+      "unique_posts": 4,
+      "duplicates": 2,
+      "unique_new_posts": 4,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 후 통신직·NCS는 통신직, 기타 주제는 기타",
+      "note": "이번 6개 검색 URL 중 1449957·1450703은 기존 게시글 중복. 원문에 접근할 수 없어 검토 대기로 보존"
+    },
+    {
+      "id": "unverified_new_links_2026_11_28_batch2",
+      "label": "일반 링크 추가 제보",
+      "submitted_date": "2026-11-28",
+      "links_received": 9,
+      "unique_posts": 8,
+      "duplicates": 1,
+      "unique_new_posts": 8,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "본문 확인 후 통신직·NCS는 통신직, 기타 주제는 기타",
+      "note": "1450861 중복 1건 제거; 개별 본문/댓글 확인 불가"
+    },
+    {
+      "id": "telecom_search_2026_11_28_batch4",
+      "label": "통신 검색 추가 제보 (4차)",
+      "submitted_date": "2026-11-28",
+      "links_received": 2,
+      "unique_posts": 2,
+      "duplicates": 0,
+      "source_post_dates_verified": false,
+      "content_review_status": "pending",
+      "intended_category_on_review": "NCS 및 정보통신·통신직 자료면 통신직, 비관련 자료면 기타",
+      "note": "원문·댓글 열람 불가 및 검색 스니펫으로 본문 검증 불가. 검색 키워드는 분류 근거가 아니므로 2건 모두 검토 대기."
+    }
+  ]
+}
