@@ -1,9 +1,9 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "collected_on": "2026-11-28",
   "origin": "user_submitted_dcinside_links",
-  "received_links": 52,
-  "unique_posts": 45,
+  "received_links": 62,
+  "unique_posts": 55,
   "duplicate_links": 7,
   "classification_policy": {
     "telecom": "정보통신/통신직/통신공학/무선공학/철도통신 또는 NCS 관련 사실·수험 정보",
@@ -738,6 +738,166 @@
       "classification": "pending",
       "checked_date": "2026-11-28",
       "notes": "원문 및 댓글을 PC/모바일/웹 검색에서 확인할 수 없음. NCS, 통신직, 기타 분류를 추정하지 않음."
+    },
+    {
+      "id": "1450806",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450806&page=10",
+      "submitted_positions": [
+        53
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450802",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450802&page=10",
+      "submitted_positions": [
+        54
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450801",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450801&page=10",
+      "submitted_positions": [
+        55
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450810",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450810&page=10",
+      "submitted_positions": [
+        56
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450832",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450832&page=10",
+      "submitted_positions": [
+        57
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450831",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450831&page=10",
+      "submitted_positions": [
+        58
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450825",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450825&page=10",
+      "submitted_positions": [
+        59
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450840",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450840&page=10",
+      "submitted_positions": [
+        60
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450842",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450842&page=10",
+      "submitted_positions": [
+        61
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
+    },
+    {
+      "id": "1450857",
+      "source_url": "https://gall.dcinside.com/mgallery/board/view/?id=rhdrldjq&no=1450857&page=10",
+      "submitted_positions": [
+        62
+      ],
+      "title": null,
+      "article_date": null,
+      "body_summary": null,
+      "comment_summary": null,
+      "topic_tags": [],
+      "review_status": "source_unavailable",
+      "classification": "pending",
+      "checked_date": "2026-11-28",
+      "notes": "원문·댓글의 PC 및 모바일 직접 열람 불가. NCS·통신직·기타 분류는 내용 확인 전 보류."
     }
   ],
   "title": "2026년 하반기 NCS 후기 · 2026.11.28",
@@ -862,5 +1022,6 @@
       "methodology": "익명 온라인 설문·자발적 참여; 예상 합격선에 관한 의견이며 공식 합격선이나 응시자 점수 분포가 아님",
       "note": "질문이 '차량 컷 몇 예상??'이므로 차량직 외의 정보통신/통신직 합격선으로 전용할 수 없음."
     }
-  ]
+  ],
+  "last_submission_date": "2026-11-28"
 }
